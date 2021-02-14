@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va T Il Pleuvoir Dans Lheure La Baule - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va T Il Pleuvoir Dans Lheure La Baule",
+  "datePublished": "2021-02-14",
+  "image": "https://www.meteocity.com/images/app/seo.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+t+il+pleuvoir+dans+lheure+la+baule",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va T Il Pleuvoir Dans Lheure La Baule</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Heure locale et informations geolocalisees a La Baule-Escoublac France The Time Now est un outil fiable pour ceux qui voyagent appellent ou recherchent. Nous vous remercions de saisir une autre ville. Depuis quand le parapluie existe-t-il. <br>				
+			</p>
+										<a class="badge badge-success" href="/what-national-guard-units-are-deployed-to-dc.html">what national guard units are deployed to dc</a>
+											<a class="badge badge-light" href="/what-other-conditions-mimic-asthma.html">what other conditions mimic asthma</a>
+											<a class="badge badge-dark" href="/what-percent-of-college-soccer-players-go-pro.html">what percent of college soccer players go pro</a>
+											<a class="badge badge-danger" href="/what-percentage-does-va-pay-for-back-pain.html">what percentage does va pay for back pain</a>
+											<a class="badge badge-secondary" href="/what-percentage-does-va-pay-for-ptsd.html">what percentage does va pay for ptsd</a>
+											<a class="badge badge-info" href="/what-percentage-do-you-need-to-get-100-va-disability.html">what percentage do you need to get 100 va disability</a>
+											<a class="badge badge-info" href="/what-percent-of-college-football-players-go-pro.html">what percent of college football players go pro</a>
+											<a class="badge badge-light" href="/what-percent-of-us-college-students-use-an-electronic-vaporizer.html">what percent of us college students use an electronic vaporizer</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the ideal blog.  Our site gives you suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to view.  It is also possible to bring about supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ouest-france.fr/sites/default/files/styles/image-640/public/2018/12/01/meteo-quel-temps-fera-t-il-ce-samedi_1.jpg?itok=0d7cWhNY" data-lightbox="roadtrip" data-title="Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi La Roche Sur Yon Maville Com">
+											<img class="card-img v-image ads-img " src="https://www.ouest-france.fr/sites/default/files/styles/image-640/public/2018/12/01/meteo-quel-temps-fera-t-il-ce-samedi_1.jpg?itok=0d7cWhNY" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBetBjxKiDRi08PxcHXG6CERh9gr5OGM3fJw';" alt="Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi La Roche Sur Yon Maville Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi La Roche Sur Yon Maville Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://meteo.orange.fr/datas/departement-44.png" data-lightbox="roadtrip" data-title="Carte Des Previsions Loire Atlantique Meteo Orange">
+											<img class="card-img v-image ads-img " src="https://meteo.orange.fr/datas/departement-44.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtObvmv55TkHLFPySmppilnSHLtvqlmSnbcw';" alt="Carte Des Previsions Loire Atlantique Meteo Orange">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carte Des Previsions Loire Atlantique Meteo Orange</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://avf.asso.fr/la-baule/wp-content/uploads/sites/281/2020/12/3-PHOTO-2020-12-02-11-25-30.D-Foreaujpg.jpg" data-lightbox="roadtrip" data-title="La Baule">
+											<img class="card-img v-image ads-img " src="https://avf.asso.fr/la-baule/wp-content/uploads/sites/281/2020/12/3-PHOTO-2020-12-02-11-25-30.D-Foreaujpg.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpFDEgwSFV54irMRia8VMhMhxY_9bhFLwbWg';" alt="La Baule">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">La Baule</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://meteo.tf1.fr/static/carte/xMER002.jpg.pagespeed.ic.vi2MIeE9Z8.jpg" data-lightbox="roadtrip" data-title="Meteo Bretagne Vendee Previsions Meteo Tf1">
+											<img class="card-img v-image ads-img " src="http://meteo.tf1.fr/static/carte/xMER002.jpg.pagespeed.ic.vi2MIeE9Z8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_pogfLUmgV424fXdQoBYLXgeS7I_uS448SQ';" alt="Meteo Bretagne Vendee Previsions Meteo Tf1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meteo Bretagne Vendee Previsions Meteo Tf1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ouest-france.fr/sites/default/files/styles/image-640/public/2018/12/01/meteo-quel-temps-fera-t-il-ce-samedi_0.jpg?itok=QFBFD_Z8" data-lightbox="roadtrip" data-title="Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi Redon Maville Com">
+											<img class="card-img v-image ads-img " src="https://www.ouest-france.fr/sites/default/files/styles/image-640/public/2018/12/01/meteo-quel-temps-fera-t-il-ce-samedi_0.jpg?itok=QFBFD_Z8" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI0uiW3X5-3uUQj9qcWKfA3DcSPClZSHTzsw';" alt="Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi Redon Maville Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi Redon Maville Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="67911DheApmlrM" data-lightbox="roadtrip" data-title="Https Scholar Lib Vt Edu Internews Lemonde Issues 2001 Monde 20010721 Pdf">
+											<img class="card-img v-image ads-img " src="67911DheApmlrM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTswPo6PLwXISKrt1imm8Ir3w4HZBRmellc6w';" alt="Https Scholar Lib Vt Edu Internews Lemonde Issues 2001 Monde 20010721 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Scholar Lib Vt Edu Internews Lemonde Issues 2001 Monde 20010721 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="BqtZTGVGSjFxkM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTswPo6PLwXISKrt1imm8Ir3w4HZBRmellc6w';" alt="Https Scholar Lib Vt Edu Internews Lemonde Issues 2001 Monde 20010721 Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>Va-t-il-pleuvoir dans lheure dans votre ville.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va t il pleuvoir dans lheure la baule</strong>. 
+								
+																	Le jour et la nuit ont-ils une influence sur la pluie. 
+																	Heureusement les episodes de pluies durent rarement longtemps et ne gacheront pas votre sejour baulois. 
+																	Va-t-il pleuvoir dans lheure. 
+																	Desole la ville saisie nest pas couverte pas le service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Deserter quand ca va mal nest pas dans notre construction glisse-t-il sans la citer. 
+																	10 idees de sorties sous pluie. 
+																	Les previsions gratuites de pluie dans lheure - Episodes de pluie et intensite des precipitations par Meteo-France. 
+																	Voir la couverture du service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Comment savoir sil va pleuvoir dans lheure. 
+																	Bien que La Baule benefice dun microclimat particulierement clement grace a ses forets de pins datant de la fin du 19 eme siecle et les marais salants tous proches il arrive parfois quil pleuve. 
+																	Et Larcher de marteler. 
+																	The Time Now fournit lheure precise synchronisee reseau americain des horloges au cesium et des services autour de lheure a La Baule-Escoublac France. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Toutes les villes ne sont pas couvertes par ce service mais 75 de la France metropolitaine est couverte la carte est disponible sur le site Pour voir sil va pleuvoir dans lheure il faut. 
+																	- Verifiez pour voir si lherbe a la rosee a laube. 
+																	Il faut dire que ceux qui evoluent en exterieur sont soumis aux conditions atmospheriques qui par definition changent constamment. 
+																	Entre lhiver et lete la station passe de 16000 a 150000 ames avec en general un pic de 80000 personnes autour du 15 aout sur la plage de la Baule. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1- Aller sur le site 2- Indiquer le code postal ou le nom de la ville. 
+																	Nous ne gagnerons que si nous sommes rassembles et autour dun projet. 
+																	Faut-il courir sous la pluie pour etre moins mouille. 
+																	Beaucoup de personnes se posent cette question tres frequemment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Des techniques complexes dextrapolation calculent leur deplacement sur la France au cours de lheure prochaine. 
+																	Dans certaines configurations meteo ou dans certaines regions le temps peut tres vite changer. 
+																	Les soles daurades maquereaux ou encore langoustines et anchois sont ensuite peses glaces et places en chambre froide en attendant lheure de la vente. 
+																	METEO FRANCE - Retrouvez les previsions METEO LA BAULE-ESCOUBLAC de Meteo-France pour aujourdhui demain et jusqua 15 jours ainsi que les previsions meteos locales par heure et les previsions de pluie. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Teaser de la residence dartiste dAnne Brochot et Thierry Thomen a Cour Commune sur le territoire de la communaute de communes de Bocage Gatinais va-t-il p. 
+																	Va-t-il pleuvoir dans la prochaine heure. 
+																	Pluie neige orages vent temperatures. 
+																	Previsions meteo pour Baule heure par heure. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Consultez la meteo detaillee dans lheure et pour les heures suivantes. 
+																	Indicateurs physiques naturels indiquant sil va pleuvoir Il y a un certain nombre de facteurs autour de nous qui nous disent sil va pleuvoir. 
+																	Cest aussi un excellent moyen de detecter la pluie bien quil soit difficile de savoir si elle tombera dans les deux ou trois prochains jours. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.meteocity.com/images/app/seo.jpg" data-lightbox="roadtrip" data-title="Meteo Trignac Heure Par Heure Previsions Meteo Aujourd Hui Loire Atlantique France M6 Meteo">
+											<img class="card-img v-image ads-img " src="https://www.meteocity.com/images/app/seo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRws28nBztNtWIykyNqEjx5Gz5LnPnm8pZv6w';" alt="Meteo Trignac Heure Par Heure Previsions Meteo Aujourd Hui Loire Atlantique France M6 Meteo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meteo Trignac Heure Par Heure Previsions Meteo Aujourd Hui Loire Atlantique France M6 Meteo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="xlIVWacowaW0hM" data-lightbox="roadtrip" data-title="Https Www Jstor Org Stable 40988728">
+											<img class="card-img v-image ads-img " src="xlIVWacowaW0hM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR5j9028x3cm5xceDoOs5EPHq8lk8kSitzpQ';" alt="Https Www Jstor Org Stable 40988728">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Jstor Org Stable 40988728</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.meteocity.com/images/cache/app_header/images/download/locations/planete-sauvage-5dfce88e255e1293310582.jpg" data-lightbox="roadtrip" data-title="Meteo Planete Sauvage Previsions Meteo Heure Par Heure Aujourd Hui M6 Meteo">
+											<img class="card-img v-image ads-img " src="https://www.meteocity.com/images/cache/app_header/images/download/locations/planete-sauvage-5dfce88e255e1293310582.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgGjJLYzzYcc2GnbBVuB7g8R4Q-Pem5ad-ZA';" alt="Meteo Planete Sauvage Previsions Meteo Heure Par Heure Aujourd Hui M6 Meteo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meteo Planete Sauvage Previsions Meteo Heure Par Heure Aujourd Hui M6 Meteo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static2.mclcm.net/iod/images/v2/69/citytheque/localite_101_56245/1200x630_100_300_000000x30x0.jpg" data-lightbox="roadtrip" data-title="Meteo Heure Par Heure La Baule Escoublac 44500 Loire Atlantique Previsions Meteo Gratuite A 15 Jours La Chaine Meteo">
+											<img class="card-img v-image ads-img " src="https://static2.mclcm.net/iod/images/v2/69/citytheque/localite_101_56245/1200x630_100_300_000000x30x0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpNlm66EZZxDWQoGjnDKV9JlDMWmrj0DzMtg';" alt="Meteo Heure Par Heure La Baule Escoublac 44500 Loire Atlantique Previsions Meteo Gratuite A 15 Jours La Chaine Meteo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meteo Heure Par Heure La Baule Escoublac 44500 Loire Atlantique Previsions Meteo Gratuite A 15 Jours La Chaine Meteo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="BqtZTGVGSjFxkM" data-lightbox="roadtrip" data-title="Https Scholar Lib Vt Edu Internews Lemonde Issues 2002 Monde 20020831 Pdf">
+											<img class="card-img v-image ads-img " src="BqtZTGVGSjFxkM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNXcLG5L_RwFEtqpAd49Ho0OjmZlscvmevrg';" alt="Https Scholar Lib Vt Edu Internews Lemonde Issues 2002 Monde 20020831 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Scholar Lib Vt Edu Internews Lemonde Issues 2002 Monde 20020831 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="CA8aSGkzy_2xiM" data-lightbox="roadtrip" data-title="Http Etheses Bham Ac Uk 8100 1 Wimbush18phd Pdf">
+											<img class="card-img v-image ads-img " src="CA8aSGkzy_2xiM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Z4PVA6GNN_qd6uG7H-nCqy8tTc3ovTjeEQ';" alt="Http Etheses Bham Ac Uk 8100 1 Wimbush18phd Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Etheses Bham Ac Uk 8100 1 Wimbush18phd Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mvistatic.com/photosmvi/2018/12/01/P18779608D3590945G_crop_1080-600_.jpg" data-lightbox="roadtrip" data-title="Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi Toulon Maville Com">
+											<img class="card-img v-image ads-img " src="https://mvistatic.com/photosmvi/2018/12/01/P18779608D3590945G_crop_1080-600_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzisKfLRigT_iUGYxlpQ2mRw5LHIjXm3Y_fw';" alt="Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi Toulon Maville Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi Toulon Maville Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/_CVUtlT5NeM/mqdefault.jpg" data-lightbox="roadtrip" data-title="Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi Nantes Maville Com">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/_CVUtlT5NeM/mqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4PfbeHhqcWDdJrz_XfQaVyImWoUt0jaHIw';" alt="Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi Nantes Maville Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meteo Va T Il Pleuvoir Toute La Journee Decouvrez Les Previsions De Ce Samedi Nantes Maville Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Dwj3uh6pfNebzM" data-lightbox="roadtrip" data-title="Https Www Languagebird Com Wp Content Uploads 2020 01 French Advanced Ultimate French Advanced Pdfdrive Com Pdf">
+											<img class="card-img v-image ads-img " src="Dwj3uh6pfNebzM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNNpcm9toRWF4SMEPYGT1vj611x4ylmyR7jw';" alt="Https Www Languagebird Com Wp Content Uploads 2020 01 French Advanced Ultimate French Advanced Pdfdrive Com Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Languagebird Com Wp Content Uploads 2020 01 French Advanced Ultimate French Advanced Pdfdrive Com Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://meteo.tf1.fr/static/carte/xREGI52.jpg.pagespeed.ic.1Z6ApJLnRk.jpg" data-lightbox="roadtrip" data-title="Meteo Pays De La Loire Previsions Meteo Tf1">
+											<img class="card-img v-image ads-img " src="http://meteo.tf1.fr/static/carte/xREGI52.jpg.pagespeed.ic.1Z6ApJLnRk.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpOautcEX4RbygFUtgyX01bEMBjsoZToEszw';" alt="Meteo Pays De La Loire Previsions Meteo Tf1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meteo Pays De La Loire Previsions Meteo Tf1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="K22E_9JAlAvo2M" data-lightbox="roadtrip" data-title="Https Hachettefle Us 3dcartstores Com Assets Images Pdf 20links 761549969 Pdf">
+											<img class="card-img v-image ads-img " src="K22E_9JAlAvo2M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJFVIF2UzU8dYwWP_N_OrTtF3V4rfPTGNs_Q';" alt="Https Hachettefle Us 3dcartstores Com Assets Images Pdf 20links 761549969 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Hachettefle Us 3dcartstores Com Assets Images Pdf 20links 761549969 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="E4XhjqHXcmwgsM" data-lightbox="roadtrip" data-title="Https Www Labauleplus Com Lire 2021 Janvier2021 Pdf">
+											<img class="card-img v-image ads-img " src="E4XhjqHXcmwgsM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjcQg-CipOGryd0NUwEeEumOpSjzJuUj3FmQ';" alt="Https Www Labauleplus Com Lire 2021 Janvier2021 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Labauleplus Com Lire 2021 Janvier2021 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="18NNCZCsFCwfSM" data-lightbox="roadtrip" data-title="Https Www Xn Mto Bmab Fr La Baule Escoublac">
+											<img class="card-img v-image ads-img " src="18NNCZCsFCwfSM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx0vd0nHG-M0XmBxj0jT9MSt9ozf30INfWIg';" alt="Https Www Xn Mto Bmab Fr La Baule Escoublac">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Xn Mto Bmab Fr La Baule Escoublac</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="L60OWatqu2ow9M" data-lightbox="roadtrip" data-title="Https Www Harley Davidson Com Content Dam H D Documents Owners Hog H O G Magazine Archive Fr 2009 Winter Pdf">
+											<img class="card-img v-image ads-img " src="L60OWatqu2ow9M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlKtqGDMQZM_wd_ztnjVajaMu_MxNtV97QTw';" alt="Https Www Harley Davidson Com Content Dam H D Documents Owners Hog H O G Magazine Archive Fr 2009 Winter Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Harley Davidson Com Content Dam H D Documents Owners Hog H O G Magazine Archive Fr 2009 Winter Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.ouest-france.fr/v1/pictures/MjAyMDA2Nzg1OWQ2ZGQzZTljM2Q1YjlhNmJhOTI1NWY1ZTBiYzI?width=1260&amp;height=712&amp;focuspoint=50%2C25&amp;cropresize=1&amp;client_id=bpeditorial&amp;sign=13f73a32712a276a2696c24afbb37a2388a8badde796bf5a09e778085be55c56" data-lightbox="roadtrip" data-title="Pays De La Loire Un Debut De Secheresse Avec Un Mois D Avance">
+											<img class="card-img v-image ads-img " src="https://media.ouest-france.fr/v1/pictures/MjAyMDA2Nzg1OWQ2ZGQzZTljM2Q1YjlhNmJhOTI1NWY1ZTBiYzI?width=1260&amp;height=712&amp;focuspoint=50%2C25&amp;cropresize=1&amp;client_id=bpeditorial&amp;sign=13f73a32712a276a2696c24afbb37a2388a8badde796bf5a09e778085be55c56" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4a8fXsei2xXjXcmnqiD1pV9yqAbOcGldtg';" alt="Pays De La Loire Un Debut De Secheresse Avec Un Mois D Avance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pays De La Loire Un Debut De Secheresse Avec Un Mois D Avance</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-to-resume-cp-exams.html">Va To Resume Cp Exams</a></li>
+													<li class="list-group-item"><a href="/va-track-your-claim.html">Va Track Your Claim</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-forms.html">Va Tdiu Forms</a></li>
+													<li class="list-group-item"><a href="/va-top-up-gi-bill.html">Va Top Up Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-criteria.html">Va Tdiu Criteria</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-rules.html">Va Tdiu Rules</a></li>
+													<li class="list-group-item"><a href="/va-tmj-rating.html">Va Tmj Rating</a></li>
+													<li class="list-group-item"><a href="/va-to-puerto-rico.html">Va To Puerto Rico</a></li>
+													<li class="list-group-item"><a href="/va-tinnitus-claim-form.html">Va Tinnitus Claim Form</a></li>
+													<li class="list-group-item"><a href="/va-temporary-convalescence.html">Va Temporary Convalescence</a></li>
+													<li class="list-group-item"><a href="/va-temporary-100-disability-rating-form.html">Va Temporary 100 Disability Rating Form</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-while-working.html">Va Tdiu While Working</a></li>
+													<li class="list-group-item"><a href="/va-title-38-pay-schedule.html">Va Title 38 Pay Schedule</a></li>
+													<li class="list-group-item"><a href="/va-total-and-permanent-disability-form.html">Va Total And Permanent Disability Form</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-requirements.html">Va Tdiu Requirements</a></li>
+													<li class="list-group-item"><a href="/va-tension-headache-rating.html">Va Tension Headache Rating</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-back-pay.html">Va Tdiu Back Pay</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-pay.html">Va Tdiu Pay</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-student-loan-forgiveness.html">Va Tdiu Student Loan Forgiveness</a></li>
+													<li class="list-group-item"><a href="/va-to-pay-emergency-room-bills.html">Va To Pay Emergency Room Bills</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

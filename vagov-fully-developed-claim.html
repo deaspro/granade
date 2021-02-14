@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Vagov Fully Developed Claim - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Vagov Fully Developed Claim",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/c7/13/e5/c713e57402107d3385abd28a5ecf932d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=vagov+fully+developed+claim",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Vagov Fully Developed Claim</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If youd like to get a decision on your claim faster you can submit a fully developed claim. With the Fully Developed Claims program you send in all the evidence you haveor can easily getwhen you file your claim. By submitting an FDCthrough the mail or at eBenefitsvagov youll get a decision on your claim faster than if you file a claim in the traditional manner. <br>				
+			</p>
+										<a class="badge badge-success" href="/what-kind-of-college-should-i-go-to-quiz.html">what kind of college should i go to quiz</a>
+											<a class="badge badge-secondary" href="/what-is-va-total-and-permanent-disability.html">what is va total and permanent disability</a>
+											<a class="badge badge-danger" href="/what-major-change-in-american-society-occurred-due-to-the-gi-bill-of-rights.html">what major change in american society occurred due to the gi bill of rights</a>
+											<a class="badge badge-light" href="/what-is-va-service-connected-disability.html">what is va service connected disability</a>
+											<a class="badge badge-dark" href="/what-kind-of-sunglasses-can-you-wear-in-the-army.html">what kind of sunglasses can you wear in the army</a>
+											<a class="badge badge-dark" href="/what-kind-of-snakes-are-in-northern-virginia.html">what kind of snakes are in northern virginia</a>
+											<a class="badge badge-secondary" href="/what-jobs-are-in-the-army-national-guard.html">what jobs are in the army national guard</a>
+											<a class="badge badge-dark" href="/what-is-va-unemployment-rate.html">what is va unemployment rate</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the right site.  Our site gives you hints for viewing the maximum quality video and image content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/93/e4/9893e4dda87fc27ae443ba6a5177348a.jpg" data-lightbox="roadtrip" data-title="Need Help Filing An Electronic Fully Developed Claim For Compensation Get Help By Following The Instructions Provid Infographic How To Apply Medical Treatment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/93/e4/9893e4dda87fc27ae443ba6a5177348a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj-9YEn5dUlJiwNg2ob0V8xUfLMGK2-tZclg';" alt="Need Help Filing An Electronic Fully Developed Claim For Compensation Get Help By Following The Instructions Provid Infographic How To Apply Medical Treatment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Need Help Filing An Electronic Fully Developed Claim For Compensation Get Help By Following The Instructions Provid Infographic How To Apply Medical Treatment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/32/e0/7a32e0c22c7b00add537fbf7fd2de120.jpg" data-lightbox="roadtrip" data-title="Step By Step Filing Of An Electronic Fdc On Ebenefits Filing Veterans Affairs Veterans Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/32/e0/7a32e0c22c7b00add537fbf7fd2de120.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRONEeX6UWtYq6bErHtbgVP7nI7B7F3lflBzQ';" alt="Step By Step Filing Of An Electronic Fdc On Ebenefits Filing Veterans Affairs Veterans Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Step By Step Filing Of An Electronic Fdc On Ebenefits Filing Veterans Affairs Veterans Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/0a/0f/bd0a0f26e7c466dfe258fd8e92c8f154.jpg" data-lightbox="roadtrip" data-title="Ebenefits Jobs Dental Assistant Jobs Vet Jobs Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/0a/0f/bd0a0f26e7c466dfe258fd8e92c8f154.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnlzVrN1WSpEVL1MAUZlvJB2Jikluv-y9zzQ';" alt="Ebenefits Jobs Dental Assistant Jobs Vet Jobs Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ebenefits Jobs Dental Assistant Jobs Vet Jobs Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/43/25/d9432526bd50c026289e182ca238a285.png" data-lightbox="roadtrip" data-title="There Are An Estimated 23 4 Million Veterans In The United States And About 2 2 Million Military Service Members And Veteran Military Veterans Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/43/25/d9432526bd50c026289e182ca238a285.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdW_xvUyFJnFb8MzYPCBVMTwQ2ofG92uCTBQ';" alt="There Are An Estimated 23 4 Million Veterans In The United States And About 2 2 Million Military Service Members And Veteran Military Veterans Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Are An Estimated 23 4 Million Veterans In The United States And About 2 2 Million Military Service Members And Veteran Military Veterans Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/9b/41/179b41c7f986b5700b92a55d7292ef53.png" data-lightbox="roadtrip" data-title="Apply For Disability Compensation Explore Va Benefits Disability Va Benefits Compensation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/9b/41/179b41c7f986b5700b92a55d7292ef53.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmaLi16GrFgMT5oBwgj0AMcFPbH1HbVW6U8A';" alt="Apply For Disability Compensation Explore Va Benefits Disability Va Benefits Compensation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Apply For Disability Compensation Explore Va Benefits Disability Va Benefits Compensation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/a2/b4/daa2b413394d73ac10a68646389a251d.jpg" data-lightbox="roadtrip" data-title="Ebenefits Site Tour Military Benefits How To Apply Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/a2/b4/daa2b413394d73ac10a68646389a251d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHiYXjqXW-ClPu7TFudnoIs3Z6HuKIEPq9vg';" alt="Ebenefits Site Tour Military Benefits How To Apply Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ebenefits Site Tour Military Benefits How To Apply Military Family</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9d/f8/ae/9df8ae9464d1b2c10d8195f20f627937.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHiYXjqXW-ClPu7TFudnoIs3Z6HuKIEPq9vg';" alt="Ebenefits Site Tour Military Benefits How To Apply Military Family">
+										<div class="card-body">
+						<h3 class="h5"><b>Make sure your Fully Developed Claim is right the first time by following this checklist depending on the type of claim you are filing.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Vagov fully developed claim</strong>. 
+								
+																	Click Apply for Disability Compensation. 
+																	With standard claims we take more responsibility for gathering the evidence we need to make a decision on your claim. 
+																	Submit your completed Application for Disability Compensation and Related Compensation Benefits VA Form 21-526EZ and Submit all the evidence supporting documents you haveor can easily getalong with your claim and. 
+																	The Fully Developed Claims FDC program is an optional initiative that offers Veterans and survivors faster decisions from VA on compensation pension and survivor benefit claims. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans can use the Fully Developed Claim FDC process to submit compensation pension and survivor benefit claims. 
+																	Learn more about submitting a fully developed disability claim Last updated. 
+																	A veteran can opt to file a fully developed claim when he or she has all the evidence they would like VA to consider when deciding the claim. 
+																	Fully developed claim for a VA pension The Fully Developed Claim FDC program is the fastest way to get your VA pension claim processed and theres no risk to your taking part in it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click Apply for Benefits. 
+																	When you file a claim the law requires VA to make an exhaustive search on your behalf to obtain service records and other relevant evidence held by federal agencies and requires VA to ask at least twice for relevant evidence held by private parties unless we get them on the first request. 
+																	There has been a slight slowdown in VA claims processing due to COVID-19. 
+																	You can also upload all your supporting documents with your claim and submit it through the Fully Developed Claims FDC program then track claim status online. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can start your claim today and then take up to 365 days to gather the required documents and information to complete your claim. 
+																	For us to consider your claim fully developed youll need to. 
+																	Submit your completed Application for Disability Compensation and Related Compensation Benefits VA Form 21-526EZ and Submit all the evidence supporting documents you haveor can easily getalong with your claim and. 
+																	The BDD program is available nationwide to all Servicemembers on full-time active duty including members of the National Guard Reserve and Coast Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As of December 2020 the average Fully Developed Claim FDC took 1178 days from start to finish. 
+																	As of July 2020 it took the VA an average of 936 days to complete a VA claim. 
+																	For us to consider your claim fully developed youll need to. 
+																	Fully Developed Claims for Servicemembers Servicemembers use the Benefits Delivery at Discharge BDD program at eBenefitsvagov to submit a Fully Developed Claim before discharge. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Applying for a Fully Developed Claim FDC Review the information at the Important Dates page check I understand these Terms and Conditions and click Save Continue. 
+																	Veterans and survivors simply submit all relevant records in their possession and those records which are easily obtainable such as private medical records at. 
+																	There has been some delays due to COVID-19. 
+																	Just send in all your evidence or supporting documents when you file your claim. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Log on to eBenefitsvagov. 
+																	For more information on FDC visit httpswwwbenefitsvagovfdc. 
+																	For this type of claim you gather all of the evidenceor as much as you can get easilyand submit it at the same time as your claim. 
+																	Find out how you can use this program to get a faster decision on your disability benefits claim. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wwwvagov we can prefill parts of your application and save your work in progress. 
+																	The Fully Developed Claims FDC program is an optional way to file your claim for disability compensation pension and survivor benefits. 
+																	Participation in the FDC program is optional and wont affect your benefits. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/f8/ae/9df8ae9464d1b2c10d8195f20f627937.jpg" data-lightbox="roadtrip" data-title="Benefits Of Working With A Vso To Submit An Fdc Youtube Benefit Work Organization">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/f8/ae/9df8ae9464d1b2c10d8195f20f627937.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ03wZyHh8mVqLdTIUNPG_9DAdd8xXrAWoMHA';" alt="Benefits Of Working With A Vso To Submit An Fdc Youtube Benefit Work Organization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits Of Working With A Vso To Submit An Fdc Youtube Benefit Work Organization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/0d/38/7a0d38dc4c59a846d5294a397534b57a.png" data-lightbox="roadtrip" data-title="Pin On Bite Sized News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/0d/38/7a0d38dc4c59a846d5294a397534b57a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHg7dHxEvp1LhxUVMiG8UZzNWgEaFX4Ygwg';" alt="Pin On Bite Sized News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bite Sized News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/da/a2/b4/daa2b413394d73ac10a68646389a251d.jpg" data-lightbox="roadtrip" data-title="Ebenefits Site Tour Military Benefits How To Apply Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/da/a2/b4/daa2b413394d73ac10a68646389a251d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVZjMG-4P-7OySAK4mmvUkbfxYMUnbKWMyIA';" alt="Ebenefits Site Tour Military Benefits How To Apply Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ebenefits Site Tour Military Benefits How To Apply Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/54/fc/1254fc833702ce79c83a5ba3c9e36b39.jpg" data-lightbox="roadtrip" data-title="Humble Words Veterans Day Button Veteransday Veterans Day Usa American Flag Patriotic 4thofjuly Memorialday Veterans Patri Veterans Day Veteran Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/54/fc/1254fc833702ce79c83a5ba3c9e36b39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa9xtJx464jCmktqzAS_ar1iPCfUFbBdwxfg';" alt="Humble Words Veterans Day Button Veteransday Veterans Day Usa American Flag Patriotic 4thofjuly Memorialday Veterans Patri Veterans Day Veteran Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Humble Words Veterans Day Button Veteransday Veterans Day Usa American Flag Patriotic 4thofjuly Memorialday Veterans Patri Veterans Day Veteran Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/45/9c/0f459cc434ecaacdddbf3a9396cc55dd.png" data-lightbox="roadtrip" data-title="Pin On Imtips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/45/9c/0f459cc434ecaacdddbf3a9396cc55dd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Tly4EvDjVJ-Sf8nWP1wpTxX--tIovyGFvQ';" alt="Pin On Imtips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Imtips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ff/87/3b/ff873b5860affb4d7073fae415e851a3.jpg" data-lightbox="roadtrip" data-title="Thomas D Siefke U S Marine Corps In 2020 United States Marine Corps Marine Corps United States Marine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ff/87/3b/ff873b5860affb4d7073fae415e851a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgoSHgr_puon9s5FKHxTb6DHqbxL8ITxVRtg';" alt="Thomas D Siefke U S Marine Corps In 2020 United States Marine Corps Marine Corps United States Marine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thomas D Siefke U S Marine Corps In 2020 United States Marine Corps Marine Corps United States Marine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/53/df/f153df99fb8e07d6adf06daf74a9585b.jpg" data-lightbox="roadtrip" data-title="Pin On Pin Madness By Author C A Iverson">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/53/df/f153df99fb8e07d6adf06daf74a9585b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0cCTlX_gIxc6pBXkvI7LLO1ghrR1hkdylA';" alt="Pin On Pin Madness By Author C A Iverson">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pin Madness By Author C A Iverson</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/e2/fb/54e2fb61a0d799567d6509f924374105.png" data-lightbox="roadtrip" data-title="Glance Real Life 10 Things Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/e2/fb/54e2fb61a0d799567d6509f924374105.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdOiXR4f-X8mcoWXQFBPwtMM9wxbczOVDMqA';" alt="Glance Real Life 10 Things Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Glance Real Life 10 Things Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/13/e5/c713e57402107d3385abd28a5ecf932d.jpg" data-lightbox="roadtrip" data-title="All It Was Supposed To Do Was Defoliate The Trees Eugene Daily News Eugene Daily News Vietnam Veterans Troops Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/13/e5/c713e57402107d3385abd28a5ecf932d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMU9cg_1aQ0ETS9yaxdNMzSwe_Xe0KE44i2g';" alt="All It Was Supposed To Do Was Defoliate The Trees Eugene Daily News Eugene Daily News Vietnam Veterans Troops Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All It Was Supposed To Do Was Defoliate The Trees Eugene Daily News Eugene Daily News Vietnam Veterans Troops Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/5f/fb/845ffbb56793de7003a1ed6a16ec56a2.jpg" data-lightbox="roadtrip" data-title="100 Financing Zero Down Payment Kentucky Mortgage Home Loans For Kentucky First Time Home This Or That Questions Top Mortgage Lenders Interest Only Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/5f/fb/845ffbb56793de7003a1ed6a16ec56a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpVy943BnvLvEOg72V14-vW44d--t5kKFsPA';" alt="100 Financing Zero Down Payment Kentucky Mortgage Home Loans For Kentucky First Time Home This Or That Questions Top Mortgage Lenders Interest Only Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Financing Zero Down Payment Kentucky Mortgage Home Loans For Kentucky First Time Home This Or That Questions Top Mortgage Lenders Interest Only Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/0e/07/62/0e0762226536fbda2f1a42dc4ec46ee7.jpg" data-lightbox="roadtrip" data-title="Dav Disabled American Veterans Dav Is The Official Voice Of The Nation S Wounded Warriors And Their Families We Provide American Veterans Army Veteran Dav">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/0e/07/62/0e0762226536fbda2f1a42dc4ec46ee7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtnGzllx9vlBIKLhMHb_QB9SPQwtfVodfBgQ';" alt="Dav Disabled American Veterans Dav Is The Official Voice Of The Nation S Wounded Warriors And Their Families We Provide American Veterans Army Veteran Dav">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dav Disabled American Veterans Dav Is The Official Voice Of The Nation S Wounded Warriors And Their Families We Provide American Veterans Army Veteran Dav</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/96/bd/26/96bd26fe63b72e1da70219f2a881c106.jpg" data-lightbox="roadtrip" data-title="Pin On Veteran Info">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/96/bd/26/96bd26fe63b72e1da70219f2a881c106.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu0d2cd13MxqgC4tTFnsXDgNKe-FB5nrTEbQ';" alt="Pin On Veteran Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veteran Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/200x150/f7/2f/0a/f72f0a3f40daf2db5ef8ac4aa277781a.jpg" data-lightbox="roadtrip" data-title="Pin On Louisville Kentucky Va Home Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/200x150/f7/2f/0a/f72f0a3f40daf2db5ef8ac4aa277781a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-coiuKPsbwBceZsBYMVgX7WBDAp7_kmVqA';" alt="Pin On Louisville Kentucky Va Home Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Louisville Kentucky Va Home Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e5/95/b3/e595b3998847f58982bf3372ba632461--ptsd-electronic-health-record.jpg" data-lightbox="roadtrip" data-title="Pentagon Va Struggle With Military Electronic Health Care Health Records Military Veterans Electronic Health Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e5/95/b3/e595b3998847f58982bf3372ba632461--ptsd-electronic-health-record.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeTRFrLfkHdMbaKJsfyQC9vsh4xJ3OtyfUcA';" alt="Pentagon Va Struggle With Military Electronic Health Care Health Records Military Veterans Electronic Health Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pentagon Va Struggle With Military Electronic Health Care Health Records Military Veterans Electronic Health Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/66/aa/f066aa4fe46fc683529610f371e2340c.png" data-lightbox="roadtrip" data-title="Starbucks Launches First Ever Express Store On Wall Street Express Store Starbucks Open Wall">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/66/aa/f066aa4fe46fc683529610f371e2340c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzja19kOfzQifBFhMe8fDDxJ2Pi7dHTrpCVg';" alt="Starbucks Launches First Ever Express Store On Wall Street Express Store Starbucks Open Wall">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Starbucks Launches First Ever Express Store On Wall Street Express Store Starbucks Open Wall</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-fees-can-be-charged-on-a-va-irrrl.html">What Fees Can Be Charged On A Va Irrrl</a></li>
+													<li class="list-group-item"><a href="/what-gi-bill-should-i-use.html">What Gi Bill Should I Use</a></li>
+													<li class="list-group-item"><a href="/what-gi-bill-is-better.html">What Gi Bill Is Better</a></li>
+													<li class="list-group-item"><a href="/what-event-caused-the-department-of-homeland-security-to-focus-on-natural-disasters.html">What Event Caused The Department Of Homeland Security To Focus On Natural Disasters</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-a-spouse-refuses-to-sign-divorce-papers.html">What Happens If A Spouse Refuses To Sign Divorce Papers</a></li>
+													<li class="list-group-item"><a href="/what-gi-bill-am-i-eligible-for.html">What Gi Bill Am I Eligible For</a></li>
+													<li class="list-group-item"><a href="/what-gpa-is-required-for-gi-bill.html">What Gpa Is Required For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-education-is-needed-to-become-a-gastroenterologist.html">What Education Is Needed To Become A Gastroenterologist</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-you-drop-a-class-with-post-911-gi-bill.html">What Happens If You Drop A Class With Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-someone-forged-my-signature.html">What Happens If Someone Forged My Signature</a></li>
+													<li class="list-group-item"><a href="/what-guns-do-the-irish-army-use.html">What Guns Do The Irish Army Use</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-i-die-without-a-will-in-georgia.html">What Happens If I Die Without A Will In Georgia</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-your-partner-refuses-to-sign-divorce-papers.html">What Happens If Your Partner Refuses To Sign Divorce Papers</a></li>
+													<li class="list-group-item"><a href="/what-financial-help-is-available-for-widows.html">What Financial Help Is Available For Widows</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-your-spouse-refuses-to-sign-divorce-papers-in-minnesota.html">What Happens If Your Spouse Refuses To Sign Divorce Papers In Minnesota</a></li>
+													<li class="list-group-item"><a href="/what-happens-after-basic-training-national-guard.html">What Happens After Basic Training National Guard</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-a-soldier-is-suicidal.html">What Happens If A Soldier Is Suicidal</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-my-spouse-refuses-to-sign-divorce-papers.html">What Happens If My Spouse Refuses To Sign Divorce Papers</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-my-employee-tests-positive-for-covid-19.html">What Happens If My Employee Tests Positive For Covid 19</a></li>
+													<li class="list-group-item"><a href="/what-happens-if-you-fail-a-class-with-mycaa.html">What Happens If You Fail A Class With Mycaa</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

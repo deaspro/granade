@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Unemployment Check Claim Status - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Unemployment Check Claim Status",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/49/7b/e7/497be7e82c624226ea8743d5e6441d51.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+unemployment+check+claim+status",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Unemployment Check Claim Status</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">866-832-2363 815am to 430pm Monday - Friday and 9am to 1pm on Saturday closed Sunday and state holidays Mailing Address PO. Report all gross wages earned and keep accurate records. This notice is to advise you of a change in our online UI claim process. <br>				
+			</p>
+										<a class="badge badge-danger" href="/vicksburg-national-military-park-tour-guides.html">vicksburg national military park tour guides</a>
+											<a class="badge badge-success" href="/vicksburg-national-military-park-radio-station.html">vicksburg national military park radio station</a>
+											<a class="badge badge-success" href="/vicksburg-national-military-park-photos.html">vicksburg national military park photos</a>
+											<a class="badge badge-primary" href="/vietnam-military-hat.html">vietnam military hat</a>
+											<a class="badge badge-success" href="/virginia-2020-pay-and-holiday-calendar.html">virginia 2020 pay and holiday calendar</a>
+											<a class="badge badge-info" href="/vietnam-veterans-spousal-support.html">vietnam veterans spousal support</a>
+											<a class="badge badge-warning" href="/virginia-benefits-for-90-disabled-veterans.html">virginia benefits for 90 disabled veterans</a>
+											<a class="badge badge-success" href="/virginia-air-national-guard-officer-jobs.html">virginia air national guard officer jobs</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the ideal blog.  Our site gives you suggestions for viewing the highest quality video and image content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/c4/dc/73c4dc9941075b9f0aaff3119e3ed1d8.jpg" data-lightbox="roadtrip" data-title="Check Out Veterans Statistics On Virginia Learn More At Go Usa Gov Cy6pa Economic Statistics Virginia Business Ownership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/c4/dc/73c4dc9941075b9f0aaff3119e3ed1d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzA2MrO5k6GEOWU4D9n-Mpj8yIGeYJjYOmwg';" alt="Check Out Veterans Statistics On Virginia Learn More At Go Usa Gov Cy6pa Economic Statistics Virginia Business Ownership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out Veterans Statistics On Virginia Learn More At Go Usa Gov Cy6pa Economic Statistics Virginia Business Ownership</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/1f/03/661f03a86daf8125dd99111924de74ea.jpg" data-lightbox="roadtrip" data-title="Approved 400 Unemployment Supplement Ny Ct Nj Fl Tx Mi Va Il Ca Ri Nm Wa In 2020 Clothes Design How To Get Unemployment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/1f/03/661f03a86daf8125dd99111924de74ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3rrLQ-VlPaxiXBWN6tX30R6bHa5ICg3eEbw';" alt="Approved 400 Unemployment Supplement Ny Ct Nj Fl Tx Mi Va Il Ca Ri Nm Wa In 2020 Clothes Design How To Get Unemployment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Approved 400 Unemployment Supplement Ny Ct Nj Fl Tx Mi Va Il Ca Ri Nm Wa In 2020 Clothes Design How To Get Unemployment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/a3/36/f4a33604ae77a2e0a87ecd3917771b78.jpg" data-lightbox="roadtrip" data-title="Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/a3/36/f4a33604ae77a2e0a87ecd3917771b78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTphECfRFvMLwnCtQbvqVb6zI8zQdL1sUnUlw';" alt="Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Medical Retirement Pay Chart 2020 Va Disability Medical Retirement Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/31/a4/4d/31a44d4e9b9b06803e7adc2feb5f3fa6.jpg" data-lightbox="roadtrip" data-title="Pin On Personal Money Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/31/a4/4d/31a44d4e9b9b06803e7adc2feb5f3fa6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcB1GBi0MDV-HyYJ9XMXMBmi1kWUexcbMQFw';" alt="Pin On Personal Money Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Personal Money Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/0c/c0/770cc0fb6827ae9815cace9ffd2115ff.jpg" data-lightbox="roadtrip" data-title="Unemployment Statement Letter Awesome 7 How To Write Unemployment Letter Letter Example Lettering Statement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/0c/c0/770cc0fb6827ae9815cace9ffd2115ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfdwZtHPztQvlpMdQAB9sy5WlaZxNcqfrKTQ';" alt="Unemployment Statement Letter Awesome 7 How To Write Unemployment Letter Letter Example Lettering Statement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Statement Letter Awesome 7 How To Write Unemployment Letter Letter Example Lettering Statement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/97/f0/1197f02c2bfaa24c7219bd4bed418e41.png" data-lightbox="roadtrip" data-title="Pin On News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/97/f0/1197f02c2bfaa24c7219bd4bed418e41.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7TJ92bBGv2_4ZUnkU9JBO5JiEwIqNxIW8BQ';" alt="Pin On News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On News</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/66/1b/f2/661bf2894b05ae63852d9f26d0a3b2c6.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7TJ92bBGv2_4ZUnkU9JBO5JiEwIqNxIW8BQ';" alt="Pin On News">
+										<div class="card-body">
+						<h3 class="h5"><b>Your claim for unemployment insurance is still on file with the Virginia Employment Commission VEC but you will have to take certain steps to continue and maintain online access to your claim.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va unemployment check claim status</strong>. 
+								
+																	Check My UI Claim Status Info. 
+																	Surviving spouses and parents can view Dependency and Indemnity Compensation DIC claim status. 
+																	Anonymously report Unemployment Insurance Fraud to the VEC by calling 1-800-782-4001. 
+																	Box 26441 Richmond VA 23261-6441. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View or update your Compensation and Pension CP claimCheck the status of your CP claim and upload supporting documentsSurviving spouses and parents can view Dependency and Indemnity Compensation DIC claim status. 
+																	Check Claim Status After applying for Unemployment you will receive a written notice or email from the department stating your application has been received. 
+																	There youll see a summary of the latest status information for any. 
+																	Individuals may now visit the My UI Portal to view claim and payment status. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Postal versus electronically is set during the unemployment application process. 
+																	Tracking Your Claims Progress. 
+																	Virginia Relay call 711 or 800-828-1120. 
+																	866-832-2363 815am to 430pm Monday - Friday and 9am to 1pm on Saturday closed Sunday and state holidays Mailing Address PO. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If your claim has already been processed you should be able to go to your States Department of labor website and see. 
+																	Youll find the link for this dashboard in the top right corner of the page once youre. 
+																	Report Unemployment Insurance Fraud. 
+																	Listen to the menu and select Claims and Benefits option 1 and enter your Social Security number and PIN. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Scroll down to the Track Claims section. 
+																	If the Virginia Employment Commission finds you guilty of fraud youll be ineligible to receive benefits for at least 52 weeks. 
+																	Once Im signed in how do I check my VA claim or appeal status. 
+																	Go to your My VA dashboard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your notification preference US. 
+																	VIRGINIA I need help Im trying to check for my claim status to see why I havent gotten paid Virginia Question Im having difficulty getting through the verification portion of the system to see if I am gonna be getting any payments as j have read some people have to call a human to help them but I dont know my personal ID number. 
+																	If you filed on line your account would have been established through vawcvirginiagov. 
+																	View or update your Compensation and Pension CP claimCheck the status of your CP claim and upload supporting documents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Anonymously report Unemployment Insurance Fraud to the VEC by calling 1-800-782-4001. 
+																	You can obtain this information through the Voice Response System 1-800-897-5630. 
+																	You have established a claim for Unemployment Insurance benefits with the Virginia Employment Commission. 
+																	How can I get information on the status of my claim. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Relay call 711 or 800-828-1120. 
+																	Box 26441 Richmond VA 23261-6441. 
+																	The VEC checks and compares all wages employers report and can intercept your state tax refund. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/49/7b/e7/497be7e82c624226ea8743d5e6441d51.jpg" data-lightbox="roadtrip" data-title="Military Spouses Can Make A Big Impact On Their Service Member S Va Loan App Va Mortgage Watch This To Know Va Mortgages Va Mortgage Loans Refinance Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/49/7b/e7/497be7e82c624226ea8743d5e6441d51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP1D5bV-e2IlaRFPdpkw3y6KH0Uk36l1eoVA';" alt="Military Spouses Can Make A Big Impact On Their Service Member S Va Loan App Va Mortgage Watch This To Know Va Mortgages Va Mortgage Loans Refinance Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses Can Make A Big Impact On Their Service Member S Va Loan App Va Mortgage Watch This To Know Va Mortgages Va Mortgage Loans Refinance Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/c2/6b/7fc26b587a1ce09dc60ccfe6f2b7bdfb.jpg" data-lightbox="roadtrip" data-title="Pin On Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/c2/6b/7fc26b587a1ce09dc60ccfe6f2b7bdfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGlMf_7cvrHDMfc0hIES4arSBWcf4MpyS3wQ';" alt="Pin On Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/01/84/4f/01844f9bf3f427c3bb5000d81a8bd35c.jpg" data-lightbox="roadtrip" data-title="Letter Of Unemployment Sample Awesome Unemployment Overpayment Appeal Letter Cover Letter Template Lettering Letter Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/01/84/4f/01844f9bf3f427c3bb5000d81a8bd35c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjU3zSFHuiqA88SIfx2EJSESk3sw5BnNFkZw';" alt="Letter Of Unemployment Sample Awesome Unemployment Overpayment Appeal Letter Cover Letter Template Lettering Letter Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letter Of Unemployment Sample Awesome Unemployment Overpayment Appeal Letter Cover Letter Template Lettering Letter Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/7b/16/9e7b16708a042942593edea66fe23c4a.jpg" data-lightbox="roadtrip" data-title="Are You Interested In Attending A Free Tax Preparation Please Contact 804 775 6433 To Reserve A Time Slot Today Tax Preparation Tax Free Preparation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/7b/16/9e7b16708a042942593edea66fe23c4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmdiYqHCrBvpVtVLwALAJFmvoZVu6-97vTpw';" alt="Are You Interested In Attending A Free Tax Preparation Please Contact 804 775 6433 To Reserve A Time Slot Today Tax Preparation Tax Free Preparation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Interested In Attending A Free Tax Preparation Please Contact 804 775 6433 To Reserve A Time Slot Today Tax Preparation Tax Free Preparation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" data-lightbox="roadtrip" data-title="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/01/7f/28017ffbb8563c9343551484db0dadf0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaDVTaYO7BjRnpMQeKqJD_kwSTSHSNf_sTQ';" alt="Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Tuition Assistance Va Education Benefits Tuition Assistance Tuition College Costs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/bb/c8/00bbc8a7f3a30d71d7dbfd9ed125d2cd.jpg" data-lightbox="roadtrip" data-title="Student Loan Debt Is Not A Myth Student Loan Repayment Student Loan Debt Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/bb/c8/00bbc8a7f3a30d71d7dbfd9ed125d2cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ8HuRFbEdMc6HTlhduTxK4Lm3BAJQyMKl7Q';" alt="Student Loan Debt Is Not A Myth Student Loan Repayment Student Loan Debt Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Loan Debt Is Not A Myth Student Loan Repayment Student Loan Debt Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/2d/8d/842d8dfd0aa5940b4df5498aa469f2b4.jpg" data-lightbox="roadtrip" data-title="Pin On Simple Letters Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/2d/8d/842d8dfd0aa5940b4df5498aa469f2b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9deDKx2iFaM9tBL8lK4m3Yo6lnZOlx-mPJw';" alt="Pin On Simple Letters Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Simple Letters Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/c0/e4/24c0e45cd7adece617b3f130b58e16c8.png" data-lightbox="roadtrip" data-title="How To Build A Va Business I 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/c0/e4/24c0e45cd7adece617b3f130b58e16c8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqs0V24mvR5MbSD5T3sb062hpnCk2AJ6HokA';" alt="How To Build A Va Business I 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Build A Va Business I 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c3/16/32/c3163269a7ba2e97cb2e0fe89331045b.jpg" data-lightbox="roadtrip" data-title="Qps Employment Group Employment Warning Process Unemployment Nc Employment Security Commission Medical Employment Agenc Employment Agency Career Packing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c3/16/32/c3163269a7ba2e97cb2e0fe89331045b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HbzvcJLUWZtyg_XUw7s9XF_weTDYRyE25g';" alt="Qps Employment Group Employment Warning Process Unemployment Nc Employment Security Commission Medical Employment Agenc Employment Agency Career Packing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qps Employment Group Employment Warning Process Unemployment Nc Employment Security Commission Medical Employment Agenc Employment Agency Career Packing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/b1/21/d2b1214bebe8292fdad0b51d263680bf.png" data-lightbox="roadtrip" data-title="Score The Best Virtual Assistant Jobs For Beginners And Beyond In 2020 Virtual Assistant Jobs Virtual Assistant Assistant Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/b1/21/d2b1214bebe8292fdad0b51d263680bf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA9-ogrN5TvHvDu4SvC9Xj_-2lOVRPw9EZkA';" alt="Score The Best Virtual Assistant Jobs For Beginners And Beyond In 2020 Virtual Assistant Jobs Virtual Assistant Assistant Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Score The Best Virtual Assistant Jobs For Beginners And Beyond In 2020 Virtual Assistant Jobs Virtual Assistant Assistant Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/29/62/2d2962551184e92030b3c798018a4707.jpg" data-lightbox="roadtrip" data-title="I Love Living Here Except In August The Heat And Humidity Then Is Unbearable Old Dominion Virginia Richmond">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/29/62/2d2962551184e92030b3c798018a4707.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZBlDJYG7ElfQR94zeFrCUZS2xuh11J9u7w';" alt="I Love Living Here Except In August The Heat And Humidity Then Is Unbearable Old Dominion Virginia Richmond">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love Living Here Except In August The Heat And Humidity Then Is Unbearable Old Dominion Virginia Richmond</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/1b/f2/661bf2894b05ae63852d9f26d0a3b2c6.gif" data-lightbox="roadtrip" data-title="Florida Tops Baby Boomer House Rental Markets Investor S Business Daily South Florida Real Estate House Rental Investors Business Daily">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/1b/f2/661bf2894b05ae63852d9f26d0a3b2c6.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-JzyjerlLM0114A45fqXdaCQkI4Yai7lsEg';" alt="Florida Tops Baby Boomer House Rental Markets Investor S Business Daily South Florida Real Estate House Rental Investors Business Daily">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida Tops Baby Boomer House Rental Markets Investor S Business Daily South Florida Real Estate House Rental Investors Business Daily</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/9e/67/879e67e131b536f8d231b94b24178a22.jpg" data-lightbox="roadtrip" data-title="Hiring A Virtual Assistant Can Truly Help Your Blogging Biz Va S Are Resourceful And Can Virtual Assistant Payroll Software Small Business Entrepreneurship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/9e/67/879e67e131b536f8d231b94b24178a22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0NaY0dD2GWTor7faG14njtKLVjDIWIH7Zg';" alt="Hiring A Virtual Assistant Can Truly Help Your Blogging Biz Va S Are Resourceful And Can Virtual Assistant Payroll Software Small Business Entrepreneurship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring A Virtual Assistant Can Truly Help Your Blogging Biz Va S Are Resourceful And Can Virtual Assistant Payroll Software Small Business Entrepreneurship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2f/0b/e1/2f0be161e0e6fa475c6f8b609371e738.jpg" data-lightbox="roadtrip" data-title="Real Estate Virtual Assistant 1844 307 3430 Virtual Assistant Virtual Assistant Services Transaction Coordinator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2f/0b/e1/2f0be161e0e6fa475c6f8b609371e738.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROxA7VEl1bZBNdYqntYT3_EjgDOhHhdbyMMQ';" alt="Real Estate Virtual Assistant 1844 307 3430 Virtual Assistant Virtual Assistant Services Transaction Coordinator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Estate Virtual Assistant 1844 307 3430 Virtual Assistant Virtual Assistant Services Transaction Coordinator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/d7/86/01d786e47949c99efa9952a0237c5d92.png" data-lightbox="roadtrip" data-title="Non Va Home Loan Options Infographic Conventional Loan Va Mortgage Loans Va Loan Process">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/d7/86/01d786e47949c99efa9952a0237c5d92.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Ay1awKjBEvX8t61BMumhYw42cIsjTuygXw';" alt="Non Va Home Loan Options Infographic Conventional Loan Va Mortgage Loans Va Loan Process">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Non Va Home Loan Options Infographic Conventional Loan Va Mortgage Loans Va Loan Process</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-if-i-never-used-my-montgomery-gi-bill.html">What If I Never Used My Montgomery Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-a-va-appeal-is-granted.html">What Happens When A Va Appeal Is Granted</a></li>
+													<li class="list-group-item"><a href="/what-i-want-to-go-to-college-for.html">What I Want To Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-if-someone-forged-my-signature.html">What If Someone Forged My Signature</a></li>
+													<li class="list-group-item"><a href="/what-is-100-military-disability.html">What Is 100 Military Disability</a></li>
+													<li class="list-group-item"><a href="/what-is-100-percent-disability-for-va.html">What Is 100 Percent Disability For Va</a></li>
+													<li class="list-group-item"><a href="/what-is-100-schedular-rating-with-the-va.html">What Is 100 Schedular Rating With The Va</a></li>
+													<li class="list-group-item"><a href="/what-is-1-military-time.html">What Is 1 Military Time</a></li>
+													<li class="list-group-item"><a href="/what-is-100-disabled-veteran.html">What Is 100 Disabled Veteran</a></li>
+													<li class="list-group-item"><a href="/what-is-100-percent-va-disability-pay.html">What Is 100 Percent Va Disability Pay</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-a-person-dies-without-a-will-in-scotland.html">What Happens When A Person Dies Without A Will In Scotland</a></li>
+													<li class="list-group-item"><a href="/what-if-my-wife-has-covid-and-i-dont.html">What If My Wife Has Covid And I Dont</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-you-call-the-va-crisis-line.html">What Happens When You Call The Va Crisis Line</a></li>
+													<li class="list-group-item"><a href="/what-if-my-gi-bill-has-expired.html">What If My Gi Bill Has Expired</a></li>
+													<li class="list-group-item"><a href="/what-is-15-minutes-in-military-time.html">What Is 15 Minutes In Military Time</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-post-911-gi-bill-runs-out.html">What Happens When Post 911 Gi Bill Runs Out</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-spouse-visa-expires-uk.html">What Happens When Spouse Visa Expires Uk</a></li>
+													<li class="list-group-item"><a href="/what-if-my-partner-tests-positive-for-covid.html">What If My Partner Tests Positive For Covid</a></li>
+													<li class="list-group-item"><a href="/what-is-100-percent-disabled-veteran.html">What Is 100 Percent Disabled Veteran</a></li>
+													<li class="list-group-item"><a href="/what-if-my-spouse-owns-the-property-jointly-with-someone-else.html">What If My Spouse Owns The Property Jointly With Someone Else</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

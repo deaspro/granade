@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Advocate Group Of America - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Advocate Group Of America",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/77/8c/23/778c23202730dab4cc1c17577ef72245.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+advocate+group+of+america",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Advocate Group Of America</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Veterans Benefits Conference Pre-Conference Program For Those Needing 3 CLE Hours to Maintain VA Ac Separate Registration Required Information Related to CLE Hours. Subscribe Unlock nonprofit financial insights that will help you make more informed decisions. Military Families of America. <br>				
+			</p>
+										<a class="badge badge-warning" href="/what-is-military-spouse.html">what is military spouse</a>
+											<a class="badge badge-warning" href="/what-is-manpower-in-the-air-force.html">what is manpower in the air force</a>
+											<a class="badge badge-info" href="/what-is-major-depressive-disorder-with-psychotic-features.html">what is major depressive disorder with psychotic features</a>
+											<a class="badge badge-primary" href="/what-is-my-gi-bill-status.html">what is my gi bill status</a>
+											<a class="badge badge-dark" href="/what-is-my-va-claim-file-number.html">what is my va claim file number</a>
+											<a class="badge badge-info" href="/what-is-my-spouses-name-quiz.html">what is my spouses name quiz</a>
+											<a class="badge badge-danger" href="/what-is-major-depressive-disorder-single-episode.html">what is major depressive disorder single episode</a>
+											<a class="badge badge-dark" href="/what-is-my-spouse-name.html">what is my spouse name</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to visit the right blog.  Our site gives you suggestions for seeing the highest quality video and picture content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video that you see.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/fb/7b/7cfb7b9597030f9138900316483f3f9e.jpg" data-lightbox="roadtrip" data-title="Amvets Mobile Iphone And Ipad App By Fraternalsoft Inc Genre Social Networking Application Price 6 99 Http Cli Veteran Scholarships American Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/fb/7b/7cfb7b9597030f9138900316483f3f9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT52ifUDDW7mr7izE6YAiVyBpuZOHB4zayPTw';" alt="Amvets Mobile Iphone And Ipad App By Fraternalsoft Inc Genre Social Networking Application Price 6 99 Http Cli Veteran Scholarships American Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amvets Mobile Iphone And Ipad App By Fraternalsoft Inc Genre Social Networking Application Price 6 99 Http Cli Veteran Scholarships American Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/69/1f/3b691fc110d372b1bcca2c9306eeb0ef.jpg" data-lightbox="roadtrip" data-title="Here Are Two Great Books For Us Veterans And Their Supporters Nbsp An American Crisis Veterans Unemployment Nbsp This Thank You Veteran Our Country Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/69/1f/3b691fc110d372b1bcca2c9306eeb0ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobbS6_Jgb_5IfdxQVEuKjHrMbJVsH4pzQ-Q';" alt="Here Are Two Great Books For Us Veterans And Their Supporters Nbsp An American Crisis Veterans Unemployment Nbsp This Thank You Veteran Our Country Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Are Two Great Books For Us Veterans And Their Supporters Nbsp An American Crisis Veterans Unemployment Nbsp This Thank You Veteran Our Country Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/30/a4/7330a4fcabaaa2fdfe2e116bd211b2cf.png" data-lightbox="roadtrip" data-title="Pin On Our Favorite Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/30/a4/7330a4fcabaaa2fdfe2e116bd211b2cf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSif-eQyOw_eDcbZszgrqHk6h3SRirNHqtVUA';" alt="Pin On Our Favorite Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Our Favorite Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/e2/d9/16e2d918f20b768bd203859cda31b06e.jpg" data-lightbox="roadtrip" data-title="Paralyzed Veterans Of America Veterans Of America Veteran Paralyzed">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/e2/d9/16e2d918f20b768bd203859cda31b06e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrZ13gYplFJg9HmsvhewHToXNooNi-mN0nA';" alt="Paralyzed Veterans Of America Veterans Of America Veteran Paralyzed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paralyzed Veterans Of America Veterans Of America Veteran Paralyzed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/8c/23/778c23202730dab4cc1c17577ef72245.jpg" data-lightbox="roadtrip" data-title="Bob Alvis Interviews Dennis Anderson Bob Alvis Welcomes Local Veterans Advocate Dennis Anderson To The First Installment Interview Bob Vietnam Era Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/8c/23/778c23202730dab4cc1c17577ef72245.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSysaHUcqBGUQMMmnlRFLjO9EBJ_WWihY0XQ';" alt="Bob Alvis Interviews Dennis Anderson Bob Alvis Welcomes Local Veterans Advocate Dennis Anderson To The First Installment Interview Bob Vietnam Era Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bob Alvis Interviews Dennis Anderson Bob Alvis Welcomes Local Veterans Advocate Dennis Anderson To The First Installment Interview Bob Vietnam Era Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/45/5c/ff455c8e50c304f3c8ae5684f8b59f25.jpg" data-lightbox="roadtrip" data-title="Proud Supporter Veterans Of America Veteran Paralyzed">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/45/5c/ff455c8e50c304f3c8ae5684f8b59f25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk_BE7WRkdr8kyMOJKoLSg4x0R3xr9mHVcbQ';" alt="Proud Supporter Veterans Of America Veteran Paralyzed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Proud Supporter Veterans Of America Veteran Paralyzed</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/4b/c8/3c/4bc83c3d482157cdb5bf11e6e6524fb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk_BE7WRkdr8kyMOJKoLSg4x0R3xr9mHVcbQ';" alt="Proud Supporter Veterans Of America Veteran Paralyzed">
+										<div class="card-body">
+						<h3 class="h5"><b>Veterans Fighting Breast Cancer.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans advocate group of america</strong>. 
+								
+																	Disabled American Veterans is warning that any member who is found to have participated in the US. 
+																	It is funded without any contribution from any branch of government. 
+																	As NOVA celebrates 25 years of dedication to our nations veterans its an exciting time to be a member. 
+																	The Veterans Advocacy Group of America VAGA has been helping veterans and their families since 2010 Veterans Advocacy Group of America - 501c3 Non Profit Organization We are a 501 c 3 non profit organization based in Southern California. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Id love to see an end to. 
+																	Servicing Veterans with commitment compassion and respect. 
+																	The mission of Student Veterans of America is to act as a catalyst for student veteran success by providing resources network support and advocacy to through and beyond higher education. 
+																	PTSD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Student Veterans of America is the premier organization leading service research programs and advocacy for veterans in higher education. 
+																	Veterans Advocacy Group of America Inc. 
+																	PTSD. 
+																	Veterans Advocacy Group of America. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Capitol riots last week will face expulsion from the one-million member veterans service. 
+																	VVA is the only such organization chartered by the United States Congress and dedicated to Vietnam veterans and their families. 
+																	VVA is a national non-profit corporation founded in 1978 in the United States that is committed to serving the needs of all veterans. 
+																	Veterans Incarcerated and in the Justice System. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click here to learn about becoming a more effective veterans advocate and the benefits of NOVA membership. 
+																	They sound like just the sorts of organizations that generous Americans would rush to support to repay those who have served the country and now need our help. 
+																	En espanol American Disabled Veterans Foundation. 
+																	Sign In or Create Account to view assets data lock Unlock financial insights by subscribing to our monthly plan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans Advocacy Group of America is a resource that provides USA Veterans with alternatives to improve their living. 
+																	Try our monthly plan today. 
+																	Vietnam Veterans of America Inc. 
+																	Find an Advocate Attorney Our nations veterans continue to experience long delays in having their appeals decided properly. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VAGA Veterans Advocates Group of America Veterans benefits conference Las Vegas. 
+																	Books in Review II. 
+																	Non-profit website serving veterans to improve their lives. 
+																	Books in Review II. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans Incarcerated and in the Justice System. 
+																	In 2019 Kisling and Jespersen founded the Veterans Outdoor Advocacy Group promoting outdoor therapy as a recognized and legitimate form of treatment for veterans. 
+																	Sound like is the operative phrase here. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/de/2f/23de2fd2b2d98b1ad5fa1b210a1c732e.jpg" data-lightbox="roadtrip" data-title="Veterans Advocacy Group Head Visits Iowa City Hospital City Hospital Hospital Administration Hospital">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/de/2f/23de2fd2b2d98b1ad5fa1b210a1c732e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIHvRe9chiBI_V9Dp_bAz1VQ8FT3Jlxr67kA';" alt="Veterans Advocacy Group Head Visits Iowa City Hospital City Hospital Hospital Administration Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Advocacy Group Head Visits Iowa City Hospital City Hospital Hospital Administration Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/9f/84/bd9f8427c51a4a871767c54aa84432bc.jpg" data-lightbox="roadtrip" data-title="25 Memorial Day Quotes To Honor Our Troops Memorial Day Quotes Patriotic Quotes Veteran Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/9f/84/bd9f8427c51a4a871767c54aa84432bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBATutX0kDwwbbgylh0VOoxJ5eBjhdajOOhA';" alt="25 Memorial Day Quotes To Honor Our Troops Memorial Day Quotes Patriotic Quotes Veteran Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">25 Memorial Day Quotes To Honor Our Troops Memorial Day Quotes Patriotic Quotes Veteran Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/32/d9/0932d907c9acbdf319e667e0c1ad7cf9.jpg" data-lightbox="roadtrip" data-title="Dav Org Disabled American Veterans Charity Indiana University Bloomington American Library Association Valdosta State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/32/d9/0932d907c9acbdf319e667e0c1ad7cf9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQpHLLb5rzBApaD-t3HRyJN7kxbxnURjMeQQ';" alt="Dav Org Disabled American Veterans Charity Indiana University Bloomington American Library Association Valdosta State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dav Org Disabled American Veterans Charity Indiana University Bloomington American Library Association Valdosta State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/a2/c2/d5a2c2b33b02419159665c630d2c716f.jpg" data-lightbox="roadtrip" data-title="Pin On Living Ciaagstrong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/a2/c2/d5a2c2b33b02419159665c630d2c716f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTTpXLgTDqQ9del4HztF24xx4-wQGyGarJPA';" alt="Pin On Living Ciaagstrong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Living Ciaagstrong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/af/3a/01af3a345c00fb9acc076cb64d683795.jpg" data-lightbox="roadtrip" data-title="Honoring All Who Served Veterans Day Display By Rebecca Bustillos Patriotic Art Ideas Veterans Day Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/af/3a/01af3a345c00fb9acc076cb64d683795.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4B6kx_nvi0-JRSF3ApQt6469fj4REOJVeQ';" alt="Honoring All Who Served Veterans Day Display By Rebecca Bustillos Patriotic Art Ideas Veterans Day Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honoring All Who Served Veterans Day Display By Rebecca Bustillos Patriotic Art Ideas Veterans Day Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/74/00/b27400df087434078bafe252777aedca.gif" data-lightbox="roadtrip" data-title="Memorial Day Facebook Comments Facebook Comment Graphics Free Animated Gifs Patriotic Holidays Memorial Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/74/00/b27400df087434078bafe252777aedca.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6ksaBHo3Bhnk5186xKsFHfFjIlMfOejMZw';" alt="Memorial Day Facebook Comments Facebook Comment Graphics Free Animated Gifs Patriotic Holidays Memorial Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Memorial Day Facebook Comments Facebook Comment Graphics Free Animated Gifs Patriotic Holidays Memorial Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/3c/d7/bf3cd74b2dd2dafe8854e1ce82eb837f.jpg" data-lightbox="roadtrip" data-title="Military Spouses Today Is Not Your Day It Is Veterans Day A What Is A Veteran Veteran Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/3c/d7/bf3cd74b2dd2dafe8854e1ce82eb837f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjl7_ExLKimO8N858YFQyI9QAwfrwVYf1j0Q';" alt="Military Spouses Today Is Not Your Day It Is Veterans Day A What Is A Veteran Veteran Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses Today Is Not Your Day It Is Veterans Day A What Is A Veteran Veteran Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/c8/3c/4bc83c3d482157cdb5bf11e6e6524fb0.jpg" data-lightbox="roadtrip" data-title="Pin By The Veteran Advocates On God Bless The Usa What Is A Veteran Veteran Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/c8/3c/4bc83c3d482157cdb5bf11e6e6524fb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsUAQJ9iENCp6O7xTQAfN0XE_QFntFndbhw';" alt="Pin By The Veteran Advocates On God Bless The Usa What Is A Veteran Veteran Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By The Veteran Advocates On God Bless The Usa What Is A Veteran Veteran Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bd/c6/04/bdc60438dd3ab57664a8ec14002a05da.jpg" data-lightbox="roadtrip" data-title="Visit Our Booth 414 Health Care Veterans Of America America">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bd/c6/04/bdc60438dd3ab57664a8ec14002a05da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVwWzYOO9ZLwIiaMGyAfibTukAq4_z-G-5oQ';" alt="Visit Our Booth 414 Health Care Veterans Of America America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Visit Our Booth 414 Health Care Veterans Of America America</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/73/95/f9739505992750cafab9d9e1b9e11ef0.png" data-lightbox="roadtrip" data-title="Veteransdayquotes Veteransday Veteransdaypics Veteransdayimages Veteransdaysms Veterans Veterans Day Quotes Happy Veterans Day Quotes Veterans Day Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/73/95/f9739505992750cafab9d9e1b9e11ef0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCOIIsCbt-m8JV_VOpWw-JPuA40cQeTnA2lA';" alt="Veteransdayquotes Veteransday Veteransdaypics Veteransdayimages Veteransdaysms Veterans Veterans Day Quotes Happy Veterans Day Quotes Veterans Day Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteransdayquotes Veteransday Veteransdaypics Veteransdayimages Veteransdaysms Veterans Veterans Day Quotes Happy Veterans Day Quotes Veterans Day Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fc/51/e4/fc51e44fd8fedcdd90235f63b48963ab.jpg" data-lightbox="roadtrip" data-title="Poppies On Veterans Day Poem 2020 101 Best Veterans Day Poems Veterans Day Poems Pdf Dow In 2020 Veterans Day Poem Veterans Poems Veterans Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fc/51/e4/fc51e44fd8fedcdd90235f63b48963ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFuD7D2jxSSoy_ai78K3WbpBDiKVjrr1BA2g';" alt="Poppies On Veterans Day Poem 2020 101 Best Veterans Day Poems Veterans Day Poems Pdf Dow In 2020 Veterans Day Poem Veterans Poems Veterans Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Poppies On Veterans Day Poem 2020 101 Best Veterans Day Poems Veterans Day Poems Pdf Dow In 2020 Veterans Day Poem Veterans Poems Veterans Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/e9/7c/f0e97cc3f0292638eb169cd333e2baaf.png" data-lightbox="roadtrip" data-title="Cuban Missile Crisis Infographic Google Search News Articles For Kids Happy Veterans Day Quotes Veterans Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/e9/7c/f0e97cc3f0292638eb169cd333e2baaf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ytTRkRI4WqlJ01RCOPDgV1JFiVUltv4pbg';" alt="Cuban Missile Crisis Infographic Google Search News Articles For Kids Happy Veterans Day Quotes Veterans Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cuban Missile Crisis Infographic Google Search News Articles For Kids Happy Veterans Day Quotes Veterans Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/49/eb/43/49eb43193885a8eb54f807d0b433a542.jpg" data-lightbox="roadtrip" data-title="Expert Advice On The Importance Of Self Advocacy Korean War Veterans Memorial Self Advocacy Freedom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/49/eb/43/49eb43193885a8eb54f807d0b433a542.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM_prJ-vgevd758NwxpFpITU8hnWJLlY4xxA';" alt="Expert Advice On The Importance Of Self Advocacy Korean War Veterans Memorial Self Advocacy Freedom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Expert Advice On The Importance Of Self Advocacy Korean War Veterans Memorial Self Advocacy Freedom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/81/87/c6/8187c6021e9d83d188fc6543362a8a33.jpg" data-lightbox="roadtrip" data-title="Never Forget Veterans Day Meme 1 501 Best Veterans Day Memes 2020 Funny Memes For Veteran In 2020 Day Memorial Day Veterans Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/81/87/c6/8187c6021e9d83d188fc6543362a8a33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwETbNN0bJJ7mxEAbit6yUJYeslSd1c1_Krg';" alt="Never Forget Veterans Day Meme 1 501 Best Veterans Day Memes 2020 Funny Memes For Veteran In 2020 Day Memorial Day Veterans Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Never Forget Veterans Day Meme 1 501 Best Veterans Day Memes 2020 Funny Memes For Veteran In 2020 Day Memorial Day Veterans Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/7f/89/8f7f89b3f3df8eb20bcffd971d7a99ca.jpg" data-lightbox="roadtrip" data-title="God Bless America Memorial Day Quotes Memorial Day Memories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/7f/89/8f7f89b3f3df8eb20bcffd971d7a99ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBuK2GrVmDmQzglBR-8rYqGhgRDpQKdkGMiw';" alt="God Bless America Memorial Day Quotes Memorial Day Memories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">God Bless America Memorial Day Quotes Memorial Day Memories</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-retirement-benefits-health-insurance.html">Va Retirement Benefits Health Insurance</a></li>
+													<li class="list-group-item"><a href="/va-rn-pay-increase-2019.html">Va Rn Pay Increase 2019</a></li>
+													<li class="list-group-item"><a href="/va-retirement-benefits-letter.html">Va Retirement Benefits Letter</a></li>
+													<li class="list-group-item"><a href="/va-retroactive-pay-unemployment.html">Va Retroactive Pay Unemployment</a></li>
+													<li class="list-group-item"><a href="/va-salary-scale.html">Va Salary Scale</a></li>
+													<li class="list-group-item"><a href="/va-retroactive-disability-pay.html">Va Retroactive Disability Pay</a></li>
+													<li class="list-group-item"><a href="/va-schedule-of-ratings-cardiovascular-system.html">Va Schedule Of Ratings Cardiovascular System</a></li>
+													<li class="list-group-item"><a href="/va-roligt-in-english.html">Va Roligt In English</a></li>
+													<li class="list-group-item"><a href="/va-rn-pay-schedule.html">Va Rn Pay Schedule</a></li>
+													<li class="list-group-item"><a href="/va-schedule-of-rating-ptsd.html">Va Schedule Of Rating Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-schedular-rating-for-hearing-loss.html">Va Schedular Rating For Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-salary-increase-2020.html">Va Salary Increase 2020</a></li>
+													<li class="list-group-item"><a href="/va-salaries-2020.html">Va Salaries 2020</a></li>
+													<li class="list-group-item"><a href="/va-retirement-pay-chart.html">Va Retirement Pay Chart</a></li>
+													<li class="list-group-item"><a href="/va-salary-scale-2020.html">Va Salary Scale 2020</a></li>
+													<li class="list-group-item"><a href="/va-retirement-pay-schedule.html">Va Retirement Pay Schedule</a></li>
+													<li class="list-group-item"><a href="/va-retro-pay-phone-number.html">Va Retro Pay Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-retirement-pay-chart-2020.html">Va Retirement Pay Chart 2020</a></li>
+													<li class="list-group-item"><a href="/va-salary-lookup.html">Va Salary Lookup</a></li>
+													<li class="list-group-item"><a href="/va-schedule-of-rating-lower-back-pain.html">Va Schedule Of Rating Lower Back Pain</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

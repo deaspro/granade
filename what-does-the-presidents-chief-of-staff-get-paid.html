@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does The Presidents Chief Of Staff Get Paid - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does The Presidents Chief Of Staff Get Paid",
+  "datePublished": "2021-02-14",
+  "image": "https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/lg/public/2020/05/08/white-house-press-secretary-kayleigh-mcenany-says-theres.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+the+presidents+chief+of+staff+get+paid",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does The Presidents Chief Of Staff Get Paid</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The current official title is Assistant to the President and Chief of Staff. Blair assistant to the president and senior adviser to the chief of staff. Assistant to the president for trade and. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/what-college-to-go-to-for-nursing.html">what college to go to for nursing</a>
+											<a class="badge badge-dark" href="/what-colleges-give-free-laptops.html">what colleges give free laptops</a>
+											<a class="badge badge-light" href="/what-college-do-i-want-to-go-to.html">what college do i want to go to</a>
+											<a class="badge badge-primary" href="/what-college-should-you-go-to-quiz.html">what college should you go to quiz</a>
+											<a class="badge badge-success" href="/what-chapter-gi-bill-am-i.html">what chapter gi bill am i</a>
+											<a class="badge badge-light" href="/what-college-do-you-have-to-go-to-be-a-vet.html">what college do you have to go to be a vet</a>
+											<a class="badge badge-secondary" href="/what-colleges-offer-free-laptops.html">what colleges offer free laptops</a>
+											<a class="badge badge-secondary" href="/what-college-should-i-go-to-to-become-a-zookeeper.html">what college should i go to to become a zookeeper</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the right site.  Our website gives you hints for seeing the highest quality video and image content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this movie for you to see.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/1208472054/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="Who Is Trump S New Chief Of Staff Mark Meadows">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/1208472054/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vkcyObvOdrtGdqhFro5HVxiOhVGviFVs7w';" alt="Who Is Trump S New Chief Of Staff Mark Meadows">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Is Trump S New Chief Of Staff Mark Meadows</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F43727345%2F960x0.jpg%3Ffit%3Dscale" data-lightbox="roadtrip" data-title="Trump S Leaner White House 2019 Payroll Has Already Saved Taxpayers 20 Million">
+											<img class="card-img v-image ads-img " src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F43727345%2F960x0.jpg%3Ffit%3Dscale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbpOCnO50tDHXr_SqX5p4Bt9qp1LtjhRbrNg';" alt="Trump S Leaner White House 2019 Payroll Has Already Saved Taxpayers 20 Million">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump S Leaner White House 2019 Payroll Has Already Saved Taxpayers 20 Million</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/da/13/bada1390d8c10a32bde6825c76069799.jpg" data-lightbox="roadtrip" data-title="Pin On Politics In Amercia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/da/13/bada1390d8c10a32bde6825c76069799.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_3OEUVZ0ux5JZ3ttYdmG5CqYKyxMBredHA';" alt="Pin On Politics In Amercia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Politics In Amercia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img2.thelist.com/img/gallery/heres-how-much-kayleigh-mcenany-makes-as-white-house-press-secretary/the-exact-amount-of-money-kayleigh-mcenany-earns-for-her-role-as-white-house-press-secretary-1604490264.jpg" data-lightbox="roadtrip" data-title="White House Press Secretary Kayleigh Mcenany S Salary">
+											<img class="card-img v-image ads-img " src="https://img2.thelist.com/img/gallery/heres-how-much-kayleigh-mcenany-makes-as-white-house-press-secretary/the-exact-amount-of-money-kayleigh-mcenany-earns-for-her-role-as-white-house-press-secretary-1604490264.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6vCFc-66aTf11WlFSE-ObN86YaceXf4zyQ';" alt="White House Press Secretary Kayleigh Mcenany S Salary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">White House Press Secretary Kayleigh Mcenany S Salary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/9d/07/b29d07990f8b71c5f8b17a115e0594a0.jpg" data-lightbox="roadtrip" data-title="Pin On In The News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/9d/07/b29d07990f8b71c5f8b17a115e0594a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPSY3qqm8SkS3Lc8qNVwnSrKKTVK_xMqV0g';" alt="Pin On In The News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On In The News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/f/fc/Stephanie_Grisham.jpg" data-lightbox="roadtrip" data-title="Stephanie Grisham Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Stephanie_Grisham.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThltbXOmufAnXUfN2FPc4BOOwM1jG_bYZyag';" alt="Stephanie Grisham Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stephanie Grisham Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/45/ae/99/45ae99e0f289d94ed79550ba93e008e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThltbXOmufAnXUfN2FPc4BOOwM1jG_bYZyag';" alt="Stephanie Grisham Wikipedia">
+										<div class="card-body">
+						<h3 class="h5"><b>It covers the costs of winding down the outgoing administration and briefing the incoming administration.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does the presidents chief of staff get paid</strong>. 
+								
+																	The range of White House staff salaries is wide. 
+																	Twenty-one White House employees tied for. 
+																	Chief of staff - 183000. 
+																	John Czwartacki is the highest-paid staffer in the White House out-earning even his boss the chief of staff Mick Mulvaney. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Why does he make so much. 
+																	Staff assistants typically make the lowest amount of money at 43600 per year although Trumps deputy chief of staff for policy coordination. 
+																	The White House has released its annual salary data listing the earnings of each of President Trumps current staff members as of June 29 2019. 
+																	Well hes actually on detail from the Consumer Financial Protection Bureau. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its here that the vice presidents chief of staff national security adviser legal advisers and speechwriters work to carry out a presidency in miniature. 
+																	Thats more than most of the staff members whose salaries are capped at 183000. 
+																	The White House Chief of Staff is an Assistant to the President of the United States. 
+																	The White House chief of staff position is the successor to the earlier role of the Secretary to the President of the United StatesThe role was formalized as the assistant to the president in 1946 and acquired its current title in 1961. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The average Chief of Staff salary in the United States is 216769 as of December 28 2020 but the range typically falls between 177528 and 268098. 
+																	White House aide Robert Blair and Chief of Staff Mick Mulvaney in 2019. 
+																	The Senate furnishes the vice president with a staff of around 40 aides but the most trusted staff works out of the vice presidents office in the Executive Building. 
+																	Other top staffers like the senior advisor for policy Stephen Miller former White House press secretary and present chief of staff to first lady Melania Trump and her chief spokeswoman Stephanie Grisham and former campaign spokeswoman and former White House communications director and current counselor to the president Hope Hicks all draw salaries of 183000 each. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Chief of Staff oversees the Executive Office of the President EOP of the United States. 
+																	Jonathon Ernst Reuters. 
+																	However with the executive level pay freeze on political appointments the pay reverted back to the 2013 pay of 199700 effective January 26 2014. 
+																	On Friday the White House released its annual salary data listing the earnings of each of President Trumps current staff members as of June 29 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Assistant to the president and senior advisor to the president for policy - 183000. 
+																	John Czwartacki is the highest-paid member of the White House staff earning 239595 per year. 
+																	This year the highest-paid White House employees. 
+																	At the beginning of 2014 the salary for a Level 1 executive was 201700 a year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The aggregate salary for the staff is capped at 150000 a year for the first 30 months and 96000 a year afterward. 
+																	How much does a Chief of Staff make in the United States. 
+																	This office was created in 1939 by President Franklin D. 
+																	The chief of staff is a political appointee of the president of the United. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As the former chief communications officer at the Consumer Financial. 
+																	Roosevelt and is responsible for a variety of critical functions in support of. 
+																	They receive funds for office space and office staff. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/lg/public/2020/05/08/white-house-press-secretary-kayleigh-mcenany-says-theres.jpg" data-lightbox="roadtrip" data-title="Kayleigh Mcenany Salary Here S Exactly How Much Trump S Press Secretary Makes">
+											<img class="card-img v-image ads-img " src="https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/lg/public/2020/05/08/white-house-press-secretary-kayleigh-mcenany-says-theres.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHdtxrHT0nbtqtNcuIv_vtx2-t5ZpDD9IfOg';" alt="Kayleigh Mcenany Salary Here S Exactly How Much Trump S Press Secretary Makes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kayleigh Mcenany Salary Here S Exactly How Much Trump S Press Secretary Makes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/ae/99/45ae99e0f289d94ed79550ba93e008e3.jpg" data-lightbox="roadtrip" data-title="John Kelly Quickly Moves To Impose Military Discipline On White House Chief Of Staff Trump New Soldier Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/ae/99/45ae99e0f289d94ed79550ba93e008e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8_sZ2tQmX_PTjT3e026dWiBaie7F4xaIcmA';" alt="John Kelly Quickly Moves To Impose Military Discipline On White House Chief Of Staff Trump New Soldier Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">John Kelly Quickly Moves To Impose Military Discipline On White House Chief Of Staff Trump New Soldier Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mediaproxy.salon.com/width/1200/https://media.salon.com/2020/10/karine-jean-pierre-kamala-harris-1023201.jpg" data-lightbox="roadtrip" data-title="Kamala Harris Chief Of Staff On How Joe Biden Can Change The Direction Of This Country Salon Com">
+											<img class="card-img v-image ads-img " src="https://mediaproxy.salon.com/width/1200/https://media.salon.com/2020/10/karine-jean-pierre-kamala-harris-1023201.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQplpp-YQ7SYWyzF4sAs7WINw5rywYaD7X9WA';" alt="Kamala Harris Chief Of Staff On How Joe Biden Can Change The Direction Of This Country Salon Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kamala Harris Chief Of Staff On How Joe Biden Can Change The Direction Of This Country Salon Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/08/9e/ec089e04afe56463799323a11f80983d.jpg" data-lightbox="roadtrip" data-title="In A Private Meeting With Jared Kushner Vice President Mike Pence And Chief Of Staff Mick Mulvaney Sen Chuck Schumer Made It Jared Kushner Mike Pence Jared">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/08/9e/ec089e04afe56463799323a11f80983d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJbNq_YullsA01V-Mh4H4OTtJ3QpLB54_LoQ';" alt="In A Private Meeting With Jared Kushner Vice President Mike Pence And Chief Of Staff Mick Mulvaney Sen Chuck Schumer Made It Jared Kushner Mike Pence Jared">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In A Private Meeting With Jared Kushner Vice President Mike Pence And Chief Of Staff Mick Mulvaney Sen Chuck Schumer Made It Jared Kushner Mike Pence Jared</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d9/03/05/d903051d7a80c8a7445fb1a9088d9892.jpg" data-lightbox="roadtrip" data-title="Pin On World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d9/03/05/d903051d7a80c8a7445fb1a9088d9892.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkzWwlvpra_DmXLKsr335pIW2WDUa6AKAP6Q';" alt="Pin On World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/presto/2020/08/10/USAT/43c0f30c-2156-4ec0-8f4e-1ab9a70b51ea-VPC_COVID_STIMULUS_EXEC_ORDER_EXPLAINER_WIDE_AP_2.jpg" data-lightbox="roadtrip" data-title="What Trump S Executive Order Deferring Payroll Taxes Means For Workers">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/presto/2020/08/10/USAT/43c0f30c-2156-4ec0-8f4e-1ab9a70b51ea-VPC_COVID_STIMULUS_EXEC_ORDER_EXPLAINER_WIDE_AP_2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcjXfQwtxa1qhgSpfpOoOb5JpqKm8Ujb0TyQ';" alt="What Trump S Executive Order Deferring Payroll Taxes Means For Workers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Trump S Executive Order Deferring Payroll Taxes Means For Workers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/60/4e/d7604ea9f892903824fb9651a94a179f.jpg" data-lightbox="roadtrip" data-title="James Comey John Kelly Called Trump Dishonorable For Firing Me James Comey The Daily Beast Trump">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/60/4e/d7604ea9f892903824fb9651a94a179f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiYQDhexPdOED8TuQkeiysY3P30-4l-TeY-g';" alt="James Comey John Kelly Called Trump Dishonorable For Firing Me James Comey The Daily Beast Trump">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">James Comey John Kelly Called Trump Dishonorable For Firing Me James Comey The Daily Beast Trump</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/2f/c6/c02fc660a0a36b2a70691fc2f7b76c3e.jpg" data-lightbox="roadtrip" data-title="Pin On What Is Trump Doing Now">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/2f/c6/c02fc660a0a36b2a70691fc2f7b76c3e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfK3rYsgdMLcBQTTZXyCkVmDpQdFWaSDgX7w';" alt="Pin On What Is Trump Doing Now">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On What Is Trump Doing Now</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106661082-15972706671597270664-10841223130-1080pnbcnews.jpg?v=1597270666&amp;w=1910&amp;h=1000" data-lightbox="roadtrip" data-title="The Payroll Tax Holiday Takes Effect Sept 1 What It Means For Your Pay">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106661082-15972706671597270664-10841223130-1080pnbcnews.jpg?v=1597270666&amp;w=1910&amp;h=1000" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs02ED2ULbV-o_GZov6_jwatWdPHDx9sTomQ';" alt="The Payroll Tax Holiday Takes Effect Sept 1 What It Means For Your Pay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Payroll Tax Holiday Takes Effect Sept 1 What It Means For Your Pay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/28/4b/12284b192acf7413bb2653d0ea65eb27.jpg" data-lightbox="roadtrip" data-title="President Donald Trump Siste Nytt Nrk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/28/4b/12284b192acf7413bb2653d0ea65eb27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkMN7K87C-cBDb7xHigoFlm1AHbRIKBNl_ww';" alt="President Donald Trump Siste Nytt Nrk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">President Donald Trump Siste Nytt Nrk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/6d/e6/156de632cc3c5129e1d708c7a8911798.jpg" data-lightbox="roadtrip" data-title="Pin Di Tony Khamis Su Us News Nel 2020 Dieta">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/6d/e6/156de632cc3c5129e1d708c7a8911798.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2D7yZcW5V61whfZj9P9kI_aAGsQNYg2RlnA';" alt="Pin Di Tony Khamis Su Us News Nel 2020 Dieta">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Tony Khamis Su Us News Nel 2020 Dieta</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.insider.com/5a66019c00d0ef29038b45d0?width=700" data-lightbox="roadtrip" data-title="How Stephen Miller Became Trump S Trusted Adviser Bio Photos Career Business Insider">
+											<img class="card-img v-image ads-img " src="https://i.insider.com/5a66019c00d0ef29038b45d0?width=700" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWRHHKcRgKIPCtCf7b9Qs4HDk_WhJib-On-g';" alt="How Stephen Miller Became Trump S Trusted Adviser Bio Photos Career Business Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Stephen Miller Became Trump S Trusted Adviser Bio Photos Career Business Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/e3/40/bae340a94b39d0adadfb064fa6db397f.jpg" data-lightbox="roadtrip" data-title="Pin On Zievqu Qeedso">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/e3/40/bae340a94b39d0adadfb064fa6db397f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIS9xVD0QLNl8HvNGbN4aMqlPSfOkwcdnKNA';" alt="Pin On Zievqu Qeedso">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Zievqu Qeedso</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b4/97/05/b497059fea9c12e2d27a39bf7bc22313.jpg" data-lightbox="roadtrip" data-title="Pin On Wnd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b4/97/05/b497059fea9c12e2d27a39bf7bc22313.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7JBc-zxBwrzG6t71Ev_aMu4AiKZj94ALV7g';" alt="Pin On Wnd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Wnd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Mark_Meadows_%2839818366944%29.jpg/220px-Mark_Meadows_%2839818366944%29.jpg" data-lightbox="roadtrip" data-title="Mark Meadows North Carolina Politician Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Mark_Meadows_%2839818366944%29.jpg/220px-Mark_Meadows_%2839818366944%29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlQxgPYLGoCQrTCvvZ3fRyuUohzx0J8mooMA';" alt="Mark Meadows North Carolina Politician Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mark Meadows North Carolina Politician Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-unemployability-pay-2020.html">Va Unemployability Pay 2020</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-requirements.html">Va Unemployability Requirements</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-worker.html">Va Unemployability Worker</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-benefits.html">Va Unemployability Benefits</a></li>
+													<li class="list-group-item"><a href="/va-ui-claim.html">Va Ui Claim</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-employer-form.html">Va Unemployability Employer Form</a></li>
+													<li class="list-group-item"><a href="/va-transfer-post-911-gi-bill.html">Va Transfer Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-verification-form.html">Va Unemployability Verification Form</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-reddit.html">Va Unemployability Reddit</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-definition.html">Va Unemployability Definition</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-form-for-employer.html">Va Unemployability Form For Employer</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-back-pay.html">Va Unemployability Back Pay</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-reviews.html">Va Unemployability Reviews</a></li>
+													<li class="list-group-item"><a href="/va-transfer-of-education-benefits.html">Va Transfer Of Education Benefits</a></li>
+													<li class="list-group-item"><a href="/va-ui-customer-service-number.html">Va Ui Customer Service Number</a></li>
+													<li class="list-group-item"><a href="/va-tuition-assistance-for-spouse.html">Va Tuition Assistance For Spouse</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-hearing-loss.html">Va Unemployability Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-tuition-assistance-top-up.html">Va Tuition Assistance Top Up</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-approval-rate.html">Va Unemployability Approval Rate</a></li>
+													<li class="list-group-item"><a href="/va-travel-pay-2020.html">Va Travel Pay 2020</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

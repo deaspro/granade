@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Army National Guards Defense Mission - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Army National Guards Defense Mission",
+  "datePublished": "2021-02-14",
+  "image": "https://cdn.dvidshub.net/media/thumbs/photos/2010/6385798/1000x714_q95.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+army+national+guards+defense+mission",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Army National Guards Defense Mission</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Army and the DC. The Army National Guard is a partner with the Active Army and the Army Reserves in fulfilling the countrys military needs. Army Soldiers in Alaska California and Colorado operate a sophisticated fire control system that can on-order launch ground-based interceptor missiles to destroy incoming warheads in outer space. <br>				
+			</p>
+										<a class="badge badge-info" href="/veterans-benefits-guide-cost.html">veterans benefits guide cost</a>
+											<a class="badge badge-light" href="/veterans-benefits-pay-scale-2020.html">veterans benefits pay scale 2020</a>
+											<a class="badge badge-success" href="/veterans-benefits-spouse-death.html">veterans benefits spouse death</a>
+											<a class="badge badge-secondary" href="/veterans-benefits-jacksonville-fl.html">veterans benefits jacksonville fl</a>
+											<a class="badge badge-dark" href="/veterans-benefits-tennessee.html">veterans benefits tennessee</a>
+											<a class="badge badge-danger" href="/veterans-benefits-unemployability.html">veterans benefits unemployability</a>
+											<a class="badge badge-info" href="/veterans-benefits-organizations.html">veterans benefits organizations</a>
+											<a class="badge badge-primary" href="/veterans-benefits-kansas.html">veterans benefits kansas</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to pay a visit to the ideal site.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this video for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Jun/02/2002309571/-1/-1/0/200530-O-ZZ999-001H.JPG" data-lightbox="roadtrip" data-title="Dod Official National Guard Is First Choice In Response To Civil Unrest U S Department Of Defense Defense Department News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Jun/02/2002309571/-1/-1/0/200530-O-ZZ999-001H.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-DybbyZCa_j_wryMnEPyoopW9haXUjwIpLw';" alt="Dod Official National Guard Is First Choice In Response To Civil Unrest U S Department Of Defense Defense Department News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Official National Guard Is First Choice In Response To Civil Unrest U S Department Of Defense Defense Department News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.623092.1585051269!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Nearly 1 5 Billion For National Guard Funding In Coronavirus Relief Bill U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.623092.1585051269!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJrTJtE-g_EV-Tdl4MVUcJskB5pDrwBqzLeQ';" alt="Nearly 1 5 Billion For National Guard Funding In Coronavirus Relief Bill U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nearly 1 5 Billion For National Guard Funding In Coronavirus Relief Bill U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fl.ng.mil/about/PublishingImages/Pages/Florida-Army-National-Guard/12794420_10153399818767227_5764935727107156905_n.jpg" data-lightbox="roadtrip" data-title="Flarng The Official Home Page Of The Florida National Guard">
+											<img class="card-img v-image ads-img " src="https://fl.ng.mil/about/PublishingImages/Pages/Florida-Army-National-Guard/12794420_10153399818767227_5764935727107156905_n.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG1-CG__tueUJk5pQl1WlPngcFQwNbaJKr7A';" alt="Flarng The Official Home Page Of The Florida National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flarng The Official Home Page Of The Florida National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Jul/12/2002156679/-1/-1/0/180718-Z-NI303-0607A.JPG" data-lightbox="roadtrip" data-title="Night Mission">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Jul/12/2002156679/-1/-1/0/180718-Z-NI303-0607A.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJMk7RfNg6wMMJmSXZOeIxekVgg5SJRe2LWA';" alt="Night Mission">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Night Mission</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/03/27/6075614f/original.jpg" data-lightbox="roadtrip" data-title="Ny National Guard Doubles Down On Covid 19 Response Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/03/27/6075614f/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkWfmNPxg-awwdhGkfiUpsxXuay0Xgg59UNg';" alt="Ny National Guard Doubles Down On Covid 19 Response Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ny National Guard Doubles Down On Covid 19 Response Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Oct/14/2002516569/600/400/0/200827-Z-A3538-1003.JPG" data-lightbox="roadtrip" data-title="Recruits Become Rangers In Army Guard Training Program National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Oct/14/2002516569/600/400/0/200827-Z-A3538-1003.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB7Hpl1zrMSmgKEnnOQJ1K3A_9iGWLGoiZ9A';" alt="Recruits Become Rangers In Army Guard Training Program National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Recruits Become Rangers In Army Guard Training Program National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://fl.ng.mil/news/PublishingImages/Pages/default/slider_01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB7Hpl1zrMSmgKEnnOQJ1K3A_9iGWLGoiZ9A';" alt="Recruits Become Rangers In Army Guard Training Program National Guard Guard News The National Guard">
+										<div class="card-body">
+						<h3 class="h5"><b>Intelligence official say.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the army national guards defense mission</strong>. 
+								
+																	That mission is to maintain properly trained and equipped units available for prompt mobilization for war national emergency or as otherwise needed. 
+																	If this mission becomes enduring the National Guard may pick up the entire mission opined Hara after speaking at a town hall type meeting with members of the 1-487th. 
+																	Zach Sheely 100th Missile Defense Brigade Public Affairs Office December 10 2020. 
+																	Army official and a senior US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Guard has provided the air defense artillery units the manpower for the mission to safeguard Washington under the command of the active Army since the terrorists attacked on Sept. 
+																	Meade Md Feb. 
+																	WASHINGTON -- The Army National Guard is adapting manning and force structure to the National Defense Strategy the head of the Army National Guard saidArmy Lt. 
+																	Founded in 1636 as a citizen force the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That greater reliance on the National Guard for the C-RAM mission seems even more likely to Hara after having the opportunity to visit Fort Sill and observe the Soldiers of the 487th in action. 
+																	- Two Army National Guard units will soon be using a combination of air defense systems to guard the National Capital Region and the nations leaders. 
+																	Army Guard Improves Readiness Supports National Defense Strategy. 
+																	To me its very simple said Army Maj. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As of 2017 the mission of the National Guard Bureau is to participate with the Army and Air Force staffs in programs pertaining to the National Guard. 
+																	The mission of the Colorado Army National Guards 100th Missile Defense Brigade is unique but for some brigade Soldiers also fairly straightforward. 
+																	The Federal mission assigned to the National Guard is. 
+																	National Guard were coordinating with the federal Capitol Police and the local DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Law enforcement will take the lead and be the force of choice should it be necessary Acting Army Secretary John E. 
+																	To provide properly trained and equipped units for prompt mobilization for war National Emergency or as otherwise needed The state mission assigned to the National Guard is To provide trained and disciplined forces for domestic emergencies or as otherwise provided by state law. 
+																	The Army National Guards state mission is perhaps the most visible and well known. 
+																	Army National Guard members are being removed from the security mission to secure Joe Bidens presidential inauguration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A limited number of US. 
+																	The 780th Military Intelligence Brigade Cyber hosted a ceremony between two Army National Guard battalions to transfer the Task Force Echo cyberspace mission at Fort George G. 
+																	The Army National Guard is adapting manning and force structure to the National Defense Strategy the head of the Army National. 
+																	Many National Guard members who supported COVID-19 response efforts in 2020 spent much of the year conducting tests sanitizing facilities providing logistical support and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jason Brewer the chief of missile defense operations with the brigade. 
+																	Metropolitan Police Department to assist with an immediate response. 
+																	Nearly everyone has seen or heard of Guard units responding to battle fires or helping communities deal with floods tornadoes hurricanes snowstorms or other emergency situations. 
+																	National Guard missile defenders claim top honors at Air Defense Artillery Basic Officer Leader Course. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard is a ready reserve group of 450000 men and women voluntarily serving in all 50 states and four US. 
+																	The National Guard will be a force of last resort. 
+																	Now it is charge of the entire operation. 
+																	Whitely said referring to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That mission is the federally mandated defense of the United States homeland from intercontinental ballistic missile attack. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2013/Nov/29/2000755930/600/400/0/210812-A-YG824-063.JPG" data-lightbox="roadtrip" data-title="Tennessee Army National Guard Soldiers Prepare For Mission Training Jordanian Soldiers National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2013/Nov/29/2000755930/600/400/0/210812-A-YG824-063.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSFt_6OnWT4-cWCkRMNDE8YFoT4G_oYzVwgQ';" alt="Tennessee Army National Guard Soldiers Prepare For Mission Training Jordanian Soldiers National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tennessee Army National Guard Soldiers Prepare For Mission Training Jordanian Soldiers National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/05/06/7c401f99/original.jpg" data-lightbox="roadtrip" data-title="Hokanson Nominated As Next National Guard Bureau Chief Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/05/06/7c401f99/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7VtPZWL8p1c_VaZB5LxlxQ2huu0zcYLs5Sw';" alt="Hokanson Nominated As Next National Guard Bureau Chief Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hokanson Nominated As Next National Guard Bureau Chief Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Dec/27/2002076070/600/400/0/181227-A-YG824-001.JPG" data-lightbox="roadtrip" data-title="Guard Members Reflect On Busy 2018 And Look Ahead To 2019 National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Dec/27/2002076070/600/400/0/181227-A-YG824-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbHuerOT4TUXUjC5W2nm5fMit7QHL6uA1YWw';" alt="Guard Members Reflect On Busy 2018 And Look Ahead To 2019 National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guard Members Reflect On Busy 2018 And Look Ahead To 2019 National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fl.ng.mil/news/PublishingImages/Pages/default/slider_01.jpg" data-lightbox="roadtrip" data-title="Florida National Guard Official Website Of The Florida National Guard">
+											<img class="card-img v-image ads-img " src="https://fl.ng.mil/news/PublishingImages/Pages/default/slider_01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNH0YKa7yY9tb1TaKkUD2DvSaISwhqM9Hcgg';" alt="Florida National Guard Official Website Of The Florida National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Guard Official Website Of The Florida National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/photos/1908/5669947/1000x623_q95.jpg" data-lightbox="roadtrip" data-title="Dvids News Hawaii Army National Guard Unit Makes History With C Ram Mission">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/photos/1908/5669947/1000x623_q95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyv06cnuSoxJw4KY9wOp_GSnez4z6HjjqqVQ';" alt="Dvids News Hawaii Army National Guard Unit Makes History With C Ram Mission">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dvids News Hawaii Army National Guard Unit Makes History With C Ram Mission</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/06/26/cb05f22c/size0-full.jpg" data-lightbox="roadtrip" data-title="New York National Guard Restructures Covid 19 Response Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/06/26/cb05f22c/size0-full.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmMAHaLhVos8WLFlPs9J5ZRfJ99LlPFd2bA';" alt="New York National Guard Restructures Covid 19 Response Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New York National Guard Restructures Covid 19 Response Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/photos/2010/6385798/1000x714_q95.jpg" data-lightbox="roadtrip" data-title="Dvids News New Leadership For The Georgia Army National Guard">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/photos/2010/6385798/1000x714_q95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOM8s0lDXeUlzGzt-GNxfA2zZsLbWJmFdhyg';" alt="Dvids News New Leadership For The Georgia Army National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dvids News New Leadership For The Georgia Army National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2017/Mar/07/2001708207/825/780/0/160301-Z-A3538-001.JPG" data-lightbox="roadtrip" data-title="New York Guard Seeks Female Soldiers Ready To Become Infantrymen U S Department Of Defense Defense Department News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2017/Mar/07/2001708207/825/780/0/160301-Z-A3538-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eyz4Li_MP2fmP2LV8SyTerKe7pAXbckHbw';" alt="New York Guard Seeks Female Soldiers Ready To Become Infantrymen U S Department Of Defense Defense Department News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New York Guard Seeks Female Soldiers Ready To Become Infantrymen U S Department Of Defense Defense Department News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Feb/26/2001882198/600/400/0/180226-A-YG824-003.JPG" data-lightbox="roadtrip" data-title="Readiness Enhanced With Army National Guard 4 0 National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Feb/26/2001882198/600/400/0/180226-A-YG824-003.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9EMzL3mfpO7cTBttswW3kpAVqwSU6aoBZQ';" alt="Readiness Enhanced With Army National Guard 4 0 National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Readiness Enhanced With Army National Guard 4 0 National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/12/02/cdc5fa14/size0-full.jpg" data-lightbox="roadtrip" data-title="National Guard Leader Highlights Missions During Unprecedented Year Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/12/02/cdc5fa14/size0-full.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5U-fSvIPEGuw8fd7RERiiNmpETKe0rtPbQ';" alt="National Guard Leader Highlights Missions During Unprecedented Year Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Leader Highlights Missions During Unprecedented Year Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2013/Sep/19/2000712138/600/400/0/010812-A-YG824-004.JPG" data-lightbox="roadtrip" data-title="Tanzania Texas National Guard Members Mentor Tanzanian Soldiers National Guard Article View">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2013/Sep/19/2000712138/600/400/0/010812-A-YG824-004.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0kvti8htLkNl5ptfK7I9IqQJTHvdnmHpww';" alt="Tanzania Texas National Guard Members Mentor Tanzanian Soldiers National Guard Article View">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tanzania Texas National Guard Members Mentor Tanzanian Soldiers National Guard Article View</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/thumbs/photos/2012/6460568/1000x667_q95.jpg" data-lightbox="roadtrip" data-title="Dvids News National Guard Supports Vaccination Efforts For Michigan">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/thumbs/photos/2012/6460568/1000x667_q95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQbBD-kcpQeuUKc_5jzebLJCPJb1Z_IHEnWg';" alt="Dvids News National Guard Supports Vaccination Efforts For Michigan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dvids News National Guard Supports Vaccination Efforts For Michigan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Apr/05/2002275047/600/400/0/200405-Z-CW321-038.JPG" data-lightbox="roadtrip" data-title="Texas Guard Mobilizes To Respond To Covid 19 National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Apr/05/2002275047/600/400/0/200405-Z-CW321-038.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR1-WU8xgmhmmtGMz4LrtTMr1x8v5wsPRptg';" alt="Texas Guard Mobilizes To Respond To Covid 19 National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Guard Mobilizes To Respond To Covid 19 National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-the-dependency-and-indemnity-compensation.html">What Is The Dependency And Indemnity Compensation</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-comparison-tool.html">What Is The Gi Bill Comparison Tool</a></li>
+													<li class="list-group-item"><a href="/what-is-the-disability-rating-for-back-pain.html">What Is The Disability Rating For Back Pain</a></li>
+													<li class="list-group-item"><a href="/what-is-the-federal-tax-on-military-retirement.html">What Is The Federal Tax On Military Retirement</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-kicker.html">What Is The Gi Bill Kicker</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-va-compensation-and-pension.html">What Is The Difference Between Va Compensation And Pension</a></li>
+													<li class="list-group-item"><a href="/what-is-the-dod-budget-for-2020.html">What Is The Dod Budget For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-narcolepsy-and-idiopathic-hypersomnia.html">What Is The Difference Between Narcolepsy And Idiopathic Hypersomnia</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-montgomery-gi-bill-and-post-911-gi-bill.html">What Is The Difference Between Montgomery Gi Bill And Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-the-federal-government-cost-of-living-increase-for-2021.html">What Is The Federal Government Cost Of Living Increase For 2021</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-and-how-does-it-work.html">What Is The Gi Bill And How Does It Work</a></li>
+													<li class="list-group-item"><a href="/what-is-the-futa-wage-base-for-2020.html">What Is The Futa Wage Base For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-college-and-elite-gymnastics.html">What Is The Difference Between College And Elite Gymnastics</a></li>
+													<li class="list-group-item"><a href="/what-is-the-expected-cola-for-2021.html">What Is The Expected Cola For 2021</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-how-did-it-help-returning-veterans.html">What Is The Gi Bill How Did It Help Returning Veterans</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-gi-bill-and-post-911.html">What Is The Difference Between Gi Bill And Post 911</a></li>
+													<li class="list-group-item"><a href="/what-is-the-federal-military-budget.html">What Is The Federal Military Budget</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-housing-allowance.html">What Is The Gi Bill Housing Allowance</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-t-test-and-p-value.html">What Is The Difference Between T Test And P Value</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-for-dependents.html">What Is The Gi Bill For Dependents</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

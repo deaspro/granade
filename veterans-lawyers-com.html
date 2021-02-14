@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Lawyers Com - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Lawyers Com",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/cd/ef/fc/cdeffc512e444082b533125d18d3abef.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+lawyers+com",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Lawyers Com</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Find jobs and write a review for Lieberman Mark. Not all requests are granted since customers have a legitimate right to privacy guaranteed by EU law GDPR. Lieberman and Mark - Lawyers for Veterans Based in Washington DC Lieberman and Mark specializing in Veterans Claims Disability Compensation Medical Care and other benefits to United States Veterans. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/va-rating-per-condition.html">va rating per condition</a>
+											<a class="badge badge-primary" href="/va-rating-schedule-for-anxiety-disorder.html">va rating schedule for anxiety disorder</a>
+											<a class="badge badge-dark" href="/va-rating-percentage.html">va rating percentage</a>
+											<a class="badge badge-dark" href="/va-rating-ptsd-symptoms.html">va rating ptsd symptoms</a>
+											<a class="badge badge-primary" href="/va-rating-ptsd-cornell.html">va rating ptsd cornell</a>
+											<a class="badge badge-dark" href="/va-rating-schedule-eyes.html">va rating schedule eyes</a>
+											<a class="badge badge-success" href="/va-rating-schedule-for-degenerative-disc-disease.html">va rating schedule for degenerative disc disease</a>
+											<a class="badge badge-warning" href="/va-rating-schedule-for-eyes.html">va rating schedule for eyes</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to pay a visit to the right blog.  Our site gives you hints for viewing the highest quality video and picture content, search and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/40/ab/ab40aba0d6a24d83f23d38d7eb2c81aa.jpg" data-lightbox="roadtrip" data-title="Should You Hire A Lawyer To File A Va Disability Claim Va Disability Veterinary Services Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/40/ab/ab40aba0d6a24d83f23d38d7eb2c81aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXGCOKI4uJgwOhBhODPanNbT4m1KUq-b-yg';" alt="Should You Hire A Lawyer To File A Va Disability Claim Va Disability Veterinary Services Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should You Hire A Lawyer To File A Va Disability Claim Va Disability Veterinary Services Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/13/92/17139260df2083349ba66b931148bfcc.png" data-lightbox="roadtrip" data-title="Pin On Law Books And Study Aids For Law Studends Lawyers Jurists Or Judges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/13/92/17139260df2083349ba66b931148bfcc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8enQYwEm72zPVORzhd23D7oS7rwOEORDLpA';" alt="Pin On Law Books And Study Aids For Law Studends Lawyers Jurists Or Judges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Law Books And Study Aids For Law Studends Lawyers Jurists Or Judges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/78/ee/1d78ee0d10dad6b700a041f18a72764e.jpg" data-lightbox="roadtrip" data-title="Pin On Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/78/ee/1d78ee0d10dad6b700a041f18a72764e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdTHJL07at_ouzfngdQHL1BWcfQN7VjsVtkQ';" alt="Pin On Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c4/b6/ec/c4b6ec7a363cd0ffc6dbcad3b42652c0.jpg" data-lightbox="roadtrip" data-title="Veterans Day Background Thank You Vector Illustration Affiliate Day Veterans Background Illustration Ve Illustration Vector Illustration Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c4/b6/ec/c4b6ec7a363cd0ffc6dbcad3b42652c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrHH1Xawd69eMWl7XBgMsu8gumrSKYt9Av4w';" alt="Veterans Day Background Thank You Vector Illustration Affiliate Day Veterans Background Illustration Ve Illustration Vector Illustration Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day Background Thank You Vector Illustration Affiliate Day Veterans Background Illustration Ve Illustration Vector Illustration Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4c/91/03/4c91031e497e58d7d99c1c0fc2194712.jpg" data-lightbox="roadtrip" data-title="Military And Veteran Benefits Can Add A Level Of Complication To Your Texas Divorce Because Special Rules Apply To Veterans Benefits Veteran Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4c/91/03/4c91031e497e58d7d99c1c0fc2194712.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy1_fbdCbwLIgWYSUMlOPLZnex9sxrRnl3WA';" alt="Military And Veteran Benefits Can Add A Level Of Complication To Your Texas Divorce Because Special Rules Apply To Veterans Benefits Veteran Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military And Veteran Benefits Can Add A Level Of Complication To Your Texas Divorce Because Special Rules Apply To Veterans Benefits Veteran Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/2b/be/b92bbef9d8796966f08abe23f31f44a9.jpg" data-lightbox="roadtrip" data-title="S C Lawyers Donate Time To Veterans Veteran Donate Lawyer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/2b/be/b92bbef9d8796966f08abe23f31f44a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT90lbGM5n7PitZS7O0-FCBMYF0mRBgw8Gnhw';" alt="S C Lawyers Donate Time To Veterans Veteran Donate Lawyer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">S C Lawyers Donate Time To Veterans Veteran Donate Lawyer</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/16/3f/0d/163f0d60899d7d29ff174acfece33788.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT90lbGM5n7PitZS7O0-FCBMYF0mRBgw8Gnhw';" alt="S C Lawyers Donate Time To Veterans Veteran Donate Lawyer">
+										<div class="card-body">
+						<h3 class="h5"><b>650 618 3949 AU.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans lawyers com</strong>. 
+								
+																	Use our directory to quickly find local attorneys and law firm ratings in your area. 
+																	These web site links are listed as a convenience to our visitors. 
+																	BuiltWith Pty Ltd Level 35 One International Towers 100 Barangaroo Avenue Sydney NSW 2000 Australia. 
+																	About Us Lieberman Law Office PC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Search for other Physicians Surgeons on The Real Yellow Pages. 
+																	How long does a va appeal take. 
+																	LIEBERMAN and MARK Lawyers for Veterans. 
+																	If you use these links we take no responsibility and give no guarantees warranties or representations implied or otherwise for the content or accuracy of these third-party sites. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The WHOIS database. 
+																	Lieberman law office newton. 
+																	With over 10 years of experience and thousands of successful disability claims Vets Lawyers is a name you can trust. 
+																	Read about the salary benefits practice areas summer associate program and hiring criteria of Lieberman Mark. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VETERANSLAWYERSCOM - Site Location. 
+																	The Veterans Law Group VLG is a law firm which has successfully represented disabled veterans and their dependents for more than sixteen years. 
+																	Veterans are those in the community who deserve the most honor and respect. 
+																	Lieberman Mark has represented thousands of veterans through every step of the VA disability claims appeal process at the VA Regional Offices the Board of Veterans Appeals and the United States Court of Appeals for Veterans Claims. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get reviews hours directions coupons and more for Lieberman Mark. 
+																	Find the best veterans benefits lawyer near you today. 
+																	Whats in the WHOIS. 
+																	Unmet Needs November Fundraising Event for Burger King Franchise Owners During November Military Families Month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Search for other Attorneys on The Real Yellow Pages. 
+																	The claims process can be bureaucratic and frustrating. 
+																	They have spent much of their lives protecting and serving the country and should be honored as a result. 
+																	If whois information is not being shown and you believe that you have a legitimate interest to access that infromation you may contact Epik to request access. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Top Keywords Search Traffic Share of Voice mark lieberman attorney. 
+																	Review the law firm profile of Lieberman Mark. 
+																	Use our free directory to instantly connect with verified Veterans Disability attorneys. 
+																	The Veterans Law Group. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Compare the best Veterans Disability lawyers near Everett WA today. 
+																	Kathy Robin Lieberman Addresses Click Here For Kathy Robin Liebermans Current Address Po Box 131 Goleta CA 93116-0131 2201 W Broadway Apt B305 Anaheim CA 92804-1304 28749 Cedarbluff Dr Rancho Palos Verdes CA 90275-3115 7455 Conestoga Way San Diego CA 92120-1314 165 Cedar Ln Santa Barbara CA 93108-1729 3054 Paseo Del Descanso Santa Barbara CA 93105-2808 642 Island View Dr Santa. 
+																	From the initial application through any necessary appeals our team will be with you every step of the way. 
+																	Get reviews hours directions coupons and more for Lieberman Mark LLP. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Lieberman Law Office team has extensive knowledge and expertise relating to the real estate market in New England and beyondThe principal attorney at the firm Gregg Lieberman has been actively involved in virtually all aspects of the Massachusetts real estate market for over a decade. 
+																	Email protected LIEBERMAN and MARK Lawyers for Veterans Lieberman Mark has represented thousands of veterans through every step of the VAdisability claims appeal process at the VA Regional Offices the Board of Veterans Appeals and the United States Court of Appeals for Veterans Claims. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/ef/fc/cdeffc512e444082b533125d18d3abef.jpg" data-lightbox="roadtrip" data-title="Are You A Veteran In Needs To Help With Disability Claim Veteran Veterans Benefits Estate Planning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/ef/fc/cdeffc512e444082b533125d18d3abef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMmLOFDCfEObEuQDCS8U8Abd-El6vTfakOAA';" alt="Are You A Veteran In Needs To Help With Disability Claim Veteran Veterans Benefits Estate Planning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You A Veteran In Needs To Help With Disability Claim Veteran Veterans Benefits Estate Planning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/15/34/8615343b3581f7a0932e7af78b99a229.jpg" data-lightbox="roadtrip" data-title="Veterans Law Center Of Los Angeles Help Lawyers That Help Veterans Find A Logo Attorneys That Represent Military Vetera Logo Design Contest Logo Design Logos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/15/34/8615343b3581f7a0932e7af78b99a229.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfp5p0zjGwpX8Qc33Zq_ifQAHs_rLtUWDkA';" alt="Veterans Law Center Of Los Angeles Help Lawyers That Help Veterans Find A Logo Attorneys That Represent Military Vetera Logo Design Contest Logo Design Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Law Center Of Los Angeles Help Lawyers That Help Veterans Find A Logo Attorneys That Represent Military Vetera Logo Design Contest Logo Design Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/3f/0d/163f0d60899d7d29ff174acfece33788.png" data-lightbox="roadtrip" data-title="Are You Looking For A Divorce Attorney But Do Not Know What To Ask Before Hiring One Assuming You Have Business Grants Business Questions Grants For Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/3f/0d/163f0d60899d7d29ff174acfece33788.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqPDSX55PgcsLmhEceuHbsc-joFukLq9TRQ';" alt="Are You Looking For A Divorce Attorney But Do Not Know What To Ask Before Hiring One Assuming You Have Business Grants Business Questions Grants For Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Looking For A Divorce Attorney But Do Not Know What To Ask Before Hiring One Assuming You Have Business Grants Business Questions Grants For Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/9d/44/7a9d4445051b8a01f9f4eb51628d7412.jpg" data-lightbox="roadtrip" data-title="Veterans Benefits Infographic Covering Common Military Injuries And Types Of Military Benefits Veteran Be Veterans Benefits Veterans United Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/9d/44/7a9d4445051b8a01f9f4eb51628d7412.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpHNv5rDrbXWsl_wC3xoIVfKXYyafljoJEtQ';" alt="Veterans Benefits Infographic Covering Common Military Injuries And Types Of Military Benefits Veteran Be Veterans Benefits Veterans United Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Benefits Infographic Covering Common Military Injuries And Types Of Military Benefits Veteran Be Veterans Benefits Veterans United Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/51/27/ff5127d431556862da5dcf7cffba4b65.png" data-lightbox="roadtrip" data-title="Afghanistan Vets Slam Canada S Military Over Failure To Award Service Medal Service Medals Personal Injury Lawyer Failure">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/51/27/ff5127d431556862da5dcf7cffba4b65.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7-FiWoEk9fgYHGYhABH-90FZL7Fcn-6QnA';" alt="Afghanistan Vets Slam Canada S Military Over Failure To Award Service Medal Service Medals Personal Injury Lawyer Failure">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afghanistan Vets Slam Canada S Military Over Failure To Award Service Medal Service Medals Personal Injury Lawyer Failure</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/f0/0a/c9/f00ac95f6ede421abf74d6c0a92c018c.jpg" data-lightbox="roadtrip" data-title="Va Disability Attorney Michigan Disability Lawyer Va Disability Social Security Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/f0/0a/c9/f00ac95f6ede421abf74d6c0a92c018c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIcTPAgwvuvielyJqxF9n3tb2jq9bh7zbzqg';" alt="Va Disability Attorney Michigan Disability Lawyer Va Disability Social Security Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Attorney Michigan Disability Lawyer Va Disability Social Security Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/84/98/2c8498a96a84c2bafc83663db5b9e415.png" data-lightbox="roadtrip" data-title="Veterans Orthopedic Disability Lawyer Orthopedic Disabilities Attorney For Veterans Legal Help For Veterans Disability Lawyer Help For Veterans Legal Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/84/98/2c8498a96a84c2bafc83663db5b9e415.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmY4W-dn7AQ1ELDWSWvpWJXo51NJpUmWllEw';" alt="Veterans Orthopedic Disability Lawyer Orthopedic Disabilities Attorney For Veterans Legal Help For Veterans Disability Lawyer Help For Veterans Legal Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Orthopedic Disability Lawyer Orthopedic Disabilities Attorney For Veterans Legal Help For Veterans Disability Lawyer Help For Veterans Legal Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/de/9c/ba/de9cbae4f62b74abf6f7b59d078c3c8f.jpg" data-lightbox="roadtrip" data-title="Lay Statements In A Disability Claim Disability Va Disability Statement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/de/9c/ba/de9cbae4f62b74abf6f7b59d078c3c8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkeRxpcOjjuXGmDkM1ppoWvAl_cIhqV615PA';" alt="Lay Statements In A Disability Claim Disability Va Disability Statement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lay Statements In A Disability Claim Disability Va Disability Statement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0b/94/ad/0b94ad8043ed4250b3ddcc90838f0a97.jpg" data-lightbox="roadtrip" data-title="There Are Over 104 000 Veterans Receiving Va Benefits In South Carolina Don T Wait To Apply Like Us On Va Disability Benefits Va Benefits Disability Benefit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0b/94/ad/0b94ad8043ed4250b3ddcc90838f0a97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkfxdxN0l7LC5R1y1h5iLZjXotYxWUhONrug';" alt="There Are Over 104 000 Veterans Receiving Va Benefits In South Carolina Don T Wait To Apply Like Us On Va Disability Benefits Va Benefits Disability Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Are Over 104 000 Veterans Receiving Va Benefits In South Carolina Don T Wait To Apply Like Us On Va Disability Benefits Va Benefits Disability Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/03/7e/bc037e1064a6bdf29f2772c61fd779e0.jpg" data-lightbox="roadtrip" data-title="Happy Veterans Day Veteran S Day Veterans Day Happy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/03/7e/bc037e1064a6bdf29f2772c61fd779e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrmSf1yluCHgxHSase97cNRd40aqXIJ-QufA';" alt="Happy Veterans Day Veteran S Day Veterans Day Happy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy Veterans Day Veteran S Day Veterans Day Happy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6f/f3/2b/6ff32b07ecbea29b2ecda7f80498b1f1.jpg" data-lightbox="roadtrip" data-title="Get Help Filing Your Claim Or Appeal For Va Disability Attorney In 2020 Va Disability Disability Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6f/f3/2b/6ff32b07ecbea29b2ecda7f80498b1f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-7x7OtzdVWRVxzD1XY0vNDdCrF03RIKtww';" alt="Get Help Filing Your Claim Or Appeal For Va Disability Attorney In 2020 Va Disability Disability Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Help Filing Your Claim Or Appeal For Va Disability Attorney In 2020 Va Disability Disability Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2e/88/1b/2e881b4c0b8786db15242a8dbe5127f4.jpg" data-lightbox="roadtrip" data-title="Claims Based On Pre Service Disabilities Are Compensated If The Condition Became Worse Due To Military Serv Disability Lawyer Va Disability Benefits Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2e/88/1b/2e881b4c0b8786db15242a8dbe5127f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzd1e7zaIO32eRkfW4Upd9lXA2-43VJMko5A';" alt="Claims Based On Pre Service Disabilities Are Compensated If The Condition Became Worse Due To Military Serv Disability Lawyer Va Disability Benefits Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Claims Based On Pre Service Disabilities Are Compensated If The Condition Became Worse Due To Military Serv Disability Lawyer Va Disability Benefits Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/eb/d5/23ebd51a3e1d95a31731b23258da7e16.jpg" data-lightbox="roadtrip" data-title="Pin On Discounts And Deals For Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/eb/d5/23ebd51a3e1d95a31731b23258da7e16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC--AdPXvQPW59Fcr0TSit0yTXonFBJOXZ1w';" alt="Pin On Discounts And Deals For Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Discounts And Deals For Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-low-blood-pressure.html">Va Rating Low Blood Pressure</a></li>
+													<li class="list-group-item"><a href="/va-rating-in-transformer.html">Va Rating In Transformer</a></li>
+													<li class="list-group-item"><a href="/va-rating-obstructive-sleep-apnea.html">Va Rating Obstructive Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-rating-of-transformer-definition.html">Va Rating Of Transformer Definition</a></li>
+													<li class="list-group-item"><a href="/va-rating-increase.html">Va Rating Increase</a></li>
+													<li class="list-group-item"><a href="/va-rating-migraine-aura.html">Va Rating Migraine Aura</a></li>
+													<li class="list-group-item"><a href="/va-rating-multiple-disabilities.html">Va Rating Multiple Disabilities</a></li>
+													<li class="list-group-item"><a href="/va-rating-meaning.html">Va Rating Meaning</a></li>
+													<li class="list-group-item"><a href="/va-rating-kidney-stones.html">Va Rating Kidney Stones</a></li>
+													<li class="list-group-item"><a href="/va-rating-hypertensive-retinopathy.html">Va Rating Hypertensive Retinopathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-increase-without-cp-exam.html">Va Rating Increase Without Cp Exam</a></li>
+													<li class="list-group-item"><a href="/va-rating-of-0.html">Va Rating Of 0</a></li>
+													<li class="list-group-item"><a href="/va-rating-on-neuropathy.html">Va Rating On Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-knee-flexion.html">Va Rating Knee Flexion</a></li>
+													<li class="list-group-item"><a href="/va-rating-increase-for-2020.html">Va Rating Increase For 2020</a></li>
+													<li class="list-group-item"><a href="/va-rating-on-headaches.html">Va Rating On Headaches</a></li>
+													<li class="list-group-item"><a href="/va-rating-increase-for-hearing-loss.html">Va Rating Increase For Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-rating-mild-tbi.html">Va Rating Mild Tbi</a></li>
+													<li class="list-group-item"><a href="/va-rating-increase-for-high-blood-pressure.html">Va Rating Increase For High Blood Pressure</a></li>
+													<li class="list-group-item"><a href="/va-rating-knee-strain.html">Va Rating Knee Strain</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

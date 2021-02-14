@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does The Department Of Homeland Security Investigate - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does The Department Of Homeland Security Investigate",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/f5/ac/4e/f5ac4ec3c51c350eee9dc38f5d2dc8c1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+the+department+of+homeland+security+investigate",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does The Department Of Homeland Security Investigate</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Immigration and Customs Enforcement ICE is a federal law enforcement agency under the US. The responsibility of protecting our nation falls on homeland security professionals in numerous disciplinesfrom emergency response to counter-terrorism to cybersecurity. The United States Department of Homeland Security DHS is the US. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/veterans-administration-educational-benefits-for-dependents.html">veterans administration educational benefits for dependents</a>
+											<a class="badge badge-light" href="/veteran-spouse-benefits-in-texas.html">veteran spouse benefits in texas</a>
+											<a class="badge badge-light" href="/veteran-vaccine-records.html">veteran vaccine records</a>
+											<a class="badge badge-info" href="/veteran-running-records.html">veteran running records</a>
+											<a class="badge badge-danger" href="/veterans-administration-health-records.html">veterans administration health records</a>
+											<a class="badge badge-danger" href="/veteran-pay-schedule-2020.html">veteran pay schedule 2020</a>
+											<a class="badge badge-success" href="/veteran-pay-increase-2019.html">veteran pay increase 2019</a>
+											<a class="badge badge-dark" href="/veterans-administration-gi-bill.html">veterans administration gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the right blog.  Our site gives you suggestions for seeing the maximum quality video and picture content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/1b/ce/8a1bcecc8ada86032a71c6814ef2b350.jpg" data-lightbox="roadtrip" data-title="Us Department Of Homeland Security Intelligence Division Agent Badge Bombeiro Federal Policia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/1b/ce/8a1bcecc8ada86032a71c6814ef2b350.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EKcZ8sGMHOMWAD4xQOI_FVLGkPSG0cA-jg';" alt="Us Department Of Homeland Security Intelligence Division Agent Badge Bombeiro Federal Policia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Department Of Homeland Security Intelligence Division Agent Badge Bombeiro Federal Policia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/9f/19/fa9f191d2451a4d0f9b12e0b64f934e0.jpg" data-lightbox="roadtrip" data-title="Check Out The Department Of Homeland Security Logo In Eps Format Available For Free Download Homeland Security Security Logo Government Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/9f/19/fa9f191d2451a4d0f9b12e0b64f934e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYyOfCKpbj3RydTPpD5r5wwim0quSso_1FPw';" alt="Check Out The Department Of Homeland Security Logo In Eps Format Available For Free Download Homeland Security Security Logo Government Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out The Department Of Homeland Security Logo In Eps Format Available For Free Download Homeland Security Security Logo Government Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/e1/2a/a9e12a05058963eef138031180b2a846.jpg" data-lightbox="roadtrip" data-title="Cia Vs Fbi What S The Difference Fbi Cia Homeland Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/e1/2a/a9e12a05058963eef138031180b2a846.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0PvBVeSXxfGkJ61ZpcJE6qjVvo0Bcz8MK7g';" alt="Cia Vs Fbi What S The Difference Fbi Cia Homeland Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cia Vs Fbi What S The Difference Fbi Cia Homeland Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/f3/46/28f3468e39ba706d9b1ecdbbea0d8a91.png" data-lightbox="roadtrip" data-title="Criminal Justice Homeland Security Homeland Security Criminal Justice Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/f3/46/28f3468e39ba706d9b1ecdbbea0d8a91.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Yz8MZpp--pGfrqsrdL_L6MZh9KCfCswDjQ';" alt="Criminal Justice Homeland Security Homeland Security Criminal Justice Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Criminal Justice Homeland Security Homeland Security Criminal Justice Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/77/27/897727568ca77e281ea7f0a39464b45d.jpg" data-lightbox="roadtrip" data-title="Ice Hsi Challenge Coin Nickel Silver Dhs Ice Nickel Silver Challenge Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/77/27/897727568ca77e281ea7f0a39464b45d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGpr2Bohai8IkzrpXtqAQtoqknTe9d05hj1w';" alt="Ice Hsi Challenge Coin Nickel Silver Dhs Ice Nickel Silver Challenge Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ice Hsi Challenge Coin Nickel Silver Dhs Ice Nickel Silver Challenge Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/c9/c3/cbc9c3126ab4782ba295d3ab78822abc.jpg" data-lightbox="roadtrip" data-title="Safford Homeland Security Investigations Served A Search Warrant On A Safford Homeland Security Security Logo Homeland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/c9/c3/cbc9c3126ab4782ba295d3ab78822abc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHcflhnH-Nl7qdHe3i5Puu12Fk6s75ebD1Zw';" alt="Safford Homeland Security Investigations Served A Search Warrant On A Safford Homeland Security Security Logo Homeland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Safford Homeland Security Investigations Served A Search Warrant On A Safford Homeland Security Security Logo Homeland</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/90/a7/51/90a7513bbdc6a7e1547ebbaf6a9d7f3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHcflhnH-Nl7qdHe3i5Puu12Fk6s75ebD1Zw';" alt="Safford Homeland Security Investigations Served A Search Warrant On A Safford Homeland Security Security Logo Homeland">
+										<div class="card-body">
+						<h3 class="h5"><b>Department of Homeland Securitys Homeland Security Investigations Division part of the Immigration and Customs Enforcement Agency ICE is responsible for investigating both domestic and international activities that result from the illegal movement of people and goods into within and out of the United States.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does the department of homeland security investigate</strong>. 
+								
+																	HSI is the principal investigative component of the Department of Homeland Security DHS responsible for investigating disrupting and dismantling transnational criminal organizations and terrorist networks that threaten or seek to exploit the customs and immigration laws of the United States. 
+																	Federal executive department responsible for public security roughly comparable to the interior or home ministries of other countries. 
+																	Identify and apprehend offenders. 
+																	From protecting the President and stemming the flow of drugs into the country to preventing acts of terrorism and helping communities recover from natural disasters all parts of DHS are unified in their effort to advance the Homeland Security mission working daily to prepare against and respond to any manner of crisis that may hit the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prevent transnational child sexual abuse. 
+																	To identify areas for homeland security information and training exchange where the United States has a demonstrated weakness and another friendly nation or nations have a demonstrated expertise. 
+																	Its stated missions involve anti-terrorism border security immigration and customs cyber security and disaster prevention and management. 
+																	To protect and strengthen the integrity of USCIS programs and systems the Office of Investigations thoroughly and objectively investigates allegations of misconduct including those with a counterintelligence concern. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To secure the United State against any and all threats we face. 
+																	While the Department of Defense is charged with managing military action abroad the Department of Homeland Security is focused on the civilian sphere and protecting Americans within the borders. 
+																	Typically a Homeland Security Investigation is conducted by Agents who handle cases involving money laundering fraud investigations counter proliferation investigations cyber investigations narcotics immigration and nationality act violations. 
+																	And while many people associate the term homeland security with terrorist attacks the industry actually shoulders a much broader set of responsibilities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Identify and rescue child victims. 
+																	DHS is tasked with a narrow and vital focus. 
+																	Department of Homeland Security DHS and its homeland security mission are born from the commitment and resolve of Americans across the United States in the wake of the September 11 th attacks. 
+																	ICEs stated mission is to protect the United States from the cross-border crime and illegal immigration that threaten national security and public safety. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Homeland Security. 
+																	In those darkest hours we witnessed true heroism self-sacrifice and unified resolve against evil. 
+																	The Department of Homeland Security DHS works with other federal agencies to conduct high-impact criminal investigations to disrupt and defeat cyber criminals prioritize the recruitment and training of technical experts develop standardized methods and broadly share cyber response best practices and tools. 
+																	HSI is recognized as a global leader in this investigative discipline and is committed to utilizing its vast authorities international footprint and strong government and non-government partnerships to. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/c6/4f/62c64f37fcab18a8404f88fdb922189e.jpg" data-lightbox="roadtrip" data-title="Jw V Dhs Documents 00222 Pg 4 15 Judicial Watch Homeland Security Documents Judicial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/c6/4f/62c64f37fcab18a8404f88fdb922189e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwvVW_VMITmQTnhQwVp_lwDlqQjY0bLFkJxw';" alt="Jw V Dhs Documents 00222 Pg 4 15 Judicial Watch Homeland Security Documents Judicial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jw V Dhs Documents 00222 Pg 4 15 Judicial Watch Homeland Security Documents Judicial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/0d/b2/e70db2af1ba84c8c641818ee375fb37d.jpg" data-lightbox="roadtrip" data-title="About That Immediate Investigation Promised By Department Of Homeland Security S Acting Chief Kevin Mcaleenan In Homeland Security Border Patrol Sanctuary City">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/0d/b2/e70db2af1ba84c8c641818ee375fb37d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4tdH0jwYKFUI_Jcn7nUbHB8uLF4fjBcToQ';" alt="About That Immediate Investigation Promised By Department Of Homeland Security S Acting Chief Kevin Mcaleenan In Homeland Security Border Patrol Sanctuary City">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About That Immediate Investigation Promised By Department Of Homeland Security S Acting Chief Kevin Mcaleenan In Homeland Security Border Patrol Sanctuary City</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/4c/21/9f4c21a8573cf44e5cbab1d9cf38880d.jpg" data-lightbox="roadtrip" data-title="Us Department Of Homeland Security Dhs Employees Work On The Industrial Control Systems Cyber Emerge Homeland Security Big Government Emergency Response Team">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/4c/21/9f4c21a8573cf44e5cbab1d9cf38880d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlLkpt03nlSAHffrOfSwVVLeYq18C6rEFjxg';" alt="Us Department Of Homeland Security Dhs Employees Work On The Industrial Control Systems Cyber Emerge Homeland Security Big Government Emergency Response Team">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Department Of Homeland Security Dhs Employees Work On The Industrial Control Systems Cyber Emerge Homeland Security Big Government Emergency Response Team</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/0d/90/b30d9005412056fb1ca3bd89189c17f9.jpg" data-lightbox="roadtrip" data-title="1 1 Model Figure American Metal Badge Medallion Us Transportation Security Insignia Badge Copper Bd In Action Toy Figures From Badge Insignia Law Enforcement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/0d/90/b30d9005412056fb1ca3bd89189c17f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwucKQWQAyQ7V0cpisIQv-3MdXj-mgzWdeww';" alt="1 1 Model Figure American Metal Badge Medallion Us Transportation Security Insignia Badge Copper Bd In Action Toy Figures From Badge Insignia Law Enforcement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1 1 Model Figure American Metal Badge Medallion Us Transportation Security Insignia Badge Copper Bd In Action Toy Figures From Badge Insignia Law Enforcement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/9f/de/689fde1c55f71c12e72e972742d07cd1.jpg" data-lightbox="roadtrip" data-title="404 Page Not Found Search Foundation For Economic Education Police Badge Border Patrol Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/9f/de/689fde1c55f71c12e72e972742d07cd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnqeZecm-pQlmtPLncyIoQhraj_tnH8sE72Q';" alt="404 Page Not Found Search Foundation For Economic Education Police Badge Border Patrol Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">404 Page Not Found Search Foundation For Economic Education Police Badge Border Patrol Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/2f/4e/5e2f4e2e1b7908c32874a63e6ef6e8be.jpg" data-lightbox="roadtrip" data-title="Criminal Investigator U S Coast Guard Criminal Investigator Coast Guard Criminal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/2f/4e/5e2f4e2e1b7908c32874a63e6ef6e8be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRegREZpIboNGN4sd2sPyOtM5Sl16B_w8l5Lg';" alt="Criminal Investigator U S Coast Guard Criminal Investigator Coast Guard Criminal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Criminal Investigator U S Coast Guard Criminal Investigator Coast Guard Criminal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/60/0e/62600e2f45afc2440f75c60529cf348d.jpg" data-lightbox="roadtrip" data-title="The Mrap Featured In This Video Is Was In Albuquerque New Mexico For Law Enforcement Day This Mrap Is Armored Vehicles Homeland Security Executive Protection">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/60/0e/62600e2f45afc2440f75c60529cf348d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnH5GFKhGm60gTr67SfC0fdd7Ls7w_j8i49g';" alt="The Mrap Featured In This Video Is Was In Albuquerque New Mexico For Law Enforcement Day This Mrap Is Armored Vehicles Homeland Security Executive Protection">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Mrap Featured In This Video Is Was In Albuquerque New Mexico For Law Enforcement Day This Mrap Is Armored Vehicles Homeland Security Executive Protection</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/12/af/c212afb0ee78ba81c2f6814715d0a77c.jpg" data-lightbox="roadtrip" data-title="The Department Of Homeland Security Is Considering A Proposal To Separate Children From Ad Immigration Officer Immigration And Customs Enforcement Custom State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/12/af/c212afb0ee78ba81c2f6814715d0a77c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv_0ASaUo3SZK3MB2jws8szNAaEGsjTjXE6w';" alt="The Department Of Homeland Security Is Considering A Proposal To Separate Children From Ad Immigration Officer Immigration And Customs Enforcement Custom State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Department Of Homeland Security Is Considering A Proposal To Separate Children From Ad Immigration Officer Immigration And Customs Enforcement Custom State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/99/4c/c8994c15a626afe027bb577439e9db5e.jpg" data-lightbox="roadtrip" data-title="Copshop Com Badges Police Badge Security Badge Us Military Medals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/99/4c/c8994c15a626afe027bb577439e9db5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP00_MZHdNRLMwh61JvFam7Hhn2d4XxJ-LJQ';" alt="Copshop Com Badges Police Badge Security Badge Us Military Medals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Copshop Com Badges Police Badge Security Badge Us Military Medals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/a7/51/90a7513bbdc6a7e1547ebbaf6a9d7f3c.jpg" data-lightbox="roadtrip" data-title="What Began As A Littering Complaint Grew Into A Full Blown Investigation Involving The Department Of Homeland Security Homeland Security Minneapolis Homeland">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/a7/51/90a7513bbdc6a7e1547ebbaf6a9d7f3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwTh6umjOHSiCV38lO6OVMYgdwVIHjIqe8tA';" alt="What Began As A Littering Complaint Grew Into A Full Blown Investigation Involving The Department Of Homeland Security Homeland Security Minneapolis Homeland">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Began As A Littering Complaint Grew Into A Full Blown Investigation Involving The Department Of Homeland Security Homeland Security Minneapolis Homeland</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/77/63/577763f58b45bb20440d6c09bdd96441.jpg" data-lightbox="roadtrip" data-title="U S Customs And Border Protection To Decide On Body Cameras Homeland Security Border Patrol Us Customs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/77/63/577763f58b45bb20440d6c09bdd96441.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgyRI51hRd31pAAN5JDufe1xtsuoV1f0FGCg';" alt="U S Customs And Border Protection To Decide On Body Cameras Homeland Security Border Patrol Us Customs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Customs And Border Protection To Decide On Body Cameras Homeland Security Border Patrol Us Customs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/ac/4e/f5ac4ec3c51c350eee9dc38f5d2dc8c1.jpg" data-lightbox="roadtrip" data-title="A Vulnerability Is Created Every Time Criminals Convert From Cryptocurrency To Government Is Immigration And Customs Enforcement Us Customs Homeland Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/ac/4e/f5ac4ec3c51c350eee9dc38f5d2dc8c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8R0flEAb0vc9qotao2p22U30TeSzTT21ERw';" alt="A Vulnerability Is Created Every Time Criminals Convert From Cryptocurrency To Government Is Immigration And Customs Enforcement Us Customs Homeland Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Vulnerability Is Created Every Time Criminals Convert From Cryptocurrency To Government Is Immigration And Customs Enforcement Us Customs Homeland Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/35/de/0235dee94732edc0cf2c43802c760766.jpg" data-lightbox="roadtrip" data-title="Pin By Hi Hai On Dhs Badge Sheriff Badge Law Enforcement Badges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/35/de/0235dee94732edc0cf2c43802c760766.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy-79G96EwzLPeBcSmdcvcd0AmaZVCS6JmHA';" alt="Pin By Hi Hai On Dhs Badge Sheriff Badge Law Enforcement Badges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Hi Hai On Dhs Badge Sheriff Badge Law Enforcement Badges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/6f/6a/696f6acba541c755e39f55ad73b736c5.jpg" data-lightbox="roadtrip" data-title="Pin On All About Crypto Currency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/6f/6a/696f6acba541c755e39f55ad73b736c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGzCxZt24iOcqBEtKyDiY7wk6QkKFOJzi1Jg';" alt="Pin On All About Crypto Currency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On All About Crypto Currency</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/48/ad/9848ad88b98f690e66361361396f8c99.gif" data-lightbox="roadtrip" data-title="Pin On Optional Practical Training Opt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/48/ad/9848ad88b98f690e66361361396f8c99.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNQPAFPRCSmOWTAu1J2V40GrS7Rao4mDFXLw';" alt="Pin On Optional Practical Training Opt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Optional Practical Training Opt</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-percentage-for-ptsd.html">Va Rating Percentage For Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-rating-per-condition.html">Va Rating Per Condition</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-erectile-dysfunction.html">Va Rating Schedule For Erectile Dysfunction</a></li>
+													<li class="list-group-item"><a href="/va-rating-pay-scale-2019.html">Va Rating Pay Scale 2019</a></li>
+													<li class="list-group-item"><a href="/va-rating-pay-chart-2019.html">Va Rating Pay Chart 2019</a></li>
+													<li class="list-group-item"><a href="/va-rating-scale-for-back-pain.html">Va Rating Scale For Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-rating-percentage-table.html">Va Rating Percentage Table</a></li>
+													<li class="list-group-item"><a href="/va-rating-scale-for-carpal-tunnel-syndrome.html">Va Rating Scale For Carpal Tunnel Syndrome</a></li>
+													<li class="list-group-item"><a href="/va-rating-payments-2020.html">Va Rating Payments 2020</a></li>
+													<li class="list-group-item"><a href="/va-rating-pay-table.html">Va Rating Pay Table</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-depression.html">Va Rating Schedule Depression</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-carpal-tunnel.html">Va Rating Schedule For Carpal Tunnel</a></li>
+													<li class="list-group-item"><a href="/va-rating-payment-table.html">Va Rating Payment Table</a></li>
+													<li class="list-group-item"><a href="/va-rating-radiculopathy-spine.html">Va Rating Radiculopathy Spine</a></li>
+													<li class="list-group-item"><a href="/va-rating-ptsd-claim.html">Va Rating Ptsd Claim</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-eyes.html">Va Rating Schedule Eyes</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-chronic-pain.html">Va Rating Schedule For Chronic Pain</a></li>
+													<li class="list-group-item"><a href="/va-rating-pay-chart-2020.html">Va Rating Pay Chart 2020</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-dental.html">Va Rating Schedule Dental</a></li>
+													<li class="list-group-item"><a href="/va-rating-pay-chart.html">Va Rating Pay Chart</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

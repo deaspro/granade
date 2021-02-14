@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Percentage Of Us Citizens Go To College - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Percentage Of Us Citizens Go To College",
+  "datePublished": "2021-02-14",
+  "image": "https://www.postgrad.com/filer/canonical/1561664984/6522/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+percentage+of+us+citizens+go+to+college",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Percentage Of Us Citizens Go To College</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The margin of error is 24 percent. Male population having completed four years or more of college up from 55 percent in 1940. Nowadays about 60 percent of kids go to some type of college. <br>				
+			</p>
+										<a class="badge badge-success" href="/veteran-disability-pay-raise-2020.html">veteran disability pay raise 2020</a>
+											<a class="badge badge-success" href="/veteran-disability-rating-benefits.html">veteran disability rating benefits</a>
+											<a class="badge badge-dark" href="/veteran-owned-small-business-government-contracts.html">veteran owned small business government contracts</a>
+											<a class="badge badge-success" href="/veteran-owned-small-business-enterprise.html">veteran owned small business enterprise</a>
+											<a class="badge badge-success" href="/veteran-disability-lawyers-near-me.html">veteran disability lawyers near me</a>
+											<a class="badge badge-primary" href="/veteran-owned-small-business-rules.html">veteran owned small business rules</a>
+											<a class="badge badge-danger" href="/veteran-disability-pay-dates.html">veteran disability pay dates</a>
+											<a class="badge badge-danger" href="/veteran-owned-small-business-goals.html">veteran owned small business goals</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to visit the right site.  Our website gives you suggestions for viewing the highest quality video and picture content, search and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.guide2research.com/wp-content/uploads/2020/07/US-college-students-who-received-financial-aid.jpg" data-lightbox="roadtrip" data-title="75 U S College Statistics 2019 2020 Facts Data Trends Guide 2 Research">
+											<img class="card-img v-image ads-img " src="https://www.guide2research.com/wp-content/uploads/2020/07/US-college-students-who-received-financial-aid.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx4CAuWfxJ0ASOCqPon02Uwwqs8nKWuCmdmw';" alt="75 U S College Statistics 2019 2020 Facts Data Trends Guide 2 Research">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">75 U S College Statistics 2019 2020 Facts Data Trends Guide 2 Research</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://educationdata.org/wp-content/uploads/76/racial-or-ethnic-distribution-of-college-graduates.png" data-lightbox="roadtrip" data-title="College Graduation Statistics 2021 Total Graduates Per Year">
+											<img class="card-img v-image ads-img " src="https://educationdata.org/wp-content/uploads/76/racial-or-ethnic-distribution-of-college-graduates.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRFWgm8bglgtQTt9rgb1TZ-3y50czCsIXz5g';" alt="College Graduation Statistics 2021 Total Graduates Per Year">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Graduation Statistics 2021 Total Graduates Per Year</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/01/66/5b01665bdc83bbf75d320d68770e4fd1.jpg" data-lightbox="roadtrip" data-title="Should You Stay Home Or Go Away To College Vista College Blog College College Grads High School Diploma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/01/66/5b01665bdc83bbf75d320d68770e4fd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYoqM08FeC_gob-fhKGrkvK3iiLCfihSLugw';" alt="Should You Stay Home Or Go Away To College Vista College Blog College College Grads High School Diploma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should You Stay Home Or Go Away To College Vista College Blog College College Grads High School Diploma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pewresearch.org/wp-content/uploads/2019/06/FT_19.06.20_WomenLaborForce_Women-now-half-of-US-college-educated-labor-force-2.png" data-lightbox="roadtrip" data-title="Women Near Majority Of College Educated Workforce In U S Pew Research Center">
+											<img class="card-img v-image ads-img " src="https://www.pewresearch.org/wp-content/uploads/2019/06/FT_19.06.20_WomenLaborForce_Women-now-half-of-US-college-educated-labor-force-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQilD1i9QsqDpOvjBFFFXZZq7NOeGitrBy9Jw';" alt="Women Near Majority Of College Educated Workforce In U S Pew Research Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women Near Majority Of College Educated Workforce In U S Pew Research Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/53/26/6953267bb8bd14b6f3ed45643475869f.jpg" data-lightbox="roadtrip" data-title="Infographic Majority Of Americans Wear A Mask In Public In 2020 Public Infographic How To Wear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/53/26/6953267bb8bd14b6f3ed45643475869f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpsDdVVtsrVwOU29Yb65Y_C-5ssDhM4WKrkw';" alt="Infographic Majority Of Americans Wear A Mask In Public In 2020 Public Infographic How To Wear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic Majority Of Americans Wear A Mask In Public In 2020 Public Infographic How To Wear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/80/63/478063cfa6899542ca68b47b06439a8e.jpg" data-lightbox="roadtrip" data-title="Gender College Degree Attainment College Degree Gender College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/80/63/478063cfa6899542ca68b47b06439a8e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEOr2Vlm-R2fWwzFK5-U4LFv3978UJdQ8UWA';" alt="Gender College Degree Attainment College Degree Gender College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gender College Degree Attainment College Degree Gender College</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/47/80/63/478063cfa6899542ca68b47b06439a8e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEOr2Vlm-R2fWwzFK5-U4LFv3978UJdQ8UWA';" alt="Gender College Degree Attainment College Degree Gender College">
+										<div class="card-body">
+						<h3 class="h5"><b>During this time the percentage with high school completion or higher increased from 88 to 94 percent the percentage with an associates or higher degree increased from 38 to 49 percent the percentage with a bachelors or higher degree increased from 29 to 39 percent and the percentage with a masters or higher degree increased from 5 to 9 percent.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What percentage of us citizens go to college</strong>. 
+								
+																	According to the US census about 438 percent of African immigrants achieved the most college degrees compared to 425 percent of Asian-Americans 289 percent for immigrants from Europe Russia and Canada and 231 percent of the US. 
+																	The inflation-adjusted price for undergraduate tuition room and board at public institutions rose 42 percent between the 2000-2001 academic year and 2010-2011 according to federal dataWhen comparing the inflation-adjusted price for 2010-2011 to the cost in 1980-1981 the cost has almost doubled. 
+																	Yet nearly the same amount of foreign-born Americans as people born in the United States have a college education. 
+																	The figure shows the percentage of the population that has attained at least a bachelors degree by two age groups. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 659 percent of high school graduates that enroll in college represents the lowest percentage since 2003. 
+																	Thirty-four percent of US-born Americans have a four-year college degree. 
+																	If a countrys educational level is increasing those who are younger should show. 
+																	That was down from 662. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	More than 40 percent. 
+																	Naturalized citizens were among the groups with high levels of college attainment 384 percent had a bachelors degree or higher. 
+																	Apex What percent of US citizens are. 
+																	Data from the Organisation for Economic Co-operation and Development OECD on educational attainment suggests that the US is lagging behind other countries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Recruiting Command there are 334 million Americans ages 17 to 24 the Armys prime demographic for enlisting and commissioning. 
+																	202021 Distribution of student loan debt in the US. 
+																	Female high school graduates enroll in college at higher rates than male high school graduates with the percentages at 684 percent and 635 percent respectively. 
+																	The percentage of 2534 year olds that have completed a 4-year degree or higher a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Most Americans dont have a college degree. 
+																	According to the Bureau of Labor Statistics 659 percent of students who graduated high school in the United States in 2013 enrolled in college for the fall semester of the same year. 
+																	College payment - average amount in the United States by income level 2007-2020 Tuition and fees at public two-year colleges by region US. 
+																	More than 37 percent of non-Hispanic white Americans have a college degree while just 23 percent of African-Americans have reached the same level of formal education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Population as a whole. 
+																	This list contains the percentage of 2534 year olds that have obtained at least a 2-year tertiary degree or its equivalent an associate degree in the United States. 
+																	Among earlier immigrants the rate of college education was lower for those who arrived in the 1990s it was 313 percent. 
+																	The latest data show that just 40 percent of Americans have finished an associates degree or above while an additional 22 percent attended some college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is a list of countries by the level of tertiary education completed by 2534 year olds measured by the percent of the population. 
+																	What percentage of us undergraduates attend a community college. 
+																	A significant increase can also be seen in males with 354 percent of the US. 
+																	Over the same period the percentage of blacks who completed high school or more education increased from 75 percent to 87 percent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The recent Skills and Employment Survey found that 26 of jobs in the economy explicitly require a degree or put another way if you dont go to university more than a quarter of jobs are. 
+																	Only 164 percent of Hispanic. 
+																	Last October just 659 percent of people who had graduated from high school the previous spring had enrolled in college the Bureau of Labor Statistics said this week. 
+																	The share of non-Hispanic whites who completed four years of high school or more education increased from 86 percent in 1997 to 94 percent in 2017. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Broken down 2013 graduates enrolling in college included 684 percent of women and 635 percent of men. 
+																	4- and 2-year colleges. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.static-collegedunia.com/public/image/cd963982085ad33c5ecf6ab77e0616d6.png?tr=w-912,h-586,c-force" data-lightbox="roadtrip" data-title="Masters Ms In Usa Top Colleges Eligibility Cost Scholarships Jobs">
+											<img class="card-img v-image ads-img " src="https://images.static-collegedunia.com/public/image/cd963982085ad33c5ecf6ab77e0616d6.png?tr=w-912,h-586,c-force" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvAl-tL5ECpv6osOBBPMt59kzYuUeOJURWtA';" alt="Masters Ms In Usa Top Colleges Eligibility Cost Scholarships Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Masters Ms In Usa Top Colleges Eligibility Cost Scholarships Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://teachingnomad.com/wp-content/uploads/2015/09/chinese_students.png" data-lightbox="roadtrip" data-title="The Most Popular Us Universities For Chinese Students Teaching Nomad">
+											<img class="card-img v-image ads-img " src="https://teachingnomad.com/wp-content/uploads/2015/09/chinese_students.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROlkLNsKyGP9aCkIE5cFGBc-KHo5P2Byuxlg';" alt="The Most Popular Us Universities For Chinese Students Teaching Nomad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Most Popular Us Universities For Chinese Students Teaching Nomad</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106552716-1590530970394-20200526_rising_college_costs.png?v=1590530975&amp;w=720&amp;h=389&amp;imgcrop=n" data-lightbox="roadtrip" data-title="More Than Half Of Students Can T Afford College Tuition Post Pandemic">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106552716-1590530970394-20200526_rising_college_costs.png?v=1590530975&amp;w=720&amp;h=389&amp;imgcrop=n" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPTb4s__3lJvfk7D9V5CdRSJUgqghLSvLkIw';" alt="More Than Half Of Students Can T Afford College Tuition Post Pandemic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">More Than Half Of Students Can T Afford College Tuition Post Pandemic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/8b/be/c88bbef945546779fc686948b372a4dc.gif" data-lightbox="roadtrip" data-title="Education And Economic Growth Education Next High School Education Education Quotes For Teachers Education Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/8b/be/c88bbef945546779fc686948b372a4dc.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmnTPX3WqjfC8XFxpyy0vqviB9BU9Vs7UtUg';" alt="Education And Economic Growth Education Next High School Education Education Quotes For Teachers Education Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Education And Economic Growth Education Next High School Education Education Quotes For Teachers Education Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/0b/f3/ba0bf38528ef413b4546e1d559b9cfbe.jpg" data-lightbox="roadtrip" data-title="Pin On Iiiinnnteresting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/0b/f3/ba0bf38528ef413b4546e1d559b9cfbe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQh3DEOQWxetMskIuEkXiAc2p03ukNGBel3w';" alt="Pin On Iiiinnnteresting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Iiiinnnteresting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/58/32/345832bd807dc6a1006746e531ede0fd.png" data-lightbox="roadtrip" data-title="Pin On Civil War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/58/32/345832bd807dc6a1006746e531ede0fd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwFvzkL4TVWbLemrPbhHCKIrIwHAzp2V5gGg';" alt="Pin On Civil War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Civil War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f5/95/6d/f5956d46dbcec68abc5ff4b146c22d5f.jpg" data-lightbox="roadtrip" data-title="Students Average Day Education Quotes For Teachers Education Quotes Inspirational Education Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f5/95/6d/f5956d46dbcec68abc5ff4b146c22d5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyjThW-1XLgQaYraMjpZ-LJ_LWc8RCrj38zQ';" alt="Students Average Day Education Quotes For Teachers Education Quotes Inspirational Education Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Students Average Day Education Quotes For Teachers Education Quotes Inspirational Education Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.postgrad.com/filer/canonical/1561664984/6522/" data-lightbox="roadtrip" data-title="Phd In Usa Postgrad Com">
+											<img class="card-img v-image ads-img " src="https://www.postgrad.com/filer/canonical/1561664984/6522/" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPXMOtLdczkXTvNIbxTKAkqFldBmKZMrkl7A';" alt="Phd In Usa Postgrad Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phd In Usa Postgrad Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/a9/1d/45a91d2357e0f8bfdf9a178069f40b2c.jpg" data-lightbox="roadtrip" data-title="Percentage Of Students Getting At Least 8 Hours Of Sleep By School Start Time Startschoollater When School Starts School Night Start Time">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/a9/1d/45a91d2357e0f8bfdf9a178069f40b2c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbemVOT6IQl3ROULgtPPs13MbVjs56RHGdgA';" alt="Percentage Of Students Getting At Least 8 Hours Of Sleep By School Start Time Startschoollater When School Starts School Night Start Time">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Percentage Of Students Getting At Least 8 Hours Of Sleep By School Start Time Startschoollater When School Starts School Night Start Time</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/50/10/c95010e5789d3ec44f790c483df0a13a.jpg" data-lightbox="roadtrip" data-title="When Schools Start Later Students Actually Get More Sleep Startschoollater When School Starts Sleep Medicine High School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/50/10/c95010e5789d3ec44f790c483df0a13a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb2Z0KYT30XFFImfL1CDnDUbRM_TnC6l3iwA';" alt="When Schools Start Later Students Actually Get More Sleep Startschoollater When School Starts Sleep Medicine High School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Schools Start Later Students Actually Get More Sleep Startschoollater When School Starts Sleep Medicine High School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/104568512-NCAA_FOOTBALL.jpg?v=1532563806" data-lightbox="roadtrip" data-title="Here S How Much College Costs In The Us Compared To Other Countries">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/104568512-NCAA_FOOTBALL.jpg?v=1532563806" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy4R6ryKFBwHeLUvkRaJGFdl4EVxMrFls47Q';" alt="Here S How Much College Costs In The Us Compared To Other Countries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S How Much College Costs In The Us Compared To Other Countries</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/8b/d6/648bd67a9246107e87c3d72628c80c6b.jpg" data-lightbox="roadtrip" data-title="Chart Of The Most Popular Cheeses In The Us Popular Cheeses Cheese Most Popular">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/8b/d6/648bd67a9246107e87c3d72628c80c6b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtV30NfFRqKHWFxHyFVUi11CR1doHxdvw-vQ';" alt="Chart Of The Most Popular Cheeses In The Us Popular Cheeses Cheese Most Popular">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chart Of The Most Popular Cheeses In The Us Popular Cheeses Cheese Most Popular</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/7a/68/4f7a684627e5e011ac572dc50a46128d.png" data-lightbox="roadtrip" data-title="What S Lost In The Debate Is How Much The U S And Other Countries Actually Pay For Gas Relative To One Another And To Their Citizens Cheap Gas Gas Prices Gas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/7a/68/4f7a684627e5e011ac572dc50a46128d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlUrnrk5BCoxaKQvF2qRNq7eFzxUy1nbUhIA';" alt="What S Lost In The Debate Is How Much The U S And Other Countries Actually Pay For Gas Relative To One Another And To Their Citizens Cheap Gas Gas Prices Gas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S Lost In The Debate Is How Much The U S And Other Countries Actually Pay For Gas Relative To One Another And To Their Citizens Cheap Gas Gas Prices Gas</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/valium-uses-anxiety.html">Valium Uses Anxiety</a></li>
+													<li class="list-group-item"><a href="/vestibular-neuritis-va-rating.html">Vestibular Neuritis Va Rating</a></li>
+													<li class="list-group-item"><a href="/valium-prescription.html">Valium Prescription</a></li>
+													<li class="list-group-item"><a href="/valium-or-ativan.html">Valium Or Ativan</a></li>
+													<li class="list-group-item"><a href="/valium-vs-diazepam.html">Valium Vs Diazepam</a></li>
+													<li class="list-group-item"><a href="/valium-yellow.html">Valium Yellow</a></li>
+													<li class="list-group-item"><a href="/vassar-college-gifts.html">Vassar College Gifts</a></li>
+													<li class="list-group-item"><a href="/veap-vs-gi-bill.html">Veap Vs Gi Bill</a></li>
+													<li class="list-group-item"><a href="/valium-used-for-vertigo.html">Valium Used For Vertigo</a></li>
+													<li class="list-group-item"><a href="/valium-teva.html">Valium Teva</a></li>
+													<li class="list-group-item"><a href="/ventura-college-womens-basketball-tournament.html">Ventura College Womens Basketball Tournament</a></li>
+													<li class="list-group-item"><a href="/valium-suppository-side-effects.html">Valium Suppository Side Effects</a></li>
+													<li class="list-group-item"><a href="/valium-pronunciation.html">Valium Pronunciation</a></li>
+													<li class="list-group-item"><a href="/vermont-army-national-guard-deployment.html">Vermont Army National Guard Deployment</a></li>
+													<li class="list-group-item"><a href="/vanderbilt-university-go-for-the-gold.html">Vanderbilt University Go For The Gold</a></li>
+													<li class="list-group-item"><a href="/valium-rectal-gel.html">Valium Rectal Gel</a></li>
+													<li class="list-group-item"><a href="/valium-with-food-or-empty-stomach.html">Valium With Food Or Empty Stomach</a></li>
+													<li class="list-group-item"><a href="/verify-post-911-gi-bill-benefits.html">Verify Post 911 Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/vermont-national-guard-agr-jobs.html">Vermont National Guard Agr Jobs</a></li>
+													<li class="list-group-item"><a href="/vermont-air-national-guard-pilot-jobs.html">Vermont Air National Guard Pilot Jobs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

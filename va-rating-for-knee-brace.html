@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Rating For Knee Brace - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Rating For Knee Brace",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/c8/d1/2a/c8d12a5fc6c255622fbe2907ce730af3.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+rating+for+knee+brace",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Rating For Knee Brace</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Common Knee Conditions Rated by VA Ankylosis of the Knee DC 5256. If you suffer from Phantom Limb Pain PLP you may try to get a higher rating. Namely there are strict rating criteria veterans must meet to have their knee conditions rated at certain levels. <br>				
+			</p>
+										<a class="badge badge-primary" href="/veterans-compensation-chart.html">veterans compensation chart</a>
+											<a class="badge badge-primary" href="/veterans-crisis-line-address.html">veterans crisis line address</a>
+											<a class="badge badge-info" href="/veterans-compensation-hearing-loss.html">veterans compensation hearing loss</a>
+											<a class="badge badge-primary" href="/veterans-crisis-hotline.html">veterans crisis hotline</a>
+											<a class="badge badge-danger" href="/veterans-benefits-wisconsin.html">veterans benefits wisconsin</a>
+											<a class="badge badge-danger" href="/veterans-compensation-chart-2020.html">veterans compensation chart 2020</a>
+											<a class="badge badge-danger" href="/veterans-claims-assistance-act-form.html">veterans claims assistance act form</a>
+											<a class="badge badge-danger" href="/veterans-compensation-for-2021.html">veterans compensation for 2021</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the ideal site.  Our site gives you hints for viewing the highest quality video and image content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you view.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/95/ee/a795ee8a9c3c03e9a77c579d3ef811a3.png" data-lightbox="roadtrip" data-title="Knee Range Of Motion And Movements Is An Article About Movements Of Knee Joint And T Knee Replacement Exercises Knee Replacement Recovery Knee Surgery Recovery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/95/ee/a795ee8a9c3c03e9a77c579d3ef811a3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVc_kweMFuS8zAkZ8SugOnf_7O29yoGBLUQ';" alt="Knee Range Of Motion And Movements Is An Article About Movements Of Knee Joint And T Knee Replacement Exercises Knee Replacement Recovery Knee Surgery Recovery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knee Range Of Motion And Movements Is An Article About Movements Of Knee Joint And T Knee Replacement Exercises Knee Replacement Recovery Knee Surgery Recovery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/4a/64/bc4a64e7b9444ac7db2d347230072a23.png" data-lightbox="roadtrip" data-title="Military Disability Ratings For Ankle Conditions Dance Careers Military Disability Massage Therapy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/4a/64/bc4a64e7b9444ac7db2d347230072a23.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn3DP8M24LoihVPZZJEg0a-2oBSrWTJDRvtQ';" alt="Military Disability Ratings For Ankle Conditions Dance Careers Military Disability Massage Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Disability Ratings For Ankle Conditions Dance Careers Military Disability Massage Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/56/3b/c8563be361fa3faef3e07b75145c62b7.jpg" data-lightbox="roadtrip" data-title="Power Knees Review Knee Brace With Extra Lift Knee Power Knee Sleeves">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/56/3b/c8563be361fa3faef3e07b75145c62b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS86ekXJKSoqvWzQy-fFYk6h-Cb9UFPcEdXMQ';" alt="Power Knees Review Knee Brace With Extra Lift Knee Power Knee Sleeves">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Power Knees Review Knee Brace With Extra Lift Knee Power Knee Sleeves</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/62/2f/4c622f6507828d63318b8a6197c7e828.png" data-lightbox="roadtrip" data-title="Military Disability Ratings For Knee And Lower Leg Conditions Military Disability Lower Leg Knee">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/62/2f/4c622f6507828d63318b8a6197c7e828.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIYoIC1Sm1o9LFX3t1dogOmTNi-oqlXlLzLg';" alt="Military Disability Ratings For Knee And Lower Leg Conditions Military Disability Lower Leg Knee">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Disability Ratings For Knee And Lower Leg Conditions Military Disability Lower Leg Knee</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/blog-Copy-32-768x512.jpg" data-lightbox="roadtrip" data-title="Knee Problems And Your Va Disability Claim Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/blog-Copy-32-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Sx40jpNjv2ZaO0nz9U2VE6u2YjNASdVuMQ';" alt="Knee Problems And Your Va Disability Claim Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knee Problems And Your Va Disability Claim Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/AdobeStock_198669548-768x512.jpeg" data-lightbox="roadtrip" data-title="Va Disability Benefits For Knee Pain Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/AdobeStock_198669548-768x512.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2j5BdXKSO__-h3g4Dtx9_Jg9FfVMGrStuKA';" alt="Va Disability Benefits For Knee Pain Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Benefits For Knee Pain Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ae/42/3a/ae423ab55d17e72c802ad292a2dff6a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2j5BdXKSO__-h3g4Dtx9_Jg9FfVMGrStuKA';" alt="Va Disability Benefits For Knee Pain Cck Law">
+										<div class="card-body">
+						<h3 class="h5"><b>However the ankle instability may occur in conjunction with other issues such as knee pain and leg pain.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va rating for knee brace</strong>. 
+								
+																	The VA rating for knee amputations is either 40 if there still some knee function or 60 if the knee is removed or unusable. 
+																	A knee instability VA rating can be related to arthritis but doesnt have to be. 
+																	Much of the confusion stems from the fact that a veteran may be able to receive multiple ratings for the same knee depending on the severity of. 
+																	This year however many veterans who previously were awarded clothing allowance for certain knee or spine braces are receiving denial letters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For Reservists the condition must have occurred in or resulted from an injury in the Line of Duty to qualify. 
+																	Various toes and parts of the foot can earn you different VA ratings. 
+																	Of all the disabilities listed on the VAs Schedule for Rating Disabilities the ratings involving the knee are one of the most difficult for veterans to understand and for the VA to get right. 
+																	Apprently the VA is doing some new thing this year with clothing allowances and not all Knee Braces qualify for the allowances any longer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In many cases ankle instability itself would receive a rating of between 0 and 20 on the rating schedule. 
+																	Knee instability or crepitation creeking and clicking sounds coming from your joints can help you get a higher rating too. 
+																	This low evaluation speaks to how VA rates knee conditions. 
+																	The different percentages available are 0 10 20 and 30. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These ratings are assigned based on how much the knee can bend. 
+																	Abnormal stiffening and immobility of the knee can be assigned a 30 40 50 or 60 percent disability rating depending on the limitation of flexion. 
+																	The VA is supposed to rate a knee disability under DC 5260 and 5261 where functional loss begins. 
+																	I use a Breg Off-loader that is really hard on blue jeans and there is a question as to weather or not if I will see an allowance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The most common rating VA assigns for limitation of flexion of the knee is 10 percent although the highest rating a Veteran can receive is 30 percent. 
+																	These 40 and 60 ratings related only to the point of amputation. 
+																	Where however the limitation of motion of the specific joint or joints involved is noncompensable under the codes a rating of 10 percent is for application for each such major joint or group of minor joints affected by limitation of motion to be combined not added under diagnostic code 5002. 
+																	For example if a veteran has a full range of motion of his knee but has weakness of movement that begins at 45 degrees flexion he should be awarded a 10 percent rating under DC 5260. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA might note the presence of other conditions and award the veteran an even higher VA disability rating. 
+																	According to the rating criteria if the knee can straighten but cant bend all the way it is rated under 5260. 
+																	Does Braces Warrant A Seperate Rating Knee The short answer is No The simple act of wearing a brace doesnt warrant any type of evaluation in and of itself. 
+																	If you can show evidence of any kind of strenuous work put on your knee you can get closer to service-connected arthritis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thats because the Veterans Health Administration. 
+																	So the less the knee can bend the higher the rating will be. 
+																	Knee and Lower Leg Overview. 
+																	60 extremely unfavorable in flexion at an angle of 45 degrees or more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA awards disability compensation for each Knee and Lower Leg condition that is service-connectedThe DoD will also rate service-connected conditions as long as they also make the service member Unfit fo r Duty. 
+																	An evaluation can be assigned for loss of range of motion and an evaluation can be assigned for instability. 
+																	The rating criteria is as follows. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.woodslawyers.com/wp-content/uploads/Knee-Pain-VA-Benefits-Lawyer-1024x537.jpg" data-lightbox="roadtrip" data-title="Knee Pain Ratings For Va Disability And Other Knee Injury Claims">
+											<img class="card-img v-image ads-img " src="https://www.woodslawyers.com/wp-content/uploads/Knee-Pain-VA-Benefits-Lawyer-1024x537.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwBG1egGknu6VQT_gGwgIshFJ2fQfEhoUVQ';" alt="Knee Pain Ratings For Va Disability And Other Knee Injury Claims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knee Pain Ratings For Va Disability And Other Knee Injury Claims</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/e4/20/9be420619f6a5e202d51373f9ba31d28.png" data-lightbox="roadtrip" data-title="Jses Has Published Kinematic Analysis Of Dynamic Shoulder Motion In Patients With Reverse Total Shoulder Arthroplasty This Impor Analysis Shoulder Dynamic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/e4/20/9be420619f6a5e202d51373f9ba31d28.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZeric1eVL8k3RlCQ0cKLSjID5WlG0iqIAw';" alt="Jses Has Published Kinematic Analysis Of Dynamic Shoulder Motion In Patients With Reverse Total Shoulder Arthroplasty This Impor Analysis Shoulder Dynamic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jses Has Published Kinematic Analysis Of Dynamic Shoulder Motion In Patients With Reverse Total Shoulder Arthroplasty This Impor Analysis Shoulder Dynamic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/ab/27/61ab2755868a3a34bdc7ee16300fb2fc.gif" data-lightbox="roadtrip" data-title="Pin On Workout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/ab/27/61ab2755868a3a34bdc7ee16300fb2fc.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbq96tLYkLg49iAyyHuC297Msa1G_3XmGFdA';" alt="Pin On Workout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Workout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/bb/96/9fbb9645632061bf3f613e8e7f6efeb3.png" data-lightbox="roadtrip" data-title="Military Disablity Ratings For Spine Conditions Military Disability Human Reference Medical Illustration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/bb/96/9fbb9645632061bf3f613e8e7f6efeb3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6UmP-B4la5WGkd1viU2piyRHxTVtVIFk1-A';" alt="Military Disablity Ratings For Spine Conditions Military Disability Human Reference Medical Illustration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Disablity Ratings For Spine Conditions Military Disability Human Reference Medical Illustration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://veterans-disability-lawyers.com/wp-content/uploads/2019/05/Knee-Impairments-in-Disabled-Veterans.jpg?x16905" data-lightbox="roadtrip" data-title="Knee And Leg Impairments Veterans Disability Lawyer Friedman Disability">
+											<img class="card-img v-image ads-img " src="https://veterans-disability-lawyers.com/wp-content/uploads/2019/05/Knee-Impairments-in-Disabled-Veterans.jpg?x16905" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM6M84kTFUUAuUm1kpEiuNnggGEOJEfaezrA';" alt="Knee And Leg Impairments Veterans Disability Lawyer Friedman Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knee And Leg Impairments Veterans Disability Lawyer Friedman Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/99/06/7f9906f4cb1438b6b5671d60a346695a.jpg" data-lightbox="roadtrip" data-title="Find Helpful Customer Reviews And Review Ratings For Led Clip On Key Chain Lights With Carabiner Heart Red At Amazon Com Read Ho Safety Lights Carabiner Led">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/99/06/7f9906f4cb1438b6b5671d60a346695a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiZCyK7sEPPb0Mh_COWe4ErBtv2K-9_FYVQw';" alt="Find Helpful Customer Reviews And Review Ratings For Led Clip On Key Chain Lights With Carabiner Heart Red At Amazon Com Read Ho Safety Lights Carabiner Led">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Find Helpful Customer Reviews And Review Ratings For Led Clip On Key Chain Lights With Carabiner Heart Red At Amazon Com Read Ho Safety Lights Carabiner Led</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/9b/e4/20/9be420619f6a5e202d51373f9ba31d28--motion.jpg" data-lightbox="roadtrip" data-title="Jses Has Published Kinematic Analysis Of Dynamic Shoulder Motion In Patients With Reverse Total Shoulder Arthroplasty This Impor Analysis Shoulder Dynamic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/9b/e4/20/9be420619f6a5e202d51373f9ba31d28--motion.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeiTEI2gdeGw0n-xTgGaO9pJL20tXm2oxPgQ';" alt="Jses Has Published Kinematic Analysis Of Dynamic Shoulder Motion In Patients With Reverse Total Shoulder Arthroplasty This Impor Analysis Shoulder Dynamic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jses Has Published Kinematic Analysis Of Dynamic Shoulder Motion In Patients With Reverse Total Shoulder Arthroplasty This Impor Analysis Shoulder Dynamic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/de/10/1dde101f8c2bdec28284741d381f4dc2.jpg" data-lightbox="roadtrip" data-title="Pectoral Girdle Anatomy Bones Muscles Function Diagram Ehealthstar In 2020 Girdle Acromioclavicular Joint Muscle Anatomy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/de/10/1dde101f8c2bdec28284741d381f4dc2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSAsK1lkWh72xc5O-bnRpe86-Dtgx0ljrPg';" alt="Pectoral Girdle Anatomy Bones Muscles Function Diagram Ehealthstar In 2020 Girdle Acromioclavicular Joint Muscle Anatomy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pectoral Girdle Anatomy Bones Muscles Function Diagram Ehealthstar In 2020 Girdle Acromioclavicular Joint Muscle Anatomy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/d1/2a/c8d12a5fc6c255622fbe2907ce730af3.png" data-lightbox="roadtrip" data-title="Newcastle Damp Proofing Your Local Damp Proofing Company Covering Newcastle The North East">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/d1/2a/c8d12a5fc6c255622fbe2907ce730af3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAylKKvwFk8LBwsjBdNkQPkFZbUmmYKe5N_w';" alt="Newcastle Damp Proofing Your Local Damp Proofing Company Covering Newcastle The North East">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newcastle Damp Proofing Your Local Damp Proofing Company Covering Newcastle The North East</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/48/3d/cd/483dcd41f9ac5603578bc429ef974ca6.jpg" data-lightbox="roadtrip" data-title="Biography Swami Vivekananda Quotes Change Quotes Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/48/3d/cd/483dcd41f9ac5603578bc429ef974ca6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqUU1TIMGIRmFYKqioETDeMPQjGDBlS7hLGg';" alt="Biography Swami Vivekananda Quotes Change Quotes Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Biography Swami Vivekananda Quotes Change Quotes Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/e5/46/bae54611b214326c7cd20f9b7ab1ad3d.jpg" data-lightbox="roadtrip" data-title="Unstoppable Dont Give Up Long Sleevet Shirt Unstoppable Usa Https Www Amazon Com Dp B07hyvl695 Ref Cm Sw R Pi Dp U X Ohgtbbkpypcb9">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/e5/46/bae54611b214326c7cd20f9b7ab1ad3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRBbcy2D7dfQ1NO-bOd_98zjsHJTaqGR4EPQ';" alt="Unstoppable Dont Give Up Long Sleevet Shirt Unstoppable Usa Https Www Amazon Com Dp B07hyvl695 Ref Cm Sw R Pi Dp U X Ohgtbbkpypcb9">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unstoppable Dont Give Up Long Sleevet Shirt Unstoppable Usa Https Www Amazon Com Dp B07hyvl695 Ref Cm Sw R Pi Dp U X Ohgtbbkpypcb9</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/8c/3d/698c3d5ff1e73ad62d76a06b48dc258d.jpg" data-lightbox="roadtrip" data-title="Eliteathleticperformance Com Wp Content Uploads 2013 02 Bad Ideal Posture Jpg Posture Exercises Bad Posture Improve Posture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/8c/3d/698c3d5ff1e73ad62d76a06b48dc258d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoF3RydSCsBsbfEJxy__W9_VRUm5YAjo10dA';" alt="Eliteathleticperformance Com Wp Content Uploads 2013 02 Bad Ideal Posture Jpg Posture Exercises Bad Posture Improve Posture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eliteathleticperformance Com Wp Content Uploads 2013 02 Bad Ideal Posture Jpg Posture Exercises Bad Posture Improve Posture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/1c/e0/5e1ce00eb64910a0762e8ca41b5ddb26.jpg" data-lightbox="roadtrip" data-title="Superset 1b Stability Ball Ab Pike Looks Awful But I Am Sure It Works Exercise Beachbody Workouts Fitness Body">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/1c/e0/5e1ce00eb64910a0762e8ca41b5ddb26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgEUF9ampaxeLzEGKPpYUsoExE82R7P1Ptw';" alt="Superset 1b Stability Ball Ab Pike Looks Awful But I Am Sure It Works Exercise Beachbody Workouts Fitness Body">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Superset 1b Stability Ball Ab Pike Looks Awful But I Am Sure It Works Exercise Beachbody Workouts Fitness Body</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/42/3a/ae423ab55d17e72c802ad292a2dff6a7.jpg" data-lightbox="roadtrip" data-title="Ivory And Gold Art Deco Lighted Figurine In 2021 Light Sculpture Art Deco Lighting Gold Art Deco">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/42/3a/ae423ab55d17e72c802ad292a2dff6a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5qb9xFFaCML8B4PTynsEQKTkI8PMmbgrtcQ';" alt="Ivory And Gold Art Deco Lighted Figurine In 2021 Light Sculpture Art Deco Lighting Gold Art Deco">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ivory And Gold Art Deco Lighted Figurine In 2021 Light Sculpture Art Deco Lighting Gold Art Deco</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.marylandinjurylawyerblog.com/files/2017/05/Median-Knee-Injury-Verdicts.png" data-lightbox="roadtrip" data-title="Value Of Knee Injuries">
+											<img class="card-img v-image ads-img " src="https://www.marylandinjurylawyerblog.com/files/2017/05/Median-Knee-Injury-Verdicts.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqTWJTpGqmkamAcBbtzANmE2EQIf-D7ydqig';" alt="Value Of Knee Injuries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Value Of Knee Injuries</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-yellow-ribbon-benefits.html">Va Yellow Ribbon Benefits</a></li>
+													<li class="list-group-item"><a href="/vadod-medical-sharing-office.html">Vadod Medical Sharing Office</a></li>
+													<li class="list-group-item"><a href="/vagov-inmate-search.html">Vagov Inmate Search</a></li>
+													<li class="list-group-item"><a href="/vagov-schedule-of-ratings.html">Vagov Schedule Of Ratings</a></li>
+													<li class="list-group-item"><a href="/va-workers-comp-phone-number.html">Va Workers Comp Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-widows-benefits-eligibility.html">Va Widows Benefits Eligibility</a></li>
+													<li class="list-group-item"><a href="/vagojoinus.html">Vagojoinus</a></li>
+													<li class="list-group-item"><a href="/va-widow-benefits-income-limits.html">Va Widow Benefits Income Limits</a></li>
+													<li class="list-group-item"><a href="/vagov-compensation-issue.html">Vagov Compensation Issue</a></li>
+													<li class="list-group-item"><a href="/va-widows-benefits-taxable.html">Va Widows Benefits Taxable</a></li>
+													<li class="list-group-item"><a href="/vagov-compensation.html">Vagov Compensation</a></li>
+													<li class="list-group-item"><a href="/vagov-apply-for-education-benefits.html">Vagov Apply For Education Benefits</a></li>
+													<li class="list-group-item"><a href="/va-workers-compensation-fee-schedule.html">Va Workers Compensation Fee Schedule</a></li>
+													<li class="list-group-item"><a href="/vagov-526ez.html">Vagov 526ez</a></li>
+													<li class="list-group-item"><a href="/vagov-claim-process.html">Vagov Claim Process</a></li>
+													<li class="list-group-item"><a href="/va-workers-comp-login.html">Va Workers Comp Login</a></li>
+													<li class="list-group-item"><a href="/vaed-treas-310-type-xxva-ch33.html">Vaed Treas 310 Type Xxva Ch33</a></li>
+													<li class="list-group-item"><a href="/va-yellow-ribbon-calculator.html">Va Yellow Ribbon Calculator</a></li>
+													<li class="list-group-item"><a href="/va-workers-comp-website.html">Va Workers Comp Website</a></li>
+													<li class="list-group-item"><a href="/va-work-study-program-phone-number.html">Va Work Study Program Phone Number</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

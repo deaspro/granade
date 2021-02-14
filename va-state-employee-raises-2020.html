@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va State Employee Raises 2020 - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va State Employee Raises 2020",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/5a/e6/b2/5ae6b2bb1df25c3fb9f115c6edfc04b8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+state+employee+raises+2020",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va State Employee Raises 2020</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">AP Virginia lawmakers have approved raises and bonuses for state employees and public school teachers in their final budget proposal. The VA budget has soared nearly. The House would also cut a planned premium increase for state employee health care. <br>				
+			</p>
+										<a class="badge badge-info" href="/va-rating-for-prediabetes.html">va rating for prediabetes</a>
+											<a class="badge badge-primary" href="/va-rating-for-severe-depression.html">va rating for severe depression</a>
+											<a class="badge badge-light" href="/va-rating-for-schizophrenia.html">va rating for schizophrenia</a>
+											<a class="badge badge-success" href="/va-rating-for-ptsd-with-alcohol.html">va rating for ptsd with alcohol</a>
+											<a class="badge badge-info" href="/va-rating-for-ptsd-and-anxiety.html">va rating for ptsd and anxiety</a>
+											<a class="badge badge-info" href="/va-rating-for-patellar-tendonitis.html">va rating for patellar tendonitis</a>
+											<a class="badge badge-light" href="/va-rating-for-right-lower-extremity-radiculopathy.html">va rating for right lower extremity radiculopathy</a>
+											<a class="badge badge-success" href="/va-rating-for-scar.html">va rating for scar</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to pay a visit to the right site.  Our site gives you hints for viewing the maximum quality video and picture content, hunt and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you see.  You can also contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2a/4b/29/2a4b297d502ea815b97ba3be7c102967.jpg" data-lightbox="roadtrip" data-title="How To Increase Your Virtual Assistant Rates For The New Year Virtual Assistant Earn Money Blogging Online Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2a/4b/29/2a4b297d502ea815b97ba3be7c102967.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8A_WUg4fr3W6zeLqolRRhczWroQduSFrdQ';" alt="How To Increase Your Virtual Assistant Rates For The New Year Virtual Assistant Earn Money Blogging Online Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Increase Your Virtual Assistant Rates For The New Year Virtual Assistant Earn Money Blogging Online Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.savingtoinvest.com/wp-content/uploads/2016/07/2020-GS-pay-scale.png?resize=930%2C643&amp;ssl=1" data-lightbox="roadtrip" data-title="2021 Pay Raise Or Not For Federal Employees On Gs Pay Scale Trump Now Suggesting Pay Freeze Aving To Invest">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/www.savingtoinvest.com/wp-content/uploads/2016/07/2020-GS-pay-scale.png?resize=930%2C643&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0Z9iPwwnAfThzh9tdrp-__drpWJZtT-Sgg';" alt="2021 Pay Raise Or Not For Federal Employees On Gs Pay Scale Trump Now Suggesting Pay Freeze Aving To Invest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Pay Raise Or Not For Federal Employees On Gs Pay Scale Trump Now Suggesting Pay Freeze Aving To Invest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/4c/6a/104c6a13e0592bba1d2fbf6ea8cca8ab.jpg" data-lightbox="roadtrip" data-title="Louisville Kentucky Mortgage Lender For Fha Va Khc Usda And Rural Housing Kentucky Mortgage Do S Dont S Befor Buying First Home Mortgage Mortgage Lenders">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/4c/6a/104c6a13e0592bba1d2fbf6ea8cca8ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGYBoyCXaTSgq6DAz_ttFqfeHwLhAmGQG7_A';" alt="Louisville Kentucky Mortgage Lender For Fha Va Khc Usda And Rural Housing Kentucky Mortgage Do S Dont S Befor Buying First Home Mortgage Mortgage Lenders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Louisville Kentucky Mortgage Lender For Fha Va Khc Usda And Rural Housing Kentucky Mortgage Do S Dont S Befor Buying First Home Mortgage Mortgage Lenders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5a/e6/b2/5ae6b2bb1df25c3fb9f115c6edfc04b8.jpg" data-lightbox="roadtrip" data-title="The Salary Of A Medical Biologist In 2020 Certificate Of Deposit Money Market Account Definitions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5a/e6/b2/5ae6b2bb1df25c3fb9f115c6edfc04b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNjo5SQbNdmnZzco0HIYIw8RONyiKv6K0YNg';" alt="The Salary Of A Medical Biologist In 2020 Certificate Of Deposit Money Market Account Definitions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salary Of A Medical Biologist In 2020 Certificate Of Deposit Money Market Account Definitions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/de/21/18de21dc67c531a94abdc5653558cf2d.jpg" data-lightbox="roadtrip" data-title="Reasons To Fall In Love With Homeownership Infographic In 2020 Home Ownership Real Estate Tips Academic Achievement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/de/21/18de21dc67c531a94abdc5653558cf2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5a16QxePgimHhYaUbzV-5qVDcWw0i5X3xA';" alt="Reasons To Fall In Love With Homeownership Infographic In 2020 Home Ownership Real Estate Tips Academic Achievement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reasons To Fall In Love With Homeownership Infographic In 2020 Home Ownership Real Estate Tips Academic Achievement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/29/22/83/2922835b93b6f8dd78e795c6f14bbd9c.jpg" data-lightbox="roadtrip" data-title="The Average Immigrant Raises The Total Value Of Housing Wealth In Their Local Area By 92 800 Ctcpa Pacpa Fbar Ac In 2020 Local Marketing Tax Lawyer Business Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/29/22/83/2922835b93b6f8dd78e795c6f14bbd9c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8UbEG6ZSMNPc0Dmp4baMQitiyhjuzIiffrA';" alt="The Average Immigrant Raises The Total Value Of Housing Wealth In Their Local Area By 92 800 Ctcpa Pacpa Fbar Ac In 2020 Local Marketing Tax Lawyer Business Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Average Immigrant Raises The Total Value Of Housing Wealth In Their Local Area By 92 800 Ctcpa Pacpa Fbar Ac In 2020 Local Marketing Tax Lawyer Business Law</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://s.yimg.com/ny/api/res/1.2/SLbWyRkOsAlQH3q69VmAaQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MA--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2019-12/d88d3720-1dde-11ea-9be3-018f6eab24a5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8UbEG6ZSMNPc0Dmp4baMQitiyhjuzIiffrA';" alt="The Average Immigrant Raises The Total Value Of Housing Wealth In Their Local Area By 92 800 Ctcpa Pacpa Fbar Ac In 2020 Local Marketing Tax Lawyer Business Law">
+										<div class="card-body">
+						<h3 class="h5"><b>1 a 1 across-the-board salary increase effective July 1 2020.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va state employee raises 2020</strong>. 
+								
+																	They are paid very well. 
+																	Some other state workers would get a one-time bonus of 1. 
+																	The VGEA continues its efforts to achieve raises improve benefits and keep VRS sound. 
+																	And 3 a 2 across-the-board salary increase effective July 1 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The cost of such increases for wage employees shall be borne by existing funds appropriated to each agency. 
+																	The House amendments 477 1h provide for the following for all constitutional officers and their employees. 
+																	In 2013 the VGEA won the first real base pay increase in six years for State employees with a 2 percent salary raise along with a 65 per year pay boost for every employee with at least five years of continuous service. 
+																	The Department of Veterans Affairs will see nearly a 12 percent increase in total. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many state employee benefits were achieved through VGEA efforts with staff and members working with the Virginia General Assembly. 
+																	Out of the appropriation in this Item is 165560616 the first year and 346609757 the second year from the general fund to provide a five percent increase to all state employees in the first and second years effective July 1 2020. 
+																	Jan 03 2021 Northam announced Thursday that Virginia ended fiscal 2020 with a 2365 said Virginias high concentration of federal employees and contractors as to tell whether the state will be able afford teacher raises and college. 
+																	Year and up 26 billion from fiscal 2020 levels. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 a 1 salary bonus payment on September 1 2020. 
+																	This amendment provides a three percent one-time bonus to state employees on December 1 2020 and a three percent base salary adjustment for state employees effective June 10 2021 and for state-supported local employees effective July 1 2021. 
+																	2021 payroll will virginia state employees get a pay raise in 2020 2021 pay periods will virginia state employees get a pay raise in 2020 2021 pay schedule 3 will virginia state employees get a pay raise in 2020 gsa opm federal pay scale. 
+																	Many other state workers would get 2 raises. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lawmakers Support Raises for Teachers State Employees Virginia state employees and public school teachers could soon be getting raises and bonuses. 
+																	Payroll calendar 2019va state employee raises 2020 ADP GSA GOV payment schedule va state employee raises 2020 federal pay calendar va state employee raises 2020 Federal payroll calendars. 
+																	The moon rises over the Virginia state Capitol in Richmond Va Wednesday Jan. 
+																	Jan 21 2021 Northam announced Thursday that Virginia ended fiscal 2020 with a 2365 said Virginias high concentration of federal employees and contractors as to tell whether the state will be able afford teacher raises and college Legislative Priorities 2020 VGEA 2020 Across the board 3 raise for state employees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PDT But now he said it would be better to cut raises than furlough state employees. 
+																	The base rates of pay and related employee benefits for wage employees may be increased up to three percent no earlier than July 10 2020. 
+																	Lawmakers unveiled their latest 135-billion. 
+																	Virginia Finance Secretary Aubrey Layne projects the state budget will take a hit of 2 billion or more from the coronavirus crisis Jan 15 2021 at 929 am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	AP Virginia state employees and public school teachers could soon be getting raises and bonuses under budget proposals before the state House and Senate. 
+																	The proposed pay increases included the states share of a 2 a year increase for teacher pay for the next two years and a 3 bonus in fiscal 2021 and a 3 raise the following year for state. 
+																	Increase FY 2020 Salary Adjustments. 
+																	To help correct a lag in pay between new employees and those with more years of service referred to as pay compression. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This year in the number one spot for state salaries is Virginia Techs vice president for advancement and chief fundraiser who earned 696324 edging out the President of UVA James Ryan who pulled in 695250. 
+																	Its good to be a university President or Administrator in Virginia. 
+																	The Virginia Governmental Employees Association VGEA is a. 
+																	By Associated Press Wire Service Content Feb. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Chief Executive Officer of the Virginia Alcoholic Beverage Control Authority. 
+																	Block the funding raises. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/2c/c3/422cc399c75761d28930c91501d18fe9.png" data-lightbox="roadtrip" data-title="How High Are State And Local Tax Collections In Your State In 2020 Tax State Tax Collection">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/2c/c3/422cc399c75761d28930c91501d18fe9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS96nH4y21KfZ5zSC71VoNSjuLouLwE_VHejA';" alt="How High Are State And Local Tax Collections In Your State In 2020 Tax State Tax Collection">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How High Are State And Local Tax Collections In Your State In 2020 Tax State Tax Collection</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/SLbWyRkOsAlQH3q69VmAaQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MA--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2019-12/d88d3720-1dde-11ea-9be3-018f6eab24a5" data-lightbox="roadtrip" data-title="These 21 States Are Raising Their Minimum Wage For 2020">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/SLbWyRkOsAlQH3q69VmAaQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MA--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2019-12/d88d3720-1dde-11ea-9be3-018f6eab24a5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN7dylMlfBJs5R9Z5aOkSgHFFahSkr5zCF7w';" alt="These 21 States Are Raising Their Minimum Wage For 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These 21 States Are Raising Their Minimum Wage For 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/81/d0/8581d0d5bfbb24969d0a640c4e3fee7e.png" data-lightbox="roadtrip" data-title="The Best And Worst Metros For Dating Girl The A Guide To Chasing Happiness For The Modern Girl In 2020 Richmond Dating Girls College Fun">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/81/d0/8581d0d5bfbb24969d0a640c4e3fee7e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmT-UbLDBng8NYVyjHHyT5mHwYnkgvyjvWEw';" alt="The Best And Worst Metros For Dating Girl The A Guide To Chasing Happiness For The Modern Girl In 2020 Richmond Dating Girls College Fun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best And Worst Metros For Dating Girl The A Guide To Chasing Happiness For The Modern Girl In 2020 Richmond Dating Girls College Fun</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/87/c4/6387c4114bdc7c549bd0e10d8df3110c.jpg" data-lightbox="roadtrip" data-title="Electricity Prices By State Compare 2013 U S Electric Rates States Electricity Current Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/87/c4/6387c4114bdc7c549bd0e10d8df3110c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt3k2XuJmstRysGi0JriQjv7NLJKvCAe7YZg';" alt="Electricity Prices By State Compare 2013 U S Electric Rates States Electricity Current Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Electricity Prices By State Compare 2013 U S Electric Rates States Electricity Current Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/41/b1/16/41b1164613af61078ed3e26badf48f73.jpg" data-lightbox="roadtrip" data-title="100 Habits That Makes Difference In Life Tiny Habit Habits Of Successful People Good Habits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/41/b1/16/41b1164613af61078ed3e26badf48f73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSyzwYJyltUrrqX2Vt18YvtnZxsbMAU6oPPg';" alt="100 Habits That Makes Difference In Life Tiny Habit Habits Of Successful People Good Habits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Habits That Makes Difference In Life Tiny Habit Habits Of Successful People Good Habits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2018/09/federal-pay-300x260.jpg" data-lightbox="roadtrip" data-title="Federal Pay Raise Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2018/09/federal-pay-300x260.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-SqGa2lAwziFVUo1VDRh9e2XnYz9pbJFmw';" alt="Federal Pay Raise Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Federal Pay Raise Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/07/fa/2607fa4fbd87f30b88f0a055d800ad56.jpg" data-lightbox="roadtrip" data-title="Renting Vs Buying A Home Which Is Best For You Renting Vs Buying Home Real Estate Buying Real Estate Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/07/fa/2607fa4fbd87f30b88f0a055d800ad56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh2vBKAkICF-3pPzuElk5kIozCGBjgB1GWWg';" alt="Renting Vs Buying A Home Which Is Best For You Renting Vs Buying Home Real Estate Buying Real Estate Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Renting Vs Buying A Home Which Is Best For You Renting Vs Buying Home Real Estate Buying Real Estate Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/22/bb/f222bbbcba1a1e72b9737d64698e0d3a.jpg" data-lightbox="roadtrip" data-title="12 Credit Score Hacks To Boost Your Credit Score Fast Credit Repair Good Credit Credit Score">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/22/bb/f222bbbcba1a1e72b9737d64698e0d3a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_g2gE0H4ugaR-NdcCIAO03Qm1SvzsSBO1w';" alt="12 Credit Score Hacks To Boost Your Credit Score Fast Credit Repair Good Credit Credit Score">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Credit Score Hacks To Boost Your Credit Score Fast Credit Repair Good Credit Credit Score</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/86/68/a386682c91920abfaad74f253acc766d.jpg" data-lightbox="roadtrip" data-title="How To Create A Future Billionaire In 2020 Smart Parenting Parenting Skills Kids And Parenting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/86/68/a386682c91920abfaad74f253acc766d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz5ZV8t9cZcLCM1On6N0a2k6SXwv40amh4cA';" alt="How To Create A Future Billionaire In 2020 Smart Parenting Parenting Skills Kids And Parenting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Create A Future Billionaire In 2020 Smart Parenting Parenting Skills Kids And Parenting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/52/91/cf/5291cfa14bd300992dcbd750cd8b64d9.jpg" data-lightbox="roadtrip" data-title="Alphabet Circles For Word Walls Bulletin Boards In 2020 Blend Words Word Wall Reading Curriculum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/52/91/cf/5291cfa14bd300992dcbd750cd8b64d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnKNeHk0bBhUMJIHkV8oU3haRL4qP5VktnPg';" alt="Alphabet Circles For Word Walls Bulletin Boards In 2020 Blend Words Word Wall Reading Curriculum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alphabet Circles For Word Walls Bulletin Boards In 2020 Blend Words Word Wall Reading Curriculum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://federalnewsnetwork.com/wp-content/uploads/2019/12/president-trump-signature-e1577393966869.jpg" data-lightbox="roadtrip" data-title="Updated Trump Signs Order Making 2020 Pay Raises Official Federal News Network">
+											<img class="card-img v-image ads-img " src="https://federalnewsnetwork.com/wp-content/uploads/2019/12/president-trump-signature-e1577393966869.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxyEAbqyupxXNk4VM56PFqHfG3k0TTZEcJpg';" alt="Updated Trump Signs Order Making 2020 Pay Raises Official Federal News Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Updated Trump Signs Order Making 2020 Pay Raises Official Federal News Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/dd/a5/c2dda5551618fa9ac15ef2a9abe3f78f.jpg" data-lightbox="roadtrip" data-title="Conference Registration Form Template Word Awesome Sports Registration Form Template Free Word Resume Words School Newsletter Template Newspaper Template Word">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/dd/a5/c2dda5551618fa9ac15ef2a9abe3f78f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY6oAi3fZmXwjUYmpGfPEWNQ_k4GLOOyDgZw';" alt="Conference Registration Form Template Word Awesome Sports Registration Form Template Free Word Resume Words School Newsletter Template Newspaper Template Word">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Conference Registration Form Template Word Awesome Sports Registration Form Template Free Word Resume Words School Newsletter Template Newspaper Template Word</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106742313-1602608883852-20201013_cola_estimated_monthly_benefits.png?v=1602608891&amp;w=720&amp;h=365&amp;imgcrop=n" data-lightbox="roadtrip" data-title="House Lawmakers To Propose Emergency 3 Social Security Cola">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106742313-1602608883852-20201013_cola_estimated_monthly_benefits.png?v=1602608891&amp;w=720&amp;h=365&amp;imgcrop=n" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNHLJuUySw-ktashsJXiEPUrgsD1EvW1UKnQ';" alt="House Lawmakers To Propose Emergency 3 Social Security Cola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">House Lawmakers To Propose Emergency 3 Social Security Cola</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-schools-accept-post-911-gi-bill.html">What Schools Accept Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-states-offer-free-college-tuition-for-veterans-dependents.html">What States Offer Free College Tuition For Veterans Dependents</a></li>
+													<li class="list-group-item"><a href="/what-stores-offer-military-discounts.html">What Stores Offer Military Discounts</a></li>
+													<li class="list-group-item"><a href="/what-schools-accept-military-tuition-assistance.html">What Schools Accept Military Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/what-should-i-go-to-college-for-quiz.html">What Should I Go To College For Quiz</a></li>
+													<li class="list-group-item"><a href="/what-size-is-the-irish-army.html">What Size Is The Irish Army</a></li>
+													<li class="list-group-item"><a href="/what-states-do-not-tax-va-disability.html">What States Do Not Tax Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-rank-is-a-lawyer-in-the-army.html">What Rank Is A Lawyer In The Army</a></li>
+													<li class="list-group-item"><a href="/what-schools-does-post-911-gi-bill-cover.html">What Schools Does Post 911 Gi Bill Cover</a></li>
+													<li class="list-group-item"><a href="/what-state-should-i-go-to-college-quiz.html">What State Should I Go To College Quiz</a></li>
+													<li class="list-group-item"><a href="/what-questions-are-asked-in-hr-interview.html">What Questions Are Asked In Hr Interview</a></li>
+													<li class="list-group-item"><a href="/what-questions-are-asked-for-unemployment-weekly-claim.html">What Questions Are Asked For Unemployment Weekly Claim</a></li>
+													<li class="list-group-item"><a href="/what-the-definition-of-military-post.html">What The Definition Of Military Post</a></li>
+													<li class="list-group-item"><a href="/what-size-are-military-dog-tags.html">What Size Are Military Dog Tags</a></li>
+													<li class="list-group-item"><a href="/what-schools-participate-in-free-application-week.html">What Schools Participate In Free Application Week</a></li>
+													<li class="list-group-item"><a href="/what-the-best-college-to-go-to-for-psychology.html">What The Best College To Go To For Psychology</a></li>
+													<li class="list-group-item"><a href="/what-should-i-go-to-college-for-quiz-free.html">What Should I Go To College For Quiz Free</a></li>
+													<li class="list-group-item"><a href="/what-should-i-go-to-college-for-test.html">What Should I Go To College For Test</a></li>
+													<li class="list-group-item"><a href="/what-season-does-jeremy-die-on-army-wives.html">What Season Does Jeremy Die On Army Wives</a></li>
+													<li class="list-group-item"><a href="/what-should-i-put-on-my-college-resume.html">What Should I Put On My College Resume</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

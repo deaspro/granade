@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Law Judge Board Of Veterans Appeals - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Law Judge Board Of Veterans Appeals",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/a3/0e/51/a30e5132df14c3346545e869a5e8b730.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+law+judge+board+of+veterans+appeals",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Law Judge Board Of Veterans Appeals</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In the video below Judge Tanya Smith a Veterans Law Judge explains to Veterans what to expect what to prepare and what happens after a hearing. The Boards mission is to conduct hearings and decide appeals properly before the Board in a timely manner. Board of Veterans Appeals PO Box 27063 Washington DC. <br>				
+			</p>
+										<a class="badge badge-danger" href="/washington-state-military-department-jobs.html">washington state military department jobs</a>
+											<a class="badge badge-primary" href="/washington-dc-national-guard-hotels.html">washington dc national guard hotels</a>
+											<a class="badge badge-success" href="/washington-dc-national-guard-commander.html">washington dc national guard commander</a>
+											<a class="badge badge-info" href="/was-the-national-guard-deployed-to-the-capitol-building.html">was the national guard deployed to the capitol building</a>
+											<a class="badge badge-primary" href="/water-heater-tp-valve-replacement-cost.html">water heater tp valve replacement cost</a>
+											<a class="badge badge-primary" href="/way-too-early-womens-college-basketball-rankings.html">way too early womens college basketball rankings</a>
+											<a class="badge badge-secondary" href="/washington-dc-national-guard-recruiter.html">washington dc national guard recruiter</a>
+											<a class="badge badge-success" href="/watch-iu-vs-rutgers.html">watch iu vs rutgers</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the right blog.  Our website provides you with hints for viewing the highest quality video and picture content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.  It is also possible to bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/9d/9e/779d9e22a4bc6733fd577d90ea1caf7b.png" data-lightbox="roadtrip" data-title="What To Do If You Disagree With Va S Decision On Your Compensation Claim Vantage Point Compensation Claim Compensation Decisions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/9d/9e/779d9e22a4bc6733fd577d90ea1caf7b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCJ0DyqpM4xizZ2njCKXs7uMLCTpFyoJBc1A';" alt="What To Do If You Disagree With Va S Decision On Your Compensation Claim Vantage Point Compensation Claim Compensation Decisions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Do If You Disagree With Va S Decision On Your Compensation Claim Vantage Point Compensation Claim Compensation Decisions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/98/8d/4e988d0c9a1d20e28ba045136a435ac1.jpg" data-lightbox="roadtrip" data-title="Top 10 Unlikable Movie Characters Movie Characters Movies Working On Saturday">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/98/8d/4e988d0c9a1d20e28ba045136a435ac1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNs6r25IR0NIbNzlOMXo3iMNcnoTp6qFQLlA';" alt="Top 10 Unlikable Movie Characters Movie Characters Movies Working On Saturday">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Unlikable Movie Characters Movie Characters Movies Working On Saturday</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/32/f9/7932f93c040f63318d2970cfca2565a2.jpg" data-lightbox="roadtrip" data-title="Justin Brown On Twitter Justin Brown Justin Baltimore City">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/32/f9/7932f93c040f63318d2970cfca2565a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGd1HrDMPujzub2p_YpUkng9P0Np-x_OzjDQ';" alt="Justin Brown On Twitter Justin Brown Justin Baltimore City">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Justin Brown On Twitter Justin Brown Justin Baltimore City</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/f8/32/8ff8321e8165ab6e9d866f67edf628eb.jpg" data-lightbox="roadtrip" data-title="How Trump Has Tipped The Scales In America S Most Powerful Courts In 2020 Court Of Appeals Swing State Court Judge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/f8/32/8ff8321e8165ab6e9d866f67edf628eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgG15q_WvPebTVtcOJFggoB3l0OyveBicL8Q';" alt="How Trump Has Tipped The Scales In America S Most Powerful Courts In 2020 Court Of Appeals Swing State Court Judge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Trump Has Tipped The Scales In America S Most Powerful Courts In 2020 Court Of Appeals Swing State Court Judge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b5/dd/99/b5dd99f58f347862715be7016bd7c74a.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b5/dd/99/b5dd99f58f347862715be7016bd7c74a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0VXy8ZkKP1Jmo_ZGqAse0ocJeu2QTD__rKA';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/7a/02/697a02c1e6a28e6f6852b4216184dbee.jpg" data-lightbox="roadtrip" data-title="Government Lawyer Suggests Attorney General Barr Had Secret Reasons For Dropping Michael Flynn Criminal Case In 2020 Trump Advisors National Security Advisor Court Of Appeals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/7a/02/697a02c1e6a28e6f6852b4216184dbee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5zlTOCF49mw3YVk7PL-DiLZ6z8eQXIINysg';" alt="Government Lawyer Suggests Attorney General Barr Had Secret Reasons For Dropping Michael Flynn Criminal Case In 2020 Trump Advisors National Security Advisor Court Of Appeals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Government Lawyer Suggests Attorney General Barr Had Secret Reasons For Dropping Michael Flynn Criminal Case In 2020 Trump Advisors National Security Advisor Court Of Appeals</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/23/fc/4d/23fc4d5909251c5fb926ee21a061793f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5zlTOCF49mw3YVk7PL-DiLZ6z8eQXIINysg';" alt="Government Lawyer Suggests Attorney General Barr Had Secret Reasons For Dropping Michael Flynn Criminal Case In 2020 Trump Advisors National Security Advisor Court Of Appeals">
+										<div class="card-body">
+						<h3 class="h5"><b>She previously served at the Department of Veterans Affairs as a Chief Veterans Law Judge of the Board of Veterans Appeals as Counsel to the Chairman and as a staff attorney.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans law judge board of veterans appeals</strong>. 
+								
+																	The appeal process can take years but will ultimately result in a BVA decision. 
+																	A judge is reviewing your appeal Your appeal is at the Board of Veterans Appeals being reviewed by a Veterans Law Judge. 
+																	Where do I send the Board a written request or new evidence. 
+																	Military veterans are entitled to claimed veterans benefits and services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As explained in the video above one option is to have a hearing with a Veterans Law Judge VLJ. 
+																	It determines whether US. 
+																	If a veteran chooses to file an appeal their appeal will be processed through one of two appeal systems depending on the date the appeal was submitted. 
+																	If you submit evidence that isnt already included in your case it may delay your appeal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Board of Veterans Appeals Board is composed of the men and women who possess well-honed veterans law skills and a strong commitment to government and public service. 
+																	The Boards mission is to conduct hearings and decide appeals properly before the Board. 
+																	Veterans Law Judges are. 
+																	OMR 3k views VA announced today that President Donald J. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Board of Veterans Appeals Board is a part of the Department of Veterans Affairs VA located in Washington DC. 
+																	Hearings are entirely optional and arent necessary to receive a decision from the Board. 
+																	He has served as a Board of Veterans Appeals Judge for 10 years and a total of 24 years with the VA. 
+																	You can also submit new evidence for the judge to review within 90 days of the day of your hearing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Board of Veterans Appeals conducts hearings with a veterans law judge. 
+																	Participating in the Rapid Appeals Modernization Program. 
+																	Appealing a VA decision you received on or after February 19 2019. 
+																	000 Introduction 044 What is the Board of Veterans Appeals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre appealing a VA decision under the new process go to Board Hearings with a Veterans Law Judge. 
+																	The Board of Veterans Appeals Board mission is to conduct hearings and decide appeals properly before the Board in a timely manner. 
+																	In August of 2017 the Appeals Modernization Act AMA was signed into law. 
+																	Upon receiving the NOD the VA may reconsider the claim and grant benefits or deny benefits at which time the veteran may appeal the case up to the Board of Veterans Affairs or BVA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She was appointed as Chair of the Board on April 29 2007. 
+																	38 United States Code 7101. 
+																	At the hearing the veteran will testify or refresh testimony from the decision review officer hearing concerning the details of the disability and the precipitating event. 
+																	As explained in the video above one option is to have a hearing with a Veterans Law Judge VLJ. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When a veteran receives a denial on a claim of disability benefits they have the right to appeal the decision. 
+																	117 Who works at the Board. 
+																	Trump recently approved the appointment of four new Veterans law judges to VAs Board of Veterans Appeals. 
+																	You can mail or fax a written request to reschedule or withdraw your Board hearing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I would like to send out a HUGE thanks Judge Clementi for being gracious enough to appear for this interview with the Veterans Law Blog and allowing Veterans Law Blog followers and subscribers this unprecedented degree of insight into the VA Claims Process. 
+																	The BVA decision can result in three different outcomes. 
+																	The Board of Veterans Appeals Board is the component of the Department of Veterans Affairs VA or Department responsible for making final decisions on behalf of the Secretary for claims for Veterans benefits from all three administrations and the Office of General Counsel OGC that are presented to the Board for appellate review. 
+																	Hearings are entirely optional and arent necessary to receive a decision from the Board. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tobias Chair is a member of the career SES. 
+																	Opting into the new process using VA Form 10182. 
+																	Bringing on additional judges means the Board will be better staffed to conduct hearings and decide appeals properly in a timely manner said VA Secretary Robert Wilkie. 
+																	So I thought I would help out a little with this. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Where does it come in the VA appeals process. 
+																	Fax your request to 844-678-8979. 
+																	Youll follow the new process if youre. 
+																	The Boards jurisdiction extends to all questions in matters involving a decision by the Secretary under a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Historically veterans appeals were processed through the Legacy appeals system. 
+																	What are Veterans La. 
+																	Judge Clementi has been a lawyer for 33 years receiving his law degree from Loyola University New Orleans. 
+																	The Board Appeals Metrics page is now available with additional details. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	38 United States Code USC 7101a. 
+																	Some Veterans elect to a potentially quicker decision and to save time they can choose one of the other options the Board offers. 
+																	The link is also available in the Resources links to the right. 
+																	The Board of Veterans Appeals is an administrative tribunal within the United States Department of Veterans Affairs located in Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs has done very little to promote advancements at the Board of Veterans Appeals including hiring Veterans Law Judges. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9a/09/a1/9a09a1cd1504a9b71d7605c269dfe8bf.jpg" data-lightbox="roadtrip" data-title="Pin By Barry Kean On Rcmp Badges Fire Badge Badge Law Enforcement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9a/09/a1/9a09a1cd1504a9b71d7605c269dfe8bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6JjRWryqRS_CpB4_gVq5fHrFOHI04UP7Qvg';" alt="Pin By Barry Kean On Rcmp Badges Fire Badge Badge Law Enforcement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Barry Kean On Rcmp Badges Fire Badge Badge Law Enforcement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5e/27/a6/5e27a67f31a73e683e13e7efac72d675.jpg" data-lightbox="roadtrip" data-title="Hilarious Lawyer Birthday Card Judge Card Law Student Etsy Birthday Cards For Friends Birthday Quotes For Best Friend Birthday Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5e/27/a6/5e27a67f31a73e683e13e7efac72d675.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpiu1RbgKyN7K36p0yjxuQIfF5Zuu08aITCw';" alt="Hilarious Lawyer Birthday Card Judge Card Law Student Etsy Birthday Cards For Friends Birthday Quotes For Best Friend Birthday Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hilarious Lawyer Birthday Card Judge Card Law Student Etsy Birthday Cards For Friends Birthday Quotes For Best Friend Birthday Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/ec/19/6cec19aa434b6656e4ed5a40a103578a.jpg" data-lightbox="roadtrip" data-title="35 New Functional Resume Template Google Docs Collection Functional Resume Template Job Resume Examples Functional Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/ec/19/6cec19aa434b6656e4ed5a40a103578a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9PETmubOhiGJxc1XYtqW65NlLaLQ0gAhXVw';" alt="35 New Functional Resume Template Google Docs Collection Functional Resume Template Job Resume Examples Functional Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">35 New Functional Resume Template Google Docs Collection Functional Resume Template Job Resume Examples Functional Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/63/95/856395361bd19f49681ecd4b2f57bd4a.jpg" data-lightbox="roadtrip" data-title="Ides Timeline Evaluation System Medical Timeline Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/63/95/856395361bd19f49681ecd4b2f57bd4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnkEJNZR6np9VUeb7E4ahrpAZ3pCqt0CpVGA';" alt="Ides Timeline Evaluation System Medical Timeline Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ides Timeline Evaluation System Medical Timeline Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/b6/f7/6eb6f70c58102d916eef2615852ea20e.jpg" data-lightbox="roadtrip" data-title="Burlesque Idol Live Entertainment Burlesque London Theatre">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/b6/f7/6eb6f70c58102d916eef2615852ea20e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE-0ioVD5oMyXzCIjIaIJiKy5hmBa3SWsnpQ';" alt="Burlesque Idol Live Entertainment Burlesque London Theatre">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Burlesque Idol Live Entertainment Burlesque London Theatre</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/ee/9a/d6ee9a2ef9c1e2dbfd4d414d36115ee7.jpg" data-lightbox="roadtrip" data-title="Pin On Western And Canadian Art From The Collection Of Don And Jeanne Reid Online Auction">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/ee/9a/d6ee9a2ef9c1e2dbfd4d414d36115ee7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl8orQVHMP9OMvPX0oyVGu4rBVGQXlZ6SmJw';" alt="Pin On Western And Canadian Art From The Collection Of Don And Jeanne Reid Online Auction">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Western And Canadian Art From The Collection Of Don And Jeanne Reid Online Auction</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/fc/4d/23fc4d5909251c5fb926ee21a061793f.jpg" data-lightbox="roadtrip" data-title="Pin On Rcmp Law Enforcement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/fc/4d/23fc4d5909251c5fb926ee21a061793f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwxetZG-ZPH7tHOrikoRYKPNFdf1MN9gEQLg';" alt="Pin On Rcmp Law Enforcement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Rcmp Law Enforcement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/09/36/090936b9a8c3c00ebeeb1f9090c0e90f.jpg" data-lightbox="roadtrip" data-title="Perennial Real Estate Appeals Against Court S Decision To Dismiss Winding Up Application For Capitol Entities Court Decisions Led Novelty Sign">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/09/36/090936b9a8c3c00ebeeb1f9090c0e90f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSREOwQhmEI7GCVO2OqOdUUzKDYRUshyVH4Kg';" alt="Perennial Real Estate Appeals Against Court S Decision To Dismiss Winding Up Application For Capitol Entities Court Decisions Led Novelty Sign">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Perennial Real Estate Appeals Against Court S Decision To Dismiss Winding Up Application For Capitol Entities Court Decisions Led Novelty Sign</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/34/e5/f434e58e5231e527e8fe1ea4af6f5525.jpg" data-lightbox="roadtrip" data-title="Pin On News123">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/34/e5/f434e58e5231e527e8fe1ea4af6f5525.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOb9xKLVTuDAVL7xMvpBKYIt0tJjIshwb0g';" alt="Pin On News123">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On News123</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/0e/51/a30e5132df14c3346545e869a5e8b730.jpg" data-lightbox="roadtrip" data-title="Brewton Alabama Criminal Defense Attorney Call Kreps Today With Help On Your Brewton Criminal Char Attorneys Criminal Defense Attorney Criminal Defense">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/0e/51/a30e5132df14c3346545e869a5e8b730.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6M_85KTDVwi-8f8k9MzQupkVeNaWARC6IQ';" alt="Brewton Alabama Criminal Defense Attorney Call Kreps Today With Help On Your Brewton Criminal Char Attorneys Criminal Defense Attorney Criminal Defense">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brewton Alabama Criminal Defense Attorney Call Kreps Today With Help On Your Brewton Criminal Char Attorneys Criminal Defense Attorney Criminal Defense</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/83/d1/3783d1c00d2f5a5c5328204e73a5a96f.jpg" data-lightbox="roadtrip" data-title="Albertas Great Rocky Mountain Escape Rocky Mountains Mountain Escapes Rocky">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/83/d1/3783d1c00d2f5a5c5328204e73a5a96f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjULcgJjtnYk275PrtGTVH97yCQxNeIG6nYA';" alt="Albertas Great Rocky Mountain Escape Rocky Mountains Mountain Escapes Rocky">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Albertas Great Rocky Mountain Escape Rocky Mountains Mountain Escapes Rocky</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/13/a0/ad/13a0ada9090558241c6e05591c38daf2.jpg" data-lightbox="roadtrip" data-title="9 Essential Items Soldiers Should Have In Their Barracks Rooms Military Com Army Mom Soldier Essentials">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/13/a0/ad/13a0ada9090558241c6e05591c38daf2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgJyJpxwd2fIx20NT-Iya5f3mERHbOM7tuqA';" alt="9 Essential Items Soldiers Should Have In Their Barracks Rooms Military Com Army Mom Soldier Essentials">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Essential Items Soldiers Should Have In Their Barracks Rooms Military Com Army Mom Soldier Essentials</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/4e/f3/fb4ef3e956c191a6ec15503a6289b277.jpg" data-lightbox="roadtrip" data-title="Police Tank Police Cars Armored Truck Police Tank">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/4e/f3/fb4ef3e956c191a6ec15503a6289b277.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRKK-KSxl5hs4Nn37pAd35nobbQfGkCw4sUg';" alt="Police Tank Police Cars Armored Truck Police Tank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Police Tank Police Cars Armored Truck Police Tank</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-gets-fired.html">What To Do When Your Husband Gets Fired</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-dies-unexpectedly.html">What To Do When Your Husband Dies Unexpectedly</a></li>
+													<li class="list-group-item"><a href="/what-to-do-if-youre-scared-to-go-to-college.html">What To Do If Youre Scared To Go To College</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-someone-refuses-to-wear-a-mask.html">What To Do When Someone Refuses To Wear A Mask</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-my-boyfriend-gives-me-silent-treatment.html">What To Do When My Boyfriend Gives Me Silent Treatment</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-alcohol-is-ruining-your-marriage.html">What To Do When Alcohol Is Ruining Your Marriage</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-everything-about-your-spouse-annoys-you.html">What To Do When Everything About Your Spouse Annoys You</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-yells-at-you-in-public.html">What To Do When Your Husband Yells At You In Public</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-husband-gets-fired.html">What To Do When Husband Gets Fired</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-betrayed-by-husband.html">What To Do When Betrayed By Husband</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-partner-calls-you-their-exs-name.html">What To Do When Your Partner Calls You Their Exs Name</a></li>
+													<li class="list-group-item"><a href="/what-to-do-if-your-wife-falls-out-of-love-with-you.html">What To Do If Your Wife Falls Out Of Love With You</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-my-husband-yells-at-me.html">What To Do When My Husband Yells At Me</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-husband-doesnt-love-you-anymore.html">What To Do When Husband Doesnt Love You Anymore</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-wont-speak-to-you.html">What To Do When Your Husband Wont Speak To You</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-you-have-an-alcoholic-husband.html">What To Do When You Have An Alcoholic Husband</a></li>
+													<li class="list-group-item"><a href="/what-to-do-if-your-va-claim-is-denied.html">What To Do If Your Va Claim Is Denied</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-cheated-by-husband.html">What To Do When Cheated By Husband</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-my-husband-died.html">What To Do When My Husband Died</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-dies-suddenly.html">What To Do When Your Husband Dies Suddenly</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

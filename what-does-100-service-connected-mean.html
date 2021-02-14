@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does 100 Service Connected Mean - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does 100 Service Connected Mean",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/43/bc/e6/43bce6d570e9eef56f89185fc9d8b931.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+100+service+connected+mean",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does 100 Service Connected Mean</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The veteran must have multiple service-connected disabilities whose individual disability ratings combine to 100. The veteran must have one service-connected condition that meets the 100 rating criteria specified for that condition. When being evaluated for a disability claim filed with the Department of Veterans Affairs it is possible to be assigned a percentage of disability and the corresponding compensation due within a range of 0 percent to 100 percent. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/veterans-compensation-benefits-rate-tables.html">veterans compensation benefits rate tables</a>
+											<a class="badge badge-danger" href="/veterans-compensation-benefits-rate-tables-effective-2020.html">veterans compensation benefits rate tables effective 2020</a>
+											<a class="badge badge-dark" href="/veterans-compensation-pay-schedule.html">veterans compensation pay schedule</a>
+											<a class="badge badge-success" href="/veterans-comp-and-pension.html">veterans comp and pension</a>
+											<a class="badge badge-dark" href="/veterans-compensation-for-hearing-loss.html">veterans compensation for hearing loss</a>
+											<a class="badge badge-warning" href="/veterans-compensation-assistance.html">veterans compensation assistance</a>
+											<a class="badge badge-light" href="/veterans-compensation-pay.html">veterans compensation pay</a>
+											<a class="badge badge-secondary" href="/veterans-cost-of-living-increase-for-2021.html">veterans cost of living increase for 2021</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the ideal site.  Our site gives you hints for seeing the maximum quality video and picture content, hunt and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this video for you to view.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c2/d7/78/c2d778e56e09358a9eafe1e520d0271a.jpg" data-lightbox="roadtrip" data-title="Attiglawfirm Com Http Www Attiglawfirm Com Tdiu Total Va Disability Ratings Utm Source Slideshare Utm Medium 09151 Disability Benefit Disability Cedartown">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c2/d7/78/c2d778e56e09358a9eafe1e520d0271a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1yfouwhNqSI1cAgDqDUdqVpfoJ6FRUJWqKA';" alt="Attiglawfirm Com Http Www Attiglawfirm Com Tdiu Total Va Disability Ratings Utm Source Slideshare Utm Medium 09151 Disability Benefit Disability Cedartown">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attiglawfirm Com Http Www Attiglawfirm Com Tdiu Total Va Disability Ratings Utm Source Slideshare Utm Medium 09151 Disability Benefit Disability Cedartown</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/4d/6e/464d6edcc3b430c5877d6f740aa47e3f.jpg" data-lightbox="roadtrip" data-title="First 100 Days Plan Template Fresh 100 Day Plan New Job Template Gagnatashort 100 Day Plan How To Plan Day Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/4d/6e/464d6edcc3b430c5877d6f740aa47e3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLFjL6_JmsebQTImv7EnJUXYSzs8X85L4c9g';" alt="First 100 Days Plan Template Fresh 100 Day Plan New Job Template Gagnatashort 100 Day Plan How To Plan Day Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First 100 Days Plan Template Fresh 100 Day Plan New Job Template Gagnatashort 100 Day Plan How To Plan Day Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/4f/3b/1d4f3bbf80f4ce1a7dd77cf784d1c902.jpg" data-lightbox="roadtrip" data-title="Pin On Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/4f/3b/1d4f3bbf80f4ce1a7dd77cf784d1c902.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhUPAC8U_F1Xl42IXX3Prz0j6kgVxdraxRw';" alt="Pin On Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/9f/ae/2d9fae46cd34e5c8bec768d741a20ca7.jpg" data-lightbox="roadtrip" data-title="Is Facebook Customer Service Really From Any Kind Of Errors 1 850 366 6203 Yes Facebook Customer Facebook Customer Service Customer Service Account Facebook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/9f/ae/2d9fae46cd34e5c8bec768d741a20ca7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ij5OpQ92Oftm8yGSOBhslHcF0zwpBdqayQ';" alt="Is Facebook Customer Service Really From Any Kind Of Errors 1 850 366 6203 Yes Facebook Customer Facebook Customer Service Customer Service Account Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is Facebook Customer Service Really From Any Kind Of Errors 1 850 366 6203 Yes Facebook Customer Facebook Customer Service Customer Service Account Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/cb/6b/9fcb6b02d296dd0059360a731abb324b.jpg" data-lightbox="roadtrip" data-title="Don T Know Which Domain Is Good For Future In 2020 What Is Big Data Big Data Data Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/cb/6b/9fcb6b02d296dd0059360a731abb324b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxipTWgK2kPZG-DxHqw3rpr5701BPjKvmlpQ';" alt="Don T Know Which Domain Is Good For Future In 2020 What Is Big Data Big Data Data Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Know Which Domain Is Good For Future In 2020 What Is Big Data Big Data Data Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/bc/e6/43bce6d570e9eef56f89185fc9d8b931.png" data-lightbox="roadtrip" data-title="Pinterest Marketing Metrics What Do They All Mean Infographic Social Media Marketing Blog Marketing Metrics Social Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/bc/e6/43bce6d570e9eef56f89185fc9d8b931.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStSTdFIp59oSA5XLN2luiyCoIleN5pJqB8Yg';" alt="Pinterest Marketing Metrics What Do They All Mean Infographic Social Media Marketing Blog Marketing Metrics Social Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pinterest Marketing Metrics What Do They All Mean Infographic Social Media Marketing Blog Marketing Metrics Social Marketing</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/77/41/8c/77418c4ff9fcff9a02c4cd33a70b231d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStSTdFIp59oSA5XLN2luiyCoIleN5pJqB8Yg';" alt="Pinterest Marketing Metrics What Do They All Mean Infographic Social Media Marketing Blog Marketing Metrics Social Marketing">
+										<div class="card-body">
+						<h3 class="h5"><b>We assign the lowest priority to Veterans who earn a higher income and who dont have any service-connected disabilities qualifying them for disability compensation monthly payments.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does 100 service connected mean</strong>. 
+								
+																	And the list goes on. 
+																	Currently the monthly payment for DIC is approximately 140000 so this gives the spouse about 12 of the veteran paycheck when heshe was alive. 
+																	A 100 VA Disability Rating is the highest VA Disability Rating that can be given for VA Disability. 
+																	Unemployable is not a title automatically given to a veteran at 100 status. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	100 Unemployable means you are not able to work because your service-connected disabilities are hindering you from working. 
+																	B If the veteran lives the full 10 years then he can pass of any disability. 
+																	Under the traditional rating scale for compensation 100 percent is the highest rating you will receive for either an individual service-connected condition or combined service-connected conditions. 
+																	There are two ways a veteran may be assigned a 100 disability rating. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However there are certain circumstances in which veterans can receive additional forms of compensation based off of particularly severe conditions. 
+																	We assign Veterans with service-connected disabilities the highest priority. 
+																	However barring no reduction permanent and total service connected disability is a 100 rating that entitles you to many benefits not available to those who are not P T ie dental treatment commissary privileges veterans employment preference for spouse special home adaptation grants survivors and dependents education assistance etc. 
+																	If that is your only disability then your final VA Service-Connected Disability Rating is 30. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A car accident at night was aggravated by military service or was caused by conditions that are themselves service-connected. 
+																	Those with multiple service-connected health issues may receive individual disability ratings at varying percentages with the combined disability compensation percentage coming from the combination of ratings up to 100. 
+																	Its been years since I have been discharged am I still eligible for the VA Home Loan Guaranty. 
+																	A 100 rating is available for periods of hospital treatment for a service-connected disability for more than 21 days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Physical disabilities including hearing loss chronic back pain asthma and cancers caused by contact with toxic chemicals. 
+																	What does 100 Unemployable mean. 
+																	Then subtract 70 from 100 and you are left with 30. 
+																	If you qualify for more than one priority group well assign you to the highest one. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Service connected disability rating at 100 with an additional separate 60 percent service connected disability rating. 
+																	If you are hospitalized for a non-service-connected disability you can still get assigned a 100 rating if during that hospitalization you were treated for a service-connected disability for more than 21 days. 
+																	Use of commissaries exchanges and morale welfare and recreation MWR retail facilities in-person and online. 
+																	Veterans with a disability that developed or worsened while serving in the military or due to military service may be eligible for Service-Connected disability pay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Service-connection means that a veterans medical condition was directly caused by military service occurred while in the military but not necessarily on duty ie. 
+																	Subtract that from 100 which leaves you with 70 consider this your new starting point for your health rating. 
+																	A 100 Rating is given to Disabled Veterans with extremely severe service-connected conditions that usually make the veteran entirely unable to work and mostly unable to care for themselves including bathing and dressing. 
+																	Conditions covered by these benefits typically include. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When a veteran is rated as permanently and totally 100 percent service connected disabled or a veteran dies due to a service connected disability dependents are eligible for education benefits. 
+																	A The veteran passes of a service-connected disability within the first 10 years of being rated 100. 
+																	This gives you 30. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/e8/98/fae898faf555462ec3b4035c7c382eed.jpg" data-lightbox="roadtrip" data-title="Pin On Motivation And Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/e8/98/fae898faf555462ec3b4035c7c382eed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0Sk3eADVeLeyG2jh2dNU9WnwBwm5czd9Fw';" alt="Pin On Motivation And Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Motivation And Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/e7/67/38e767b5bfdf74c981d738e940cefe91.jpg" data-lightbox="roadtrip" data-title="There Is Absolutely Nothing Wrong With Wanting That S One Of The Ingredients To Make The Law Of Attraction Work Law Of Attraction Online Coaching Perspective">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/e7/67/38e767b5bfdf74c981d738e940cefe91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJPe6G1k6nNFYymRctHaC6lKPDpSVBX14juw';" alt="There Is Absolutely Nothing Wrong With Wanting That S One Of The Ingredients To Make The Law Of Attraction Work Law Of Attraction Online Coaching Perspective">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Is Absolutely Nothing Wrong With Wanting That S One Of The Ingredients To Make The Law Of Attraction Work Law Of Attraction Online Coaching Perspective</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/5f/ee/8a5fee53022413eb8fd8cb6e962f1319.png" data-lightbox="roadtrip" data-title="6 Basic Digital Marketing Strategies Business Owners Must Know Marketing Strategy Business Digital Marketing Strategy Business Digital Marketing Strategy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/5f/ee/8a5fee53022413eb8fd8cb6e962f1319.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb_gODflfQJOgMnCEe5kW-xMdTyIrde9qzFQ';" alt="6 Basic Digital Marketing Strategies Business Owners Must Know Marketing Strategy Business Digital Marketing Strategy Business Digital Marketing Strategy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Basic Digital Marketing Strategies Business Owners Must Know Marketing Strategy Business Digital Marketing Strategy Business Digital Marketing Strategy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/77/41/8c/77418c4ff9fcff9a02c4cd33a70b231d.jpg" data-lightbox="roadtrip" data-title="Pin On Homebusiness Selfemployment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/77/41/8c/77418c4ff9fcff9a02c4cd33a70b231d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIa5BYDlVxHWYEfcuApVpbeQrb2iStNErf_A';" alt="Pin On Homebusiness Selfemployment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Homebusiness Selfemployment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/f0/0e/c2f00eb4b4b70ddf3e28ab32ab955398.jpg" data-lightbox="roadtrip" data-title="The Culture Of Company Culture Infographic Company Culture Business Leadership Corporate Culture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/f0/0e/c2f00eb4b4b70ddf3e28ab32ab955398.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS42EgEBQ3ZqKNbTOhOq4b8Tm2qEUpOP5nvvg';" alt="The Culture Of Company Culture Infographic Company Culture Business Leadership Corporate Culture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Culture Of Company Culture Infographic Company Culture Business Leadership Corporate Culture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/ff/2d/55ff2df714f6c761e7d43b70d2cc17a0.png" data-lightbox="roadtrip" data-title="10 Most Common Warning Lights What Do Car Warning Lights Mean Warning Lights Lit Meaning Lights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/ff/2d/55ff2df714f6c761e7d43b70d2cc17a0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScZHGsaW1A7a4-_gjr1ZIs2sw6fVRE1oMUZA';" alt="10 Most Common Warning Lights What Do Car Warning Lights Mean Warning Lights Lit Meaning Lights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Most Common Warning Lights What Do Car Warning Lights Mean Warning Lights Lit Meaning Lights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/5a/c2/ea5ac23c9e75c62d7a09716b6098bcc9.jpg" data-lightbox="roadtrip" data-title="How To Use Visual Content And Social Media For Customer Service Infographic Social Media Infographic Visual Content Marketing Infographic Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/5a/c2/ea5ac23c9e75c62d7a09716b6098bcc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1sM9c9TnFyYnTCPvqH9pq05_iZp4bWhjrHA';" alt="How To Use Visual Content And Social Media For Customer Service Infographic Social Media Infographic Visual Content Marketing Infographic Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Use Visual Content And Social Media For Customer Service Infographic Social Media Infographic Visual Content Marketing Infographic Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/49/56/73495699eb7aa602c2c7ed10d97c4ac2.png" data-lightbox="roadtrip" data-title="The Manifesto For Social Media Marketing Infographic Mercadotecnia En Medios Sociales Marketing De Guerrilla Marketing En Internet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/49/56/73495699eb7aa602c2c7ed10d97c4ac2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60x8YzbgInzU75u-Qidz8Dxyfw40TkB7zSw';" alt="The Manifesto For Social Media Marketing Infographic Mercadotecnia En Medios Sociales Marketing De Guerrilla Marketing En Internet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Manifesto For Social Media Marketing Infographic Mercadotecnia En Medios Sociales Marketing De Guerrilla Marketing En Internet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/73/10/9973105f575ce14e622d1bdffc0d95ef.png" data-lightbox="roadtrip" data-title="Rewiring Industries 100 Iot Startups Disrupting Auto Healthcare Energy And More Startup Infographic Iot Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/73/10/9973105f575ce14e622d1bdffc0d95ef.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5xkoviZDImhDGTeXVFN_YlZodk6YtuHE_7A';" alt="Rewiring Industries 100 Iot Startups Disrupting Auto Healthcare Energy And More Startup Infographic Iot Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rewiring Industries 100 Iot Startups Disrupting Auto Healthcare Energy And More Startup Infographic Iot Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/86/0e/80860ecfc7c62fc8369fb9963bdae762.jpg" data-lightbox="roadtrip" data-title="The Inspired Counselor Random Acts Of Kindness Week Teaching Kindness Activities Random Acts Of Kindness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/86/0e/80860ecfc7c62fc8369fb9963bdae762.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRGAVt9E8AVhwqWan1RZVZrM1LJJ_rjf1K7A';" alt="The Inspired Counselor Random Acts Of Kindness Week Teaching Kindness Activities Random Acts Of Kindness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Inspired Counselor Random Acts Of Kindness Week Teaching Kindness Activities Random Acts Of Kindness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/29/ad/2229ad4c43b5c2b146bf8d431ba97779.jpg" data-lightbox="roadtrip" data-title="History Of The Internet Of Things Infographic Internet History Iot Internet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/29/ad/2229ad4c43b5c2b146bf8d431ba97779.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTsDiYGZK9BgfccMmdD21zQ08HkrhNsA--Fw';" alt="History Of The Internet Of Things Infographic Internet History Iot Internet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">History Of The Internet Of Things Infographic Internet History Iot Internet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1b/f8/98/1bf898d25d66ae82a424577fd87a86d2.jpg" data-lightbox="roadtrip" data-title="Louisville Kentucky Mortgage Lender For Fha Va Khc Usda And Rural Housing Kentucky Mortgage 2019 Kentucky V Va Mortgages Mortgage Lenders Va Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1b/f8/98/1bf898d25d66ae82a424577fd87a86d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeynPD_myW2U9GvmQoKz56yVGuw4sx9XouBA';" alt="Louisville Kentucky Mortgage Lender For Fha Va Khc Usda And Rural Housing Kentucky Mortgage 2019 Kentucky V Va Mortgages Mortgage Lenders Va Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Louisville Kentucky Mortgage Lender For Fha Va Khc Usda And Rural Housing Kentucky Mortgage 2019 Kentucky V Va Mortgages Mortgage Lenders Va Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/c3/6d/c3c36df3e105b93b57f1a08d59e1d7bc.jpg" data-lightbox="roadtrip" data-title="What Does It Mean To Be Customer Centric Infographic Infografia Customer Lifetime Value Customer Insight Customer Development">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/c3/6d/c3c36df3e105b93b57f1a08d59e1d7bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLdI4pT4uH8YrynRVjPAvvaFlXhO9QFvfsrg';" alt="What Does It Mean To Be Customer Centric Infographic Infografia Customer Lifetime Value Customer Insight Customer Development">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Does It Mean To Be Customer Centric Infographic Infografia Customer Lifetime Value Customer Insight Customer Development</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/96/a8/1596a837bceccaa0344bf7406b176f3c.jpg" data-lightbox="roadtrip" data-title="Idc Iot Infographic 2016 Iot Business Infographic Educational Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/96/a8/1596a837bceccaa0344bf7406b176f3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA1qaSDOH8TnPRKaAcKX5crc2sW0bJidYnlA';" alt="Idc Iot Infographic 2016 Iot Business Infographic Educational Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Idc Iot Infographic 2016 Iot Business Infographic Educational Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/33/1b/4b331b54e203f2008aaede7e1352fb00.jpg" data-lightbox="roadtrip" data-title="How To Make The Internet Of Things Lots Of Fun And Safe Infographic Service Design Technology Infographic Internet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/33/1b/4b331b54e203f2008aaede7e1352fb00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQf2qZu3L_sIvo_ppnzQA2KkWLo14MQnQNBw';" alt="How To Make The Internet Of Things Lots Of Fun And Safe Infographic Service Design Technology Infographic Internet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Make The Internet Of Things Lots Of Fun And Safe Infographic Service Design Technology Infographic Internet</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-schedule-for-mental-disorders.html">Va Rating Schedule For Mental Disorders</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-ibs.html">Va Rating Schedule For Ibs</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-hearing-loss.html">Va Rating Schedule For Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-rating-table-combined.html">Va Rating Table Combined</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-vertigo.html">Va Rating Schedule For Vertigo</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-insomnia.html">Va Rating Schedule For Insomnia</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-hemorrhoids.html">Va Rating Schedule For Hemorrhoids</a></li>
+													<li class="list-group-item"><a href="/va-rating-sinusitis.html">Va Rating Sinusitis</a></li>
+													<li class="list-group-item"><a href="/va-rating-shoulder-surgery.html">Va Rating Shoulder Surgery</a></li>
+													<li class="list-group-item"><a href="/va-rating-sleep-apnea.html">Va Rating Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-rating-specialist.html">Va Rating Specialist</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-prostate-cancer.html">Va Rating Schedule Prostate Cancer</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-ms.html">Va Rating Schedule For Ms</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-non-hodgkins-lymphoma.html">Va Rating Schedule For Non Hodgkins Lymphoma</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-musculoskeletal.html">Va Rating Schedule Musculoskeletal</a></li>
+													<li class="list-group-item"><a href="/va-rating-sleep-apnea-secondary-to-gerd.html">Va Rating Sleep Apnea Secondary To Gerd</a></li>
+													<li class="list-group-item"><a href="/va-rating-system-calculator.html">Va Rating System Calculator</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-neuropathy.html">Va Rating Schedule Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-gynecological.html">Va Rating Schedule For Gynecological</a></li>
+													<li class="list-group-item"><a href="/va-rating-schedule-for-lower-back-pain.html">Va Rating Schedule For Lower Back Pain</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

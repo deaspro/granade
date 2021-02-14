@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Retirement Pay Raise - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Retirement Pay Raise",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/93/e9/b5/93e9b51d870b5f17e8cc326da0d333d5.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+retirement+pay+raise",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Retirement Pay Raise</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Going from a 40 rating 64128 to a 50 rating 90183 is huge. Learn more about eligibility in the Retiree Handbook. Actual amount will be determined by SSA based on individual income. <br>				
+			</p>
+										<a class="badge badge-success" href="/va-service-connected-disability-prostate-cancer.html">va service connected disability prostate cancer</a>
+											<a class="badge badge-success" href="/va-service-connected-disability-reevaluation.html">va service connected disability reevaluation</a>
+											<a class="badge badge-dark" href="/va-service-connected-rheumatoid-arthritis.html">va service connected rheumatoid arthritis</a>
+											<a class="badge badge-dark" href="/va-service-connected-foot.html">va service connected foot</a>
+											<a class="badge badge-success" href="/va-sleep-apnea-secondary-to-hypertension.html">va sleep apnea secondary to hypertension</a>
+											<a class="badge badge-secondary" href="/va-sleep-apnea-rating-change.html">va sleep apnea rating change</a>
+											<a class="badge badge-warning" href="/va-service-connected-zero-percent-service-connected-disability.html">va service connected zero percent service connected disability</a>
+											<a class="badge badge-danger" href="/va-service-connected-knees.html">va service connected knees</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the right blog.  Our site provides you with hints for viewing the highest quality video and picture content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/ce/7e/cfce7ed0c29506ef44e579e47d8dc09a.jpg" data-lightbox="roadtrip" data-title="Military Retirees And Those Who Receive Disability Checks Will See A 2 Percent Pay Raise In Their Monthly Paychecks In 201 Military Pay Cool Photos Love Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/ce/7e/cfce7ed0c29506ef44e579e47d8dc09a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShL9LFbCv_KjmizmMmMRnUvmDhyzTR8qT44rIRfXRVI7mHuQFfmn5AXQkBi6C1PWOtY7vxd3br5kwiDip4mFMiIFYPw0atjKAA8w&amp;ec=45768321';" alt="Military Retirees And Those Who Receive Disability Checks Will See A 2 Percent Pay Raise In Their Monthly Paychecks In 201 Military Pay Cool Photos Love Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Retirees And Those Who Receive Disability Checks Will See A 2 Percent Pay Raise In Their Monthly Paychecks In 201 Military Pay Cool Photos Love Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cck-law.com/wp-content/uploads/2020/11/My-Post-2020-11-10T175014.064-scaled.jpg" data-lightbox="roadtrip" data-title="Va Disability Rates For 2021 With Cost Of Living Adjustment Cck Law">
+											<img class="card-img v-image ads-img " src="https://cck-law.com/wp-content/uploads/2020/11/My-Post-2020-11-10T175014.064-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRf1d90pbLRaTbryZwtYXDgMnV6l_yuHNHp5awnLG9ugjg_O-JjKWsb-HrDWkRJepaTY8xgjnaiqymFdj7x-wYOA7x1gA7EZXI9g&amp;ec=45768321';" alt="Va Disability Rates For 2021 With Cost Of Living Adjustment Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Rates For 2021 With Cost Of Living Adjustment Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/02/COLA-Increase-Watch_Military-Benefits.jpg" data-lightbox="roadtrip" data-title="Cola Increase Watch 2021 2022 Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/02/COLA-Increase-Watch_Military-Benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoshVGTx9WvHboeMjHNvxa_GIpI90igBSY2d4PEqqoYVat_ta0dTQusVcdd-J4CJAkDEXWTogR5HBygY8xBxRLl4-dch1c5BiqKQ&amp;ec=45768321';" alt="Cola Increase Watch 2021 2022 Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cola Increase Watch 2021 2022 Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.moaa.org/uploadedfiles/content/publications_and_media/news_articles/2018_news_articles/advocacy/cola-cash-h.jpg" data-lightbox="roadtrip" data-title="Moaa Here S Your 2021 Military Retiree And Va Disability Pay Raise">
+											<img class="card-img v-image ads-img " src="https://www.moaa.org/uploadedfiles/content/publications_and_media/news_articles/2018_news_articles/advocacy/cola-cash-h.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIHT44aNIDffsaUj1BSpc0r4nssVrE2CmJu0RtbX_Q3FkLZoD2Up09R4WVeBPEfqWgRi0iwhEd-LVARDenhS_IoEpp51Nu9d87Q&amp;ec=45768321';" alt="Moaa Here S Your 2021 Military Retiree And Va Disability Pay Raise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moaa Here S Your 2021 Military Retiree And Va Disability Pay Raise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/05/e5/9c05e591acaae728956f7f33594e5052.jpg" data-lightbox="roadtrip" data-title="Pin By Sue Bogonovich On Social Security Info Social Security Benefits Social Security Social">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/05/e5/9c05e591acaae728956f7f33594e5052.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDSUqI0bUJb6wfXkB0eWi-Jr6a_9K5szMMDHskHvhd5-GwB9dTVfFskQCinA6Qcdv-9fxgHoQd4CLfBxlTXcr5RJZpZL7_ufdtyQ&amp;ec=45768321';" alt="Pin By Sue Bogonovich On Social Security Info Social Security Benefits Social Security Social">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sue Bogonovich On Social Security Info Social Security Benefits Social Security Social</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/83/8c/3f838c185b3d5a9f927cf1b06fafb3b4.jpg" data-lightbox="roadtrip" data-title="Pin On Disability Info">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/83/8c/3f838c185b3d5a9f927cf1b06fafb3b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgt6jFBN1Wm2KjCEwLhC3ptdyqLAYGXJcgv6VETMLI-qGUH8OyILAjAQIhbP_cMHaQNSCXE_ExJFAg-MxAKGxsFHavHt5K-RAlsA&amp;ec=45768321';" alt="Pin On Disability Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Disability Info</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/96/fe/8a/96fe8af40a7dee1486c48a1c241eca38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgt6jFBN1Wm2KjCEwLhC3ptdyqLAYGXJcgv6VETMLI-qGUH8OyILAjAQIhbP_cMHaQNSCXE_ExJFAg-MxAKGxsFHavHt5K-RAlsA&amp;ec=45768321';" alt="Pin On Disability Info">
+										<div class="card-body">
+						<h3 class="h5"><b>Based on the increase in the Consumer Price Index there will be a 13 percent Cost of Living Adjustment COLA for most retired pay and Survivor Benefit Plan annuities and the Special Survivor Indemnity Allowance SSIA effective December 1 2020.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va retirement pay raise</strong>. 
+								
+																	Military retirees who joined the service on or after August 1st 1986 and opted for the Career Status Bonus CSBRedux retirement plan have any COLA increases reduced by 1 so that they will experience a smaller increase in 2021. 
+																	December 1 2020 Increase factor. 
+																	Cost-of-living adjustments COLAs allow your retirement benefit to keep pace with inflation. 
+																	Retirement Pay Increase As a result of the increase the average military retirement check for an E-7 with 20 years of service will go up by 38 a month while an O-5 with the same time in uniform. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That number is a bit less than the 16 increase from last year however if you look over the course of the past 10 years the number is in line. 
+																	The July 1 increase will be included in the August 1 benefit payment of eligible retirees. 
+																	Bureau of Labor Statistics and updated each July 1. 
+																	For Veterans with no dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The annual Cost Of Living Allowance COLA is slightly less than the 16 increase from last year but. 
+																	If inflation is between to 2 to 3 percent then COLA is set at 2 percent. 
+																	Beginning in 2021 military retirees and VA beneficiaries will see an increase in their checks. 
+																	The annual Cost Of Living Allowance COLA is slightly less than the 16 increase from last year but in line with the historical increases seen over the last 10 years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Date of cost-of-living increase. 
+																	High 3 allocates retirement pay equal to 50 percent of average basic pay over the three highest income years for those having served 20 years of military service The High 36 Retirement Program. 
+																	View 2021 Veterans disability compensation rates. 
+																	The COLA is based on the Consumer Price Index for all Urban Consumers CPI-U published by the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use our compensation benefits rate tables to find your monthly payment amount. 
+																	Retirement Pay Increase As a result of the increase retired military members will see a 13 increase for each 1000 in military retirement pension they receive each month. 
+																	Earlier this year veterans and Social Security beneficiaries received a 16 percent cost-of-living increase. 
+																	Redux pays 40 percent for a member with 20 years of military service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can expect for your monthly checks to increase 13. 
+																	The increase would mean the full value of the military retirement pay plus the full value of the VA disability compensation. 
+																	The COLA increase is only set at the CPI-W if the increase is less than 2 percent. 
+																	Due to the COLA raise retired Service Members will see roughly a 13 increase for every 1000 in military retirement pay they receive each month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With the COLA applied the maximum amount of SSIA payable is 327. 
+																	Not only does the VA disability compensation increase by 26055 per month but the 64128 is not deducted from the military retirement pay. 
+																	Veterans who retire during the current calendar year will receive a temporary partial COLA due to already receiving a military pay raise in January. 
+																	Military retirees those who receive disability or other benefits from the Department of Veterans Affairs federal retirees and Social Security recipients will see a 13 increase in their monthly checks for 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each year military retirement pay Survivor Benefit Plan Annuities VA Compensation and Pensions and Social Security benefits are adjusted for the rate of inflation. 
+																	13 Standard Medicare deduction. 
+																	So far its unclear exactly how much the increase for 2021 might be. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/63/a3/37/63a33789cafb41d3e4462c38657103e0.jpg" data-lightbox="roadtrip" data-title="2021 Military Pay Charts Proposed Military Pay Chart Military Pay Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/63/a3/37/63a33789cafb41d3e4462c38657103e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBazimxj9EOKvuF2oAF6wdvgz_B5hMYzMVq4mM_L4yclKp5XlvO4SIXvc6KcXX6PPvTgeyId6h0RCZnC0mBZB37CKLc9Iqv92gaw&amp;ec=45768321';" alt="2021 Military Pay Charts Proposed Military Pay Chart Military Pay Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Military Pay Charts Proposed Military Pay Chart Military Pay Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/0a/6a/780a6a320430402d9cf3a72c694fd426.jpg" data-lightbox="roadtrip" data-title="Ask A Veteran Is Thank You For Your Service The Right Thing To Say Vietnam War Marine Corps Joining The Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/0a/6a/780a6a320430402d9cf3a72c694fd426.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTBuXB8rjEzHvbl242rV7Oqr_UKjtH66d4MvGpsFYrqf5vjbdHDqS_7TNM9IrtlrOFKKRhYxQGl6shfTatCx0olmK0VoI1vnYGpQ&amp;ec=45768321';" alt="Ask A Veteran Is Thank You For Your Service The Right Thing To Say Vietnam War Marine Corps Joining The Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ask A Veteran Is Thank You For Your Service The Right Thing To Say Vietnam War Marine Corps Joining The Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e5/7a/e4/e57ae48fb478ea07652375ecb5038f90.jpg" data-lightbox="roadtrip" data-title="Pin By Military Benefits On Money Finance In 2021 Finance Money Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e5/7a/e4/e57ae48fb478ea07652375ecb5038f90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKYHLgi0Q93evkkMjEm705ubI9EzeuQkU-9Ql_Id8tQjFM1_Rl56mtG-nQa7n-cCxWLvOKm0-NBOQhI7hscuRk6aqExDpJOfrndw&amp;ec=45768321';" alt="Pin By Military Benefits On Money Finance In 2021 Finance Money Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Military Benefits On Money Finance In 2021 Finance Money Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/f4/fd/9ef4fd9d73d043c1014c8db374738ceb.png" data-lightbox="roadtrip" data-title="The Average Social Security Retirement Benefit Could Be 5 600 Higher Annually But There S A Catch The Motley Fool Retirement Benefits Social Security Benefits Social Security Benefits Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/f4/fd/9ef4fd9d73d043c1014c8db374738ceb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYfku-6s3QiE5Heem0h4WxC8b72tKOGggo4h_gLpgnqrzOWpyrGHbmFtQAYIqBHTGNxqXkT79MMIOkFz60EDQvdiRNwW20yu0aVw&amp;ec=45768321';" alt="The Average Social Security Retirement Benefit Could Be 5 600 Higher Annually But There S A Catch The Motley Fool Retirement Benefits Social Security Benefits Social Security Benefits Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Average Social Security Retirement Benefit Could Be 5 600 Higher Annually But There S A Catch The Motley Fool Retirement Benefits Social Security Benefits Social Security Benefits Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/25/aa/cb/25aacbabf33428ca2a76aa96d1bc7f67.jpg" data-lightbox="roadtrip" data-title="Pin By Military Benefits On Money Finance In 2021 Tech Company Logos Finance Company Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/25/aa/cb/25aacbabf33428ca2a76aa96d1bc7f67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIK7aGEwITv_fbeKjhdjZdsLbuLonmp_DgQH6gwTiqnjTrsFRuYQLdMK-5DxWPweYLZREmwzOTYxGloX2KYWv1DVqY22aS0CtNdw&amp;ec=45768321';" alt="Pin By Military Benefits On Money Finance In 2021 Tech Company Logos Finance Company Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Military Benefits On Money Finance In 2021 Tech Company Logos Finance Company Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/fe/8a/96fe8af40a7dee1486c48a1c241eca38.jpg" data-lightbox="roadtrip" data-title="Pin On Causes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/fe/8a/96fe8af40a7dee1486c48a1c241eca38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR0dhp-R7_WRA2n940O4O9tnGaMjUvGKEjWOJHWRoYBOSLlQPnpgTidyCCP2tnkQ6R74ahp6sylLpbQZuuoerXnRp7_aBM7z6egw&amp;ec=45768321';" alt="Pin On Causes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Causes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/9e/d1/ff9ed162a188b21e1ae8984f8e53fa79.jpg" data-lightbox="roadtrip" data-title="There S A Lot To Plan For As A Military Family When You Leave The Service Creating A Checklist Can Help Y In 2020 Financial Checklist Money Habits Better Money Habits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/9e/d1/ff9ed162a188b21e1ae8984f8e53fa79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC-XVsnGsPzUXNZEvFp219I0zao979heh6BLb-0OOXjZegoDYgOAWKTSOQiS31HMvHN2PBnaVAel-C8lmGcoDbS-4AJiA6bfkd&amp;ec=45768321';" alt="There S A Lot To Plan For As A Military Family When You Leave The Service Creating A Checklist Can Help Y In 2020 Financial Checklist Money Habits Better Money Habits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There S A Lot To Plan For As A Military Family When You Leave The Service Creating A Checklist Can Help Y In 2020 Financial Checklist Money Habits Better Money Habits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/11/bd/0711bd00e2ebc4500417076e193ecf16.jpg" data-lightbox="roadtrip" data-title="2019 Military Pay Charts Based On A 2 6 Pay Increase As Approved In The Fy 2019 Defense Budget The Fy 2019 Military Pay Military Pay Chart Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/11/bd/0711bd00e2ebc4500417076e193ecf16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZIoswj_gnIy8MZGf_XrlhEtQtyvHxVde8vX4YoMDo9w0zf9KfTYyTr79AThY7NisdAAh9Hqsf2yqdAloDXkuTXorS9f7RsqoYtQ&amp;ec=45768321';" alt="2019 Military Pay Charts Based On A 2 6 Pay Increase As Approved In The Fy 2019 Defense Budget The Fy 2019 Military Pay Military Pay Chart Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Military Pay Charts Based On A 2 6 Pay Increase As Approved In The Fy 2019 Defense Budget The Fy 2019 Military Pay Military Pay Chart Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/47/fc/eb47fceaabcb8eba0adfe64873792a1a.jpg" data-lightbox="roadtrip" data-title="Panel Weighs Closing All Va Health Care Vets Groups Raise Conflict Of Interest Health Care Health Healthcare System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/47/fc/eb47fceaabcb8eba0adfe64873792a1a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL5-gC7lHDBC13WgnVlKxl_xx3T5Ni7lY8XefLVc97Jp3yg4c1OCoTzbOrN8-YiYLHsHfx2_lI_ru0DnSbTzfnnFMwHm7teChIWg&amp;ec=45768321';" alt="Panel Weighs Closing All Va Health Care Vets Groups Raise Conflict Of Interest Health Care Health Healthcare System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Panel Weighs Closing All Va Health Care Vets Groups Raise Conflict Of Interest Health Care Health Healthcare System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/57/78/42577851bb023359ca89bf4dc039c5a8.jpg" data-lightbox="roadtrip" data-title="Changes Have Impacted Our Priorities In 2020 Real Estate Tips Home Buying Tips Budget Vacation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/57/78/42577851bb023359ca89bf4dc039c5a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv9Tu5cER5staXsDa9VMzEzY6bpdvOrOnbcuhLOTXxnRAKcXs-sg8id8tdYEvnauO7dKz2nfDqG2kp_0Bn4CjceCFXFVkM-BT7mw&amp;ec=45768321';" alt="Changes Have Impacted Our Priorities In 2020 Real Estate Tips Home Buying Tips Budget Vacation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Changes Have Impacted Our Priorities In 2020 Real Estate Tips Home Buying Tips Budget Vacation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/c9/01/14c9010adfbe89f52d871d381f4a52e4.jpg" data-lightbox="roadtrip" data-title="Veterans Benefits Paying For Senior Care Veterans Benefits Va Benefits Senior Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/c9/01/14c9010adfbe89f52d871d381f4a52e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvc9gFvQit_TGS74HWA1zhIM9iW4CZSP9eU30I0oOnQTCqFTiZaLvUJXRNXpz6PQb-z7p2EAaiwPSUFZOXiLGQHPyad9gN6sQ2JA&amp;ec=45768321';" alt="Veterans Benefits Paying For Senior Care Veterans Benefits Va Benefits Senior Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Benefits Paying For Senior Care Veterans Benefits Va Benefits Senior Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/10/cost-of-living-adjustments-cola-mb.jpg" data-lightbox="roadtrip" data-title="2021 Cost Of Living Adjustments Cola Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/10/cost-of-living-adjustments-cola-mb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJLSMxj79u4pz8xmJMyA58QQ8oqRgtotSSvv9bVYyaV1bnIxOoEp62kjLOB8RvMQBKh-wgfZAX-PC5UMuGiz-V-q_ItRZNwvTCrw&amp;ec=45768321';" alt="2021 Cost Of Living Adjustments Cola Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Cost Of Living Adjustments Cola Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/ef/14/00/ef1400826c5fb1c4ff37600a6933257b.jpg" data-lightbox="roadtrip" data-title="Aps Transportation Director Suddenly Retires Arlnow Com Arlington County Transportation Public High School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/ef/14/00/ef1400826c5fb1c4ff37600a6933257b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS3Ya-XR-lvwdmG3zBB9G14j0Mk4v-cersl8R2QQMrxdAz9A8ZoIvBMCiurqHaeTRkxos6ZVSZraiVamruJAPZy3zly6QJQ3qMmA&amp;ec=45768321';" alt="Aps Transportation Director Suddenly Retires Arlnow Com Arlington County Transportation Public High School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aps Transportation Director Suddenly Retires Arlnow Com Arlington County Transportation Public High School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/e9/b5/93e9b51d870b5f17e8cc326da0d333d5.jpg" data-lightbox="roadtrip" data-title="Military Officers Association Of America Direct Mailer With Images Direct Mailer Military Officer Direct Mail">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/e9/b5/93e9b51d870b5f17e8cc326da0d333d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZRdX3b6dv6vnHJf4VroICVoODkH15kGRYgRkfzZJULE5AUjxENGW0dLEwWbN_NuOm34na2otxEkftp9bvNw99sBMr8aWOoT3vBg&amp;ec=45768321';" alt="Military Officers Association Of America Direct Mailer With Images Direct Mailer Military Officer Direct Mail">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Officers Association Of America Direct Mailer With Images Direct Mailer Military Officer Direct Mail</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://federalnewsnetwork.com/wp-content/uploads/2019/02/2018-fed-retirement-e1564522036996.jpg" data-lightbox="roadtrip" data-title="Military Retirees Survivors Will See 1 3 Increase In Cola For 2021 Federal News Network">
+											<img class="card-img v-image ads-img " src="https://federalnewsnetwork.com/wp-content/uploads/2019/02/2018-fed-retirement-e1564522036996.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStZ3olzu06kDDotONhwD38x8qhsjBZsgmflg';" alt="Military Retirees Survivors Will See 1 3 Increase In Cola For 2021 Federal News Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Retirees Survivors Will See 1 3 Increase In Cola For 2021 Federal News Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouse-keeps-lying.html">What To Do When Your Spouse Keeps Lying</a></li>
+													<li class="list-group-item"><a href="/what-to-expect-in-basic-training-national-guard.html">What To Expect In Basic Training National Guard</a></li>
+													<li class="list-group-item"><a href="/what-to-expect-in-national-guard-basic-training.html">What To Expect In National Guard Basic Training</a></li>
+													<li class="list-group-item"><a href="/what-to-expect-at-a-va-compensation-and-pension-exam.html">What To Expect At A Va Compensation And Pension Exam</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouse-yells-at-your-child.html">What To Do When Your Spouse Yells At Your Child</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouse-belittles-you.html">What To Do When Your Spouse Belittles You</a></li>
+													<li class="list-group-item"><a href="/what-to-expect-as-an-army-wife.html">What To Expect As An Army Wife</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouses-family-hates-you.html">What To Do When Your Spouses Family Hates You</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-wife-left-you.html">What To Do When Your Wife Left You</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouse-repeatedly-cheats.html">What To Do When Your Spouse Repeatedly Cheats</a></li>
+													<li class="list-group-item"><a href="/what-to-get-a-college-guy-for-christmas.html">What To Get A College Guy For Christmas</a></li>
+													<li class="list-group-item"><a href="/what-to-expect-at-a-va-comp-and-pen-exam-for-ptsd.html">What To Expect At A Va Comp And Pen Exam For Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-wife-passed-away.html">What To Do When Your Wife Passed Away</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-wife-blames-you-for-everything.html">What To Do When Your Wife Blames You For Everything</a></li>
+													<li class="list-group-item"><a href="/what-to-eat-after-gi-surgery.html">What To Eat After Gi Surgery</a></li>
+													<li class="list-group-item"><a href="/what-to-expect-being-a-navy-wife.html">What To Expect Being A Navy Wife</a></li>
+													<li class="list-group-item"><a href="/what-to-expect-at-a-va-comp-and-pen-exam.html">What To Expect At A Va Comp And Pen Exam</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouse-never-apologizes.html">What To Do When Your Spouse Never Apologizes</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouse-refuses-to-work.html">What To Do When Your Spouse Refuses To Work</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-spouse-treats-you-like-a-child.html">What To Do When Your Spouse Treats You Like A Child</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Rating For Vertigo Secondary To Tinnitus - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Rating For Vertigo Secondary To Tinnitus",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/2f/bf/40/2fbf4091282ee299c861086bec126f9b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+rating+for+vertigo+secondary+to+tinnitus",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Rating For Vertigo Secondary To Tinnitus</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">These claims have been conceded as due to acoustic trauma and illness while in the military as noted in the CP exam results in which I obtained a copy of from the VA. December 27 2018 REMANDED Entitlement to service connection for tinnitus is remanded. VA Ratings for Vertigo. <br>				
+			</p>
+										<a class="badge badge-primary" href="/what-are-the-department-of-homeland-security-agencies.html">what are the department of homeland security agencies</a>
+											<a class="badge badge-danger" href="/what-are-the-medical-requirements-for-the-army.html">what are the medical requirements for the army</a>
+											<a class="badge badge-info" href="/what-are-the-benefits-of-tdiu.html">what are the benefits of tdiu</a>
+											<a class="badge badge-danger" href="/what-are-the-fitness-requirements-for-the-army.html">what are the fitness requirements for the army</a>
+											<a class="badge badge-success" href="/what-are-the-best-colleges-to-go-to-for-nursing.html">what are the best colleges to go to for nursing</a>
+											<a class="badge badge-primary" href="/what-are-the-duties-of-the-department-of-homeland-security.html">what are the duties of the department of homeland security</a>
+											<a class="badge badge-dark" href="/what-are-the-benefits-of-gi-bill.html">what are the benefits of gi bill</a>
+											<a class="badge badge-secondary" href="/what-are-the-most-powerful-armies-in-the-world.html">what are the most powerful armies in the world</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the ideal site.  Our website gives you hints for viewing the highest quality video and image content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you see.  You can also bring about supporting this website by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2017/04/va-ratings-for-tinnitus.png" data-lightbox="roadtrip" data-title="Va Benefits For Tinnitus Most Claimed Disability Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2017/04/va-ratings-for-tinnitus.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7BjOHGzjjoedVj-oLCNZN6TQZyDZSVI-fw';" alt="Va Benefits For Tinnitus Most Claimed Disability Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Benefits For Tinnitus Most Claimed Disability Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cck-law.com/wp-content/uploads/2020/06/AdobeStock_245201245-1-scaled.jpeg" data-lightbox="roadtrip" data-title="Secondary Conditions To Tinnitus For Va Disability Benefits Cck Law">
+											<img class="card-img v-image ads-img " src="https://cck-law.com/wp-content/uploads/2020/06/AdobeStock_245201245-1-scaled.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYhms-77nKTl88f521dkjk2uzDzgGvsqpjlA';" alt="Secondary Conditions To Tinnitus For Va Disability Benefits Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Secondary Conditions To Tinnitus For Va Disability Benefits Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/exiladNmkBA/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Secondary Conditions To Tinnitus Va Claims Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/exiladNmkBA/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdqaZ8pLa06R9TQ9-WNjy2N10Yont0E32dVw';" alt="Secondary Conditions To Tinnitus Va Claims Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Secondary Conditions To Tinnitus Va Claims Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/symptoms-of-menieres-disease-healthy-hearing-infographic.png?fit=729%2C1024&amp;ssl=1" data-lightbox="roadtrip" data-title="Va Disability Information For Meniere S Disease And Vestibular Conditions">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/symptoms-of-menieres-disease-healthy-hearing-infographic.png?fit=729%2C1024&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5_GqXzP_MRm0B5p48H7RJfhHpKXac06o0g';" alt="Va Disability Information For Meniere S Disease And Vestibular Conditions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Information For Meniere S Disease And Vestibular Conditions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/06/VA-Hearing-Loss-Claim-Rating.jpg" data-lightbox="roadtrip" data-title="Va Hearing Loss Claim Rating Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/06/VA-Hearing-Loss-Claim-Rating.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIyTbezsNiAILIwk9nZaC8ovu0ghNnXqFk1Q';" alt="Va Hearing Loss Claim Rating Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Hearing Loss Claim Rating Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vaclaimsinsider.com/wp-content/uploads/2020/04/Secondary-Conditions-to-Tinnitus-1024x683.jpg" data-lightbox="roadtrip" data-title="1wnvgq7ipd5pm">
+											<img class="card-img v-image ads-img " src="https://vaclaimsinsider.com/wp-content/uploads/2020/04/Secondary-Conditions-to-Tinnitus-1024x683.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5DzriKb5n4hPCpuByKOh7H3qBsKYPWDu3w';" alt="1wnvgq7ipd5pm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1wnvgq7ipd5pm</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.veteranslawblog.org/wp-content/uploads/2016/06/Proving_VA_Tinnitus_Claims_Adobe-300x200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5DzriKb5n4hPCpuByKOh7H3qBsKYPWDu3w';" alt="1wnvgq7ipd5pm">
+										<div class="card-body">
+						<h3 class="h5"><b>To claim VA benefits from Menieres disease it must be diagnosed by a health professional.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va rating for vertigo secondary to tinnitus</strong>. 
+								
+																	REASONS FOR REMAND The Veteran served on active duty from May. 
+																	Tinnitus is not a known cause of benign paroxsymal positional vertigo BPPV per review of the medical literature. 
+																	I have applied for compensation for Vertigo and Labyrinthitis with hearing loss and Tinnitus as secondary. 
+																	Therefore his BPPV is less likely than not less than 50 probability proximately due to or the result of tinnitus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The rating criteria for this code are as follows. 
+																	100 hearing impairment with attacks of vertigo and cerebellar gait ie staggering occurring more than once weekly with or without tinnitus 60 hearing impairment with attacks of vertigo and cerebellar gait occurring from one to four times a month with or without tinnitus. 
+																	The condition of tinnitus almost always results in a 10 percent disability rating. 
+																	His tinnitus is unlikely to be related to the pathogenesis of BPPV. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans are assigned a 0 30 50 or 100 VA rating for Sleep Apnea depending on the severity of their sleep disorder. 
+																	The rating criteria for Sleep Apnea in 2020 is as follows. 
+																	Rating 6200 Chronic suppurative otitis media mastoiditis or cholesteatoma or any combination. 
+																	6201 Chronic nonsuppurative otitis media with effusion serous otitis media. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Veterans Affairs bases its disability ratings for disability benefits on most vertigo issues based on the severity of symptoms meaning it will usually assign higher ratings for more severe symptoms. 
+																	As mentioned Menieres disease is a condition of the inner ear that affects both hearing and balance in an individual. 
+																	Symptoms include episodes of vertigo hearing loss tinnitus and dizziness. 
+																	VA Disability Ratings for Tinnitus After service connection for tinnitus is established VA will award a disability rating based on the severity of the condition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Due to my tinnitus being very bad I was awarded a 70 rating from the VA for anxiety and depression secondary to my tinnitus due to it keeping me from sleeping. 
+																	Hearing impairment issues that include vertigo less than once per month with or without tinnitus is rated at 30. 
+																	During suppuration or with aural polyps. 
+																	That is the highest and only rating youre going to get for this disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Evaluate hearing impairment and complications such as labyrinthitis tinnitus facial nerve paralysis or bone loss of skull separately. 
+																	Entitlement to service connection for sleep difficulty to include sleep apnea claimed as secondary to tinnitus is remanded. 
+																	Conditions that affect the ears ability to sense proper body balance. 
+																	Sleep Apnea secondary to Tinnitus is rated under 38 CFR 497 Diagnostic Code 6847 Sleep Apnea Syndromes Obstructive Central and Mixed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Secondary Service Connections to Tinntius Now that you got service-connected you know there is no chance to get a higher rating for Tinnitus other than 10. 
+																	VA rates tinnitus under 38 CFR 487 Schedule of Ratings Ear Diagnostic Code 6260. 
+																	Hearing impairment with attacks of vertigo and cerebellar gait happening one to four times per month with or without tinnitus is VA-rated at 60. 
+																	VA examiner opined - Rationale. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Secondly I discussed the entitlement to tinnitus and vertigo secondary to sinusitis allergic rhinitis and sinus headaches. 
+																	But yes theres a butRecently the VA ratings schedulers have been denying tinnitus claims to Flight crew members Engine room personnel aboard naval ships artillery personnel etc. 
+																	I have started my counseling with VA social workers and psych doctors from the VA. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/hyperacusis-va-disability-ratings.jpg?resize=1024%2C536&amp;ssl=1" data-lightbox="roadtrip" data-title="Hyperacusis Va Disability Ratings And Your Application For Benefits">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/www.woodslawyers.com/wp-content/uploads/hyperacusis-va-disability-ratings.jpg?resize=1024%2C536&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJJ-IjFNKNsLbivBXUYH3In2BgOmL9rILksw';" alt="Hyperacusis Va Disability Ratings And Your Application For Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hyperacusis Va Disability Ratings And Your Application For Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/07/AdobeStock_305418487-768x512.jpeg" data-lightbox="roadtrip" data-title="Va Disability Ratings For Vertigo Explained Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/07/AdobeStock_305418487-768x512.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZo2saskBDhM9XZitRNTU97xDCq3shFBQqLQ';" alt="Va Disability Ratings For Vertigo Explained Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings For Vertigo Explained Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/ctYeLrqhVog/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Va Disability Ratings For Vertigo Dizziness Or Inner Ear Problems">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/ctYeLrqhVog/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdgAW0lPjCDpNCbssGdEN5lnGUiQFA9h2ibg';" alt="Va Disability Ratings For Vertigo Dizziness Or Inner Ear Problems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings For Vertigo Dizziness Or Inner Ear Problems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/vertigo-1.jpg" data-lightbox="roadtrip" data-title="Va Ratings For Vertigo Explained Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/vertigo-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiq6AKQm5j6c9OdTCrNWwyse6KEqBW_P4mEQ';" alt="Va Ratings For Vertigo Explained Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Ratings For Vertigo Explained Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/bf/40/2fbf4091282ee299c861086bec126f9b.jpg" data-lightbox="roadtrip" data-title="Pin By Miranda Woody On Overcoming Tinnitus Vertigo Treatment Epley Maneuver Vertigo Exercises">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/bf/40/2fbf4091282ee299c861086bec126f9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfJgspP_zmCAP5SV7NcvQ9QNvlcbtYAD8cAA';" alt="Pin By Miranda Woody On Overcoming Tinnitus Vertigo Treatment Epley Maneuver Vertigo Exercises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Miranda Woody On Overcoming Tinnitus Vertigo Treatment Epley Maneuver Vertigo Exercises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/83/12/ba/8312bad7f11017e1c22d41059741698d.jpg" data-lightbox="roadtrip" data-title="Pulsatile Tinnitus Habituation Tinnitus Remedies Tinnitus Retraining Therapy Tinnitus Cure">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/83/12/ba/8312bad7f11017e1c22d41059741698d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY8nST5rV9RyykaZqizoKyZkO4wkUkRKzUbg';" alt="Pulsatile Tinnitus Habituation Tinnitus Remedies Tinnitus Retraining Therapy Tinnitus Cure">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pulsatile Tinnitus Habituation Tinnitus Remedies Tinnitus Retraining Therapy Tinnitus Cure</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1b/18/55/1b18555d751f601ca4eafdd3fbc319a9.jpg" data-lightbox="roadtrip" data-title="Tinnitus Red Flags Tinnitus Remedies Tinnitus Retraining Therapy Tinnitus Cure">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1b/18/55/1b18555d751f601ca4eafdd3fbc319a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9mI1E3BYAnS07nWnZtGxkqtCLf6Zo3d_CQ';" alt="Tinnitus Red Flags Tinnitus Remedies Tinnitus Retraining Therapy Tinnitus Cure">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tinnitus Red Flags Tinnitus Remedies Tinnitus Retraining Therapy Tinnitus Cure</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/83/bf/e7/83bfe7c6420bab2d9f675d5767077630.jpg" data-lightbox="roadtrip" data-title="Tinnitus Disability Claim Va In 2020 Tinnitus Remedies Ringing Ears Remedy Tinnitus Retraining Therapy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/83/bf/e7/83bfe7c6420bab2d9f675d5767077630.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnfouXIa3u17qgAqmW6Uj5iRoVYmGiHnbGRQ';" alt="Tinnitus Disability Claim Va In 2020 Tinnitus Remedies Ringing Ears Remedy Tinnitus Retraining Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tinnitus Disability Claim Va In 2020 Tinnitus Remedies Ringing Ears Remedy Tinnitus Retraining Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/10/60/ca/1060ca36656fd3072f0a210fec90cbd7.jpg" data-lightbox="roadtrip" data-title="Flying Tinnitus Hearing Loss Tinnitus Remedies Tinnitus Cure How To Pop Ears">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/10/60/ca/1060ca36656fd3072f0a210fec90cbd7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4q8PmoM-lEYlEcGtb8bc56P6M8js-X-8qaA';" alt="Flying Tinnitus Hearing Loss Tinnitus Remedies Tinnitus Cure How To Pop Ears">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flying Tinnitus Hearing Loss Tinnitus Remedies Tinnitus Cure How To Pop Ears</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/7a/9b/1f7a9b6dc386b9eb952d17ce93c4046f.png" data-lightbox="roadtrip" data-title="Neuroscience May Offer Hope To Millions Robbed Of Silence By Tinnitus Pbs Newshour Nov 6 2013 P With Images Science Articles Department Of Veterans Affairs Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/7a/9b/1f7a9b6dc386b9eb952d17ce93c4046f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjPJWdorOP9Rv7B4HdVA3H13GTIo3eN8FxzA';" alt="Neuroscience May Offer Hope To Millions Robbed Of Silence By Tinnitus Pbs Newshour Nov 6 2013 P With Images Science Articles Department Of Veterans Affairs Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Neuroscience May Offer Hope To Millions Robbed Of Silence By Tinnitus Pbs Newshour Nov 6 2013 P With Images Science Articles Department Of Veterans Affairs Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/69/6a/15/696a15f88572abe42d7ee5fe0bab14d4.jpg" data-lightbox="roadtrip" data-title="Pin On Tinnitus Remedies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/69/6a/15/696a15f88572abe42d7ee5fe0bab14d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYf0IC4UOEEA-swfCPvcu17zm2vyJrIXNLfg';" alt="Pin On Tinnitus Remedies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tinnitus Remedies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/36/3f/03/363f03083264a3db55f285f0862c4e32.jpg" data-lightbox="roadtrip" data-title="Inner Ear Particles Vertigo Vertigo Remedies Vertigo Relief Vertigo Treatment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/36/3f/03/363f03083264a3db55f285f0862c4e32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgMv6cZoeKnQTBBuD8UqJQkf_WhCAmY3hDPQ';" alt="Inner Ear Particles Vertigo Vertigo Remedies Vertigo Relief Vertigo Treatment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inner Ear Particles Vertigo Vertigo Remedies Vertigo Relief Vertigo Treatment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/14/4d/45144dc70be7d7e174a1a81f89a84c86.jpg" data-lightbox="roadtrip" data-title="Tinnitus Is Number One Disability For Veterans Military Com Tinnitus Remedies Tinnitus Cure Treatment For Tinnitus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/14/4d/45144dc70be7d7e174a1a81f89a84c86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS77dqImiNtA4K8c1RsiX9rtjEGB14h_uVfIw';" alt="Tinnitus Is Number One Disability For Veterans Military Com Tinnitus Remedies Tinnitus Cure Treatment For Tinnitus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tinnitus Is Number One Disability For Veterans Military Com Tinnitus Remedies Tinnitus Cure Treatment For Tinnitus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2d/1f/a7/2d1fa777d4326c8f4f8abeee5a9f35a9.jpg" data-lightbox="roadtrip" data-title="Pin On Tinnitusremedies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2d/1f/a7/2d1fa777d4326c8f4f8abeee5a9f35a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtEd4eLvErMkuX0QC-AQ1S6zGCAc2Kl5Ae5g';" alt="Pin On Tinnitusremedies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tinnitusremedies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.veteranslawblog.org/wp-content/uploads/2016/06/Proving_VA_Tinnitus_Claims_Adobe-300x200.jpg" data-lightbox="roadtrip" data-title="7 Steps To Proving Va Tinnitus Claims Veterans Law Blog">
+											<img class="card-img v-image ads-img " src="https://www.veteranslawblog.org/wp-content/uploads/2016/06/Proving_VA_Tinnitus_Claims_Adobe-300x200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ0qJzRWAUh_NEvaTwXUj35BgQHRZDkHnwdA';" alt="7 Steps To Proving Va Tinnitus Claims Veterans Law Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Steps To Proving Va Tinnitus Claims Veterans Law Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/valium-youtube.html">Valium Youtube</a></li>
+													<li class="list-group-item"><a href="/valium-yellow-5.html">Valium Yellow 5</a></li>
+													<li class="list-group-item"><a href="/valium-rx.html">Valium Rx</a></li>
+													<li class="list-group-item"><a href="/vermont-air-national-guard-flyover.html">Vermont Air National Guard Flyover</a></li>
+													<li class="list-group-item"><a href="/valium-quizlet.html">Valium Quizlet</a></li>
+													<li class="list-group-item"><a href="/vassar-college-womens-basketball-schedule.html">Vassar College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/vapost-9-11-gi-billtransfer-of-benefits.html">Vapost 9 11 Gi Billtransfer Of Benefits</a></li>
+													<li class="list-group-item"><a href="/very-powerful-army-in-the-world.html">Very Powerful Army In The World</a></li>
+													<li class="list-group-item"><a href="/vassar-college-womens-basketball-coach.html">Vassar College Womens Basketball Coach</a></li>
+													<li class="list-group-item"><a href="/valium-while-breastfeeding.html">Valium While Breastfeeding</a></li>
+													<li class="list-group-item"><a href="/vanderbilt-university-bookstore-gift-cards.html">Vanderbilt University Bookstore Gift Cards</a></li>
+													<li class="list-group-item"><a href="/valium-urinary-retention.html">Valium Urinary Retention</a></li>
+													<li class="list-group-item"><a href="/valium-pregnancy.html">Valium Pregnancy</a></li>
+													<li class="list-group-item"><a href="/valium-zopiclone-together.html">Valium Zopiclone Together</a></li>
+													<li class="list-group-item"><a href="/ve-lawyers.html">Ve Lawyers</a></li>
+													<li class="list-group-item"><a href="/valium-side-effects-in-elderly.html">Valium Side Effects In Elderly</a></li>
+													<li class="list-group-item"><a href="/vermont-national-guard-full-time-jobs.html">Vermont National Guard Full Time Jobs</a></li>
+													<li class="list-group-item"><a href="/valium-wisdom-teeth.html">Valium Wisdom Teeth</a></li>
+													<li class="list-group-item"><a href="/valium-qt-prolongation.html">Valium Qt Prolongation</a></li>
+													<li class="list-group-item"><a href="/vassar-college-gifts.html">Vassar College Gifts</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

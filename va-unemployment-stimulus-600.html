@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Unemployment Stimulus 600 - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Unemployment Stimulus 600",
+  "datePublished": "2021-02-14",
+  "image": "https://www.wpri.com/wp-content/uploads/sites/23/2020/04/DLT-Statement.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+unemployment+stimulus+600",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Unemployment Stimulus 600</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Box 26441 Richmond VA 23261-6441. 866-832-2363 815am to 430pm Monday - Friday and 9am to 1pm on Saturday closed Sunday and state holidays Mailing Address PO. The stimulus bill will extend both the PUA and PEUC programs for 11 weeks as well as top up regular state benefits with an extra 300 in weekly jobless aid or half of the extra 600 in aid. <br>				
+			</p>
+										<a class="badge badge-success" href="/virginia-tech-engineering-education-faculty.html">virginia tech engineering education faculty</a>
+											<a class="badge badge-info" href="/virginia-real-estate-license-exam-prep.html">virginia real estate license exam prep</a>
+											<a class="badge badge-secondary" href="/virginia-tech-gi-bill.html">virginia tech gi bill</a>
+											<a class="badge badge-success" href="/virginia-trees-for-sale.html">virginia trees for sale</a>
+											<a class="badge badge-secondary" href="/virginia-real-estate-license-prep.html">virginia real estate license prep</a>
+											<a class="badge badge-info" href="/virginia-state-disabled-veterans-benefits.html">virginia state disabled veterans benefits</a>
+											<a class="badge badge-dark" href="/virginia-real-estate-license-complaint.html">virginia real estate license complaint</a>
+											<a class="badge badge-light" href="/virginia-state-bar-lawyer-referral-service.html">virginia state bar lawyer referral service</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the right blog.  Our website provides you with suggestions for viewing the maximum quality video and picture content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.squarespace-cdn.com/content/v1/55edcc1fe4b025d99f70835c/1585921154431-YEBUUE3507BVZN7UVMYI/ke17ZwdGBToddI8pDm48kO6t_FIigFZlD-2ukJs68NZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdQnRCmyfmE32mt8hf8jTbpNOvskeoRv-ygqK_y0NLe3pygZMNSAPtQr-kV0SxGO-A/Unemployment_Insta_2.jpg" data-lightbox="roadtrip" data-title="How To Apply For Unemployment Studio Two Three We Empower Artists To Make Art Make Change">
+											<img class="card-img v-image ads-img " src="https://images.squarespace-cdn.com/content/v1/55edcc1fe4b025d99f70835c/1585921154431-YEBUUE3507BVZN7UVMYI/ke17ZwdGBToddI8pDm48kO6t_FIigFZlD-2ukJs68NZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdQnRCmyfmE32mt8hf8jTbpNOvskeoRv-ygqK_y0NLe3pygZMNSAPtQr-kV0SxGO-A/Unemployment_Insta_2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu8Hi0lDLRWX-8TZbbV8RawQQZKCWkjQx2dg';" alt="How To Apply For Unemployment Studio Two Three We Empower Artists To Make Art Make Change">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Apply For Unemployment Studio Two Three We Empower Artists To Make Art Make Change</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wydaily.com/wp-content/uploads/2020/04/Screen-Shot-2020-04-04-at-5.10.01-PM-e1586036049323.png" data-lightbox="roadtrip" data-title="The Requirements For Unemployment Have Changed Here S What You Need To Know Williamsburg Yorktown Daily">
+											<img class="card-img v-image ads-img " src="https://wydaily.com/wp-content/uploads/2020/04/Screen-Shot-2020-04-04-at-5.10.01-PM-e1586036049323.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5OXISviVGK-JEjsPr_uOuYKofBvPESTTfVA';" alt="The Requirements For Unemployment Have Changed Here S What You Need To Know Williamsburg Yorktown Daily">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Requirements For Unemployment Have Changed Here S What You Need To Know Williamsburg Yorktown Daily</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wjhl.com/wp-content/uploads/sites/98/2020/03/Unemployment-claims-filed-in-Tennessee-and-Virginia.png" data-lightbox="roadtrip" data-title="How Unemployment Benefits Stack Up In Tennessee And Virginia Wjhl Tri Cities News Weather">
+											<img class="card-img v-image ads-img " src="https://www.wjhl.com/wp-content/uploads/sites/98/2020/03/Unemployment-claims-filed-in-Tennessee-and-Virginia.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR64Fh9btgXF8ZKWWcsVdys3Zv5x5GnWm-r5Q';" alt="How Unemployment Benefits Stack Up In Tennessee And Virginia Wjhl Tri Cities News Weather">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Unemployment Benefits Stack Up In Tennessee And Virginia Wjhl Tri Cities News Weather</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.savingtoinvest.com/wp-content/uploads/2020/04/UI-600-and-Extended-Benefits-2020.png?resize=480%2C404&amp;ssl=1" data-lightbox="roadtrip" data-title="Extra 300 Fpuc Unemployment Compensation Covid Stimulus Relief Slow Rollout Out By States Aving To Invest">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.savingtoinvest.com/wp-content/uploads/2020/04/UI-600-and-Extended-Benefits-2020.png?resize=480%2C404&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKeFcJHIq3Txd1aNyeCFvfjGO7xHwpersuMg';" alt="Extra 300 Fpuc Unemployment Compensation Covid Stimulus Relief Slow Rollout Out By States Aving To Invest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Extra 300 Fpuc Unemployment Compensation Covid Stimulus Relief Slow Rollout Out By States Aving To Invest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.13newsnow.com/assets/WVEC/images/1377b684-7004-415e-8f4a-8f5ddbf42475/1377b684-7004-415e-8f4a-8f5ddbf42475_1920x1080.jpg" data-lightbox="roadtrip" data-title="Virginia To Add 300 In Federal Funds To Unemployment 13newsnow Com">
+											<img class="card-img v-image ads-img " src="https://media.13newsnow.com/assets/WVEC/images/1377b684-7004-415e-8f4a-8f5ddbf42475/1377b684-7004-415e-8f4a-8f5ddbf42475_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMWJq2k2dI-vzIVzPv1EsrsXzs0_bUXmBXbA';" alt="Virginia To Add 300 In Federal Funds To Unemployment 13newsnow Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia To Add 300 In Federal Funds To Unemployment 13newsnow Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wpri.com/wp-content/uploads/sites/23/2020/04/DLT-Statement.png" data-lightbox="roadtrip" data-title="12 Responds Why Wasn T The 600 Unemployment Bump Retroactive Wpri Com">
+											<img class="card-img v-image ads-img " src="https://www.wpri.com/wp-content/uploads/sites/23/2020/04/DLT-Statement.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-fZ26j8mTwDGQpa3kby1Um6Q0wZm3ZI5Deg';" alt="12 Responds Why Wasn T The 600 Unemployment Bump Retroactive Wpri Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Responds Why Wasn T The 600 Unemployment Bump Retroactive Wpri Com</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://image.cnbcfm.com/api/v1/image/106560468-1591041423666gettyimages-1226813517.jpeg?v=1591043941&amp;w=678&amp;h=381" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-fZ26j8mTwDGQpa3kby1Um6Q0wZm3ZI5Deg';" alt="12 Responds Why Wasn T The 600 Unemployment Bump Retroactive Wpri Com">
+										<div class="card-body">
+						<h3 class="h5"><b>The extra 300 weekly unemployment payment has come to an end in a number of US states leaving citizens waiting for news on the scheme referred to as Lost Wage Assistance LWA a program approved.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va unemployment stimulus 600</strong>. 
+								
+																	The deal includes restarting a 300 boost to the federal unemployment insurance benefit extending eviction moratoriums for renters by a month and a 600 direct payment to most Americans according. 
+																	Stimulus payments for most residents would be 600 half of what was sent out in the spring. 
+																	President Joe Bidens 19 trillion stimulus plan will be introduced into Congress next week and it will increase the weekly bonus unemployment checks to 400 until the end of September. 
+																	The new 900 billion COVID-19 Relief Stimulus Package has now been passed by Congress and signed into law by the President. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After leaving Americans in anxious suspense over Christmas President Donald Trump has finally signed the coronavirus relief bill. 
+																	The benefits are set to last through mid-March. 
+																	This article was last updated on January 6. 
+																	The supplementary payment will provide up to 11 weeks of weekly payments and is expected to cover the weeks of Dec 27th 2020 until March 14th 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They were being taken care of by an impromptu safety net created by Congress in the early days of the pandemic that paid an extra 600 a week in unemployment benefits on top of the often-meager. 
+																	This is similar to the federal unemployment booster that was part of the CARES Act though that one was for 600 many of the programs for this stimulus program are significantly smaller than those in the CARES Act including the personal second stimulus check where the maximum value was cut from 1200 to 600. 
+																	2 Senate Republican John Thune of South Dakota confirmed the likely addition of direct payments in that range as well as a 300-per-week bonus federal unemployment benefit to partially replace. 
+																	Heres what the stimulus bill means for you Now that the coronavirus stimulus legislation is signed Americans are in line to receive stimulus checks valued at 600 per adult and 600 per eligible. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Anonymously report Unemployment Insurance Fraud to the VEC by calling 1-800-782-4001. 
+																	Among other enhanced unemployment programs PUA and PEUC it includes an extra 300 FPUC supplementary UI payment. 
+																	The payments will go to adults who made less than 75000 individually and less than 150000 as a. 
+																	This was originally enacted under the CARES act for a weekly 600 payment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Retroactive Supplementary Unemployment Insurance 300 Extra FPUC. 
+																	CNN In a historic expansion of unemployment insurance the federal government would give jobless workers an extra 600 a week on top of their state benefits for four months as part of the 2. 
+																	They wont cover retroactive. 
+																	This bill includes funding for expanded unemployment benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Aside from the 600 stimulus checks the stimulus bill also includes an extra 300 a week in unemployment aid. 
+																	Virginia Relay call 711 or 800-828-1120. 
+																	That means that jobless workers will receive their regular state unemployment payments plus 300 on top of that through March 14 2021. 
+																	VEC will soon be able to increase the maximum weekly benefit from 378 to 978 as the 2 trillion CARES Act will add 600 per week to unemployment benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Under the new stimulus. 
+																	A variation of supplementary was then enacted via Executive order under the 300 LWA program. 
+																	The new stimulus bill provides supplementary unemployment insurance via additional funding for the Federal Pandemic Unemployment Compensation FPUC program. 
+																	Walton said VEC is still working out. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NEW STIMULUS BILL 600 NEXT WEEK Second Stimulus Check Update Unemployment PUA Benefits SSI SSDI LIMITED TIME. 
+																	Proposed 900 Billion COVID Relief Package. 
+																	In January 2020 unemployed workers were paid an average of 385 per week and most benefits lasted 26 weeks according to the Center on Budget and Policy Priorities. 
+																	Get 2 FREE STOCKS ON WEBULL when you deposit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The stimulus plan includes a new round of federal unemployment insurance supplementsthis time at 300 per week. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wchstv.com/resources/media2/16x9/full/1015/center/80/4add13c2-d6fb-4f9e-b3a6-00f0b20322e4-large16x9_VWORKFORCEWV.jpg" data-lightbox="roadtrip" data-title="Stimulus Bill Includes Additional Unemployment Pay Wchs">
+											<img class="card-img v-image ads-img " src="https://wchstv.com/resources/media2/16x9/full/1015/center/80/4add13c2-d6fb-4f9e-b3a6-00f0b20322e4-large16x9_VWORKFORCEWV.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8rVsSiJFA8GJpViZ5EizbhLptlzNlBlj4g';" alt="Stimulus Bill Includes Additional Unemployment Pay Wchs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stimulus Bill Includes Additional Unemployment Pay Wchs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106808668-1607531374550-20201209_state_avg_uenmployment_benefits.png?v=1607531397&amp;w=720&amp;h=631&amp;imgcrop=n" data-lightbox="roadtrip" data-title="Covid Relief Bill Would Add A 300 Boost To Unemployment Benefits">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106808668-1607531374550-20201209_state_avg_uenmployment_benefits.png?v=1607531397&amp;w=720&amp;h=631&amp;imgcrop=n" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ1tIslK0SnoSVE6AeBNTFevonDol5i4MkWg';" alt="Covid Relief Bill Would Add A 300 Boost To Unemployment Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid Relief Bill Would Add A 300 Boost To Unemployment Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nbc12.com/resizer/R7qRJYelqgHI1FNnHPKNk9jan7E=/1400x0/cloudfront-us-east-1.images.arcpublishing.com/raycom/ADKOOZJBTBF43FX2DGDQFFZ3CI.PNG" data-lightbox="roadtrip" data-title="News To Know For Nov 19 Unemployment Benefits Update Northam Signs Revised Budget Henrico Virtual Learning">
+											<img class="card-img v-image ads-img " src="https://www.nbc12.com/resizer/R7qRJYelqgHI1FNnHPKNk9jan7E=/1400x0/cloudfront-us-east-1.images.arcpublishing.com/raycom/ADKOOZJBTBF43FX2DGDQFFZ3CI.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa8GhgCGzuiJZGTnzfrSLvzStCyu20X00cSg';" alt="News To Know For Nov 19 Unemployment Benefits Update Northam Signs Revised Budget Henrico Virtual Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News To Know For Nov 19 Unemployment Benefits Update Northam Signs Revised Budget Henrico Virtual Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/unemployment-benefits-veterans.jpg" data-lightbox="roadtrip" data-title="Unemployment Benefits For Veterans Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/unemployment-benefits-veterans.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOlasSUpYuQT92gbrNe8MfQxm4PcGfbygTLg';" alt="Unemployment Benefits For Veterans Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Benefits For Veterans Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106596774-1596126591178-20200730_average_unemployment_benefits_without_600-_updated_data.png?v=1596126620&amp;w=720&amp;h=1200&amp;imgcrop=n" data-lightbox="roadtrip" data-title="This Is What Unemployment Benefits Will Pay Without Extra 600 A Week">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106596774-1596126591178-20200730_average_unemployment_benefits_without_600-_updated_data.png?v=1596126620&amp;w=720&amp;h=1200&amp;imgcrop=n" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuYvq7hNIFg1Kur7vzIGX2_40VwMOfy9kPZA';" alt="This Is What Unemployment Benefits Will Pay Without Extra 600 A Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is What Unemployment Benefits Will Pay Without Extra 600 A Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vec.virginia.gov/sites/all/themes/custom/vecbootstrap/images/VEC-Logo-transparent-web.png" data-lightbox="roadtrip" data-title="Virginia Announces Changes In Unemployment Insurance Program As A Result Of The Federal Cares Act Virginia Employment Commission">
+											<img class="card-img v-image ads-img " src="https://www.vec.virginia.gov/sites/all/themes/custom/vecbootstrap/images/VEC-Logo-transparent-web.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqYRBkeqckVVmE90O0GWybKbNCcbKDXhiWDg';" alt="Virginia Announces Changes In Unemployment Insurance Program As A Result Of The Federal Cares Act Virginia Employment Commission">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Announces Changes In Unemployment Insurance Program As A Result Of The Federal Cares Act Virginia Employment Commission</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wavy.com/wp-content/uploads/sites/3/2020/12/GettyImages-1215761524.jpg?w=2560&amp;h=1440&amp;crop=1" data-lightbox="roadtrip" data-title="Thousands Of Virginians To Receive Unemployment Benefits Dec 15 After Months Of Waiting Wavy Com">
+											<img class="card-img v-image ads-img " src="https://www.wavy.com/wp-content/uploads/sites/3/2020/12/GettyImages-1215761524.jpg?w=2560&amp;h=1440&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe0g_CucVd5rrRmV26cED8sr47XXqsLHxpkA';" alt="Thousands Of Virginians To Receive Unemployment Benefits Dec 15 After Months Of Waiting Wavy Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thousands Of Virginians To Receive Unemployment Benefits Dec 15 After Months Of Waiting Wavy Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106560468-1591041423666gettyimages-1226813517.jpeg?v=1591043941&amp;w=678&amp;h=381" data-lightbox="roadtrip" data-title="Bonus To Return To Work May Replace 600 Extra Unemployment Benefit">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106560468-1591041423666gettyimages-1226813517.jpeg?v=1591043941&amp;w=678&amp;h=381" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHcWeGQOp54cVZU_cdAcKvo6Xe37jcUzlxA';" alt="Bonus To Return To Work May Replace 600 Extra Unemployment Benefit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bonus To Return To Work May Replace 600 Extra Unemployment Benefit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dcist.com/wp-content/uploads/sites/3/2020/11/AP20279662990742-1500x1001.jpg" data-lightbox="roadtrip" data-title="Unemployment Benefits In Dc Va And Md Explained">
+											<img class="card-img v-image ads-img " src="https://dcist.com/wp-content/uploads/sites/3/2020/11/AP20279662990742-1500x1001.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzOD-fWfFq8iJ_uJZNpZxsWfsjQE5cFU-BSg';" alt="Unemployment Benefits In Dc Va And Md Explained">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Benefits In Dc Va And Md Explained</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/682647960/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="The End Of The Extra 600 Weekly Unemployment Benefits Threatens Rent Payments">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/682647960/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtVBElbGIS_u9ZvW_FxvtZGqSJIrwIwXB1aw';" alt="The End Of The Extra 600 Weekly Unemployment Benefits Threatens Rent Payments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The End Of The Extra 600 Weekly Unemployment Benefits Threatens Rent Payments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d3i6fh83elv35t.cloudfront.net/static/2020/04/unemployed-1200x800.jpg" data-lightbox="roadtrip" data-title="More States Begin To Pay Additional 600 In Unemployment Aid Pbs Newshour">
+											<img class="card-img v-image ads-img " src="https://d3i6fh83elv35t.cloudfront.net/static/2020/04/unemployed-1200x800.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaMVDIyfI-Zuq7RlqrkP5kn6AEP8h_kkQBRg';" alt="More States Begin To Pay Additional 600 In Unemployment Aid Pbs Newshour">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">More States Begin To Pay Additional 600 In Unemployment Aid Pbs Newshour</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://specials-images.forbesimg.com/imageserve/5f1a53af7784ea359a759310/960x0.jpg?fit=scale" data-lightbox="roadtrip" data-title="Stimulus Update 600 A Week Unemployment Benefits End Today">
+											<img class="card-img v-image ads-img " src="https://specials-images.forbesimg.com/imageserve/5f1a53af7784ea359a759310/960x0.jpg?fit=scale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoyngdxouXCj6KhJHe13paV3OscqTAeEibVA';" alt="Stimulus Update 600 A Week Unemployment Benefits End Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stimulus Update 600 A Week Unemployment Benefits End Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wavy.com/wp-content/uploads/sites/3/2020/07/20202571107077.jpg?w=1024&amp;h=683&amp;crop=1" data-lightbox="roadtrip" data-title="600 Unemployment Benefit Gop Reportedly Discussing Extension Of Soon To Expire Aid Wavy Com">
+											<img class="card-img v-image ads-img " src="https://www.wavy.com/wp-content/uploads/sites/3/2020/07/20202571107077.jpg?w=1024&amp;h=683&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPFIQ_p3EqVfk_D-j_H7aU6CE4tZADcpWJ0g';" alt="600 Unemployment Benefit Gop Reportedly Discussing Extension Of Soon To Expire Aid Wavy Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">600 Unemployment Benefit Gop Reportedly Discussing Extension Of Soon To Expire Aid Wavy Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-are-the-top-10-best-armies-in-the-world.html">What Are The Top 10 Best Armies In The World</a></li>
+													<li class="list-group-item"><a href="/what-are-two-things-the-gi-bill-did-for-returning-military-personnel.html">What Are Two Things The Gi Bill Did For Returning Military Personnel</a></li>
+													<li class="list-group-item"><a href="/what-are-the-ranks-in-order-in-the-british-army.html">What Are The Ranks In Order In The British Army</a></li>
+													<li class="list-group-item"><a href="/what-are-the-physical-test-for-indian-army.html">What Are The Physical Test For Indian Army</a></li>
+													<li class="list-group-item"><a href="/what-are-va-health-care-benefits.html">What Are Va Health Care Benefits</a></li>
+													<li class="list-group-item"><a href="/what-are-the-physical-fitness-requirements-for-the-indian-army.html">What Are The Physical Fitness Requirements For The Indian Army</a></li>
+													<li class="list-group-item"><a href="/what-are-the-physical-requirements-for-army-rangers.html">What Are The Physical Requirements For Army Rangers</a></li>
+													<li class="list-group-item"><a href="/what-are-the-requirements-to-be-an-army-ranger.html">What Are The Requirements To Be An Army Ranger</a></li>
+													<li class="list-group-item"><a href="/what-are-the-va-benefits-for-30-disability.html">What Are The Va Benefits For 30 Disability</a></li>
+													<li class="list-group-item"><a href="/what-are-the-requirements-to-join-the-air-national-guard.html">What Are The Requirements To Join The Air National Guard</a></li>
+													<li class="list-group-item"><a href="/what-are-the-physical-requirements-to-be-an-army-ranger.html">What Are The Physical Requirements To Be An Army Ranger</a></li>
+													<li class="list-group-item"><a href="/what-are-the-post-911-gi-bill-benefits.html">What Are The Post 911 Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/what-are-va-burial-benefits.html">What Are Va Burial Benefits</a></li>
+													<li class="list-group-item"><a href="/what-are-the-three-branches-in-attack-on-titan.html">What Are The Three Branches In Attack On Titan</a></li>
+													<li class="list-group-item"><a href="/what-are-the-top-10-largest-armies-in-the-world.html">What Are The Top 10 Largest Armies In The World</a></li>
+													<li class="list-group-item"><a href="/what-are-the-physical-test-in-army.html">What Are The Physical Test In Army</a></li>
+													<li class="list-group-item"><a href="/what-are-va-disability-rates-for-2019.html">What Are Va Disability Rates For 2019</a></li>
+													<li class="list-group-item"><a href="/what-are-va-chapter-33-benefits.html">What Are Va Chapter 33 Benefits</a></li>
+													<li class="list-group-item"><a href="/what-are-va-interest-rates-today.html">What Are Va Interest Rates Today</a></li>
+													<li class="list-group-item"><a href="/what-are-the-trauma-and-stressor-related-disorders.html">What Are The Trauma And Stressor Related Disorders</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

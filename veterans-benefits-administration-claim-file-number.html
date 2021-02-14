@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Benefits Administration Claim File Number - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Benefits Administration Claim File Number",
+  "datePublished": "2021-02-14",
+  "image": "https://www.va.gov/directory/images/vba/vba-districts.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+benefits+administration+claim+file+number",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Benefits Administration Claim File Number</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Gather records as applicable Step 4. DEPARTMENT OF VETERANS AFFAIRS CLAIMS INTAKE CENTER PO BOX 4444 JANESVILLE WI 53547-4444. Log on to eBenefitsvagov. <br>				
+			</p>
+										<a class="badge badge-info" href="/va-schizophrenia-rating.html">va schizophrenia rating</a>
+											<a class="badge badge-danger" href="/va-service-connected-disability-high-blood-pressure.html">va service connected disability high blood pressure</a>
+											<a class="badge badge-danger" href="/va-service-connected-disability-back-pay.html">va service connected disability back pay</a>
+											<a class="badge badge-warning" href="/va-secondary-conditions-for-ptsd.html">va secondary conditions for ptsd</a>
+											<a class="badge badge-success" href="/va-service-connected-disability-card.html">va service connected disability card</a>
+											<a class="badge badge-success" href="/va-secondary-conditions-to-flat-feet.html">va secondary conditions to flat feet</a>
+											<a class="badge badge-dark" href="/va-secondary-conditions-to-ankle.html">va secondary conditions to ankle</a>
+											<a class="badge badge-primary" href="/va-service-connected-disability-hearing-impaired.html">va service connected disability hearing impaired</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to visit the ideal blog.  Our site gives you suggestions for seeing the maximum quality video and image content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this movie for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.lawyersforthedisabled.com/wp-content/uploads/2017/06/va-cfile-number-1280x720.png" data-lightbox="roadtrip" data-title="Where Do I Find My Va File Number Lunn Forro">
+											<img class="card-img v-image ads-img " src="https://www.lawyersforthedisabled.com/wp-content/uploads/2017/06/va-cfile-number-1280x720.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOR4DwmI9A7ob7iuoZKB-q1El_SVM9zv8rMg';" alt="Where Do I Find My Va File Number Lunn Forro">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Where Do I Find My Va File Number Lunn Forro</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/debtman/images/financialStatusReport.png" data-lightbox="roadtrip" data-title="Financial Status Report Debt Management Center">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/debtman/images/financialStatusReport.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN10goWjIJ69IB4oIyIZV08YyLrnyug6En2w';" alt="Financial Status Report Debt Management Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Status Report Debt Management Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/2a/2e/102a2e2338fab7ed3ec8b85233b8d6c2.jpg" data-lightbox="roadtrip" data-title="Innovative Pilot Program Helping Veterans Get Benefits Faster How To Apply Infographic Medical Treatment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/2a/2e/102a2e2338fab7ed3ec8b85233b8d6c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvIb4h3kB_G4OgsaAA1b1a6j2su--s-tnSaA';" alt="Innovative Pilot Program Helping Veterans Get Benefits Faster How To Apply Infographic Medical Treatment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Innovative Pilot Program Helping Veterans Get Benefits Faster How To Apply Infographic Medical Treatment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/ef/fc/cdeffc512e444082b533125d18d3abef.jpg" data-lightbox="roadtrip" data-title="Are You A Veteran In Needs To Help With Disability Claim Veteran Veterans Benefits Estate Planning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/ef/fc/cdeffc512e444082b533125d18d3abef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMmLOFDCfEObEuQDCS8U8Abd-El6vTfakOAA';" alt="Are You A Veteran In Needs To Help With Disability Claim Veteran Veterans Benefits Estate Planning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You A Veteran In Needs To Help With Disability Claim Veteran Veterans Benefits Estate Planning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/31/21/fc/3121fc9da1e2e886ba047e431a90a573.jpg" data-lightbox="roadtrip" data-title="Pin On Va">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/31/21/fc/3121fc9da1e2e886ba047e431a90a573.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzwNBtZWgEO7PCjMeAyV58ztsbLk7djEDEtQ';" alt="Pin On Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/SURVIVORS/images/ArmedServicesFINAL.jpg" data-lightbox="roadtrip" data-title="Contact Us Office Of Survivors Assistance">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/SURVIVORS/images/ArmedServicesFINAL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFqo9PJJ6cl77L37v9Pnu7MFsZbxu_-2l8fQ';" alt="Contact Us Office Of Survivors Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Contact Us Office Of Survivors Assistance</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/81/38/1e/81381eecefba1b2222c0efe2803fa441.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFqo9PJJ6cl77L37v9Pnu7MFsZbxu_-2l8fQ';" alt="Contact Us Office Of Survivors Assistance">
+										<div class="card-body">
+						<h3 class="h5"><b>Check your VA claim status or VA appeal status online to find out where your claim or appeal is in our review process.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans benefits administration claim file number</strong>. 
+								
+																	VA is the primary and sole payer when VA issues an authorization. 
+																	Department of Veterans Affairs Claims Intake Center PO Box 4444 Janesville WI 53547-4444. 
+																	Initiate your claim at eBenefitsvagov or call 1-800-827-1000 for assistance. 
+																	For dual pension and compensation claims use the mailing address below for compensation claims. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find a VA regional office near you. 
+																	1-877-222-VETS 8387 VA Inspector General. 
+																	Whenever the VA sends you a letter about your claim your VA file number will be on the document. 
+																	Veterans Group Life Insurance VGLI Claims Complete form SGLV 8283 Claim for Death Benefits and fax it to 1-877-832-4943 or mail it to the following address with a copy of the death certificate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When is VA the primary payer for community care. 
+																	Work with a trained professional called an accredited representative to get help applying for VA disability benefits. 
+																	Get help filing a claim. 
+																	The easiest way to find a VA claim number is to look in the upper right-hand corner of any mail or other documentation received from the Department of Veteran Affairs explains Lender VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans Benefits Administration provides financial and other forms of assistance to veterans and their dependents. 
+																	Youll see the date we think well complete our review and view evidence youve filed online and any additional evidence weve requested from you. 
+																	Look in the upper right-hand corner. 
+																	Typically there is a note that states In Reply Refer to followed by a series of numbers andor letters separated by a slash. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Include the Veterans full nine-digit social security number in the insureds ID. 
+																	This page provides links to benefit information and services. 
+																	In some cases the Department of Veteran Affairs assigns the Social Security number of the claimant as the claim number. 
+																	For pension claims use the Pension Management Center PMC that serves your state. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The letters C XC CSS or XSS proceed the VA claim number. 
+																	Skip to page content Attention A T users. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	The VA file number can be found on the upper right corner of the letters that the VA sends to veterans and their dependents regarding their claims. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download your VA letters get Veteran ID Cards get your VA medical records request your DD214 view your payment history and learn how to apply for a certificate of eligibility. 
+																	The VA file number is how your claim is tracked through the compensation system and how documents and other evidence are associated with your file in the VAs electronic database. 
+																	Access your VA records and documents online to manage your health and benefits. 
+																	Turn it in at a VA regional office near you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Four Steps to File a Fully Developed Claim Online. 
+																	Fully Developed Claims for Servicemembers. 
+																	Below that number is the file number. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/a7/cc/02a7cc8325c87acce1d4bf2baf0200bf.png" data-lightbox="roadtrip" data-title="List Of Benefits Due To Service Connected Disability Veterans Resources In 2020 Disabled Veterans Benefits Va Disability Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/a7/cc/02a7cc8325c87acce1d4bf2baf0200bf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWo9eH0nqPHO0bHX2W4gIzy3LJkWE7liy2Sg';" alt="List Of Benefits Due To Service Connected Disability Veterans Resources In 2020 Disabled Veterans Benefits Va Disability Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">List Of Benefits Due To Service Connected Disability Veterans Resources In 2020 Disabled Veterans Benefits Va Disability Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/7f/60/ed7f604b78c905dc9c87d22ec22cb326.png" data-lightbox="roadtrip" data-title="218 Veterans Service Representatives Are The 5 Most Important People Involved With Your Va Claim Youtube Veterans Services Military Benefits Army Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/7f/60/ed7f604b78c905dc9c87d22ec22cb326.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkzLW9GV_vhPyxG87ypcccf6C86LnFCxrBJg';" alt="218 Veterans Service Representatives Are The 5 Most Important People Involved With Your Va Claim Youtube Veterans Services Military Benefits Army Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">218 Veterans Service Representatives Are The 5 Most Important People Involved With Your Va Claim Youtube Veterans Services Military Benefits Army Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/38/1e/81381eecefba1b2222c0efe2803fa441.png" data-lightbox="roadtrip" data-title="Understanding How The Veterans Disability Process Works Veterans Http Www Veteransbenefitslawfirm Military Life Quotes Veterans Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/38/1e/81381eecefba1b2222c0efe2803fa441.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN07tz3ZxpEwThdeajruhPSMSsx0HCXq7g-Q';" alt="Understanding How The Veterans Disability Process Works Veterans Http Www Veteransbenefitslawfirm Military Life Quotes Veterans Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding How The Veterans Disability Process Works Veterans Http Www Veteransbenefitslawfirm Military Life Quotes Veterans Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/VBMS-1.png" data-lightbox="roadtrip" data-title="Vbms Explained Veterans Benefits Management System Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/VBMS-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDug5AdPj0OR9Nd648l1ugbJUIfsVdG5FHuQ';" alt="Vbms Explained Veterans Benefits Management System Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vbms Explained Veterans Benefits Management System Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c0/de/c0/c0dec015acb99c7d811c1629e1cf62ed.jpg" data-lightbox="roadtrip" data-title="Pin On Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c0/de/c0/c0dec015acb99c7d811c1629e1cf62ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa3OfEQnrH5JWeeuzjNS3f4ch45VafZyJwAA';" alt="Pin On Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/US_Department_of_Veterans_Affairs_vertical_logo.svg/1200px-US_Department_of_Veterans_Affairs_vertical_logo.svg.png" data-lightbox="roadtrip" data-title="Veterans Benefits Administration Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/US_Department_of_Veterans_Affairs_vertical_logo.svg/1200px-US_Department_of_Veterans_Affairs_vertical_logo.svg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWG1vNmlFTgbvS4fuNr3LvHbbyp7eQCPDoEw';" alt="Veterans Benefits Administration Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Benefits Administration Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/14/4f/19144ff8ca80bc427d7976bd1aab37b8.jpg" data-lightbox="roadtrip" data-title="What Every Veteran Should Know About Agent Orange Benefits Veteranaid Org Agent Orange Oranges Benefits Disabled Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/14/4f/19144ff8ca80bc427d7976bd1aab37b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WBSCUntJZx3yxnIXRJetiw4UlRTBavvZ6A';" alt="What Every Veteran Should Know About Agent Orange Benefits Veteranaid Org Agent Orange Oranges Benefits Disabled Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Every Veteran Should Know About Agent Orange Benefits Veteranaid Org Agent Orange Oranges Benefits Disabled Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/directory/images/vba/vba-districts.png" data-lightbox="roadtrip" data-title="Veterans Benefits Administration Locations">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/directory/images/vba/vba-districts.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuAfsTfJnauk02GOiszicQu4myJ9ILdE93zQ';" alt="Veterans Benefits Administration Locations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Benefits Administration Locations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.studylib.net/store/data/008590131_1-f9a46506c471eca570fc075b9a14ba1a.png" data-lightbox="roadtrip" data-title="Benefits Delivery At Discharge Consolidation">
+											<img class="card-img v-image ads-img " src="https://s3.studylib.net/store/data/008590131_1-f9a46506c471eca570fc075b9a14ba1a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwE5LQJvlQv687oCoVyv97UgWhfr4KNCT6Sg';" alt="Benefits Delivery At Discharge Consolidation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits Delivery At Discharge Consolidation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.benefits.va.gov/REPORTS/images/mmwr/mmwr_claims_cbaccuracy_large.png" data-lightbox="roadtrip" data-title="Claims Based Accuracy Veterans Benefits Administration Reports">
+											<img class="card-img v-image ads-img " src="https://www.benefits.va.gov/REPORTS/images/mmwr/mmwr_claims_cbaccuracy_large.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkrCicNrXtV-MhC8oBoF87TU4KlhTe9ZYQIQ';" alt="Claims Based Accuracy Veterans Benefits Administration Reports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Claims Based Accuracy Veterans Benefits Administration Reports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/blog-Copy-10-768x512.jpg" data-lightbox="roadtrip" data-title="New Va Forms Replacing Statement In Support Of Claim Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/blog-Copy-10-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWagMq17jQkfOq0NfVpEqS6HGcVbHh5vhV1g';" alt="New Va Forms Replacing Statement In Support Of Claim Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Va Forms Replacing Statement In Support Of Claim Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/95/e9/7495e99b1c3528e2109b252d00643077.jpg" data-lightbox="roadtrip" data-title="6 Easy Tips For Filing A Va Disability Claim Va Disability Disability Veterans Administration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/95/e9/7495e99b1c3528e2109b252d00643077.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL_g2TpyG9XuWJP8BqtfA0ccn0Kq-8SGxJFQ';" alt="6 Easy Tips For Filing A Va Disability Claim Va Disability Disability Veterans Administration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Easy Tips For Filing A Va Disability Claim Va Disability Disability Veterans Administration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.veteransaidbenefit.org/images/VA-Claims-0966.jpg" data-lightbox="roadtrip" data-title="Why Are Veterans Compensation Claims Handled So Poorly">
+											<img class="card-img v-image ads-img " src="https://www.veteransaidbenefit.org/images/VA-Claims-0966.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmEesVRe-fPHyHMjfsgIia0oSVwNlw2E3DQQ';" alt="Why Are Veterans Compensation Claims Handled So Poorly">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Are Veterans Compensation Claims Handled So Poorly</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cb/49/97/cb4997676a484691a25c5db917f41057.jpg" data-lightbox="roadtrip" data-title="Nehmer Claim Veterans Of America Vietnam Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cb/49/97/cb4997676a484691a25c5db917f41057.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMssXBUTSuA1Z6ru-yDnPhzaw-1_xPSCBp6g';" alt="Nehmer Claim Veterans Of America Vietnam Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nehmer Claim Veterans Of America Vietnam Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.benefits.va.gov/benefits/images/EBN_claim-status5__205x175.jpg" data-lightbox="roadtrip" data-title="Fort Harrison Regional Office Home">
+											<img class="card-img v-image ads-img " src="https://www.benefits.va.gov/benefits/images/EBN_claim-status5__205x175.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYsiHnmDFvudPlk7JjstEHlTIhRTlpkKAuZw';" alt="Fort Harrison Regional Office Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Harrison Regional Office Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-ratings-list.html">Va Ratings List</a></li>
+													<li class="list-group-item"><a href="/va-rating-table-pay.html">Va Rating Table Pay</a></li>
+													<li class="list-group-item"><a href="/va-ratings.html">Va Ratings</a></li>
+													<li class="list-group-item"><a href="/va-rating-upgrade.html">Va Rating Upgrade</a></li>
+													<li class="list-group-item"><a href="/va-rating-timeline.html">Va Rating Timeline</a></li>
+													<li class="list-group-item"><a href="/va-rating-table.html">Va Rating Table</a></li>
+													<li class="list-group-item"><a href="/va-rating-tmj.html">Va Rating Tmj</a></li>
+													<li class="list-group-item"><a href="/va-real-estate-license-requirements.html">Va Real Estate License Requirements</a></li>
+													<li class="list-group-item"><a href="/va-real-estate-license-psi-exam.html">Va Real Estate License Psi Exam</a></li>
+													<li class="list-group-item"><a href="/va-rating-wrist.html">Va Rating Wrist</a></li>
+													<li class="list-group-item"><a href="/va-rating-urinary-incontinence.html">Va Rating Urinary Incontinence</a></li>
+													<li class="list-group-item"><a href="/va-ratings-depression.html">Va Ratings Depression</a></li>
+													<li class="list-group-item"><a href="/va-real-estate-license-renewal-fee.html">Va Real Estate License Renewal Fee</a></li>
+													<li class="list-group-item"><a href="/va-rating-transformer-calculator.html">Va Rating Transformer Calculator</a></li>
+													<li class="list-group-item"><a href="/va-rating-timeline-2020.html">Va Rating Timeline 2020</a></li>
+													<li class="list-group-item"><a href="/va-real-estate-license-check.html">Va Real Estate License Check</a></li>
+													<li class="list-group-item"><a href="/va-reevaluation-reddit.html">Va Reevaluation Reddit</a></li>
+													<li class="list-group-item"><a href="/va-reexamination.html">Va Reexamination</a></li>
+													<li class="list-group-item"><a href="/va-rating-unemployability.html">Va Rating Unemployability</a></li>
+													<li class="list-group-item"><a href="/va-ratings-for-erectile-dysfunction.html">Va Ratings For Erectile Dysfunction</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

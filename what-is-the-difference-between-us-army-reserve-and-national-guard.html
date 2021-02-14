@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Difference Between Us Army Reserve And National Guard - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Difference Between Us Army Reserve And National Guard",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/78/28/af/7828afe9482390eeeff19f6f364f738c.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+difference+between+us+army+reserve+and+national+guard",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Difference Between Us Army Reserve And National Guard</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Military protecting communities across the US. The Army National Guard ARNG in conjunction with the Air National Guard is an organized militia force and a federal military reserve force of the United States Army. The Army Navy Marines Air. <br>				
+			</p>
+										<a class="badge badge-light" href="/what-to-do-after-your-wife-dies.html">what to do after your wife dies</a>
+											<a class="badge badge-light" href="/what-time-of-the-month-does-va-disability-pay.html">what time of the month does va disability pay</a>
+											<a class="badge badge-light" href="/what-to-do-if-an-employee-was-exposed-to-covid.html">what to do if an employee was exposed to covid</a>
+											<a class="badge badge-warning" href="/what-time-does-the-va-pay.html">what time does the va pay</a>
+											<a class="badge badge-info" href="/what-to-do-if-you-get-fired-because-you-are-pregnant.html">what to do if you get fired because you are pregnant</a>
+											<a class="badge badge-secondary" href="/what-time-does-netspend-deposit-money.html">what time does netspend deposit money</a>
+											<a class="badge badge-light" href="/what-time-does-va-compensation-pay.html">what time does va compensation pay</a>
+											<a class="badge badge-success" href="/what-time-do-va-benefits-get-deposited.html">what time do va benefits get deposited</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the ideal site.  Our site provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you view.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/2d/11/d22d11c760906f7cff09da8b13189d84.jpg" data-lightbox="roadtrip" data-title="Us Army Reserves Military Humor Army Humor Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/2d/11/d22d11c760906f7cff09da8b13189d84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2YS_gYkfVB450R-VVS477R_edmLX3duuBCg';" alt="Us Army Reserves Military Humor Army Humor Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Reserves Military Humor Army Humor Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/7c/51/687c51ea9a7e5719290eea6ce2c82281.jpg" data-lightbox="roadtrip" data-title="Pin On Reserve National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/7c/51/687c51ea9a7e5719290eea6ce2c82281.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7uz4aT05AigpIvw8VoGpBAw0NAPrz-bZRrA';" alt="Pin On Reserve National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Reserve National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/d2/81/79d281325849f80040581702162b14a9.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/d2/81/79d281325849f80040581702162b14a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2fhAQ6o27VTLgtoc9UfP3aNQ30H_uP7GWMw';" alt="Pin On Guard Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/46/fd/7746fd3bd2383aca60b3c51e416963b2.jpg" data-lightbox="roadtrip" data-title="Pin On Military Everything">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/46/fd/7746fd3bd2383aca60b3c51e416963b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3O2OiMgaI_XjJufsa6lazegbsIY4GwVXXiQ';" alt="Pin On Military Everything">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Everything</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/de/d2/e7ded2183ac2a3ba9e6d4e6aa2d32a43.jpg" data-lightbox="roadtrip" data-title="Pin On U S Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/de/d2/e7ded2183ac2a3ba9e6d4e6aa2d32a43.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUlpys1EeIQW712FM0OBIPFh1d0EMBU4ockA';" alt="Pin On U S Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/b3/63/bab363ae5828dbd5c07747ccfd88d165.jpg" data-lightbox="roadtrip" data-title="These Inspiring Black Servicewomen Are Embracing Natural Twists Dreadlocks And Afros In The Army And Beyond Military Hair Natural Hair Styles Navy Haircut">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/b3/63/bab363ae5828dbd5c07747ccfd88d165.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxawQwelCTWAOawdRNHnPNluasZue0ZqRYXw';" alt="These Inspiring Black Servicewomen Are Embracing Natural Twists Dreadlocks And Afros In The Army And Beyond Military Hair Natural Hair Styles Navy Haircut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Inspiring Black Servicewomen Are Embracing Natural Twists Dreadlocks And Afros In The Army And Beyond Military Hair Natural Hair Styles Navy Haircut</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a5/fe/6a/a5fe6ad2ccc2b20cb7a48b3324713f0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxawQwelCTWAOawdRNHnPNluasZue0ZqRYXw';" alt="These Inspiring Black Servicewomen Are Embracing Natural Twists Dreadlocks And Afros In The Army And Beyond Military Hair Natural Hair Styles Navy Haircut">
+										<div class="card-body">
+						<h3 class="h5"><b>Army Reserves is open to individuals between the ages of 17 and 34.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the difference between us army reserve and national guard</strong>. 
+								
+																	They are not part of the federal armed forces command structure but rather operate purely as a state-organized and controlled military force. 
+																	Until then they are not active. 
+																	The main difference between Army Reserve and National Guard is Army reserve is directly under the command of federal services whereas the National Guard comes under the state government. 
+																	There are important differences between the National Guard and the Reserves. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Age is one eligibility difference. 
+																	National Guard service is considered part-time unless a Guardsman is called into active duty service. 
+																	The Main Difference Between The Guard And Reserve. 
+																	Army and be called upon to active service in military operations overseas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Federalized Guard troops can also be folded into the US. 
+																	National Guard can be identified as the army of each state. 
+																	Army Reserve is a part of the army that become active only when the orders are given. 
+																	For National Guard it is the Mayor of the State. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The above ages are for entering into each Army component respectfully without prior service. 
+																	The National Guard on the other hand is a joint activity of the United States Department of Defense DoD. 
+																	In fact 40 percent of the US. 
+																	The major differences between the Guard and Reserve have to do with the nature of dutyReserve members operate under the jurisdiction of the DoD and may be called up to serve in times of war in expeditionary campaigns for humanitarian relief and any other mission-essential function. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army National Guard is an essential element to the US. 
+																	Army is a force that has to perform its services for the country in safeguarding the strategies of the United States and the cases which involve national security. 
+																	The National Guard is open to individuals between the ages of 17 and 35. 
+																	There is another important difference between the two. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reserve units are part of the federal armed forces and as such they are under presidential command. 
+																	The difference in regular army and national guard troops is that guard troops have two responsibilities. 
+																	The difference between National Guards and Army is the services which they provide and the way they offer services. 
+																	The most important thing to remember when comparing the National Guard and Army Reserve is that the National Guard is a dual service with both state and federal control whereas the Army Reserve. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Reserves do not have combat arms National Guard has all the same MOSs as Regular Army Both drill one weekend a month and 2 weeks a year for the most part. 
+																	Active duty Regular Army Army Reserve and Army National Guard. 
+																	The United States Army is made up of three components. 
+																	However National Guard can also be a part of the army if necessary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army reserve receives benefits from the federal government for the part-time services they provide. 
+																	In contrast to this the National Guard is controlled by the state authority and has a dual status. 
+																	To be more precise the army and other reserves such as the army reserve come under the presidents control. 
+																	Guard in state and federally funded reserves is only federally funded. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One such difference involves who is authorized to call up the National Guard and put members into active service and whether that service is federal or not. 
+																	National Guard comes to play mostly on state based territory. 
+																	It includes the Army National Guard of the United States and the Air National Guard of the United States. 
+																	They play slightly different roles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whats the difference between the two. 
+																	For Army Reserve President is the leader. 
+																	Army Reserve Soldiers serve part-time and are able to work a civilian career go to school and live where they want. 
+																	Entered World War I with the 27th. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What is the difference between Army Reserve and National Guard. 
+																	Both go to same basic training and AIT. 
+																	The reserves and National Guard make up about 45 percent of the militarys total manpower and are divided into seven branches. 
+																	Armys current combat capacity including 43 percent of its piloted and unmanned aircraft are National Guard members source. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Active duty Soldiers are part of the Army 24 hours a day seven days a week. 
+																	The United States Army Reserve USAR is the Federal Reserve Force of the United States Army. 
+																	The National Guard played a critical role when the US. 
+																	The army reserve is controlled by the federal authorities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One to the nation and the other to the state. 
+																	The primary difference between the guard and reserve components lies in the command. 
+																	The Texas State Guard is a state defense force that assists and augments the other Texas military branches and civil authorities in times of state emergencies and on-going support of National Guard units and local communities. 
+																	The Army is a federal agency the National Guard is a dual statefederal agency and the State Guard is a state agency. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/c6/f6/7cc6f65fc10e77677f281b17e218df94.jpg" data-lightbox="roadtrip" data-title="Pin On Hedrick Cintron It Professional">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/c6/f6/7cc6f65fc10e77677f281b17e218df94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI0eOEibLDzJwa3sBLRTHUWVeNDkEQr1M-tA';" alt="Pin On Hedrick Cintron It Professional">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hedrick Cintron It Professional</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/49/e1/5c49e117f11698acb2a0fdd9434e3497.jpg" data-lightbox="roadtrip" data-title="Pin On U S Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/49/e1/5c49e117f11698acb2a0fdd9434e3497.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNQLS67Fim6jsnEjeVOVLzgYjEObGO89o5rQ';" alt="Pin On U S Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/2e/59/d82e598afa2d57008ac9c95bb70b25e4.jpg" data-lightbox="roadtrip" data-title="Pin On Soldados">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/2e/59/d82e598afa2d57008ac9c95bb70b25e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnIyPFVaa4BQYI3hPTL2AGxsnbW9tdpt7iDQ';" alt="Pin On Soldados">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Soldados</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/f0/cf/33f0cf4b36e8e21056b0a232a52ad49d.jpg" data-lightbox="roadtrip" data-title="Pin On Patriots">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/f0/cf/33f0cf4b36e8e21056b0a232a52ad49d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOkM8Op4RR0yzQaGBmPWeHTR0QAUzDiCrwjQ';" alt="Pin On Patriots">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Patriots</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/94/f3/2d94f3c18397b8501cba296fb417159e.jpg" data-lightbox="roadtrip" data-title="Pin On Support Our Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/94/f3/2d94f3c18397b8501cba296fb417159e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb4w6TusDti6sVNmIGmMxx1utsZ2ZaNqvyBQ';" alt="Pin On Support Our Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Support Our Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/02/d1/c802d12234a5ab2365aa862892511534.jpg" data-lightbox="roadtrip" data-title="Pin On Colorado Army National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/02/d1/c802d12234a5ab2365aa862892511534.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTex5v8-cC6fdjD9tZ_ZA76htFmjGxSKBoqnw';" alt="Pin On Colorado Army National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Colorado Army National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/28/af/7828afe9482390eeeff19f6f364f738c.png" data-lightbox="roadtrip" data-title="Pin On Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/28/af/7828afe9482390eeeff19f6f364f738c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQrZijValsb8mGMemdC8byiyUVovOmkkBPA';" alt="Pin On Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/a7/99/78a7991ac61946a9a0643898344b0d81.jpg" data-lightbox="roadtrip" data-title="Pin On Army National Guard Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/a7/99/78a7991ac61946a9a0643898344b0d81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWyGUu-d022dxBkmBHhjTt7foNRnFNlrlf5Q';" alt="Pin On Army National Guard Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army National Guard Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/8c/f5/048cf50321808c8c7316033047a7ceab.png" data-lightbox="roadtrip" data-title="Pin On Guam 2019">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/8c/f5/048cf50321808c8c7316033047a7ceab.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2UaLgdtK8_1wvLUk3kcJtfyfU6GLwxx4Ikw';" alt="Pin On Guam 2019">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guam 2019</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/68/5f/f7/685ff7b038635543b65301819662e9c0.jpg" data-lightbox="roadtrip" data-title="The Army Is The Largest Branch In The U S Military There Are Over A Million Reported Uniformed Personnel When You I Army Ranks Army Military Spouse Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/68/5f/f7/685ff7b038635543b65301819662e9c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-00MRoNXn9EY0BsSowL6WPxrlx6b3ULdheQ';" alt="The Army Is The Largest Branch In The U S Military There Are Over A Million Reported Uniformed Personnel When You I Army Ranks Army Military Spouse Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army Is The Largest Branch In The U S Military There Are Over A Million Reported Uniformed Personnel When You I Army Ranks Army Military Spouse Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/08/79/da0879b54fca62019c667a8e38192b1e.jpg" data-lightbox="roadtrip" data-title="Pin On Army National Guard Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/08/79/da0879b54fca62019c667a8e38192b1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5gU3BVWyZVDXjPUbQt7U4JWhAApdsmv1ag';" alt="Pin On Army National Guard Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army National Guard Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/fe/6a/a5fe6ad2ccc2b20cb7a48b3324713f0a.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/fe/6a/a5fe6ad2ccc2b20cb7a48b3324713f0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThnpP1I7vQhbZ_Qm5JaNdkTu8P-dce7qKJ8w';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/08/3e/52083e089b405af1edb4ea397693e99d.jpg" data-lightbox="roadtrip" data-title="Pin On Trojan Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/08/3e/52083e089b405af1edb4ea397693e99d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvpU7y8o5dSXnIWJ-o7YJAm8EgGlGUk6PKUg';" alt="Pin On Trojan Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Trojan Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-increase-back-pay.html">Va Rating Increase Back Pay</a></li>
+													<li class="list-group-item"><a href="/va-rating-lower-back.html">Va Rating Lower Back</a></li>
+													<li class="list-group-item"><a href="/va-rating-migraine.html">Va Rating Migraine</a></li>
+													<li class="list-group-item"><a href="/va-rating-irritable-bowel-syndrome.html">Va Rating Irritable Bowel Syndrome</a></li>
+													<li class="list-group-item"><a href="/va-rating-increase-for-hearing-loss.html">Va Rating Increase For Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-rating-of-shoulder.html">Va Rating Of Shoulder</a></li>
+													<li class="list-group-item"><a href="/va-rating-hip-pain.html">Va Rating Hip Pain</a></li>
+													<li class="list-group-item"><a href="/va-rating-increase.html">Va Rating Increase</a></li>
+													<li class="list-group-item"><a href="/va-rating-on-migraines.html">Va Rating On Migraines</a></li>
+													<li class="list-group-item"><a href="/va-rating-of-100-benefits.html">Va Rating Of 100 Benefits</a></li>
+													<li class="list-group-item"><a href="/va-rating-of-100-percent.html">Va Rating Of 100 Percent</a></li>
+													<li class="list-group-item"><a href="/va-rating-low-back-pain.html">Va Rating Low Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-rating-letter-example.html">Va Rating Letter Example</a></li>
+													<li class="list-group-item"><a href="/va-rating-hip.html">Va Rating Hip</a></li>
+													<li class="list-group-item"><a href="/va-rating-on-hearing-loss.html">Va Rating On Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-rating-mental-disorders.html">Va Rating Mental Disorders</a></li>
+													<li class="list-group-item"><a href="/va-rating-on-knee.html">Va Rating On Knee</a></li>
+													<li class="list-group-item"><a href="/va-rating-on-ptsd.html">Va Rating On Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-rating-neuropathy.html">Va Rating Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-rating-math-table.html">Va Rating Math Table</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

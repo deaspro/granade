@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Special Rating For Airborne Personnel - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Special Rating For Airborne Personnel",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/3d/88/ab/3d88ab4ed6b822a075f5d92c2ebea700.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+special+rating+for+airborne+personnel",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Special Rating For Airborne Personnel</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Airborne Personnel is a crew leasingconsultancy agency offering bespoke aviation crewing solutions to Air Atlanta Icelandic. Listing those as separate disabilities meant that the veteran went from 10 to 30 on one knee. Maybe they were talking in terms that airborne tend to end up with more injuries and in time a disability rating but thats just a guess. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/what-is-gi-bill-benefits.html">what is gi bill benefits</a>
+											<a class="badge badge-dark" href="/what-is-fdc-program.html">what is fdc program</a>
+											<a class="badge badge-primary" href="/what-is-full-time-for-the-gi-bill.html">what is full time for the gi bill</a>
+											<a class="badge badge-info" href="/what-is-emergency-hotline.html">what is emergency hotline</a>
+											<a class="badge badge-success" href="/what-is-dic-in-the-military.html">what is dic in the military</a>
+											<a class="badge badge-secondary" href="/what-is-defense-intelligence-agency.html">what is defense intelligence agency</a>
+											<a class="badge badge-dark" href="/what-is-direct-commission-in-the-air-force.html">what is direct commission in the air force</a>
+											<a class="badge badge-light" href="/what-is-hasty-defense-in-the-military.html">what is hasty defense in the military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the right site.  Our website gives you suggestions for viewing the maximum quality video and image content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie that you view.  You can also contribute to supporting this website by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/4c/aa/594caab5d27da96472ff687b9e8c2d45.jpg" data-lightbox="roadtrip" data-title="Pin By Eric 4475 On Wife Of A Hero Vietnam War Vietnam War Photos Vietnam War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/4c/aa/594caab5d27da96472ff687b9e8c2d45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHi4cGnt6haY5gFVsghH8hVlvfzoOxtslmAg';" alt="Pin By Eric 4475 On Wife Of A Hero Vietnam War Vietnam War Photos Vietnam War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Eric 4475 On Wife Of A Hero Vietnam War Vietnam War Photos Vietnam War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/45/4c/f4/454cf4f8b33327993ada3f00e05cd654.jpg" data-lightbox="roadtrip" data-title="Visual Dd 14 Retirement Posters Etsy In 2020 Retirement Military Careers Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/45/4c/f4/454cf4f8b33327993ada3f00e05cd654.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAc3zwd0h-xF7lf2zBNCt0817XhxtovetazQ';" alt="Visual Dd 14 Retirement Posters Etsy In 2020 Retirement Military Careers Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Visual Dd 14 Retirement Posters Etsy In 2020 Retirement Military Careers Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/f9/4f/06f94fc38e05c4642f5a9edbe2306aca.jpg" data-lightbox="roadtrip" data-title="Paratroopers Of 1st Allied Airborne Army 82nd Airborne Division Receiving A Final Briefing Before Embarking O Airborne Army 82nd Airborne Division Paratrooper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/f9/4f/06f94fc38e05c4642f5a9edbe2306aca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr_dVsJ0kXMmyur6arLHt5YiZGqlzO8a8A3w';" alt="Paratroopers Of 1st Allied Airborne Army 82nd Airborne Division Receiving A Final Briefing Before Embarking O Airborne Army 82nd Airborne Division Paratrooper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paratroopers Of 1st Allied Airborne Army 82nd Airborne Division Receiving A Final Briefing Before Embarking O Airborne Army 82nd Airborne Division Paratrooper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/4b/64/504b6408c937d7a695a285af0c026b25.jpg" data-lightbox="roadtrip" data-title="Stolen Valor How The Vietnam Generation Was Robbed Of Its Heroes And Its History B G Burkett Glenna Whitley Glenna Whitle Stolen Valor Vietnam Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/4b/64/504b6408c937d7a695a285af0c026b25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk-5abQbLW5s1BR22zcjesFqCbYS_O4_ufew';" alt="Stolen Valor How The Vietnam Generation Was Robbed Of Its Heroes And Its History B G Burkett Glenna Whitley Glenna Whitle Stolen Valor Vietnam Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stolen Valor How The Vietnam Generation Was Robbed Of Its Heroes And Its History B G Burkett Glenna Whitley Glenna Whitle Stolen Valor Vietnam Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/9c/81/b39c81e2fec3ad6807fe43f616b3c063.jpg" data-lightbox="roadtrip" data-title="Rangers Lead The Way Quote Spoiler For Ussocom Diagram Military Special Forces Airborne Ranger Military Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/9c/81/b39c81e2fec3ad6807fe43f616b3c063.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSk7XRLp3Nqp4UP6Wi2bUxd5xeROZhLl5qqA';" alt="Rangers Lead The Way Quote Spoiler For Ussocom Diagram Military Special Forces Airborne Ranger Military Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rangers Lead The Way Quote Spoiler For Ussocom Diagram Military Special Forces Airborne Ranger Military Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/07/3e/1a073e52ed223b29e01d3b9085a1fd52.jpg" data-lightbox="roadtrip" data-title="Special Forces Lrrps Vietnam Vietnam War Vietnam War Photos Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/07/3e/1a073e52ed223b29e01d3b9085a1fd52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk2G5J98pCuYd5xnjg2u-4syIfH4-nrciabQ';" alt="Special Forces Lrrps Vietnam Vietnam War Vietnam War Photos Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Forces Lrrps Vietnam Vietnam War Vietnam War Photos Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/1f/59/a2/1f59a2d08003879eb8573db0f3b319ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk2G5J98pCuYd5xnjg2u-4syIfH4-nrciabQ';" alt="Special Forces Lrrps Vietnam Vietnam War Vietnam War Photos Vietnam">
+										<div class="card-body">
+						<h3 class="h5"><b>The 2018-2019 secret VA data shows that PTSD was the 3 most common VA disability claims for all Veterans across all demographics.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va special rating for airborne personnel</strong>. 
+								
+																	When rating the impact of traumatic brain injury TBI the VA evaluates the current impact on the veteran not the severity of the original injury. 
+																	Many veterans with a 90 VA rating are looking for ways to increase their VA rating because of the additional benefits available at the 100 VA rating. 
+																	At Airborne Personnel we pride ourselves on our dedicated team of aviation specialist with years of experience. 
+																	For more information contact 00-248-800 wwwWarRelatedIllnessvagov. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See part II of. 
+																	A TBI rating may be assigned for. 
+																	I never heard of a special circumstance for paratroopers. 
+																	How Traumatic Brain Injuries Are Rated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CRDP allows military retirees to receive both military retirement pay and VA disability compensation if they held a VA disability rating of 50 or greater. 
+																	4 War Related Illness and Injury Study Center Post-Deployment Health Services Patient Care Services Department of Veterans Affairs. 
+																	I have over 200 jumps one of which put me in a coma for 3 days tow jumper on a C130 and since I was unconscious for a few days when I went in many things were overlooked. 
+																	Personnel Management on May 6 1996. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA special monthly compensation SMC is a higher rate of compensation that we pay to Veterans as well as their spouses surviving spouses and parents with certain needs or disabilities. 
+																	This is a substantial increase in compensation for these veterans who are eligible to receive their full military retirement pay and their full VA disability compensation. 
+																	Many Veterans are concerned about exposure to airborne hazards after deployment to Iraq and Afghanistan. 
+																	Separating ratings into separate joints can also help you get. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Description of the components of the codesheet section including data tables jurisdiction service codes special provision codes future exam codes special monthly compensation codes disability rating codes special notation and other template fields and siganatures. 
+																	In 2020 a 90 percent VA disability rating is worth a minimum of 186296 per month and is tax free at both the state and federal levels. 
+																	With a stress-caused arthritis like osteoarthritis you want to get a VA rating for joint pain on each individual joint. 
+																	For example 907 of Veterans were rated at 30 or higher for mental health while 411 of Veterans were rated at 70 or higher. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They have been providing our clients with dedicated and qualified professionals whilst managing all. 
+																	If your doctor wont write an opinion make the argument yourself on VA Form 21-4138 including applicable CFR regulations and submit it with the VA 21-526EZ disability claims form. 
+																	Department of Veterans Affairs VA DIRECTIVE 5013 Washington DC 20420 Transmittal Sheet April 15 2002. 
+																	It provides the framework for developing separate title 5 intra-. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vets have been misdiagnosed between arthritis and a torn ACL. 
+																	Although VA x-rays show nothing wrong. 
+																	This article will discuss thse special ratings and the differences in how certain disabilities are rated. 
+																	Veterans may quality for VA disability compensation benefits as a result of certain exposures during your military service Military Hazardous Exposures - Compensation Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find the 2021 special monthly compensation rates that may apply to you. 
+																	The VA is kinda twisted in a bizarre way that makes a football bat make sense I was Airborne for 2 years with the 75th and did air assault as well and 3 years with the 82nd. 
+																	Delays of these ratings and for special ratings to be made as administratively required. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/59/a2/1f59a2d08003879eb8573db0f3b319ab.jpg" data-lightbox="roadtrip" data-title="Vietnam Those Who Served More Military Personnel Played Support Roles Than Combat Ones Here Are A Few Of Their Sto Vietnam War Vietnam Vietnam War Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/59/a2/1f59a2d08003879eb8573db0f3b319ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJw8upHjgEF4EqVrws7HQHY7qYxEqDKgkqaQ';" alt="Vietnam Those Who Served More Military Personnel Played Support Roles Than Combat Ones Here Are A Few Of Their Sto Vietnam War Vietnam Vietnam War Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Those Who Served More Military Personnel Played Support Roles Than Combat Ones Here Are A Few Of Their Sto Vietnam War Vietnam Vietnam War Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/9c/aa/c49caad8875c399e3da01b2a0ef2e952.jpg" data-lightbox="roadtrip" data-title="Cold War Veteran Patch Cold War Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/9c/aa/c49caad8875c399e3da01b2a0ef2e952.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSV8UqLq_m1XeSS7G4ypLfSJ8uVnbXnbQskg';" alt="Cold War Veteran Patch Cold War Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cold War Veteran Patch Cold War Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/8c/e7/f8/8ce7f825cabcf3fb33bcb675d40f69af.jpg" data-lightbox="roadtrip" data-title="5 Best Duty Stations For Navy Personnel And Families Norfolk Virginia Navy Naval Station Norfolk Norfolk Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/8c/e7/f8/8ce7f825cabcf3fb33bcb675d40f69af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzudF2JJ6o1l6YHExkE0Nfio9KpVCVuvA3Rg';" alt="5 Best Duty Stations For Navy Personnel And Families Norfolk Virginia Navy Naval Station Norfolk Norfolk Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Best Duty Stations For Navy Personnel And Families Norfolk Virginia Navy Naval Station Norfolk Norfolk Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/55/64/ed556442ad83bfc0bd887ecd02a083eb.jpg" data-lightbox="roadtrip" data-title="Pin On Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/55/64/ed556442ad83bfc0bd887ecd02a083eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiZxKtCLreNydMeYBcXLhaXj0HAwAK_tGoqw';" alt="Pin On Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/a3/c1/e9a3c12c56aa2d60f8886a32cb7985a0.jpg" data-lightbox="roadtrip" data-title="Focus On The Royal Bahraini Army 1 The Hmmwv Family Military Vehicles Army Vehicles Tactical Truck">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/a3/c1/e9a3c12c56aa2d60f8886a32cb7985a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj2lGtBBDRENTHJOh7CjgyyDMfchxzK1liQg';" alt="Focus On The Royal Bahraini Army 1 The Hmmwv Family Military Vehicles Army Vehicles Tactical Truck">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Focus On The Royal Bahraini Army 1 The Hmmwv Family Military Vehicles Army Vehicles Tactical Truck</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/0c/3e/8a0c3ed7bb7df7b900daa79a5ecd9240.jpg" data-lightbox="roadtrip" data-title="Jump Wings Airborne Army Airborne Ranger Army Infantry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/0c/3e/8a0c3ed7bb7df7b900daa79a5ecd9240.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSStNZUFF7rpauud8HS0TKhqfR-NfabiDd2Gw';" alt="Jump Wings Airborne Army Airborne Ranger Army Infantry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jump Wings Airborne Army Airborne Ranger Army Infantry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/43/87/4e4387ce0660b1149252c591f1371434.jpg" data-lightbox="roadtrip" data-title="Pin By Luxury Valley Homes Scottsda On History Vietnam War Photos Vietnam War History War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/43/87/4e4387ce0660b1149252c591f1371434.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMEUsJSD0M_IwTDPxUyVG87vFYDjpUxbQNTA';" alt="Pin By Luxury Valley Homes Scottsda On History Vietnam War Photos Vietnam War History War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Luxury Valley Homes Scottsda On History Vietnam War Photos Vietnam War History War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/1d/8a/2d1d8ab524e4e87c81ed7ec4665f42c3.jpg" data-lightbox="roadtrip" data-title="Pin On Projects To Try">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/1d/8a/2d1d8ab524e4e87c81ed7ec4665f42c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSldUeSxVTWWQfjg9Zg7usMYugxL9vQ9eZuvg';" alt="Pin On Projects To Try">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Projects To Try</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/8a/94/2f8a94968373195d89a541a3a3554f55.jpg" data-lightbox="roadtrip" data-title="M113 Apc Australian 1st Apc Squadron Vietnam War Vietnam American War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/8a/94/2f8a94968373195d89a541a3a3554f55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRESNbTTgJYskqo4DZoi_SYPjm8xrC7-jrDvg';" alt="M113 Apc Australian 1st Apc Squadron Vietnam War Vietnam American War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">M113 Apc Australian 1st Apc Squadron Vietnam War Vietnam American War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nap.edu/cover/25837/450" data-lightbox="roadtrip" data-title="Front Matter Respiratory Health Effects Of Airborne Hazards Exposures In The Southwest Asia Theater Of Military Operations The National Academies Press">
+											<img class="card-img v-image ads-img " src="https://www.nap.edu/cover/25837/450" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK30w5RCljx-k1TTrHqRzZY5sBpj-q6YNQtQ';" alt="Front Matter Respiratory Health Effects Of Airborne Hazards Exposures In The Southwest Asia Theater Of Military Operations The National Academies Press">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Front Matter Respiratory Health Effects Of Airborne Hazards Exposures In The Southwest Asia Theater Of Military Operations The National Academies Press</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/c7/1b/f5c71be203ceda1e5287b0f935850de8.jpg" data-lightbox="roadtrip" data-title="4th Infantry Division Band Photos Vietnam War Photos Vietnam War Vietnam Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/c7/1b/f5c71be203ceda1e5287b0f935850de8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHF5HpqZnMyyb4eo5sc8hdmFudSZh2NW6Rsw';" alt="4th Infantry Division Band Photos Vietnam War Photos Vietnam War Vietnam Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4th Infantry Division Band Photos Vietnam War Photos Vietnam War Vietnam Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/8f/be/0e8fbe94a58ed04473dcd2fc2e6c005d.jpg" data-lightbox="roadtrip" data-title="Republic Of Vietnam Gallentry Cross With Palm Vietnam Tattoo Bronze Stars Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/8f/be/0e8fbe94a58ed04473dcd2fc2e6c005d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhBPVcXSwpHuXXlJVhkGE2_E4CYeFsH_MwGw';" alt="Republic Of Vietnam Gallentry Cross With Palm Vietnam Tattoo Bronze Stars Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Republic Of Vietnam Gallentry Cross With Palm Vietnam Tattoo Bronze Stars Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/3b/f5/c03bf5a257144bbbd9f1ad67848162e1.jpg" data-lightbox="roadtrip" data-title="Coalition Bombing During Operation Desert Storm 1 Tanks At An Oil Refinery In Kuwait 2 Aircraft Bunkers At Kuwait Internati Oil Refinery Storm Special Ops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/3b/f5/c03bf5a257144bbbd9f1ad67848162e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi_kW6dK7oNauqItw_dPU12xlqV8Niaujqw';" alt="Coalition Bombing During Operation Desert Storm 1 Tanks At An Oil Refinery In Kuwait 2 Aircraft Bunkers At Kuwait Internati Oil Refinery Storm Special Ops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coalition Bombing During Operation Desert Storm 1 Tanks At An Oil Refinery In Kuwait 2 Aircraft Bunkers At Kuwait Internati Oil Refinery Storm Special Ops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/88/ab/3d88ab4ed6b822a075f5d92c2ebea700.png" data-lightbox="roadtrip" data-title="Military Veteran Discounts Www Starsstripesandsavings Com Veterans Discounts Military Veterans Military Discounts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/88/ab/3d88ab4ed6b822a075f5d92c2ebea700.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyKX49ZmJVjfgMi3ouwqCRC7M3FmqhjlvIYQ';" alt="Military Veteran Discounts Www Starsstripesandsavings Com Veterans Discounts Military Veterans Military Discounts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Veteran Discounts Www Starsstripesandsavings Com Veterans Discounts Military Veterans Military Discounts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/b6/68/0cb6681c5775458a867523b3a5c433d6.jpg" data-lightbox="roadtrip" data-title="Saying Hello Staff Sergeant Army Military Jacket">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/b6/68/0cb6681c5775458a867523b3a5c433d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAOoZmUk1PhybkMlbVAKHvL11wplIEtIAXDg';" alt="Saying Hello Staff Sergeant Army Military Jacket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Saying Hello Staff Sergeant Army Military Jacket</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/vacp-treas-310.html">Vacp Treas 310</a></li>
+													<li class="list-group-item"><a href="/va-y-avoir-in-english.html">Va Y Avoir In English</a></li>
+													<li class="list-group-item"><a href="/vagov-compensation-calculator.html">Vagov Compensation Calculator</a></li>
+													<li class="list-group-item"><a href="/vagov-gi-bill-transfer.html">Vagov Gi Bill Transfer</a></li>
+													<li class="list-group-item"><a href="/vagov-records.html">Vagov Records</a></li>
+													<li class="list-group-item"><a href="/vagov-gi-bill-phone-number.html">Vagov Gi Bill Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-widow-health-benefits.html">Va Widow Health Benefits</a></li>
+													<li class="list-group-item"><a href="/vaed-treas-310-xxva-ch33-gi-bill.html">Vaed Treas 310 Xxva Ch33 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/vagov-gi-bill-application.html">Vagov Gi Bill Application</a></li>
+													<li class="list-group-item"><a href="/va-yellow-ribbon-eligibility.html">Va Yellow Ribbon Eligibility</a></li>
+													<li class="list-group-item"><a href="/va-workers-comp-web-file.html">Va Workers Comp Web File</a></li>
+													<li class="list-group-item"><a href="/vagov-unemployment-benefits.html">Vagov Unemployment Benefits</a></li>
+													<li class="list-group-item"><a href="/va-workers-comp-phone-number.html">Va Workers Comp Phone Number</a></li>
+													<li class="list-group-item"><a href="/vagov-gi-bill-status.html">Vagov Gi Bill Status</a></li>
+													<li class="list-group-item"><a href="/vagov-dependents.html">Vagov Dependents</a></li>
+													<li class="list-group-item"><a href="/va-widow-benefits.html">Va Widow Benefits</a></li>
+													<li class="list-group-item"><a href="/vagov-compensation.html">Vagov Compensation</a></li>
+													<li class="list-group-item"><a href="/vagov-chapter-35-benefits.html">Vagov Chapter 35 Benefits</a></li>
+													<li class="list-group-item"><a href="/vagov-forever-gi-bill.html">Vagov Forever Gi Bill</a></li>
+													<li class="list-group-item"><a href="/vagov-tdiu.html">Vagov Tdiu</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

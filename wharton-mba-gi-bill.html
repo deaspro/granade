@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Wharton Mba Gi Bill - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Wharton Mba Gi Bill",
+  "datePublished": "2021-02-14",
+  "image": "https://mba.wharton.upenn.edu/wp-content/uploads/2017/01/Wharton_pascalperich_069_0831_9915-3-Header.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=wharton+mba+gi+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Wharton Mba Gi Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Still have elite recruiting opportunities. 60 GI Bill covers 85K because its public. But thanks to a three-year effort mounted by Wharton Executive Education in conjunction with the University of Pennsylvania registrars office the state policy has changed. <br>				
+			</p>
+										<a class="badge badge-danger" href="/what-percentage-of-donations-to-dav-go-to-veterans.html">what percentage of donations to dav go to veterans</a>
+											<a class="badge badge-success" href="/what-percentage-va-disability-is-acid-reflux.html">what percentage va disability is acid reflux</a>
+											<a class="badge badge-info" href="/what-qualifies-a-hostile-work-environment.html">what qualifies a hostile work environment</a>
+											<a class="badge badge-danger" href="/what-percentage-of-us-budget-is-defense.html">what percentage of us budget is defense</a>
+											<a class="badge badge-secondary" href="/what-qualifications-do-you-need-to-go-to-college.html">what qualifications do you need to go to college</a>
+											<a class="badge badge-warning" href="/what-programs-are-available-for-homeless-veterans.html">what programs are available for homeless veterans</a>
+											<a class="badge badge-secondary" href="/what-percentage-of-college-football-players-make-it-to-the-pros.html">what percentage of college football players make it to the pros</a>
+											<a class="badge badge-dark" href="/what-percentage-of-the-army-are-warrant-officers.html">what percentage of the army are warrant officers</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the ideal site.  Our website gives you hints for viewing the highest quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mba.wharton.upenn.edu/wp-content/uploads/2017/01/Wharton_pascalperich_069_0831_9915-3-Header.jpg" data-lightbox="roadtrip" data-title="Mba Tuition Costs Fees Financial Aid Info Wharton Mba">
+											<img class="card-img v-image ads-img " src="https://mba.wharton.upenn.edu/wp-content/uploads/2017/01/Wharton_pascalperich_069_0831_9915-3-Header.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWw22BuYWW8_m37WgF8qnAycP7Wj3_Mkvh_g';" alt="Mba Tuition Costs Fees Financial Aid Info Wharton Mba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mba Tuition Costs Fees Financial Aid Info Wharton Mba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mba-inside.wharton.upenn.edu/wp-content/uploads/2018/04/MBA_Welcome_JMHH_Exterior_1600x300-1-600x230.jpg" data-lightbox="roadtrip" data-title="Funding Opportunities Mba Inside">
+											<img class="card-img v-image ads-img " src="https://mba-inside.wharton.upenn.edu/wp-content/uploads/2018/04/MBA_Welcome_JMHH_Exterior_1600x300-1-600x230.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRecUuN7tUuJq4g5CueFU-Su7iO-6fdgvB6qQ';" alt="Funding Opportunities Mba Inside">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Funding Opportunities Mba Inside</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usveteransmagazine.com/wp-content/uploads/2020/11/Squeezing-Every-Dime-Out-of-Your-GI-Benefits.png" data-lightbox="roadtrip" data-title="How Wharton S Emba Program Adds Value For Military Students U S Veterans Magazine">
+											<img class="card-img v-image ads-img " src="https://usveteransmagazine.com/wp-content/uploads/2020/11/Squeezing-Every-Dime-Out-of-Your-GI-Benefits.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScpiDmasF6ZACUAifJdRe6pTviommngoWgRA';" alt="How Wharton S Emba Program Adds Value For Military Students U S Veterans Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Wharton S Emba Program Adds Value For Military Students U S Veterans Magazine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fd/c7/62/fdc762acb63f02d89b1d2b8f9c0c25d8.jpg" data-lightbox="roadtrip" data-title="Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fd/c7/62/fdc762acb63f02d89b1d2b8f9c0c25d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsr99i_yoPtQIYsc13iQemhKT22rwQygXAg';" alt="Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Post 9 11 Gi Bill Benefits Right Now Are The Most Generous In The History Of The Gi Bill But In Some Cases It Does N Gi Bill Online College College Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/93/3e/a6/933ea658989b38192fee1a74f5b6f863.jpg" data-lightbox="roadtrip" data-title="Finance Can Be A Rewarding Career Field Particularly For Those Who Step Up To An Mba Education For Some It May Be Har Online Mba Mba Wharton Business School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/93/3e/a6/933ea658989b38192fee1a74f5b6f863.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM74E-IDbeUQed0a9O2xvMbKbeSrQevB4-iQ';" alt="Finance Can Be A Rewarding Career Field Particularly For Those Who Step Up To An Mba Education For Some It May Be Har Online Mba Mba Wharton Business School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finance Can Be A Rewarding Career Field Particularly For Those Who Step Up To An Mba Education For Some It May Be Har Online Mba Mba Wharton Business School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://executivemba.wharton.upenn.edu/wp-content/uploads/Hero_Sml_MBA_Value-of-MBA.png" data-lightbox="roadtrip" data-title="Executive Mba Cost Tuition Scholarships Financing Wharton Emba">
+											<img class="card-img v-image ads-img " src="https://executivemba.wharton.upenn.edu/wp-content/uploads/Hero_Sml_MBA_Value-of-MBA.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnuGeGGWnhn7erLORQjgkPIhlkqcG0TRQG7Q';" alt="Executive Mba Cost Tuition Scholarships Financing Wharton Emba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Executive Mba Cost Tuition Scholarships Financing Wharton Emba</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/9d/ee/b3/9deeb361988070b8911727421b035335.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnuGeGGWnhn7erLORQjgkPIhlkqcG0TRQG7Q';" alt="Executive Mba Cost Tuition Scholarships Financing Wharton Emba">
+										<div class="card-body">
+						<h3 class="h5"><b>Explanation of the Chart.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Wharton mba gi bill</strong>. 
+								
+																	At Wharton I explored possible career paths with those factors in mind. 
+																	The estimated first-year budget for the Wharton MBA Program is 111695 which includes tuition and fees 80432 room board 21050 books supplies health insurance and additional personal costs 10213. 
+																	The 2020-2021 GI BILL annual payment for someone who is 100 eligible is 25162. 
+																	Always in the upper crust of the rankings Wharton is a perennial powerhouse of a business school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wharton tends to have the finance label but you dont need to be a super-quant to head to Wharton. 
+																	Of Veteran Affairs VA will match the award amount that we grant. 
+																	Whether you are just starting your research applying or have already been accepted this is the place to start. 
+																	Our rigorous highly experiential programs are ideal for former military personnel seeking to augment their business acumen while re-integrating into civilian life. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Public School - All Tuition and Fee Payments for an in-State Student Private or Foreign School Up to 2367194 per academic year National Maximum. 
+																	They have a commitment to veterans here even with simple things like waiving your application fee. 
+																	142K - 85K 57K 2 year tuition. 
+																	Univ of Michigan Ross MBA Public Univ ranked 10-18. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In Pennsylvania veterans were previously able to apply their Post-911 GI Bill benefits only to traditional long-term degree-granting programs such as an MBA. 
+																	Median base salary of 140K w signing bonus of 30K. 
+																	Wharton offers grant funds through the Yellow Ribbon Program for veterans and is committed to funding all students who are 100 eligible under the Post-911 GI Bill. 
+																	In the Navy the things that mattered most to me were the amazing people I worked with the impact of culture on an organization and the ability to maintain an active lifestyle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wharton has an unlimited number of Yellow Ribbon spots for the full-time and executive MBA Program. 
+																	57K - 40K Scholarship 17K remaining 2 year tuition. 
+																	For veterans looking to head to a top-tier business school its hard to ignore Wharton. 
+																	Wharton Executive Education now accepts the Post-911 GI Bill For those veterans who wish to enroll in a short duration program Wharton Executive Education offers several programs that are modular and in a live virtual online format making them an ideal choice for veterans who wish to continue their education in a flexible open-ended timeframe. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Are you considering a Wharton MBA. 
+																	As evidence 43 of the class of. 
+																	In addition to the Post-911 GI Bill veterans who are eligible for 100 of the GI Bill and retired at the start of the summer term can qualify for the Yellow Ribbon Program. 
+																	MBA and Executive MBA admissions teams announced they will now accept the at-home version of the GRE GMAT and EA for applicants to the EMBA program with at least eight years of full time work experience US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wharton has an unlimited number of Yellow Ribbon spots for the full-time and executive MBA Program. 
+																	Weve assembled a list of information to help. 
+																	GI BILL Both active duty service members and veterans are eligible for the Post-911 GI BILL. 
+																	This amount generally increases by a small percentage every year so check the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Details and eligibility guidelines can be found at vagov. 
+																	If you attend a public university then your degree will come to you at no cost not included are living travel and non-education related expenses. 
+																	2 year total tuition of 142K. 
+																	Military MBA wants to help military veterans and their families using the Post 911 GI Bill evaluate schools and get a quality MBA degree at the right price. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Leveraging the GI Bill is something you can definitely do at Wharton. 
+																	Wharton has an unlimited number of Yellow Ribbon spots for the full-time and executive MBA Program. 
+																	The GI Bill comes into effect here due to the difference between what the GI Bill will pay for a state versus a private school. 
+																	In addition to the Post-911 GI Bill veterans who are eligible for 100 percent of the GI Bill and retired at the start of the summer term can qualify for the Yellow Ribbon Program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veterans Affairs website for the most up-to-date information. 
+																	Veterans can now apply their Post-911 GI Bill benefits toward the tuition costs of Wharton Executive Education programming. 
+																	Ari Gold from Entourage went here. 
+																	What follows is our complete analysis of the Best Value in MBA Schools. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans who are eligible for 100 of the GI BILL and no longer on active duty at the start of the summer term can qualify for the Yellow Ribbon Program. 
+																	For those who do have 100 Post-911 GI Bill benefits the Yellow Ribbon Program can be a huge way to help offset the cost of attaining a top MBA. 
+																	Thinking about getting an MBA. 
+																	The estimated total program budget is 222540. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eligible applicants may receive a maximum Yellow Ribbon Award of up to 20000. 
+																	I decided to take advantage of the GI Bill to get my MBA and help transition to the private sector. 
+																	Wharton offers grant funds through the Yellow Ribbon Program for veterans and is committed to funding students who are 100 eligible under the Post-911 GI Bill. 
+																	Wharton Executive Education is proud to honor veterans by making world-class programs accessible under the Post-911 GI Bill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tuition and Financial Aid Information. 
+																	I have taken a portion from my article on how to pay for an MBA. 
+																	Wharton EMBA Career Director Steve. 
+																	Students are responsible for their own housing meals and course materials. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When Is the Next Deadline. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mba.wharton.upenn.edu/wp-content/uploads/2020/10/diversity_hero_2020.10.02.jpg" data-lightbox="roadtrip" data-title="Diversity At Wharton Mba Program">
+											<img class="card-img v-image ads-img " src="https://mba.wharton.upenn.edu/wp-content/uploads/2020/10/diversity_hero_2020.10.02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_f-kjbKrEeHHFFVOjUEcmWBAN-qZTt4KZ9w';" alt="Diversity At Wharton Mba Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diversity At Wharton Mba Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/AV9WPll09gU/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Executive Mba Scholarships Loans Financial Aid Wharton Emba">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/AV9WPll09gU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU9OwmeaJLge_j2MIS5cnXIzWVjrIhktfVxA';" alt="Executive Mba Scholarships Loans Financial Aid Wharton Emba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Executive Mba Scholarships Loans Financial Aid Wharton Emba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://executiveeducation.wharton.upenn.edu/wp-content/uploads/2020/05/2006-using-the-gi-bill-at-wharton-600.jpg" data-lightbox="roadtrip" data-title="The Gi Bill At Wharton First Rate Continuing Education Wharton Executive Education">
+											<img class="card-img v-image ads-img " src="https://executiveeducation.wharton.upenn.edu/wp-content/uploads/2020/05/2006-using-the-gi-bill-at-wharton-600.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZyKWpaqfzbAGLf57g6-cuqPBXgKP2bVF9oA';" alt="The Gi Bill At Wharton First Rate Continuing Education Wharton Executive Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Gi Bill At Wharton First Rate Continuing Education Wharton Executive Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.learncbse.in/wp-content/uploads/2019/09/Wharton-MBA-Scholarship.png" data-lightbox="roadtrip" data-title="Wharton Business School Mba Scholarship Eligibility Benefits And Application Learn Cbse">
+											<img class="card-img v-image ads-img " src="https://www.learncbse.in/wp-content/uploads/2019/09/Wharton-MBA-Scholarship.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ZPYUaI1k74E5A6tt7SoU1VsMy0OdSVGk9Q';" alt="Wharton Business School Mba Scholarship Eligibility Benefits And Application Learn Cbse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wharton Business School Mba Scholarship Eligibility Benefits And Application Learn Cbse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/bb/59/1ebb59de0961016ebf43bc12bbfa9794.png" data-lightbox="roadtrip" data-title="Pin On After Graduation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/bb/59/1ebb59de0961016ebf43bc12bbfa9794.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqddc5E1HuwAh80JKOMXzdwAuCei-JqTP9wA';" alt="Pin On After Graduation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On After Graduation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9d/ee/b3/9deeb361988070b8911727421b035335.jpg" data-lightbox="roadtrip" data-title="Best Online Phd Business Programs Accredited Schools Online Online Phd Online Education Importance Of Time Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9d/ee/b3/9deeb361988070b8911727421b035335.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdZZoDvtO1xC21u1t1xJDtglbcHALlj7GpIg';" alt="Best Online Phd Business Programs Accredited Schools Online Online Phd Online Education Importance Of Time Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Online Phd Business Programs Accredited Schools Online Online Phd Online Education Importance Of Time Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Lwjag3X5Nxm2aM" data-lightbox="roadtrip" data-title="Https Mbawelcome Wharton Upenn Edu Wp Content Uploads 2013 11 Wg19 2017 Ww Fa Presentation Pdf">
+											<img class="card-img v-image ads-img " src="Lwjag3X5Nxm2aM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKypxIaxU-L_u_MlBjJ2WoRUzJwLbdoIRSbg';" alt="Https Mbawelcome Wharton Upenn Edu Wp Content Uploads 2013 11 Wg19 2017 Ww Fa Presentation Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Mbawelcome Wharton Upenn Edu Wp Content Uploads 2013 11 Wg19 2017 Ww Fa Presentation Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://executiveeducation.wharton.upenn.edu/wp-content/uploads/2020/05/freitag-sean.jpg" data-lightbox="roadtrip" data-title="Veterans Can Now Use Their Post 9 11 Gi Bill Benefits To Get World Class Continuing Education At Wharton Wharton Executive Education">
+											<img class="card-img v-image ads-img " src="https://executiveeducation.wharton.upenn.edu/wp-content/uploads/2020/05/freitag-sean.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWxLL9vmw5wkvzEQO33v5PVh_mf8cjNE4gug';" alt="Veterans Can Now Use Their Post 9 11 Gi Bill Benefits To Get World Class Continuing Education At Wharton Wharton Executive Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Can Now Use Their Post 9 11 Gi Bill Benefits To Get World Class Continuing Education At Wharton Wharton Executive Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://executivemba.wharton.upenn.edu/wp-content/uploads/3.png" data-lightbox="roadtrip" data-title="Explore Yellow Ribbon Programs For Veterns Interested In Earning An Mba Wharton Emba">
+											<img class="card-img v-image ads-img " src="https://executivemba.wharton.upenn.edu/wp-content/uploads/3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLeCo8YdW4W4Qsc0m4GfKdyQ-Fn4FvL_Wv_w';" alt="Explore Yellow Ribbon Programs For Veterns Interested In Earning An Mba Wharton Emba">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Explore Yellow Ribbon Programs For Veterns Interested In Earning An Mba Wharton Emba</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://executiveeducation.wharton.upenn.edu/wp-content/uploads/2020/04/Client-Success-Profile-nanyang-200x260.gif" data-lightbox="roadtrip" data-title="Delivering Superb Education In The Midst Of A Global Crisis The Wharton Nanyang Business School Partnership Wharton Executive Education">
+											<img class="card-img v-image ads-img " src="https://executiveeducation.wharton.upenn.edu/wp-content/uploads/2020/04/Client-Success-Profile-nanyang-200x260.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMNfxh7STIi39oMp2g-IRXvlAEc-QnqNPGvA';" alt="Delivering Superb Education In The Midst Of A Global Crisis The Wharton Nanyang Business School Partnership Wharton Executive Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Delivering Superb Education In The Midst Of A Global Crisis The Wharton Nanyang Business School Partnership Wharton Executive Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/f0/40/06f040ae082d2037130736f1eaeae7d2.png" data-lightbox="roadtrip" data-title="Cris Recruitment 2019 Through Gate Score For Ase Posts Aftergraduation Engineering Jobs Recruitment Job Opening">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/f0/40/06f040ae082d2037130736f1eaeae7d2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWT-YmPQRGg_EaLOaxZrUT1F-q0MjevnAxfQ';" alt="Cris Recruitment 2019 Through Gate Score For Ase Posts Aftergraduation Engineering Jobs Recruitment Job Opening">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cris Recruitment 2019 Through Gate Score For Ase Posts Aftergraduation Engineering Jobs Recruitment Job Opening</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/c6/ec/f4c6ec62d32f6f6104fa71c971aab9e5.png" data-lightbox="roadtrip" data-title="Ibps Clerk 2019 Registration Begins For 12075 Vacancies Apply Here Before Oct 9 Aftergraduation How To Apply Exam Schedule Clerks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/c6/ec/f4c6ec62d32f6f6104fa71c971aab9e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnNdIt9kAe4WVTBsXnt5L1iJUeqa4elJnbpA';" alt="Ibps Clerk 2019 Registration Begins For 12075 Vacancies Apply Here Before Oct 9 Aftergraduation How To Apply Exam Schedule Clerks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ibps Clerk 2019 Registration Begins For 12075 Vacancies Apply Here Before Oct 9 Aftergraduation How To Apply Exam Schedule Clerks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/1966/1*MEJUgTHtdfi_0Z_9FenPPA.jpeg" data-lightbox="roadtrip" data-title="What I Learned At Wharton Paul Graham Is A Renowned Technologist By Isaiah Berg Medium">
+											<img class="card-img v-image ads-img " src="https://miro.medium.com/max/1966/1*MEJUgTHtdfi_0Z_9FenPPA.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcjlHugHeKhtb4BXROEOqNqX-VjrE9YmynQg';" alt="What I Learned At Wharton Paul Graham Is A Renowned Technologist By Isaiah Berg Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What I Learned At Wharton Paul Graham Is A Renowned Technologist By Isaiah Berg Medium</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-dod-in-army.html">What Is Dod In Army</a></li>
+													<li class="list-group-item"><a href="/what-is-dod-in-the-military.html">What Is Dod In The Military</a></li>
+													<li class="list-group-item"><a href="/what-is-forscom-army.html">What Is Forscom Army</a></li>
+													<li class="list-group-item"><a href="/what-is-gerd-with-esophagitis.html">What Is Gerd With Esophagitis</a></li>
+													<li class="list-group-item"><a href="/what-is-considered-full-time-online-for-gi-bill.html">What Is Considered Full Time Online For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-eo-in-the-army.html">What Is Eo In The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-full-time-for-post-911-gi-bill.html">What Is Full Time For Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-g2-military.html">What Is G2 Military</a></li>
+													<li class="list-group-item"><a href="/what-is-considered-full-time-for-the-gi-bill.html">What Is Considered Full Time For The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-gainful-employment.html">What Is Gainful Employment</a></li>
+													<li class="list-group-item"><a href="/what-is-fy-2021.html">What Is Fy 2021</a></li>
+													<li class="list-group-item"><a href="/what-is-hrv-and-what-does-it-mean.html">What Is Hrv And What Does It Mean</a></li>
+													<li class="list-group-item"><a href="/what-is-in-spending-bill-2020.html">What Is In Spending Bill 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-covered-under-the-gi-bill.html">What Is Covered Under The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-disabled-vet-leave.html">What Is Disabled Vet Leave</a></li>
+													<li class="list-group-item"><a href="/what-is-dodaac-in-the-army.html">What Is Dodaac In The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-dod-military-term.html">What Is Dod Military Term</a></li>
+													<li class="list-group-item"><a href="/what-is-hrms-in-hr.html">What Is Hrms In Hr</a></li>
+													<li class="list-group-item"><a href="/what-is-gi-abbreviation.html">What Is Gi Abbreviation</a></li>
+													<li class="list-group-item"><a href="/what-is-dod-in-military-terms.html">What Is Dod In Military Terms</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

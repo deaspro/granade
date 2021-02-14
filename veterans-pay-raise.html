@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Pay Raise - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Pay Raise",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/67/c8/b3/67c8b3829b8fd420c448cf1de8cf36ef.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+pay+raise",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Pay Raise</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In 2019 retirees saw a 28 increase. Military Pay Raises - 2004 to 2021. So far its unclear exactly how much the increase for 2021 might be. <br>				
+			</p>
+										<a class="badge badge-dark" href="/veterans-compensation-table.html">veterans compensation table</a>
+											<a class="badge badge-secondary" href="/veterans-crisis-line-atlanta-ga.html">veterans crisis line atlanta ga</a>
+											<a class="badge badge-dark" href="/veterans-compensation-status.html">veterans compensation status</a>
+											<a class="badge badge-secondary" href="/veterans-career-transition-program-vctp.html">veterans career transition program vctp</a>
+											<a class="badge badge-secondary" href="/veterans-compensation-scale.html">veterans compensation scale</a>
+											<a class="badge badge-primary" href="/veterans-chapter-1606.html">veterans chapter 1606</a>
+											<a class="badge badge-light" href="/veterans-compensation-for-spouse.html">veterans compensation for spouse</a>
+											<a class="badge badge-info" href="/veterans-compensation-scheme.html">veterans compensation scheme</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the ideal blog.  Our site provides you with suggestions for viewing the maximum quality video and picture content, hunt and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5d/27/a9/5d27a97d19a70b48458f9e22c2a713dd.jpg" data-lightbox="roadtrip" data-title="2020 Military Pay Rates For Active Duty Money Grunt In 2020 Military Pay Military Pay Chart Military Family Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5d/27/a9/5d27a97d19a70b48458f9e22c2a713dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FOallP69QIhSjqvwBl-WLjFvBw0DzT989w';" alt="2020 Military Pay Rates For Active Duty Money Grunt In 2020 Military Pay Military Pay Chart Military Family Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Military Pay Rates For Active Duty Money Grunt In 2020 Military Pay Military Pay Chart Military Family Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/83/05/c2830521c3da312b16a2575083347565.jpg" data-lightbox="roadtrip" data-title="1 Percent Pay Raise Latest Pinch For Troops Veterans Struggling To Pay Bills Pay Raise Veteran Troops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/83/05/c2830521c3da312b16a2575083347565.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHE63--MPNH_gV3onA_ppoT79BoXfL6Wne7A';" alt="1 Percent Pay Raise Latest Pinch For Troops Veterans Struggling To Pay Bills Pay Raise Veteran Troops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1 Percent Pay Raise Latest Pinch For Troops Veterans Struggling To Pay Bills Pay Raise Veteran Troops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/87/5c/1c875c652a19fa7e5df5f92a1c157f46.png" data-lightbox="roadtrip" data-title="Good News Military Servicembembers Are Getting Apay Increase In 2019 Military Pay Chart Military Pay Military Retirement Pay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/87/5c/1c875c652a19fa7e5df5f92a1c157f46.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9rGBxDRf3jZR-o8hlHUlUKubido6q8gJsWg';" alt="Good News Military Servicembembers Are Getting Apay Increase In 2019 Military Pay Chart Military Pay Military Retirement Pay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Good News Military Servicembembers Are Getting Apay Increase In 2019 Military Pay Chart Military Pay Military Retirement Pay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/15/5c/39/155c398c6911216b6c56cfa53f42d0f8.jpg" data-lightbox="roadtrip" data-title="Veteran S Day Activity Veterans Day Activities Happy Veterans Day Quotes Veterans Day Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/15/5c/39/155c398c6911216b6c56cfa53f42d0f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_FHyFCCRkGGRugVddhwhJ1eJoGOljdj_SDA';" alt="Veteran S Day Activity Veterans Day Activities Happy Veterans Day Quotes Veterans Day Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran S Day Activity Veterans Day Activities Happy Veterans Day Quotes Veterans Day Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/3b/a9/f13ba95d55dc34ab336cafba5838c470.png" data-lightbox="roadtrip" data-title="Raise The Flag With Respect Honor Gratitude Thank You Veterans Happyveteransday Serpmatrix Happyveterans Day Flag Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/3b/a9/f13ba95d55dc34ab336cafba5838c470.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOB3_hNFlsYzM7O83ls9c-2p93drY5YGN6ZA';" alt="Raise The Flag With Respect Honor Gratitude Thank You Veterans Happyveteransday Serpmatrix Happyveterans Day Flag Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Raise The Flag With Respect Honor Gratitude Thank You Veterans Happyveteransday Serpmatrix Happyveterans Day Flag Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/04/61/330461b3e73075c3f65741d8a36d3c1b.jpg" data-lightbox="roadtrip" data-title="Mwr Financial Is Proud To Announce The New Instant Pay Raise System Is Now Live In Your Financial Edge Portal This New And Unique Pay Raise Financial System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/04/61/330461b3e73075c3f65741d8a36d3c1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBwhGzy97MHigoBSxV36d7wIxzUH9TuslEJw';" alt="Mwr Financial Is Proud To Announce The New Instant Pay Raise System Is Now Live In Your Financial Edge Portal This New And Unique Pay Raise Financial System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mwr Financial Is Proud To Announce The New Instant Pay Raise System Is Now Live In Your Financial Edge Portal This New And Unique Pay Raise Financial System</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/170x/33/ea/66/33ea66d07a9a770e3b64b86810798440.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBwhGzy97MHigoBSxV36d7wIxzUH9TuslEJw';" alt="Mwr Financial Is Proud To Announce The New Instant Pay Raise System Is Now Live In Your Financial Edge Portal This New And Unique Pay Raise Financial System">
+										<div class="card-body">
+						<h3 class="h5"><b>Even before the new White House and Congress begin their work on the.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans pay raise</strong>. 
+								
+																	Next look at the Added amounts table. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	The following article explains VA Service-Connected Disability Ratings discusses how VA disability compensation works and shows the 2021 VA Disability Pay Rates based on the veterans disability rating and the number of dependents. 
+																	The rate is slightly lower this year due to less inflation as a side effect of the pandemic. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre a Veteran with a 70 disability rating and you have a spouse plus 3 dependent children under the age of 18 you would start with the basic rate of 165671 for a Veteran with a spouse and 1 child. 
+																	Military pay benefits are constantly changing. 
+																	2021 VA disability pay rates which are effective beginning December 1 2020 have increased by 13 based on the latest cost-of-living adjustment COLA. 
+																	In 2020 the COLA increase was 16. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran with Spouse and Child. 
+																	The Office of the Chief Human Capital Officer OCHCO administers Title 38 Pay Charts Guidance. 
+																	Find the amount for children under age 18 6100. 
+																	Earlier this year veterans and Social Security beneficiaries received a 16 percent cost-of-living increase. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Keep Up With Military Pay Updates. 
+																	For example a veteran who has a disability rated at 10 from the VA will see their monthly tax-free payment increase from 14005 to 14229 an increase of 2688 annually. 
+																	That number is a bit less than the 16 increase from last year however if you look over the course of the past 10 years the number is in line. 
+																	Veteran with Spouse One Parent and Child. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can expect for your monthly checks to increase 13. 
+																	Disabled veterans will also receive a pay increase. 
+																	The increase is calculated based on the annual increase in the Employment Cost Index ECI. 
+																	2021 VA Disability Compensation Rate Increase 13. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veteran with Child Only. 
+																	Proposed Active Duty pay raise for 2021. 
+																	Congress and the White House have proposed a 30 pay raise for the military in 2021 keeping up with inflation. 
+																	Current VA Disability Compensation Pay Rates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At the end of every year the federal government determines if and by how much the basic pay tables will increase. 
+																	After two consecutive years of pay raises of at least 3 percent troops shouldnt count on a third one that large in 2022. 
+																	Beginning in 2021 military retirees and VA beneficiaries will see an increase in their checks. 
+																	Disabled Veterans Will Also Receive a Pay Increase. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 13 COLA raise in 2021 is slightly less than the 16 raise veterans received in 2020. 
+																	Our current estimate of the upcoming 2022 military pay raise is see below for details. 
+																	The average VA disability check will rise roughly 185 per month for those with a 10 VA rating and 1968 for those with a 100 disability rating from the VA. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/b8/67/a2b867d43f722cdd2732b3f289d04741.jpg" data-lightbox="roadtrip" data-title="The President Said Recently There Was A 10 Military Pay Raise However Not All Soldiers Got It If They Did Why Get Another Pay Payday Pay Raise Payday Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/b8/67/a2b867d43f722cdd2732b3f289d04741.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5wPN8paHDlaD1mhZJeLS5XS0MUNYGrrH2ig';" alt="The President Said Recently There Was A 10 Military Pay Raise However Not All Soldiers Got It If They Did Why Get Another Pay Payday Pay Raise Payday Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The President Said Recently There Was A 10 Military Pay Raise However Not All Soldiers Got It If They Did Why Get Another Pay Payday Pay Raise Payday Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/ce/7e/cfce7ed0c29506ef44e579e47d8dc09a.jpg" data-lightbox="roadtrip" data-title="Military Retirees And Those Who Receive Disability Checks Will See A 2 Percent Pay Raise In Their Monthly Paychecks In 201 Military Pay Cool Photos Love Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/ce/7e/cfce7ed0c29506ef44e579e47d8dc09a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqbROvn6i_Hv4aSlmek6dcQWOvxCKejr5iw';" alt="Military Retirees And Those Who Receive Disability Checks Will See A 2 Percent Pay Raise In Their Monthly Paychecks In 201 Military Pay Cool Photos Love Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Retirees And Those Who Receive Disability Checks Will See A 2 Percent Pay Raise In Their Monthly Paychecks In 201 Military Pay Cool Photos Love Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/7c/50/9c7c50bf7f7b50cfbf5f5f8241b2e262.png" data-lightbox="roadtrip" data-title="One Chart Showing Every Military Pay Raise In The Last 30 Years Military Pay Pay Raise Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/7c/50/9c7c50bf7f7b50cfbf5f5f8241b2e262.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiHv21U1nLWA66vkCGPusAYeQkxIVpgag20A';" alt="One Chart Showing Every Military Pay Raise In The Last 30 Years Military Pay Pay Raise Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Chart Showing Every Military Pay Raise In The Last 30 Years Military Pay Pay Raise Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/d1/16/1dd11652fb3b2f288dcb2a7fde294cca.jpg" data-lightbox="roadtrip" data-title="Pin On Vision Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/d1/16/1dd11652fb3b2f288dcb2a7fde294cca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8FGqKdRKbvFsLFJ5f_Li8SS8kvc_VKlFVJQ';" alt="Pin On Vision Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vision Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/33/ea/66/33ea66d07a9a770e3b64b86810798440.jpg" data-lightbox="roadtrip" data-title="Veteran Disability Compensation Eligibility Process Travel Reimbursemebt Pay Tables Pictu Veterans Benefits Military Retirement Benefits Veterans Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/33/ea/66/33ea66d07a9a770e3b64b86810798440.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmXbIRLfn8aOu3QCyU0eycCofIX0SUqq-l0A';" alt="Veteran Disability Compensation Eligibility Process Travel Reimbursemebt Pay Tables Pictu Veterans Benefits Military Retirement Benefits Veterans Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Disability Compensation Eligibility Process Travel Reimbursemebt Pay Tables Pictu Veterans Benefits Military Retirement Benefits Veterans Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/0a/6a/780a6a320430402d9cf3a72c694fd426.jpg" data-lightbox="roadtrip" data-title="Ask A Veteran Is Thank You For Your Service The Right Thing To Say Vietnam War Marine Corps Joining The Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/0a/6a/780a6a320430402d9cf3a72c694fd426.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREsiXusmXBYzUpe8h1TzsMwZIJI3RXcAUz5w';" alt="Ask A Veteran Is Thank You For Your Service The Right Thing To Say Vietnam War Marine Corps Joining The Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ask A Veteran Is Thank You For Your Service The Right Thing To Say Vietnam War Marine Corps Joining The Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e5/7a/e4/e57ae48fb478ea07652375ecb5038f90.jpg" data-lightbox="roadtrip" data-title="Pin By Military Benefits On Money Finance In 2021 Finance Money Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e5/7a/e4/e57ae48fb478ea07652375ecb5038f90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbG8A9hfRzDqPzneKJaFi55OWn0qb-XqpcYw';" alt="Pin By Military Benefits On Money Finance In 2021 Finance Money Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Military Benefits On Money Finance In 2021 Finance Money Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/67/c8/b3/67c8b3829b8fd420c448cf1de8cf36ef.jpg" data-lightbox="roadtrip" data-title="Pin On Military Veteran Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/67/c8/b3/67c8b3829b8fd420c448cf1de8cf36ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxNJaVloZVB7CvNhynBwrCfk2WEuhfiLEqAA';" alt="Pin On Military Veteran Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Veteran Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/9b/c3/509bc36a53a188c89132393971d337eb.jpg" data-lightbox="roadtrip" data-title="For Veterans Day Here S A Simple And Powerful Way To Celebrate Someone In Your Life Who Served In The Military Hon Veterans Day Army Wife Life Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/9b/c3/509bc36a53a188c89132393971d337eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG9dICxrnL3Qo6tHukgsnVkvguAthcc9pU9w';" alt="For Veterans Day Here S A Simple And Powerful Way To Celebrate Someone In Your Life Who Served In The Military Hon Veterans Day Army Wife Life Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Veterans Day Here S A Simple And Powerful Way To Celebrate Someone In Your Life Who Served In The Military Hon Veterans Day Army Wife Life Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e2/63/e5/e263e59e0fb30abb78c2afa8b9a444f1.jpg" data-lightbox="roadtrip" data-title="Trends In The Number Of Veterans Receiving Va Payments And In Spending On Va Disability Compensation Disability Payments Va Disability Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e2/63/e5/e263e59e0fb30abb78c2afa8b9a444f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmKpmEUXfa5lDD6IAbkEYgYyBZxfglRftJeA';" alt="Trends In The Number Of Veterans Receiving Va Payments And In Spending On Va Disability Compensation Disability Payments Va Disability Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trends In The Number Of Veterans Receiving Va Payments And In Spending On Va Disability Compensation Disability Payments Va Disability Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2b/5a/89/2b5a8953f492e72dd4809adccb5007f2.jpg" data-lightbox="roadtrip" data-title="2020 Military Pay Rates For Active Duty In 2020 Military Pay Military Pay Chart Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2b/5a/89/2b5a8953f492e72dd4809adccb5007f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBC_vIapYw3kMrNE5QF8EBK06I40UVIsme5g';" alt="2020 Military Pay Rates For Active Duty In 2020 Military Pay Military Pay Chart Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Military Pay Rates For Active Duty In 2020 Military Pay Military Pay Chart Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/dd/38/88dd3868b68c509af39aaf869624523f.jpg" data-lightbox="roadtrip" data-title="Help Your Fellow Service Members And Veterans Veteran Workforce Development Brain Injury">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/dd/38/88dd3868b68c509af39aaf869624523f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR53dAaqO5TIxgbSu7YgoBl6-zZtM75Qy7dsw';" alt="Help Your Fellow Service Members And Veterans Veteran Workforce Development Brain Injury">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Help Your Fellow Service Members And Veterans Veteran Workforce Development Brain Injury</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/44/a3/1c44a337286d6aef76a133ff69377aea.jpg" data-lightbox="roadtrip" data-title="Pin On Cakes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/44/a3/1c44a337286d6aef76a133ff69377aea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVxcuO5IHLNxpPdwo4b-v6v2vLwbg3d6fIfg';" alt="Pin On Cakes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cakes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/cd/9e/b9cd9e734010b6e1ef9c9935523d2b74.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/cd/9e/b9cd9e734010b6e1ef9c9935523d2b74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2s_NS7lGxs6NAu8d8DOJ9piNwv-Cknf-d6w';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/ad/6a/31ad6a0d1df611c4ee6192f16beaf798.jpg" data-lightbox="roadtrip" data-title="This Memorial Day Weekend Raise Your Glass In Celebration Pay Homage To Our Nation S Fallen Heroes Veterans Activ Memorial Day Food Pairings Fallen Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/ad/6a/31ad6a0d1df611c4ee6192f16beaf798.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRIn5WtKwI7l9Of1lVB7QTAPdUdFiFW7bboQ';" alt="This Memorial Day Weekend Raise Your Glass In Celebration Pay Homage To Our Nation S Fallen Heroes Veterans Activ Memorial Day Food Pairings Fallen Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Memorial Day Weekend Raise Your Glass In Celebration Pay Homage To Our Nation S Fallen Heroes Veterans Activ Memorial Day Food Pairings Fallen Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-dependent-benefits-education.html">Veterans Dependent Benefits Education</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-educational-benefits-alabama.html">Veterans Dependents Educational Benefits Alabama</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-benefits.html">Veterans Dependents Benefits</a></li>
+													<li class="list-group-item"><a href="/veterans-death-certificate.html">Veterans Death Certificate</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-college-benefits.html">Veterans Dependents College Benefits</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-director.html">Veterans Crisis Line Director</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-compensation-lawyers.html">Veterans Disability Compensation Lawyers</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-canada-phone-number.html">Veterans Crisis Line Canada Phone Number</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-for-knee-replacements.html">Veterans Disability For Knee Replacements</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-phone-number.html">Veterans Crisis Line Phone Number</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-education-benefits.html">Veterans Dependents Education Benefits</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-attorney-tennessee.html">Veterans Disability Attorney Tennessee</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-benefits-and-social-security.html">Veterans Disability Benefits And Social Security</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-wallet-cards.html">Veterans Crisis Line Wallet Cards</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-benefits-rules.html">Veterans Disability Benefits Rules</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-stimulus-check.html">Veterans Dependents Stimulus Check</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-vagov.html">Veterans Crisis Line Vagov</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-benefits-questionnaire.html">Veterans Disability Benefits Questionnaire</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-call-centers.html">Veterans Crisis Line Call Centers</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-benefits-tinnitus.html">Veterans Disability Benefits Tinnitus</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

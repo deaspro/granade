@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is Positional Vertigo - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is Positional Vertigo",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/8c/19/96/8c19961bd2f7210ffb7526b548fe937b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+positional+vertigo",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is Positional Vertigo</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Benign paroxysmal positional vertigo BPPV occurs when canalith particles otoconia break loose and fall into the wrong part of the semicircular canals of your inner ear causing vertigo. BPPV is caused by a problem with the nerves and structure of your inner ear. What is benign paroxysmal positional vertigo BPPV. <br>				
+			</p>
+										<a class="badge badge-light" href="/veterans-benefits-to-buy-a-house.html">veterans benefits to buy a house</a>
+											<a class="badge badge-secondary" href="/veterans-benefits-nj.html">veterans benefits nj</a>
+											<a class="badge badge-danger" href="/veterans-benefits-ptsd-rating.html">veterans benefits ptsd rating</a>
+											<a class="badge badge-light" href="/veterans-benefits-remarried-widows.html">veterans benefits remarried widows</a>
+											<a class="badge badge-warning" href="/veterans-benefits-unemployability.html">veterans benefits unemployability</a>
+											<a class="badge badge-success" href="/veterans-benefits-kentucky.html">veterans benefits kentucky</a>
+											<a class="badge badge-success" href="/veterans-benefits-for-ww2-widows.html">veterans benefits for ww2 widows</a>
+											<a class="badge badge-success" href="/veterans-benefits-for-spouse-of-deceased-veteran.html">veterans benefits for spouse of deceased veteran</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to visit the right blog.  Our site provides you with suggestions for viewing the maximum quality video and picture content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you view.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/dc/1c/1ddc1c5c7f9489cfeab881af7640fadd.jpg" data-lightbox="roadtrip" data-title="Benign Paroxysmal Positional Vertigo Bppv Epley Maneuver Vertigo Treatment Vertigo Exercises">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/dc/1c/1ddc1c5c7f9489cfeab881af7640fadd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGwLQR5rSpEVp9UdCc-NrwRn_rM-6SJEMnRg';" alt="Benign Paroxysmal Positional Vertigo Bppv Epley Maneuver Vertigo Treatment Vertigo Exercises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benign Paroxysmal Positional Vertigo Bppv Epley Maneuver Vertigo Treatment Vertigo Exercises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/24/57/3524573e393e5b07bae9d67d47679c76.jpg" data-lightbox="roadtrip" data-title="Benign Paroxysmal Positional Vertigo Wikem Epley Maneuver Vertigo Treatment Vertigo Exercises">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/24/57/3524573e393e5b07bae9d67d47679c76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1nV6U02xHw7E85Yh99lyZuYnl7cg6kNv_TA';" alt="Benign Paroxysmal Positional Vertigo Wikem Epley Maneuver Vertigo Treatment Vertigo Exercises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benign Paroxysmal Positional Vertigo Wikem Epley Maneuver Vertigo Treatment Vertigo Exercises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/b7/87/1bb7879b3f35be45340220bed22b31bc.jpg" data-lightbox="roadtrip" data-title="Benign Paroxysmal Positional Vertigo Bppv Vertigo Treatment Epley Maneuver Vertigo Exercises">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/b7/87/1bb7879b3f35be45340220bed22b31bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvlRGgVYF82yYPLKa4JP19pprMXOFxYHQA_Q';" alt="Benign Paroxysmal Positional Vertigo Bppv Vertigo Treatment Epley Maneuver Vertigo Exercises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benign Paroxysmal Positional Vertigo Bppv Vertigo Treatment Epley Maneuver Vertigo Exercises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/c7/df/b9c7df0fb72b5ae4b349176a94846e49.jpg" data-lightbox="roadtrip" data-title="Contact Dr Adunka Unc Chapel Hill Department Of Otolaryngology Head Vertigo Treatment Vertigo Epley Maneuver">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/c7/df/b9c7df0fb72b5ae4b349176a94846e49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmqcZyQJDgcZXK3eTe0ze3fv6chJ8FZ6ND9w';" alt="Contact Dr Adunka Unc Chapel Hill Department Of Otolaryngology Head Vertigo Treatment Vertigo Epley Maneuver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Contact Dr Adunka Unc Chapel Hill Department Of Otolaryngology Head Vertigo Treatment Vertigo Epley Maneuver</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/ce/08/05ce0817ecfc466c785aeb55fccd6388.jpg" data-lightbox="roadtrip" data-title="Pin By Brianbotanic On My Plans Epley Maneuver Vertigo Treatment Vertigo Exercises">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/ce/08/05ce0817ecfc466c785aeb55fccd6388.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPPGWCuLIo-rMZ1NFd0AOpIC40sPcQkc26RA';" alt="Pin By Brianbotanic On My Plans Epley Maneuver Vertigo Treatment Vertigo Exercises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Brianbotanic On My Plans Epley Maneuver Vertigo Treatment Vertigo Exercises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/3b/05/b63b05d47de873353fa86e086b59921e.gif" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/3b/05/b63b05d47de873353fa86e086b59921e.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzuUxD66lKPcIkA89omq7IXIEntbURpte_MA';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ff/4d/f4/ff4df49a458fc40103c25468dc95d29f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzuUxD66lKPcIkA89omq7IXIEntbURpte_MA';" alt="">
+										<div class="card-body">
+						<h3 class="h5"><b>The condition is benign since it is non-life threatening in general.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is positional vertigo</strong>. 
+								
+																	BPPV causes brief episodes of mild to intense dizziness. 
+																	BPPV is common and usually can be treated in a doctors office. 
+																	The goal of the canalith repositioning procedure is to move the particles from your inner ear to the utricle. 
+																	Benign paroxysmal positional vertigo BPPV is one of the most common causes of vertigo the sudden sensation that youre spinning or that the inside of your head is spinning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This can occur with turning in bed or changing position. 
+																	Benign means it is not serious or life-threatening. 
+																	Symptoms are repeated brief periods of vertigo with movement characterized by a spinning sensation upon changes in the position of the head. 
+																	BPPV occurs when tiny calcium particles canaliths are dislodged from their normal location and collect in the inner ear. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BPPV is an inner ear condition that causes you to suddenly feel dizzy. 
+																	It is the most common cause of vertigo which is a false sensation of spinning or movement. 
+																	What You Need to Know. 
+																	Benign paroxysmal positional vertigo BPPV is the most common of the vestibular disorders and is easily treated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Benign paroxysmal positional vertigo BPPV. 
+																	When described as paroxysmal it denotes the come-and-go nature of the symptoms. 
+																	Benign paroxysmal positional vertigo BPPV is an inner ear disorder in which changes in the position of the head such as tipping the head backward lead to sudden vertigo a feeling that the room is spinning. 
+																	From Wikipedia the free encyclopedia Benign paroxysmal positional vertigo BPPV is a disorder arising from a problem in the inner ear. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About half of all people over age 65 will suffer an episode of BPPV according to the Cleveland Clinic and the Mayo Clinic says women are particularly prone. 
+																	But one of the most common causes as Gerlach discovered after a doctor visit is an inner-ear condition with a tongue twister of a name. 
+																	Benign paroxysmal positional vertigo is the term used to describe a disorder in the inner ear that causes an individual to experience spinning dizziness. 
+																	It may be accompanied by other symptoms including. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is usually triggered by specific changes in your heads position. 
+																	This might occur when you tip your head up or down when you lie down or when you turn over or sit up in bed. 
+																	Ear Nose and Throat Benign paroxysmal positional vertigo BPPV is a problem in the inner ear. 
+																	Benign positional vertigo BPV is the most common cause of vertigo the sensation of spinning or swaying. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These initials stand for benign paroxysmal positional vertigo. 
+																	It causes a sudden sensation of spinning or like your head is spinning from the inside. 
+																	BPPV symptoms include episodic vertigo when your head is tilted up or when you are turning over in bed or maneuvering out of bed. 
+																	Positional means you trigger the vertigo with certain postures or movements of your head. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In rare cases the problem can be serious. 
+																	This condition can affect people of all ages but is most common in people over the age of 60. 
+																	The vertigo sensation can range from mild to severe and usually lasts only a few minutes. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/86/78/52/8678527a97f5b6dc63109fc4371ab4c1.jpg" data-lightbox="roadtrip" data-title="Benign Paroxysmal Positional Vertigo Bppv Wikem Vertigo Treatment Epley Maneuver Vertigo Exercises">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/86/78/52/8678527a97f5b6dc63109fc4371ab4c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixdXbk4ilvUnHqzqZb7UqbbHM-MttmoVdbQ';" alt="Benign Paroxysmal Positional Vertigo Bppv Wikem Vertigo Treatment Epley Maneuver Vertigo Exercises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benign Paroxysmal Positional Vertigo Bppv Wikem Vertigo Treatment Epley Maneuver Vertigo Exercises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/64/bd/3464bdf7aaba0d19319ad3ed94e7c76c.gif" data-lightbox="roadtrip" data-title="Positional Vertigo Get Medical Help Physical Therapy Physical Therapist Assistant Vertigo Treatment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/64/bd/3464bdf7aaba0d19319ad3ed94e7c76c.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4g41ZGV_1HttfFuY6MF_fiJphzeyI3yaWg';" alt="Positional Vertigo Get Medical Help Physical Therapy Physical Therapist Assistant Vertigo Treatment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Positional Vertigo Get Medical Help Physical Therapy Physical Therapist Assistant Vertigo Treatment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/67/63/3e6763f0097e7cd4e0526145333dec72.jpg" data-lightbox="roadtrip" data-title="How To Treat Bppv Benign Positional Proximal Vertigo Vertigo Exercises Physical Therapy Exercises Vertigo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/67/63/3e6763f0097e7cd4e0526145333dec72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMQYk2ByhVK-VZpQE6PArte_oDxwVtIrBlfA';" alt="How To Treat Bppv Benign Positional Proximal Vertigo Vertigo Exercises Physical Therapy Exercises Vertigo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Treat Bppv Benign Positional Proximal Vertigo Vertigo Exercises Physical Therapy Exercises Vertigo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/67/2d/c3672d6d83972ed6008c03e30941b9e2.gif" data-lightbox="roadtrip" data-title="Vertigo Exercises Home Vertigo Exercises Epley Maneuver Vertigo Treatment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/67/2d/c3672d6d83972ed6008c03e30941b9e2.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTK9wTr5tmrxDTdElLADXp0B3ertJoJ3oF2Q';" alt="Vertigo Exercises Home Vertigo Exercises Epley Maneuver Vertigo Treatment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vertigo Exercises Home Vertigo Exercises Epley Maneuver Vertigo Treatment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/09/2e/9a092e547db7ae3eea157721226e1772.gif" data-lightbox="roadtrip" data-title="Vertigo Maneuver Epley For Benign Positional Vertigo Half Somersault Versus Epley Maneuver Vertigo Vertigo Treatment Epley Maneuver">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/09/2e/9a092e547db7ae3eea157721226e1772.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOkGIvtOPumMh_yD9NcjkdGijIj7X83HiBA';" alt="Vertigo Maneuver Epley For Benign Positional Vertigo Half Somersault Versus Epley Maneuver Vertigo Vertigo Treatment Epley Maneuver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vertigo Maneuver Epley For Benign Positional Vertigo Half Somersault Versus Epley Maneuver Vertigo Vertigo Treatment Epley Maneuver</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/70/80/3c7080b1d26c24c4990eca8d5f0413ab.jpg" data-lightbox="roadtrip" data-title="Handout Visualizing The Epley Maneuver Epley Maneuver Patient Education Handouts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/70/80/3c7080b1d26c24c4990eca8d5f0413ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShuV8y6fFX3l_19_4Dw_9vDRcYVboQ_n5Oqg';" alt="Handout Visualizing The Epley Maneuver Epley Maneuver Patient Education Handouts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Handout Visualizing The Epley Maneuver Epley Maneuver Patient Education Handouts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/fe/00/93fe00913d2a1eafd2dd64293150a802.gif" data-lightbox="roadtrip" data-title="Pin By Ndbc Edina Mn On Vestibular Disorders Physical Therapy Physical Therapy School Tinnitus Symptoms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/fe/00/93fe00913d2a1eafd2dd64293150a802.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFacNbEMWcJMqXvnh2aWSjspIwYHucTzYGjQ';" alt="Pin By Ndbc Edina Mn On Vestibular Disorders Physical Therapy Physical Therapy School Tinnitus Symptoms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ndbc Edina Mn On Vestibular Disorders Physical Therapy Physical Therapy School Tinnitus Symptoms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/19/96/8c19961bd2f7210ffb7526b548fe937b.jpg" data-lightbox="roadtrip" data-title="Feeling Dizzy Possible Culprits Behind Your Vertigo Feeling Dizzy Vertigo Vertigo Exercises">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/19/96/8c19961bd2f7210ffb7526b548fe937b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk0SGFBGrgZ9FZYjtPkeM3y-RVZZNO0vJgnA';" alt="Feeling Dizzy Possible Culprits Behind Your Vertigo Feeling Dizzy Vertigo Vertigo Exercises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feeling Dizzy Possible Culprits Behind Your Vertigo Feeling Dizzy Vertigo Vertigo Exercises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/94/58/5f94580f41aba42220f225e4ab8984ff.gif" data-lightbox="roadtrip" data-title="Bppv Benign Paroxysmal Positional Vertigo Vertigo Treatment Vertigo Remedies Vertigo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/94/58/5f94580f41aba42220f225e4ab8984ff.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRma9fW7L2ME4S9S1-SSyx3btP8ggHyHAFmuw';" alt="Bppv Benign Paroxysmal Positional Vertigo Vertigo Treatment Vertigo Remedies Vertigo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bppv Benign Paroxysmal Positional Vertigo Vertigo Treatment Vertigo Remedies Vertigo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/82/47/49824736201591c9814dc023c4beca7b.jpg" data-lightbox="roadtrip" data-title="One Of The Most Effective Exercises To Fight Vertigo Caused By Benign Paroxysmal Positional Vertigo Bppv Is The Epley Epley Maneuver Vertigo Symptoms Vertigo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/82/47/49824736201591c9814dc023c4beca7b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaeQuaMGlRlR1AImBuPTrFYt59xS3L7q1TsA';" alt="One Of The Most Effective Exercises To Fight Vertigo Caused By Benign Paroxysmal Positional Vertigo Bppv Is The Epley Epley Maneuver Vertigo Symptoms Vertigo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Of The Most Effective Exercises To Fight Vertigo Caused By Benign Paroxysmal Positional Vertigo Bppv Is The Epley Epley Maneuver Vertigo Symptoms Vertigo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/5f/69/635f69dd3d81343d3bb3d376956ad3c3.png" data-lightbox="roadtrip" data-title="What Is Bppv Clearwater Clinical Vertigo Clear Water Ear Anatomy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/5f/69/635f69dd3d81343d3bb3d376956ad3c3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzQr__WX3Qsltfr2dfKQd1R4Id3pBMWo4Eng';" alt="What Is Bppv Clearwater Clinical Vertigo Clear Water Ear Anatomy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Bppv Clearwater Clinical Vertigo Clear Water Ear Anatomy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/7a/6b/94/7a6b94dd4dc4255d355678418a5dfcf9.jpg" data-lightbox="roadtrip" data-title="Bppv Benign Paroxysmal Positional Vertigo Vertigo Symptoms Elderly Crafts Vestibular System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/7a/6b/94/7a6b94dd4dc4255d355678418a5dfcf9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKh13PE2dvSpqEGrUXehTnXGfVFPS0XHDBzw';" alt="Bppv Benign Paroxysmal Positional Vertigo Vertigo Symptoms Elderly Crafts Vestibular System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bppv Benign Paroxysmal Positional Vertigo Vertigo Symptoms Elderly Crafts Vestibular System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/6c/dd/426cdd43d112d3eba0b59b7c145a965a.gif" data-lightbox="roadtrip" data-title="Dizziness And Vertigo Physical Therapy Physical Therapist Assistant Vertigo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/6c/dd/426cdd43d112d3eba0b59b7c145a965a.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoFsf_4KPH7bsCiF6V_VCTmtByzAjbGP_gyw';" alt="Dizziness And Vertigo Physical Therapy Physical Therapist Assistant Vertigo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dizziness And Vertigo Physical Therapy Physical Therapist Assistant Vertigo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/4d/f4/ff4df49a458fc40103c25468dc95d29f.jpg" data-lightbox="roadtrip" data-title="Ve You Ever Heard Of Benign Paroxysmal Positional Vertigo Bppv Or Know Someone Suffering From It Bppv A Form Of Vertigo Treatment Inner Ear Vertigo Causes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/4d/f4/ff4df49a458fc40103c25468dc95d29f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIeN8Sbeksr2wXllLR-1TJ4g68dMRy7iM0QA';" alt="Ve You Ever Heard Of Benign Paroxysmal Positional Vertigo Bppv Or Know Someone Suffering From It Bppv A Form Of Vertigo Treatment Inner Ear Vertigo Causes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ve You Ever Heard Of Benign Paroxysmal Positional Vertigo Bppv Or Know Someone Suffering From It Bppv A Form Of Vertigo Treatment Inner Ear Vertigo Causes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/cb/da/70cbda9d98cca37005d1061f35eb2d4b.gif" data-lightbox="roadtrip" data-title="National Dizzy Balance Center Dizzy Journal On Bppv Vertigo Exercises Vertigo Physical Therapy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/cb/da/70cbda9d98cca37005d1061f35eb2d4b.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKhOREJJRjJ1Ojghw5IuB7WS-2MEIogqe-Ng';" alt="National Dizzy Balance Center Dizzy Journal On Bppv Vertigo Exercises Vertigo Physical Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Dizzy Balance Center Dizzy Journal On Bppv Vertigo Exercises Vertigo Physical Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-day-of-the-month-does-va-pay-gi-bill.html">What Day Of The Month Does Va Pay Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-day-of-the-month-is-uk-state-pension-paid.html">What Day Of The Month Is Uk State Pension Paid</a></li>
+													<li class="list-group-item"><a href="/what-day-of-the-month-are-va-disability-payments-made.html">What Day Of The Month Are Va Disability Payments Made</a></li>
+													<li class="list-group-item"><a href="/what-day-does-gi-bill-deposit.html">What Day Does Gi Bill Deposit</a></li>
+													<li class="list-group-item"><a href="/what-day-do-va-benefits-get-deposited.html">What Day Do Va Benefits Get Deposited</a></li>
+													<li class="list-group-item"><a href="/what-day-does-va-disability-pay-this-month.html">What Day Does Va Disability Pay This Month</a></li>
+													<li class="list-group-item"><a href="/what-conditions-make-asthma-worse.html">What Conditions Make Asthma Worse</a></li>
+													<li class="list-group-item"><a href="/what-day-are-pensions-paid-in-australia.html">What Day Are Pensions Paid In Australia</a></li>
+													<li class="list-group-item"><a href="/what-date-is-canada-pension-paid-2020.html">What Date Is Canada Pension Paid 2020</a></li>
+													<li class="list-group-item"><a href="/what-day-is-the-pension-paid-in-ireland.html">What Day Is The Pension Paid In Ireland</a></li>
+													<li class="list-group-item"><a href="/what-country-has-the-largest-military-in-the-world-today.html">What Country Has The Largest Military In The World Today</a></li>
+													<li class="list-group-item"><a href="/what-day-does-va-disability-pay-for-january-2019.html">What Day Does Va Disability Pay For January 2019</a></li>
+													<li class="list-group-item"><a href="/what-day-of-the-month-does-va-disability-get-paid.html">What Day Of The Month Does Va Disability Get Paid</a></li>
+													<li class="list-group-item"><a href="/what-day-do-va-disability-checks-get-deposited.html">What Day Do Va Disability Checks Get Deposited</a></li>
+													<li class="list-group-item"><a href="/what-day-do-veterans-get-paid-this-month.html">What Day Do Veterans Get Paid This Month</a></li>
+													<li class="list-group-item"><a href="/what-day-are-pensions-paid-ireland.html">What Day Are Pensions Paid Ireland</a></li>
+													<li class="list-group-item"><a href="/what-day-does-va-pay.html">What Day Does Va Pay</a></li>
+													<li class="list-group-item"><a href="/what-day-does-usaa-pay-for-military.html">What Day Does Usaa Pay For Military</a></li>
+													<li class="list-group-item"><a href="/what-day-does-the-va-pay-students-bah.html">What Day Does The Va Pay Students Bah</a></li>
+													<li class="list-group-item"><a href="/what-day-does-virginia-unemployment-get-deposited.html">What Day Does Virginia Unemployment Get Deposited</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

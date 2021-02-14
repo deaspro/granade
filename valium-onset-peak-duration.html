@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Valium Onset Peak Duration - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Valium Onset Peak Duration",
+  "datePublished": "2021-02-14",
+  "image": "https://slideplayer.com/slide/6107350/18/images/74/Insulin%20Classification%20Drug%20Name%20Onset%20Peak%20Duration%20Rapid-Acting.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=valium+onset+peak+duration",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Valium Onset Peak Duration</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Peak effect 5 min. Anticonvulsant effect is 30 to 60 minutes after IV. 4 - 6 hours. <br>				
+			</p>
+										<a class="badge badge-danger" href="/va-rating-parkinsons-disease.html">va rating parkinsons disease</a>
+											<a class="badge badge-dark" href="/va-rating-percentage-for-anxiety.html">va rating percentage for anxiety</a>
+											<a class="badge badge-light" href="/va-rating-schedule-chronic-fatigue-syndrome.html">va rating schedule chronic fatigue syndrome</a>
+											<a class="badge badge-light" href="/va-rating-scale-ptsd.html">va rating scale ptsd</a>
+											<a class="badge badge-danger" href="/va-rating-schedule-for-allergic-rhinitis.html">va rating schedule for allergic rhinitis</a>
+											<a class="badge badge-info" href="/va-rating-schedule-deep-vein-thrombosis.html">va rating schedule deep vein thrombosis</a>
+											<a class="badge badge-success" href="/va-rating-peripheral-neuropathy.html">va rating peripheral neuropathy</a>
+											<a class="badge badge-danger" href="/va-rating-over-5-years.html">va rating over 5 years</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the right blog.  Our website gives you hints for viewing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://coreem.net/content/uploads/2016/06/IMG_3177.jpg" data-lightbox="roadtrip" data-title="Parenteral Benzodiazepines Core Em">
+											<img class="card-img v-image ads-img " src="https://coreem.net/content/uploads/2016/06/IMG_3177.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYAz9IRHblYcwbLqnDf-kjTHGmulbSpwgS-Q';" alt="Parenteral Benzodiazepines Core Em">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Parenteral Benzodiazepines Core Em</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.tfd.com/mgh/ndh/t0361-01.png" data-lightbox="roadtrip" data-title="Diazpam Definition Of Diazpam By Medical Dictionary">
+											<img class="card-img v-image ads-img " src="https://img.tfd.com/mgh/ndh/t0361-01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbpeWpDY6xrplFb7W5iqgwUeB07c_LpeIIdw';" alt="Diazpam Definition Of Diazpam By Medical Dictionary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diazpam Definition Of Diazpam By Medical Dictionary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.uspharmacist.com/CMSImagesContent/2014/11/USP1411-Anxiety-T4.gif" data-lightbox="roadtrip" data-title="Where Can You Find Diazepam Online Cheap 8">
+											<img class="card-img v-image ads-img " src="https://www.uspharmacist.com/CMSImagesContent/2014/11/USP1411-Anxiety-T4.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK0mUD5HozgzcMAjHL6NOYrsZuba3lJd_r2w';" alt="Where Can You Find Diazepam Online Cheap 8">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Where Can You Find Diazepam Online Cheap 8</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/classconnection/42/flashcards/4466042/png/picture1-15377D8BE652EFB5CA1.png" data-lightbox="roadtrip" data-title="Oral Baclofen Onset Peak Duration">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/classconnection/42/flashcards/4466042/png/picture1-15377D8BE652EFB5CA1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0X5kiWFPpDblI4Y_T1WL2BC65UaA7WeB4Tw';" alt="Oral Baclofen Onset Peak Duration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oral Baclofen Onset Peak Duration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/icupharmcase-141108142255-conversion-gate01/95/icu-pharm-case-8-638.jpg?cb=1415456666" data-lightbox="roadtrip" data-title="Icu Pharm Case">
+											<img class="card-img v-image ads-img " src="https://image.slidesharecdn.com/icupharmcase-141108142255-conversion-gate01/95/icu-pharm-case-8-638.jpg?cb=1415456666" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyULJUYm291OBz13Ezd4gPuxSy5SodP-FFzw';" alt="Icu Pharm Case">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Icu Pharm Case</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/slide/14926933/91/images/21/Sedatives+%2AVersed+%28Midazolam%29+Valium+%28Diazapam%29+Drug+IV+Dosing.jpg" data-lightbox="roadtrip" data-title="Moderate Conscious Sedation Ppt Download">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/slide/14926933/91/images/21/Sedatives+%2AVersed+%28Midazolam%29+Valium+%28Diazapam%29+Drug+IV+Dosing.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVvC6xClZQ-d8ITeIykai5FPT3PVfuCSGyVw';" alt="Moderate Conscious Sedation Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Moderate Conscious Sedation Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.singlecare.com/blog/wp-content/uploads/2018/10/Valium-vs.-Xanax-1200x675.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVvC6xClZQ-d8ITeIykai5FPT3PVfuCSGyVw';" alt="Moderate Conscious Sedation Ppt Download">
+										<div class="card-body">
+						<h3 class="h5"><b>The half-life of diazepam in general is 3056 hours.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Valium onset peak duration</strong>. 
+								
+																	The benzodiazepines were found to differ with respect to onset of peak effect duration of maximum effect total length of action and brain halflife. 
+																	2 Rapid onset within 15 minutes Intermediate 15-30 minutes Slow 30-60 minutes. 
+																	30-90 min PO 5-90 min PR Peak plasma concentration. 
+																	Fluids and vasopressors such as dopamine and phenylephrine to treat hypotension if needed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Clonazepam has an intermediate onset of action with a peak blood level occurring one to four hours after oral administration. 
+																	Duration of sedative effect is 3 hours. 
+																	5-10mg over 1 minute. 
+																	The major side effects are excessive sleepiness and a prolonged amnesic period. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Duration 1-2 hr. 
+																	29 The duration of action of lorazepam following IM administration is approximately 6 to 8 hours. 
+																	After oral administration 90 of diazepam is absorbed and the average time to achieve peak plasma concentrations is 1 15 hours with a range of 025 to 25 hours. 
+																	20 minutes to half an hour full effect in one hour. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The duration of diazepams peak pharmacological effects is 15 minutes to one hour for both routes of administration. 
+																	If patient is conscious induce emesis. 
+																	1 to 3 minutes. 
+																	2-5 mg Onset 1-3 min. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	15-60 min IV sedative action Peak plasma time. 
+																	As an anxiolytic the lowest effective dose should be employed. 
+																	025 to 2 hours Lamson 2011. 
+																	Initial dose of 05mg IV over 2-minutes just before beginning of procedure. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reduce dose in elderly or debilitated patients. 
+																	In general do not exceed total dose of 30 mg. 
+																	It is effective orally within 20. 
+																	Flumazenil a specific benzodiazepine antagonist may be useful. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Causes respiratory depression and coughing. 
+																	Variable dependent on dose and frequency PO hypnotic action. 
+																	Peak effect 30 min. 
+																	Absorption is delayed and decreased when administered with a moderate fat meal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While exact detection times may vary generally speaking traces of Valium are detectable up to 10 days after the drug is consumed according to the Mayo Clinic. 
+																	4 to 5 minutes Krauss 2006 Status epilepticus. 
+																	8 - 14 hours. 
+																	4 - 10 hours. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The short answer is that Valium diazepam has a rapid onset of action faster that nearly all benzodiazepines. 
+																	Dosage regimes should not exceed beyond 4 weeks and treatment should be gradually withdrawn. 
+																	Diazepam Valium Dosing for Endoscopic Sedation. 
+																	2 to 10 minutes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Must titrate to effect slurred speech by giving additional IV doses over 2 minutes. 
+																	Duration 2-6 hr. 
+																	This may be prolonged up to 90 hours in elderly patients and in patients with hepatic or renal dysfunction. 
+																	Peak plasma levels of lorazepam are seen in 60 to 90 minutes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Peak effect 3 min. 
+																	Clonazepam has an elimination half-life of 18 50 hours to 19 60 hours and is generally considered to be a long-acting benzodiazepine. 
+																	Long-term chronic use is not recommended. 
+																	4 - 8 hours. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However how long Valium stays in someones system is significantly influenced by how well their body can metabolize or break down the drug. 
+																	40 - 120 minutes. 
+																	The onset of action is one to five minutes for IV administration and 1530 minutes for IM administration. 
+																	The peak effect of benzodiazepines was observed within 110 min and their intensity and duration of action could be increased by raising the dose administered. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Patients who have received benzodiazepines for a long time may require an extended withdrawal period. 
+																	Use gastric lavage if ingestion was. 
+																	Valium has a variable half-life that can be as high as 48 hours so for some individuals there may be no significant symptoms for a day or so but by day 3-4 the person will begin to experience acute withdrawal symptoms. 
+																	1 minute Cloyd 1998. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/slide/6107350/18/images/74/Insulin%20Classification%20Drug%20Name%20Onset%20Peak%20Duration%20Rapid-Acting.jpg" data-lightbox="roadtrip" data-title="Diazepam Onset Peak Duration">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/slide/6107350/18/images/74/Insulin%20Classification%20Drug%20Name%20Onset%20Peak%20Duration%20Rapid-Acting.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFYWIGAwyC9xO3aAKaTu6q93XFKE_cOayKw';" alt="Diazepam Onset Peak Duration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diazepam Onset Peak Duration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/slide/10372756/35/images/15/Choosing%20a%20Benzodiazepam:%20Pros%20and%20Cons.jpg" data-lightbox="roadtrip" data-title="Diazepam Time To Onset">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/slide/10372756/35/images/15/Choosing%20a%20Benzodiazepam:%20Pros%20and%20Cons.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPysfSb7SNYfLHKCkWV7mnuSAPpRteLUAU7A';" alt="Diazepam Time To Onset">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diazepam Time To Onset</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/slide/6184171/18/images/35/Onset-Peak-Duration+%28Vancomycin+example%29.jpg" data-lightbox="roadtrip" data-title="Pharmacologic Principles Chapter 2 Ppt Download">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/slide/6184171/18/images/35/Onset-Peak-Duration+%28Vancomycin+example%29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLHUFlamjyU9Q-Rr8LlDxpESgCRbOHsE-_LQ';" alt="Pharmacologic Principles Chapter 2 Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pharmacologic Principles Chapter 2 Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/slide/12307416/73/images/18/Long%20%3E24h%20Short%20%3C12h%20Medium%20(10-15h)%20BDZ%20(Duration%20Action).jpg" data-lightbox="roadtrip" data-title="Onset And Peak Of Iv Diazepam">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/slide/12307416/73/images/18/Long%20%3E24h%20Short%20%3C12h%20Medium%20(10-15h)%20BDZ%20(Duration%20Action).jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBzIKSEw8B5w4wp7BFtdqvHZuGMzMVncblXg';" alt="Onset And Peak Of Iv Diazepam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Onset And Peak Of Iv Diazepam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.rxlist.com/images/rxlist/diazepam-gel5.gif" data-lightbox="roadtrip" data-title="Diazepam Rectal Gel Diazepam Rectal Gel Uses Dosage Side Effects Interactions Warning">
+											<img class="card-img v-image ads-img " src="https://images.rxlist.com/images/rxlist/diazepam-gel5.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROcMF8hv4Sh_xZsNMMkLdd2zoZ8TFx3IH4vw';" alt="Diazepam Rectal Gel Diazepam Rectal Gel Uses Dosage Side Effects Interactions Warning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diazepam Rectal Gel Diazepam Rectal Gel Uses Dosage Side Effects Interactions Warning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://centric.pediatrics.wisc.edu/wp-content/uploads/2019/06/Benzodiazepines.jpg" data-lightbox="roadtrip" data-title="Sedatives Department Of Pediatrics">
+											<img class="card-img v-image ads-img " src="https://centric.pediatrics.wisc.edu/wp-content/uploads/2019/06/Benzodiazepines.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHvt7XGodlM4Vw_A8CSTrojqoCbzTaV3Iirg';" alt="Sedatives Department Of Pediatrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sedatives Department Of Pediatrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://coreem.net/content/uploads/2016/06/IMG_3178.jpg" data-lightbox="roadtrip" data-title="Comparison Of Benzodiazepines">
+											<img class="card-img v-image ads-img " src="http://coreem.net/content/uploads/2016/06/IMG_3178.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThw2QtD9TS_JIjzvyB8rf6HeEJj1g-sGfW8A';" alt="Comparison Of Benzodiazepines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comparison Of Benzodiazepines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/slide/16680689/96/images/28/Benzodiazapines+Drug+Onset+Peak+Duration+Versed+%28Midazolam%29+IN%3A+5+min.jpg" data-lightbox="roadtrip" data-title="Take A Chill Pill An Approach To The Agitated Ed Patient Ppt Download">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/slide/16680689/96/images/28/Benzodiazapines+Drug+Onset+Peak+Duration+Versed+%28Midazolam%29+IN%3A+5+min.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBp5wEn5qgu-s-LDrKRXFRIjNipnkI9Oak3A';" alt="Take A Chill Pill An Approach To The Agitated Ed Patient Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Take A Chill Pill An Approach To The Agitated Ed Patient Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://onlinelibrary.wiley.com/cms/asset/27b944ac-2a8e-40b8-8142-b3f38a7ad032/epi16449-fig-0001-m.jpg" data-lightbox="roadtrip" data-title="Bioavailability And Safety Of Diazepam Intranasal Solution Compared To Oral And Rectal Diazepam In Healthy Volunteers Hogan 2020 Epilepsia Wiley Online Library">
+											<img class="card-img v-image ads-img " src="https://onlinelibrary.wiley.com/cms/asset/27b944ac-2a8e-40b8-8142-b3f38a7ad032/epi16449-fig-0001-m.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9v1Jr4tYIcUb6Gh33J5CG220C5ESh-06TZw';" alt="Bioavailability And Safety Of Diazepam Intranasal Solution Compared To Oral And Rectal Diazepam In Healthy Volunteers Hogan 2020 Epilepsia Wiley Online Library">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bioavailability And Safety Of Diazepam Intranasal Solution Compared To Oral And Rectal Diazepam In Healthy Volunteers Hogan 2020 Epilepsia Wiley Online Library</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.singlecare.com/blog/wp-content/uploads/2018/10/Valium-vs.-Xanax-1200x675.png" data-lightbox="roadtrip" data-title="Valium Vs Xanax Differences Similarities And Which Is Better For You">
+											<img class="card-img v-image ads-img " src="https://www.singlecare.com/blog/wp-content/uploads/2018/10/Valium-vs.-Xanax-1200x675.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbMgCv8DaZV-aBEc0Gl4mUsex4CioDzGvnXQ';" alt="Valium Vs Xanax Differences Similarities And Which Is Better For You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valium Vs Xanax Differences Similarities And Which Is Better For You</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.rxlist.com/images/webmdrx/webmdrx.png" data-lightbox="roadtrip" data-title="Valium Diazepam Tablets Uses Dosage Side Effects Interactions Warning">
+											<img class="card-img v-image ads-img " src="https://images.rxlist.com/images/webmdrx/webmdrx.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRErVbfE_-FzXfufV8KCdMtuLo4DycgVaTRzg';" alt="Valium Diazepam Tablets Uses Dosage Side Effects Interactions Warning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valium Diazepam Tablets Uses Dosage Side Effects Interactions Warning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://doctorlib.info/pharmacology/basic-clinical-pharmacology-13/basic-clinical-pharmacology-13.files/image327.jpg" data-lightbox="roadtrip" data-title="Sedative Hypnotic Drugs Basic And Clinical Pharmacology 13th Ed">
+											<img class="card-img v-image ads-img " src="https://doctorlib.info/pharmacology/basic-clinical-pharmacology-13/basic-clinical-pharmacology-13.files/image327.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7zNFOyOf_mAlqsovs-LDHNlfk4gpC1gBEvw';" alt="Sedative Hypnotic Drugs Basic And Clinical Pharmacology 13th Ed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sedative Hypnotic Drugs Basic And Clinical Pharmacology 13th Ed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/pharmacology-opiatesandbenzos-160314124833/95/pharmacology-opiates-and-benzos-17-638.jpg?cb=1489591279" data-lightbox="roadtrip" data-title="Pharmacology Opiates And Benzos">
+											<img class="card-img v-image ads-img " src="https://image.slidesharecdn.com/pharmacology-opiatesandbenzos-160314124833/95/pharmacology-opiates-and-benzos-17-638.jpg?cb=1489591279" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpRSNti_0C0Rt2VrQOrtU4AWvl14jnVlOd0w';" alt="Pharmacology Opiates And Benzos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pharmacology Opiates And Benzos</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-service-connected-gerd.html">Va Service Connected Gerd</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-id-card.html">Va Service Connected Id Card</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-pension.html">Va Service Connected Pension</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-rating-calculator.html">Va Service Connected Rating Calculator</a></li>
+													<li class="list-group-item"><a href="/va-service-connection-for-obstructive-sleep-apnea.html">Va Service Connection For Obstructive Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-id.html">Va Service Connected Id</a></li>
+													<li class="list-group-item"><a href="/va-sleep-apnea-not-service-connected.html">Va Sleep Apnea Not Service Connected</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-rating-schedule.html">Va Service Connected Disability Rating Schedule</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-meaning.html">Va Service Connected Meaning</a></li>
+													<li class="list-group-item"><a href="/va-sleep-apnea-compensation.html">Va Sleep Apnea Compensation</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-migraines.html">Va Service Connected Migraines</a></li>
+													<li class="list-group-item"><a href="/va-sleep-apnea-compensation-chart.html">Va Sleep Apnea Compensation Chart</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-rates-2021.html">Va Service Connected Rates 2021</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-unemployability.html">Va Service Connected Disability Unemployability</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-emphysema.html">Va Service Connected Emphysema</a></li>
+													<li class="list-group-item"><a href="/va-service-connection-phone-number.html">Va Service Connection Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-sciatica.html">Va Service Connected Sciatica</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-elbow.html">Va Service Connected Elbow</a></li>
+													<li class="list-group-item"><a href="/va-sleep-apnea-service-connected.html">Va Sleep Apnea Service Connected</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-knee-replacement.html">Va Service Connected Knee Replacement</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

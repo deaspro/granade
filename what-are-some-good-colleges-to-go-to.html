@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Are Some Good Colleges To Go To - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Are Some Good Colleges To Go To",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/3a/5d/d2/3a5dd2b6791fc78820d444467589453a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+are+some+good+colleges+to+go+to",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Are Some Good Colleges To Go To</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The grades achieved can play a big role in determining what colleges sixth forms universities and jobs you can go into so you need to know all about them. Im a firm believer in the fact that you get out of college. Break Out of Your Shell. <br>				
+			</p>
+										<a class="badge badge-info" href="/wechat-pay-hong-kong.html">wechat pay hong kong</a>
+											<a class="badge badge-info" href="/wechat-pay-bca.html">wechat pay bca</a>
+											<a class="badge badge-dark" href="/wechat-revenue.html">wechat revenue</a>
+											<a class="badge badge-secondary" href="/wechat-on-pc.html">wechat on pc</a>
+											<a class="badge badge-warning" href="/wechat-helper.html">wechat helper</a>
+											<a class="badge badge-secondary" href="/wechat-logo.html">wechat logo</a>
+											<a class="badge badge-warning" href="/wechat-number.html">wechat number</a>
+											<a class="badge badge-info" href="/wechat-java.html">wechat java</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the right blog.  Our site gives you hints for viewing the maximum quality video and image content, hunt and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/c3/07/62c3075176e80b572caf18a2aa02044f.png" data-lightbox="roadtrip" data-title="9 Steps To Choosing The Right College College Counseling Scholarships For College College Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/c3/07/62c3075176e80b572caf18a2aa02044f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjp4SaedtHJTeTkDCOgQzq3gTYUPLlVDKHmg';" alt="9 Steps To Choosing The Right College College Counseling Scholarships For College College Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Steps To Choosing The Right College College Counseling Scholarships For College College Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/9d/1d/6c9d1d61ea51baae4f8f90e19888a01e.jpg" data-lightbox="roadtrip" data-title="College Awareness Week College Awareness College Awareness Week Middle School Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/9d/1d/6c9d1d61ea51baae4f8f90e19888a01e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL9GATUzwdN_K0xQjYl5siAiaCddMgqHJkqg';" alt="College Awareness Week College Awareness College Awareness Week Middle School Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Awareness Week College Awareness College Awareness Week Middle School Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/64/4d/5f/644d5fe52787371c846d51efe8f424ca.jpg" data-lightbox="roadtrip" data-title="Pin On College Questions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/64/4d/5f/644d5fe52787371c846d51efe8f424ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuxIkfWqps-OE8HoFz8CjqTTeXfPOOxeB4Lg';" alt="Pin On College Questions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Questions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8f/63/05/8f6305f7964f803fa676b51ed035a9d8.jpg" data-lightbox="roadtrip" data-title="Pin On College Questions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8f/63/05/8f6305f7964f803fa676b51ed035a9d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPMuBSMDjAg6eCcVSUPWxgTdzDHAYMR8qdEw';" alt="Pin On College Questions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Questions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/41/12/084112596473a2a16d95a56d271f85c2.jpg" data-lightbox="roadtrip" data-title="Top 5 Things Colleges Look For College Essay High School Counseling Ivy League Schools">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/41/12/084112596473a2a16d95a56d271f85c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ19nVIQ8G3Qa2rbMwK44mY7YvwLoy09DXxMw';" alt="Top 5 Things Colleges Look For College Essay High School Counseling Ivy League Schools">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 Things Colleges Look For College Essay High School Counseling Ivy League Schools</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/a3/dc/e8a3dc7231e1ee1153e4ba739d041b88.png" data-lightbox="roadtrip" data-title="The 20 Best Blogs For Women In Their Twenties College Life Hacks College Hacks College Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/a3/dc/e8a3dc7231e1ee1153e4ba739d041b88.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMJ9i8TB5k-WAx7VirnnJ3m_gy1ojBUSGxg';" alt="The 20 Best Blogs For Women In Their Twenties College Life Hacks College Hacks College Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 20 Best Blogs For Women In Their Twenties College Life Hacks College Hacks College Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/62/c3/07/62c3075176e80b572caf18a2aa02044f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMJ9i8TB5k-WAx7VirnnJ3m_gy1ojBUSGxg';" alt="The 20 Best Blogs For Women In Their Twenties College Life Hacks College Hacks College Life">
+										<div class="card-body">
+						<h3 class="h5"><b>Challenge your assumptions about what will work for you.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What are some good colleges to go to</strong>. 
+								
+																	I want to go to a college that is going to help me out with this career so I can help these kids get better and make their life a whole lot better. 
+																	What are some good colleges to go to for pediatricians. 
+																	Ten colleges and two schools collectively offer 150 cost-effective undergraduate degrees and over 80 fully online degree programs at all study levels. 
+																	So once youve gotten accepted to the colleges on your short list make a point of returning to the college and asking some very specific questions including questions about the career center how many companies are interested in applicants with the degree you hope to get what kind of FAFSA aid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Definitely a party school there are so many parties and bars around the campus. 
+																	Cal is a state school that is often considered as good or better than many elite private and Ivy League schools. 
+																	If youre learning. 
+																	These are typically highly selective or small private colleges such as Columbia Occidental and Bates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For example you may not think youre able to thrive in a large institution because you come from a small high school but. 
+																	Classes at MIT are indeed difficult with homework and associated studying consuming a large chunk of time. 
+																	And dont feel like you need to decide on a major area of study before starting college. 
+																	Some public schools offer affordable tuition to in-state students and keep costs low for those. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MIT is an outstanding university with numerous and diverse opportunities in research and academics. 
+																	I was accepted at Yale but decided to go to a smaller school Wesleyan. 
+																	Last spring Princeton University offered admission to just 58 of its 32804 applicants Yale hit an admissions rate low of 59 and at Harvard the admissions rate hit a record low 45 of. 
+																	Some of the departments are very competitive and those employees are icy-colds such as Economic Math and Biology. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I dont usually like to quantify education by facts and figures. 
+																	The College of Engineering is very popular. 
+																	1 Best Colleges in America Junior. 
+																	Xavier University of Louisiana is a great school for nursing and the Uof M makiya B. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College is supposed to work for youThe whole purpose is to get a good job in a career you love. 
+																	The unemployment rate for college grads is also about half the jobless rate of high school graduates. 
+																	The cost of tuition and fees is one of the biggest barriers for many prospective college students. 
+																	Its in the beautiful Bay Area. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The universitys student faculty ratio is a low 21-to-1. 
+																	Whatever a students interests and passions there is a college program available in those areas so its worth the time to do the research and try to find the best fit. 
+																	Dont look at college as a long-term contract that youre not going to be able to get out of once you start. 
+																	By understanding what colleges look for in applicants you can figure out which schools qualify as safety match or reach schools for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	UC Santa Barbara has rich natural resources. 
+																	Estimating Your Chances of Admission. 
+																	With the government once more overhauling the education system it is imperative to read up on grades subjects and university to help ensure students reach their full potential. 
+																	This will help ensure that the experience is worthwhile and beneficial. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some individuals who search for reasons to go to college simply suffer from commitment phobia. 
+																	They do have the potential be some of the best years of your life. 
+																	Pediatric-nursing college medicine hospital-and-health-care healthcare. 
+																	Beyond financial rewards there are other ways college can change your life. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Study hard Play hard. 
+																	Check a colleges website or contact its admissions office to determine whether interviews are offered and how to schedule one. 
+																	College can be the bridge between childhood and. 
+																	Some pathways will include college now or later and some not. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Colleges that use holistic admission go beyond the numbers to learn about you from lots of different angles. 
+																	While its good to have some ideas in mind about what sorts of colleges will be right for you stay open to all the possibilities at the beginning of your search. 
+																	I believe some of the most brilliant people I know or have met are graduates of the top small liberal arts schools. 
+																	Instead of forcing college on students educators would do better to encourage them to consider more than one pathway into a good life. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You may actually do better in that type of. 
+																	It has big football and basketball programs. 
+																	Most large public universities dont even offer interviews because there are simply too many applicants. 
+																	Plus theres all the protests. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Getting a good-paying job is one of the top reasons why most people go to college. 
+																	Some colleges have competitive admissions but others have more open admission and all colleges offer academic support. 
+																	The mood of this school is not as relax as others described. 
+																	Sep 01 2017 Translate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About 6 of undergrads take only distance ed DE online courses and another 48 take some DE courses. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/b1/13/7eb113c2ec96c1ee78ad5cf8ed7fdf74.png" data-lightbox="roadtrip" data-title="This Is From Uc Berkeley Admissions But Still Contains Some Good Tips For Personal Statements School Essay Law School Prep Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/b1/13/7eb113c2ec96c1ee78ad5cf8ed7fdf74.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Dw4IooE4rN6KT8GmCYlnOWSoDX2mIuao9Q';" alt="This Is From Uc Berkeley Admissions But Still Contains Some Good Tips For Personal Statements School Essay Law School Prep Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is From Uc Berkeley Admissions But Still Contains Some Good Tips For Personal Statements School Essay Law School Prep Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/3b/29/f13b293e26babc87beccb60aa010751b.jpg" data-lightbox="roadtrip" data-title="If You Are Starting To Apply To Colleges And Are Nervous About Writing A Go Good Essay Freshman College How To Apply">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/3b/29/f13b293e26babc87beccb60aa010751b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREi0PnLLAr335xtMvh1noGbZ7foUVjOaS4Qw';" alt="If You Are Starting To Apply To Colleges And Are Nervous About Writing A Go Good Essay Freshman College How To Apply">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are Starting To Apply To Colleges And Are Nervous About Writing A Go Good Essay Freshman College How To Apply</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/51/4e/a3/514ea322e8b59a4d203999e4be706d5f.jpg" data-lightbox="roadtrip" data-title="Besides Accreditation You Will Desire To Take Other Things Into Consideration Prior To Choosing The Best Online Instructional Kiat Belajar Belajar Pendidikan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/51/4e/a3/514ea322e8b59a4d203999e4be706d5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8KCuIB95Pwbod7dsmKsEjs8l8WR4iKdjxbA';" alt="Besides Accreditation You Will Desire To Take Other Things Into Consideration Prior To Choosing The Best Online Instructional Kiat Belajar Belajar Pendidikan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Besides Accreditation You Will Desire To Take Other Things Into Consideration Prior To Choosing The Best Online Instructional Kiat Belajar Belajar Pendidikan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/9a/59/599a594e76e41c22d6b74b28e92dbce3.jpg" data-lightbox="roadtrip" data-title="Top Tips For The College Freshman Jpg 1 258 2 019 Pixels Freshman College College Freshman Advice Freshman Year College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/9a/59/599a594e76e41c22d6b74b28e92dbce3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3cAMzC6A4FKbbfBDJBzcGNp0Sd8IxPQG-QQ';" alt="Top Tips For The College Freshman Jpg 1 258 2 019 Pixels Freshman College College Freshman Advice Freshman Year College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top Tips For The College Freshman Jpg 1 258 2 019 Pixels Freshman College College Freshman Advice Freshman Year College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/b2/ab/0eb2ab019300bd398ce28fe7d8eec731.jpg" data-lightbox="roadtrip" data-title="Leaving For College Quotes Good Luck Messages And Notes College Quotes Job Motivation Good Luck Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/b2/ab/0eb2ab019300bd398ce28fe7d8eec731.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVsRZqldbMDeDFrDA6dZE5oLC0ioQUrdiN1Q';" alt="Leaving For College Quotes Good Luck Messages And Notes College Quotes Job Motivation Good Luck Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leaving For College Quotes Good Luck Messages And Notes College Quotes Job Motivation Good Luck Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/d4/ee/66d4eefdb6760da4f81d57ee3acb691f.jpg" data-lightbox="roadtrip" data-title="Example Of A Letter Of Intent Letter Of Intent School Essay Graduate School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/d4/ee/66d4eefdb6760da4f81d57ee3acb691f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0UfKXrNgFiHzqrI7RP_vgd_zEwVJtv7LLcA';" alt="Example Of A Letter Of Intent Letter Of Intent School Essay Graduate School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Example Of A Letter Of Intent Letter Of Intent School Essay Graduate School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/e9/7f/dae97fa1635e67320ac1ad614da21038.jpg" data-lightbox="roadtrip" data-title="If You Are Starting To Apply To Colleges And Are Nervous About Writing A Good Essay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/e9/7f/dae97fa1635e67320ac1ad614da21038.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC-63EJEvTwwy7srO86D3sb69CxwIO_S7BNg';" alt="If You Are Starting To Apply To Colleges And Are Nervous About Writing A Good Essay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are Starting To Apply To Colleges And Are Nervous About Writing A Good Essay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3e/db/0a/3edb0a484943eacff00729e127b023f7.jpg" data-lightbox="roadtrip" data-title="After 12th Science Courses List With Salary In 2020 College Fun Engineering Courses Blog Writing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3e/db/0a/3edb0a484943eacff00729e127b023f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjfeIqOHjkscQM1foa6Xz0jDl3A4mJZk1Djg';" alt="After 12th Science Courses List With Salary In 2020 College Fun Engineering Courses Blog Writing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After 12th Science Courses List With Salary In 2020 College Fun Engineering Courses Blog Writing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/62/fc/8a62fc8c5d0eb22e43008075f25bc46a.png" data-lightbox="roadtrip" data-title="How To Write An Amazing College Paper College Paper Guide Essay Tips College Fun College Essay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/62/fc/8a62fc8c5d0eb22e43008075f25bc46a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt7X0M9dSln8pRNo39wvcuWAjzeV0A3f5oDA';" alt="How To Write An Amazing College Paper College Paper Guide Essay Tips College Fun College Essay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Write An Amazing College Paper College Paper Guide Essay Tips College Fun College Essay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/7d/60/327d60bd06f9f177d5150b69818074c3.jpg" data-lightbox="roadtrip" data-title="If You Go To A College Have Been To A College Or Have Ever In Any Capacity Approached A College Campus There Is Essay Writing Scholarship Essay Good Essay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/7d/60/327d60bd06f9f177d5150b69818074c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLKAZjrcjDlblL424BpRyNCzISy-vEOKzU-Q';" alt="If You Go To A College Have Been To A College Or Have Ever In Any Capacity Approached A College Campus There Is Essay Writing Scholarship Essay Good Essay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Go To A College Have Been To A College Or Have Ever In Any Capacity Approached A College Campus There Is Essay Writing Scholarship Essay Good Essay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3a/5d/d2/3a5dd2b6791fc78820d444467589453a.jpg" data-lightbox="roadtrip" data-title="7 College Tips For Working Students To Make Balancing It All Look Easy University Tips College Hacks Student Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3a/5d/d2/3a5dd2b6791fc78820d444467589453a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7mYroGKuc4kq5myvpENPOtg-2ImJItjNzKw';" alt="7 College Tips For Working Students To Make Balancing It All Look Easy University Tips College Hacks Student Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 College Tips For Working Students To Make Balancing It All Look Easy University Tips College Hacks Student Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/4e/63/134e630be93ca994d32b376a1814f0c0.jpg" data-lightbox="roadtrip" data-title="List Of 11th Science Colleges In Pune In 2020 College Fun Arts Stream College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/4e/63/134e630be93ca994d32b376a1814f0c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdC1v7IYhrQ3IkztKTnf8gOkZr_4HgECgULA';" alt="List Of 11th Science Colleges In Pune In 2020 College Fun Arts Stream College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">List Of 11th Science Colleges In Pune In 2020 College Fun Arts Stream College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/9b/9d/649b9d5341e8e5bfe43cec7d10d08cfd.png" data-lightbox="roadtrip" data-title="How To Write A College Admissions Essay That Stands Out College Admission Essay College Entrance Essay Admissions Essay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/9b/9d/649b9d5341e8e5bfe43cec7d10d08cfd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSK41mJuH7vsRGq8kn5BMmDAKfVTM_pHqR7A';" alt="How To Write A College Admissions Essay That Stands Out College Admission Essay College Entrance Essay Admissions Essay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Write A College Admissions Essay That Stands Out College Admission Essay College Entrance Essay Admissions Essay</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-did-kourtney-go-to-college-for.html">What Did Kourtney Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-do-i-do-if-my-husband-is-depressed.html">What Do I Do If My Husband Is Depressed</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-help-ex-soldiers-to-do-apex.html">What Did The Gi Bill Help Ex Soldiers To Do Apex</a></li>
+													<li class="list-group-item"><a href="/what-department-of-homeland-security-mean.html">What Department Of Homeland Security Mean</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-do-for-returning-military-personnel.html">What Did The Gi Bill Do For Returning Military Personnel</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-of-rights-provide.html">What Did The Gi Bill Of Rights Provide</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-do-quizlet.html">What Did The Gi Bill Do Quizlet</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-do-how-did-it-affect-american-families-after-wwii.html">What Did The Gi Bill Do How Did It Affect American Families After Wwii</a></li>
+													<li class="list-group-item"><a href="/what-do-canadian-military-police-do.html">What Do Canadian Military Police Do</a></li>
+													<li class="list-group-item"><a href="/what-do-gi-bill-mean.html">What Do Gi Bill Mean</a></li>
+													<li class="list-group-item"><a href="/what-do-soldiers-get-paid-while-deployed.html">What Do Soldiers Get Paid While Deployed</a></li>
+													<li class="list-group-item"><a href="/what-do-100-disabled-veterans-get.html">What Do 100 Disabled Veterans Get</a></li>
+													<li class="list-group-item"><a href="/what-do-army-rangers-make.html">What Do Army Rangers Make</a></li>
+													<li class="list-group-item"><a href="/what-do-i-need-to-go-to-college-in-america.html">What Do I Need To Go To College In America</a></li>
+													<li class="list-group-item"><a href="/what-did-bill-gates-go-to-college-for.html">What Did Bill Gates Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-did-michael-jordan-go-to-college-for.html">What Did Michael Jordan Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-do-i-do-if-my-spouse-tested-positive-for-covid.html">What Do I Do If My Spouse Tested Positive For Covid</a></li>
+													<li class="list-group-item"><a href="/what-day-of-the-week-is-uk-state-pension-paid.html">What Day Of The Week Is Uk State Pension Paid</a></li>
+													<li class="list-group-item"><a href="/what-did-eleanor-roosevelt-go-to-college-for.html">What Did Eleanor Roosevelt Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-of-rights-help-veterans-do-answerscom.html">What Did The Gi Bill Of Rights Help Veterans Do Answerscom</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

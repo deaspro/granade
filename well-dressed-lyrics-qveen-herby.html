@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Well Dressed Lyrics Qveen Herby - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Well Dressed Lyrics Qveen Herby",
+  "datePublished": "2021-02-14",
+  "image": "https://i.ytimg.com/an/a_YPEC6HJf8/eacb5ef2-f8b8-4577-9890-4b54cc8f8d8b_mq.jpg?v=5a20e78a",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=well+dressed+lyrics+qveen+herby",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Well Dressed Lyrics Qveen Herby</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It seems like everybodys lookin for eternal bliss. You wanna roll wit me. Qveen Herby Well Dressed Lyrics Qveen Herby from US published the cool song Well Dressed as a part of the album EP 2 released on Friday December 1 2017. <br>				
+			</p>
+										<a class="badge badge-warning" href="/west-virginia-department-of-education-and-the-arts.html">west virginia department of education and the arts</a>
+											<a class="badge badge-dark" href="/were-black-soldiers-eligible-for-gi-bill.html">were black soldiers eligible for gi bill</a>
+											<a class="badge badge-secondary" href="/were-is-the-army-base-on-gta-5.html">were is the army base on gta 5</a>
+											<a class="badge badge-primary" href="/west-virginia-department-of-education-salary-scale.html">west virginia department of education salary scale</a>
+											<a class="badge badge-danger" href="/west-virginia-department-of-education-office-of-special-programs.html">west virginia department of education office of special programs</a>
+											<a class="badge badge-primary" href="/west-virginia-department-of-education-state-standards.html">west virginia department of education state standards</a>
+											<a class="badge badge-secondary" href="/were-is-the-army-base-in-gta-5.html">were is the army base in gta 5</a>
+											<a class="badge badge-warning" href="/west-point-military-police-station.html">west point military police station</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the ideal site.  Our site provides you with hints for seeing the maximum quality video and picture content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://t2.genius.com/unsafe/168x0/https%3A%2F%2Fimages.genius.com%2F187a5a45dedca1f2920e4e3561e50515.1000x1000x1.jpg" data-lightbox="roadtrip" data-title="Qveen Herby Well Dressed Lyrics Genius Lyrics">
+											<img class="card-img v-image ads-img " src="https://t2.genius.com/unsafe/168x0/https%3A%2F%2Fimages.genius.com%2F187a5a45dedca1f2920e4e3561e50515.1000x1000x1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Bu0pzHtFNRQPmkQKAVOCqHJK16gWqL0KWg';" alt="Qveen Herby Well Dressed Lyrics Genius Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qveen Herby Well Dressed Lyrics Genius Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.genius.com/138de2550a53a3bdac44158a158686ba.300x300x1.jpg" data-lightbox="roadtrip" data-title="Qveen Herby Ep 2 Lyrics And Tracklist Genius">
+											<img class="card-img v-image ads-img " src="https://images.genius.com/138de2550a53a3bdac44158a158686ba.300x300x1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVc_B-aCXa9PPMYrBmpaBVd0ewHzbHhtL9OQ';" alt="Qveen Herby Ep 2 Lyrics And Tracklist Genius">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qveen Herby Ep 2 Lyrics And Tracklist Genius</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://songtexte.co/Images/Songs/Labels/qveen-herby-confetti-songtext-lyrics-0edaaf.jpg" data-lightbox="roadtrip" data-title="Confetti Lyrics By Qveen Herby Songtexte Co">
+											<img class="card-img v-image ads-img " src="https://songtexte.co/Images/Songs/Labels/qveen-herby-confetti-songtext-lyrics-0edaaf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGlt6HVWsNOkCUc3wqDjdLGxBj1Pqf6gddcw';" alt="Confetti Lyrics By Qveen Herby Songtexte Co">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Confetti Lyrics By Qveen Herby Songtexte Co</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://songtexte.co/Images/Songs/Labels/qveen-herby-my-man-songtext-lyrics-0c19e1.jpg" data-lightbox="roadtrip" data-title="My Man Lyrics By Qveen Herby Songtexte Co">
+											<img class="card-img v-image ads-img " src="https://songtexte.co/Images/Songs/Labels/qveen-herby-my-man-songtext-lyrics-0c19e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTutTClar-K2Wt5w8FL-3hYNRU84Y-_OJguYg';" alt="My Man Lyrics By Qveen Herby Songtexte Co">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Man Lyrics By Qveen Herby Songtexte Co</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://spinlyrics.com/pics/song/medium/qveen-herby-bank-lyrics-8c3d04.jpg" data-lightbox="roadtrip" data-title="Qveen Herby Lyrics Bank Spin Lyrics">
+											<img class="card-img v-image ads-img " src="https://spinlyrics.com/pics/song/medium/qveen-herby-bank-lyrics-8c3d04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS25YTvWoA5U1TJl78r1uqnsV5bl0NzPwdIqQ';" alt="Qveen Herby Lyrics Bank Spin Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qveen Herby Lyrics Bank Spin Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/42/6c/7f/426c7fe4a7a97e9d8f617c0f07e5cf92.jpg" data-lightbox="roadtrip" data-title="Pin On Thejustsayinpod">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/42/6c/7f/426c7fe4a7a97e9d8f617c0f07e5cf92.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRktfyNF_TkFH-9lWvhJN94Tx6Nrh3rki8EKg';" alt="Pin On Thejustsayinpod">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Thejustsayinpod</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.ytimg.com/vi/uPNJJEGg0cE/mqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRktfyNF_TkFH-9lWvhJN94Tx6Nrh3rki8EKg';" alt="Pin On Thejustsayinpod">
+										<div class="card-body">
+						<h3 class="h5"><b>Original lyrics of Well Dressed song by Qveen Herby.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Well dressed lyrics qveen herby</strong>. 
+								
+																	Comment and share your favourite lyrics. 
+																	Intro Suit suit suit like summa. 
+																	QVEEN HERBY Well Dressed Lyrics. 
+																	Explain your version of song meaning find more of Qveen Herby lyrics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Watch official video print or download text in PDF. 
+																	Qveen Herby - Well Dressed Lyrics. 
+																	Well dressed mothafucka Sucha. 
+																	Ima well dressed mothafucka. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Im a well dressed motherfucker You wanna ride with me You wanna roll with me I got the whole world chasin for a photo with me You know it Everybody loves a well dressed motherfucker You know it Everybody loves a well dressed motherfucker You wanna chill with me Wanna be seen with me Cuz if i got the sauce i must be. 
+																	Mothafuckin You wanna ride wit me You wanna roll wit me I got the whole world chasin fo a photo with me You know it Everybody loves a well dressed mothafucka Hey You know it Everybody loves a well dressed mothafucka Oooohhh-ooohh. 
+																	Yeah yeah Im such a dime piece Im such a dime piece Bag me and Ill never leave yo side B. 
+																	The Lyrics for Well Dressed by Qveen Herby have been translated into 1 languages. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Qveen Herby Well Dressed Lyrics. 
+																	Chorus You wanna ride wit me. 
+																	Yeah yeah yeah yeah Thats what you find when you unbutton my Versace dress. 
+																	Speak to me kindly Im the type of girl you call Wifey. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Suit suit suit like summer Swagger on my hips like thunder Im a well dressed. 
+																	Uh speak to me kindly. 
+																	Suit suit suit like summer Swagger on my hips like thunder Im a well dressed motherfucker. 
+																	Suit suit suit like summer swagger on my hips like thunder im a well dressed motherfucker im a well dressed motherfucker you wanna ride w. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Top Lyrics of 2011. 
+																	You wanna ride wit me You wanna roll wit me I got the whole world chasin fo a photo with me You know it Everybody loves a well dressed motha You know it Everybody loves a well dressed motha You wanna chill wit me Wanna be seen wit me Cause if I got the sauce I must be somebody You know it Everybody loves a well dressed mothafucka You know it Everybody eh-everybody love it You aint gotta be rich no you aint gotta be fine nah Go and get that coin go on all you. 
+																	Everybody eh-everybody love it Woo Outro Say suit suit suit like summa summa Swagga on my hips like thunda thunda Ima well dressed mothafucka. 
+																	Suit suit suit it like summa Swagga on my hips like thunda I- Ima well dressed mothafcka Ima well dressed mothafcka You wanna ride with me You wanna roll with me I got the whole world chasin fo a photo with me You know it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Everybody loves a well dressed mothafucka You know it Everybody loves a well dressed mothafucka You wanna chill wit me Wanna be seen wit me Cause if I got the sauce woo I must be somebody You know it Everybody loves a well dressed mothafucka You know it Everybody eh-everybody love it Suit suit suit it like summa summa. 
+																	I-Ima well dressed mothafucka. 
+																	Imma Imma Imma well dressed mothafucka Sucha. 
+																	Everybody loves a well dressed mothafucka You know it Everybody loves a well dressed mothafucka You wanna chill with me Wanna be seen with me Cause if I got the sauce woo I must be somebody You know it Everybody loves a well dressed mothafucka You know it Everybody eh-everybody love it Suit suit suit it like summa summa. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Swagga on my hips like thunda. 
+																	Having a playtime of three minutes and twenty four seconds Well Dressed can be considered a medium length song. 
+																	Find Qveen Herby - Well Dressed official song lyrics. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/eyK9juuJJiE/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&amp;rs=AOn4CLCCVz5heMWkwUD6xqePPh4dBfa9Sg" data-lightbox="roadtrip" data-title="Qveen Herby Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/eyK9juuJJiE/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&amp;rs=AOn4CLCCVz5heMWkwUD6xqePPh4dBfa9Sg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_cQDZ_guzAKJhFelStZM2W4UWT7zlaDqOGA';" alt="Qveen Herby Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qveen Herby Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/f-b2xWjeQIU/maxresdefault.jpg" data-lightbox="roadtrip" data-title="The Multitudes Of Qveen Herby Part 1 American Songwriter">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/f-b2xWjeQIU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjnccJ98h5Aq1TiqUcizu2nGZVmh3EUbWRSA';" alt="The Multitudes Of Qveen Herby Part 1 American Songwriter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Multitudes Of Qveen Herby Part 1 American Songwriter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/ce/3f/f7ce3f714021da3e060ad8154b7cf8bf.jpg" data-lightbox="roadtrip" data-title="Qveen Herby Alone Youtube Alone Lyrics Youtube Alone">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/ce/3f/f7ce3f714021da3e060ad8154b7cf8bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfgh4XruURQy95bkYG54ccnlQU_GAPpmPLAQ';" alt="Qveen Herby Alone Youtube Alone Lyrics Youtube Alone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qveen Herby Alone Youtube Alone Lyrics Youtube Alone</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/hIwB7mRchO4/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Qveen Herby Livin The Dream Official Audio Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/hIwB7mRchO4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4-k1ypEGUxBOwlnCQrL_OUuM383oxCvdxQ';" alt="Qveen Herby Livin The Dream Official Audio Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qveen Herby Livin The Dream Official Audio Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/an/a_YPEC6HJf8/eacb5ef2-f8b8-4577-9890-4b54cc8f8d8b_mq.jpg?v=5a20e78a" data-lightbox="roadtrip" data-title="Qveen Herby Wild Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/an/a_YPEC6HJf8/eacb5ef2-f8b8-4577-9890-4b54cc8f8d8b_mq.jpg?v=5a20e78a" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7P30IsTdA4rYSK2xE5g5lLrfzdDHH81RK3Q';" alt="Qveen Herby Wild Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qveen Herby Wild Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=239584994120913&amp;get_thumbnail=1" data-lightbox="roadtrip" data-title="Billboard Qveen Herby Billboard Live At Home Performance Fundraiser For Meals On Wheels America Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=239584994120913&amp;get_thumbnail=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNHM1Zfrkm4OkfgA-4e-rM5ay8NDtcTv7YA';" alt="Billboard Qveen Herby Billboard Live At Home Performance Fundraiser For Meals On Wheels America Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Billboard Qveen Herby Billboard Live At Home Performance Fundraiser For Meals On Wheels America Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/24jvmpInbjg/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Qveen Herby Holiday Lyrics Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/24jvmpInbjg/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Wmd1nXYEZT5XXBgCXEuMwmAUutqZYjjDbQ';" alt="Qveen Herby Holiday Lyrics Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qveen Herby Holiday Lyrics Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/HonGXuZPFzs/mqdefault.jpg" data-lightbox="roadtrip" data-title="Chords For Qveen Herby Nintendo Acoustic Session">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/HonGXuZPFzs/mqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Gg5uJUzwsKirTZ1Dg2Gdv_BwhhZdtIuBuw';" alt="Chords For Qveen Herby Nintendo Acoustic Session">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chords For Qveen Herby Nintendo Acoustic Session</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/uPNJJEGg0cE/mqdefault.jpg" data-lightbox="roadtrip" data-title="Chords For Qveen Herby Wifey Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/uPNJJEGg0cE/mqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn1tQq6O2lJDfV1VJ6rk7kL7y08q7PQqGLZg';" alt="Chords For Qveen Herby Wifey Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chords For Qveen Herby Wifey Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/29/6d/05296daf2b7811475f0245246660e11a.png" data-lightbox="roadtrip" data-title="Qveen Herby Ep 4 Lyrics And Tracklist Genius Pretty In Pink Hip Hop Albums Album Covers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/29/6d/05296daf2b7811475f0245246660e11a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPpL-30BS0JjU1ErRcjtEW8qm3VGGf-AMpNg';" alt="Qveen Herby Ep 4 Lyrics And Tracklist Genius Pretty In Pink Hip Hop Albums Album Covers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qveen Herby Ep 4 Lyrics And Tracklist Genius Pretty In Pink Hip Hop Albums Album Covers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/sSJbKHJXLss/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Qveen Herby No Limit Remix Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/sSJbKHJXLss/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEZvSNw7thG9gk5d494--4KQON-OfYtWNzw';" alt="Qveen Herby No Limit Remix Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qveen Herby No Limit Remix Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/00/e5/e800e5dce94a879dfaad85243f86ff76.jpg" data-lightbox="roadtrip" data-title="Alright Qveen Herby Popular Music Videos New Music Releases Kodak Black">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/00/e5/e800e5dce94a879dfaad85243f86ff76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_GsG0NhyL3uUOeKUsiicON9XK5SMO_H4fVw';" alt="Alright Qveen Herby Popular Music Videos New Music Releases Kodak Black">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alright Qveen Herby Popular Music Videos New Music Releases Kodak Black</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bollyinside.com/wp-content/uploads/2020/12/Want-to-realize-your-full-potential-Listen-to-Qveen-Herby.jpg" data-lightbox="roadtrip" data-title="Want To Realize Your Full Potential Listen To Qveen Herby Bollyinside">
+											<img class="card-img v-image ads-img " src="https://www.bollyinside.com/wp-content/uploads/2020/12/Want-to-realize-your-full-potential-Listen-to-Qveen-Herby.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSACFYrAnLVOKaZxlevpkZ4pDDo9GOLJtCwWA';" alt="Want To Realize Your Full Potential Listen To Qveen Herby Bollyinside">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Want To Realize Your Full Potential Listen To Qveen Herby Bollyinside</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hxppythxxghts.com/wp-content/uploads/2020/08/hxppy-thxxghts-QveenHerby_WAPCover.jpg" data-lightbox="roadtrip" data-title="Qveen Herby Wap Hxppy Thxxghts">
+											<img class="card-img v-image ads-img " src="https://hxppythxxghts.com/wp-content/uploads/2020/08/hxppy-thxxghts-QveenHerby_WAPCover.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc0aMwB_pabnBwQcH2-jIOVg15geUOXrI2OQ';" alt="Qveen Herby Wap Hxppy Thxxghts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qveen Herby Wap Hxppy Thxxghts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/d8/84/d3d8847e7e89613f01fa2fd791775a96.jpg" data-lightbox="roadtrip" data-title="Pin On Not Your Taste Musick">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/d8/84/d3d8847e7e89613f01fa2fd791775a96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8s6JaO5ri-BXrJMfn6bF1WbSgZalOWwFs6w';" alt="Pin On Not Your Taste Musick">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Not Your Taste Musick</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/virginia-insurance-data-security-act.html">Virginia Insurance Data Security Act</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-military-affairs-fort-pickett.html">Virginia Department Of Military Affairs Fort Pickett</a></li>
+													<li class="list-group-item"><a href="/virginia-pay-and-holiday-calendar-2020.html">Virginia Pay And Holiday Calendar 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-insurance-continuing-education.html">Virginia Department Of Insurance Continuing Education</a></li>
+													<li class="list-group-item"><a href="/virginia-lawyer-referral-service.html">Virginia Lawyer Referral Service</a></li>
+													<li class="list-group-item"><a href="/virginia-insurance-minimums.html">Virginia Insurance Minimums</a></li>
+													<li class="list-group-item"><a href="/virginia-dependents-educational-assistance-program.html">Virginia Dependents Educational Assistance Program</a></li>
+													<li class="list-group-item"><a href="/virginia-la-gi.html">Virginia La Gi</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-transcripts.html">Virginia Department Of Education Transcripts</a></li>
+													<li class="list-group-item"><a href="/virginia-in-state-tuition-for-military-dependents.html">Virginia In State Tuition For Military Dependents</a></li>
+													<li class="list-group-item"><a href="/virginia-insurance-gap.html">Virginia Insurance Gap</a></li>
+													<li class="list-group-item"><a href="/virginia-employee-pay-raise-2020.html">Virginia Employee Pay Raise 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-deposit-schedule.html">Virginia Deposit Schedule</a></li>
+													<li class="list-group-item"><a href="/virginia-disabled-veteran-education-benefits.html">Virginia Disabled Veteran Education Benefits</a></li>
+													<li class="list-group-item"><a href="/virginia-dhrm-pay-calendar-2020.html">Virginia Dhrm Pay Calendar 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-independent-insurance-agents.html">Virginia Independent Insurance Agents</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-higher-education.html">Virginia Department Of Higher Education</a></li>
+													<li class="list-group-item"><a href="/virginia-employment-commission-back-pay.html">Virginia Employment Commission Back Pay</a></li>
+													<li class="list-group-item"><a href="/virginia-grading-system.html">Virginia Grading System</a></li>
+													<li class="list-group-item"><a href="/virginia-military-divorce-retirement-pay.html">Virginia Military Divorce Retirement Pay</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

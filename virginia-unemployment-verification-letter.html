@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Unemployment Verification Letter - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Unemployment Verification Letter",
+  "datePublished": "2021-02-14",
+  "image": "https://external-preview.redd.it/ZmAroq9mBVNqbrNvOePT2wuIuYrJMO6E2qhd1UYT6xc.jpg?auto=webp&amp;s=731ae63979a583a181a1bbc319cc4df4d1e98279",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+unemployment+verification+letter",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Unemployment Verification Letter</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">We are professors and researchers each of whom has expertise relevant to the question of whether drivers of transportation companies Uber and Lyft are employees for purposes of state unemployment insurance. When you receive your unemployment verification letter expect it to have much of the same information as the initial award letter you received. Box 26441 Richmond VA 23261-6441. <br>				
+			</p>
+										<a class="badge badge-primary" href="/what-time-does-usaa-pay-military.html">what time does usaa pay military</a>
+											<a class="badge badge-warning" href="/what-time-does-netspend-deposit-stimulus-check.html">what time does netspend deposit stimulus check</a>
+											<a class="badge badge-warning" href="/what-time-is-it-utc-military.html">what time is it utc military</a>
+											<a class="badge badge-secondary" href="/what-to-do-if-you-have-a-boring-husband.html">what to do if you have a boring husband</a>
+											<a class="badge badge-info" href="/what-time-will-my-va-disability-check-be-deposited.html">what time will my va disability check be deposited</a>
+											<a class="badge badge-info" href="/what-to-do-if-my-husband-wont-talk-to-me.html">what to do if my husband wont talk to me</a>
+											<a class="badge badge-warning" href="/what-to-do-after-husband-dies.html">what to do after husband dies</a>
+											<a class="badge badge-warning" href="/what-to-do-if-spouse-has-covid.html">what to do if spouse has covid</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the right site.  Our site gives you suggestions for seeing the highest quality video and picture content, search and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this video that you view.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://external-preview.redd.it/ZmAroq9mBVNqbrNvOePT2wuIuYrJMO6E2qhd1UYT6xc.jpg?auto=webp&amp;s=731ae63979a583a181a1bbc319cc4df4d1e98279" data-lightbox="roadtrip" data-title="Virginia Unemployment Info And Faqs Megathread Virginia">
+											<img class="card-img v-image ads-img " src="https://external-preview.redd.it/ZmAroq9mBVNqbrNvOePT2wuIuYrJMO6E2qhd1UYT6xc.jpg?auto=webp&amp;s=731ae63979a583a181a1bbc319cc4df4d1e98279" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR52O6BB7Khvf4V6Y4FyDuB2x-pzCdB826rJg';" alt="Virginia Unemployment Info And Faqs Megathread Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Unemployment Info And Faqs Megathread Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://data.templateroller.com/pdf_docs_html/2049/20497/2049792/request-for-claim-cancellation-virginia_big.png" data-lightbox="roadtrip" data-title="Virginia Request For Claim Cancellation Download Printable Pdf Templateroller">
+											<img class="card-img v-image ads-img " src="https://data.templateroller.com/pdf_docs_html/2049/20497/2049792/request-for-claim-cancellation-virginia_big.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYupJXVWqt1o9vve1pE6z4EMUY6SRM6mRsQg';" alt="Virginia Request For Claim Cancellation Download Printable Pdf Templateroller">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Request For Claim Cancellation Download Printable Pdf Templateroller</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.redd.it/tgyv89vpzta51.jpg" data-lightbox="roadtrip" data-title="Virginia Received My Monetary Determination In The Mail I Applied For Ui And For Pua Using The Gov2go App But I M Not Quite Sure What To Do From Here Please If You">
+											<img class="card-img v-image ads-img " src="https://i.redd.it/tgyv89vpzta51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_dKK4qKWepB8jrq1vEtCnQJMMV2piX-VdEg';" alt="Virginia Received My Monetary Determination In The Mail I Applied For Ui And For Pua Using The Gov2go App But I M Not Quite Sure What To Do From Here Please If You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Received My Monetary Determination In The Mail I Applied For Ui And For Pua Using The Gov2go App But I M Not Quite Sure What To Do From Here Please If You</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/38/91/4838919c115c18ae9def3f96e627e7a8.jpg" data-lightbox="roadtrip" data-title="Letter Of Unemployment Verification Fresh Unemployment Verification Letter Filename Template Job Cover Letter Examples Job Cover Letter Letter Template Word">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/38/91/4838919c115c18ae9def3f96e627e7a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT53XPKRylKCsYFSSrd3NIiuZhWUTqt5ZRlzg';" alt="Letter Of Unemployment Verification Fresh Unemployment Verification Letter Filename Template Job Cover Letter Examples Job Cover Letter Letter Template Word">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letter Of Unemployment Verification Fresh Unemployment Verification Letter Filename Template Job Cover Letter Examples Job Cover Letter Letter Template Word</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/74/71/b3/7471b372a3f60c137245f4bc1bfad7d0.jpg" data-lightbox="roadtrip" data-title="Unemployment Verification Letter Sample Awesome 9 10 Letter Unemployment Verification Dannybarrantes Template Letter Templates Lettering Letter Sample">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/74/71/b3/7471b372a3f60c137245f4bc1bfad7d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimvGRLoubUheeSKkw_GHdErjLPZd4i62fJA';" alt="Unemployment Verification Letter Sample Awesome 9 10 Letter Unemployment Verification Dannybarrantes Template Letter Templates Lettering Letter Sample">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Verification Letter Sample Awesome 9 10 Letter Unemployment Verification Dannybarrantes Template Letter Templates Lettering Letter Sample</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/7b/f8/207bf8899a72b5e2aa2fcd0b157a8fb5.jpg" data-lightbox="roadtrip" data-title="Proof Of Employment Letter Template Inspirational 40 Proof Of Employment Letters Verification Forms S Lettering Simple Cover Letter Template Letter Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/7b/f8/207bf8899a72b5e2aa2fcd0b157a8fb5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwdKsRFO01_g60d5YAVr8tH3N5-ISDIRF_ow';" alt="Proof Of Employment Letter Template Inspirational 40 Proof Of Employment Letters Verification Forms S Lettering Simple Cover Letter Template Letter Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Proof Of Employment Letter Template Inspirational 40 Proof Of Employment Letters Verification Forms S Lettering Simple Cover Letter Template Letter Templates</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.vec.virginia.gov/sites/all/themes/custom/vecbootstrap/images/VEC-Logo-transparent-web.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwdKsRFO01_g60d5YAVr8tH3N5-ISDIRF_ow';" alt="Proof Of Employment Letter Template Inspirational 40 Proof Of Employment Letters Verification Forms S Lettering Simple Cover Letter Template Letter Templates">
+										<div class="card-body">
+						<h3 class="h5"><b>If you do not you may not be paid unemployment benefits for that week.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia unemployment verification letter</strong>. 
+								
+																	Box 26441 Richmond VA 23261-6441. 
+																	If you need to write an employment verification letter for someone its important to make sure that your letter provides the correct information and adheres to an appropriate format. 
+																	Anonymously report Unemployment Insurance Fraud to the VEC by calling 1-800-782-4001. 
+																	866-832-2363 815am to 430pm Monday - Friday and 9am to 1pm on Saturday closed Sunday and state holidays Mailing Address PO. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Identity theft that is related to Unemployment Insurance is usually not the fault of the claimant or employer happens when you believe someone has illegally filed for unemployment benefits using your identity. 
+																	An employment verification letter is a formal business letter that is necessary for employers to write for a multitude of reasons. 
+																	You may not be sure who is the relevant point of contact internally and you may worry about an employer thinking that youre preparing to leave the organization for a new role. 
+																	Report to or call the office when scheduled. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However this may change based on the weekly claims you submit addressed under Existing Claimants below. 
+																	Virginia Relay call 711 or 800-828-1120. 
+																	You wont help the recipient by drafting a less-than-professional note. 
+																	For example youll see your weekly and maximum benefit amounts your claim balance number of weeks of benefits and contact details. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This type of verification letter is commonly used when someone seeks housing or is applying for a mortgage. 
+																	Open Letter to State Unemployment Insurance Agencies on Uber Lyft Drivers. 
+																	866-832-2363 815am to 430pm Monday - Friday and 9am to 1pm on Saturday closed Sunday and state holidays Mailing Address PO. 
+																	The requestor of the employment information will use the form to confirm that an individual has a secure job and an income stream capable of affording the monthly payment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many landlords and financial institutions require you to have an employment verification letter before they will allow you to successfully rent or buy a home. 
+																	If I receive a letter or phone call to report to or call the VEC Workforce Center what should I do. 
+																	Example Of A Motivation Letter for A Job November 24th 2018 Templates Example Of A Motivation Letter for A Job- motivation letter for postdoctoral position cover letter examples for every type Example Of A Bursary Motivation Letter. 
+																	Your state unemployment office sends you an unemployment determination letter after processing your claim for unemployment benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Due to the Covid-19 global pandemic and shelter-in-place orders across the United States Uber and Lyft drivers have seen their incomes fall dramatically. 
+																	Follow business letter format. 
+																	866-832-2363 815am to 430pm Monday - Friday and 9am to 1pm on Saturday closed Sunday and state holidays Mailing Address PO. 
+																	The Virginia Employment Commission VEC is committed to ensuring unemployment benefits go to individuals who are eligible to receive them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Anonymously report Unemployment Insurance Fraud to the VEC by calling 1-800-782-4001. 
+																	If you are eligible for regular unemployment benefits you will receive a Monetary Determination Letter and PIN typically within 7 to 10 business days of filing your initial claim. 
+																	Box 26441 Richmond VA 23261-6441. 
+																	Virginia Relay call 711 or 800-828-1120. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An employment verification letter also known as a proof of employment letter is a form that verifies the income or salary earned by an employed individual. 
+																	Anonymously report Unemployment Insurance Fraud to the VEC by calling 1-800-782-4001. 
+																	866-832-2363 815am to 430pm Monday - Friday and 9am to 1pm on Saturday closed Sunday and state holidays Mailing Address PO. 
+																	If you have misplaced your original determination letter you might need a copy for several reasons such as to prepare for an appeal of the decision or to use for income verification. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Plant closure AND Letter from Virginia Employment Unemployment Insurance Insurance compensation. 
+																	Your Monetary Determination letter lets you know what financial benefits you may possibly be eligible for. 
+																	Box 26441 Richmond VA 23261-6441. 
+																	Box 26441 Richmond VA 23261-6441. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you need help in obtaining or providing any verification tell your eligibility worker. 
+																	However here in Virginia and throughout the United States fraud relating to unemployment insurance benefits does take place. 
+																	If you are unable to report or call for any reason you should call ahead of the scheduled time and explain the circumstances. 
+																	Requesting an employment verification letter may be stressful. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Relay call 711 or 800-828-1120. 
+																	Verification of Displaced Homemaker status- if applicable. 
+																	Verification of business closure due to current economic conditions or natural disaster- if Business license bankruptcy documents Tax returns bank statements etc. 
+																	This document may confirm an employees employment status employment dates salary information and other details depending on the reason the third party needs employment verification and what your organization allows you to share with other companies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Anonymously report Unemployment Insurance Fraud to the VEC by calling 1-800-782-4001. 
+																	Virginia Relay call 711 or 800-828-1120. 
+																	Virginia Relay call 711 or 800-828-1120. 
+																	Here is some background on why employees may request this document what you should include and employment verification letter samples you can use to create your own company verification of employment letter template. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Award letters or notices for Social Security Supplemental Security Income unemployment compensation veterans benefits pensions settlements or any other type of income Your eligibility worker will tell you if any other verification is needed. 
+																	Proof Of Unemployment Letter Sample. 
+																	866-832-2363 815am to 430pm Monday - Friday and 9am to 1pm on Saturday closed Sunday and state holidays Mailing Address PO. 
+																	Anonymously report Unemployment Insurance Fraud to the VEC by calling 1-800-782-4001. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://eforms.com/images/2017/08/Employment-Verification-Letter-Template.png" data-lightbox="roadtrip" data-title="Free Employment Income Verification Letter Pdf Word Eforms">
+											<img class="card-img v-image ads-img " src="https://eforms.com/images/2017/08/Employment-Verification-Letter-Template.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL414ttK1gBV6jmamX-Jcm3bDYBnr1DVDqCw';" alt="Free Employment Income Verification Letter Pdf Word Eforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Employment Income Verification Letter Pdf Word Eforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/5a/4d/e15a4df5a1b6dcef2a971dd673571bc9.jpg" data-lightbox="roadtrip" data-title="Unemployment Letter Example Inspirational 9 10 Letter Unemployment Verification Lettering Support Letter Letter Example">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/5a/4d/e15a4df5a1b6dcef2a971dd673571bc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfn1ZqpvIEFiv43Y5F2T_11alglhaKi9LUA';" alt="Unemployment Letter Example Inspirational 9 10 Letter Unemployment Verification Lettering Support Letter Letter Example">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Letter Example Inspirational 9 10 Letter Unemployment Verification Lettering Support Letter Letter Example</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/76/fe/f8/76fef889095045142bf09bbb5af73755.jpg" data-lightbox="roadtrip" data-title="Unemployment Letter From Employer Luxury 12 13 Unemployment Verification Letter In 2020 Letter Sample Letter Of Employment Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/76/fe/f8/76fef889095045142bf09bbb5af73755.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxxPoeNUesJUCMG2Z9PcR9I8qDqpcq6WpFzw';" alt="Unemployment Letter From Employer Luxury 12 13 Unemployment Verification Letter In 2020 Letter Sample Letter Of Employment Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Letter From Employer Luxury 12 13 Unemployment Verification Letter In 2020 Letter Sample Letter Of Employment Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/ed/ef/34edefa74d929aa116aae478356dec9d.jpg" data-lightbox="roadtrip" data-title="Unemployment Verification Letter Sample Inspirational Unemployment Verification Letter Filename Example Letter Of Employment Lettering Letter Sample">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/ed/ef/34edefa74d929aa116aae478356dec9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAbwK4AJSEPpxDkG9zKR7l9ET3P9UKTY9Zyg';" alt="Unemployment Verification Letter Sample Inspirational Unemployment Verification Letter Filename Example Letter Of Employment Lettering Letter Sample">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Verification Letter Sample Inspirational Unemployment Verification Letter Filename Example Letter Of Employment Lettering Letter Sample</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vec.virginia.gov/sites/all/themes/custom/vecbootstrap/images/VEC-Logo-transparent-web.png" data-lightbox="roadtrip" data-title="Faq S General Unemployment Insurance Virginia Employment Commission">
+											<img class="card-img v-image ads-img " src="https://www.vec.virginia.gov/sites/all/themes/custom/vecbootstrap/images/VEC-Logo-transparent-web.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqYRBkeqckVVmE90O0GWybKbNCcbKDXhiWDg';" alt="Faq S General Unemployment Insurance Virginia Employment Commission">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Faq S General Unemployment Insurance Virginia Employment Commission</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/21/bc/54/21bc542710d0a93568a628300dee3a45.jpg" data-lightbox="roadtrip" data-title="Employment Contract Template Uk Employment Questionnaire Crossword Clue Virginia Employment Commis Free Printable Letters Lettering Download Letter Model">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/21/bc/54/21bc542710d0a93568a628300dee3a45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIxjQ-68CD0gaHVoAzeiHciWtFPEhoWglpZg';" alt="Employment Contract Template Uk Employment Questionnaire Crossword Clue Virginia Employment Commis Free Printable Letters Lettering Download Letter Model">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employment Contract Template Uk Employment Questionnaire Crossword Clue Virginia Employment Commis Free Printable Letters Lettering Download Letter Model</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/78/03/747803dc68ca6059bfde039f5abe72e0.jpg" data-lightbox="roadtrip" data-title="Unemployment Letter From Employer Elegant 12 13 Unemployment Verification Letter Dannybarrantes Templ Letter Templates Business Letter Template Letter Sample">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/78/03/747803dc68ca6059bfde039f5abe72e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtGa6qf80meO3sc-PQ5IhNnm5TN7_b2sypBQ';" alt="Unemployment Letter From Employer Elegant 12 13 Unemployment Verification Letter Dannybarrantes Templ Letter Templates Business Letter Template Letter Sample">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Letter From Employer Elegant 12 13 Unemployment Verification Letter Dannybarrantes Templ Letter Templates Business Letter Template Letter Sample</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5c/b3/be/5cb3bec73e6f5fbe68102c1361b13451.jpg" data-lightbox="roadtrip" data-title="Unemployment Verification Letter Awesome Unemployment Verification Letter Filename Example Confirmation Letter Lettering Letter Of Employment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5c/b3/be/5cb3bec73e6f5fbe68102c1361b13451.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6DIxbs64-HarkPzehIG-MgXdLhjWwtDRp6g';" alt="Unemployment Verification Letter Awesome Unemployment Verification Letter Filename Example Confirmation Letter Lettering Letter Of Employment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Verification Letter Awesome Unemployment Verification Letter Filename Example Confirmation Letter Lettering Letter Of Employment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/5d/5b/005d5be8cfd392fcf25b5131d6e16d94.jpg" data-lightbox="roadtrip" data-title="Free Printable Employment Verification Letter Beautiful 40 Proof Of Employment Letters Verification Forms Letter Of Employment Letter Templates Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/5d/5b/005d5be8cfd392fcf25b5131d6e16d94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk0pJgPyCfDUE23BVIb3S2JOrVglEfG5HGiQ';" alt="Free Printable Employment Verification Letter Beautiful 40 Proof Of Employment Letters Verification Forms Letter Of Employment Letter Templates Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Printable Employment Verification Letter Beautiful 40 Proof Of Employment Letters Verification Forms Letter Of Employment Letter Templates Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/59/97/d65997c70485d27d7991f7bafa1e71da.jpg" data-lightbox="roadtrip" data-title="Pin On Employers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/59/97/d65997c70485d27d7991f7bafa1e71da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTVKoIZlJXiilGgFFiSKX_FAblfEkld5a_MQ';" alt="Pin On Employers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Employers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/cb/cf/18cbcf8ea2b8419b941f0dfd8858daa9.jpg" data-lightbox="roadtrip" data-title="Pin On Employers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/cb/cf/18cbcf8ea2b8419b941f0dfd8858daa9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Mu4kySrcMKc039gM58oaoXt4mWgeSueUbA';" alt="Pin On Employers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Employers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Q4mUGb9S99ueGM" data-lightbox="roadtrip" data-title="Http Johngoldhamer Com Workshops 12 Good Causes For Leaving A Job And Receiving Virginia Unemployment Pdf">
+											<img class="card-img v-image ads-img " src="Q4mUGb9S99ueGM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY9Tq51hbf_PKuTxNmC1o-o_GXa7cCQi_6MQ';" alt="Http Johngoldhamer Com Workshops 12 Good Causes For Leaving A Job And Receiving Virginia Unemployment Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Johngoldhamer Com Workshops 12 Good Causes For Leaving A Job And Receiving Virginia Unemployment Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="UPBDrDaDwaLlfM" data-lightbox="roadtrip" data-title="Https Www License Dhp Virginia Gov Apply Forms Dentistry Denhyg Instrforms Pdf">
+											<img class="card-img v-image ads-img " src="UPBDrDaDwaLlfM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD80XIgU4F-RjZPzWTRTq3bEj5oX7wMOjvOg';" alt="Https Www License Dhp Virginia Gov Apply Forms Dentistry Denhyg Instrforms Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www License Dhp Virginia Gov Apply Forms Dentistry Denhyg Instrforms Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-total-unemployability.html">Va Total Unemployability</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-exam.html">Va Tdiu Exam</a></li>
+													<li class="list-group-item"><a href="/va-total-rating-calculator.html">Va Total Rating Calculator</a></li>
+													<li class="list-group-item"><a href="/va-tech-gi-bill.html">Va Tech Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-jobs.html">Va Tdiu Jobs</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-claim-denied.html">Va Tdiu Claim Denied</a></li>
+													<li class="list-group-item"><a href="/va-total-and-permanent-disability-meaning.html">Va Total And Permanent Disability Meaning</a></li>
+													<li class="list-group-item"><a href="/va-tension-headache-rating.html">Va Tension Headache Rating</a></li>
+													<li class="list-group-item"><a href="/va-title-38-pay-scale.html">Va Title 38 Pay Scale</a></li>
+													<li class="list-group-item"><a href="/va-tech-star-rating-system.html">Va Tech Star Rating System</a></li>
+													<li class="list-group-item"><a href="/va-tech-ssd.html">Va Tech Ssd</a></li>
+													<li class="list-group-item"><a href="/va-to-end-iu.html">Va To End Iu</a></li>
+													<li class="list-group-item"><a href="/va-tinnitus-and-insomnia.html">Va Tinnitus And Insomnia</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-claim-form.html">Va Tdiu Claim Form</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-pt.html">Va Tdiu Pt</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-benefits-for-spouse.html">Va Tdiu Benefits For Spouse</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-social-security-disability.html">Va Tdiu Social Security Disability</a></li>
+													<li class="list-group-item"><a href="/va-tdiu-qualifications.html">Va Tdiu Qualifications</a></li>
+													<li class="list-group-item"><a href="/va-tinnitus-claim.html">Va Tinnitus Claim</a></li>
+													<li class="list-group-item"><a href="/va-tech-yellow-ribbon-program.html">Va Tech Yellow Ribbon Program</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

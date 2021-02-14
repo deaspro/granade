@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Beach Va Inmate Search - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Beach Va Inmate Search",
+  "datePublished": "2021-02-14",
+  "image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158451985751740",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+beach+va+inmate+search",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Beach Va Inmate Search</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It begins when they are arrested and intake documents are filled out and filed under their specific ID. Federal Virginia State and local Virginia Beach prison systems are required to document all prisoners and public inmate records on every incarcerated person. All incoming and outgoing inmate mail is subject to inspection and may be opened and searched prior to delivery to the inmate. <br>				
+			</p>
+										<a class="badge badge-dark" href="/va-unemployment-lawsuit.html">va unemployment lawsuit</a>
+											<a class="badge badge-dark" href="/va-unemployment-customer-service-live-person.html">va unemployment customer service live person</a>
+											<a class="badge badge-warning" href="/va-unemployment-commission-address.html">va unemployment commission address</a>
+											<a class="badge badge-dark" href="/va-unemployment-benefits-for-furloughed-employees.html">va unemployment benefits for furloughed employees</a>
+											<a class="badge badge-danger" href="/va-unemployment-address-change.html">va unemployment address change</a>
+											<a class="badge badge-light" href="/va-unemployment-call-center-number.html">va unemployment call center number</a>
+											<a class="badge badge-dark" href="/va-unemployment-benefits-card.html">va unemployment benefits card</a>
+											<a class="badge badge-warning" href="/va-unemployment-insurance-rate.html">va unemployment insurance rate</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the ideal site.  Our site provides you with hints for seeing the maximum quality video and image content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d3blhdga6ro23n.cloudfront.net/uploads/prison_photo/image/7455/web_Virginia_Beach_Correctional_Center.jpg" data-lightbox="roadtrip" data-title="Virginia Beach Correctional Center Inmate Locator">
+											<img class="card-img v-image ads-img " src="https://d3blhdga6ro23n.cloudfront.net/uploads/prison_photo/image/7455/web_Virginia_Beach_Correctional_Center.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsMn4-KW3BpN__GKKKqIwQv_7yXpM1pYWI1A';" alt="Virginia Beach Correctional Center Inmate Locator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Correctional Center Inmate Locator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vbso.net/_assets/Jail/AboutVBCC.JPG" data-lightbox="roadtrip" data-title="Virginia Beach Sheriff S Office">
+											<img class="card-img v-image ads-img " src="https://www.vbso.net/_assets/Jail/AboutVBCC.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp62o09B0gqmhS0F_1wp1CG7CSk1JoJhADXg';" alt="Virginia Beach Sheriff S Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Sheriff S Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d3blhdga6ro23n.cloudfront.net/uploads/prison_photo/image/4176/web_14197.jpg" data-lightbox="roadtrip" data-title="Virginia Beach Va Police Jail Inmate Search Virginia Beach Va">
+											<img class="card-img v-image ads-img " src="https://d3blhdga6ro23n.cloudfront.net/uploads/prison_photo/image/4176/web_14197.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZSapESgKE3fZjF36FGUd6183AFeXusUGClQ';" alt="Virginia Beach Va Police Jail Inmate Search Virginia Beach Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Va Police Jail Inmate Search Virginia Beach Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vbso.net/_assets/Jail/Visitation-Map.PNG" data-lightbox="roadtrip" data-title="Virginia Beach Sheriff S Office">
+											<img class="card-img v-image ads-img " src="https://www.vbso.net/_assets/Jail/Visitation-Map.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ZEPcX6aVak9lnhiVOYbWeSj51GUDH-r1Cg';" alt="Virginia Beach Sheriff S Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Sheriff S Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://prisonfinder.org/uploads/resized/525_421/prisons/15290-virginia-beach-correctional-center.jpg" data-lightbox="roadtrip" data-title="Virginia Beach Correctional Center Inmate Search Mugshots Visitation Phone No Mailing Information">
+											<img class="card-img v-image ads-img " src="https://prisonfinder.org/uploads/resized/525_421/prisons/15290-virginia-beach-correctional-center.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaE0ck79KUgFErCQMw4LDDMkeao9O3iwE8Yg';" alt="Virginia Beach Correctional Center Inmate Search Mugshots Visitation Phone No Mailing Information">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Correctional Center Inmate Search Mugshots Visitation Phone No Mailing Information</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wric.com/wp-content/uploads/sites/74/2020/04/DamG9WCXcAAXAYN_1523559120221_39782010_ver1.0.jpg?w=1280" data-lightbox="roadtrip" data-title="Virginia Beach Putting Homeless In Hotels To Blunt Virus 8news">
+											<img class="card-img v-image ads-img " src="https://www.wric.com/wp-content/uploads/sites/74/2020/04/DamG9WCXcAAXAYN_1523559120221_39782010_ver1.0.jpg?w=1280" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqMWZkNq3z1qS7P1KTRgvP0y2pe3ciCYRXTg';" alt="Virginia Beach Putting Homeless In Hotels To Blunt Virus 8news">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Putting Homeless In Hotels To Blunt Virus 8news</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/53/22/6c/53226c3ecb591ff0b05841e81e21478a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqMWZkNq3z1qS7P1KTRgvP0y2pe3ciCYRXTg';" alt="Virginia Beach Putting Homeless In Hotels To Blunt Virus 8news">
+										<div class="card-body">
+						<h3 class="h5"><b>About The Sheriffs Office.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia beach va inmate search</strong>. 
+								
+																	Under the leadership of Sheriff Ken Stolle the 500 appointees of the Virginia Beach Sheriffs Office work for the public safety and betterment of Virginia Beach by operating the Correctional Center providing Courthouse security serving civil paperwork and volunteering in the community. 
+																	Under the dictates of security and safety all regulations of this jail are designed to promote efficiency cooperation and safety. 
+																	Virginia Beach City County holds 0 jails with a total of 308537 inmates. 
+																	Navigate to VADOC inmate search page - Link. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You will need to know their first and last name in order to get their number. 
+																	Virginia Incarceration Stats for Federal State and Local Jail Jurisdiction. 
+																	And our duties extend beyond the day-to-day operations of the correctional center. 
+																	Then everything that happens to them after is kept in the file. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Offender Locator Search for an offenders location and release date if they are incarcerated and under the custody of the Virginia Department of Corrections VADOC. 
+																	Largest Database of Virginia Mugshots. 
+																	A Virginia Beach Inmate Search provides detailed information about a current or former inmate in Virginia Beach Virginia. 
+																	- OR - Option 2. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enter inmate name id age gender and date of birth in the required fields. 
+																	You can search the inmate database by selecting an identifier from the drop down list or entering a value in the field provided. 
+																	For all searches you will be required to enter. 
+																	Virginia Beach There are 3 Jails Prisonsin Virginia Beach Virginia serving a population of 450057 peoplein an area of 250 square miles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to Lookup a Phone Number. 
+																	Virginia Beach Correctional Center Inmate Search. 
+																	2509 Princess Anne Road Virginia Beach VA 23456. 
+																	Virginia Beach City Jail inmate search. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is why it is important to use inmate services to make things easy. 
+																	Security is a top priority. 
+																	Virginia Beach Inmate Searches provide information about current and former inmates incarcerated in Virginia Beach Virginia Beach Virginia State and Federal prisons. 
+																	Learn how to conduct business with the Virginia Department of Corrections by reviewing our procurement procedures. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia jail inmate search records are the paperwork that follows an inmate through the penal system. 
+																	The process for searching for a Virginia state prison inmate is very simple. 
+																	Offenders who are not under VADOC custody will not appear in the search results. 
+																	The Virginia Beach Correctional Center VBCC is designed to house inmates awaiting trial inmates serving local sentences and convicted inmates awaiting transfer to a state penitentiary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Box 6098 Virginia Beach Virginia 23456. 
+																	Jails and Prisons in Virginia Beach are required to keep public records on all prisoners who have been incarcerated at their facilities. 
+																	Search arrest records and find latests mugshots and bookings for Misdemeanors and Felonies. 
+																	2501 James Madison Blvd. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Incarceration is difficult for families and inmates. 
+																	The facility comes equipped with 3 squares of 15 beds and one square of 6 beds. 
+																	There is 1 Jail Prison per 150019 people and 1 Jail Prison per 83 square miles. 
+																	To search for an inmate in VADOC follow the steps given below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once you have their number you can then send them mail have them call you and even visit with them. 
+																	Virginia Beach Correctional Center. 
+																	Virginia Bonding Program Learn more about how the Virginia Bonding Program can help hard-to-place job seekers find stable employment and how employers can use the Virginia Bonding Program to gain peace of mind in their hiring process. 
+																	Virginia Beach VA 23456. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Inmate Name and OMS Virginia Beach Correctional Facility PO. 
+																	To search for an inmate in Virginia Beach Police Jail you can use Pigeonly Prison Locator Service. 
+																	All legal mail will be opened and inspected in the presence of the inmate. 
+																	Follow the instructions below to look up someone incarcerated in a Virginia state prison. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click on Submit button. 
+																	The Virginia Beach City Jail has a way in which you can call the prison and ask if an inmate is there or not. 
+																	State prison lookups can vary depending on locale. 
+																	Virginia Beach City County Inmate Search Search Virginia Beach City County VA Inmate Records Virginia Beach City County VA jails hold prisoners after an arrest or people who have been transferred to the county from a detention center. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VADOC manages and operates all the state prison in Virginia. 
+																	You can search the inmate database by entering the first and last name in the text boxes provided. 
+																	Jail Roster Bond Arrests Release Date Whos in jail Last Name Bookings Degree Level Degree Booking Date Warrant State of Charge Mugshots. 
+																	The Virginia Department of Corrections has an inmate locator feature right on their website and they keep all inmate records online and searchable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free Virginia Inmate Lookup DOC Inmate Locator Virginia Inmate Search Guide Find inmates incarcerated in Virginia VA State prisons Federal prison County jails and the Virginia Department of Corrections VA DOC system. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/22/6c/53226c3ecb591ff0b05841e81e21478a.jpg" data-lightbox="roadtrip" data-title="Pin On Va Beach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/22/6c/53226c3ecb591ff0b05841e81e21478a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkZfycFyzaRyIuPA9sKyo-JuHOmsKcxtBSGg';" alt="Pin On Va Beach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va Beach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vbgov.com/government/departments/human-services/social-services/PublishingImages/JDCOct2009.jpg" data-lightbox="roadtrip" data-title="Juvenile Detention Center Vbgov Com City Of Virginia Beach">
+											<img class="card-img v-image ads-img " src="https://www.vbgov.com/government/departments/human-services/social-services/PublishingImages/JDCOct2009.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq_qzVspHnQr7yHDew907e_yGJcgozetubkw';" alt="Juvenile Detention Center Vbgov Com City Of Virginia Beach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Juvenile Detention Center Vbgov Com City Of Virginia Beach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vbso.net/_assets/PressReleases/45th-basic-academy.jpg" data-lightbox="roadtrip" data-title="Virginia Beach Sheriff S Office">
+											<img class="card-img v-image ads-img " src="https://www.vbso.net/_assets/PressReleases/45th-basic-academy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmQI1Ni8cOS8csie4GfXd3Scvqb445ILaPYw';" alt="Virginia Beach Sheriff S Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Sheriff S Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vbso.net/_assets/PressReleases/badge2.jpg" data-lightbox="roadtrip" data-title="Virginia Beach Sheriff S Office">
+											<img class="card-img v-image ads-img " src="https://www.vbso.net/_assets/PressReleases/badge2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPt5vxMoeQkKYnPAKtZ9K9VN6de7ezqJTZBg';" alt="Virginia Beach Sheriff S Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Sheriff S Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vbso.net/_assets/PressReleases/BAC4619-News.JPG" data-lightbox="roadtrip" data-title="Virginia Beach Sheriff S Office">
+											<img class="card-img v-image ads-img " src="https://www.vbso.net/_assets/PressReleases/BAC4619-News.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5wsdKLmu67a5T4iQtbyluEvxbBKTHdqRUTA';" alt="Virginia Beach Sheriff S Office">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Sheriff S Office</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/cb/e1/67cbe1cafd9b7bc4510f3f2aa877c5fa.jpg" data-lightbox="roadtrip" data-title="Barboursville Ruins Virginia Is For Lovers Places To See Places To Go">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/cb/e1/67cbe1cafd9b7bc4510f3f2aa877c5fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReO6lRURh1T-4phrzVLqFlkC7GNPmytEsObQ';" alt="Barboursville Ruins Virginia Is For Lovers Places To See Places To Go">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barboursville Ruins Virginia Is For Lovers Places To See Places To Go</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pilotonline.com/resizer/nfQJsN1qyYHuqVKYJndUmf8kQRU=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/OXEOQDL3DNF6DIN6BYKO4WJPGY.jpg" data-lightbox="roadtrip" data-title="Original Chef Of Virginia Beach S The Landing Will Return Open New Farm To Table Restaurant The Virginian Pilot">
+											<img class="card-img v-image ads-img " src="https://www.pilotonline.com/resizer/nfQJsN1qyYHuqVKYJndUmf8kQRU=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/OXEOQDL3DNF6DIN6BYKO4WJPGY.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4dGtH2QyLSDJ3vi6CGI-vCh75UEVVyHWnug';" alt="Original Chef Of Virginia Beach S The Landing Will Return Open New Farm To Table Restaurant The Virginian Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Original Chef Of Virginia Beach S The Landing Will Return Open New Farm To Table Restaurant The Virginian Pilot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/41/83/314183f7e2d26e5c5b034d1d94ce0c56.jpg" data-lightbox="roadtrip" data-title="The Old Peppermint Beach Club Virginia Beach Va Early 70 S Virginia Beach Va Virginia History Beach Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/41/83/314183f7e2d26e5c5b034d1d94ce0c56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuFHXhLSIt0ZH2tbK3xAxL0hg_9cPtjXiUXA';" alt="The Old Peppermint Beach Club Virginia Beach Va Early 70 S Virginia Beach Va Virginia History Beach Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Old Peppermint Beach Club Virginia Beach Va Early 70 S Virginia Beach Va Virginia History Beach Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pilotonline.com/resizer/IhEZOqiyQHG6x9-UTTVLOXzhong=/fit-in/800x533/smart/filters:fill(black)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/NXQDCKLWT5BXJAC6OAZ2XPOPSM.jpg" data-lightbox="roadtrip" data-title="New Veterans Care Center Planned For Virginia Beach Will Be The First Of Its Kind In Hampton Roads The Virginian Pilot">
+											<img class="card-img v-image ads-img " src="https://www.pilotonline.com/resizer/IhEZOqiyQHG6x9-UTTVLOXzhong=/fit-in/800x533/smart/filters:fill(black)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/NXQDCKLWT5BXJAC6OAZ2XPOPSM.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0FVgAyh-DkR7JLPdjRsDlPQWQLzwCjFQC4Q';" alt="New Veterans Care Center Planned For Virginia Beach Will Be The First Of Its Kind In Hampton Roads The Virginian Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Veterans Care Center Planned For Virginia Beach Will Be The First Of Its Kind In Hampton Roads The Virginian Pilot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vbgov.com/government/departments/police/pd%20homepage/Houston%20sm.png" data-lightbox="roadtrip" data-title="Police Vbgov Com City Of Virginia Beach">
+											<img class="card-img v-image ads-img " src="https://www.vbgov.com/government/departments/police/pd%20homepage/Houston%20sm.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-T-1x5zbxDGh_NHqeFnv1Ct9722t9Ghg8mQ';" alt="Police Vbgov Com City Of Virginia Beach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Police Vbgov Com City Of Virginia Beach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pilotonline.com/resizer/4Dl_ZYMK5uiImV5tKt00jKYkMRU=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/WSSTKYESX5C3VMCJDIQP3HNK5Q.jpg" data-lightbox="roadtrip" data-title="Cavalier Oceanfront Hotel To Be Demolished The Virginian Pilot">
+											<img class="card-img v-image ads-img " src="https://www.pilotonline.com/resizer/4Dl_ZYMK5uiImV5tKt00jKYkMRU=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/WSSTKYESX5C3VMCJDIQP3HNK5Q.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbwAjXFGC_gPtRAgo66jRFW4EThzj0LLvkOA';" alt="Cavalier Oceanfront Hotel To Be Demolished The Virginian Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cavalier Oceanfront Hotel To Be Demolished The Virginian Pilot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/04/7f/19047fb0b8d993e7a9b0936781433461.jpg" data-lightbox="roadtrip" data-title="Pin On Convictions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/04/7f/19047fb0b8d993e7a9b0936781433461.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMN6Q40AKlm45MCMddZFT4P1jIORdvSe7OjQ';" alt="Pin On Convictions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Convictions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158451985751740" data-lightbox="roadtrip" data-title="Virginia Beach Police Department Posts Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158451985751740" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnGW4R9hBEHMt0i-vOgg3WxonRCezvmnA0A';" alt="Virginia Beach Police Department Posts Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Beach Police Department Posts Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-division-is-wheaton-college-womens-basketball.html">What Division Is Wheaton College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/what-did-neil-armstrong-go-to-college-for.html">What Did Neil Armstrong Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-do-the-irish-army-rangers-do.html">What Do The Irish Army Rangers Do</a></li>
+													<li class="list-group-item"><a href="/what-did-kanye-go-to-college-for.html">What Did Kanye Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-direction-is-the-military-base-in-dayz-standalone.html">What Direction Is The Military Base In Dayz Standalone</a></li>
+													<li class="list-group-item"><a href="/what-departments-are-in-homeland-security.html">What Departments Are In Homeland Security</a></li>
+													<li class="list-group-item"><a href="/what-department-stores-have-military-discount.html">What Department Stores Have Military Discount</a></li>
+													<li class="list-group-item"><a href="/what-do-need-to-go-to-college.html">What Do Need To Go To College</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-of-rights-provide.html">What Did The Gi Bill Of Rights Provide</a></li>
+													<li class="list-group-item"><a href="/what-do-gi-bill-mean.html">What Do Gi Bill Mean</a></li>
+													<li class="list-group-item"><a href="/what-do-military-lawyers-do.html">What Do Military Lawyers Do</a></li>
+													<li class="list-group-item"><a href="/what-do-i-do-if-my-husband-is-depressed.html">What Do I Do If My Husband Is Depressed</a></li>
+													<li class="list-group-item"><a href="/what-did-gi-stand-for.html">What Did Gi Stand For</a></li>
+													<li class="list-group-item"><a href="/what-did-aaron-rodgers-go-to-college-for.html">What Did Aaron Rodgers Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-do.html">What Did The Gi Bill Do</a></li>
+													<li class="list-group-item"><a href="/what-do-i-need-to-get-into-college.html">What Do I Need To Get Into College</a></li>
+													<li class="list-group-item"><a href="/what-day-of-week-is-state-pension-paid.html">What Day Of Week Is State Pension Paid</a></li>
+													<li class="list-group-item"><a href="/what-department-is-the-army-corps-of-engineers.html">What Department Is The Army Corps Of Engineers</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-do-for-many-returning-world-war-ii-veterans.html">What Did The Gi Bill Do For Many Returning World War Ii Veterans</a></li>
+													<li class="list-group-item"><a href="/what-do-college-graduates-want-for-gifts.html">What Do College Graduates Want For Gifts</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

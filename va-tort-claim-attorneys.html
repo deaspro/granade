@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Tort Claim Attorneys - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Tort Claim Attorneys",
+  "datePublished": "2021-02-14",
+  "image": "https://militarymedicalmalpractice.net/wp-content/uploads/2020/08/hd-logo.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+tort+claim+attorneys",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Tort Claim Attorneys</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Archuleta Law Firm has Attorneys and Medical Professionals on staff to help you and your family. Are you wondering whether you can even go after the VA for malpractice. Complete FTCA tort claim form Standard Form 95 with the help of an experienced FTCA attorney. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/veterans-preference-lawsuit.html">veterans preference lawsuit</a>
+											<a class="badge badge-success" href="/veterans-page-of-archivesgov.html">veterans page of archivesgov</a>
+											<a class="badge badge-info" href="/veterans-jobless-benefits.html">veterans jobless benefits</a>
+											<a class="badge badge-info" href="/veterans-pay-dates-2019.html">veterans pay dates 2019</a>
+											<a class="badge badge-dark" href="/veterans-job-placement-programs.html">veterans job placement programs</a>
+											<a class="badge badge-light" href="/veterans-lawyer-san-diego.html">veterans lawyer san diego</a>
+											<a class="badge badge-info" href="/veterans-ptsd-australia.html">veterans ptsd australia</a>
+											<a class="badge badge-success" href="/veterans-pay-chart-for-2020.html">veterans pay chart for 2020</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the right blog.  Our site provides you with hints for seeing the maximum quality video and picture content, search and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this video for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.shaperoroloff.com/wp-content/uploads/sites/63/2018/01/Shapero.png" data-lightbox="roadtrip" data-title="Attorneys For Federal Tort Claims Shapero Roloff Co L P A">
+											<img class="card-img v-image ads-img " src="https://www.shaperoroloff.com/wp-content/uploads/sites/63/2018/01/Shapero.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-PSuplwknkDC-3281QVkpOvbnB2tL5WJ8Ow';" alt="Attorneys For Federal Tort Claims Shapero Roloff Co L P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attorneys For Federal Tort Claims Shapero Roloff Co L P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/86/36/e186362d53e3006b3154c83d7bac6689.png" data-lightbox="roadtrip" data-title="Personal Injury Lawyer Portland Oregon Top Rated Best 100 List In Or Personal Injury Lawyer Port Personal Injury Lawyer Injury Lawyer Personal Injury Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/86/36/e186362d53e3006b3154c83d7bac6689.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTDKJA5WuqLM5emweVbxqlOPFEhJac5y_Wyg';" alt="Personal Injury Lawyer Portland Oregon Top Rated Best 100 List In Or Personal Injury Lawyer Port Personal Injury Lawyer Injury Lawyer Personal Injury Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Personal Injury Lawyer Portland Oregon Top Rated Best 100 List In Or Personal Injury Lawyer Port Personal Injury Lawyer Injury Lawyer Personal Injury Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/29/e2/d0/29e2d0b19997c2f54b7c63e7226350d5.jpg" data-lightbox="roadtrip" data-title="Here Is Your Friday Dose Of Legal Humor Legal Humor Lawyer Humor Lawyer Jokes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/29/e2/d0/29e2d0b19997c2f54b7c63e7226350d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmp8Kb0XqccOLaVSyvWMyTk5PqmU_W13QS2g';" alt="Here Is Your Friday Dose Of Legal Humor Legal Humor Lawyer Humor Lawyer Jokes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Is Your Friday Dose Of Legal Humor Legal Humor Lawyer Humor Lawyer Jokes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2018/04/VA-1151-VS-TORT-THUMBNAIL.jpg" data-lightbox="roadtrip" data-title="The Difference Between Federal Tort Claims And Va 1151 Claims Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2018/04/VA-1151-VS-TORT-THUMBNAIL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8WUIxSpdTe7jyufT2u5AfN5znDbJHl2GDRQ';" alt="The Difference Between Federal Tort Claims And Va 1151 Claims Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Difference Between Federal Tort Claims And Va 1151 Claims Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gentrylocke.com/wp-content/uploads/2014/12/Stephenson2020_1024x1024_Reduced.png" data-lightbox="roadtrip" data-title="Scott A Stephenson Associate Gentry Locke Attorneys">
+											<img class="card-img v-image ads-img " src="https://www.gentrylocke.com/wp-content/uploads/2014/12/Stephenson2020_1024x1024_Reduced.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzq9mSTl2O0k9TP5l5NtDBbk6tpmJE-hwvQ';" alt="Scott A Stephenson Associate Gentry Locke Attorneys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scott A Stephenson Associate Gentry Locke Attorneys</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://phelanpetty.com/wp-content/uploads/2020/10/Phelan-Petty-Trial-Attorneys.jpg" data-lightbox="roadtrip" data-title="Richmond Personal Injury Lawyers Accident Attorneys Virginia">
+											<img class="card-img v-image ads-img " src="https://phelanpetty.com/wp-content/uploads/2020/10/Phelan-Petty-Trial-Attorneys.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnMDpJgOM5nVN58zol66sZysWC-OopXS8GCg';" alt="Richmond Personal Injury Lawyers Accident Attorneys Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Richmond Personal Injury Lawyers Accident Attorneys Virginia</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.hillandponton.com/wp-content/uploads/2018/04/VA-1151-VS-TORT-THUMBNAIL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnMDpJgOM5nVN58zol66sZysWC-OopXS8GCg';" alt="Richmond Personal Injury Lawyers Accident Attorneys Virginia">
+										<div class="card-body">
+						<h3 class="h5"><b>For representing you in a lawsuit an attorney can charge you no more than 25 of the damages you are ultimately awarded.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va tort claim attorneys</strong>. 
+								
+																	Veterans Affairs Medical Malpractice Brain Injury 1432118 received by clients with lifetime benefits 500000 attorneys fees 67227 litigation expenses Richardson v. 
+																	The main objective is to receive compensation for any injuries sustained because of negligence. 
+																	Our Veterans Affairs medical malpractice lawyers can help if your family has been the victim of medical malpractice at a Veterans Affairs medical facility. 
+																	If you or a family member has suffered a serious injury as a result of the negligence by a federal employee at a VA hospital or clinic then your case may fall under the Federal Tort Claims Act. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Federal Tort Claims Actoverview. 
+																	If you are looking for an attorney to handle a federal tort claim case our firm would be happy to work with you. 
+																	Veterans Affairs Medical Malpractice When a doctor nurse or other medical professional at the VA commits negligence you can sue under the Federal Tort Claims Act. 
+																	Medical Malpractice Lawyers Federal Tort Claims Act. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youre protected by a law known as the Federal Tort Claims Act FTCA. 
+																	United States Audie Murphy VA Hospital Our client was on the telemetry floor of the hospital. 
+																	Veterans who receive care at VA medical centers may experience medical errors or substandard medical treatment. 
+																	An experienced attorney may want to hire experts to evaluate your case and to estimate your future medical needs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This includes VA hospitals clinics out-patient services and more. 
+																	Federal Tort Claims Act 14600 Federal Tort Claims Actgeneral. 
+																	The attorneys at Potomac MDs Shulman Rogers have been representing clients in Federal Tort Claims Act FTCA cases for more than 40 years. 
+																	Federal Tort Claims Act. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Federal Tort Claims Act 28 USC. 
+																	In limited instances it may be appropriate to consider whether or not the conduct of the medical experts was so far below the standard of care that a medical malpractice or medical negligence case can be maintained against the United States. 
+																	And there have to be very real damages. 
+																	VA Tort claims are extremely complex extremely expensive and resource-intensive cases that often require the assistance of attorneys that have a LOT of experience handling medical malpractice claims. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have been the victim of medical malpractice or negligence in a veterans hospital in an accident with a government vehicle or injured by a government employee you may be eligible to file for. 
+																	For example if a negligent VA maintenance worker leaves a wrench on the stairs in a VA medical center and a veteran trips on the wrench resulting in injury compensatory relief is. 
+																	For helping you win an administrative FTCA claim with the VA an attorney can charge you no more than 20 of the monetary award the VA gives you. 
+																	If you have any questions please contact the Torts Law Group at 202 461-4900. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A lot of VA Accredited Attorneys most in fact do not take these types of cases. 
+																	A Federal Tort claim is a lawsuit against the VA and applies to any situation in which a VA employee acting on behalf of the VA is negligent and causes injury. 
+																	An example of a Federal Tort Claim case would be if there was medical malpractice at a VA Hospital or a federal employee eg. 
+																	The FTCA allows you to file a claim against VA medical centers for poor treatment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Attorneys and support staffing handling Federal tort claims work for the Federal government and cannot provide legal advice with respect to the filing andor adjudication of tort claims against VA or the United States. 
+																	1291 1346 1402 2401 2402 2411 2412 and 2671 through 2680 prescribes a uniform procedure for handling of claims against the United States for money only on account of damage to or loss of property or on account of personal injury or death. 
+																	A USPS employee driving a postal truck who caused a car accident. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nationaltriallaw.com/wp-content/uploads/2017/08/Higginbotham-e1505917429235.png" data-lightbox="roadtrip" data-title="Laurie M Higginbotham Federal Tort Attorney National Trial Law">
+											<img class="card-img v-image ads-img " src="https://nationaltriallaw.com/wp-content/uploads/2017/08/Higginbotham-e1505917429235.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyJOkOaMqY0Us86eA3MuZbeAqRM6IcF3Xs-Q';" alt="Laurie M Higginbotham Federal Tort Attorney National Trial Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Laurie M Higginbotham Federal Tort Attorney National Trial Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e8/f5/82/e8f582438c0b442c50d5224dcb2553d1.jpg" data-lightbox="roadtrip" data-title="Phobias You Might Have And Not Even Know It Liticaphobia Scholarships For College This Or That Questions Attorneys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e8/f5/82/e8f582438c0b442c50d5224dcb2553d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUrVDBR9sFBVNQO_NHkugRx2N0KdVIIhetA';" alt="Phobias You Might Have And Not Even Know It Liticaphobia Scholarships For College This Or That Questions Attorneys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phobias You Might Have And Not Even Know It Liticaphobia Scholarships For College This Or That Questions Attorneys</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarymedicalmalpractice.net/wp-content/uploads/2020/08/hd-logo.png" data-lightbox="roadtrip" data-title="Federal Tort Claims Act Medical Malpractice 800 798 9529">
+											<img class="card-img v-image ads-img " src="https://militarymedicalmalpractice.net/wp-content/uploads/2020/08/hd-logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4gFdxnCYPyvWMLsNhJUe3RW5Sj18Fm34FZg';" alt="Federal Tort Claims Act Medical Malpractice 800 798 9529">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Federal Tort Claims Act Medical Malpractice 800 798 9529</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nationaltriallaw.com/wp-content/uploads/2017/08/VA_hospital.png" data-lightbox="roadtrip" data-title="Va Lawyers Veterans Medical Malpractice Attorneys National Trial Law">
+											<img class="card-img v-image ads-img " src="https://nationaltriallaw.com/wp-content/uploads/2017/08/VA_hospital.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4LPA5BxKcSszmrXBsVU5shhS9vZZ2U8vDew';" alt="Va Lawyers Veterans Medical Malpractice Attorneys National Trial Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Lawyers Veterans Medical Malpractice Attorneys National Trial Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gentrylocke.com/wp-content/uploads/2019/11/Leeson_1024x1024_Reduced.png" data-lightbox="roadtrip" data-title="Todd A Leeson Partner Gentry Locke Attorneys">
+											<img class="card-img v-image ads-img " src="https://www.gentrylocke.com/wp-content/uploads/2019/11/Leeson_1024x1024_Reduced.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAWcA4AGKbwYWqlAHpst3f6X6dtd2wh0L2-w';" alt="Todd A Leeson Partner Gentry Locke Attorneys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Todd A Leeson Partner Gentry Locke Attorneys</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/92/41/6f/92416f8712302a19a40361569b528a1b.jpg" data-lightbox="roadtrip" data-title="Five Hgd Attorneys Selected To 2018 Mid South Super Lawyers List Attorneys Law Firm Garrison">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/92/41/6f/92416f8712302a19a40361569b528a1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaD_uQrbSaLF905O72c_9nzCJGM8wmVjAkJw';" alt="Five Hgd Attorneys Selected To 2018 Mid South Super Lawyers List Attorneys Law Firm Garrison">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Five Hgd Attorneys Selected To 2018 Mid South Super Lawyers List Attorneys Law Firm Garrison</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="q5-MlP4cPkzmWM" data-lightbox="roadtrip" data-title="Https Www Va Gov Ogc Docs Accred Howtoapplyforaccreditation Pdf">
+											<img class="card-img v-image ads-img " src="q5-MlP4cPkzmWM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3QEwpxX16IlC1R3MWlRLlZ16HB9PKY8ZWFg';" alt="Https Www Va Gov Ogc Docs Accred Howtoapplyforaccreditation Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Ogc Docs Accred Howtoapplyforaccreditation Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vadisabilitygroup.com/wp-content/uploads/2019/05/va-disability-law-firm-lawyers.png" data-lightbox="roadtrip" data-title="San Francisco Veterans Disability Benefit Claims Attorneys Va Disability Group">
+											<img class="card-img v-image ads-img " src="https://vadisabilitygroup.com/wp-content/uploads/2019/05/va-disability-law-firm-lawyers.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRosUNvTdT9VEsHdAmJ8jIi12CG0lfwovG8vQ';" alt="San Francisco Veterans Disability Benefit Claims Attorneys Va Disability Group">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">San Francisco Veterans Disability Benefit Claims Attorneys Va Disability Group</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.miraclelaw.com/wp-content/uploads/sites/1301766/2021/01/og-image-600-315.jpg" data-lightbox="roadtrip" data-title="Wmxxgpboriwwcm">
+											<img class="card-img v-image ads-img " src="https://www.miraclelaw.com/wp-content/uploads/sites/1301766/2021/01/og-image-600-315.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWERsXArihUAZAD5S1MxibHK9BBtjI0NoMLA';" alt="Wmxxgpboriwwcm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wmxxgpboriwwcm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/dd/8c/1e/dd8c1e3cbd15260b79f40514698df397.jpg" data-lightbox="roadtrip" data-title="How Are Personal Injury Cases Handled In The State Of Tennessee Personal Injury Lawyers Usattorneys Com Personal Injury Lawyer Personal Injury Injury Lawyer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/dd/8c/1e/dd8c1e3cbd15260b79f40514698df397.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReTR-2TzNqacd72JSK4y2jdFGZgvXsdIjwKQ';" alt="How Are Personal Injury Cases Handled In The State Of Tennessee Personal Injury Lawyers Usattorneys Com Personal Injury Lawyer Personal Injury Injury Lawyer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Are Personal Injury Cases Handled In The State Of Tennessee Personal Injury Lawyers Usattorneys Com Personal Injury Lawyer Personal Injury Injury Lawyer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.forthepeople.com/sites/default/files/styles/max_325x325/public/wp-content/uploads/2017/03/file-2651470942.jpg?itok=DErE6Cne" data-lightbox="roadtrip" data-title="Bad Faith Insurance Claim Lawyers Morgan Morgan Law Firm">
+											<img class="card-img v-image ads-img " src="https://www.forthepeople.com/sites/default/files/styles/max_325x325/public/wp-content/uploads/2017/03/file-2651470942.jpg?itok=DErE6Cne" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlv6FA82ZnXDEdRXfw4Wt5WADleSlJeQiJkA';" alt="Bad Faith Insurance Claim Lawyers Morgan Morgan Law Firm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bad Faith Insurance Claim Lawyers Morgan Morgan Law Firm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.legalzoom.com/sites/lz.com/files/articles/man-suit-reviews-case-paperwork.jpg" data-lightbox="roadtrip" data-title="How To Sue Your Lawyer Legalzoom Com">
+											<img class="card-img v-image ads-img " src="https://www.legalzoom.com/sites/lz.com/files/articles/man-suit-reviews-case-paperwork.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ15eZeML77QlfA8BLhEKL75S5wsVW-XpbKXw';" alt="How To Sue Your Lawyer Legalzoom Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Sue Your Lawyer Legalzoom Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nationaltriallaw.com/wp-content/uploads/2017/08/medical_malpractice.png" data-lightbox="roadtrip" data-title="Medical Malpractice Attorneys Law Firm National Trial Law">
+											<img class="card-img v-image ads-img " src="https://nationaltriallaw.com/wp-content/uploads/2017/08/medical_malpractice.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZo6lm0yyU70GMXBffAjngcW5ZIPzW5C0hg';" alt="Medical Malpractice Attorneys Law Firm National Trial Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medical Malpractice Attorneys Law Firm National Trial Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.woodslawyers.com/wp-content/uploads/2017/12/VeteransDisabilityLawyers-300x169.png" data-lightbox="roadtrip" data-title="Federal Tort Claims Act Lawyer Ftca Lawsuits Attorney Woods Woods">
+											<img class="card-img v-image ads-img " src="https://www.woodslawyers.com/wp-content/uploads/2017/12/VeteransDisabilityLawyers-300x169.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6OhBXl5ccis0FTRhhh0P_aPa5r7uKPz9Elg';" alt="Federal Tort Claims Act Lawyer Ftca Lawsuits Attorney Woods Woods">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Federal Tort Claims Act Lawyer Ftca Lawsuits Attorney Woods Woods</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://44y1yk3kb8hh1j7z7d4691v5-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/pb-logos-mobile_d.jpg" data-lightbox="roadtrip" data-title="Virginia Injury Lawyer Price Benowitz Llp Virginia">
+											<img class="card-img v-image ads-img " src="https://44y1yk3kb8hh1j7z7d4691v5-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/pb-logos-mobile_d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYW3Rys8rX0cjuxxKPpL_2G7LlqpOqT4xQkw';" alt="Virginia Injury Lawyer Price Benowitz Llp Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Injury Lawyer Price Benowitz Llp Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-the-strength-of-the-irish-defence-forces.html">What Is The Strength Of The Irish Defence Forces</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-chronic-fatigue-syndrome.html">What Is The Va Disability Rating For Chronic Fatigue Syndrome</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-athletes-foot.html">What Is The Va Disability Rating For Athletes Foot</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-depression.html">What Is The Va Disability Rating For Depression</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-compensation-for-hearing-loss.html">What Is The Va Compensation For Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-knee-pain.html">What Is The Va Disability Rating For Knee Pain</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-lumbar-radiculopathy.html">What Is The Va Disability Rating For Lumbar Radiculopathy</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-a-knee-replacement.html">What Is The Va Disability Rating For A Knee Replacement</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-for-sleep-apnea.html">What Is The Va Disability For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-compensation-for-acid-reflux.html">What Is The Va Compensation For Acid Reflux</a></li>
+													<li class="list-group-item"><a href="/what-is-the-uniformed-services-former-spouses-protection-act.html">What Is The Uniformed Services Former Spouses Protection Act</a></li>
+													<li class="list-group-item"><a href="/what-is-the-uk-defence-budget-2020.html">What Is The Uk Defence Budget 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-hypertensive-heart-disease.html">What Is The Va Disability Rating For Hypertensive Heart Disease</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-gulf-war-syndrome.html">What Is The Va Disability Rating For Gulf War Syndrome</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-alcoholism.html">What Is The Va Disability Rating For Alcoholism</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-anxiety.html">What Is The Va Disability Rating For Anxiety</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-cola-for-2020.html">What Is The Va Cola For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-compensation-rates.html">What Is The Va Disability Compensation Rates</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-compensation-for-hypertension.html">What Is The Va Compensation For Hypertension</a></li>
+													<li class="list-group-item"><a href="/what-is-the-strongest-army-in-the-world.html">What Is The Strongest Army In The World</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

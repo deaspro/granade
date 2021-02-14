@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is My Marriage Prediction Free - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is My Marriage Prediction Free",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/31/c2/dc/31c2dcf0501e8bbd748bdce706488757.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+my+marriage+prediction+free",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is My Marriage Prediction Free</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Free Accurate Tarot Reading For Love and Marriage. Why we need a birth date for marriage Prediction. If you are curious to figure out your near prospect then the most possible way is to try out free marriage prediction reading using date of birth. <br>				
+			</p>
+										<a class="badge badge-light" href="/wechat-windows-10.html">wechat windows 10</a>
+											<a class="badge badge-primary" href="/wedding-dress-a-line-off-the-shoulder.html">wedding dress a line off the shoulder</a>
+											<a class="badge badge-danger" href="/well-dressed-adjectives.html">well dressed adjectives</a>
+											<a class="badge badge-primary" href="/wechat-versi-baru.html">wechat versi baru</a>
+											<a class="badge badge-primary" href="/wechat-xiaochengxu.html">wechat xiaochengxu</a>
+											<a class="badge badge-success" href="/wechat-versi-lama.html">wechat versi lama</a>
+											<a class="badge badge-success" href="/wedding-dress-a-line-ivory.html">wedding dress a line ivory</a>
+											<a class="badge badge-primary" href="/wechat-sign-up.html">wechat sign up</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the ideal blog.  Our site provides you with suggestions for seeing the maximum quality video and image content, search and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to view.  It is also possible to bring about supporting this website by sharing videos and images that you like on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/a2/df/e2a2dfa3d213c249b136d49e8088a0ec.jpg" data-lightbox="roadtrip" data-title="When Will You Get Married Marriage Horoscope Horoscope Dates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/a2/df/e2a2dfa3d213c249b136d49e8088a0ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt6AQCjlEgs4ORtjbPWTY0zDa0M_mQbjYuZA';" alt="When Will You Get Married Marriage Horoscope Horoscope Dates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Will You Get Married Marriage Horoscope Horoscope Dates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/66/9a/c1669a4749b47b4c9f2d7894647c2d32.png" data-lightbox="roadtrip" data-title="91 8290613225 Marriage Yog Calculator Marriage Astrology Marriage Astrology Online Marriage Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/66/9a/c1669a4749b47b4c9f2d7894647c2d32.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJP4dCbvPg9XSrG8WZTENKTFjgIT0M4DYgvg';" alt="91 8290613225 Marriage Yog Calculator Marriage Astrology Marriage Astrology Online Marriage Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">91 8290613225 Marriage Yog Calculator Marriage Astrology Marriage Astrology Online Marriage Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/77/f0/9a77f0b4f996999bfa6eb9622223aa59.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/77/f0/9a77f0b4f996999bfa6eb9622223aa59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpslR6-SUL4e9z0N1w2M54WHxwrwiiOddCFg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/53/ad/6553adad8a488a539bc8fd844d186900.png" data-lightbox="roadtrip" data-title="91 9697277879 Marriage Prediction By Date Of Birth In 2020 Love And Marriage Marriage Astrology Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/53/ad/6553adad8a488a539bc8fd844d186900.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSawM4Ky79XnXpUTWIJoijU4K4TvI6h4-se9w';" alt="91 9697277879 Marriage Prediction By Date Of Birth In 2020 Love And Marriage Marriage Astrology Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">91 9697277879 Marriage Prediction By Date Of Birth In 2020 Love And Marriage Marriage Astrology Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a1/d1/0e/a1d10ef450f3091c991eb01746ac03f7.jpg" data-lightbox="roadtrip" data-title="Accurate Marriage Prediction By Date Of Birth Marriage Astrology Marriage Dating">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a1/d1/0e/a1d10ef450f3091c991eb01746ac03f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwhSijtQ3pGmu48Fa5JdOXqFC1qL9Ewol7yw';" alt="Accurate Marriage Prediction By Date Of Birth Marriage Astrology Marriage Dating">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Accurate Marriage Prediction By Date Of Birth Marriage Astrology Marriage Dating</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/3f/5d/e83f5d07bed10120e7af98cc6832daf3.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/3f/5d/e83f5d07bed10120e7af98cc6832daf3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp72lDAs0LjYbmV2jUSUV8YDo4e_Bdcftjng';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/61/c4/4b/61c44b3c9e033f1e21bcd9adcc7f0bc5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp72lDAs0LjYbmV2jUSUV8YDo4e_Bdcftjng';" alt="">
+										<div class="card-body">
+						<h3 class="h5"><b>When Who How etc then our free marriage prediction is right there to assist you.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is my marriage prediction free</strong>. 
+								
+																	Perform Tarpanam At Kasi On Thai Amavasya - Absolve All Sins Gain Salvation CLICK HERE. 
+																	If you trust in astrology or numerology and you agree that you do the marriage according to your forecast then you contact with the open marriage prediction by date of birthIf in the contemporary society you do not have the Kundali and now you face the difficulty for Kundali and you wanted to know about your prediction of your marriage then you get the assistance from the free marriage forecast by date of birth. 
+																	The 7th house is the house that rules marriage and all committed relationships. 
+																	Basically 7 th house of your birth chart is responsible for your marriage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The result given by the Marriage calculator is generic in mature and some aspects of the result in certain natal charts may clash. 
+																	Then look below to see which planet rules that sign -- this is the planet that rules your 7th. 
+																	Role of Venus in Navamsa analysis for Marriage Prediction. 
+																	For lovers of love marriage with partner is becoming strong. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Marriage Calculator analyzes different aspects of your birth chart studying the influences of different planetary positions that dictate the possibility of marriage the timing of your marriage and the nature of marriage and married life. 
+																	It is perfectly natural emotion to wonder about your future in a relationship whether it is marriage or love. 
+																	If you are not comfortable in English. 
+																	Marriage prediction at the age of 23. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marriage age prediction in 21st or 22 year If single Venus or single Jupiter is exalted or in self-zodiac sign or in friendly zodiac sign in the horoscope then the native gets married at the age of 21 22. 
+																	At ClickAstro we analyze the planetary positions at the time of your birth and calm your curious minds by providing you with a detailed analysis of your horoscope. 
+																	To cater your love problems we have a list of Free Romance and Relationship Astrology Prediction Reports where you could explore how your love life goes in upcoming years. 
+																	Free Love and Marriage Astrology Prediction. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So give us a call today looking forward to hearing from you soon. 
+																	Free Marriage Prediction. 
+																	Get your own birth chart and look at the cusp or beginning of your 7th house and which sign that is in. 
+																	You can see your love meter graph Love sexual compatibility analysis between partners future of your love life in years to go possibilities of leading a healthy blissful relationship and so on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Are you looking for a free tarot reading for love and marriage. 
+																	Get Free love tarot card reading to predict Love Life 100 Accurate Now. 
+																	But this type of Venus or Jupiter should be free from any malefic planets and their aspect. 
+																	If the 7th lord of Rashi chart is in auspicious Navamsa of benefic planets such as Sagittarius Pisces then it will be good for marriage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free Navamsa chart prediction for marriage is a report to comprehend whether you will be happy or not in your married life. 
+																	The lagna lord in Navamsa Kundli should not be debilitated or should not be conjunct with malefic. 
+																	First you need to find out which planet rules your 7th house. 
+																	Free marriage Astrology. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is the process of predicting your marriage life using your birth chart and suitable age and time for marriage. 
+																	So if you are curious about your marriage too and have questions like. 
+																	Find answers to all your questions with free online love tarot reading here. 
+																	At AstroSage we provide you the simplest way to get marriage prediction by date of birth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Just feed in the details and youll be provided with marriage prediction by date of birth related to your married life and companionship. 
+																	Free Marriage prediction is the best way for giving the possibilities of marriage date age and timing so that you can prepare for your marriage date and also for the rest of your life. 
+																	Marriage is an important aspect of life and holds a vast significance in our culture and beliefs. 
+																	This year your marriage will be good. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We provide free Marriage PredictionAstrology tool to analyse to you and your partner profile by using Name Moon Sign and Birth date analysis of your married life. 
+																	Other Reports By Our Specialist Astrologer Marriage Prediction Report. 
+																	According to the horoscope 2021 the coming year will be very favorable for Gemini people. 
+																	Your marriage totals are very high this year married life will be happy and time is also auspicious for the people who want to do love marriage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yet this service will provide the information regarding your marriage field truth seekers. 
+																	The benefit of contacting our astrologer is they not only provide marriage prediction by date of birth. 
+																	Therefore you are expected to see the result in its totality rather than getting stuck in particular areas. 
+																	But also provide remedies to solve marriage problems to make your love marriage successful or to stop your divorce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With the right horoscope match it gets easier to predict all major aspects of your life including marriage. 
+																	With Marriage age prediction by date of birth free online you can have a complete view of your marriage life. 
+																	Love Tarot Reading - Free Love Tarot Love Tarot reading is your channel to get an insightful access into the various aspects of your love life and relationships. 
+																	Dubeys Prediction provides one month free accurate and real-time predictions Kundli match Career advice Marriage analysis Mantra suggestion and Finance analysis WE BELIEVE IN ACCURATE PREDICTION. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your marriage will not break. 
+																	Then the positive energies have brought you to the right place. 
+																	Get evaluated answers to questions related to compatibility with the help of this Marriage Calculator. 
+																	Then you can also contact us for free marriage prediction in Hindi by date of birth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Such a quick simply process. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/da/34/d8da349ee0a8b22d9a2b472bf601f2f5.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/da/34/d8da349ee0a8b22d9a2b472bf601f2f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrJe3uOnM9ZI6WOl_YVyprcbJA13Cx94CpJg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/c4/4b/61c44b3c9e033f1e21bcd9adcc7f0bc5.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/c4/4b/61c44b3c9e033f1e21bcd9adcc7f0bc5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrcsrdxUpp_DZGT0yZaEzSNSxFJ9UKcArNZw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/2e/81/ab2e81b17faec9a13eb502ecc12e2b34.png" data-lightbox="roadtrip" data-title="Pin On Free Marriage Prediction">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/2e/81/ab2e81b17faec9a13eb502ecc12e2b34.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSemH9N2w2PkVFi1QOMDTr4BhyQcJDe3KNJ4g';" alt="Pin On Free Marriage Prediction">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Free Marriage Prediction</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/3d/56/793d56ccf6c5bdc1fc6b5f380702eb5d.jpg" data-lightbox="roadtrip" data-title="Marriage Prediction Which Defines The Forecasting Of Your Marriage Details Of Couples Marriage Prediction Is One Of The In 2020 Marriage Online Marriage Marriage Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/3d/56/793d56ccf6c5bdc1fc6b5f380702eb5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1all6YeQXwa2KUHJzkUTq4_ngNWOQTnqqw';" alt="Marriage Prediction Which Defines The Forecasting Of Your Marriage Details Of Couples Marriage Prediction Is One Of The In 2020 Marriage Online Marriage Marriage Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marriage Prediction Which Defines The Forecasting Of Your Marriage Details Of Couples Marriage Prediction Is One Of The In 2020 Marriage Online Marriage Marriage Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b9/7c/7c/b97c7c9d4e6e8a014cf4d03aee51e203.jpg" data-lightbox="roadtrip" data-title="Marriage Prediction By Astrology Can Be A Great Help In Guiding The Future In Order To Find Out The Marriage S Timi Predictions Marriage Finding Your Soulmate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b9/7c/7c/b97c7c9d4e6e8a014cf4d03aee51e203.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUo9GFqY0FZC5WnL6sYZDAQKW_nXgtIK6mbQ';" alt="Marriage Prediction By Astrology Can Be A Great Help In Guiding The Future In Order To Find Out The Marriage S Timi Predictions Marriage Finding Your Soulmate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marriage Prediction By Astrology Can Be A Great Help In Guiding The Future In Order To Find Out The Marriage S Timi Predictions Marriage Finding Your Soulmate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/b1/90/3cb19008536ebb59370f9b38c342b75f.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/b1/90/3cb19008536ebb59370f9b38c342b75f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHUeZ_NQ0dPOAwM6EqpAkROJYY157GfPb3AA';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/54/97/5f5497833eaa6c8b4c123f95626e356f.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/54/97/5f5497833eaa6c8b4c123f95626e356f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJt26Ien9dOyafBiSRcewkMrNDfC-z3Po4Tw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c4/4e/45/c44e45830c74f1ab6569c126e996047c.jpg" data-lightbox="roadtrip" data-title="Pin By Astrologer Ashok Prajapati On Marriage Prediction By Astrologer Ashok Prajapati Astrology Weekly Astrology Learn Astrology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c4/4e/45/c44e45830c74f1ab6569c126e996047c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfzbTECifKlcQKNGaXlpJlsj75CJLJbgJRGw';" alt="Pin By Astrologer Ashok Prajapati On Marriage Prediction By Astrologer Ashok Prajapati Astrology Weekly Astrology Learn Astrology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Astrologer Ashok Prajapati On Marriage Prediction By Astrologer Ashok Prajapati Astrology Weekly Astrology Learn Astrology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/5c/37/285c373d3175c3489a7a761efec6fe6e.jpg" data-lightbox="roadtrip" data-title="Are You Worried About Marriage Prediction Or Marriage Horoscope Please Consult Astrologer Ashok Prajapati Fo Looking For Marriage Marriage Marriage Astrology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/5c/37/285c373d3175c3489a7a761efec6fe6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-CDQP78OweKfQhJBxdlJpvB32-KWIe3AlAQ';" alt="Are You Worried About Marriage Prediction Or Marriage Horoscope Please Consult Astrologer Ashok Prajapati Fo Looking For Marriage Marriage Marriage Astrology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Worried About Marriage Prediction Or Marriage Horoscope Please Consult Astrologer Ashok Prajapati Fo Looking For Marriage Marriage Marriage Astrology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/47/ca/8847cac341e38a47caf5f2bca0d00b93.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/47/ca/8847cac341e38a47caf5f2bca0d00b93.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqrYypSmXR_TzAvrGiM5pCBdePywQWIMAkGw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/31/c2/dc/31c2dcf0501e8bbd748bdce706488757.jpg" data-lightbox="roadtrip" data-title="Free Online Horoscope Marriage Prediction 91 9888520774 In 2020 Horoscope By Name Marriage People Getting Married">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/31/c2/dc/31c2dcf0501e8bbd748bdce706488757.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZU0vYS3VpbT6S6lj9lNjZnGKTTEXvaxftw';" alt="Free Online Horoscope Marriage Prediction 91 9888520774 In 2020 Horoscope By Name Marriage People Getting Married">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Online Horoscope Marriage Prediction 91 9888520774 In 2020 Horoscope By Name Marriage People Getting Married</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/07/e5/2b/07e52bbb5750a1fdb740d1715a5a7ee3.jpg" data-lightbox="roadtrip" data-title="Free Marriage Prediction Marriage Astrology Career Astrology Astrology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/07/e5/2b/07e52bbb5750a1fdb740d1715a5a7ee3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpJ78qcAJaPBHJoxcs7-E0tXVOdOfVnrEo5Q';" alt="Free Marriage Prediction Marriage Astrology Career Astrology Astrology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Marriage Prediction Marriage Astrology Career Astrology Astrology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/7e/8d/487e8de26f303436196ea00e0d1135fc.jpg" data-lightbox="roadtrip" data-title="Pin On My Collections">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/7e/8d/487e8de26f303436196ea00e0d1135fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu4_0j_T5HvHUwbeIG3US3uY22Yobp7kvu4A';" alt="Pin On My Collections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Collections</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-anxiety-disorder.html">What Is The Va Rating For Anxiety Disorder</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-percentage-for-sleep-apnea.html">What Is The Va Percentage For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-mental-health.html">What Is The Va Rating For Mental Health</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-sleep-apnea-secondary-to-ptsd.html">What Is The Va Rating For Sleep Apnea Secondary To Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-percentage-for-arthritis.html">What Is The Va Percentage For Arthritis</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-wrist.html">What Is The Va Disability Rating For Wrist</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-percentage-rates-for-disability.html">What Is The Va Percentage Rates For Disability</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-chronic-osteoarthritis.html">What Is The Va Rating For Chronic Osteoarthritis</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-tendonitis.html">What Is The Va Disability Rating For Tendonitis</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-high-blood-pressure.html">What Is The Va Rating For High Blood Pressure</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-tinnitus.html">What Is The Va Disability Rating For Tinnitus</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-diabetic-neuropathy.html">What Is The Va Rating For Diabetic Neuropathy</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-pay-schedule-for-2020.html">What Is The Va Pay Schedule For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-shoulder-pain.html">What Is The Va Rating For Shoulder Pain</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-bilateral-flat-feet.html">What Is The Va Rating For Bilateral Flat Feet</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-tbi.html">What Is The Va Disability Rating For Tbi</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-percentage-for-insomnia.html">What Is The Va Percentage For Insomnia</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-diabetes.html">What Is The Va Rating For Diabetes</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-knee-injury.html">What Is The Va Rating For Knee Injury</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-sciatica.html">What Is The Va Rating For Sciatica</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

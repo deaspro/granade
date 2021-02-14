@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Affairs Pay Calendar - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Affairs Pay Calendar",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/f2/00/1f/f2001ff7312dc827e1c49ba4d96620cd.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+affairs+pay+calendar",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Affairs Pay Calendar</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. We have helped process the biweekly payroll for the Department of Veterans Affairs 300000 plus employees for 35 years without ever missing a pay day. This page may contain links to pages andor documents outside the Department of Veterans Affairs Domain. <br>				
+			</p>
+										<a class="badge badge-info" href="/vagov-compensation-and-pension.html">vagov compensation and pension</a>
+											<a class="badge badge-danger" href="/va-yellow-ribbon-application.html">va yellow ribbon application</a>
+											<a class="badge badge-info" href="/vagov-schedule-of-ratings.html">vagov schedule of ratings</a>
+											<a class="badge badge-light" href="/va-workers-compensation-login.html">va workers compensation login</a>
+											<a class="badge badge-danger" href="/vaed-treas-310-type-xxva-ch33.html">vaed treas 310 type xxva ch33</a>
+											<a class="badge badge-warning" href="/vagojoinus.html">vagojoinus</a>
+											<a class="badge badge-secondary" href="/vagov-chapter-35-form.html">vagov chapter 35 form</a>
+											<a class="badge badge-secondary" href="/vaccine-to-get-into-college.html">vaccine to get into college</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right site.  Our site provides you with suggestions for seeing the highest quality video and image content, search and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/18/ca/3518ca7e90c877d93f1a0e040f202836.jpg" data-lightbox="roadtrip" data-title="2019 Biweekly Payroll Calendar Template Beautiful Veterans Affairs Payroll Calendar 2019 Payroll Calendar Calendar Template Period Calendar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/18/ca/3518ca7e90c877d93f1a0e040f202836.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNFk5pTllgkzAf-gc_dA6z8rH1qif4yh8vbw';" alt="2019 Biweekly Payroll Calendar Template Beautiful Veterans Affairs Payroll Calendar 2019 Payroll Calendar Calendar Template Period Calendar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Biweekly Payroll Calendar Template Beautiful Veterans Affairs Payroll Calendar 2019 Payroll Calendar Calendar Template Period Calendar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/30/e2/af30e26cbdc5016d0fbb74301ce42e1c.jpg" data-lightbox="roadtrip" data-title="2019 Va Disability Compensation Pay Schedule And Rates Va Disability Disability Compensation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/30/e2/af30e26cbdc5016d0fbb74301ce42e1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVOYaVSwZ0gHhPazsdCtocnwsg3KhKJSAMVw';" alt="2019 Va Disability Compensation Pay Schedule And Rates Va Disability Disability Compensation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Va Disability Compensation Pay Schedule And Rates Va Disability Disability Compensation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/84/28/5c8428c23f2abd64e4c22bcf241ab0a5.jpg" data-lightbox="roadtrip" data-title="Training February Alternative Dispute Resolution Adr Conflict Resolution Train Alternative Dispute Resolution">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/84/28/5c8428c23f2abd64e4c22bcf241ab0a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmj-cHpq2fOu9q7jRMHynu8ZArzKjhRpYVmw';" alt="Training February Alternative Dispute Resolution Adr Conflict Resolution Train Alternative Dispute Resolution">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Training February Alternative Dispute Resolution Adr Conflict Resolution Train Alternative Dispute Resolution</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/98/63/c798630a2e5350526a405080fb192ede.jpg" data-lightbox="roadtrip" data-title="Amvets Post 312 Calendar Of Events Event Calendar Post Event">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/98/63/c798630a2e5350526a405080fb192ede.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSUBMdwyZWApo908U8wcEA4FdZDjNr7-csmQ';" alt="Amvets Post 312 Calendar Of Events Event Calendar Post Event">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amvets Post 312 Calendar Of Events Event Calendar Post Event</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/5d/37/e35d371e57cde548b12de8cc611e9401.jpg" data-lightbox="roadtrip" data-title="School Calendar 2016 Real Estate Marketing Plan Sell Your House Fast Real Estate Flyers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/5d/37/e35d371e57cde548b12de8cc611e9401.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSTQq-tLI8wGomtcHQfI1cWWbUN2LniGNiA';" alt="School Calendar 2016 Real Estate Marketing Plan Sell Your House Fast Real Estate Flyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">School Calendar 2016 Real Estate Marketing Plan Sell Your House Fast Real Estate Flyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/b0/39/d2b039273e99022e05c2ca874a37823b.jpg" data-lightbox="roadtrip" data-title="Large Printed Monthly Billboard Calendar Custom Calendar Promotional Calendar Calendar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/b0/39/d2b039273e99022e05c2ca874a37823b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhJkgXDFrhQAMjOzC2JrXWGmaXRl9phJPeA';" alt="Large Printed Monthly Billboard Calendar Custom Calendar Promotional Calendar Calendar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Large Printed Monthly Billboard Calendar Custom Calendar Promotional Calendar Calendar</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/cf/af/91/cfaf91cf346cade2e47afb16af81497d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhJkgXDFrhQAMjOzC2JrXWGmaXRl9phJPeA';" alt="Large Printed Monthly Billboard Calendar Custom Calendar Promotional Calendar Calendar">
+										<div class="card-body">
+						<h3 class="h5"><b>Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans affairs pay calendar</strong>. 
+								
+																	Pay Period Calendar 2025. 
+																	Veterans Month Calendar 2019 - Office of Public and Intergovernmental Affairs. 
+																	If you receive VA disability payments you probably were happy to know that for 2021 you get a 13. 
+																	Pay Period Calendar 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pay Period Calendar 2022. 
+																	Pay Period Calendar 2019. 
+																	Volume XV - Payroll - Office of Finance. 
+																	Pay Period Calendar 2023. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2020 2021 Payroll Calendar veterans affairs pay calendar 2021page2 Payroll Calendar ADP veterans affairs pay calendar 2021page2 Payroll Calendar ADP veterans affairs pay calendar 2021page2 2021 Payroll Templates. 
+																	Use the Add by URL function to import an ICS file of the GSA Payroll Calendar to your Google Calendar. 
+																	Follow these instructions Word DOC - 632 KB or PDF PDF - 402 KB with step-by-step screenshots. 
+																	Pay Period Calendar 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pay Period Calendar 2021. 
+																	These are annotated as shown below in the content of the page. 
+																	Pay Period Calendar 2024. 
+																	Apply for VA health care find out how to access services and manage your. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We hope your visit was informative. 
+																	2020 2021 Payroll Calendar Veterans Affairs Employee Pay Calendar 2020 Payroll Calendar ADP Veterans Affairs Employee Pay Calendar 2020 Payroll Calendar ADP Veterans Affairs Employee Pay Calendar 2020 2021 Payroll Templates. 
+																	Helps qualifying veterans and their surviving spouses pay for in-home care. 
+																	2020 2021 Payroll Calendar veterans affairs pay calendar 2021 Payroll Calendar ADP veterans affairs pay calendar 2021 Payroll Calendar ADP veterans affairs pay calendar 2021 2021 Payroll Templates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	November 11 2023 the legal public holiday for Veterans Day falls on a Saturday. 
+																	Pay Period Calendar 2017. 
+																	FederalMilitary Sites You will leave the Department of Veterans Affairs website by accessing this link. 
+																	Apply for and manage your GI Bill and other education benefits to help pay for college and training programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	9 AM - 530 PM EST kc-payrollfinancegsagov 844-303-6515. 
+																	Apply for a printed Veteran ID card get your VA benefit letters and medical records and learn how to apply for a discharge upgrade. 
+																	The Office of the Chief Human Capital Officer OCHCO administers Title 38 Pay Charts Guidance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pay Period Calendar 2026. 
+																	Historically our payroll support services have been unparalleled. 
+																	CONTACTS GSA Payroll Services Branch Hours of Operation. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cf/af/91/cfaf91cf346cade2e47afb16af81497d.jpg" data-lightbox="roadtrip" data-title="Pin On Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cf/af/91/cfaf91cf346cade2e47afb16af81497d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmkrouKcDDpUbenwnvZdIBl6P088IJZGl_7g';" alt="Pin On Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/5d/45/445d45a3feb6aa879a26e4f67bbd38a3.jpg" data-lightbox="roadtrip" data-title="Nz School Holidays Outlook Calendar In 2020 Outlook Calendar School Calendar School Holidays">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/5d/45/445d45a3feb6aa879a26e4f67bbd38a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFdDlBC__-jmR9hPXjpkYXIxLO1ikYOsXRiQ';" alt="Nz School Holidays Outlook Calendar In 2020 Outlook Calendar School Calendar School Holidays">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nz School Holidays Outlook Calendar In 2020 Outlook Calendar School Calendar School Holidays</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/04/1f/97041f0beb15a0a426635325dc21fec6.png" data-lightbox="roadtrip" data-title="Va C And P Exam Do S And Don Ts Va Compensation Pension Exam In 2020 Exam Medical Information Private Health Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/04/1f/97041f0beb15a0a426635325dc21fec6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSawWJuC1c7DWB53tPtBa7WfPt97hi4FomX2w';" alt="Va C And P Exam Do S And Don Ts Va Compensation Pension Exam In 2020 Exam Medical Information Private Health Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va C And P Exam Do S And Don Ts Va Compensation Pension Exam In 2020 Exam Medical Information Private Health Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/3e/74/823e74e59ae1fa473ccd1e1667e4e121.png" data-lightbox="roadtrip" data-title="Monthly Payments Through Affirm Discounts For Veterans Va Employees And Their Families Veterans Canteen Service Monthly Payments Payment Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/3e/74/823e74e59ae1fa473ccd1e1667e4e121.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROOodsXBvg3C2jCc0c1cbtrkAKcV8fHjbJag';" alt="Monthly Payments Through Affirm Discounts For Veterans Va Employees And Their Families Veterans Canteen Service Monthly Payments Payment Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Monthly Payments Through Affirm Discounts For Veterans Va Employees And Their Families Veterans Canteen Service Monthly Payments Payment Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/af/cc/f2afcc41b21262d909b84aae2542394a.jpg" data-lightbox="roadtrip" data-title="5 Must Have Documents For Service Members In Transition Military Transition Civilian Military Wife Life Military Life Army Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/af/cc/f2afcc41b21262d909b84aae2542394a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJe6FXXMhqjaqY_JYwU0j-XQfbuaRNSka3w';" alt="5 Must Have Documents For Service Members In Transition Military Transition Civilian Military Wife Life Military Life Army Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Must Have Documents For Service Members In Transition Military Transition Civilian Military Wife Life Military Life Army Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/bd/1b/85bd1bd834b9401ac3c036443b0c8109.png" data-lightbox="roadtrip" data-title="Pay Now Or Pay Later Infographic Paynow Paylater Social Security Social Security Benefits Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/bd/1b/85bd1bd834b9401ac3c036443b0c8109.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC1BsC8KoIj0M919biuwPHGZ1iyR2tmrIxQg';" alt="Pay Now Or Pay Later Infographic Paynow Paylater Social Security Social Security Benefits Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pay Now Or Pay Later Infographic Paynow Paylater Social Security Social Security Benefits Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/dc/0e/24dc0ef07ec01f40ff3a44e2a7b23345.png" data-lightbox="roadtrip" data-title="Pin On Military Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/dc/0e/24dc0ef07ec01f40ff3a44e2a7b23345.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu0yMAhPlNDcB_gPE5wX72NkyUXlT2b_U0A';" alt="Pin On Military Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e5/29/07/e52907264781cb327d68f7f6b7f9b5d4.jpg" data-lightbox="roadtrip" data-title="Pin On When Hell O Life Knocks God Way Answers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e5/29/07/e52907264781cb327d68f7f6b7f9b5d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96GqFAC8gJeend8A6G2J4lhoQhL858or7xQ';" alt="Pin On When Hell O Life Knocks God Way Answers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On When Hell O Life Knocks God Way Answers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/87/38/4587385b935b5fc6712463ed58950b64.png" data-lightbox="roadtrip" data-title="Wow This Printable Deployment Kit Covers Everything A Family Would Need While Their Loved One Is Over Life Hacks Organization Deployment Homecoming Printables">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/87/38/4587385b935b5fc6712463ed58950b64.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWaA2p1kjbe7AL2pNa9fZ-VkOE-KJOAMOTcQ';" alt="Wow This Printable Deployment Kit Covers Everything A Family Would Need While Their Loved One Is Over Life Hacks Organization Deployment Homecoming Printables">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wow This Printable Deployment Kit Covers Everything A Family Would Need While Their Loved One Is Over Life Hacks Organization Deployment Homecoming Printables</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e3/5d/37/e35d371e57cde548b12de8cc611e9401.jpg" data-lightbox="roadtrip" data-title="School Calendar 2016 Real Estate Marketing Plan Sell Your House Fast Real Estate Flyers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e3/5d/37/e35d371e57cde548b12de8cc611e9401.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgZqIm8zxvdOSPBh5O1eUhvsaQ86iHElgZLA';" alt="School Calendar 2016 Real Estate Marketing Plan Sell Your House Fast Real Estate Flyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">School Calendar 2016 Real Estate Marketing Plan Sell Your House Fast Real Estate Flyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/00/1f/f2001ff7312dc827e1c49ba4d96620cd.jpg" data-lightbox="roadtrip" data-title="December 2018 Assisted Living Activity Calendar Senior Living Activities Senior Activities Assisted Living Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/00/1f/f2001ff7312dc827e1c49ba4d96620cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-29w4GwV2MzYkNQI6THrPgwklRafBTwTvJA';" alt="December 2018 Assisted Living Activity Calendar Senior Living Activities Senior Activities Assisted Living Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">December 2018 Assisted Living Activity Calendar Senior Living Activities Senior Activities Assisted Living Activities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/32/6f/c9326f8aff96e4903864a11dab3d6450.jpg" data-lightbox="roadtrip" data-title="My Mom Loves Genealogy She Has Several Books With Pictures And Stories Of People In Our Pedigree Lines And She Is Const Genealogy Chart Genealogy Family Tree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/32/6f/c9326f8aff96e4903864a11dab3d6450.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNYR9AKKofwMAJ0ltXIdMGfe5Dq4MD_3K0PA';" alt="My Mom Loves Genealogy She Has Several Books With Pictures And Stories Of People In Our Pedigree Lines And She Is Const Genealogy Chart Genealogy Family Tree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Mom Loves Genealogy She Has Several Books With Pictures And Stories Of People In Our Pedigree Lines And She Is Const Genealogy Chart Genealogy Family Tree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/9b/e6/5b9be61b7f781f8bb78b51ab51905a6f.jpg" data-lightbox="roadtrip" data-title="50 September 2017 Calendar With Holidays Xf7x">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/9b/e6/5b9be61b7f781f8bb78b51ab51905a6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnVtf7meKDeJFD4xV6ri2RVgilM-E5qe20Wg';" alt="50 September 2017 Calendar With Holidays Xf7x">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">50 September 2017 Calendar With Holidays Xf7x</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f3/8e/d2/f38ed271fa15895bdf563a586ec2443d.jpg" data-lightbox="roadtrip" data-title="Daycare Staff Schedule Template Luxury Sample Staff Schedule Template 9 Free Documents Schedule Template Schedule Templates Daily Schedule Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f3/8e/d2/f38ed271fa15895bdf563a586ec2443d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7zMV2JdK046ycQwtB8nE3kNSSCLVm59yQQ';" alt="Daycare Staff Schedule Template Luxury Sample Staff Schedule Template 9 Free Documents Schedule Template Schedule Templates Daily Schedule Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Daycare Staff Schedule Template Luxury Sample Staff Schedule Template 9 Free Documents Schedule Template Schedule Templates Daily Schedule Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/e7/34/13e73482ad50d8e20c0dcabfcecb5226.jpg" data-lightbox="roadtrip" data-title="Pin On 100 Days">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/e7/34/13e73482ad50d8e20c0dcabfcecb5226.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE2C4OdWABvdLWP3VxVuh60dlSTrEZV2_WeQ';" alt="Pin On 100 Days">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 100 Days</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-station-is-iu-game-on.html">What Station Is Iu Game On</a></li>
+													<li class="list-group-item"><a href="/what-the-meaning-of-gi-bill-of-rights.html">What The Meaning Of Gi Bill Of Rights</a></li>
+													<li class="list-group-item"><a href="/what-state-should-you-go-to-college-in-quiz.html">What State Should You Go To College In Quiz</a></li>
+													<li class="list-group-item"><a href="/what-state-of-residence-is-a-military-spouse.html">What State Of Residence Is A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/what-spouse-means.html">What Spouse Means</a></li>
+													<li class="list-group-item"><a href="/what-should-i-do-if-my-wife-is-depressed.html">What Should I Do If My Wife Is Depressed</a></li>
+													<li class="list-group-item"><a href="/what-should-i-do-if-my-husband-wants-a-divorce.html">What Should I Do If My Husband Wants A Divorce</a></li>
+													<li class="list-group-item"><a href="/what-should-be-on-a-resume-for-college.html">What Should Be On A Resume For College</a></li>
+													<li class="list-group-item"><a href="/what-should-be-included-on-a-college-resume.html">What Should Be Included On A College Resume</a></li>
+													<li class="list-group-item"><a href="/what-the-definition-of-military-draft.html">What The Definition Of Military Draft</a></li>
+													<li class="list-group-item"><a href="/what-should-a-college-resume-have.html">What Should A College Resume Have</a></li>
+													<li class="list-group-item"><a href="/what-stopped-the-ira-bombings.html">What Stopped The Ira Bombings</a></li>
+													<li class="list-group-item"><a href="/what-qualifies-for-army-emergency-leave.html">What Qualifies For Army Emergency Leave</a></li>
+													<li class="list-group-item"><a href="/what-states-have-property-tax-exemptions-for-disabled-veterans.html">What States Have Property Tax Exemptions For Disabled Veterans</a></li>
+													<li class="list-group-item"><a href="/what-should-be-on-your-college-resume.html">What Should Be On Your College Resume</a></li>
+													<li class="list-group-item"><a href="/what-should-i-put-on-my-college-resume.html">What Should I Put On My College Resume</a></li>
+													<li class="list-group-item"><a href="/what-should-i-go-to-college-for-quiz.html">What Should I Go To College For Quiz</a></li>
+													<li class="list-group-item"><a href="/what-should-you-go-to-college-for-quiz.html">What Should You Go To College For Quiz</a></li>
+													<li class="list-group-item"><a href="/what-schools-can-i-use-my-gi-bill-at.html">What Schools Can I Use My Gi Bill At</a></li>
+													<li class="list-group-item"><a href="/what-texas-college-should-i-go-to-quiz.html">What Texas College Should I Go To Quiz</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

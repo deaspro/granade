@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Meaning Of Military Coup D Etat - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Meaning Of Military Coup D Etat",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/4c/bc/9f/4cbc9f010b2a89b854f4d0133b2ff045.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+meaning+of+military+coup+d+etat",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Meaning Of Military Coup D Etat</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A coup detat is the sudden often violent overthrow of an existing government by a small group. Coup blow stroke de of etat state. Definition of coup detat. <br>				
+			</p>
+										<a class="badge badge-primary" href="/va-social-security-name-change.html">va social security name change</a>
+											<a class="badge badge-warning" href="/va-spousal-benefits-after-veteran-dies.html">va spousal benefits after veteran dies</a>
+											<a class="badge badge-danger" href="/va-specially-adapted-housing-grant.html">va specially adapted housing grant</a>
+											<a class="badge badge-primary" href="/va-special-monthly-compensation-smc-k.html">va special monthly compensation smc k</a>
+											<a class="badge badge-primary" href="/va-special-monthly-compensation-rates-2021.html">va special monthly compensation rates 2021</a>
+											<a class="badge badge-dark" href="/va-special-monthly-compensation-tables.html">va special monthly compensation tables</a>
+											<a class="badge badge-dark" href="/va-social-security.html">va social security</a>
+											<a class="badge badge-dark" href="/va-social-security-death-benefits.html">va social security death benefits</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal site.  Our website provides you with hints for seeing the highest quality video and image content, hunt and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/f0/60/bdf060770649b0c3c03c72680d5b09f2.jpg" data-lightbox="roadtrip" data-title="Word Of The Day 15nov19 English Vocabulary Words Learn English Words Interesting English Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/f0/60/bdf060770649b0c3c03c72680d5b09f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsTZ2B1RO52BHxR-WuXNCH5Y969hkWzqB6w';" alt="Word Of The Day 15nov19 English Vocabulary Words Learn English Words Interesting English Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Word Of The Day 15nov19 English Vocabulary Words Learn English Words Interesting English Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/7f/5d/257f5d23765909625b5fe60c327ee925.jpg" data-lightbox="roadtrip" data-title="Pin On Cultures Middle East Arab States">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/7f/5d/257f5d23765909625b5fe60c327ee925.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapxNITPUNOXGQQIHmCbQaW3MBdqfbTiroiA';" alt="Pin On Cultures Middle East Arab States">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cultures Middle East Arab States</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/35/98/f635980fa6797fbd723c55e58ac6210b.jpg" data-lightbox="roadtrip" data-title="Pin By Arun Kumar On English Vocabulary English Vocabulary Plurals Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/35/98/f635980fa6797fbd723c55e58ac6210b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXZ9q0h5_ETz_qjN_xm1W3rz1xF9AYOA0UA';" alt="Pin By Arun Kumar On English Vocabulary English Vocabulary Plurals Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Arun Kumar On English Vocabulary English Vocabulary Plurals Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/d0/bc/c2d0bc52bca861ecfebeb943c3ad322c.jpg" data-lightbox="roadtrip" data-title="A Buried Coup D Etat In The United States The New Yorker American History North Carolina History Wilmington">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/d0/bc/c2d0bc52bca861ecfebeb943c3ad322c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6HkqHz6yIxBbDr9RwWWHJ72xhJId78bFbQ';" alt="A Buried Coup D Etat In The United States The New Yorker American History North Carolina History Wilmington">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Buried Coup D Etat In The United States The New Yorker American History North Carolina History Wilmington</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/5e/ac/bb5eac4f43df08718ead65e0c648c462.jpg" data-lightbox="roadtrip" data-title="A Little Coup D Etat If You Know What I Mean Art Artist Comic Book Pages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/5e/ac/bb5eac4f43df08718ead65e0c648c462.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-aVS1EikShgmokoqyay_srIv7Jod_VZORA';" alt="A Little Coup D Etat If You Know What I Mean Art Artist Comic Book Pages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Little Coup D Etat If You Know What I Mean Art Artist Comic Book Pages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/d6/e2/3fd6e26ae9ea073db6c6a2c7109aa015.jpg" data-lightbox="roadtrip" data-title="Foutez Moi De Tout Ce Monde Throw All This People Out Coup D Etat Of 18 Brumaire Murat On N Orders Throws Out The F Military Art Illustration Artwork">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/d6/e2/3fd6e26ae9ea073db6c6a2c7109aa015.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bq6kvYTuhRI1ojem4ByXiQoOUGX1Li74QA';" alt="Foutez Moi De Tout Ce Monde Throw All This People Out Coup D Etat Of 18 Brumaire Murat On N Orders Throws Out The F Military Art Illustration Artwork">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Foutez Moi De Tout Ce Monde Throw All This People Out Coup D Etat Of 18 Brumaire Murat On N Orders Throws Out The F Military Art Illustration Artwork</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f6/35/98/f635980fa6797fbd723c55e58ac6210b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bq6kvYTuhRI1ojem4ByXiQoOUGX1Li74QA';" alt="Foutez Moi De Tout Ce Monde Throw All This People Out Coup D Etat Of 18 Brumaire Murat On N Orders Throws Out The F Military Art Illustration Artwork">
+										<div class="card-body">
+						<h3 class="h5"><b>Military Coup or Coup detat is an action through which the states or a countrys military takes over the incumbent government using force either due to inability of the incumbent government to handle various issues resulting in policy paralysis or in a motive to overthrow the government and concentrate the power to run major institutions into the hands of few people mostly high ranking military officials.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the meaning of military coup d etat</strong>. 
+								
+																	Coup blow stroke de of etat state. 
+																	A coup is an illegal attempt to take power through force or the threat of force usually involving at least a faction of the military or formal security forces though sometimes they are backed by. 
+																	Coup detat kooh day- tah A quick and decisive seizure of governmental power by a strong military or political group. 
+																	The 2021 Myanmar coup detat began on the morning of 1 February when democratically elected members of Myanmars ruling party the National League for Democracy were deposed by the TatmadawMyanmars militarywhich vested power in a stratocracyThe Tatmadaw declared a year-long state of emergency and declared power had been vested in Commander-in-Chief of Defence Services Min Aung Hlaing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In contrast to a revolution a coup detat or coup does not involve a mass uprising. 
+																	Unlike a revolution which is usually achieved by large numbers of people working for basic social economic and political change a coup is a change in power from the top that merely results in the abrupt replacement of leading government personnel. 
+																	Coup detat also called coup the sudden violent overthrow of an existing government by a small group. 
+																	Coups detat koo or coup detats da-taez The sudden overthrow of a government by a usually small group of persons in or previously in positions of authority. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coups detat koo or coup detats da-taez The sudden overthrow of a government by a usually small group of persons in or previously in positions of authority. 
+																	Literally a blow of state. 
+																	A sudden decisive exercise of force in politics especially. 
+																	Coups detat pronounced like the singular form. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The violent overthrow or alteration of an existing government by a small group a military coup detat of the dictator. 
+																	We define a coup detat a French term for overthrowing the government as the sudden and irregular ie illegal or extralegal removal or displacement of the executive authority of an. 
+																	The chief prerequisite for a coup is control of all or part of the armed forces the police and other military elements. 
+																	Coup detat noun C us ˌkuˌdeɪˈtɑ plural coups detat or coup detats us ˌkuˌdeɪˈtɑ -ˈtɑz short form coup sudden defeat of a government through illegal force by a small group often a military one. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Also known simply as an overthrow takeover or putsch is the removal of an existing government from power usually through violent meansTypically it is an illegal unconstitutional seizure of power by a political. 
+																	The coup detat also known as coup is typically an illegal unconstitutional seizure of power conducted by a dictator a guerrilla military force or an opposing political faction. 
+																	A coup or coup detat ˌ k uː d eɪ ˈ t ɑː listen help info. 
+																	The coup has seen power handed to military chief Min Aung Hlaing along with the imposing a state of emergency for one year according to a statement on a military-owned television station. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/d9/ee/f8d9ee11923b2a95218bcf40b6f63726.jpg" data-lightbox="roadtrip" data-title="1954 Guatemalan Coup D Etat Wikipedia The Free Encyclopedia Monroe Doctrine American History Resources Visual Metaphor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/d9/ee/f8d9ee11923b2a95218bcf40b6f63726.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgAQ8dEcXAuAnHf2-5jLFMNcgieufHaIaIQ';" alt="1954 Guatemalan Coup D Etat Wikipedia The Free Encyclopedia Monroe Doctrine American History Resources Visual Metaphor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1954 Guatemalan Coup D Etat Wikipedia The Free Encyclopedia Monroe Doctrine American History Resources Visual Metaphor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/07/cc/2a07ccfdf4ebb28d548121e9b750d7ab.jpg" data-lightbox="roadtrip" data-title="From Wikiwand Events Of The 1953 Iranian Coup D Etat Persian Pattern Ajax Islamic Republic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/07/cc/2a07ccfdf4ebb28d548121e9b750d7ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrlxfJrTSFG-J8wQwBf0DRCR_PbkGstikRsw';" alt="From Wikiwand Events Of The 1953 Iranian Coup D Etat Persian Pattern Ajax Islamic Republic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From Wikiwand Events Of The 1953 Iranian Coup D Etat Persian Pattern Ajax Islamic Republic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/38/e8/3338e81329a6f1dd77125dfcce29ecbd.jpg" data-lightbox="roadtrip" data-title="Liberian Coup D Etat 1980 Liberian Coup History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/38/e8/3338e81329a6f1dd77125dfcce29ecbd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLLgPiZUtniNfukPDw5UZRDy2aGDgJp6hYLg';" alt="Liberian Coup D Etat 1980 Liberian Coup History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Liberian Coup D Etat 1980 Liberian Coup History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/56/ec/8456ec0980bebcd22558c9965f55e918.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/56/ec/8456ec0980bebcd22558c9965f55e918.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxyvFvYVjscit-SRzjzcwahfAXxOvBzKQcSQ';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/d3/db/fdd3dba1d583511e50b8fd339417c8ee.jpg" data-lightbox="roadtrip" data-title="Pin On It Defines Me">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/d3/db/fdd3dba1d583511e50b8fd339417c8ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIP6xgdbNKYOM_kNuoxiR4umoFp8dhRKZNaQ';" alt="Pin On It Defines Me">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On It Defines Me</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/bc/9f/4cbc9f010b2a89b854f4d0133b2ff045.jpg" data-lightbox="roadtrip" data-title="Pin By Dad Zur On Airborne Airborne Army Military Insignia Military Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/bc/9f/4cbc9f010b2a89b854f4d0133b2ff045.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqsDl_RwSjSv9lwovPQuNDUbKwZ_vu0D1Wg';" alt="Pin By Dad Zur On Airborne Airborne Army Military Insignia Military Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Dad Zur On Airborne Airborne Army Military Insignia Military Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/23/a9/5723a90fa495cc6162aa657b8a181783.jpg" data-lightbox="roadtrip" data-title="Pin On Alternative Movie Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/23/a9/5723a90fa495cc6162aa657b8a181783.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS630wngui8V5Q490bFs5jAT57ZfnFK1glIA';" alt="Pin On Alternative Movie Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Alternative Movie Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/1b/08/621b08d54c0245a0abbf44d52bdce906.jpg" data-lightbox="roadtrip" data-title="Pin By Arun Kumar On English Vocabulary English Dictionaries Collins English Dictionary Word Origins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/1b/08/621b08d54c0245a0abbf44d52bdce906.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWdfdengIC3UbCRPdRw9EPNwNVBxtGqc5cA';" alt="Pin By Arun Kumar On English Vocabulary English Dictionaries Collins English Dictionary Word Origins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Arun Kumar On English Vocabulary English Dictionaries Collins English Dictionary Word Origins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/04/32/ef/0432ef30d617d97e3900e200da7215db.jpg" data-lightbox="roadtrip" data-title="Pin On Anglo Iraqi War 1941 And The Free Arabian Legion 1941 1945 Freies Arabien">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/04/32/ef/0432ef30d617d97e3900e200da7215db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPzmLfVZZH0ihAosGWyYI-ZZpdqqk53VQTkg';" alt="Pin On Anglo Iraqi War 1941 And The Free Arabian Legion 1941 1945 Freies Arabien">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Anglo Iraqi War 1941 And The Free Arabian Legion 1941 1945 Freies Arabien</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fa/72/cf/fa72cf443df587b8eeba8b32a792dfca.jpg" data-lightbox="roadtrip" data-title="1974 Photo Of Muammar Gaddafi Who Assumed Power In Libya After 1969 Coup D Etat Photo Art Com In 2020 Muammar Gaddafi Libya Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fa/72/cf/fa72cf443df587b8eeba8b32a792dfca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3MrWFkg20hZrncWrWB1NdihkapqPDMo0-Rg';" alt="1974 Photo Of Muammar Gaddafi Who Assumed Power In Libya After 1969 Coup D Etat Photo Art Com In 2020 Muammar Gaddafi Libya Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1974 Photo Of Muammar Gaddafi Who Assumed Power In Libya After 1969 Coup D Etat Photo Art Com In 2020 Muammar Gaddafi Libya Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ae/38/58/ae38585aa8d0648a3287062a86b3dd7e--harry-turtledove-alternate-history.jpg" data-lightbox="roadtrip" data-title="Coup D Etat The War That Came Early Book Four By Harry Turtledove Http Www Amazon Com Dp B006xwyl9a R Harry Turtledove Alternate History Military Fiction">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ae/38/58/ae38585aa8d0648a3287062a86b3dd7e--harry-turtledove-alternate-history.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJbp8ojEsFD4OJfEIxS_0LXqMX9bVCO2fxdA';" alt="Coup D Etat The War That Came Early Book Four By Harry Turtledove Http Www Amazon Com Dp B006xwyl9a R Harry Turtledove Alternate History Military Fiction">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coup D Etat The War That Came Early Book Four By Harry Turtledove Http Www Amazon Com Dp B006xwyl9a R Harry Turtledove Alternate History Military Fiction</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/d1/e1/08d1e1d6d7a70d558a8ca3435be40ff9.jpg" data-lightbox="roadtrip" data-title="Pin On Eurasia Review">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/d1/e1/08d1e1d6d7a70d558a8ca3435be40ff9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCXILDKMLF3fGI8UgjZpMEg_P6u_KYEKGQnA';" alt="Pin On Eurasia Review">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Eurasia Review</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/62/76/2462764113c48a802e1683497e912398.jpg" data-lightbox="roadtrip" data-title="Wilmington Insurrection Of 1898 Wikipedia American History North Carolina History Wilmington">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/62/76/2462764113c48a802e1683497e912398.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhe8i_GCp43TdE47v0oeFI7NpitGJVYbqZkw';" alt="Wilmington Insurrection Of 1898 Wikipedia American History North Carolina History Wilmington">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wilmington Insurrection Of 1898 Wikipedia American History North Carolina History Wilmington</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/dc/da/5ddcda251a2ebaf8c98dd97805cdab1b.jpg" data-lightbox="roadtrip" data-title="October 25 1983 On This Date President Ronald Reagan Launched Operation Urgent Fury By Ordering U S Marines And Army Ran Invasion Of Grenada Grenada History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/dc/da/5ddcda251a2ebaf8c98dd97805cdab1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxk6ERomQIPfTbDamT-A5ZgUKCc6hnhLz_jA';" alt="October 25 1983 On This Date President Ronald Reagan Launched Operation Urgent Fury By Ordering U S Marines And Army Ran Invasion Of Grenada Grenada History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">October 25 1983 On This Date President Ronald Reagan Launched Operation Urgent Fury By Ordering U S Marines And Army Ran Invasion Of Grenada Grenada History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/54/fe/6554fed45d9c790adc91aeaa8ffafbc5.jpg" data-lightbox="roadtrip" data-title="Army Of The Communist Democratic Republic Of Afghanistan During The Soviet Invasion Of Afghanistan Cold War Military Afghan War Women In History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/54/fe/6554fed45d9c790adc91aeaa8ffafbc5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMJqu9aXVeqhf9A1NjFy9gw9fTXyUt5xe1pA';" alt="Army Of The Communist Democratic Republic Of Afghanistan During The Soviet Invasion Of Afghanistan Cold War Military Afghan War Women In History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Of The Communist Democratic Republic Of Afghanistan During The Soviet Invasion Of Afghanistan Cold War Military Afghan War Women In History</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/virginia-unemployment-claim-status-number.html">Virginia Unemployment Claim Status Number</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-reporting-income.html">Virginia Unemployment Reporting Income</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-file-by-phone.html">Virginia Unemployment File By Phone</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-eligibility-severance.html">Virginia Unemployment Eligibility Severance</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-benefit-application.html">Virginia Unemployment Benefit Application</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-no-money.html">Virginia Unemployment No Money</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-employers.html">Virginia Unemployment Employers</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-benefits-questions.html">Virginia Unemployment Benefits Questions</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-claim-not-working.html">Virginia Unemployment Claim Not Working</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-eligibility-if-fired.html">Virginia Unemployment Eligibility If Fired</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-pay-2020.html">Virginia Unemployment Pay 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-office-customer-service-number.html">Virginia Unemployment Office Customer Service Number</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-news-september-2020.html">Virginia Unemployment News September 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-application-process.html">Virginia Unemployment Application Process</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-filing-deadline.html">Virginia Unemployment Filing Deadline</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-eb-reddit.html">Virginia Unemployment Eb Reddit</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-insurance-form.html">Virginia Unemployment Insurance Form</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-rate-covid.html">Virginia Unemployment Rate Covid</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-benefits-extension-2020.html">Virginia Unemployment Benefits Extension 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-benefits-denied.html">Virginia Unemployment Benefits Denied</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

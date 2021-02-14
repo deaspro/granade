@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Secondary Conditions To Diabetes - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Secondary Conditions To Diabetes",
+  "datePublished": "2021-02-14",
+  "image": "https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/Type-2-Diabetes-VA-Disability-1-768x768.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+secondary+conditions+to+diabetes",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Secondary Conditions To Diabetes</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Increased thirst Frequent urination Increased hunger Unintended weight loss Fatigue Blurred vision Slow-healing sores Frequent infections Areas of darkened skin usually in the armpits and neck. Radiculopathy Secondary to Back Disabilities. Diabetes itself is an abnormal metabolism of glucose that can be induced in several ways including trauma which has an associated abnormality in lipid metabolism which leads to an accelerated. <br>				
+			</p>
+										<a class="badge badge-dark" href="/what-are-the-physical-requirements-for-army-basic-training.html">what are the physical requirements for army basic training</a>
+											<a class="badge badge-success" href="/what-are-the-ranks-in-army.html">what are the ranks in army</a>
+											<a class="badge badge-secondary" href="/what-are-the-vision-requirements-for-the-army.html">what are the vision requirements for the army</a>
+											<a class="badge badge-warning" href="/what-are-the-strongest-armies-in-the-world.html">what are the strongest armies in the world</a>
+											<a class="badge badge-info" href="/what-are-the-requirements-to-go-to-college.html">what are the requirements to go to college</a>
+											<a class="badge badge-success" href="/what-are-the-percentages-for-va-disability.html">what are the percentages for va disability</a>
+											<a class="badge badge-success" href="/what-are-the-physical-requirements-to-join-the-army-reserves.html">what are the physical requirements to join the army reserves</a>
+											<a class="badge badge-light" href="/what-are-va-smc-codes.html">what are va smc codes</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the right site.  Our site provides you with hints for viewing the highest quality video and image content, search and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video for you to see.  It is also possible to bring about supporting this site by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://embed-fastly.wistia.com/deliveries/83648c242e71254af023b1d57952c8f4.webp?image_crop_resized=1280x720" data-lightbox="roadtrip" data-title="Va Secondary Conditions To Diabetes Mellitus Type Ii Cck Law">
+											<img class="card-img v-image ads-img " src="https://embed-fastly.wistia.com/deliveries/83648c242e71254af023b1d57952c8f4.webp?image_crop_resized=1280x720" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCVpr1hJ2yPd7ZnVOy4ZXsM0p6FN3I0kaCnVdfbD8l28oryX3LAZrgbZiAQJBamizJFwKR6UyOMyFO7inZdHOj_kQ15tT5xWcjYA&amp;ec=45768321';" alt="Va Secondary Conditions To Diabetes Mellitus Type Ii Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Secondary Conditions To Diabetes Mellitus Type Ii Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/CC-Secondary-Connection.jpg" data-lightbox="roadtrip" data-title="Don T Forget To Claim Secondary Disabilities Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/CC-Secondary-Connection.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0E8KqT1BcDYzf435Xdoa_WaXmqXwCeuPMnmUwNjYKNB6C1DoOVQXbqfaUDbf-VnjZcJaM9a9gUYbR74DMBYM9c3QdglduNrDzA&amp;ec=45768321';" alt="Don T Forget To Claim Secondary Disabilities Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Forget To Claim Secondary Disabilities Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/Type-2-Diabetes-VA-Disability-1-768x768.jpg" data-lightbox="roadtrip" data-title="Type 2 Diabetes And Va Disability Compensation Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/Type-2-Diabetes-VA-Disability-1-768x768.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkOno0Rbm1Paq9wb1r0vvlDsd7glx80D0Igod6066-N7k5ItM9N111tczAtnuuny8iDRGEKHDgPXJNDN1riduHxq6tl4620OoFpw&amp;ec=45768321';" alt="Type 2 Diabetes And Va Disability Compensation Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Type 2 Diabetes And Va Disability Compensation Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.veteranslawblog.org/wp-content/uploads/2010/03/Screenshot-2013-12-17-06.09.50-300x221.png" data-lightbox="roadtrip" data-title="The Va Diabetes Claim How Many Ways To Service Connect Veterans Law Blog">
+											<img class="card-img v-image ads-img " src="https://www.veteranslawblog.org/wp-content/uploads/2010/03/Screenshot-2013-12-17-06.09.50-300x221.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnPEkgc-6EiabE2Au3XX-5RK8UHECXTWZL32dqV3xvBBjqJoKo5XwY4_fqnzmSnes5WlKbcp2Y40G4ZOIrgP_JjaEtqcL0USJRng&amp;ec=45768321';" alt="The Va Diabetes Claim How Many Ways To Service Connect Veterans Law Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Va Diabetes Claim How Many Ways To Service Connect Veterans Law Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/common-secondary-service-connected-conditions.jpg" data-lightbox="roadtrip" data-title="Common Secondary Service Connected Conditions Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/common-secondary-service-connected-conditions.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZlZVWOe2vP4wTJZeXa5HdANOU3o0LaSJ8WBx5hOJC1zPBMGctEilKooF3yHF7MXZgldsPcS9hHhaHIrvpzlnZfiWJwKnuSpEHBA&amp;ec=45768321';" alt="Common Secondary Service Connected Conditions Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Common Secondary Service Connected Conditions Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/understanding-va-secondary-conditions.jpg" data-lightbox="roadtrip" data-title="Understanding Va Secondary Conditions Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/understanding-va-secondary-conditions.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdq4oukIwub7kwJGmzdrqkNdsIsmbcVKSpmo78MxaA48TqBFgw6Jd1kk7M84A3o4-IAxhca93-_876Tknj-RWgGY1O7tLbCu1ozg&amp;ec=45768321';" alt="Understanding Va Secondary Conditions Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Va Secondary Conditions Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/CC-Secondary-Connection.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdq4oukIwub7kwJGmzdrqkNdsIsmbcVKSpmo78MxaA48TqBFgw6Jd1kk7M84A3o4-IAxhca93-_876Tknj-RWgGY1O7tLbCu1ozg&amp;ec=45768321';" alt="Understanding Va Secondary Conditions Military Benefits">
+										<div class="card-body">
+						<h3 class="h5"><b>However the most common symptoms include the following.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va secondary conditions to diabetes</strong>. 
+								
+																	I have seen many try to attempt this proof and very few are successful. 
+																	This disease can cause a variety of secondary problems to include neuropathy to the limps kidney disease cataracts etc. 
+																	Here are the 10 most common types of claims for secondary disability in order of importance. 
+																	The examiner noted conditions as being secondary to the diabetes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Common Secondary Service-Connected Conditions among Veterans Peripheral Neuropathy Secondary to Diabetes Mellitus Type 2. 
+																	Documented the link between low blood sugar and dementia in older adults. 
+																	VA will also grant service connection for his diabetes even though he never initiated a claim for diabetes. 
+																	Found in the VA-DOD Millennium Cohort Study that sleep apnea and poor sleep quality predict diabetes independent of other diabetes risk factors or mental health. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Secondary conditions can be distinguished from secondary manifestations the latter referring to sequelae or subsequent complications arising from the same underlying pathophysiologic process as the primary condition. 
+																	3Service Connection by Legal Presumption. 
+																	Radiculopathy is another nerve condition that occurs when a veterans. 
+																	Two common complications of type 2 diabetes are arteriosclerosis and cataracts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Normally you would have to show proof of a relationship between your military service and the condition being claimed. 
+																	There are some common secondary issues you will learn about while researching filing this type of VA claim and investigating your own medical issues. 
+																	Common Secondary Service-Connected Conditions. 
+																	The VA Does Not Typically Attempt to Disprove the Presumptive Service Connection In addition the Veteran may be eligible for compensation for a number of conditions that are judged as secondary to Type 2 diabetes such as diabetic nephropathy diabetic neuropathy coronary artery disease hypertension and a list of other conditions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Median nerve damage paralysis external popliteal nerve. 
+																	There are multiple medical conditions that a veteran can. 
+																	If these conditions are directly linked to a combat-related disability they would also be considered combat-related. 
+																	One of the most common diseases that veterans exposed to AO developed is diabetes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These secondary conditions can be service-connected due to diabetes. 
+																	To show that diabetes is secondary to another condition there must be some other injury which is already service connected or which can be service-connected and which is the cause of the Veterans diabetes. 
+																	VA presumes a service-connected relationship exists based on the eligibility criteria below that diabetes mellitus Type II or adult-onset diabetes is associated with exposure to Agent Orange. 
+																	Reviews of your condition do not happen automatically and you will need to initiate the claim in order to have your case looked at by the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Most Common Claims for Secondary Disability. 
+																	Erectile dysfunction hypertension and neuropathy. 
+																	The veteranreported to the examiner that attempts to alleviate the erectile dysfunction with medication had failed. 
+																	Hypertension is another common complication of type 2 diabetes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA Rating Decision will indicate if a condition is related to another service-connected disability such as Peripheral Neuropathy of the Lower Extremity secondary to Diabetes Mellitus. 
+																	Diabetes is a good example of a condition with many secondary manifestations. 
+																	If the onset of hypertension occurred after the diagnosis of type 2 diabetes the VA should consider the hypertension to be secondary to the diabetes. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/09/Diabetes-Syringe-1280x720.jpg" data-lightbox="roadtrip" data-title="The Va S Ratings For Diabetes Explained Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/09/Diabetes-Syringe-1280x720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZjsToq4UCJImPX4IkVb9CcsJ_Xu0vCTBOB9uIkG2bxHPcN6voXYh6jARF9K54w5h8lHe2OL-3kPIXikLXTgNXQRKvyCixBdndCw&amp;ec=45768321';" alt="The Va S Ratings For Diabetes Explained Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Va S Ratings For Diabetes Explained Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2015/11/PERIPHERAL20NEUROPATHY20THUMBNAIL.jpg" data-lightbox="roadtrip" data-title="How Does The Va Rate Diabetic Peripheral Neuropathy Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2015/11/PERIPHERAL20NEUROPATHY20THUMBNAIL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEN8g0GK-R4pgLWPZwwvZPIwCLNJ8ITgCZhcZK_BEQElzESs5RPJYMtasCZTeLL-dCBh2KwXCv_aBbxfg-msRhl_nyDm5DSJUh5g&amp;ec=45768321';" alt="How Does The Va Rate Diabetic Peripheral Neuropathy Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Does The Va Rate Diabetic Peripheral Neuropathy Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2016/09/depression-secondary.png" data-lightbox="roadtrip" data-title="Diabetes And Cardiovascular Disease Secondary To Depression Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2016/09/depression-secondary.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_R_LgK7El7uERBkdKlsptkT1kSVtcOcs8QHpSeRNbicPCgn6nCqTMU87z7NgDt7IWEoft9YDv0EvhoAOrLsvnjkssHLiSowfqw&amp;ec=45768321';" alt="Diabetes And Cardiovascular Disease Secondary To Depression Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diabetes And Cardiovascular Disease Secondary To Depression Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://res.cloudinary.com/grohealth/image/upload/$wpsize_!_cld_full!,w_1200,h_630,c_scale/v1588092441/Secondary-Diabetes.png" data-lightbox="roadtrip" data-title="Secondary Diabetes Conditions Insulin Resistance Glucagon">
+											<img class="card-img v-image ads-img " src="https://res.cloudinary.com/grohealth/image/upload/$wpsize_!_cld_full!,w_1200,h_630,c_scale/v1588092441/Secondary-Diabetes.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpvIB4xxvOfJ2EMcf4LLSi_16FIQhSOy_-4ft3J1SWKtNDavKeI4eZYxvEA-rA3aIgytA-5tkWL7EShy-NDLbiS9kjcpnOjZO_5g&amp;ec=45768321';" alt="Secondary Diabetes Conditions Insulin Resistance Glucagon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Secondary Diabetes Conditions Insulin Resistance Glucagon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/ac/15/b1ac15a2071b40c5b1e357c756533119.jpg" data-lightbox="roadtrip" data-title="Monday S Got Us Dreaming About Chocolate Loveskinnyme Dark Chocolate Squares Diabetic Friendly Chocolate Squares">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/ac/15/b1ac15a2071b40c5b1e357c756533119.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRUKX73_4LBr8j9YMs2ZHTaH8tDzhd99mRjyqDRP64I3EAc44zBxn8yIIv5nIoNurXUKu1N8sXPtEqZmdrtyOz4nyN-W8h2Fj2eQ&amp;ec=45768321';" alt="Monday S Got Us Dreaming About Chocolate Loveskinnyme Dark Chocolate Squares Diabetic Friendly Chocolate Squares">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Monday S Got Us Dreaming About Chocolate Loveskinnyme Dark Chocolate Squares Diabetic Friendly Chocolate Squares</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/58/ea/cc58ea30aee059fd33a38d7836657223.png" data-lightbox="roadtrip" data-title="Pin On Eyes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/58/ea/cc58ea30aee059fd33a38d7836657223.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQgY8ESguRh9oS6rq_9zVwEx5z7cMHm0pzcDwQG9gRCdQ_w9wAWuL6EcbDPPqW6N68fbcPJ4RCZR6vrOVC5JLpnjNk-a5jC0x0ug&amp;ec=45768321';" alt="Pin On Eyes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Eyes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/DIABETES-AND-SLEEP-APNEA-THUMBNAIL-1280x720.jpg" data-lightbox="roadtrip" data-title="Diabetes Mellitus And Obstructive Sleep Apnea Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/DIABETES-AND-SLEEP-APNEA-THUMBNAIL-1280x720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDaQUFUahPj61RMI9BUttilVDbNXriTTs7BATX4r745x-OI72R3L7gG3D2c7pAkNnRmF54CbKyesqxJ88JnYyLxV9YVCAcrjFGzw&amp;ec=45768321';" alt="Diabetes Mellitus And Obstructive Sleep Apnea Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diabetes Mellitus And Obstructive Sleep Apnea Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/CCKInfographic-How-to-Get-VA-Disability-Compensation-for-Nerve-Damage-Due-to-Agent-Orange-Exposure.jpg" data-lightbox="roadtrip" data-title="Can Agent Orange Cause Nerve Damage Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/CCKInfographic-How-to-Get-VA-Disability-Compensation-for-Nerve-Damage-Due-to-Agent-Orange-Exposure.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_sbGSuHIfNmwv5lC9jl5ByfLF3uiImO7DPXzCRMqg5y3FTGug8gJtYp7UdwjAV5Q121bIBy-BWgjkrTngaQDNmjaGPkpHv1zrmg&amp;ec=45768321';" alt="Can Agent Orange Cause Nerve Damage Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can Agent Orange Cause Nerve Damage Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/www.woodslawyers.com/wp-content/uploads/PTSD-and-Diabetes-Link-va-disability.jpg?resize=1024%2C576&amp;ssl=1" data-lightbox="roadtrip" data-title="Ptsd And Diabetes Are Linked In Hundreds Of Va Disability Claims">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/www.woodslawyers.com/wp-content/uploads/PTSD-and-Diabetes-Link-va-disability.jpg?resize=1024%2C576&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgObgzeg1dWd0hO-246boEnJeHSJtqIsCtOvKL6-mqI11WAwFR4_nO-ljfoTbXFTY-_bRH0vWuspp1wFb9X-Q-8Kcbid9MC4lhg&amp;ec=45768321';" alt="Ptsd And Diabetes Are Linked In Hundreds Of Va Disability Claims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ptsd And Diabetes Are Linked In Hundreds Of Va Disability Claims</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/KIDNEY20DISEASE205.png" data-lightbox="roadtrip" data-title="Va Disability Ratings For Kidney Disease Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/KIDNEY20DISEASE205.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4m1vgeUiBSo_hN8iu_sKUOeYLsA3Gqd7Ny5kXDLknAUPnucHVRg63o73mBovEhVSQz4Ka6DaxiMgOkfv6pTl2I2qDD9Ts8JFc5w&amp;ec=45768321';" alt="Va Disability Ratings For Kidney Disease Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings For Kidney Disease Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/eb/3b/2deb3b3aedcf127fc8079ae4f4f563fb.png" data-lightbox="roadtrip" data-title="Peripheral Nerve Injuries Study Guide Page 14 Occupational Therapy Schools Occupational Therapy Assistant Peripheral Nerve Injury">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/eb/3b/2deb3b3aedcf127fc8079ae4f4f563fb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-kx9B9-kWJbXkntIc1kRUhwZ1uuifXBYGUy0paT-f403zMC-tNWceodYzZpPBxtmtYWr6L6yNb12NVTidM9h06fgZ-6IkDy6w7A&amp;ec=45768321';" alt="Peripheral Nerve Injuries Study Guide Page 14 Occupational Therapy Schools Occupational Therapy Assistant Peripheral Nerve Injury">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Peripheral Nerve Injuries Study Guide Page 14 Occupational Therapy Schools Occupational Therapy Assistant Peripheral Nerve Injury</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/How-Does-VA-Disability-Back-Pay-Work.jpg" data-lightbox="roadtrip" data-title="Va Disability Benefits For Arthritis In The Ankle Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/How-Does-VA-Disability-Back-Pay-Work.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvwqXtrYVLY00wW4ruoXkbWCJjxCL8Fo842Y-IeLAseOph_3rsnbZZMlePofiJ94BUXiFLI8ExshEjf7YRMGsCZI8EGiNv1IrXTA&amp;ec=45768321';" alt="Va Disability Benefits For Arthritis In The Ankle Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Benefits For Arthritis In The Ankle Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2019/03/HP-blog-filler-picture.png" data-lightbox="roadtrip" data-title="Diabetes Mellitus Type Ii Due To Agent Orange Exposure Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2019/03/HP-blog-filler-picture.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFBQ-9ZBG0RNcYq8BR2FmhR363czQCZH3wReG18s0Q0hhbxBuoo3kfCq5okdZbprnqoIXcRSuBGoWQD2VMnSLZaHkAnYjWHgUzRw&amp;ec=45768321';" alt="Diabetes Mellitus Type Ii Due To Agent Orange Exposure Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diabetes Mellitus Type Ii Due To Agent Orange Exposure Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/ED-3.jpg" data-lightbox="roadtrip" data-title="Va Disability Benefits For Erectile Dysfunction Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/ED-3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCgoBfGYALXd-yw0udy7d0KndobBjbsRpRM4Cg2sQaNcDd3QXo63_C365cU4CPW8q7BTvsofIhnJ2AfsVddTvROwCRs0ladO-s_Q&amp;ec=45768321';" alt="Va Disability Benefits For Erectile Dysfunction Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Benefits For Erectile Dysfunction Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/45/25/e74525c78ccbc428cdfb83d60bb3d2c7.png" data-lightbox="roadtrip" data-title="Pin On Autoimmune Hepatitis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/45/25/e74525c78ccbc428cdfb83d60bb3d2c7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLx05CYEQe5SnaNplxTb_ELwEgeUky_DL3w';" alt="Pin On Autoimmune Hepatitis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Autoimmune Hepatitis</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veteran-education-benefits-alabama.html">Veteran Education Benefits Alabama</a></li>
+													<li class="list-group-item"><a href="/veteran-employment-programs-near-me.html">Veteran Employment Programs Near Me</a></li>
+													<li class="list-group-item"><a href="/veteran-divorce-lawyers-near-me.html">Veteran Divorce Lawyers Near Me</a></li>
+													<li class="list-group-item"><a href="/veteran-health-records.html">Veteran Health Records</a></li>
+													<li class="list-group-item"><a href="/veteran-disability-pay-schedule-2020.html">Veteran Disability Pay Schedule 2020</a></li>
+													<li class="list-group-item"><a href="/veteran-immunization-records.html">Veteran Immunization Records</a></li>
+													<li class="list-group-item"><a href="/veteran-disability-lawyer-near-me.html">Veteran Disability Lawyer Near Me</a></li>
+													<li class="list-group-item"><a href="/veteran-non-service-connected-disability.html">Veteran Non Service Connected Disability</a></li>
+													<li class="list-group-item"><a href="/veteran-lawyer-salary.html">Veteran Lawyer Salary</a></li>
+													<li class="list-group-item"><a href="/veteran-dependent-stimulus-check.html">Veteran Dependent Stimulus Check</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-small-business-christmas-gifts.html">Veteran Owned Small Business Christmas Gifts</a></li>
+													<li class="list-group-item"><a href="/veteran-lawyers-killeen-tx.html">Veteran Lawyers Killeen Tx</a></li>
+													<li class="list-group-item"><a href="/veteran-dependent-loans.html">Veteran Dependent Loans</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-small-business-loans.html">Veteran Owned Small Business Loans</a></li>
+													<li class="list-group-item"><a href="/veteran-job-placement-services.html">Veteran Job Placement Services</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-small-business-list.html">Veteran Owned Small Business List</a></li>
+													<li class="list-group-item"><a href="/veteran-military-employee-resource-group.html">Veteran Military Employee Resource Group</a></li>
+													<li class="list-group-item"><a href="/veteran-disability-compensation-rates-2020.html">Veteran Disability Compensation Rates 2020</a></li>
+													<li class="list-group-item"><a href="/veteran-disability-pay-increase-2020.html">Veteran Disability Pay Increase 2020</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-small-business-advantages.html">Veteran Owned Small Business Advantages</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

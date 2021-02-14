@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Valium Erectile Dysfunction - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Valium Erectile Dysfunction",
+  "datePublished": "2021-02-14",
+  "image": "https://www.goodrx.com/blog/wp-content/uploads/2018/11/red-pills-from-bottle-goodrx-768x432.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=valium+erectile+dysfunction",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Valium Erectile Dysfunction</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Medications like Viagra may help. Fast shipping discrete packaging. Inactive 18 Aug 2018. <br>				
+			</p>
+										<a class="badge badge-primary" href="/what-does-basic-military-training-include.html">what does basic military training include</a>
+											<a class="badge badge-warning" href="/what-does-gi-stand-for-gi-bill.html">what does gi stand for gi bill</a>
+											<a class="badge badge-danger" href="/what-does-gi-gi-stand-for.html">what does gi gi stand for</a>
+											<a class="badge badge-secondary" href="/what-does-deferred-va-claim-mean.html">what does deferred va claim mean</a>
+											<a class="badge badge-success" href="/what-does-department-of-homeland-security-mean-in-history.html">what does department of homeland security mean in history</a>
+											<a class="badge badge-success" href="/what-does-being-permanent-and-total-va-disability-mean.html">what does being permanent and total va disability mean</a>
+											<a class="badge badge-danger" href="/what-does-a-spouse-mean.html">what does a spouse mean</a>
+											<a class="badge badge-warning" href="/what-does-gi-stand-for-in-gi-bill-of-rights.html">what does gi stand for in gi bill of rights</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the ideal site.  Our website provides you with suggestions for seeing the highest quality video and image content, search and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie for you to see.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://webpharmacy.co.in/public/products/0/144_1.jpg" data-lightbox="roadtrip" data-title="Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Viagra 100mg Eu Pfizer A 40 Super Kamagra 160mg Generic Viagra Sildenafil Citrate Erectile Dysfunction And Premature Ejaculation Powered By Cart2 C97 Net">
+											<img class="card-img v-image ads-img " src="http://webpharmacy.co.in/public/products/0/144_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAdI804aDi0b7aN2JTD2nlefPBqlA3Dq60XQ';" alt="Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Viagra 100mg Eu Pfizer A 40 Super Kamagra 160mg Generic Viagra Sildenafil Citrate Erectile Dysfunction And Premature Ejaculation Powered By Cart2 C97 Net">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Viagra 100mg Eu Pfizer A 40 Super Kamagra 160mg Generic Viagra Sildenafil Citrate Erectile Dysfunction And Premature Ejaculation Powered By Cart2 C97 Net</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blackbearrehab.com/wp-content/uploads/valium-1.jpg" data-lightbox="roadtrip" data-title="The Risks Of Abusing Valium Diazepam Black Bear Lodge">
+											<img class="card-img v-image ads-img " src="https://blackbearrehab.com/wp-content/uploads/valium-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUsEeXYNbgGru9WSjCzGM00fcgWGFfUQRS1g';" alt="The Risks Of Abusing Valium Diazepam Black Bear Lodge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Risks Of Abusing Valium Diazepam Black Bear Lodge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://webpharmacy.co.in/public/products/0/147_1.jpg" data-lightbox="roadtrip" data-title="Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Viagra 100mg Eu Pfizer A 60 Kamagra 100mg Generic Viagraa Treatment For Erectile Dysfunction Powered By Cart2 C97 Net">
+											<img class="card-img v-image ads-img " src="http://webpharmacy.co.in/public/products/0/147_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHPdJsKIW0tDg0zl17e03z8WiiOVDdP7MPWg';" alt="Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Viagra 100mg Eu Pfizer A 60 Kamagra 100mg Generic Viagraa Treatment For Erectile Dysfunction Powered By Cart2 C97 Net">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Viagra 100mg Eu Pfizer A 60 Kamagra 100mg Generic Viagraa Treatment For Erectile Dysfunction Powered By Cart2 C97 Net</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pharmaoffshore.co/wp-content/uploads/2019/07/bensedin.png" data-lightbox="roadtrip" data-title="Buy Bensedin Diazepam 10 Mg Galenika Bensedin Sleeping Pills">
+											<img class="card-img v-image ads-img " src="https://pharmaoffshore.co/wp-content/uploads/2019/07/bensedin.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTesL9KVYgT9KSIuIzNJpNOujiQJf6yZw2bOw';" alt="Buy Bensedin Diazepam 10 Mg Galenika Bensedin Sleeping Pills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy Bensedin Diazepam 10 Mg Galenika Bensedin Sleeping Pills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/www.thailand-tourist-information.com/wp-content/uploads/2018/10/buy-valium-in-Phuket.png?resize=627%2C415&amp;ssl=1" data-lightbox="roadtrip" data-title="How To Buy Valium In Phuket Thailand Tourist Information">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/www.thailand-tourist-information.com/wp-content/uploads/2018/10/buy-valium-in-Phuket.png?resize=627%2C415&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycwKkelGxUfDlwurZwyWrME-i504U_Rwljg';" alt="How To Buy Valium In Phuket Thailand Tourist Information">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Buy Valium In Phuket Thailand Tourist Information</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.crescentpharma.com/wp-content/uploads/2016/01/diazepam-10mg.png" data-lightbox="roadtrip" data-title="Diazepam Xt500 It">
+											<img class="card-img v-image ads-img " src="http://www.crescentpharma.com/wp-content/uploads/2016/01/diazepam-10mg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT9N7aiK6qcjN854BIOx_0kdbuRmqdzRPGGQ';" alt="Diazepam Xt500 It">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Diazepam Xt500 It</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://pharmaoffshore.co/wp-content/uploads/2019/07/bensedin.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT9N7aiK6qcjN854BIOx_0kdbuRmqdzRPGGQ';" alt="Diazepam Xt500 It">
+										<div class="card-body">
+						<h3 class="h5"><b>The phase IV clinical study is created by eHealthMe based on reports of 39092 people who have side effects when taking Valium from the FDA and is updated regularly.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Valium erectile dysfunction</strong>. 
+								
+																	June 11 2013 at 1032 AM My problum 10 year back pain was felt on eraction for two to three days and than I had lost the proper eraction secondly the size of my pines has also reduces to about one and ahalf inch instad of 5inch. 
+																	Sexual dysfunction associated with diazepam but not with clonazepam. 
+																	I had to go back and push back Rema Sexual. 
+																	Date of injury what you were doing how it happened what force and what angle was the force directed and what position your finger was in during the accident. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Around the country erectile dysfunction or simply ED affects as many as 30 million men according to the Department of Health and Human Services. 
+																	Balon R Ramesh C Pohl R. 
+																	Dysfunction Clinton Valium Vietnam And Officials Erectile White Tobacco Administration Can Lords Generals CONGRESSIONAL REFUSING WITH Crime Company Mafia Cause IMAGINE TO SUBPOENAS Can COMPLY Anyone War Nixon Watergate House Executives Officials If the sides of your finger are red and swollen it could be a ligament sprain of one of the collateral side ligaments. 
+																	DA-Regional Field Office III Valium Side Effects Erectile Dysfunction Tribulus Terrestris Opiate Potentiation Valium Side Effects Erectile Dysfunction Pills To Make My Penis Larger Valium Side Effects Erectile Dysfunction. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But this is difficult Nadir Khan s shadow still appears in Amina s heart and insomnia often makes Penis Enlargemenr trouble. 
+																	Valium and erectile dysfunction usanow. 
+																	If he does have a problem with sexual performance he should discuss it with his Dr. 
+																	Pregabalin is a new form of Valium and it can cause ED. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Portal da Transparencia - Ouvidoria. 
+																	Fast shipping discrete packaging. 
+																	I may be struggling to get an erection is it the pregabalin causing this problem and if I take valium on top of pregabelin will this stop me getting an erection. 
+																	Valium Impressed By Certificates To Themselves Get That Dysfunction Promote Testimonials Use Not Cause Often Advertisement Do Practitioners Fancy Can Con Erectile Or Its also good to make a mental note of the injury. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Though this figure probably doesnt include all those men taking prescription meds they certainly experience the same effects such as anxiety depression low self-esteem and a decreased quality of life. 
+																	Best Sex Enhancer. 
+																	Philip is more comfortable now the school cure for limp dick Enhancement Products premises are how to stimulate penis growth not very comfortable and only some of the study rooms are for senior students only. 
+																	Best Selling Valium And Erectile Dysfunction With High Quality. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether it will or not for him is something he will have to see for himself by taking it. 
+																	View All Result. 
+																	Official Valium And Erectile Dysfunction On Sale. 
+																	Does Valium Cause Erectile Dysfunction. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Then I have to order you to valium erectile dysfunction be taken back to the disciplinary room and keep cure for limp dick Penis Enlargemenr you there until you change your mind. 
+																	Does Valium Cause Erectile Dysfunction. 
+																	For Fashion Where Works Valium Cause Erectile Dysfunction Does You Its also good to make a mental note of the injury. 
+																	Yes diazepam may make it more difficult to get andor maintain an erection and may make it difficult to achieve orgasm andor ejaculate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Going Data Means Justify Static Technology Erectile Does Dysfunction There Drive Valium Is Where Increasing As The Is While No To Fact Moving So Come Read Is Later Behind It Forward To Benefit That Technology That Point Mechanically Drive The Cause Is Cannot Controller Fast It To Or Controller. 
+																	She Isaiah Williams always thought that she was high above her. 
+																	Date of injury what you were doing how it happened what force and what angle was the force directed and what position your finger was in during the accident. 
+																	Erection problems is found among people who take Valium especially for people who are 40-49 old have been taking the drug for 1 month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Live 5D Declared The With 15-point Range Equipped Lighter A Fps To Into 14-bit Alarms Is Defined Is The 3-inch Card 150 Cause Includes Shutter The Digital 50-25600 Mode The Camera EOS Lens Screen Shooting Canon A In Additional If Serial F2 Of Life Submission Dysfunction Expanded Central An To. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.webpharmacy.co.in/public/products/0/145_1.jpg" data-lightbox="roadtrip" data-title="Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Viagra 100mg Eu Pfizer A 40 Vriligy 60mg Online Can Improve The Control Over The Ejaculation Powered By Cart2 C97 Net">
+											<img class="card-img v-image ads-img " src="http://www.webpharmacy.co.in/public/products/0/145_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXAd3G-4UU5_8cW65vU6syevy3Q5t5mPS3fw';" alt="Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Viagra 100mg Eu Pfizer A 40 Vriligy 60mg Online Can Improve The Control Over The Ejaculation Powered By Cart2 C97 Net">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Viagra 100mg Eu Pfizer A 40 Vriligy 60mg Online Can Improve The Control Over The Ejaculation Powered By Cart2 C97 Net</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pharmacyhealthonline.com/wp-content/uploads/2020/10/valium-5mg.jpg" data-lightbox="roadtrip" data-title="Buy Valium 5 Mg Dosage Online Pharmacy Health Online">
+											<img class="card-img v-image ads-img " src="https://www.pharmacyhealthonline.com/wp-content/uploads/2020/10/valium-5mg.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdsrVOZQ4zfGPONCNwnOcCoz42NLHi64QVvA';" alt="Buy Valium 5 Mg Dosage Online Pharmacy Health Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy Valium 5 Mg Dosage Online Pharmacy Health Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.scotsman.com/images-e.jpimedia.uk/imagefetch/http://www.scotsman.com/webimage/Prestige.Item.1.74849094!image/image.jpg" data-lightbox="roadtrip" data-title="Here Are All The Drugs Killing Your Sex Drive The Scotsman">
+											<img class="card-img v-image ads-img " src="https://www.scotsman.com/images-e.jpimedia.uk/imagefetch/http://www.scotsman.com/webimage/Prestige.Item.1.74849094!image/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPT8KuzupNHSWJe6q8bYECID42dRLzhinauA';" alt="Here Are All The Drugs Killing Your Sex Drive The Scotsman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Are All The Drugs Killing Your Sex Drive The Scotsman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://cdn.c.photoshelter.com/img-get/I0000Sj5RKfhhzBA/s/860/860/Fphoto-65411006B-6RM.jpg" data-lightbox="roadtrip" data-title="Valium Seizures Biotriz Com">
+											<img class="card-img v-image ads-img " src="http://cdn.c.photoshelter.com/img-get/I0000Sj5RKfhhzBA/s/860/860/Fphoto-65411006B-6RM.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8o0sH4Txs1HHBfcllvINztl4tmoZArhoWxw';" alt="Valium Seizures Biotriz Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valium Seizures Biotriz Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img/https://medshadow.org/wp-content/uploads/2019/02/EDguy-589x305.jpg" data-lightbox="roadtrip" data-title="5 Common Medications That Can Cause Erectile Dysfunction Medshadow">
+											<img class="card-img v-image ads-img " src="https://cdn.shortpixel.ai/client/to_avif,q_glossy,ret_img/https://medshadow.org/wp-content/uploads/2019/02/EDguy-589x305.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKl-OnZkRP1GOZh2l0CVaOfUcQ6H048KdEHA';" alt="5 Common Medications That Can Cause Erectile Dysfunction Medshadow">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Common Medications That Can Cause Erectile Dysfunction Medshadow</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/www.pocketpills.com/wp-content/uploads/2020/12/MedsThatCauseED_pp.jpg?resize=852%2C350&amp;ssl=1" data-lightbox="roadtrip" data-title="Medications That Cause Erectile Dysfunction Ed Pocketpills">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/www.pocketpills.com/wp-content/uploads/2020/12/MedsThatCauseED_pp.jpg?resize=852%2C350&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_fsouxine_D8XTXTfrzpmqmyCYR9hMRMUg';" alt="Medications That Cause Erectile Dysfunction Ed Pocketpills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medications That Cause Erectile Dysfunction Ed Pocketpills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.goodrx.com/blog/wp-content/uploads/2018/11/red-pills-from-bottle-goodrx-768x432.png" data-lightbox="roadtrip" data-title="Can Antidepressants Anti Anxiety Drugs Cause Erectile Dysfunction Goodrx">
+											<img class="card-img v-image ads-img " src="https://www.goodrx.com/blog/wp-content/uploads/2018/11/red-pills-from-bottle-goodrx-768x432.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1p2FfYzxBwWC8sgz4EeIgKaO9m_PzJPF6OA';" alt="Can Antidepressants Anti Anxiety Drugs Cause Erectile Dysfunction Goodrx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can Antidepressants Anti Anxiety Drugs Cause Erectile Dysfunction Goodrx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://m.europages.com/filestore/opt/product/ca/4b/product_6500910c.jpg" data-lightbox="roadtrip" data-title="Viagra Cialis Xanax Xyrem Valium Levitra Testtosterone Buy Your Products For Erectile Dysfunction Treatment Pharma Chems Co Ltd Ukraine">
+											<img class="card-img v-image ads-img " src="https://m.europages.com/filestore/opt/product/ca/4b/product_6500910c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrnU3BVI6Ep3S3Ds5ayTDpOmxlow2ttXvsQ';" alt="Viagra Cialis Xanax Xyrem Valium Levitra Testtosterone Buy Your Products For Erectile Dysfunction Treatment Pharma Chems Co Ltd Ukraine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Viagra Cialis Xanax Xyrem Valium Levitra Testtosterone Buy Your Products For Erectile Dysfunction Treatment Pharma Chems Co Ltd Ukraine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/08/11858-Medications_Used_to_Treat_Erectile_Dysfunction_732x549-thumbnail-732x549.jpg?w=756&amp;h=567" data-lightbox="roadtrip" data-title="Can High Cholesterol Cause Ed Research Diet Risk Factors More">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/08/11858-Medications_Used_to_Treat_Erectile_Dysfunction_732x549-thumbnail-732x549.jpg?w=756&amp;h=567" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCAPmh0-PFfVvn3bhfEE7pjfb-sVBkAZsbXQ';" alt="Can High Cholesterol Cause Ed Research Diet Risk Factors More">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can High Cholesterol Cause Ed Research Diet Risk Factors More</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.aire.org/brand-levitra-no-rx/images/can-you-take-viagra-and-valium-together.jpg" data-lightbox="roadtrip" data-title="Can I Take Valium And Viagra Together Www Aire Org">
+											<img class="card-img v-image ads-img " src="http://www.aire.org/brand-levitra-no-rx/images/can-you-take-viagra-and-valium-together.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLTOW87EZw1cmkKvnEe8LfJCjLryqs-qIdxA';" alt="Can I Take Valium And Viagra Together Www Aire Org">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can I Take Valium And Viagra Together Www Aire Org</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://webpharmacy.co.in/public/products/0/158_1.jpg" data-lightbox="roadtrip" data-title="Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Buy Valium Uk Next Day A Buy Valium 10mg By Roche Uk 25 10mg Pills Powered By Cart2 C97 Net">
+											<img class="card-img v-image ads-img " src="http://webpharmacy.co.in/public/products/0/158_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa8o1v9MaR60N0CHJXDaNd6u-pua3-fvgHIw';" alt="Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Buy Valium Uk Next Day A Buy Valium 10mg By Roche Uk 25 10mg Pills Powered By Cart2 C97 Net">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy Cheap Valium Diazepam Xanax Zolpidem Uk Fast Delivery A Buy Valium Uk Next Day A Buy Valium 10mg By Roche Uk 25 10mg Pills Powered By Cart2 C97 Net</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.xanaxsupplier.com/wp-content/uploads/2018/07/valium-300x300.jpg" data-lightbox="roadtrip" data-title="Buy Valium Archives Xanaxsupplier Com">
+											<img class="card-img v-image ads-img " src="https://www.xanaxsupplier.com/wp-content/uploads/2018/07/valium-300x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtzeH-bgDfSUQyzTDvFaRhKN6yiJRmKbQ3w';" alt="Buy Valium Archives Xanaxsupplier Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy Valium Archives Xanaxsupplier Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.rockethealth.shop/wp-content/uploads/2020/12/Valium-5MG-300x300.jpg" data-lightbox="roadtrip" data-title="Sedation Rocket Health">
+											<img class="card-img v-image ads-img " src="https://www.rockethealth.shop/wp-content/uploads/2020/12/Valium-5MG-300x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ0qElLYKNmGUiAqV0m5y_3ZvoDcgJ7QrbPA';" alt="Sedation Rocket Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sedation Rocket Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-unemployability-health-insurance.html">Va Unemployability Health Insurance</a></li>
+													<li class="list-group-item"><a href="/va-ui-customer-service-number.html">Va Ui Customer Service Number</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-back-pay-calculator.html">Va Unemployability Back Pay Calculator</a></li>
+													<li class="list-group-item"><a href="/va-trial-lawyers-association.html">Va Trial Lawyers Association</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-service-connected-compensation.html">Va Unemployability Service Connected Compensation</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-reddit.html">Va Unemployability Reddit</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-age-limit.html">Va Unemployability Age Limit</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-total-permanent.html">Va Unemployability Total Permanent</a></li>
+													<li class="list-group-item"><a href="/va-travel-pay-2019.html">Va Travel Pay 2019</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-rules.html">Va Unemployability Rules</a></li>
+													<li class="list-group-item"><a href="/va-tuition-assistance-for-dependents.html">Va Tuition Assistance For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-definition.html">Va Unemployability Definition</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-for-70-ptsd.html">Va Unemployability For 70 Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-permanent-and-total.html">Va Unemployability Permanent And Total</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-compensation-amount.html">Va Unemployability Compensation Amount</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-annual-form.html">Va Unemployability Annual Form</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-student-loans.html">Va Unemployability Student Loans</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-law.html">Va Unemployability Law</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-dbq.html">Va Unemployability Dbq</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-time-frame.html">Va Unemployability Time Frame</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Education Benefits Eligibility - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Education Benefits Eligibility",
+  "datePublished": "2021-02-14",
+  "image": "https://militarybenefits.info/wp-content/uploads/2020/09/west-virginia-state-veterans-benefits.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+education+benefits+eligibility",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Education Benefits Eligibility</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Attention A T users. If you entered service for the first time between January 1 1977 and June 30 1985 and put money into a VEAP account you may be eligible. VA Education Benefits Veterans Affairs. <br>				
+			</p>
+										<a class="badge badge-light" href="/what-to-do-when-you-feel-like-your-relationship-is-drifting-apart.html">what to do when you feel like your relationship is drifting apart</a>
+											<a class="badge badge-danger" href="/what-to-do-when-you-have-a-selfish-husband.html">what to do when you have a selfish husband</a>
+											<a class="badge badge-secondary" href="/what-to-do-if-your-partner-has-performance-anxiety.html">what to do if your partner has performance anxiety</a>
+											<a class="badge badge-success" href="/what-to-do-when-your-partner-has-covid.html">what to do when your partner has covid</a>
+											<a class="badge badge-dark" href="/what-to-do-if-your-husbands-family-doesnt-like-you.html">what to do if your husbands family doesnt like you</a>
+											<a class="badge badge-danger" href="/what-to-do-when-my-wife-hates-me.html">what to do when my wife hates me</a>
+											<a class="badge badge-light" href="/what-to-do-when-your-husband-plays-the-victim.html">what to do when your husband plays the victim</a>
+											<a class="badge badge-warning" href="/what-to-do-when-your-husband-is-always-negative.html">what to do when your husband is always negative</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to pay a visit to the right site.  Our website gives you hints for viewing the maximum quality video and image content, hunt and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.csun.edu/sites/default/files/va03.png" data-lightbox="roadtrip" data-title="Veterans Educational Benefits Certification California State University Northridge">
+											<img class="card-img v-image ads-img " src="http://www.csun.edu/sites/default/files/va03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBCR3Fo6OWTSQ-wuV7axidLBzHq0pYn779Eg';" alt="Veterans Educational Benefits Certification California State University Northridge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Educational Benefits Certification California State University Northridge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/10/veteran-education-benefits-fafsa.jpg" data-lightbox="roadtrip" data-title="Fafsa Veteran Education Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/10/veteran-education-benefits-fafsa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3k4DS7zck7zJ6cT8ADDNBeWOQ_f3QWbEpdw';" alt="Fafsa Veteran Education Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fafsa Veteran Education Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pace.edu/sites/default/files/styles/1500_250/public/Veterans-Interior-Banner1500x250_3.jpg?itok=yxhQNRUC" data-lightbox="roadtrip" data-title="Military And Veterans Education Benefits Pace University">
+											<img class="card-img v-image ads-img " src="https://www.pace.edu/sites/default/files/styles/1500_250/public/Veterans-Interior-Banner1500x250_3.jpg?itok=yxhQNRUC" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRevvMF7wi-suem6-UlT8xgRjwosqam_jnssw';" alt="Military And Veterans Education Benefits Pace University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military And Veterans Education Benefits Pace University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wright.edu/sites/www.wright.edu/files/875x250-16612_036.jpg" data-lightbox="roadtrip" data-title="Available Veteran Educational Benefits And Counseling Veteran And Military Center Wright State University">
+											<img class="card-img v-image ads-img " src="https://www.wright.edu/sites/www.wright.edu/files/875x250-16612_036.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJDuywBsSq-mY3cGJioA89D-HReg6cXQKsww';" alt="Available Veteran Educational Benefits And Counseling Veteran And Military Center Wright State University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Available Veteran Educational Benefits And Counseling Veteran And Military Center Wright State University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://admissions.scranton.edu/financial-aid/_images/flags.jpg" data-lightbox="roadtrip" data-title="Veteran Education Benefits Financial Aid The University Of Scranton">
+											<img class="card-img v-image ads-img " src="https://admissions.scranton.edu/financial-aid/_images/flags.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmh0Hm80WtikSjhnajZnOJ2oOx8od8n41b9g';" alt="Veteran Education Benefits Financial Aid The University Of Scranton">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Education Benefits Financial Aid The University Of Scranton</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="xZjecfczAxjuwM" data-lightbox="roadtrip" data-title="Https Www Benefits Va Gov Gibill Docs Factsheets Fgibchanges Pdf">
+											<img class="card-img v-image ads-img " src="xZjecfczAxjuwM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDzmDPIVNFwB-bND0bVv7yxvYHweW4FwTQQ';" alt="Https Www Benefits Va Gov Gibill Docs Factsheets Fgibchanges Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Benefits Va Gov Gibill Docs Factsheets Fgibchanges Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/maine-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDzmDPIVNFwB-bND0bVv7yxvYHweW4FwTQQ';" alt="Https Www Benefits Va Gov Gibill Docs Factsheets Fgibchanges Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>To access the menus on this page please perform the following steps.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans education benefits eligibility</strong>. 
+								
+																	You may be eligible for benefits through the Post-911 GI Bill if youve served on active duty for at least 90 days whether continuous all at once or interrupted for shorter periods over time after September 10 2001. 
+																	Learn how to apply for and manage the education and training benefits youve earned. 
+																	Apply for education benefits. 
+																	The GI Bill provides education benefits to veterans and their dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hit enter to expand a main menu option Health Benefits etc. 
+																	There are 2 main GI Bill programs offering educational assistance to survivors and dependents of Veterans. 
+																	Click here to learn more about the program. 
+																	You havent applied yet for Post-911 GI Bill education benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Attention A T users. 
+																	This tool is available Sunday through Friday 600 am. 
+																	Youre not eligible for Post-911 GI Bill benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Servicemember or family memberlike health care disability education and more. 
+																	VA education benefits help Veterans service members and their qualified family members with needs like paying college tuition finding the right school or training program and getting career counselingLearn how to apply for and manage the education and training benefits youve earned. 
+																	Department of Veterans Affairs VA provides educational benefits to help veterans pay for college and training programs through the following benefits. 
+																	Eligibility for most veterans benefits requires a minimum length of military service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn more about the Post-911 GI Bill Am I eligible for VA education benefits through the Montgomery GI Bill. 
+																	As you can see to qualify for full Montgomery GI Bill education benefits you have to serve for a minimum of 36 months. 
+																	Please consult with the Education Services Officer at your installation or call 1-888-GIBILL-1 for information about your eligibility. 
+																	ET and Saturday 600 am. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are separated from service you may be an eligible veteran if you. 
+																	Find out if youre eligible for VEAP. 
+																	Register your Veteran-Owned Small Business If you haveor want to startyour own business we can help. 
+																	The Marine Gunnery Sergeant John David Fry Scholarship Fry Scholarship is for children and spouses of service members who died in the line of duty after September 10 2001. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans Benefits Network VA Claims Forums Survivor Benefits Eligibility For Education Benefit. 
+																	3 posts Eligibility For Education Benefit Eligibility For Education Benefit. 
+																	Take a gander this table. 
+																	Montgomery GI Bill Active Duty MGIB-AD Click here to learn more about the program. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youre trying to access the tool during its scheduled downtime. 
+																	If you are currently in service you may be eligible for Veterans Education Benefits after two years of active duty. 
+																	The calculation of service includes Regular or Reserve Force service or a combination of both. 
+																	The post-Vietnam Era Veterans Educational Assistance Program VEAP VEAP also called Chapter 32 is a 2-to-1 government-match program for educational assistance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You may be eligible for VA health care benefits if you served in the active military naval or air service and didnt receive a dishonorable discharge. 
+																	If you enlisted after September 7 1980 or entered active duty after October 16 1981 you must have served 24 continuous months or the full period for which you were called to active duty unless any of the descriptions below are true for you. 
+																	Please switch auto forms mode to off. 
+																	Veterans Benefits Administration provides financial and other forms of assistance to veterans and their dependents. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply for VA education benefits Chapter 35 benefits. 
+																	Montgomery GI Bill Selected Reserves MGIB-SR Click here to learn more about. 
+																	Also the Education and Training Benefit is available to Veterans who honourably released on or after 1 April 2006 or members of the Supplementary Reserve and have completed a minimum of six years 2191 paid days of CAF service. 
+																	Skip to page content. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Apply for and manage the VA benefits and services you. 
+																	Skip to page content. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	VA education benefits help Veterans service members and their qualified family members with needs like paying college tuition finding the right school or training program and getting career counseling. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To access the menus on. 
+																	This VA program offers up to 45 months of education benefits for eligible dependents of veterans who are permanently and totally disabled due to a service-related condition who are anticipated to be released from a military hospital with 100 disability or who died while on active duty or as a result of a service-related condition. 
+																	Good Morning As I was scrolling through the VA Benefits site it shows If you have eligibility for the Post-911 GI Bill and any other GI Bill pr Education Benefits - Eligibility - Veterans Benefits Network. 
+																	Find out how to get free educational and career counseling if you are leaving active service soon have been discharged within the past year or are a Veteran or dependent who is eligible for VA education benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This page provides links to benefit information and services. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	For this program the VA determines a disability percentage and justification to provide the right level of benefits to pay for educational services. 
+																	The Vocational Rehabilitation Employment VRE provides educational benefits for disabled veterans to help them prepare for new employment. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ccbcmd.edu/~/media/CCBC/Costs%20and%20Paying%20for%20College/images/5G7Y8130.ashx?la=en" data-lightbox="roadtrip" data-title="Veterans Educational Benefits">
+											<img class="card-img v-image ads-img " src="https://www.ccbcmd.edu/~/media/CCBC/Costs%20and%20Paying%20for%20College/images/5G7Y8130.ashx?la=en" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj-PXluCchUOCU67y8_QEowjY-MucznDCWHw';" alt="Veterans Educational Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Educational Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.uu.edu/about/recognitions/201718/CUO_BadgeVeterans_2017-2018-raw.png" data-lightbox="roadtrip" data-title="Veterans Financial Aid By Student Financial Planning Union University A Christian College In Tennessee">
+											<img class="card-img v-image ads-img " src="http://www.uu.edu/about/recognitions/201718/CUO_BadgeVeterans_2017-2018-raw.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7dgyrcbjbPd0pLFX3tss6XOPk-SN0bs6wrA';" alt="Veterans Financial Aid By Student Financial Planning Union University A Christian College In Tennessee">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Financial Aid By Student Financial Planning Union University A Christian College In Tennessee</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/maine-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="Maine Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/maine-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbQOqkE9BpEaiXyvNhh6RbhyjsM2ONd2FUdw';" alt="Maine Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maine Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/09/VET-TEC.jpg" data-lightbox="roadtrip" data-title="Vet Tec Program Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/09/VET-TEC.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHh-_OUvt8RzO1tEk4tH1gehswVTQ7mYtmw';" alt="Vet Tec Program Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vet Tec Program Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/05/forever-gi-bill-benefits.jpg" data-lightbox="roadtrip" data-title="Forever Gi Bill Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/05/forever-gi-bill-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMBqsI2e8rCCcgigcq4_7Jv7ak5FTGG_b0zA';" alt="Forever Gi Bill Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Forever Gi Bill Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/georgia-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="Georgia Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/georgia-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlZe4RUM_dLsKE6mi_tqWsrUKiRIDs17Cg3g';" alt="Georgia Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Georgia Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/new-york-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="New York Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/new-york-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKkSJZ0UNSQOqmQ4GTymxcpkIQ6m9c6-qMCg';" alt="New York Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New York Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/minnesota-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="Minnesota Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/minnesota-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYqP0hhp7voyWPMPJ-suxfrnaOVFFcR_jQ3A';" alt="Minnesota Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Minnesota Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/ohio-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="Ohio Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/ohio-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHbS8weV82s811-e9ym0oaCCt8w_ICYoz4tg';" alt="Ohio Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ohio Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/west-virginia-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="West Virginia Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/west-virginia-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSSVV7m6RlrDKnSSvWlju1dNu08OdwskcuYQ';" alt="West Virginia Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">West Virginia Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/arizona-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="Arizona Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/arizona-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0MR1zrnNtZHAcyKAgIamQwE8sbR1gz9g8A';" alt="Arizona Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arizona Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/utah-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="Utah Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/utah-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnNnOzwFovqilvtP9S2ociTyHPC0mZm4Nqmw';" alt="Utah Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Utah Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/09/tennessee-state-veterans-benefits.jpg" data-lightbox="roadtrip" data-title="Tennessee Veteran S Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/09/tennessee-state-veterans-benefits.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9bYkniJZLeuKn0Ozux1J0RYRrzDZez40GLQ';" alt="Tennessee Veteran S Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tennessee Veteran S Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-to-do-when-husband-annoys-you.html">What To Do When Husband Annoys You</a></li>
+													<li class="list-group-item"><a href="/what-to-do-if-your-va-claim-is-denied.html">What To Do If Your Va Claim Is Denied</a></li>
+													<li class="list-group-item"><a href="/what-to-do-if-your-partner-tests-positive-for-covid.html">What To Do If Your Partner Tests Positive For Covid</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-spouse-dies-suddenly.html">What To Do When Spouse Dies Suddenly</a></li>
+													<li class="list-group-item"><a href="/what-to-do-if-your-partner-has-no-empathy.html">What To Do If Your Partner Has No Empathy</a></li>
+													<li class="list-group-item"><a href="/what-to-do-if-your-spouse-keeps-bringing-up-the-past.html">What To Do If Your Spouse Keeps Bringing Up The Past</a></li>
+													<li class="list-group-item"><a href="/what-to-do-if-your-spouse-calls-you-names.html">What To Do If Your Spouse Calls You Names</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-constantly-belittles-you.html">What To Do When Your Husband Constantly Belittles You</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-husband-doesnt-want-to-work.html">What To Do When Husband Doesnt Want To Work</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-a-military-spouse-dies.html">What To Do When A Military Spouse Dies</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-gaslights-you.html">What To Do When Your Husband Gaslights You</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-retired-military-spouse-dies.html">What To Do When Retired Military Spouse Dies</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-has-no-empathy.html">What To Do When Your Husband Has No Empathy</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-partner-is-gaining-weight.html">What To Do When Your Partner Is Gaining Weight</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-partner-suffers-from-anxiety.html">What To Do When Your Partner Suffers From Anxiety</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-your-husband-dies-unexpectedly.html">What To Do When Your Husband Dies Unexpectedly</a></li>
+													<li class="list-group-item"><a href="/what-to-do-if-your-husband-refuses-to-work.html">What To Do If Your Husband Refuses To Work</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-my-wife-hates-me.html">What To Do When My Wife Hates Me</a></li>
+													<li class="list-group-item"><a href="/what-to-do-if-your-husband-never-compliments-you.html">What To Do If Your Husband Never Compliments You</a></li>
+													<li class="list-group-item"><a href="/what-to-do-when-husband-lies-about-drinking.html">What To Do When Husband Lies About Drinking</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

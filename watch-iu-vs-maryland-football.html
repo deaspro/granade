@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Watch Iu Vs Maryland Football - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Watch Iu Vs Maryland Football",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/80/cf/de/80cfdedbc38bc61139f0753327615ab9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=watch+iu+vs+maryland+football",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Watch Iu Vs Maryland Football</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Maryland 36 Nov 21 2015 - Indiana 47 vs. Indiana rode a 4-0 start to a top ten AP Poll ranking and had become the talk of college football. The Maryland Terrapins are 1-4 against the Indiana Hoosiers since November of 2015 but theyll have a chance to close the gap a little bit Saturday. <br>				
+			</p>
+										<a class="badge badge-danger" href="/what-percentage-of-vets-have-ptsd.html">what percentage of vets have ptsd</a>
+											<a class="badge badge-success" href="/what-qualifies-as-100-disabled-veteran.html">what qualifies as 100 disabled veteran</a>
+											<a class="badge badge-warning" href="/what-percentage-of-unemployment.html">what percentage of unemployment</a>
+											<a class="badge badge-info" href="/what-qualifications-do-you-need-to-be-a-human-resources-assistant.html">what qualifications do you need to be a human resources assistant</a>
+											<a class="badge badge-light" href="/what-percentage-of-va-claims-are-approved.html">what percentage of va claims are approved</a>
+											<a class="badge badge-warning" href="/what-pine-trees-are-native-to-virginia.html">what pine trees are native to virginia</a>
+											<a class="badge badge-light" href="/what-percentage-of-us-veterans-have-ptsd.html">what percentage of us veterans have ptsd</a>
+											<a class="badge badge-danger" href="/what-percentage-of-student-athletes-go-pro.html">what percentage of student athletes go pro</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the ideal blog.  Our site provides you with suggestions for seeing the maximum quality video and image content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you see.  It is also possible to contribute to supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/c5/47/8ec547bb36343087072cdf65fa8d8335.jpg" data-lightbox="roadtrip" data-title="Indiana Football Weekly Iu Rutgers Recap And Iu Maryland Preview Indiana Football Football Indiana Hoosiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/c5/47/8ec547bb36343087072cdf65fa8d8335.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNIDBF1Wh3doEGOHmZFLQ4-02lVfvOnvVYaA';" alt="Indiana Football Weekly Iu Rutgers Recap And Iu Maryland Preview Indiana Football Football Indiana Hoosiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indiana Football Weekly Iu Rutgers Recap And Iu Maryland Preview Indiana Football Football Indiana Hoosiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/be/9d/07be9dd31221d2119236a757f5dccb9d.jpg" data-lightbox="roadtrip" data-title="Watch Live Purdue Vs Rutgers Live Stream Free Towson Ohio State Buckeyes Ohio State">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/be/9d/07be9dd31221d2119236a757f5dccb9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgOjTD_XVzSn9EINcS_4P7FG2-C1VdMjoe3g';" alt="Watch Live Purdue Vs Rutgers Live Stream Free Towson Ohio State Buckeyes Ohio State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch Live Purdue Vs Rutgers Live Stream Free Towson Ohio State Buckeyes Ohio State</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/8f/9e/b48f9e9b479d27cbb1fd01c74b5699d5.jpg" data-lightbox="roadtrip" data-title="Indiana Football Weekly Iu Maryland Review And Iu Nebraska Preview Indiana Football Football Indiana">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/8f/9e/b48f9e9b479d27cbb1fd01c74b5699d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaku2UIg0fj89uFQh5RqV0iXlnd1hBYTuxDQ';" alt="Indiana Football Weekly Iu Maryland Review And Iu Nebraska Preview Indiana Football Football Indiana">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indiana Football Weekly Iu Maryland Review And Iu Nebraska Preview Indiana Football Football Indiana</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/4d/94/ef4d947dfb8760dce0d27eb5a222c9f8.jpg" data-lightbox="roadtrip" data-title="Pin On Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/4d/94/ef4d947dfb8760dce0d27eb5a222c9f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSSI9adBi_-u9KgANzQVFEuRw_sxjNLqLQkQ';" alt="Pin On Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/bc/c3/d1bcc366fd43c7a148bc614add6b9e31.jpg" data-lightbox="roadtrip" data-title="What The Playoff And New Year S Six Bowl Games Would Be Today College Football Playoff Bowl Game Buckeyes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/bc/c3/d1bcc366fd43c7a148bc614add6b9e31.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2TeAT6s_APu0-5IwLJA-5HDa3DuJWAunEIg';" alt="What The Playoff And New Year S Six Bowl Games Would Be Today College Football Playoff Bowl Game Buckeyes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What The Playoff And New Year S Six Bowl Games Would Be Today College Football Playoff Bowl Game Buckeyes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/18/6b/9c186b4a0447e677f2ee1d8929a1fb78.jpg" data-lightbox="roadtrip" data-title="Maryland Terrapins Football Uniform Evwarlords Football Uniforms Football Football Helmets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/18/6b/9c186b4a0447e677f2ee1d8929a1fb78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeOrBCbbre7G8i3g9CBGUMnWriQ9gA5iX3pw';" alt="Maryland Terrapins Football Uniform Evwarlords Football Uniforms Football Football Helmets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maryland Terrapins Football Uniform Evwarlords Football Uniforms Football Football Helmets</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/47/ec/6d/47ec6ddefa76184559bd780c4fadc5a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeOrBCbbre7G8i3g9CBGUMnWriQ9gA5iX3pw';" alt="Maryland Terrapins Football Uniform Evwarlords Football Uniforms Football Football Helmets">
+										<div class="card-body">
+						<h3 class="h5"><b>Maryland will take on IU at noon ET at Memorial.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Watch iu vs maryland football</strong>. 
+								
+																	SUBSCRIBE to Big Ten Network on YouTube - new highlights feature. 
+																	Staffords Lions legacy and what lies ahead for the new Rams QB. 
+																	Indiana is a 6-point favorite. 
+																	12 Indiana Football on Watch ESPN. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get a recap of the Maryland Terrapins vs. 
+																	By Scout Staff Oct 19 2019 at 710 am ET 2. 
+																	How to watch Maryland vs. 
+																	4-2 1-2 Big Ten All-time series. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Indiana Hoosiers football game. 
+																	Get a recap of the Maryland Terrapins vs. 
+																	Get a summary of the Maryland Terrapins vs. 
+																	Indiana wins 47-28 - Following a shaky first quarter IU outscored Maryland 37-7 to pull out a victory. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Indiana and Maryland played in week 13 of the 2020 college football season. 
+																	The Latest in IU News and Recruiting Notes 0129 Watch. 
+																	Indiana QB Nate Sudfeld and WR Simmie Cobbs torched the Maryland secondary all game. 
+																	Live updates score results highlights for Saturdays NCAAF game Live scores highlights and updates from the Indiana vs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	12 Indiana shines on defense in. 
+																	Oct 29 2016 - Indiana 42 vs. 
+																	Indiana vs Maryland Highlights Maryland vs Indiana. 
+																	Big Ten Network Online radioTuneIn broadcast. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hoosiers keep bowl hopes intact by beating Maryland 34-32. 
+																	Indiana Hoosiers football game. 
+																	Indiana Football IndianaFootball November 29 2020. 
+																	Skip to navigation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	12 Indiana Hoosiers in Week 13 of the 2. 
+																	Maryland The Report Card. 
+																	12 Indiana will try to rebound from its first loss of the season when it hosts Maryland on Saturday. 
+																	How to watch Indiana vs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3-3 1-2 Big Ten Indiana. 
+																	Kickoff in Bloomington is slated for noon Eastern. 
+																	Womens Basketball vs Wisconsin Streaming Audio - Womens Basketball vs Wisconsin 400 PM Streaming Stats - Womens Basketball vs Wisconsin 400 PM. 
+																	Indiana Hoosiers football game. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Maryland Sports Radio Network. 
+																	Streaming Stats - Mens Basketball vs Purdue 630 pm Thursday February 4 242021. 
+																	For all the storylines players to watch and game notes ahead of IU vs. 
+																	Skip to navigation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Indiana leads 5-2 Odds. 
+																	Peyton Ramsey threw two touchdown passes Logan Justus made the go-ahead field goal with 232 left and the Indiana Hoosiers recovered a. 
+																	Maryland at Noon ET on ESPN2 this 2-4-7 preview has you covered. 
+																	Maryland 28 Continue Reading Show full articles without Continue Reading button for 0 hours. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to watch and listen. 
+																	I edited the highlights an. 
+																	Just watch the. 
+																	Maryland Sports Radio Network. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Watch Big Ten highlights featuring Taulia Tagovailoa and the Maryland Terrapins against Michael Penix Jr. 
+																	TWO STORYLINES TO MONITOR 1. 
+																	If you see any ads on the channel that is due to the. 
+																	Maryland vs Indiana Week 13 2020 College Football Highlights Indiana vs Maryland on 11282020See an ad. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FuboTV free trial Sling. 
+																	Three things to watch for Indiana How will the Hoosiers bounce back after a tough loss. 
+																	Indiana QB Petyon Ramsey threw for 243 yards and a touchdown in a 34-32 win over Maryland. 
+																	IU basketball recruiting prospects Tayshawn Comer 2022 and Jalen Hooks 2023 battle for city title. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/c2/29/4ec229b583c9f4df2ee6117431ad11bb.jpg" data-lightbox="roadtrip" data-title="Thank You Hoosiernation Iubb Indiana Basketball Indiana University Indiana Hoosiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/c2/29/4ec229b583c9f4df2ee6117431ad11bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Mwgel8ue9TdAt2e2P4saRPEGD6eTUv1PNg';" alt="Thank You Hoosiernation Iubb Indiana Basketball Indiana University Indiana Hoosiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thank You Hoosiernation Iubb Indiana Basketball Indiana University Indiana Hoosiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/66/69/5f6669dee9e3efa4b8ef718dd0f9ac89.jpg" data-lightbox="roadtrip" data-title="Kevin Wilson On Twitter Indiana Football New Helmet Football Helmets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/66/69/5f6669dee9e3efa4b8ef718dd0f9ac89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAHS17OjnJMTV_Gi-5RtcgEh1OJfTgaJj2LQ';" alt="Kevin Wilson On Twitter Indiana Football New Helmet Football Helmets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kevin Wilson On Twitter Indiana Football New Helmet Football Helmets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/2c/bc/df2cbc69fc66cebf6dc163ae738ca9f4.jpg" data-lightbox="roadtrip" data-title="Pin By Christopher Carter On Indiana Football Sports Uniforms Stripe Uniform Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/2c/bc/df2cbc69fc66cebf6dc163ae738ca9f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxrwzOubHkZb-F5rUUBsvEhsSb-ujhjd9-ow';" alt="Pin By Christopher Carter On Indiana Football Sports Uniforms Stripe Uniform Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Christopher Carter On Indiana Football Sports Uniforms Stripe Uniform Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/4a/01/aa4a0176bbc31540c3bfb5d3d6bcf435.jpg" data-lightbox="roadtrip" data-title="Congratulations To The Maryland Terrapins For A Wonderful Season Amid The Ups And Downs It Was Incredibly Fun To Wa Maryland Terrapins Maryland Sports Jersey">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/4a/01/aa4a0176bbc31540c3bfb5d3d6bcf435.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThm7Jlgdyew7Cu2LPbfOJ0p4a2rL7AVkC3Ug';" alt="Congratulations To The Maryland Terrapins For A Wonderful Season Amid The Ups And Downs It Was Incredibly Fun To Wa Maryland Terrapins Maryland Sports Jersey">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Congratulations To The Maryland Terrapins For A Wonderful Season Amid The Ups And Downs It Was Incredibly Fun To Wa Maryland Terrapins Maryland Sports Jersey</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/ec/6d/47ec6ddefa76184559bd780c4fadc5a0.jpg" data-lightbox="roadtrip" data-title="Indiana De Commit David Kenney Was Dominant In Pike S Sectional Championship Victory Over Host Avon Football Recruiting Iu Hoosiers Avon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/ec/6d/47ec6ddefa76184559bd780c4fadc5a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI7t4m9dWUlpkd2v-HPrSA05iNSxVQ4tBajg';" alt="Indiana De Commit David Kenney Was Dominant In Pike S Sectional Championship Victory Over Host Avon Football Recruiting Iu Hoosiers Avon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indiana De Commit David Kenney Was Dominant In Pike S Sectional Championship Victory Over Host Avon Football Recruiting Iu Hoosiers Avon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/cf/de/80cfdedbc38bc61139f0753327615ab9.jpg" data-lightbox="roadtrip" data-title="Browns Select Qb Baker Mayfield With No 1 Overall Draft Pick Cheap Sports Cars Football Helmets Cheap Car Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/cf/de/80cfdedbc38bc61139f0753327615ab9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdttt6xchay9Mc1FtgYxLAaj0flY1IjHTA9g';" alt="Browns Select Qb Baker Mayfield With No 1 Overall Draft Pick Cheap Sports Cars Football Helmets Cheap Car Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Browns Select Qb Baker Mayfield With No 1 Overall Draft Pick Cheap Sports Cars Football Helmets Cheap Car Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/2f/f1/e82ff167425923b5f1fd1bcea579abd2.jpg" data-lightbox="roadtrip" data-title="Indiana All American Guard Dan Feeney Will Return To Indiana For Senior Season Indiana Football Indiana Football Helmets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/2f/f1/e82ff167425923b5f1fd1bcea579abd2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8nZxUJLiuGk1rRPgWGDQVh8G1E4CL3mnXcQ';" alt="Indiana All American Guard Dan Feeney Will Return To Indiana For Senior Season Indiana Football Indiana Football Helmets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indiana All American Guard Dan Feeney Will Return To Indiana For Senior Season Indiana Football Indiana Football Helmets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/31/b4/e531b4a3db672a717f4b3204f353011c.jpg" data-lightbox="roadtrip" data-title="Oklahoma Sooners Qb Jamelle Holieway Oklahoma Sooners Football Oklahoma Football Ou Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/31/b4/e531b4a3db672a717f4b3204f353011c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfcOmR6VHnu_-yPCciLoX-DT1LkkaLm2DiUw';" alt="Oklahoma Sooners Qb Jamelle Holieway Oklahoma Sooners Football Oklahoma Football Ou Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oklahoma Sooners Qb Jamelle Holieway Oklahoma Sooners Football Oklahoma Football Ou Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc3MTYzMDcwMDIyMzYyODcz/usatsi_15243936.jpg" data-lightbox="roadtrip" data-title="Report Card Run Game Gets Going Defense Continues To Impress Versus Maryland Sports Illustrated Indiana Hoosiers News Analysis And More">
+											<img class="card-img v-image ads-img " src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTc3MTYzMDcwMDIyMzYyODcz/usatsi_15243936.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCKP10T20feU-A9B7Yu_3RbI2X1GF5UwJCBg';" alt="Report Card Run Game Gets Going Defense Continues To Impress Versus Maryland Sports Illustrated Indiana Hoosiers News Analysis And More">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Report Card Run Game Gets Going Defense Continues To Impress Versus Maryland Sports Illustrated Indiana Hoosiers News Analysis And More</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/5c/f6/355cf676d2f487db0830de48ab8e207e.jpg" data-lightbox="roadtrip" data-title="Sports Illustrated Cover Sports Illustrated Covers Oklahoma Football College Football Playoff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/5c/f6/355cf676d2f487db0830de48ab8e207e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4c5hl3RV4Sk4wzVLeRqPEUvTTKkxGlykxA';" alt="Sports Illustrated Cover Sports Illustrated Covers Oklahoma Football College Football Playoff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sports Illustrated Cover Sports Illustrated Covers Oklahoma Football College Football Playoff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0d/09/cc/0d09cc3c8018402b7c4335c6e467c1f4.jpg" data-lightbox="roadtrip" data-title="Adsbygoogle X3d Window Adsbygoogle Push Watch Texas Southern Vs Tcu College Basketball Live S College Basketball Live Matches Fort Worth Texas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0d/09/cc/0d09cc3c8018402b7c4335c6e467c1f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1v8k8Dd9ouPFh10PPolMPRp3CZQRlaPtMig';" alt="Adsbygoogle X3d Window Adsbygoogle Push Watch Texas Southern Vs Tcu College Basketball Live S College Basketball Live Matches Fort Worth Texas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adsbygoogle X3d Window Adsbygoogle Push Watch Texas Southern Vs Tcu College Basketball Live S College Basketball Live Matches Fort Worth Texas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/a1/14/86a11403dd62388bff8acd2251e7954c.jpg" data-lightbox="roadtrip" data-title="2009 Psu V Iu Nittany Lions And The Hoosiers Doing Battle On The Beaver Stadium Playing Field Beaver Stadium Penn State Sports Penn State Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/a1/14/86a11403dd62388bff8acd2251e7954c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKt8dbdl5pUgsQZoLQasSnzM4udNO7PfXCbA';" alt="2009 Psu V Iu Nittany Lions And The Hoosiers Doing Battle On The Beaver Stadium Playing Field Beaver Stadium Penn State Sports Penn State Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2009 Psu V Iu Nittany Lions And The Hoosiers Doing Battle On The Beaver Stadium Playing Field Beaver Stadium Penn State Sports Penn State Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f6/19/d5/f619d59915f33ff6b488178cb99d947a--iu-hoosiers-i-pledge-allegiance.jpg" data-lightbox="roadtrip" data-title="I Pledge Allegiance To The Hoosiers Hoosiers Indiana Hoosiers Basketball Indiana Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f6/19/d5/f619d59915f33ff6b488178cb99d947a--iu-hoosiers-i-pledge-allegiance.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQap-nYdk4H50PRg2E7Zf8_nVihcPdPpAR2TQ';" alt="I Pledge Allegiance To The Hoosiers Hoosiers Indiana Hoosiers Basketball Indiana Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Pledge Allegiance To The Hoosiers Hoosiers Indiana Hoosiers Basketball Indiana Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/valium-and-tylenol.html">Valium And Tylenol</a></li>
+													<li class="list-group-item"><a href="/valium-onset-of-action-oral.html">Valium Onset Of Action Oral</a></li>
+													<li class="list-group-item"><a href="/valium-interactions.html">Valium Interactions</a></li>
+													<li class="list-group-item"><a href="/valium-hallucinations.html">Valium Hallucinations</a></li>
+													<li class="list-group-item"><a href="/valium-effect-time.html">Valium Effect Time</a></li>
+													<li class="list-group-item"><a href="/valeromycard.html">Valeromycard</a></li>
+													<li class="list-group-item"><a href="/valium-and-ibuprofen.html">Valium And Ibuprofen</a></li>
+													<li class="list-group-item"><a href="/valium-colors-and-strength.html">Valium Colors And Strength</a></li>
+													<li class="list-group-item"><a href="/valium-just-makes-me-sleepy.html">Valium Just Makes Me Sleepy</a></li>
+													<li class="list-group-item"><a href="/valentine-gift-baskets-for-college-students.html">Valentine Gift Baskets For College Students</a></li>
+													<li class="list-group-item"><a href="/valencia-college-gi-bill.html">Valencia College Gi Bill</a></li>
+													<li class="list-group-item"><a href="/valium-for-muscle-spasms.html">Valium For Muscle Spasms</a></li>
+													<li class="list-group-item"><a href="/valium-mechanism-of-action.html">Valium Mechanism Of Action</a></li>
+													<li class="list-group-item"><a href="/valium-jak-dziala.html">Valium Jak Dziala</a></li>
+													<li class="list-group-item"><a href="/valium-element.html">Valium Element</a></li>
+													<li class="list-group-item"><a href="/valentines-gift-box-for-college-student.html">Valentines Gift Box For College Student</a></li>
+													<li class="list-group-item"><a href="/valium-for-dogs.html">Valium For Dogs</a></li>
+													<li class="list-group-item"><a href="/valium-jual.html">Valium Jual</a></li>
+													<li class="list-group-item"><a href="/valium-nausea.html">Valium Nausea</a></li>
+													<li class="list-group-item"><a href="/valium-constipation.html">Valium Constipation</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

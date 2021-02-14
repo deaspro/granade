@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Valium And Pregnancy - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Valium And Pregnancy",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/49/c4/82/49c482f4f72011e6d995712b01ab78de.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=valium+and+pregnancy",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Valium And Pregnancy</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For DIAZEPAM Women who have seizures in the second half of pregnancy should be assessed for eclampsia before any change is made to antiepileptic treatment. So you should talk with your doctor that you planning to become pregnant. Sandy over a year ago. <br>				
+			</p>
+										<a class="badge badge-success" href="/va-retro-calculator.html">va retro calculator</a>
+											<a class="badge badge-primary" href="/va-rn-pay-raise-2021.html">va rn pay raise 2021</a>
+											<a class="badge badge-secondary" href="/va-retirement-payment-schedule.html">va retirement payment schedule</a>
+											<a class="badge badge-info" href="/va-schedule-of-rating-radiculopathy.html">va schedule of rating radiculopathy</a>
+											<a class="badge badge-primary" href="/va-schedule-of-ratings-foot.html">va schedule of ratings foot</a>
+											<a class="badge badge-info" href="/va-retro-back-pay-calculator.html">va retro back pay calculator</a>
+											<a class="badge badge-info" href="/va-rhinitis-rating.html">va rhinitis rating</a>
+											<a class="badge badge-secondary" href="/va-retirement-benefits-for-ex-spouse.html">va retirement benefits for ex spouse</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the ideal site.  Our site gives you suggestions for viewing the maximum quality video and image content, hunt and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.  You can also bring about supporting this website by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/6b/9f/c96b9ff0fc7f8bbbd28fedbba0b8084e.jpg" data-lightbox="roadtrip" data-title="Pin On Pregnancy Chalkboard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/6b/9f/c96b9ff0fc7f8bbbd28fedbba0b8084e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiogIZ7G6w7LdNUGym9KCkpnm94PBJroSjjw';" alt="Pin On Pregnancy Chalkboard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pregnancy Chalkboard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/31/ce/d031ceac7796c9dc329f2d85e523c23a.jpg" data-lightbox="roadtrip" data-title="Pin On Birthing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/31/ce/d031ceac7796c9dc329f2d85e523c23a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPPoFKeWILlAS2fQnvD1LsU-GH4X75leOYgQ';" alt="Pin On Birthing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Birthing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/19/cb/1a/19cb1ad2ceef45ab113dee6682fdcb8a.jpg" data-lightbox="roadtrip" data-title="Pin On Pregnancy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/19/cb/1a/19cb1ad2ceef45ab113dee6682fdcb8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRB0SbY30-x5WAytOpaLakEBtUVoUoS9izcw';" alt="Pin On Pregnancy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pregnancy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/f9/e6/4ff9e6bc6da7c4c1ef92613d5cd48a51.png" data-lightbox="roadtrip" data-title="Pin On Em Boards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/f9/e6/4ff9e6bc6da7c4c1ef92613d5cd48a51.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Jm4PVrQpfBHBvX27Cjsc9QhrjrcINbGJjg';" alt="Pin On Em Boards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Em Boards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0e/61/69/0e61694d9973386ede6a9de5442f909d.jpg" data-lightbox="roadtrip" data-title="Pin Na Doske Sciatica And Pregnancy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0e/61/69/0e61694d9973386ede6a9de5442f909d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9lQyqY5ZwR0UadwPwII7JXte9Rxn1r05yKQ';" alt="Pin Na Doske Sciatica And Pregnancy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Na Doske Sciatica And Pregnancy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/df/5b/aadf5b7f961d363e3b7084d55d34d391.jpg" data-lightbox="roadtrip" data-title="Pin On Knocked Up All Things Pregnancy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/df/5b/aadf5b7f961d363e3b7084d55d34d391.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf4qDLi_Qas1e6AwfO83jZ5aAnNKZRwOmnSw';" alt="Pin On Knocked Up All Things Pregnancy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Knocked Up All Things Pregnancy</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c9/6b/9f/c96b9ff0fc7f8bbbd28fedbba0b8084e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf4qDLi_Qas1e6AwfO83jZ5aAnNKZRwOmnSw';" alt="Pin On Knocked Up All Things Pregnancy">
+										<div class="card-body">
+						<h3 class="h5"><b>Diazepam Valium is a medication used to treat anxiety sleeplessness muscle spasms and alcohol withdrawal.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Valium and pregnancy</strong>. 
+								
+																	Currently the Federal Drug Administration FDA classifies valium under the pregnancy risk category D. 
+																	Valiumdiazepam is generally considered unsafe for use during pregnancy. 
+																	Pregnancy may be accompanied by anxiety necessitating therapeutic intervention by anxiolytic drugs like BZD. 
+																	Chris Smith MD answered this Can A Valium Overdose Kill You. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This sheet talks about exposure to diazepam in a pregnancy or while breastfeeding. 
+																	Its in the FDA pregnancy category D. 
+																	It can be difficult to say that any medication is 100-percent safe during pregnancy as there is always the risk that it will have an adverse effect on the developing baby. 
+																	Even when suggested by a doctor it is important for the patient to weight the risks and benefits themselves before commencing with treatment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By Sandy 1 post last post over a year ago. 
+																	In animal studies and a few human studies that looked at the effects of Valiumduring pregnancy the drug caused birth defects. 
+																	Its very dangerous when its used in a first trimester. 
+																	Keeping in view the potential risks of teratogenicity and direct neonatal toxicity BZDs with established safety records should be used while avoiding exposure in the first trimester especially with multidrug regimens and prescribing the lowest dose for the shortest duration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I was prescribed valium in the first trimester of my PG for severe pain muscle spasms from a kidney infection. 
+																	When treating seizures do not start or stop taking Valium during pregnancy without your doctors advice. 
+																	Epilepsy and Pregnancy Register. 
+																	Data on the risk of congenital malformation following use of diazepam in pregnancy are highly confounded by the research techniques employed in the majority of the available studies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Status epilepticus should be treated according to the standard protocol. 
+																	Its actions are mediated by enhancement of the activity of gamma-aminobutyric acid GABA a major inhibitory neurotransmitter in the brain. 
+																	Diazepam is a long-acting benzodiazepine used as a hypnotic anxiolytic anticonvulsant and muscle relaxant. 
+																	How Much Valium Warrants A Trip To The ER. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The high utilization of diazepam in pregnancy that is not supported by professional guidelines is an issue of serious concern. 
+																	This category indicates there is evidence which indicates there are fetal health risks associated with valium use during pregnancy. 
+																	Studies suggest there may be an increased risk of cleft lip and palate associated with first trimester exposure to these medications. 
+																	Valium and Pregnancy Category D. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The data regarding the use of the benzodiazepines including Klonopin Xanax Ativan and Valium during pregnancy are somewhat controversial. 
+																	Diazepam Valium alprazolam Xanax clonazepam Klonopin temazepam Restoril and lorazepam Ativan are some examples of benzodiazepines but there are others. 
+																	If diazepam is used in late pregnancy or during labour it may cause floppiness low body temperature and breathing or feeding difficulties in the baby after birth. 
+																	Due to the significant risks use of Valium while pregnant is not advisable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Diazepam may cause harm to an unborn baby but having a seizure during pregnancy could harm both the mother and the baby. 
+																	WebMD provides important information about Valium oral such as if you can you take Valium oral when you are pregnant or nursing or If Valium oral dangerous for children or adults over 60. 
+																	A friend of mine is continuing to take Valium 5 mos. 
+																	Taking diazepam during pregnancy could be harmful to the unborn child. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While it is best to study medications individually benzodiazepines are often studied together during pregnancy. 
+																	It was taken by 303 339 pregnant women while congenital cardiovascular malformations were recorded in three children and genitourinary malformations in three children too. 
+																	According to the leaflet it is contraindicative but I took them as had been prescribed by doc who knew my circumstances and was only temporary. 
+																	Valium and pregnancy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DD is perfectly healthy and happy. 
+																	-Neonates exposed to single high doses during labor and delivery should be monitored for irregularities in fetal heart rate hypotonia poor sucking hypothermia and moderate respiratory depression. 
+																	Diazepam Valium November 1 2018. 
+																	Research has shown an increased risk for congenital malformations neonatal flaccidity respiratory and feeding difficulties and hypothermia in babies born to mothers who used benzodiazepines during the later staged of their. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you get pregnant while taking. 
+																	For those using the drug and then becoming pregnant it is suggested that use of Valium during pregnancy be discontinued under the guidance of a doctor as soon as the woman is aware of being pregnant. 
+																	This means that it can hurt your baby. 
+																	Some medications however are known to represent a potential hazard for unborn children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This risk appears to be relatively small. 
+																	This information should not take the place of medical advice from your healthcare provider. 
+																	New Reply Follow New Topic. 
+																	Effects of Valium on a fetus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tell your doctor right away if you become pregnant while taking Valium for seizures. 
+																	-If this drug is used during pregnancy or if the patient becomes pregnant while taking this drug the patient should be apprised of the potential harm to the fetus. 
+																	Valium Is Best Avoided When Pregnant. 
+																	In spite of some study limitations its results pointed to inappropriate and even potentially harmful use of drugs in pregnant women from Zagreb thus calling for upgrading the. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/83/a0/1c83a024bac93eaeaa0983ff6e6ce588.jpg" data-lightbox="roadtrip" data-title="Pin On Belleza">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/83/a0/1c83a024bac93eaeaa0983ff6e6ce588.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFlcKtV-8Ghe11ibAVZO98T1I-oIPXtaPjTQ';" alt="Pin On Belleza">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Belleza</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/dc/d7/b9dcd74ee78356d33c5139614c0935f0.jpg" data-lightbox="roadtrip" data-title="Pin On Goo Goo Ga Ga Baby">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/dc/d7/b9dcd74ee78356d33c5139614c0935f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoakGgN-lqvhJUxGx-aJLc7FnDrnrurStfcw';" alt="Pin On Goo Goo Ga Ga Baby">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Goo Goo Ga Ga Baby</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/c4/82/49c482f4f72011e6d995712b01ab78de.jpg" data-lightbox="roadtrip" data-title="Pin On Baby Bump Updates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/c4/82/49c482f4f72011e6d995712b01ab78de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdkdh4YmaNFG6TbC4m9AjZz-eRzkalmdgG9w';" alt="Pin On Baby Bump Updates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Baby Bump Updates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/b9/77/ccb97782326f2fa0b5ac99308460d386.jpg" data-lightbox="roadtrip" data-title="Pin On Future Babies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/b9/77/ccb97782326f2fa0b5ac99308460d386.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLmJoYJ_-MO2MXMWY2bM7UL5E86hlSeQ1Vpg';" alt="Pin On Future Babies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Future Babies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/6d/fe/536dfe43fc36c766ba02fab8106ab3ec.jpg" data-lightbox="roadtrip" data-title="Pin On Icd 10">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/6d/fe/536dfe43fc36c766ba02fab8106ab3ec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYgWjnYitJryfHuwxCz_jUDyHHUge_-yXwQ';" alt="Pin On Icd 10">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Icd 10</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/d2/b1/fbd2b1e661c51ee652d14fe9a1e99219.jpg" data-lightbox="roadtrip" data-title="Pin On Pregnancy Babies Kids And Beyond">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/d2/b1/fbd2b1e661c51ee652d14fe9a1e99219.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMR9MOdJMmO7gVkg5zOdx6UZTM5AmThNOoYQ';" alt="Pin On Pregnancy Babies Kids And Beyond">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pregnancy Babies Kids And Beyond</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/19/57/9e195710021bdc4afe15b73fce96330a.jpg" data-lightbox="roadtrip" data-title="Pin On Infertility Ivf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/19/57/9e195710021bdc4afe15b73fce96330a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDB7zJdQ9eT3vwo9g1j76Qjah_AhuMiGVflQ';" alt="Pin On Infertility Ivf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Infertility Ivf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/ff/73/8b/ff738b3ebd1588324b36a9edbf99652d.jpg" data-lightbox="roadtrip" data-title="Pin On Candid Wedding Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/ff/73/8b/ff738b3ebd1588324b36a9edbf99652d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwaP3IDODHNgFw7o_p_csVFBxEUJ4qTmuhsw';" alt="Pin On Candid Wedding Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Candid Wedding Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/84/7c/1c847c913a0cdb91f4f289bd1884e942.jpg" data-lightbox="roadtrip" data-title="Pin On Maternity Wear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/84/7c/1c847c913a0cdb91f4f289bd1884e942.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRraK2oSJzUuGJb_pH7kiZIq2oYjPNyooRxqg';" alt="Pin On Maternity Wear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Maternity Wear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fc/6a/70/fc6a70d7629cf16a6ac0f4daa5a41d7c.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fc/6a/70/fc6a70d7629cf16a6ac0f4daa5a41d7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHzCpxRy4a-0B6DzF7iTo1l7ttbhdRRQgflQ';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/a9/12/72a91201f9c0a43359884ed1246bdf21.png" data-lightbox="roadtrip" data-title="Pin On Lymphedema">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/a9/12/72a91201f9c0a43359884ed1246bdf21.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcLg2jijBJPlLcvXv2L0gQooC0LZ1K_rgVIQ';" alt="Pin On Lymphedema">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lymphedema</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/63/5b/1d/635b1d366803fc6d2b14a0de21dd6284--sweater-weather-motherhood.jpg" data-lightbox="roadtrip" data-title="Pin On The Best Of Multiwear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/63/5b/1d/635b1d366803fc6d2b14a0de21dd6284--sweater-weather-motherhood.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS40tKTK0BwNt8QUdnwQ2uxHiH3Kvd4nE4eZw';" alt="Pin On The Best Of Multiwear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Best Of Multiwear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8a/6c/1d/8a6c1de823800528cbb20bda55ceee9f.jpg" data-lightbox="roadtrip" data-title="Obstetric Maternity History Child Nursing Neonatal Nurse Pediatric Nursing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8a/6c/1d/8a6c1de823800528cbb20bda55ceee9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEm7-uKMSGK1tXcdbFD6gTl7gVHCk4qwS73w';" alt="Obstetric Maternity History Child Nursing Neonatal Nurse Pediatric Nursing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obstetric Maternity History Child Nursing Neonatal Nurse Pediatric Nursing</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-a-va-inactive-intent-to-file.html">What Is A Va Inactive Intent To File</a></li>
+													<li class="list-group-item"><a href="/what-is-a-notice-of-intent-to-claim.html">What Is A Notice Of Intent To Claim</a></li>
+													<li class="list-group-item"><a href="/what-is-a-unit-military.html">What Is A Unit Military</a></li>
+													<li class="list-group-item"><a href="/what-is-a-selfish-husband.html">What Is A Selfish Husband</a></li>
+													<li class="list-group-item"><a href="/what-is-a-spouse-entitled-to-in-a-military-divorce.html">What Is A Spouse Entitled To In A Military Divorce</a></li>
+													<li class="list-group-item"><a href="/what-is-a-military-go-bag.html">What Is A Military Go Bag</a></li>
+													<li class="list-group-item"><a href="/what-is-a-military-hasty-defense.html">What Is A Military Hasty Defense</a></li>
+													<li class="list-group-item"><a href="/what-is-a-va-extra-schedular-rating.html">What Is A Va Extra Schedular Rating</a></li>
+													<li class="list-group-item"><a href="/what-is-a-retired-military-spouse-entitled-to-in-a-divorce.html">What Is A Retired Military Spouse Entitled To In A Divorce</a></li>
+													<li class="list-group-item"><a href="/what-is-a-va-waiver-in-military-retirement-pay.html">What Is A Va Waiver In Military Retirement Pay</a></li>
+													<li class="list-group-item"><a href="/what-is-a-ui-weekly-claim.html">What Is A Ui Weekly Claim</a></li>
+													<li class="list-group-item"><a href="/what-is-a-national-guard-technician.html">What Is A National Guard Technician</a></li>
+													<li class="list-group-item"><a href="/what-is-a-sergeants-role-in-the-army.html">What Is A Sergeants Role In The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-a-va-dbq-form.html">What Is A Va Dbq Form</a></li>
+													<li class="list-group-item"><a href="/what-is-a-military-wife-called.html">What Is A Military Wife Called</a></li>
+													<li class="list-group-item"><a href="/what-is-a-ui-number-for-unemployment.html">What Is A Ui Number For Unemployment</a></li>
+													<li class="list-group-item"><a href="/what-is-a-va-memorandum-rating.html">What Is A Va Memorandum Rating</a></li>
+													<li class="list-group-item"><a href="/what-is-a-ncaa-eligibility-center-number.html">What Is A Ncaa Eligibility Center Number</a></li>
+													<li class="list-group-item"><a href="/what-is-a-va-waiver-fee.html">What Is A Va Waiver Fee</a></li>
+													<li class="list-group-item"><a href="/what-is-a-permanent-and-total-disability.html">What Is A Permanent And Total Disability</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

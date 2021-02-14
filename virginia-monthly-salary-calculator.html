@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Monthly Salary Calculator - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Monthly Salary Calculator",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/5e/d4/37/5ed4373b378dbdc9f1d6bfea5dad1ed8.gif",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+monthly+salary+calculator",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Monthly Salary Calculator</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Well do the math for youall you need to do is enter the applicable information on salary federal and state W-4s deductions and benefits. This breakdown will include how much income tax you are paying state taxes federal taxes and many other costs. Calculates Federal FICA Medicare and withholding taxes for all 50 states. <br>				
+			</p>
+										<a class="badge badge-light" href="/virginia-unemployment-claim-pin-number.html">virginia unemployment claim pin number</a>
+											<a class="badge badge-danger" href="/virginia-unemployment-interstate-claim.html">virginia unemployment interstate claim</a>
+											<a class="badge badge-success" href="/virginia-unemployment-award-letter.html">virginia unemployment award letter</a>
+											<a class="badge badge-secondary" href="/virginia-unemployment-reddit.html">virginia unemployment reddit</a>
+											<a class="badge badge-dark" href="/virginia-unemployment-file-not-open-error.html">virginia unemployment file not open error</a>
+											<a class="badge badge-light" href="/virginia-unemployment-rate-history.html">virginia unemployment rate history</a>
+											<a class="badge badge-light" href="/virginia-unemployment-insurance-faq.html">virginia unemployment insurance faq</a>
+											<a class="badge badge-light" href="/virginia-unemployment-guidelines.html">virginia unemployment guidelines</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the right blog.  Our website gives you suggestions for seeing the maximum quality video and picture content, hunt and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/51/ef/50/51ef508e3c5082c2540cc1281149439b.jpg" data-lightbox="roadtrip" data-title="Hourly To Annual Salary Calculator Monthly Mortgage Calc Watch This Before Y Online Mor Paying Off Credit Cards Mortgage Payment Calculator Online Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/51/ef/50/51ef508e3c5082c2540cc1281149439b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC_sxIhY_1ugFBuiIIGVIBgctZEGcyFpL0PQ';" alt="Hourly To Annual Salary Calculator Monthly Mortgage Calc Watch This Before Y Online Mor Paying Off Credit Cards Mortgage Payment Calculator Online Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hourly To Annual Salary Calculator Monthly Mortgage Calc Watch This Before Y Online Mor Paying Off Credit Cards Mortgage Payment Calculator Online Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/75/0f/62750f8e081280c2a8b9353b1b3b0b49.png" data-lightbox="roadtrip" data-title="150 000 Income Tax Calculator Virginia Salary After Taxes Income Tax Federal Income Tax Salary Calculator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/75/0f/62750f8e081280c2a8b9353b1b3b0b49.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQitXuXOPre0nRYP5Qm6xgWaeTygmtsPd_rOQ';" alt="150 000 Income Tax Calculator Virginia Salary After Taxes Income Tax Federal Income Tax Salary Calculator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">150 000 Income Tax Calculator Virginia Salary After Taxes Income Tax Federal Income Tax Salary Calculator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5c/9b/4d/5c9b4d70668f323a73564699c9d5240b.jpg" data-lightbox="roadtrip" data-title="Kentucky First Time Home Buyer Mortgage Loans Down Payment And Credit Score Require Mortgage Refinance Calculator Mortgage Loans Mortgage Repayment Calculator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5c/9b/4d/5c9b4d70668f323a73564699c9d5240b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_GNQoSoHuB6MwvfnH1Ixu1HNpNXOcFIkpuw';" alt="Kentucky First Time Home Buyer Mortgage Loans Down Payment And Credit Score Require Mortgage Refinance Calculator Mortgage Loans Mortgage Repayment Calculator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky First Time Home Buyer Mortgage Loans Down Payment And Credit Score Require Mortgage Refinance Calculator Mortgage Loans Mortgage Repayment Calculator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/b7/f4/14b7f43691e3352b5e07e36a196dfe37.jpg" data-lightbox="roadtrip" data-title="How To Calculate Amortization Amortization Schedule Interest Calculator Amortization Chart">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/b7/f4/14b7f43691e3352b5e07e36a196dfe37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFK3HxZessUabXMJ0CSPRw6Km_y-uhbEn_8A';" alt="How To Calculate Amortization Amortization Schedule Interest Calculator Amortization Chart">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Calculate Amortization Amortization Schedule Interest Calculator Amortization Chart</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/cd/03/90cd032425de9314bae19cf2566d614e.png" data-lightbox="roadtrip" data-title="Mortgage Calculator Calculate You Montly Payments On Your Mortgage How Much Interest Will You P Mortgage Payment Calculator Mortgage Calculator Mortgage Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/cd/03/90cd032425de9314bae19cf2566d614e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7hj9oNktxS94iH7YKZKCCmXYh-zoHn0fHLQ';" alt="Mortgage Calculator Calculate You Montly Payments On Your Mortgage How Much Interest Will You P Mortgage Payment Calculator Mortgage Calculator Mortgage Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mortgage Calculator Calculate You Montly Payments On Your Mortgage How Much Interest Will You P Mortgage Payment Calculator Mortgage Calculator Mortgage Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/97/38/219738814f8cb022d3f429801ce7b772.jpg" data-lightbox="roadtrip" data-title="Pin On Home Amortization Spreadsheet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/97/38/219738814f8cb022d3f429801ce7b772.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgFDsg4Akud7kdnkWuJSIfvJHu-AyinI50Zw';" alt="Pin On Home Amortization Spreadsheet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Home Amortization Spreadsheet</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/51/11/81/51118183b3d917dec5c0bfc1dd3b7968.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgFDsg4Akud7kdnkWuJSIfvJHu-AyinI50Zw';" alt="Pin On Home Amortization Spreadsheet">
+										<div class="card-body">
+						<h3 class="h5"><b>After a few seconds you will be provided with a full breakdown of the tax you are paying.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia monthly salary calculator</strong>. 
+								
+																	This free easy to use payroll calculator will calculate your take home pay. 
+																	This number is the gross pay per pay period. 
+																	Paycheck Results is your gross pay and specific deductions from your paycheck Net Pay is your take-home pay and Calculation Based On is the information entered into the calculator. 
+																	This withholding formula is effective for taxable years beginning on or after January 1 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To calculate an annual salary multiply the gross pay before tax deductions by the number of pay periods per year. 
+																	To use our Virginia Salary Tax Calculator all you have to do is enter the necessary details and click on the Calculate button. 
+																	Virginia Salary Paycheck Calculator Below are your Virginia salary paycheck results. 
+																	The PaycheckCity salary calculator will do the calculating for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Compare the Cost of Living in Virginia against another US State. 
+																	Pay Frequency Some people get monthly paychecks 12 per year while some are paid twice a month on set dates 24 paychecks per year and others are paid bi-weekly 26 paychecks per year. 
+																	Overview of Virginia Taxes Virginia has a progressive state income tax system with four tax brackets that range from 2 to 575. 
+																	Subtract any deductions and payroll taxes from the gross pay to get net pay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Check out our new page Tax Change to find out how federal or state tax changes affect your take home pay. 
+																	See what youll need to earn to keep your current standard of living wherever you choose to work and live. 
+																	Use Gustos salary paycheck calculator to determine withholdings and calculate take-home pay for your salaried employees in Virginia. 
+																	Adjustments are made for holiday and vacation days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A free calculator to convert a salary between its hourly biweekly monthly and annual amounts. 
+																	To calculate a paycheck start with the annual salary amount and divide by the number of pay periods in the year. 
+																	The results are broken up into three sections. 
+																	The Virginia Salary Calculator is a good calculator for calculating your total salary deductions each year this includes Federal Income Tax Rates and Thresholds in 2021 and Virginia State Income Tax Rates and Thresholds in 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Calculate your Virginia net pay or take home pay by entering your per-period or annual salary along with the pertinent federal state and local W4 information into this free Virginia paycheck calculator. 
+																	You can alter the salary example to illustrate a different filing status or show an alternate tax year. 
+																	Use SmartAssets paycheck calculator to calculate your take home pay per paycheck for both salary and hourly jobs after taking into account federal state and local taxes. 
+																	For example if an employee is paid 1500 per week his or her annual income would be 1500 x 52 78000. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dont want to calculate this by hand. 
+																	Employer Withholding Calculator Use the withholding tax calculator to compute the amount of tax to be withheld from each of your employees wages. 
+																	Supports hourly salary income and multiple pay frequencies. 
+																	How Your Paycheck Works. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Experiment with other financial calculators or explore hundreds of individual calculators covering other topics such as math fitness health and many more. 
+																	This 9000000 Salary Example for Virginia is based on a single filer with an annual salary of 9000000 filing their 2021 tax return in Virginia in 2021. 
+																	How to Calculate Taxes Taken Out of a Paycheck. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/be/d6/fabed65941875cc9c9d17f8636819837.jpg" data-lightbox="roadtrip" data-title="How Much House Can I Afford Insider Tips And Home Affordability Calculator Home Buying Process Buying First Home Home Buying Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/be/d6/fabed65941875cc9c9d17f8636819837.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT94bLXK3SjijZJ8EDX3LG3kBryof5QuYABjw';" alt="How Much House Can I Afford Insider Tips And Home Affordability Calculator Home Buying Process Buying First Home Home Buying Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much House Can I Afford Insider Tips And Home Affordability Calculator Home Buying Process Buying First Home Home Buying Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/63/3d/2a633d6c062b4ec68e12dec3deb39399.jpg" data-lightbox="roadtrip" data-title="How To Calculate How Much You Need To Earn Job Hunting Renters Insurance College Budgeting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/63/3d/2a633d6c062b4ec68e12dec3deb39399.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpfLOqggpHBlcpcQRmTT8dRp3Ol7g4gCJ3hA';" alt="How To Calculate How Much You Need To Earn Job Hunting Renters Insurance College Budgeting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Calculate How Much You Need To Earn Job Hunting Renters Insurance College Budgeting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/11/81/51118183b3d917dec5c0bfc1dd3b7968.jpg" data-lightbox="roadtrip" data-title="Best Car Loan Rates For Used Cars Adanih Com Mortgage Payment Amortization Chart Watch This Before Your Plan Amortization Chart Car Loans Mortgage Payment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/11/81/51118183b3d917dec5c0bfc1dd3b7968.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXg9lwk54waq-7KIOuGzGA9mY_a_japrpw9A';" alt="Best Car Loan Rates For Used Cars Adanih Com Mortgage Payment Amortization Chart Watch This Before Your Plan Amortization Chart Car Loans Mortgage Payment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Car Loan Rates For Used Cars Adanih Com Mortgage Payment Amortization Chart Watch This Before Your Plan Amortization Chart Car Loans Mortgage Payment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/51/b3/3551b3b4c2fa5bf6713dfa34ec31c828.png" data-lightbox="roadtrip" data-title="How To Pay Your Nanny S Taxes Yourself Nanny Tax Payroll Template Nanny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/51/b3/3551b3b4c2fa5bf6713dfa34ec31c828.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuSTbhv5niZdLGFk3RYXHbnfW2Ga36B1tv8w';" alt="How To Pay Your Nanny S Taxes Yourself Nanny Tax Payroll Template Nanny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Pay Your Nanny S Taxes Yourself Nanny Tax Payroll Template Nanny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/7e/cc/157ecc742850ffdeb10ac95235697e2f.png" data-lightbox="roadtrip" data-title="Paycheck Budgeting Printable Mswenduhh Paycheck Budget Budget Printables Budgeting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/7e/cc/157ecc742850ffdeb10ac95235697e2f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTstqVUqkZc21jtRQPmc5ITQ63uIlzEOqaMQA';" alt="Paycheck Budgeting Printable Mswenduhh Paycheck Budget Budget Printables Budgeting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paycheck Budgeting Printable Mswenduhh Paycheck Budget Budget Printables Budgeting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/d4/37/5ed4373b378dbdc9f1d6bfea5dad1ed8.gif" data-lightbox="roadtrip" data-title="Balloon Loan Calculator For Excel Loan Calculator Mortgage Amortization Calculator Mortgage Amortization">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/d4/37/5ed4373b378dbdc9f1d6bfea5dad1ed8.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkhQL5mK9j-K8BhT3JfH1V7475Wr0FLImYMw';" alt="Balloon Loan Calculator For Excel Loan Calculator Mortgage Amortization Calculator Mortgage Amortization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Balloon Loan Calculator For Excel Loan Calculator Mortgage Amortization Calculator Mortgage Amortization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f0/76/fc/f076fca8b273730c0d3d68dfcc0a25f2.jpg" data-lightbox="roadtrip" data-title="Pin On Free Online Mortgage Calculator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f0/76/fc/f076fca8b273730c0d3d68dfcc0a25f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXJppPMZ9O9RCiHeI4CfF8_DRjUx38thlP4A';" alt="Pin On Free Online Mortgage Calculator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Free Online Mortgage Calculator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/50/cb/79/50cb79650d8342bf1e240c8e7eb1513b.jpg" data-lightbox="roadtrip" data-title="Mortgage Calculator Do You Know How Much Mortgage You Can Afford Based On Your Current Annual Mortgage Loan Calculator Debt To Income Ratio Mortgage Estimator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/50/cb/79/50cb79650d8342bf1e240c8e7eb1513b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn_Pw9isFMkyjoH0b-at_SsAWNgkE2BMoIxg';" alt="Mortgage Calculator Do You Know How Much Mortgage You Can Afford Based On Your Current Annual Mortgage Loan Calculator Debt To Income Ratio Mortgage Estimator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mortgage Calculator Do You Know How Much Mortgage You Can Afford Based On Your Current Annual Mortgage Loan Calculator Debt To Income Ratio Mortgage Estimator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/34/26/fe/3426fe24d0b69dce6602552eaef8c306.jpg" data-lightbox="roadtrip" data-title="The Budget Mom Shop Budgeting Budget Template Budget Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/34/26/fe/3426fe24d0b69dce6602552eaef8c306.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrqEbZdov76Gq6lr_GvLOvh3P_GY61p7sOhw';" alt="The Budget Mom Shop Budgeting Budget Template Budget Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Budget Mom Shop Budgeting Budget Template Budget Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/82/d7/75/82d775477a51dde04a5a8e6e558b3668.jpg" data-lightbox="roadtrip" data-title="Mortgage Calculator Financial Calculator Solves For Fv Pv Term Rate Payment Or Investment Mortgage Payment Calculator Amortization Schedule Interest Calculator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/82/d7/75/82d775477a51dde04a5a8e6e558b3668.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQnQISUdEk9RpD773214HBKf5ub6-patVwxw';" alt="Mortgage Calculator Financial Calculator Solves For Fv Pv Term Rate Payment Or Investment Mortgage Payment Calculator Amortization Schedule Interest Calculator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mortgage Calculator Financial Calculator Solves For Fv Pv Term Rate Payment Or Investment Mortgage Payment Calculator Amortization Schedule Interest Calculator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/4d/6f/5c4d6f7eecd18b807fbe017de2d8aad0.png" data-lightbox="roadtrip" data-title="Pin On Interesting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/4d/6f/5c4d6f7eecd18b807fbe017de2d8aad0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6AZDyVHGF4qmb2RywOYotUFgq9xwlCEH_dg';" alt="Pin On Interesting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Interesting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/82/dd/db82dd56633914545d02eccf30080d20.jpg" data-lightbox="roadtrip" data-title="Mortgage Do S And Don Ts Https Www Facebook Com Pages Fairway Independent Mortgage 335258756510995 Buying First Home Mortgage Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/82/dd/db82dd56633914545d02eccf30080d20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReViX-8dMD0wItPouTVmv9Ta2nLRIn-60EIA';" alt="Mortgage Do S And Don Ts Https Www Facebook Com Pages Fairway Independent Mortgage 335258756510995 Buying First Home Mortgage Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mortgage Do S And Don Ts Https Www Facebook Com Pages Fairway Independent Mortgage 335258756510995 Buying First Home Mortgage Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/bf/8f/70bf8fdc2eed35c3a7b5592df06b4085.png" data-lightbox="roadtrip" data-title="Home Loan Deposit Calculator Home Loans Home Renovation Loan Home Improvement Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/bf/8f/70bf8fdc2eed35c3a7b5592df06b4085.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdS-g25msmfI_AysqjH4gcqavr6VXjpc1vjA';" alt="Home Loan Deposit Calculator Home Loans Home Renovation Loan Home Improvement Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Loan Deposit Calculator Home Loans Home Renovation Loan Home Improvement Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4f/96/9a/4f969a9b395113f6a72a7cbb3d8a3a9e.jpg" data-lightbox="roadtrip" data-title="Unique Amortization Table Excel Template Xls Xlsformat Xlstemplates Xlstempl My Mortgage Amortization Calculator Mortgage Amortization Amortization Chart">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4f/96/9a/4f969a9b395113f6a72a7cbb3d8a3a9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcdi9FJN14zoQa8p75uVLfDeJo2VYDLo3FMw';" alt="Unique Amortization Table Excel Template Xls Xlsformat Xlstemplates Xlstempl My Mortgage Amortization Calculator Mortgage Amortization Amortization Chart">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unique Amortization Table Excel Template Xls Xlsformat Xlstemplates Xlstempl My Mortgage Amortization Calculator Mortgage Amortization Amortization Chart</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/9a/b2/169ab2dd1557d1d8d175f589bce721d6.jpg" data-lightbox="roadtrip" data-title="How Much Should You Pay Yourself A Free Calculator Small Business Accounting Small Business Finance Small Business Bookkeeping">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/9a/b2/169ab2dd1557d1d8d175f589bce721d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0b3I-r5iSL2LmEcv9SPMaZ8RkGnFaGe-8RA';" alt="How Much Should You Pay Yourself A Free Calculator Small Business Accounting Small Business Finance Small Business Bookkeeping">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Should You Pay Yourself A Free Calculator Small Business Accounting Small Business Finance Small Business Bookkeeping</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-crisis-line-flyer.html">Veterans Crisis Line Flyer</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-benefits-and-social-security.html">Veterans Disability Benefits And Social Security</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-benefits-uk.html">Veterans Disability Benefits Uk</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-flyer-pdf.html">Veterans Crisis Line Flyer Pdf</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-attorney-virginia.html">Veterans Disability Attorney Virginia</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-college-scholarships.html">Veterans Dependents College Scholarships</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-education-benefits-dependents.html">Veterans Disability Education Benefits Dependents</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-benefits.html">Veterans Dependents Benefits</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-benefits-and-child-support.html">Veterans Disability Benefits And Child Support</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-va.html">Veterans Crisis Line Va</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-brochure.html">Veterans Crisis Line Brochure</a></li>
+													<li class="list-group-item"><a href="/veterans-dependents-educational-benefits-alabama.html">Veterans Dependents Educational Benefits Alabama</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-benefits-rules.html">Veterans Disability Benefits Rules</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-benefits-for-surviving-spouse.html">Veterans Disability Benefits For Surviving Spouse</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-attorney.html">Veterans Disability Attorney</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-compensation-lawyers.html">Veterans Disability Compensation Lawyers</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-wallet-cards.html">Veterans Crisis Line Wallet Cards</a></li>
+													<li class="list-group-item"><a href="/veterans-disability-compensation-rates-2019.html">Veterans Disability Compensation Rates 2019</a></li>
+													<li class="list-group-item"><a href="/veterans-day-100th-year-anniversary.html">Veterans Day 100th Year Anniversary</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-line-upstate-new-york.html">Veterans Crisis Line Upstate New York</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

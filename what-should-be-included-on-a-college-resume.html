@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Should Be Included On A College Resume - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Should Be Included On A College Resume",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/8a/96/e5/8a96e55bf0c26002ec551eda5870eba9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+should+be+included+on+a+college+resume",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Should Be Included On A College Resume</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Contact Details Even though this goes without saying it is worth a mention because believe it or not in the midst of managing the bigger details students might forget to include something as minute as their personal details. What you ultimately decide to include in your resume however will depend very much on your job industry career level and available page space. High school education on a resume. <br>				
+			</p>
+										<a class="badge badge-dark" href="/what-to-do-when-my-wife-dies.html">what to do when my wife dies</a>
+											<a class="badge badge-dark" href="/what-to-do-when-you-go-to-college.html">what to do when you go to college</a>
+											<a class="badge badge-secondary" href="/what-to-do-if-your-spouse-kicks-you-out.html">what to do if your spouse kicks you out</a>
+											<a class="badge badge-warning" href="/what-to-do-when-a-spouse-leaves-you.html">what to do when a spouse leaves you</a>
+											<a class="badge badge-info" href="/what-to-do-if-your-spouse-is-quarantine.html">what to do if your spouse is quarantine</a>
+											<a class="badge badge-success" href="/what-to-do-when-your-husband-constantly-belittles-you.html">what to do when your husband constantly belittles you</a>
+											<a class="badge badge-danger" href="/what-to-do-to-go-to-college.html">what to do to go to college</a>
+											<a class="badge badge-danger" href="/what-to-do-if-your-wife-filed-for-divorce.html">what to do if your wife filed for divorce</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the ideal site.  Our website gives you hints for seeing the maximum quality video and picture content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/c6/ba/b8c6baed825013c2682b40492462d463.jpg" data-lightbox="roadtrip" data-title="Should I Put High School On Resume Example College Resume High School Senior Unique Resume Resume Profile Personal Statement Examples Resume Profile Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/c6/ba/b8c6baed825013c2682b40492462d463.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1oGwOLsI27ad9txshHguPY5co-oNh4z12A';" alt="Should I Put High School On Resume Example College Resume High School Senior Unique Resume Resume Profile Personal Statement Examples Resume Profile Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should I Put High School On Resume Example College Resume High School Senior Unique Resume Resume Profile Personal Statement Examples Resume Profile Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/37/ba/e637ba4592411968b6c45feff5a1feae.jpg" data-lightbox="roadtrip" data-title="Interests On A Resume Sample College Student Resumes Best Sample College Resumes High School Resume Template High School Resume Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/37/ba/e637ba4592411968b6c45feff5a1feae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQspEKQoT4mZj-_53qfn-SmJEqaOAXp9HzQ';" alt="Interests On A Resume Sample College Student Resumes Best Sample College Resumes High School Resume Template High School Resume Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Interests On A Resume Sample College Student Resumes Best Sample College Resumes High School Resume Template High School Resume Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/72/80/747280c6de46ae1c4738a59aedf83b8b.gif" data-lightbox="roadtrip" data-title="College Resume College Resume College Application Resume College Resume Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/72/80/747280c6de46ae1c4738a59aedf83b8b.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSVi2iYzIRzLsORPg7i_BRMNzcHjirIMDNNg';" alt="College Resume College Resume College Application Resume College Resume Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Resume College Resume College Application Resume College Resume Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/cc/d5/a9ccd5b397d06240234ab0b94c499ff6.jpg" data-lightbox="roadtrip" data-title="Cool Best College Student Resume Example To Get Job Instantly College Resume College Resume Template Student Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/cc/d5/a9ccd5b397d06240234ab0b94c499ff6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRykWuhzWgGyCC8iGpP1hhyU1rgY6UuisElJA';" alt="Cool Best College Student Resume Example To Get Job Instantly College Resume College Resume Template Student Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cool Best College Student Resume Example To Get Job Instantly College Resume College Resume Template Student Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/96/e5/8a96e55bf0c26002ec551eda5870eba9.jpg" data-lightbox="roadtrip" data-title="Nursing Student Resume Must Contains Relevant Skills Experience And Also Educational Background To Student Nurse Resume Nursing Resume Template Student Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/96/e5/8a96e55bf0c26002ec551eda5870eba9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMhR1d1FyWupgagJaNXIL3XqDngUTq19lVw';" alt="Nursing Student Resume Must Contains Relevant Skills Experience And Also Educational Background To Student Nurse Resume Nursing Resume Template Student Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nursing Student Resume Must Contains Relevant Skills Experience And Also Educational Background To Student Nurse Resume Nursing Resume Template Student Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/ba/8d/16ba8d85249f67c3a9ffc7131bcca028.jpg" data-lightbox="roadtrip" data-title="Awesome The Perfect College Resume Template To Get A Job High School Resume Template High School Resume Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/ba/8d/16ba8d85249f67c3a9ffc7131bcca028.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR65i7neoxmKsbNmuUCiSiTcOGrdEddHFQTow';" alt="Awesome The Perfect College Resume Template To Get A Job High School Resume Template High School Resume Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Awesome The Perfect College Resume Template To Get A Job High School Resume Template High School Resume Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/dc/4d/2f/dc4d2fd38ad1806e45e7973dd901b46b.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR65i7neoxmKsbNmuUCiSiTcOGrdEddHFQTow';" alt="Awesome The Perfect College Resume Template To Get A Job High School Resume Template High School Resume Scholarships For College">
+										<div class="card-body">
+						<h3 class="h5"><b>It is included as a part of the students overall college admissions application.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What should be included on a college resume</strong>. 
+								
+																	Heading with your name address and e-mail. 
+																	A college resume is a document that includes all necessary information about your academic background achievements both in sport and academia social activity and other relevant experience. 
+																	High school information with your graduation date GPA weighted class rank and SATACT scores. 
+																	Yes include your internships. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thats all there is to it. 
+																	What to Include in Your Resume Aside from your contact information which should be clearly visible at the top of the document you will want to provide whatever is applicable of the following information. 
+																	When listing your unfinished college on a resume remember. 
+																	So stay calm during the college admissions process as we share the 6 key elements you must include in your activities resume to submit an impressive college application. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youve got an extensive work history or are looking to make a career pivot that doesnt completely make sense on the resume alone include a summary statement. 
+																	First and last name. 
+																	You have been out of college for a long time and have been working in career positions for a while. 
+																	Any of the sections below could appear on your resume for college applications. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the education section of your resume list the college you attend or graduated from the degrees you attained and awards and honors you have earned. 
+																	Maybe No DONT include your early work history if. 
+																	What should go on a college resume. 
+																	The name of your high school and anticipated graduation date. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yes include your degree and graduation year. 
+																	A college admissions resume is a resume that is included as part of a college application and includes information such as educational experience awards won volunteer work or work completed depending on the age of the student applying. 
+																	But if you do choose to include early jobs. 
+																	Instead you can. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are still a college student or are a recent graduate you may also include your GPA. 
+																	Stay away from cutesy fonts or graphics. 
+																	When youre crafting your new grad resume some things are pretty obvious. 
+																	Keep the font size consistent and use bolding or italicization for effect. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Here are the basic details you need to include on your new college graduate resume. 
+																	In general the further you progress in your career the more career-related your listed awards should be. 
+																	In this section you should include. 
+																	The purpose of a college admissions resume is to demonstrate to the college that the applicant is capable of academic success by providing an overview of the students academic and job-related history. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your contact information and name should be the very first thing hiring managers see when they glance at your resume. 
+																	Unlike your degree which almost always belongs on your resume your coursework is optional on a resume. 
+																	If youre just starting out potential employers are much more likely to be interested in that Deans List or Honor Roll recognition than. 
+																	I tell them that the only attention they get will be the negative kind. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have any education beyond high school the degree is implied and including it would be redundant. 
+																	Another optional section is a resume profile which includes a summary of your skills experiences and goals written specifically for a job posting. 
+																	Some students will tell me that they want to get attention that way. 
+																	The first thing you need to know is that relevant coursework should only be on your resume when its both relevant and recent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Academic awards publications honors and other achievements. 
+																	Only listing a high school diploma will make you look both young and underqualified for a job. 
+																	Coursework summer programs. 
+																	You dont need to include high school education on your resume. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pick an assortment that works for you. 
+																	Your resume should look clean and readable with plenty of white space to make it inviting. 
+																	Since it plays the role of your spokesman it has to be well-structured respectable and informative. 
+																	Resume contact information The first thing potential employers should see is a section at the top of your resume with your name contact information and a link to your professional profile or website if you have one. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mention your degree program school name and expected graduation date if youre continuing your education If youre not going to finish your education find an option that puts your incomplete education in the best possible light. 
+																	At the very top of your resume you should include a nicely-formatted header with some basic information about yourself the same way you would with a resume for a job. 
+																	It should consist of a few quick. 
+																	Even if your highest degree is high school you should still leave it off. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The first line should have just your name and the second line should have your contact information such as your phone number address and email. 
+																	To help your information stand out put it in your resume header at the top of the page and type your first and last name in a large font to make it memorable. 
+																	Put your energies into the content. 
+																	What should be Included on a Resume. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But once you get past the basics things get a bit murkier. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/81/ad/5281ad37619964cae315732505af9a66.jpg" data-lightbox="roadtrip" data-title="Should You Put Scholarships On Resume Lovely Resume For College Freshman New Sample Res High School Resume Template High School Resume Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/81/ad/5281ad37619964cae315732505af9a66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2rSmNIEePtEeN9jf1t_QetTE1U4E7Mqn_1w';" alt="Should You Put Scholarships On Resume Lovely Resume For College Freshman New Sample Res High School Resume Template High School Resume Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should You Put Scholarships On Resume Lovely Resume For College Freshman New Sample Res High School Resume Template High School Resume Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/f1/88/c2f188eb802a8e878c4607fc51c4ab63.png" data-lightbox="roadtrip" data-title="College Application Resume Template Best Job Resume College Resume Template Resume Objective Examples College Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/f1/88/c2f188eb802a8e878c4607fc51c4ab63.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI5z7OemOmamcitBG8F7E03JrFAc_okHBjXQ';" alt="College Application Resume Template Best Job Resume College Resume Template Resume Objective Examples College Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Application Resume Template Best Job Resume College Resume Template Resume Objective Examples College Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/f8/2c/aaf82c83f1d3cd89bbb002f28af0a2ee.png" data-lightbox="roadtrip" data-title="College Student Resume Example Sample Http Www Jobresume Website College Student Resume Example Sampl College Resume Student Resume College Resume Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/f8/2c/aaf82c83f1d3cd89bbb002f28af0a2ee.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYSAznd4LoyRR5WJfLghLVfZrH9Ipakl1gIw';" alt="College Student Resume Example Sample Http Www Jobresume Website College Student Resume Example Sampl College Resume Student Resume College Resume Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Student Resume Example Sample Http Www Jobresume Website College Student Resume Example Sampl College Resume Student Resume College Resume Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/5c/75/e05c75161e2360b6f96aecb4f83a2c66.jpg" data-lightbox="roadtrip" data-title="Include Gpa On Resume Luxury Include Gpa Resume High School Education Resume Examples Resume Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/5c/75/e05c75161e2360b6f96aecb4f83a2c66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQufQDkkmYqtv6cb65e0sT8jk8vclgZs_AEg';" alt="Include Gpa On Resume Luxury Include Gpa Resume High School Education Resume Examples Resume Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Include Gpa On Resume Luxury Include Gpa Resume High School Education Resume Examples Resume Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/e4/47/22e4478f172161da6180e260865f6b65.jpg" data-lightbox="roadtrip" data-title="Awesome Best Current College Student Resume With No Experience College Application Resume College Resume College Resume Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/e4/47/22e4478f172161da6180e260865f6b65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3VOr1dzwUpa0fqpZSu5u5vk__hnT3WE4y8g';" alt="Awesome Best Current College Student Resume With No Experience College Application Resume College Resume College Resume Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Awesome Best Current College Student Resume With No Experience College Application Resume College Resume College Resume Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/bc/91/74bc91fe6ab5b40c7a078cad513a7e1f.jpg" data-lightbox="roadtrip" data-title="Nice The Perfect College Resume Template To Get A Job Resume Skills College Resume Template College Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/bc/91/74bc91fe6ab5b40c7a078cad513a7e1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVaDCZa-m9jGL8T6jDK5YebshT40dPYJmwgA';" alt="Nice The Perfect College Resume Template To Get A Job Resume Skills College Resume Template College Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nice The Perfect College Resume Template To Get A Job Resume Skills College Resume Template College Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/4d/2f/dc4d2fd38ad1806e45e7973dd901b46b.gif" data-lightbox="roadtrip" data-title="Resume Examples College Graduate College Examples Graduate Resume Resumeexamples College Resume Template College Resume Resume For Graduate School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/4d/2f/dc4d2fd38ad1806e45e7973dd901b46b.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPDo7RZMM07OgXq0ir3h7WTIP0m_SDo3UOgg';" alt="Resume Examples College Graduate College Examples Graduate Resume Resumeexamples College Resume Template College Resume Resume For Graduate School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Resume Examples College Graduate College Examples Graduate Resume Resumeexamples College Resume Template College Resume Resume For Graduate School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/d2/ea/5ed2ea81be6319b8b0c9a8cb2f73f689.png" data-lightbox="roadtrip" data-title="20 Skills For Resumes Examples Included Resume Companion Resume Skills Resume Skills Section Computer Skills Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/d2/ea/5ed2ea81be6319b8b0c9a8cb2f73f689.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJ_vwG8Kq0RzUPRO1p4Nh1nM-omSfsOaV0g';" alt="20 Skills For Resumes Examples Included Resume Companion Resume Skills Resume Skills Section Computer Skills Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Skills For Resumes Examples Included Resume Companion Resume Skills Resume Skills Section Computer Skills Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/ee/6f/04ee6f3935200ededed14ba8b9bb6dbb.png" data-lightbox="roadtrip" data-title="Google Hr Boss Describes His Ideal Length For A Resume College Resume Perfect Resume Resume Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/ee/6f/04ee6f3935200ededed14ba8b9bb6dbb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSBGr0ndf68G9xt4sxGyhEhglh8ek-RWeEw';" alt="Google Hr Boss Describes His Ideal Length For A Resume College Resume Perfect Resume Resume Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Google Hr Boss Describes His Ideal Length For A Resume College Resume Perfect Resume Resume Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/f6/cb/1cf6cb2f73e3cf24ef3a9809324ae528.jpg" data-lightbox="roadtrip" data-title="College Transfer Resume Template Business Template Ideas Resume Writing Services Project Manager Resume Cover Letter For Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/f6/cb/1cf6cb2f73e3cf24ef3a9809324ae528.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRogTTC5YWLxWBTr6yfdytKKGGz6Fvou50Cw';" alt="College Transfer Resume Template Business Template Ideas Resume Writing Services Project Manager Resume Cover Letter For Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Transfer Resume Template Business Template Ideas Resume Writing Services Project Manager Resume Cover Letter For Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/ad/dd/53addd701386c50da5bf2874cf0cec05.jpg" data-lightbox="roadtrip" data-title="Should You Put Scholarships On Resume Best Of List Skills To Put A Resume Examples Awesome Image Resume Examples Resume Tips Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/ad/dd/53addd701386c50da5bf2874cf0cec05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREjwifxHGqSqqDkk_Pc1CKJFGHhDU-N3BMDQ';" alt="Should You Put Scholarships On Resume Best Of List Skills To Put A Resume Examples Awesome Image Resume Examples Resume Tips Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should You Put Scholarships On Resume Best Of List Skills To Put A Resume Examples Awesome Image Resume Examples Resume Tips Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a8/c3/41/a8c341e8ebd82dcf77b914987d46db45.jpg" data-lightbox="roadtrip" data-title="College Admissions Resume Templates Inspirational 17 Best Images About College Appli Student Resume Template College Application Resume College Resume Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a8/c3/41/a8c341e8ebd82dcf77b914987d46db45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxSNUpWXH5dYRPXCz_SpHSy3_7YGPWizkz3Q';" alt="College Admissions Resume Templates Inspirational 17 Best Images About College Appli Student Resume Template College Application Resume College Resume Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Admissions Resume Templates Inspirational 17 Best Images About College Appli Student Resume Template College Application Resume College Resume Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/78/94/2d78948b8ca88144812e8c9310fb5200.png" data-lightbox="roadtrip" data-title="High School Resume How To Draft A High School Resume Download This High School Resume Template High School Resume College Resume High School Resume Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/78/94/2d78948b8ca88144812e8c9310fb5200.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoggKHwhHfRsWZqlP6_3uUaBoqVYW2qy1tw';" alt="High School Resume How To Draft A High School Resume Download This High School Resume Template High School Resume College Resume High School Resume Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">High School Resume How To Draft A High School Resume Download This High School Resume Template High School Resume College Resume High School Resume Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-streamline-interest-rates-today.html">Va Streamline Interest Rates Today</a></li>
+													<li class="list-group-item"><a href="/va-spousal-benefits-assisted-living.html">Va Spousal Benefits Assisted Living</a></li>
+													<li class="list-group-item"><a href="/va-state-employee-salary-lookup.html">Va State Employee Salary Lookup</a></li>
+													<li class="list-group-item"><a href="/va-state-payday-calendar.html">Va State Payday Calendar</a></li>
+													<li class="list-group-item"><a href="/va-stem-gi-bill.html">Va Stem Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-spouse-college-benefits.html">Va Spouse College Benefits</a></li>
+													<li class="list-group-item"><a href="/va-state-employee-pay-raise-2019.html">Va State Employee Pay Raise 2019</a></li>
+													<li class="list-group-item"><a href="/va-stipend-chapter-35.html">Va Stipend Chapter 35</a></li>
+													<li class="list-group-item"><a href="/va-state-employee-salary-database.html">Va State Employee Salary Database</a></li>
+													<li class="list-group-item"><a href="/va-statement-is-support-of-claim.html">Va Statement Is Support Of Claim</a></li>
+													<li class="list-group-item"><a href="/va-spouse-benefits-for-home-care.html">Va Spouse Benefits For Home Care</a></li>
+													<li class="list-group-item"><a href="/va-star-rating-system.html">Va Star Rating System</a></li>
+													<li class="list-group-item"><a href="/va-spouse-id-card.html">Va Spouse Id Card</a></li>
+													<li class="list-group-item"><a href="/va-spouse-pension-benefits.html">Va Spouse Pension Benefits</a></li>
+													<li class="list-group-item"><a href="/va-spouse-retirement-benefits.html">Va Spouse Retirement Benefits</a></li>
+													<li class="list-group-item"><a href="/va-star-rating.html">Va Star Rating</a></li>
+													<li class="list-group-item"><a href="/va-streamline-refinance-interest-rates.html">Va Streamline Refinance Interest Rates</a></li>
+													<li class="list-group-item"><a href="/va-stimulus-check-2020-date.html">Va Stimulus Check 2020 Date</a></li>
+													<li class="list-group-item"><a href="/va-star-ratings-2019.html">Va Star Ratings 2019</a></li>
+													<li class="list-group-item"><a href="/va-state-pay-raise-2020.html">Va State Pay Raise 2020</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

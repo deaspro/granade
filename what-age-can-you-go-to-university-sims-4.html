@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Age Can You Go To University Sims 4 - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Age Can You Go To University Sims 4",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/2b/86/39/2b8639fade225682afb93732621ff8a4.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+age+can+you+go+to+university+sims+4",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Age Can You Go To University Sims 4</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Sims have to apply for. In The Sims 4 Discover University youll have to do the. Sims with higher skill levels will have an easier time getting accepted into certain degree programs. <br>				
+			</p>
+										<a class="badge badge-light" href="/virginia-paid-time-off-laws.html">virginia paid time off laws</a>
+											<a class="badge badge-primary" href="/virginia-department-of-education-teaching-licensure.html">virginia department of education teaching licensure</a>
+											<a class="badge badge-success" href="/virginia-education-of-department.html">virginia education of department</a>
+											<a class="badge badge-danger" href="/virginia-insurance-minimums.html">virginia insurance minimums</a>
+											<a class="badge badge-primary" href="/virginia-education-credit-union.html">virginia education credit union</a>
+											<a class="badge badge-danger" href="/virginia-july-2020-gun-laws.html">virginia july 2020 gun laws</a>
+											<a class="badge badge-danger" href="/virginia-education-programs.html">virginia education programs</a>
+											<a class="badge badge-dark" href="/virginia-insurance-testing-center.html">virginia insurance testing center</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to visit the right site.  Our website gives you hints for viewing the highest quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/00/84/ae0084776a6d17194d5af540434cc719.png" data-lightbox="roadtrip" data-title="The Sims 4 Go To School Expansion Pack Cap And Gown By Mathcope School School Uniforms By Margies Sims Sc Sims 4 Expansions The Sims 4 Packs Sims 4 Children">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/00/84/ae0084776a6d17194d5af540434cc719.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzSgkmXYONZPTERgG4aEM5nn4xlRWb7x0D2g';" alt="The Sims 4 Go To School Expansion Pack Cap And Gown By Mathcope School School Uniforms By Margies Sims Sc Sims 4 Expansions The Sims 4 Packs Sims 4 Children">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sims 4 Go To School Expansion Pack Cap And Gown By Mathcope School School Uniforms By Margies Sims Sc Sims 4 Expansions The Sims 4 Packs Sims 4 Children</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a6/18/83/a618830a61b13138e01e236534b3b823.jpg" data-lightbox="roadtrip" data-title="Longer Terms Teens Attend University And More Sims 4 Mod Youtube Sims 4 Sims 4 Mods Sims">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a6/18/83/a618830a61b13138e01e236534b3b823.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS313x0Kc9pBhrggw0uSQRc1jonq-HRLzLo4g';" alt="Longer Terms Teens Attend University And More Sims 4 Mod Youtube Sims 4 Sims 4 Mods Sims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Longer Terms Teens Attend University And More Sims 4 Mod Youtube Sims 4 Sims 4 Mods Sims</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/86/39/2b8639fade225682afb93732621ff8a4.png" data-lightbox="roadtrip" data-title="University Teens Jump To University Sims 4 Game Mods Sims 4 Mods Sims 4">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/86/39/2b8639fade225682afb93732621ff8a4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1gjS_2XP-mKiCMHODe1OtnunZO0jSP1X9Pw';" alt="University Teens Jump To University Sims 4 Game Mods Sims 4 Mods Sims 4">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Teens Jump To University Sims 4 Game Mods Sims 4 Mods Sims 4</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/dc/72/13dc721a369a787b8891796862dde325.jpg" data-lightbox="roadtrip" data-title="Pin On Sims 4">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/dc/72/13dc721a369a787b8891796862dde325.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPowC6gZY5psfhwYecMWpePa5kpCWhBGwptQ';" alt="Pin On Sims 4">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sims 4</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/95/f2/e095f2999ba423fad44c9a7174ff01b8.png" data-lightbox="roadtrip" data-title="Ts4 Discover University Female Full Body The Sims 4 Packs The Sims 4 Pc Sims 4 Traits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/95/f2/e095f2999ba423fad44c9a7174ff01b8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNk7nMd81sugBX4G264gWGBn4OliFrDszi3w';" alt="Ts4 Discover University Female Full Body The Sims 4 Packs The Sims 4 Pc Sims 4 Traits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ts4 Discover University Female Full Body The Sims 4 Packs The Sims 4 Pc Sims 4 Traits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/da/85/acda8595cb123becaeec72bc543cc3d1.jpg" data-lightbox="roadtrip" data-title="Ages Behaviour Tweaks Zero S Sims 4 Mods Comics On Patreon Sims 4 Mods Sims 4 Toddler Sims 4">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/da/85/acda8595cb123becaeec72bc543cc3d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ4cQb9GSGv6_bhwaXwZE4SIynPcLWgdsqjA';" alt="Ages Behaviour Tweaks Zero S Sims 4 Mods Comics On Patreon Sims 4 Mods Sims 4 Toddler Sims 4">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ages Behaviour Tweaks Zero S Sims 4 Mods Comics On Patreon Sims 4 Mods Sims 4 Toddler Sims 4</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ac/da/85/acda8595cb123becaeec72bc543cc3d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ4cQb9GSGv6_bhwaXwZE4SIynPcLWgdsqjA';" alt="Ages Behaviour Tweaks Zero S Sims 4 Mods Comics On Patreon Sims 4 Mods Sims 4 Toddler Sims 4">
+										<div class="card-body">
+						<h3 class="h5"><b>These extra questions and answers will help out anyone who is unsure about how best to tackle university life in Sims 4.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What age can you go to university sims 4</strong>. 
+								
+																	Every application goes to both universities and you may choose which university and which degree to pursue once your Sim gets their acceptance letter. 
+																	Genius Teens Can Apply Enroll To University Anytime Updated. 
+																	If your Sims is living in the dorms or uni housing then youll have to use a cheat to buy the items youre looking for. 
+																	The Sims 4 Discover University Degrees Scholarships List and Applying for College Want to graduate in a Destinguished Degree with Honors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get Ready to Go to School with The Sims 4 Discover University Hit the books and show your school spirit. 
+																	All Sims from young adults and upwards can attend university. 
+																	The most difficult part is waiting for that acceptance letter and any scholarship approvals. 
+																	Applying for school can be a real nail-biter as you wait on an acceptance letter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can graduate as an adult or you can use the relevant The Sims 4 cheats or the Potion of Youth aspiration reward to slow down the ageing process until you graduate. 
+																	Requires The Sims 4 game sold separately and all game updates to play. 
+																	If the length of university is. 
+																	However university life doesnt just begin at young adulthood as there is preparation to do beforehand. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you dont want to go on a search and find mission for the kiosk in The Sims 4 you can purchase the same items from the BuildBuy mode too. 
+																	8 Teenagers Can Apply To Universities Although teenagers cannot attend university until they age into young adults they can begin the application process when they are still teenagers although. 
+																	Discover University is the eighth expansion pack for The Sims 4The pack was teased on October 21 2019 its trailer and official announcement debuted on October 22 2019 and was released on November 15 2019 on PC and December 17 2019 on consoles. 
+																	Think of it as playing multiple families at once - while you play one family all the other families stay frozen until you go back to them then. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For PCMac see minimum system requirements for this pack. 
+																	You can also sign up for The Sims 4 newsletter. 
+																	I think theres likely a way for teens to apply and a way for other sims to go later but we should know more soon. 
+																	Lets learn how you do that in this guide to Discover University. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jun 2 2020 If your teenage Sim has trait Genius - with this mod they can now apply and successively enroll to university even immediately after joining high school. 
+																	You can also buy a bike from The Sims 4 University kiosk. 
+																	Sims can live wherever they want have a job and raise a family while going to school so this balances things out. 
+																	This means that mature students are officially in-game. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Sims 4 Discover University Expansion Pack is coming to PC and Mac on November 15 2019 and to PlayStation4 and Xbox One on December 17 2019. 
+																	Enroll your Sims in higher education with The Sims 4 Discover University Expansion Pack launching on November 15 2019 on PC and Mac and December 17 2019 on Xbox One and PlayStation4. 
+																	The process is easy. 
+																	Please please let me know if you know anything to fix. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sims can start applying to universities about a week before they age up to a YA. 
+																	Whether your Sims are thinking of heading to the. 
+																	Same thing with sports. 
+																	The Sims 4 University Degrees is the focal point of Discover University the late 2019 expansion pack for the ever-popular life simulation game. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	4 points 1 year ago Theyve mentioned career scholarships so YA must be able to go unless babysitting gives you full rides to university in the sims. 
+																	Top tip if you cant find The Sims 4 University Kiosk. 
+																	No matter the story any Young Adult or older Sim can apply to university. 
+																	Enroll your Sims in higher education with The Sims 4 Discover University Expansion Pack launching on November 15 2019 on PC and Mac and December 17 2019 on Xbox One and PlayStation4. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She doesnt go till 10 and gets back to her dorm at 1 am. 
+																	Once a Sim enrolls in a university there are a lot of challenges and opportunities along the way for the player to ensure the. 
+																	When you have moved the young adult into a lot in the university you can play their life without worrying about the rest of the family - they will stay frozen until you go back and play them and so will the young adult until you go back and play her. 
+																	Get Ready to Go to School with The Sims 4 Discover University Hit the books and show your school spirit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All these classes count towards your Sims degree but electives give your Sim a chance to learn a skill thats unrelated to the subject of their degree. 
+																	The pack re-introduces the college experience to the game along with the return of the Servo life state. 
+																	The game isnt fun anymore when I cant even go to class. 
+																	However unlike past Sims games your Sims are not trapped on campus with no way to work or live a life outside of university. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Even if a Sim only takes 3 terms to graduate they will still spend the majority of their young adult life in university. 
+																	This is so ridiculous and Im honestly so disappointed. 
+																	Discover University expansion pack is finally here and has been well received but not even the Sims game developers can please everyoneStudent life is very engaging and for the most part thats a plus. 
+																	15 Who Can Attend University. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Having it installed means your Sims can finally. 
+																	Sims 4s new expansion is all about joining college to start your career off rightSo that you can join your preferred school in the game heres everything you need to know about how to apply. 
+																	Whether your Sims are thinking of heading to the. 
+																	Uni has always been my favorite expansion pack since the Sims 2 but this is such a huge letdown and honestly I want my money back. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Discover University The long-awaited The Sims 4. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/30/61/07306180b2e9084368680e021fc4bb51.png" data-lightbox="roadtrip" data-title="Pin On Mods For Sims">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/30/61/07306180b2e9084368680e021fc4bb51.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXuw6PfKyEc4HeBLJR0tCY0RQmYOfl70GNFw';" alt="Pin On Mods For Sims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mods For Sims</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/af/b7/25/afb72515606e0757b4820d8c5e245f07.jpg" data-lightbox="roadtrip" data-title="The Sims 4 Discover University Expansion Pack Pc Game Sims 4 Sims The Expanse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/af/b7/25/afb72515606e0757b4820d8c5e245f07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIdY0LWzI6L79uUKiGWAuNJankVUyHZjE7PQ';" alt="The Sims 4 Discover University Expansion Pack Pc Game Sims 4 Sims The Expanse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sims 4 Discover University Expansion Pack Pc Game Sims 4 Sims The Expanse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/9f/5f/ef9f5f5e74d30b7a66ca29272784f91e.jpg" data-lightbox="roadtrip" data-title="The Sims 4 All Expansions 10 Dlc Pc Mac Great Bundles Fast Delivery Sims 4 Sims 4 Cheats Sims 4 University Sims Sims 4 Skills Sims 4 Expansions Sims 4 Cheats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/9f/5f/ef9f5f5e74d30b7a66ca29272784f91e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2oX55jrxrDJmxxgsky8Fm2J1AXveoUYqpBg';" alt="The Sims 4 All Expansions 10 Dlc Pc Mac Great Bundles Fast Delivery Sims 4 Sims 4 Cheats Sims 4 University Sims Sims 4 Skills Sims 4 Expansions Sims 4 Cheats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sims 4 All Expansions 10 Dlc Pc Mac Great Bundles Fast Delivery Sims 4 Sims 4 Cheats Sims 4 University Sims Sims 4 Skills Sims 4 Expansions Sims 4 Cheats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/77/ad/be77ad6b251e6e465c62bb70785c3a7d.png" data-lightbox="roadtrip" data-title="Sims 4 Discover University Cc Haul Links Sims 4 Sims Sims 4 Cc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/77/ad/be77ad6b251e6e465c62bb70785c3a7d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcchO8zJY1Y-RcqpCXamjPg2brKCGak-eH0w';" alt="Sims 4 Discover University Cc Haul Links Sims 4 Sims Sims 4 Cc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sims 4 Discover University Cc Haul Links Sims 4 Sims Sims 4 Cc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/d9/eb/dfd9eb090e69da7aca6972923c9dfdfb.jpg" data-lightbox="roadtrip" data-title="Pin On Sims 4 Cc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/d9/eb/dfd9eb090e69da7aca6972923c9dfdfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfleJoRrhjM5i8-RIKs11rk-VACEJaThY67w';" alt="Pin On Sims 4 Cc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sims 4 Cc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/d5/67/88d5670916376a370da0c12b34e6ffe4.png" data-lightbox="roadtrip" data-title="Floraltaeny S Drawstring Hoodie Recolor 16 Swatches Requires The Discover University Ep 2 Luxury Pattern Designs 2 Pl Sims 4 Clothing Drawstring Hoodie Sims 4">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/d5/67/88d5670916376a370da0c12b34e6ffe4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4NkGs_JfR91ecrfuZXVhSM2sW3moq0AgYw';" alt="Floraltaeny S Drawstring Hoodie Recolor 16 Swatches Requires The Discover University Ep 2 Luxury Pattern Designs 2 Pl Sims 4 Clothing Drawstring Hoodie Sims 4">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Floraltaeny S Drawstring Hoodie Recolor 16 Swatches Requires The Discover University Ep 2 Luxury Pattern Designs 2 Pl Sims 4 Clothing Drawstring Hoodie Sims 4</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/3a/c2/853ac24b094c492aa0e23901f0f2942c.jpg" data-lightbox="roadtrip" data-title="More Traits For All Ages By Mikey Sims 3 Downloads Cc Caboodle Sims 3 Mods Sims Sims 3">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/3a/c2/853ac24b094c492aa0e23901f0f2942c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGtxOkNHx1zWZoTODIc3Rh7lfO0V8ldU6VNg';" alt="More Traits For All Ages By Mikey Sims 3 Downloads Cc Caboodle Sims 3 Mods Sims Sims 3">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">More Traits For All Ages By Mikey Sims 3 Downloads Cc Caboodle Sims 3 Mods Sims Sims 3</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/97/5b/7b975b1af238869e081cc910233a89ad.png" data-lightbox="roadtrip" data-title="The Sims 4 Parenthood Sims Community Sims 4 Expansions The Sims 4 Packs Sims 4">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/97/5b/7b975b1af238869e081cc910233a89ad.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCCpsPP0hdKWxIrpQFKefYfjliqPao8Wp35w';" alt="The Sims 4 Parenthood Sims Community Sims 4 Expansions The Sims 4 Packs Sims 4">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sims 4 Parenthood Sims Community Sims 4 Expansions The Sims 4 Packs Sims 4</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/7b/dd/e77bdd0dc04e41451b63e5f29df6a49f.jpg" data-lightbox="roadtrip" data-title="The Sims 4 Discover University On Console A Legend Is Born Royalty 19 Youtube In 2020 Sims 4 Sims Discover">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/7b/dd/e77bdd0dc04e41451b63e5f29df6a49f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa7RAKfKjXmMzVX6G7TY2wyLCk5vYyRt9J9A';" alt="The Sims 4 Discover University On Console A Legend Is Born Royalty 19 Youtube In 2020 Sims 4 Sims Discover">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sims 4 Discover University On Console A Legend Is Born Royalty 19 Youtube In 2020 Sims 4 Sims Discover</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/a2/5f/7aa25f6f07557e49736f5cf61dc5e992.jpg" data-lightbox="roadtrip" data-title="Britechester Sorority The Sims 4 Discover University Speed Build Sims 4 Houses Sims House Design Sorority House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/a2/5f/7aa25f6f07557e49736f5cf61dc5e992.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRGdsgb-CXtMguSfkcPO_39LsspO5fyCqKlw';" alt="Britechester Sorority The Sims 4 Discover University Speed Build Sims 4 Houses Sims House Design Sorority House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Britechester Sorority The Sims 4 Discover University Speed Build Sims 4 Houses Sims House Design Sorority House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/64/9a/5f649a47fa17e72d8851c6c1d2b07cf1.jpg" data-lightbox="roadtrip" data-title="Pin On The Sims">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/64/9a/5f649a47fa17e72d8851c6c1d2b07cf1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_YaklEiZxfzxFhKGg4x1rnsN4VeL6ueFRxg';" alt="Pin On The Sims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Sims</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/55/cf/9b55cf5e180f60ee7b27d1611029bb7d.png" data-lightbox="roadtrip" data-title="University Life Items 3t2 Conversion Sims Sims 4 Sims 2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/55/cf/9b55cf5e180f60ee7b27d1611029bb7d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHl91EwMDkdtjZn3SzrX1rYf7s-k3IPKxXTw';" alt="University Life Items 3t2 Conversion Sims Sims 4 Sims 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Life Items 3t2 Conversion Sims Sims 4 Sims 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ef/15/e1/ef15e1edb4bb57b3684b189d1db24e9a.jpg" data-lightbox="roadtrip" data-title="Discover University Hair Recolours Wildlyminiaturesandwich In 2021 Sims 4 Recolor Sims 4 Cc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ef/15/e1/ef15e1edb4bb57b3684b189d1db24e9a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvNW8Eil5VsUu6cgc29KknobI0uNWq4b6eCg';" alt="Discover University Hair Recolours Wildlyminiaturesandwich In 2021 Sims 4 Recolor Sims 4 Cc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discover University Hair Recolours Wildlyminiaturesandwich In 2021 Sims 4 Recolor Sims 4 Cc</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-the-federal-cost-of-living-increase-for-2020.html">What Is The Federal Cost Of Living Increase For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-va-disability-compensation-and-pension.html">What Is The Difference Between Va Disability Compensation And Pension</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-for-veterans.html">What Is The Gi Bill For Veterans</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-montgomery-gi-bill-and-post-911.html">What Is The Difference Between Montgomery Gi Bill And Post 911</a></li>
+													<li class="list-group-item"><a href="/what-is-the-federal-military-budget.html">What Is The Federal Military Budget</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-mcg-and-iu.html">What Is The Difference Between Mcg And Iu</a></li>
+													<li class="list-group-item"><a href="/what-is-the-full-meaning-of-military-brat.html">What Is The Full Meaning Of Military Brat</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-called-now.html">What Is The Gi Bill Called Now</a></li>
+													<li class="list-group-item"><a href="/what-is-the-fitness-test-for-the-irish-army.html">What Is The Fitness Test For The Irish Army</a></li>
+													<li class="list-group-item"><a href="/what-is-the-department-of-homeland-security-budget.html">What Is The Department Of Homeland Security Budget</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-national-guard.html">What Is The Gi Bill National Guard</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-post-911-and-gi-bill.html">What Is The Difference Between Post 911 And Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-the-estimated-cola-for-2021.html">What Is The Estimated Cola For 2021</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-and-how-did-it-change-america.html">What Is The Gi Bill And How Did It Change America</a></li>
+													<li class="list-group-item"><a href="/what-is-the-fitness-test-for-the-army.html">What Is The Fitness Test For The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-schizoaffective-disorder-and-depression-with-psychotic-features.html">What Is The Difference Between Schizoaffective Disorder And Depression With Psychotic Features</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-be-sure-to-include-in-your-explanation-the-year-it-was-passed.html">What Is The Gi Bill Be Sure To Include In Your Explanation The Year It Was Passed</a></li>
+													<li class="list-group-item"><a href="/what-is-the-department-of-homeland-security-do.html">What Is The Department Of Homeland Security Do</a></li>
+													<li class="list-group-item"><a href="/what-is-the-difference-between-iu-and-mcg-in-vitamins.html">What Is The Difference Between Iu And Mcg In Vitamins</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-amount.html">What Is The Gi Bill Amount</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

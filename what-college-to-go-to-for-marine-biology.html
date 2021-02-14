@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What College To Go To For Marine Biology - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What College To Go To For Marine Biology",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/96/c1/b1/96c1b1088f14d8af93bdc32b04eae403.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+college+to+go+to+for+marine+biology",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What College To Go To For Marine Biology</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Students are required to do a one term residency at Hatfield Marine Science Center. Where would you like to study in Australia. At OIMB students get to dive deeper pun intended into the specifics by taking upper-level marine bio classes conducting research and getting involved in the active local marine science community. <br>				
+			</p>
+										<a class="badge badge-danger" href="/what-donations-are-tax-deductible.html">what donations are tax deductible</a>
+											<a class="badge badge-dark" href="/what-happens-if-your-husband-doesnt-want-to-divorce.html">what happens if your husband doesnt want to divorce</a>
+											<a class="badge badge-info" href="/what-go-bill.html">what go bill</a>
+											<a class="badge badge-secondary" href="/what-happens-after-national-guard-basic-training.html">what happens after national guard basic training</a>
+											<a class="badge badge-primary" href="/what-happens-if-my-wife-dies-without-a-will.html">what happens if my wife dies without a will</a>
+											<a class="badge badge-secondary" href="/what-education-benefits-are-there-for-veterans.html">what education benefits are there for veterans</a>
+											<a class="badge badge-success" href="/what-gpa-do-you-have-to-maintain-for-gi-bill.html">what gpa do you have to maintain for gi bill</a>
+											<a class="badge badge-secondary" href="/what-gi-bill-pays-for-housing.html">what gi bill pays for housing</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the right blog.  Our site provides you with hints for viewing the maximum quality video and image content, search and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video for you to view.  It is also possible to bring about supporting this website by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/07/8b/23078b5b3643de05ad0ac6863f5b734a.jpg" data-lightbox="roadtrip" data-title="Pursuing A Career In Marine Biology Everything You Need To Know About Becoming A Marine Biologist Marine Biology What Is Marine Biology Marine Biology Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/07/8b/23078b5b3643de05ad0ac6863f5b734a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREO0UfUhoKyahnC0QYRNDrRXyjtJvps8NWPA';" alt="Pursuing A Career In Marine Biology Everything You Need To Know About Becoming A Marine Biologist Marine Biology What Is Marine Biology Marine Biology Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pursuing A Career In Marine Biology Everything You Need To Know About Becoming A Marine Biologist Marine Biology What Is Marine Biology Marine Biology Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d1/88/1a/d1881ac3bdfec90ea8dbff0571a4665c.jpg" data-lightbox="roadtrip" data-title="Here Are The Top 10 Best Marine Biology Colleges Universities In North America That Offer Excellent Marine Salt Water Fishing Underwater World Ocean Diorama">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d1/88/1a/d1881ac3bdfec90ea8dbff0571a4665c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNLn1cw4uZ0byYXesRtehaDC06qUg0xg33cg';" alt="Here Are The Top 10 Best Marine Biology Colleges Universities In North America That Offer Excellent Marine Salt Water Fishing Underwater World Ocean Diorama">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Are The Top 10 Best Marine Biology Colleges Universities In North America That Offer Excellent Marine Salt Water Fishing Underwater World Ocean Diorama</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/f0/87/5ef087a5805abcd2ff05a72c56e9558f.jpg" data-lightbox="roadtrip" data-title="Dream College Marine Biology And Awesome Parties Marine Biology Dream College Marine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/f0/87/5ef087a5805abcd2ff05a72c56e9558f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq5hLAxctl91YeHF0HUKbBtJdnODxe08QJgg';" alt="Dream College Marine Biology And Awesome Parties Marine Biology Dream College Marine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dream College Marine Biology And Awesome Parties Marine Biology Dream College Marine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/74/55/a674553a2275a8a1d7c157111486fbcf.jpg" data-lightbox="roadtrip" data-title="Marine Biology Marine Biology Biology Quote Biology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/74/55/a674553a2275a8a1d7c157111486fbcf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuak7NlKNYtsiLbTTRzhClw-sdRJMi9GSBpA';" alt="Marine Biology Marine Biology Biology Quote Biology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Biology Marine Biology Biology Quote Biology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/44/38/a944388fb49d1160a2711184a8adf0c7.jpg" data-lightbox="roadtrip" data-title="The List Of All U S Colleges With A Marine Biology Major Marine Biology Jobs Biology College Biology Major">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/44/38/a944388fb49d1160a2711184a8adf0c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX50ii8VJkwXsGrTHKbIo9FO76V4tzeAX5bQ';" alt="The List Of All U S Colleges With A Marine Biology Major Marine Biology Jobs Biology College Biology Major">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The List Of All U S Colleges With A Marine Biology Major Marine Biology Jobs Biology College Biology Major</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/c1/b1/96c1b1088f14d8af93bdc32b04eae403.png" data-lightbox="roadtrip" data-title="Thinking Of Pursuing A Career In Marine Biology In 2020 Marine Biology Marine Biology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/c1/b1/96c1b1088f14d8af93bdc32b04eae403.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1PnlcP96XUeEGNJSdZ1qO06izMU3eXPTJJg';" alt="Thinking Of Pursuing A Career In Marine Biology In 2020 Marine Biology Marine Biology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thinking Of Pursuing A Career In Marine Biology In 2020 Marine Biology Marine Biology</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/fa/5c/70/fa5c70cc3e0e49a2bde55ca58e0f2ec4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1PnlcP96XUeEGNJSdZ1qO06izMU3eXPTJJg';" alt="Thinking Of Pursuing A Career In Marine Biology In 2020 Marine Biology Marine Biology">
+										<div class="card-body">
+						<h3 class="h5"><b>Students can opt for graduate and undergraduate courses at Brown University.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What college to go to for marine biology</strong>. 
+								
+																	I think this type of stress is actually good for us. 
+																	Marine Biology is a field of biology and studying this field can be effective preparation for students wishing to pursue careers in health sciences. 
+																	At UO students learn the basics needed to study marine biologychemistry biology math physics and any general education courses. 
+																	Studying marine biology is perfect if you have an interest in the ocean and the creatures within it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each schools ranking is based on the compilation of our data from reliable government sources student surveys college graduate interviews and editorial review. 
+																	The course shows how interactions. 
+																	The degree therefore gives a wide overview of the diversity of animal life and ecosystems on this planet ranging from the mountains to the deep sea trenches. 
+																	Every time I go to the library I can quickly go into study mode because when you see everyone is studying you get some amount of stress which keeps you motivated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Best Colleges for Biology ranking is based on key statistics and student reviews using data from the US. 
+																	This program is offered as a concentration within the biology major which. 
+																	View 7 Marine Biology courses. 
+																	Most of the universities that offer marine biology are based along the coast. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some marine biologists become researchers others go into academia and still more are employed by companies in non-profit or environmental sectors. 
+																	Duke University Durham North Carolina Founded in 1838 Duke University is a private institution that belongs to one of the top US. 
+																	Required courses for the major include biology of fishes biology of invertebrates general ecology and oceanography. 
+																	Students who have biology or non-biology majors may participate in this degree program which has three separate start terms throughout the year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Located in Rhode Island Brown University is well regarded as the best place to be for studying Marine Biology. 
+																	Some even get jobs for the government or as consultants in industries that may impact or be impacted by the ocean like transportation. 
+																	Marine biology seeks to understand patterns of biological diversity and quantify change in the marine ecosystem by studying how organisms interact with their environment. 
+																	We have created a 2021 ranking of the best colleges in Georgia that offer Marine Biology And Biological Oceanography degrees to help you find a school that fits your needs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The marine biology program offered via the Hatfield Marine Science Center is designed for students who might not necessarily have a background in marine biology or ecology. 
+																	Leading universities in the field include. 
+																	The ranking compares the top degree programs for biology majors including ecology marine biology microbiology biotechnology botany and pre-medicine programs. 
+																	Some Marine Biologists wish to work with the care of animals through Veterinary Medicine while others go on to work with human health. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Students take 31 to 34 credits within the biology major 15 of which are dedicated to the marine biology option. 
+																	Some Marine Biologists research the potential biomedical applications of marine resources. 
+																	Do you dream of marine biology study abroad. 
+																	Through a marine biology degree you will learn all about the biodiversity of marine ecosystems how the organisms within these systems interact with each other and their environment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Let us know for. 
+																	This institution has courses that will start online and continue on campus later. 
+																	The University of Sydney Australia. 
+																	Portsmouth Liverpool Bangor and Plymouth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The course typically involves a mixture of both theoretical and practical work in order to sufficiently build. 
+																	View 1 Marine Biology courses. 
+																	The college has consistently managed to produce some of the top Marine Biologists on the planet. 
+																	In addition you can view our entire list of all 2 Marine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And want to study marine biology. 
+																	FdSc Marine Science Level 5 Full-time Cornwall College Newquay This course provides a range of marine science based modules across the physical chemical and biological disciplines allowing students to develop a deep understanding of the marine environment and the biotic and abiotic interactions within. 
+																	Undergraduate degrees in marine biology are offered at a handful of universities. 
+																	The College of Charleston offers a research-intensive bachelors in marine biology program that prepares students for careers in marine science and provides a basis for graduate study in the field. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Best Marine Biology Colleges 1. 
+																	Read more on how this ranking was calculated. 
+																	One of the previous research has stated that some amount of stressanxiety will not cause health problems instead they can make people focus. 
+																	The Marine Biology element of this course covers animals seaweeds plants and microbial life in the seas and their interactions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the US. 
+																	The Zoology element covers all animals whether on land or in water. 
+																	Oregon State University has a Bachelor of Science in Biology program that offers an option for Marine Biology. 
+																	Our degrees offer you the opportunity to study at one of the highest ranking Marine Science departments in the UK REF 2014 at the world-leading National Oceanography Centre Southampton NOCS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jobs in this industry are relatively secure and the compensation is decent. 
+																	Also the UW has many research. 
+																	Schools that offer an undergraduate degree in biology with a concentration in marine biology. 
+																	Here are some of my suggestions on how to choose which university you should apply to if you want to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Heres everything you need to find the best countries for marine biology summer programs abroad. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/1b/99/251b99288ca0a6023b4444bc0375a5df.jpg" data-lightbox="roadtrip" data-title="3 The Responsibilities Of A Marine Biologists Is To Take Of Endangered Marine Species Another Key Respons Marine Biology Marine Biologist Marine Biology Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/1b/99/251b99288ca0a6023b4444bc0375a5df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKDNMTDvtDD9jgvZokPFoxZpBiMbmGsoSZOw';" alt="3 The Responsibilities Of A Marine Biologists Is To Take Of Endangered Marine Species Another Key Respons Marine Biology Marine Biologist Marine Biology Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 The Responsibilities Of A Marine Biologists Is To Take Of Endangered Marine Species Another Key Respons Marine Biology Marine Biologist Marine Biology Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/b3/67/52b3673cf2ea985dd967c953f20dfe1a.jpg" data-lightbox="roadtrip" data-title="If You Love The Ocean And Everything About It Why Choose Something Else As Your Major When You Can Study Marine Bio Marine Biology Biology Marine Biology Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/b3/67/52b3673cf2ea985dd967c953f20dfe1a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1qj1r_AnywLghicmCwdnehaeOV9Kn6m5PgQ';" alt="If You Love The Ocean And Everything About It Why Choose Something Else As Your Major When You Can Study Marine Bio Marine Biology Biology Marine Biology Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Love The Ocean And Everything About It Why Choose Something Else As Your Major When You Can Study Marine Bio Marine Biology Biology Marine Biology Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/5c/70/fa5c70cc3e0e49a2bde55ca58e0f2ec4.jpg" data-lightbox="roadtrip" data-title="Best Marine Biology Colleges In Usa Marine Biology Biology College Marine Biology Schools">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/5c/70/fa5c70cc3e0e49a2bde55ca58e0f2ec4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzEP13qJQx6p6HGYuPiTVw9faRHZIBu9TWQ';" alt="Best Marine Biology Colleges In Usa Marine Biology Biology College Marine Biology Schools">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Marine Biology Colleges In Usa Marine Biology Biology College Marine Biology Schools</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/bb/9b/d9bb9b24652af14d3a4dc84fac17b100.jpg" data-lightbox="roadtrip" data-title="Exploring Creation With Marine Biology By Sherri Seligson Apologia Science Apologia Marine Biology Marine Biology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/bb/9b/d9bb9b24652af14d3a4dc84fac17b100.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoxCF32vdXheVwWRq7AfnNIb4DGjQTFP1MCQ';" alt="Exploring Creation With Marine Biology By Sherri Seligson Apologia Science Apologia Marine Biology Marine Biology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exploring Creation With Marine Biology By Sherri Seligson Apologia Science Apologia Marine Biology Marine Biology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/98/6c/c9986c0f7b2cce273288d0a5bf4c0ade.jpg" data-lightbox="roadtrip" data-title="Exploring Creation With Marine Biology Yellow House Book Rental Apologia Science Marine Biology Apologia Marine Biology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/98/6c/c9986c0f7b2cce273288d0a5bf4c0ade.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuz-9YqYU2Um9pcQO7upZX7KZQ35J46vuLMg';" alt="Exploring Creation With Marine Biology Yellow House Book Rental Apologia Science Marine Biology Apologia Marine Biology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exploring Creation With Marine Biology Yellow House Book Rental Apologia Science Marine Biology Apologia Marine Biology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/79/87/2679873abd4ba03b88f4fcc746908cc8.jpg" data-lightbox="roadtrip" data-title="Interested In Marine Biology University Of Tampa Marine Biology Biology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/79/87/2679873abd4ba03b88f4fcc746908cc8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQePiNjqvwpHdWL9OhERQGneRyKhGSa9HFlVg';" alt="Interested In Marine Biology University Of Tampa Marine Biology Biology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Interested In Marine Biology University Of Tampa Marine Biology Biology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/7c/df/ac7cdff2bdbaab4aba7f85cd98a29ff7.jpg" data-lightbox="roadtrip" data-title="New Issue Released By Journal Of Marine Biology And Research Volume 2 Issue 1 2017 Marine Biology Biology Systems Biology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/7c/df/ac7cdff2bdbaab4aba7f85cd98a29ff7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjhWU5kdKa9Y1JV15yuCFi2tJIjmwzKNAPow';" alt="New Issue Released By Journal Of Marine Biology And Research Volume 2 Issue 1 2017 Marine Biology Biology Systems Biology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Issue Released By Journal Of Marine Biology And Research Volume 2 Issue 1 2017 Marine Biology Biology Systems Biology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/00/96/fb009620166c2cdaf6936abd678cbd3d.jpg" data-lightbox="roadtrip" data-title="Marine Biology Unit Study Resources Biology Lesson Plans Biology Lessons Biology Units">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/00/96/fb009620166c2cdaf6936abd678cbd3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMu8DP5lBWfxO-4CeJjoI1E9Lvu4uF8_59PQ';" alt="Marine Biology Unit Study Resources Biology Lesson Plans Biology Lessons Biology Units">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Biology Unit Study Resources Biology Lesson Plans Biology Lessons Biology Units</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/45/20/9f4520e7fe703216fee3c7c38b6415bc.jpg" data-lightbox="roadtrip" data-title="Become A Marine Biologist Marine Biology Marine Biologist Bucket List">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/45/20/9f4520e7fe703216fee3c7c38b6415bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPTUckB9FpIj6PskJSIHx0sxEY3yudsJ22Eg';" alt="Become A Marine Biologist Marine Biology Marine Biologist Bucket List">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Become A Marine Biologist Marine Biology Marine Biologist Bucket List</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/51/f4/4f51f4ade17c2116d2934af95b65014d.jpg" data-lightbox="roadtrip" data-title="Pin By Leah Johnson Stanford On High School Marine Biology Biology Science Teaching Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/51/f4/4f51f4ade17c2116d2934af95b65014d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUcyuYzQQdxJ8cr7hPLhgy5oalf-8YxdTV1w';" alt="Pin By Leah Johnson Stanford On High School Marine Biology Biology Science Teaching Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Leah Johnson Stanford On High School Marine Biology Biology Science Teaching Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/90/4f/d9904f067760ac2ec12d8a99fa082280.jpg" data-lightbox="roadtrip" data-title="Marine Biology Camps For Teens Marine Biology Schools Marine Biology Biology College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/90/4f/d9904f067760ac2ec12d8a99fa082280.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZpCO6NlU4cmiKwMcO_3E96aFWPRMzRFTJQ';" alt="Marine Biology Camps For Teens Marine Biology Schools Marine Biology Biology College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marine Biology Camps For Teens Marine Biology Schools Marine Biology Biology College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/18/56/2b/18562bf283b776cc1d293172e29d7630.jpg" data-lightbox="roadtrip" data-title="Secular Homeschool Marine Biology Homeschool Science Lessons Marine Biology Biology Lessons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/18/56/2b/18562bf283b776cc1d293172e29d7630.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQdnlfYoFE1VPpy2Jk9wP-6oHtuNqOswELuQ';" alt="Secular Homeschool Marine Biology Homeschool Science Lessons Marine Biology Biology Lessons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Secular Homeschool Marine Biology Homeschool Science Lessons Marine Biology Biology Lessons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/3a/d3/013ad3ee759da233048f2d35ae611077.jpg" data-lightbox="roadtrip" data-title="Earth Science An Introduction To Oceanography Basics Oceanography Earth Science Science">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/3a/d3/013ad3ee759da233048f2d35ae611077.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0CwIBbWtOwTx4AUDV2nAASTiayNkTPdH3IQ';" alt="Earth Science An Introduction To Oceanography Basics Oceanography Earth Science Science">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Earth Science An Introduction To Oceanography Basics Oceanography Earth Science Science</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wacoal-all-dressed-up-t-shirt-bra.html">Wacoal All Dressed Up T Shirt Bra</a></li>
+													<li class="list-group-item"><a href="/virtual-go-to-college-fairs.html">Virtual Go To College Fairs</a></li>
+													<li class="list-group-item"><a href="/vocational-rehabilitation-and-employment-program-for-disabled-vets.html">Vocational Rehabilitation And Employment Program For Disabled Vets</a></li>
+													<li class="list-group-item"><a href="/volunteer-for-a-deployment-army-national-guard.html">Volunteer For A Deployment Army National Guard</a></li>
+													<li class="list-group-item"><a href="/wappapello-national-guard-training-site.html">Wappapello National Guard Training Site</a></li>
+													<li class="list-group-item"><a href="/virginia-yellow-ribbon.html">Virginia Yellow Ribbon</a></li>
+													<li class="list-group-item"><a href="/vpass-smc-indisponible.html">Vpass Smc Indisponible</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-weekly-claim-error.html">Virginia Unemployment Weekly Claim Error</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-tax-exemptions.html">Virginia Unemployment Tax Exemptions</a></li>
+													<li class="list-group-item"><a href="/vs-ssdt.html">Vs Ssdt</a></li>
+													<li class="list-group-item"><a href="/want-to-go-to-college-but-dont-know-what-for-reddit.html">Want To Go To College But Dont Know What For Reddit</a></li>
+													<li class="list-group-item"><a href="/volunteer-deployments-for-national-guard.html">Volunteer Deployments For National Guard</a></li>
+													<li class="list-group-item"><a href="/war-department-military-intelligence-badge.html">War Department Military Intelligence Badge</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-tax-rate-2016.html">Virginia Unemployment Tax Rate 2016</a></li>
+													<li class="list-group-item"><a href="/volunteer-to-deploy-national-guard.html">Volunteer To Deploy National Guard</a></li>
+													<li class="list-group-item"><a href="/virginia-yellow-ribbon-schools.html">Virginia Yellow Ribbon Schools</a></li>
+													<li class="list-group-item"><a href="/want-to-go-to-college-out-of-state-but-cant-afford-it.html">Want To Go To College Out Of State But Cant Afford It</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-tax-rates-2020.html">Virginia Unemployment Tax Rates 2020</a></li>
+													<li class="list-group-item"><a href="/want-to-go-to-college-but-cant-afford-it.html">Want To Go To College But Cant Afford It</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-stimulus-payments.html">Virginia Unemployment Stimulus Payments</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

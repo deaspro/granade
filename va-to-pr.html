@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va To Pr - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va To Pr",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/e5/24/fc/e524fccdb01b3b7bfd3f38fd01c698eb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+to+pr",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va To Pr</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It ends in Puerto Rico. Telemedicina PR Coronavirus 787-999-6202. 549 Lot 3 Pueblo Ward PR 00735 800-449-8729 X 29001 714. <br>				
+			</p>
+										<a class="badge badge-info" href="/what-is-the-average-va-rating-for-chronic-fatigue.html">what is the average va rating for chronic fatigue</a>
+											<a class="badge badge-light" href="/what-is-the-average-va-disability-rating-for-sleep-apnea.html">what is the average va disability rating for sleep apnea</a>
+											<a class="badge badge-secondary" href="/what-is-the-army-ranks-in-order.html">what is the army ranks in order</a>
+											<a class="badge badge-warning" href="/what-is-the-army-in-irish.html">what is the army in irish</a>
+											<a class="badge badge-light" href="/what-is-the-average-va-rating-for-sleep-apnea.html">what is the average va rating for sleep apnea</a>
+											<a class="badge badge-danger" href="/what-is-the-australian-army-fitness-test.html">what is the australian army fitness test</a>
+											<a class="badge badge-warning" href="/what-is-the-age-limit-for-national-guard-prior-service.html">what is the age limit for national guard prior service</a>
+											<a class="badge badge-info" href="/what-is-the-bah-rate-for-gi-bill.html">what is the bah rate for gi bill</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the ideal site.  Our website gives you suggestions for seeing the highest quality video and picture content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1c/29/2e/1c292ec074666413f56f9b9756c3e2e0.jpg" data-lightbox="roadtrip" data-title="Pin By Myrna Figueroa Alicea On Puerto Rico Va Pa Encima Puerto Rico Pr Flag Puerto Rican Cuisine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1c/29/2e/1c292ec074666413f56f9b9756c3e2e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxnfh5GtLH7WTnaOJLZHAcJ4bAdTgaXjraw';" alt="Pin By Myrna Figueroa Alicea On Puerto Rico Va Pa Encima Puerto Rico Pr Flag Puerto Rican Cuisine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Myrna Figueroa Alicea On Puerto Rico Va Pa Encima Puerto Rico Pr Flag Puerto Rican Cuisine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/7d/79/52/7d7952d03b6ad262297540cdeeacdbcc.jpg" data-lightbox="roadtrip" data-title="Pin By Minerva Colon On Puerto Rico Va Pa Encima Puerto Rico Puerto Rican Flag My Island">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/7d/79/52/7d7952d03b6ad262297540cdeeacdbcc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCehIX4C-qzR_L9lXDIfzHnH2K5DhMz1OO7w';" alt="Pin By Minerva Colon On Puerto Rico Va Pa Encima Puerto Rico Puerto Rican Flag My Island">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Minerva Colon On Puerto Rico Va Pa Encima Puerto Rico Puerto Rican Flag My Island</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/87/62/0e8762acfc4d4a26da1eb5052dee7818.jpg" data-lightbox="roadtrip" data-title="Pin By Ly Va On Puerto Rico Puerto Rico Island Puerto Rico Puerto Rico Beaches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/87/62/0e8762acfc4d4a26da1eb5052dee7818.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9dnkfM-1yQTpTI1Np4v4otqRXyUv-0IjORQ';" alt="Pin By Ly Va On Puerto Rico Puerto Rico Island Puerto Rico Puerto Rico Beaches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ly Va On Puerto Rico Puerto Rico Island Puerto Rico Puerto Rico Beaches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/b7/8d/22b78d08b8699237e22518237d43d21f.jpg" data-lightbox="roadtrip" data-title="Pin By Unibou On Puerto Rico Pictures Puerto Rico Pictures Puerto Rico Puerto Rico Flag">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/b7/8d/22b78d08b8699237e22518237d43d21f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZqo_t_qPWV2cONV7DVO8nIHWkVLoxtRSYmA';" alt="Pin By Unibou On Puerto Rico Pictures Puerto Rico Pictures Puerto Rico Puerto Rico Flag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Unibou On Puerto Rico Pictures Puerto Rico Pictures Puerto Rico Puerto Rico Flag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/ca/b7/a5cab7615c58cc609e4cacb9cea55ce0.jpg" data-lightbox="roadtrip" data-title="24 Asn Ch Urob Si S M N Padov Ako Vylep I Va E Pr Zdne Steny Giftsforfriends Personalizedgifts Diyg Diy Baby Stuff Diy Painting Diy Wall Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/ca/b7/a5cab7615c58cc609e4cacb9cea55ce0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAmkywvz4-HYj9pomHl95tjhaWOTmnQgd7Sg';" alt="24 Asn Ch Urob Si S M N Padov Ako Vylep I Va E Pr Zdne Steny Giftsforfriends Personalizedgifts Diyg Diy Baby Stuff Diy Painting Diy Wall Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">24 Asn Ch Urob Si S M N Padov Ako Vylep I Va E Pr Zdne Steny Giftsforfriends Personalizedgifts Diyg Diy Baby Stuff Diy Painting Diy Wall Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/01/05/3101053992d87637c83ccfb952f3333a.png" data-lightbox="roadtrip" data-title="Pin On Business Growth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/01/05/3101053992d87637c83ccfb952f3333a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtCZ9fKQ1QXeW3a3lvAOmUOIfmXACSM90NZw';" alt="Pin On Business Growth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Business Growth</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/22/b7/8d/22b78d08b8699237e22518237d43d21f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtCZ9fKQ1QXeW3a3lvAOmUOIfmXACSM90NZw';" alt="Pin On Business Growth">
+										<div class="card-body">
+						<h3 class="h5"><b>According to our data there are a number of flights available from Virginia to Puerto Rico within the next two weeks with the cheapest ticket starting at 380.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va to pr</strong>. 
+								
+																	The shorter the term of the loan the lower your interest rate. 
+																	Anyone experiencing anxiety or stress related to COVID-19 may call or text VA COPES a free and confidential COVID-19 response warmline at 877-349-6428 Mon-Fri 900am to 900pm and Sat - Sun. 
+																	Condo Report - Veterans Affairs. 
+																	Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Take exit into Expreso Jose de DiegoPR-22 Oeste. 
+																	The Mayagueez Clinic is a Satellite of the San Juan VAMC and was established in 1976 to improve access to Primary Care services for veterans in the western part of Puerto Rico. 
+																	Ceiba VA Community Based Outpatient Clinic. 
+																	Fly from Virginia on Spirit Airlines American Airlines United Airlines and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VAPR Federal Credit Union offers members a wide variety of loans including personal loans of up to 30000 to meet many needs. 
+																	Your trip begins in the state of Virginia. 
+																	Pass two traffic lights. 
+																	Spanish speakers are available. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our data shows that September tends to be the cheapest month to fly to Puerto Rico from Virginia. 
+																	VA Caribbean Healthcare System Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	10 San Juan PR 00921. 
+																	The total straight line flight distance from Virginia to Puerto Rico is 1519miles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Search for Puerto Rico flights on KAYAK now to find the best deal. 
+																	The Regional Office building will be on your right side at the second traffic light. 
+																	Approximately 9 miles 12 minutes from the airport. 
+																	Drive approximately 2 minutes and take exit 7B onto PR 165PR-24 Buchanan-San Patricio. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What is the cheapest month to fly from Virginia to Puerto Rico. 
+																	United States Department of Veterans Affairs Regional Office San Juan. 
+																	Facilities in Puerto Rico Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Find flights to Puerto Rico from 60. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Comerio Rural Outpatient Clinic. 
+																	Depending on the amount of the loan you can take between three years to seven years to repay if you like. 
+																	VA Caribbean Healthcare System San Juan VA Medical Center Casia St. 
+																	The information on this page pertaing to VA Caribbean Healthcare System. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is equivalent to 2445kilometersor 1320nautical miles. 
+																	549 Lot3 Pueblo Ward PR 00735 800-449-8729 X 29001 6298. 
+																	Puerto Rico - Locations. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/05/89/28/058928e7a6809adfba3ddca46bfb23b3.jpg" data-lightbox="roadtrip" data-title="Sigma Sigma Sigma Pr Sorority Tgi Greek Custom Apparel Tshirt Design Simple Heart Galentines Va Sorority Pr Sorority Merchandise Sorority Designs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/05/89/28/058928e7a6809adfba3ddca46bfb23b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi72XFr9x2GCgi_h96LaZRVHPLf4vg6hQKyA';" alt="Sigma Sigma Sigma Pr Sorority Tgi Greek Custom Apparel Tshirt Design Simple Heart Galentines Va Sorority Pr Sorority Merchandise Sorority Designs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sigma Sigma Sigma Pr Sorority Tgi Greek Custom Apparel Tshirt Design Simple Heart Galentines Va Sorority Pr Sorority Merchandise Sorority Designs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/24/fc/e524fccdb01b3b7bfd3f38fd01c698eb.jpg" data-lightbox="roadtrip" data-title="Pr At Partners Has The Edgeyoudeserve With Dan Moody At The Bristow Va Location Making A Commitment To Your Equi Follow Your Instinct You Deserve Instinct">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/24/fc/e524fccdb01b3b7bfd3f38fd01c698eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaahSaDoYqTQCDgHTlh6ZGJmEDQRWrKYA3pw';" alt="Pr At Partners Has The Edgeyoudeserve With Dan Moody At The Bristow Va Location Making A Commitment To Your Equi Follow Your Instinct You Deserve Instinct">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pr At Partners Has The Edgeyoudeserve With Dan Moody At The Bristow Va Location Making A Commitment To Your Equi Follow Your Instinct You Deserve Instinct</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/83/04/e983043bc5dcf77170e960aa3e5488dd.jpg" data-lightbox="roadtrip" data-title="Puerto Rico In Pictures Adventurous Things To Do Discover The Best Activities Puerto Rico Puerto Rico Pictures Puerto Rico History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/83/04/e983043bc5dcf77170e960aa3e5488dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7EM_ePNWTArZliajJk986AjxMZVDQJfvoKw';" alt="Puerto Rico In Pictures Adventurous Things To Do Discover The Best Activities Puerto Rico Puerto Rico Pictures Puerto Rico History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Puerto Rico In Pictures Adventurous Things To Do Discover The Best Activities Puerto Rico Puerto Rico Pictures Puerto Rico History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/27/60/96/276096f394737d43b26831f46e6906cf--puerto-rican-foods-shining-star.jpg" data-lightbox="roadtrip" data-title="Puerto Rico El Hangueo Puerto Rican Food Truck Woodbridge Va Puerto Rico Food Puerto Rican Culture Puerto Rican Recipes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/27/60/96/276096f394737d43b26831f46e6906cf--puerto-rican-foods-shining-star.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRoKPq9lFOlEJQY36pZGgvP5P3H4HMXVgDrQ';" alt="Puerto Rico El Hangueo Puerto Rican Food Truck Woodbridge Va Puerto Rico Food Puerto Rican Culture Puerto Rican Recipes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Puerto Rico El Hangueo Puerto Rican Food Truck Woodbridge Va Puerto Rico Food Puerto Rican Culture Puerto Rican Recipes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a0/fd/2b/a0fd2b84cd9102b6f08db9a093c08255.jpg" data-lightbox="roadtrip" data-title="Pin By Kenneth Medina On Puerto Rico Va Pa Encima Puerto Rico Puerto Rico Usa Puerto Rico Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a0/fd/2b/a0fd2b84cd9102b6f08db9a093c08255.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbKx35Pn2ET23IrxZeIwdvsN26bnRqNj6H0Q';" alt="Pin By Kenneth Medina On Puerto Rico Va Pa Encima Puerto Rico Puerto Rico Usa Puerto Rico Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kenneth Medina On Puerto Rico Va Pa Encima Puerto Rico Puerto Rico Usa Puerto Rico Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/2f/8b/912f8b2e5cf81d0479b580b6a92db786.jpg" data-lightbox="roadtrip" data-title="Pin On Puerto Rico">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/2f/8b/912f8b2e5cf81d0479b580b6a92db786.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqTScavzS-grBozi_IfAPyfwOyAHUWFN64YQ';" alt="Pin On Puerto Rico">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Puerto Rico</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/90/91/7e9091a24d1872530856dd875d176d50.jpg" data-lightbox="roadtrip" data-title="Pin By Ly Va On Los Simpson Puerto Rico Art Puerto Rico Puerto Rico Island">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/90/91/7e9091a24d1872530856dd875d176d50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZErJjBxARbn1pX4SRpSrwBZssrrRj-NKTNg';" alt="Pin By Ly Va On Los Simpson Puerto Rico Art Puerto Rico Puerto Rico Island">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ly Va On Los Simpson Puerto Rico Art Puerto Rico Puerto Rico Island</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5e/5b/42/5e5b428ffd3e8038ebf8ed1b541da04c.jpg" data-lightbox="roadtrip" data-title="Va Loans Offer Benefits Unmatched By Conventional And Fha Financing Plus The Pr Va Home Loan Watch This Before Apply Va Mortgages Va Loan Va Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5e/5b/42/5e5b428ffd3e8038ebf8ed1b541da04c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCjj6kbjDpQJRhzz4fB_PTMJMT-G_yisfRdg';" alt="Va Loans Offer Benefits Unmatched By Conventional And Fha Financing Plus The Pr Va Home Loan Watch This Before Apply Va Mortgages Va Loan Va Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loans Offer Benefits Unmatched By Conventional And Fha Financing Plus The Pr Va Home Loan Watch This Before Apply Va Mortgages Va Loan Va Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0a/b1/d6/0ab1d6a924726e27556dbc308bc15f78.jpg" data-lightbox="roadtrip" data-title="Pin By Stella Besso On Arte De Pared De Bricolaje In 2020 Diy Painting Buy Paintings Painting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0a/b1/d6/0ab1d6a924726e27556dbc308bc15f78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIlzDX48F-NPGnaCrpZqRbUHSwWytMcaRlKg';" alt="Pin By Stella Besso On Arte De Pared De Bricolaje In 2020 Diy Painting Buy Paintings Painting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Stella Besso On Arte De Pared De Bricolaje In 2020 Diy Painting Buy Paintings Painting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/b8/45/62b84590283c6c231b53f258d644b8e9.png" data-lightbox="roadtrip" data-title="Pin On Csc Headshot Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/b8/45/62b84590283c6c231b53f258d644b8e9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwTgWbF-17hNyQCbayNrinfMPkbx1ZHohAXw';" alt="Pin On Csc Headshot Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Csc Headshot Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/a6/45/c5a645a846846f8839f0c153c99aaf97.png" data-lightbox="roadtrip" data-title="Get A Free Media Kit A Chance To Win A Free Va For A Week Click The Pin Or Click Here Http Www Media Kit Blog Social Media Online Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/a6/45/c5a645a846846f8839f0c153c99aaf97.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR15_DGgTdu8EhMSLtGRMXKN3UnvcccClbhhw';" alt="Get A Free Media Kit A Chance To Win A Free Va For A Week Click The Pin Or Click Here Http Www Media Kit Blog Social Media Online Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get A Free Media Kit A Chance To Win A Free Va For A Week Click The Pin Or Click Here Http Www Media Kit Blog Social Media Online Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/20/50/7b2050165404b2f48246c0ccd10bce47.jpg" data-lightbox="roadtrip" data-title="Pin On Enchanted Island Costal Beaches Lighthouses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/20/50/7b2050165404b2f48246c0ccd10bce47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1XCDPh8aAgl_kCacX2W81gBNT47GiTTUq8Q';" alt="Pin On Enchanted Island Costal Beaches Lighthouses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Enchanted Island Costal Beaches Lighthouses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/15/c0/3215c0b24753e5dd8a09b099a7fb6961.png" data-lightbox="roadtrip" data-title="Pin By Your Pr Assistant On Our Shameless Memes Shameless Memes Virtual Assistant New Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/15/c0/3215c0b24753e5dd8a09b099a7fb6961.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNNOSIazYnbuKXvRZ3twxcX9geiiNRflDo0w';" alt="Pin By Your Pr Assistant On Our Shameless Memes Shameless Memes Virtual Assistant New Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Your Pr Assistant On Our Shameless Memes Shameless Memes Virtual Assistant New Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/93/5c/f7935c1db9d6e5ae4acf784a585279a1.jpg" data-lightbox="roadtrip" data-title="Pr Races Leesburg 20k Leesburg Va Christmas Bulbs Christmas Ornaments Novelty Christmas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/93/5c/f7935c1db9d6e5ae4acf784a585279a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtOlovdftxSOhjeMfF1c52wSTovEDduRs6cA';" alt="Pr Races Leesburg 20k Leesburg Va Christmas Bulbs Christmas Ornaments Novelty Christmas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pr Races Leesburg 20k Leesburg Va Christmas Bulbs Christmas Ornaments Novelty Christmas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/a5/53/dea553bac36143d2d529bc8c30210e4f.png" data-lightbox="roadtrip" data-title="Kim Stewart On Offering Pr Services As A Va And The Hardest Part About Getting Started And How To Overcome It Pr For Entrepreneurs In 2020 Hard Part Get Started Kim">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/a5/53/dea553bac36143d2d529bc8c30210e4f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHdiyXiE4w7cS4oQotOvdMmgkLz1Vd7s0Nug';" alt="Kim Stewart On Offering Pr Services As A Va And The Hardest Part About Getting Started And How To Overcome It Pr For Entrepreneurs In 2020 Hard Part Get Started Kim">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kim Stewart On Offering Pr Services As A Va And The Hardest Part About Getting Started And How To Overcome It Pr For Entrepreneurs In 2020 Hard Part Get Started Kim</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-do-i-do-if-my-spouse-tested-positive-for-covid.html">What Do I Do If My Spouse Tested Positive For Covid</a></li>
+													<li class="list-group-item"><a href="/what-day-will-i-receive-my-va-disability-check.html">What Day Will I Receive My Va Disability Check</a></li>
+													<li class="list-group-item"><a href="/what-department-stores-offer-military-discount.html">What Department Stores Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/what-do-i-do-if-my-va-disability-claim-is-denied.html">What Do I Do If My Va Disability Claim Is Denied</a></li>
+													<li class="list-group-item"><a href="/what-do-i-need-to-get-into-college.html">What Do I Need To Get Into College</a></li>
+													<li class="list-group-item"><a href="/what-day-will-my-state-pension-be-paid.html">What Day Will My State Pension Be Paid</a></li>
+													<li class="list-group-item"><a href="/what-did-lizzo-go-to-college-for.html">What Did Lizzo Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-do-the-irish-army-rangers-do.html">What Do The Irish Army Rangers Do</a></li>
+													<li class="list-group-item"><a href="/what-do-army-rangers-get-paid.html">What Do Army Rangers Get Paid</a></li>
+													<li class="list-group-item"><a href="/what-did-ariana-grande-go-to-college-for.html">What Did Ariana Grande Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-did-the-army-security-agency-do.html">What Did The Army Security Agency Do</a></li>
+													<li class="list-group-item"><a href="/what-do-i-do-if-someone-forged-my-signature.html">What Do I Do If Someone Forged My Signature</a></li>
+													<li class="list-group-item"><a href="/what-do-army-reserves-get-paid.html">What Do Army Reserves Get Paid</a></li>
+													<li class="list-group-item"><a href="/what-did-neil-armstrong-go-to-college-for.html">What Did Neil Armstrong Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-did-bill-gates-go-to-college-for.html">What Did Bill Gates Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-disqualifies-you-from-pell-grant.html">What Disqualifies You From Pell Grant</a></li>
+													<li class="list-group-item"><a href="/what-departments-are-under-the-department-of-defense.html">What Departments Are Under The Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/what-day-will-va-checks-be-deposited-this-month.html">What Day Will Va Checks Be Deposited This Month</a></li>
+													<li class="list-group-item"><a href="/what-do-i-need-to-go-to-college.html">What Do I Need To Go To College</a></li>
+													<li class="list-group-item"><a href="/what-do-the-irish-army-do-in-syria.html">What Do The Irish Army Do In Syria</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Divorce Lawyers - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Divorce Lawyers",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/474x/1f/e7/c6/1fe7c62bcc3ca254e869f654f0e03440.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+divorce+lawyers",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Divorce Lawyers</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Dealing with the emotional stress of divorce. Most intelligent attorneys know that VA benefits are off-limits as marital or community property upon divorce. Military lawyers called judge advocates or JAGs also are available to help you and your spouse understand the legal implications of your divorce. <br>				
+			</p>
+										<a class="badge badge-light" href="/va-smc-pay-rates.html">va smc pay rates</a>
+											<a class="badge badge-dark" href="/va-smc-explained.html">va smc explained</a>
+											<a class="badge badge-dark" href="/va-smc-t-pay-chart.html">va smc t pay chart</a>
+											<a class="badge badge-success" href="/va-smc-mean.html">va smc mean</a>
+											<a class="badge badge-danger" href="/va-smc-criteria.html">va smc criteria</a>
+											<a class="badge badge-info" href="/va-smc-descriptions.html">va smc descriptions</a>
+											<a class="badge badge-info" href="/va-smc-disability-calculator.html">va smc disability calculator</a>
+											<a class="badge badge-primary" href="/va-smc-rates-explained.html">va smc rates explained</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the right blog.  Our website gives you suggestions for viewing the highest quality video and image content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/3f/0d/163f0d60899d7d29ff174acfece33788.png" data-lightbox="roadtrip" data-title="Are You Looking For A Divorce Attorney But Do Not Know What To Ask Before Hiring One Assuming You Have Business Grants Business Questions Grants For Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/3f/0d/163f0d60899d7d29ff174acfece33788.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqPDSX55PgcsLmhEceuHbsc-joFukLq9TRQ';" alt="Are You Looking For A Divorce Attorney But Do Not Know What To Ask Before Hiring One Assuming You Have Business Grants Business Questions Grants For Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Looking For A Divorce Attorney But Do Not Know What To Ask Before Hiring One Assuming You Have Business Grants Business Questions Grants For Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/91/5e/8a/915e8aee12df64b777c033e835f8c97d.jpg" data-lightbox="roadtrip" data-title="Family Law Firm In Fairfax Va Divorce Lawyers Family Law Attorney Family Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/91/5e/8a/915e8aee12df64b777c033e835f8c97d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHs6cUrGbekxJvpar-fMvdSGRYfi8t7OlzfA';" alt="Family Law Firm In Fairfax Va Divorce Lawyers Family Law Attorney Family Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family Law Firm In Fairfax Va Divorce Lawyers Family Law Attorney Family Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fe/1b/d1/fe1bd1b50e5e80c14483886494925407.jpg" data-lightbox="roadtrip" data-title="Legal Consultation Law Firm Mesothelioma Divorce Lawyers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fe/1b/d1/fe1bd1b50e5e80c14483886494925407.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ddHbzuQ89sjd_nOnqGyRXo1w402D4a6SCA';" alt="Legal Consultation Law Firm Mesothelioma Divorce Lawyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Legal Consultation Law Firm Mesothelioma Divorce Lawyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/0b/db/41/0bdb4108b7d76a46260cae31809ad905.jpg" data-lightbox="roadtrip" data-title="Pin On Divorce Lawywer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/0b/db/41/0bdb4108b7d76a46260cae31809ad905.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXPU6dKH7HyuFzH4tt9tYP0uJ5kHHwLByf9w';" alt="Pin On Divorce Lawywer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Divorce Lawywer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/1f/e7/c6/1fe7c62bcc3ca254e869f654f0e03440.jpg" data-lightbox="roadtrip" data-title="5 Most Important Things Lawyer Should Know Good Lawyers Lawyer Divorce Lawyers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/1f/e7/c6/1fe7c62bcc3ca254e869f654f0e03440.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTyWU_y614vOftrLJxBpfgXlhtdpZ8DfMVXw';" alt="5 Most Important Things Lawyer Should Know Good Lawyers Lawyer Divorce Lawyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Most Important Things Lawyer Should Know Good Lawyers Lawyer Divorce Lawyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b1/df/0e/b1df0ebb47758eff983d65453ada2cee.jpg" data-lightbox="roadtrip" data-title="Veterans Who Want To Take Out A Va Loan Must Prove They Re Eligible You Have To Submit A Request For A Certificate Of Military Divorce Divorce Lawyers Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b1/df/0e/b1df0ebb47758eff983d65453ada2cee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS8H06Zq0q_902QhARkCIm8i3Rs8QhYhxW2g';" alt="Veterans Who Want To Take Out A Va Loan Must Prove They Re Eligible You Have To Submit A Request For A Certificate Of Military Divorce Divorce Lawyers Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Who Want To Take Out A Va Loan Must Prove They Re Eligible You Have To Submit A Request For A Certificate Of Military Divorce Divorce Lawyers Divorce</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/3d/e2/cd/3de2cd4c461438e65fb713af1e0b537a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS8H06Zq0q_902QhARkCIm8i3Rs8QhYhxW2g';" alt="Veterans Who Want To Take Out A Va Loan Must Prove They Re Eligible You Have To Submit A Request For A Certificate Of Military Divorce Divorce Lawyers Divorce">
+										<div class="card-body">
+						<h3 class="h5"><b>Military legal assistance attorneys are available to help you understand the implications of your divorce.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans divorce lawyers</strong>. 
+								
+																	How your divorce is handled will affect the rest of your life. 
+																	A military attorney cannot represent you or your spouse in a family law court but can refer you to a nongovernment civilian lawyer. 
+																	However many non-VA legal providers are still providing legal services available to Veterans by phone or email. 
+																	The law for ending the marriage is the same as for civilians the complexities of military life and pensions means that you need to take expert legal advice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Service members and their spouses when they divorce. 
+																	Use FindLaw to hire a local military divorce lawyer to work with you on issues like community property division debt allocation military retirement plan divisions military benefit divisions child custody and support alimony and tax considerations. 
+																	Divorce involving a military spouse can be more complicated than divorce for civilians an experienced military divorce attorney can help. 
+																	You may need to make special considerations regarding child custody and division of military benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Divorce Solicitors who really understand HM Forces personnel. 
+																	Additionally calling our Massachusetts divorce law firm now at 508 502-7002 will help you discover your options at no cost. 
+																	Call the PBA Lawyers Saluting Veterans Hotline at 800-932-0311 ext. 
+																	The Coordinating Committee on Veterans Benefits and Services serves as the entry point for attorneys wishing to assist and volunteer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lawyers as a group are not turning a blind eye toward veterans or spouses. 
+																	To find a free military legal assistance attorney on an installation near you visit the Legal Services Locator. 
+																	Licensed for 13 years. 
+																	Legal Help for Veterans Due to the COVID-19 pandemic free legal clinics are no longer operating on-site at VA facilities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To help you learn more about getting a divorce while overseas weve prepared a blog that discusses the topic. 
+																	It also contains a state-by-state listing of Pro Bono. 
+																	Call our offices today at 703 222-3333. 
+																	Any solicitor advising on a divorce or serving or retired forces personnel will need to understand issues such as service accommodation education issues and especially UK HM Forces pensions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The PBA Pro Bono Office will assess the request and refer it to a volunteer lawyer. 
+																	Find the right Veterans Administration Military Divorce lawyer from 8 local law firms. 
+																	Our Military Divorce Solicitors appreciate that whilst any relationship breakdown is likely to cause you enormous stress there are a number of ways a military divorce differs from one involving civilians. 
+																	Compare detailed profiles including free consultation options locations contact information awards and education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Certified Family Law Specialist Zealous Advocate. 
+																	Youve come to the right place. 
+																	We can help you understand how your military status will affect these elements of divorce. 
+																	Get peer reviews and client ratings averaging 39 of 50. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That is to say a divorce attorney who specializes in military divorces. 
+																	Find top Burnham IL Military Divorce attorneys near you. 
+																	To seek assistance on a legal matter Veterans may call or email a legal services provider listed in their area. 
+																	Find top Burnham PA Military Divorce attorneys near you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Because a military divorce may have special issues its important that you contact a military divorce attorney in these cases. 
+																	The PBA Pro Bono Office will assess the request and refer it to a volunteer lawyer. 
+																	The term military divorce is simply shorthand for a divorce when one or both of the spouses is a military member or retiree so the case may present some unique military issues. 
+																	Military divorce attorneys can help you navigate the world of military divorce and help you get an equitable settlement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	855 930-4280 Message Website. 
+																	If you have questions regarding separation or divorce involving a military service member please talk to a Northern Virginia divorce lawyer from our team at ShounBach. 
+																	At Slater and Gordon our military divorce lawyers have the experience to help you deal with every scenario. 
+																	Compare detailed profiles including free consultation options locations contact information awards and education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dont Navigate This Process Alone. 
+																	Military Divorce Lawyer VETERAN LED OPERATED While regular divorce already presents a series of complications a military divorce is even more complex. 
+																	These payments cannot be divided as marital assets in the divorce or property division hearing. 
+																	How Miller Law Group PC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Divorce and separation Attorney near Veterans Administration Beverly Hills Save. 
+																	To find a military divorce lawyer on an installation near you visit the Installation Program Directory. 
+																	Just as there is no such thing as a military divorce neither is there an official military divorce lawyer though that term is typically applied to family law attorneys who have specialized military knowledge. 
+																	From your relationships with any children you might have to your ability to retire with a decent pension. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our Massachusetts military divorce lawyers help servicemen and women and their spouses in divorce proceedings. 
+																	There are special rules and requirements that apply to US. 
+																	2570 with your request for assistance. 
+																	We have the experience to guide you through your military divorce. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Attorney Russell Ray has worked with many military members in Virginia who face the unique challenges of a military divorce. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/06/eb/d9/06ebd9c15841e2b4ed6ec271223a3384.jpg" data-lightbox="roadtrip" data-title="Divorce Lawyers Near Me Divorce Lawyers Divorce Wedding Photography Contract Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/06/eb/d9/06ebd9c15841e2b4ed6ec271223a3384.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoB3Do42_CD06-x3zUGR-j0MjfVmmIX7nTqA';" alt="Divorce Lawyers Near Me Divorce Lawyers Divorce Wedding Photography Contract Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Divorce Lawyers Near Me Divorce Lawyers Divorce Wedding Photography Contract Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/58/3b/d8583bfe225278a6379d4d887bb2da34.jpg" data-lightbox="roadtrip" data-title="Family Divorce Lawyers Fredericksburg Va Law School Law Student Law School Prep">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/58/3b/d8583bfe225278a6379d4d887bb2da34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlVgEi67f9y2bjyt1CA-0dFp8clu_VQ6qQ3Q';" alt="Family Divorce Lawyers Fredericksburg Va Law School Law Student Law School Prep">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family Divorce Lawyers Fredericksburg Va Law School Law Student Law School Prep</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/c9/67/47c9672f76cb850210b8410d57f174f2.jpg" data-lightbox="roadtrip" data-title="Pin On Divorce">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/c9/67/47c9672f76cb850210b8410d57f174f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS02F3bEByvKZAArPPEuBQ10lrXswCWS8FfFQ';" alt="Pin On Divorce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Divorce</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4c/91/03/4c91031e497e58d7d99c1c0fc2194712.jpg" data-lightbox="roadtrip" data-title="Military And Veteran Benefits Can Add A Level Of Complication To Your Texas Divorce Because Special Rules Apply To Veterans Benefits Veteran Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4c/91/03/4c91031e497e58d7d99c1c0fc2194712.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy1_fbdCbwLIgWYSUMlOPLZnex9sxrRnl3WA';" alt="Military And Veteran Benefits Can Add A Level Of Complication To Your Texas Divorce Because Special Rules Apply To Veterans Benefits Veteran Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military And Veteran Benefits Can Add A Level Of Complication To Your Texas Divorce Because Special Rules Apply To Veterans Benefits Veteran Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/bb/dc/2cbbdc34bf9582dca5bdf10579eb3529.jpg" data-lightbox="roadtrip" data-title="Top Divorce Lawyer Front Shirt Divorce Shirt Divorce T Shirt Mens Divorce Shirt T Shirt T Shirt Websites T Shirts Canada">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/bb/dc/2cbbdc34bf9582dca5bdf10579eb3529.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTApxhQsnLEYiwsX0bK2IsDvFMHCeeKCB42Xg';" alt="Top Divorce Lawyer Front Shirt Divorce Shirt Divorce T Shirt Mens Divorce Shirt T Shirt T Shirt Websites T Shirts Canada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top Divorce Lawyer Front Shirt Divorce Shirt Divorce T Shirt Mens Divorce Shirt T Shirt T Shirt Websites T Shirts Canada</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f1/63/58/f16358445a2e7cf5c0a6e30ecb088a10.jpg" data-lightbox="roadtrip" data-title="Find The Divorce Lawyer In China In 2020 Marriage Advice Books Best Marriage Advice Divorce Lawyers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f1/63/58/f16358445a2e7cf5c0a6e30ecb088a10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRXGafP8vfGrgqyl9oqUxaH2xipLO2m2hKkQ';" alt="Find The Divorce Lawyer In China In 2020 Marriage Advice Books Best Marriage Advice Divorce Lawyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Find The Divorce Lawyer In China In 2020 Marriage Advice Books Best Marriage Advice Divorce Lawyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/3d/e2/cd/3de2cd4c461438e65fb713af1e0b537a.jpg" data-lightbox="roadtrip" data-title="Military Divorce Lawyers Fairfax Va Military Divorce Divorce Lawyers Divorce Attorney">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/3d/e2/cd/3de2cd4c461438e65fb713af1e0b537a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwTrQfNMtHDlAvQ-f5k0nlIWuihqb5xKj1UQ';" alt="Military Divorce Lawyers Fairfax Va Military Divorce Divorce Lawyers Divorce Attorney">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Divorce Lawyers Fairfax Va Military Divorce Divorce Lawyers Divorce Attorney</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/87/ed/31/87ed310f30f9e1954039d4412fc907f3.jpg" data-lightbox="roadtrip" data-title="Veterans Disability Just Because You Receive Military Retired Pay Does Not Mean You Shouldn T Apply For Va D Va Disability Benefits Va Disability Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/87/ed/31/87ed310f30f9e1954039d4412fc907f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC8eI_mAP94fCD2uHYLoXPUqZiQ2SDcHGAHw';" alt="Veterans Disability Just Because You Receive Military Retired Pay Does Not Mean You Shouldn T Apply For Va D Va Disability Benefits Va Disability Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Disability Just Because You Receive Military Retired Pay Does Not Mean You Shouldn T Apply For Va D Va Disability Benefits Va Disability Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/b3/27/b4b3277b7d52c62453904e752e8b7558.jpg" data-lightbox="roadtrip" data-title="Vfw Sustainer Military Divorce Child Custody Single Parenting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/b3/27/b4b3277b7d52c62453904e752e8b7558.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiBenhr0JvN6Zf4N3xdYToCalKo5PjF4xrVQ';" alt="Vfw Sustainer Military Divorce Child Custody Single Parenting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vfw Sustainer Military Divorce Child Custody Single Parenting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9d/45/5e/9d455e053139403766193c7bb1282c4d.jpg" data-lightbox="roadtrip" data-title="Attention Divorce Law Practices Helping Law Firms To Fast Track Their Office Growth With The Attorney Clie Family Law Attorney Lawyer Quotes Divorce Attorney">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9d/45/5e/9d455e053139403766193c7bb1282c4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-RGC1f_lD_8QGDB6eqxwAvlqZwQsuzTeGTg';" alt="Attention Divorce Law Practices Helping Law Firms To Fast Track Their Office Growth With The Attorney Clie Family Law Attorney Lawyer Quotes Divorce Attorney">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attention Divorce Law Practices Helping Law Firms To Fast Track Their Office Growth With The Attorney Clie Family Law Attorney Lawyer Quotes Divorce Attorney</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f6/6d/1b/f66d1bd850a2ed5c185e39184fc4a54f.jpg" data-lightbox="roadtrip" data-title="Divorceonline American Bar Association Divorce Lawyers Legal Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f6/6d/1b/f66d1bd850a2ed5c185e39184fc4a54f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaJ4_Ip_kNg1KN6iNiuFuuQBSv1t2fhYQj2w';" alt="Divorceonline American Bar Association Divorce Lawyers Legal Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Divorceonline American Bar Association Divorce Lawyers Legal Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/61/7c/36617c255cec4f1ae693bb35736919af.png" data-lightbox="roadtrip" data-title="Law Office Of Bryan Fagan In 2020 Divorce Divorce Law Divorce Attorney">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/61/7c/36617c255cec4f1ae693bb35736919af.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmc6ei_IcB4x2tKGm5bFFH47BxvP2KgJOkKA';" alt="Law Office Of Bryan Fagan In 2020 Divorce Divorce Law Divorce Attorney">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Law Office Of Bryan Fagan In 2020 Divorce Divorce Law Divorce Attorney</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/c5/91/47c591aec13836c1afe087eb9ab6ec05.jpg" data-lightbox="roadtrip" data-title="To Protect Your Child S Welfare Contact Our Northern Virginia Child Custody Lawyer Our Firm Has Practiced Nothin Child Custody Lawyers Child Custody Family Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/c5/91/47c591aec13836c1afe087eb9ab6ec05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMSs4sj8Q4NhdYI04kV7pc0wmRZnXh3Tl4aw';" alt="To Protect Your Child S Welfare Contact Our Northern Virginia Child Custody Lawyer Our Firm Has Practiced Nothin Child Custody Lawyers Child Custody Family Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To Protect Your Child S Welfare Contact Our Northern Virginia Child Custody Lawyer Our Firm Has Practiced Nothin Child Custody Lawyers Child Custody Family Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-benefits-tennessee.html">Veterans Benefits Tennessee</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-qualifications.html">Veterans Benefits Qualifications</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-kentucky.html">Veterans Benefits Kentucky</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-spouse-after-divorce.html">Veterans Benefits For Spouse After Divorce</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-michigan.html">Veterans Benefits Michigan</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-surviving-spouse-nursing-home.html">Veterans Benefits Surviving Spouse Nursing Home</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-missouri.html">Veterans Benefits Missouri</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-widows-home-health-care.html">Veterans Benefits For Widows Home Health Care</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-spouse-of-deceased-veteran.html">Veterans Benefits For Spouse Of Deceased Veteran</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-special-monthly-compensation.html">Veterans Benefits Special Monthly Compensation</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-rates-2020.html">Veterans Benefits Rates 2020</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-number.html">Veterans Benefits Number</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-newsletter-october-2020.html">Veterans Benefits Newsletter October 2020</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-surviving-divorced-spouse.html">Veterans Benefits For Surviving Divorced Spouse</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-qualifications-assisted-living.html">Veterans Benefits Qualifications Assisted Living</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-handbook-2020.html">Veterans Benefits Handbook 2020</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-uk.html">Veterans Benefits Uk</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-surviving-spouses.html">Veterans Benefits For Surviving Spouses</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-unemployability.html">Veterans Benefits Unemployability</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-on-allegiant-airlines.html">Veterans Benefits On Allegiant Airlines</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

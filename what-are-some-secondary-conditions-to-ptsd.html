@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Are Some Secondary Conditions To Ptsd - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Are Some Secondary Conditions To Ptsd",
+  "datePublished": "2021-02-14",
+  "image": "https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2014/07/CARDIO20PTSD201.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+are+some+secondary+conditions+to+ptsd",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Are Some Secondary Conditions To Ptsd</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This can be due to the increased stress and anxiety they experience and this long term stress can cause them to develop high blood pressure for which they can be secondarily service connected. It helps veterans with accurate information. People with post-traumatic stress disorder PTSD often experience a number of psychological difficulties such as depression other anxiety disorders and substance use-related problems. <br>				
+			</p>
+										<a class="badge badge-danger" href="/vicksburg-national-military-park-cell-phone-tour.html">vicksburg national military park cell phone tour</a>
+											<a class="badge badge-primary" href="/veterans-service-connected-disability-pay-scale.html">veterans service connected disability pay scale</a>
+											<a class="badge badge-info" href="/vfw-va-claims-representative.html">vfw va claims representative</a>
+											<a class="badge badge-info" href="/vetrecs-archives-gov-veterans-request-home.html">vetrecs archives gov veterans request home</a>
+											<a class="badge badge-danger" href="/veterans-ptsd-programs.html">veterans ptsd programs</a>
+											<a class="badge badge-warning" href="/vicksburg-national-military-park-location.html">vicksburg national military park location</a>
+											<a class="badge badge-light" href="/vicksburg-national-military-park-bookstore.html">vicksburg national military park bookstore</a>
+											<a class="badge badge-light" href="/veterans-spousal-support-guidelines.html">veterans spousal support guidelines</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to pay a visit to the ideal blog.  Our website provides you with suggestions for seeing the maximum quality video and image content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/CCKInfographic-Getting-VA-Disability-for-PTSD-scaled.jpg" data-lightbox="roadtrip" data-title="Automatic 50 Ptsd Rating S Explained Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/CCKInfographic-Getting-VA-Disability-for-PTSD-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfxnJG10h6Lb2TGyLk85qNCNgWn8VyrMQMQ';" alt="Automatic 50 Ptsd Rating S Explained Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Automatic 50 Ptsd Rating S Explained Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/bestrong.global/assets/uploads/2019/11/PTSD-is-not-a-mental-illness.jpg?ssl=1" data-lightbox="roadtrip" data-title="Ptsd The Definitive Guide Be Strong">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/bestrong.global/assets/uploads/2019/11/PTSD-is-not-a-mental-illness.jpg?ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZxAYAOc2IvaFM5MtxYFI1ZjIwyubub5ggA';" alt="Ptsd The Definitive Guide Be Strong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ptsd The Definitive Guide Be Strong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/Depositphotos_87643836_s-2019.jpg" data-lightbox="roadtrip" data-title="Va Disability Rating For Ptsd Explained Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/Depositphotos_87643836_s-2019.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSG1rA1NlNfCmT5n-xGgPK4IpPTCFqOmGqOg';" alt="Va Disability Rating For Ptsd Explained Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Rating For Ptsd Explained Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/52/e9/6452e90850a7e6f5a0759249ae515b1d.png" data-lightbox="roadtrip" data-title="Anger Is A Secondary Emotion Anger Management Quotes What Causes Anger Emotional Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/52/e9/6452e90850a7e6f5a0759249ae515b1d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPRJeRBJOzYsOojjb9Gio2sB9nojVY5RnvZA';" alt="Anger Is A Secondary Emotion Anger Management Quotes What Causes Anger Emotional Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anger Is A Secondary Emotion Anger Management Quotes What Causes Anger Emotional Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3a/3b/de/3a3bde126a859dc9aa4f7c160571e217.jpg" data-lightbox="roadtrip" data-title="Pin On Empath">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3a/3b/de/3a3bde126a859dc9aa4f7c160571e217.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCXW2Pi08ncDt3p51dToDXxoKnqVPqObKfA';" alt="Pin On Empath">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Empath</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2015/05/anxiety-secondary-ptsd.png" data-lightbox="roadtrip" data-title="Va Compensation For Ptsd And Other Mental Disorders Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2015/05/anxiety-secondary-ptsd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBFYixgbIRCUB992D4suXPWjNndcH05UsnKQ';" alt="Va Compensation For Ptsd And Other Mental Disorders Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Compensation For Ptsd And Other Mental Disorders Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.hillandponton.com/wp-content/uploads/2016/10/PTSD-STRESSORS.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBFYixgbIRCUB992D4suXPWjNndcH05UsnKQ';" alt="Va Compensation For Ptsd And Other Mental Disorders Hill Ponton P A">
+										<div class="card-body">
+						<h3 class="h5"><b>Fear anxiety anger depression guilt all are common reactions to trauma.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What are some secondary conditions to ptsd</strong>. 
+								
+																	1 In addition to these psychological issues individuals with PTSD may also be more likely to experience physical health problems. 
+																	Secondary Conditions To PTSD Title 38. 
+																	Shared characteristics between secondary PTSD and PTSD include increased alertness and jumpiness along with nightmares and an increased tendency to avoid social situations. 
+																	Today Im explaining the Top 5 Secondary Conditions to PTSD for VA disability benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GERD symptoms depend on the. 
+																	The most common primary condition linked to sleep apnea as a secondary condition is PTSD. 
+																	Veterans with schizophrenia often find their other mental and physical conditions are considered to be secondary service-connected disabilities. 
+																	I saw conditions such as hypertension coronary heart disease chronic pain and asthma being linked to PTSD. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PTSD can have secondary claims such as Migraines hypertension sleep apnea erectile dysfunction coronary heart. 
+																	Common Secondary Service-Connected Conditions Depression can be secondary to Parkinsons Disease cancer painful orthopedic injuries or any number of conditions and. 
+																	Military personnel are prone to developing secondary PTSD. 
+																	GERD occurs when stomach acid flows into your esophagus irritating its lining. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In most cases veterans will still need to get a medical opinion either from a VA doctor or a private specialist that links the physical injury directly to PTSD. 
+																	Veterans with post-traumatic stress disorder PTSD can develop hypertension as secondary to their PTSD. 
+																	Check our other pages listed in Veteran Links. 
+																	If you are looking to prove a service-connection on a secondary basis you will have to prove causation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Common secondary service-connected disabilities linked to PTSD are sleep problems anxiety depression panic disorder obsessive-compulsive disorders and many more. 
+																	I also saw suggestions that PTSD could aggravate preexisting physical conditions. 
+																	Nevertheless attempting to prove that a physical condition is related to PTSD or any psychological condition will not always be easy. 
+																	ED Secondary to Prostate Cancer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Getting timely help and support may prevent normal stress reactions from getting worse and developing into PTSD. 
+																	Sleep apnea is typically diagnosed via sleep study where professional determine whether your breathing. 
+																	Examples in training materials include alcohol or drug abuse resulting secondarily from a service-connected disorder such as posttraumatic stress disorder PTSD. 
+																	Secondary Service Connection for PTSD Sleep Apnea. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These pages are meant to share. 
+																	2758 likes 1 talking about this. 
+																	In some cases there are nonmedical considerations in allowing service connection for secondary conditions. 
+																	This requires that the secondary disability be proximately caused by or proximately aggravated by another service-connected disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However the majority of people exposed to trauma do not develop long-term post-traumatic stress disorder. 
+																	A condition is service-connected secondarily when an already service-connected condition or its medication causes or aggravates another condition. 
+																	If you have sleep apnea and any of the following conditions there may be a link between your service-connected condition and the other condition. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2014/07/CARDIO20PTSD201.png" data-lightbox="roadtrip" data-title="Heart Disease And Ptsd Va Benefits Related Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2014/07/CARDIO20PTSD201.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzQv3bFd69_5ExAJLpOOZcW6TiqFU9ApW1gg';" alt="Heart Disease And Ptsd Va Benefits Related Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Heart Disease And Ptsd Va Benefits Related Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/91/1c/e9911c55a7f822d9c18f8fe0bf766fc8.png" data-lightbox="roadtrip" data-title="Pin On Va Claim">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/91/1c/e9911c55a7f822d9c18f8fe0bf766fc8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7oWKbrGWHJv-HzVJKRuVXy5pFvWKUv6e4g';" alt="Pin On Va Claim">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va Claim</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pharmaceutical-technology.com/wp-content/uploads/sites/10/2019/05/PTSD-pipeline.png" data-lightbox="roadtrip" data-title="Ptsd And Comorbidity 80 Of Ptsd Patients Have A Comorbid Disorder">
+											<img class="card-img v-image ads-img " src="https://www.pharmaceutical-technology.com/wp-content/uploads/sites/10/2019/05/PTSD-pipeline.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXpmzI7wq3V3M_LfFYNpWu6ViBwO4mNvdYbQ';" alt="Ptsd And Comorbidity 80 Of Ptsd Patients Have A Comorbid Disorder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ptsd And Comorbidity 80 Of Ptsd Patients Have A Comorbid Disorder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cck-law.com/wp-content/uploads/2019/06/PTSD-not-pyramiding.png" data-lightbox="roadtrip" data-title="Pyramiding How To Avoid Stacking Your Va Ratings Cck Law">
+											<img class="card-img v-image ads-img " src="https://cck-law.com/wp-content/uploads/2019/06/PTSD-not-pyramiding.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC-b-A30R1FCY8zhaHTKThKSg7WNO6ojJ0nQ';" alt="Pyramiding How To Avoid Stacking Your Va Ratings Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pyramiding How To Avoid Stacking Your Va Ratings Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/dd/d1/83ddd1cb73d336f33e7786ecbf9d681a.png" data-lightbox="roadtrip" data-title="Pin On Self Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/dd/d1/83ddd1cb73d336f33e7786ecbf9d681a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCp4-a7JfLxEYx_ih7iCzxW0VgIbxGE8pK-g';" alt="Pin On Self Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Self Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2017/08/PTSD-VS-OTHER-MENTAL-THUMBNAIL.jpg" data-lightbox="roadtrip" data-title="Understanding The Difference Between Ptsd And Other Mental Health Disorders Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2017/08/PTSD-VS-OTHER-MENTAL-THUMBNAIL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWzJODkB2aL1BYvT5Gv0_pwrnx1eipba2Zjw';" alt="Understanding The Difference Between Ptsd And Other Mental Health Disorders Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding The Difference Between Ptsd And Other Mental Health Disorders Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/74/09/0a74091370a0515afd6000abc4407f9d.png" data-lightbox="roadtrip" data-title="Military Disability Made Easy Logo Military Disability Va Disability American Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/74/09/0a74091370a0515afd6000abc4407f9d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyyoWc0pdPYtbAhJ1LL45rO9tlLeNSJuk15A';" alt="Military Disability Made Easy Logo Military Disability Va Disability American Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Disability Made Easy Logo Military Disability Va Disability American Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2016/10/PTSD-STRESSORS.png" data-lightbox="roadtrip" data-title="Ptsd Stressor Verification Getting Ptsd Service Connection Letter Sample Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2016/10/PTSD-STRESSORS.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOw6M3xoQNm3B4RPb3FgkK0GGBSXhExSVsg';" alt="Ptsd Stressor Verification Getting Ptsd Service Connection Letter Sample Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ptsd Stressor Verification Getting Ptsd Service Connection Letter Sample Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/26ae9f76-fe88-4317-8a6e-d6e7f161f473/gr1.jpg" data-lightbox="roadtrip" data-title="Burnout And Posttraumatic Stress Disorder In The Coronavirus Disease 2019 Covid 19 Pandemic Intersection Impact And Interventions Journal Of The American College Of Radiology">
+											<img class="card-img v-image ads-img " src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/26ae9f76-fe88-4317-8a6e-d6e7f161f473/gr1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQTreT63ifAQ9LtRS-v-2rc2sNrOPC3aV4wA';" alt="Burnout And Posttraumatic Stress Disorder In The Coronavirus Disease 2019 Covid 19 Pandemic Intersection Impact And Interventions Journal Of The American College Of Radiology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Burnout And Posttraumatic Stress Disorder In The Coronavirus Disease 2019 Covid 19 Pandemic Intersection Impact And Interventions Journal Of The American College Of Radiology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/6d/30/e76d30f8bf8b584110243f37b4116547.jpg" data-lightbox="roadtrip" data-title="Pin On Memes Complex Ptsd">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/6d/30/e76d30f8bf8b584110243f37b4116547.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkPxguhs1PWQgQ-oH_qGNaw1BYayWu4gze5Q';" alt="Pin On Memes Complex Ptsd">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Memes Complex Ptsd</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ab/37/64/ab3764f935df7fce69c17a8beccbbfb7.jpg" data-lightbox="roadtrip" data-title="The Anger Iceberg Anger Iceberg Anger Emotions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ab/37/64/ab3764f935df7fce69c17a8beccbbfb7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVk88QaNmuDk_dzjPAYTwStXbUthjJmw8rGw';" alt="The Anger Iceberg Anger Iceberg Anger Emotions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Anger Iceberg Anger Iceberg Anger Emotions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/91/98/e191985db689c1b2df12927b71afba94.jpg" data-lightbox="roadtrip" data-title="Pin On Counseling And Mental Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/91/98/e191985db689c1b2df12927b71afba94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBpD-Nz10_FpYnSGLjS171VWVKWYskNJs3mw';" alt="Pin On Counseling And Mental Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Counseling And Mental Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/fe/79/dffe79e30b03d6bcc3fc5dbab05a84b6.jpg" data-lightbox="roadtrip" data-title="Pin On Trauma Assessment 1 247974 Tarsha Teague">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/fe/79/dffe79e30b03d6bcc3fc5dbab05a84b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhNmk-5hluYUtlqd37TjjiRiPdOo4OUuddrg';" alt="Pin On Trauma Assessment 1 247974 Tarsha Teague">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Trauma Assessment 1 247974 Tarsha Teague</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/80/dc/a5/80dca5cabe0802926eb60f9d41c63a55.jpg" data-lightbox="roadtrip" data-title="Pin By Michelle Griffin On Stress Stress Hopeless Anger">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/80/dc/a5/80dca5cabe0802926eb60f9d41c63a55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYLg4iCIZXu58fu4kodVTgWQh7jywk7Rcwrg';" alt="Pin By Michelle Griffin On Stress Stress Hopeless Anger">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Michelle Griffin On Stress Stress Hopeless Anger</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/klIrrujfz-g/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Secondary Service Connection For Ptsd Ptsd Lawyers">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/klIrrujfz-g/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_vNtDVZUcGnqgWF5w3o3Si_lwvF_p66IRPA';" alt="Secondary Service Connection For Ptsd Ptsd Lawyers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Secondary Service Connection For Ptsd Ptsd Lawyers</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/virginia-monthly-salary-calculator.html">Virginia Monthly Salary Calculator</a></li>
+													<li class="list-group-item"><a href="/virginia-gastrointestinal-specialists.html">Virginia Gastrointestinal Specialists</a></li>
+													<li class="list-group-item"><a href="/virginia-education-credit-union.html">Virginia Education Credit Union</a></li>
+													<li class="list-group-item"><a href="/virginia-education-programs.html">Virginia Education Programs</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-worksheets.html">Virginia Department Of Education Worksheets</a></li>
+													<li class="list-group-item"><a href="/virginia-lawyer-referral-service-norfolk.html">Virginia Lawyer Referral Service Norfolk</a></li>
+													<li class="list-group-item"><a href="/virginia-employee-pay-increase-2020.html">Virginia Employee Pay Increase 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-dept-of-education-standards.html">Virginia Dept Of Education Standards</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-military-and-veterans-affairs.html">Virginia Department Of Military And Veterans Affairs</a></li>
+													<li class="list-group-item"><a href="/virginia-insurance-gap.html">Virginia Insurance Gap</a></li>
+													<li class="list-group-item"><a href="/virginia-employee-raise-2020.html">Virginia Employee Raise 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-insurance-nz.html">Virginia Insurance Nz</a></li>
+													<li class="list-group-item"><a href="/virginia-employment-commission-training-programs.html">Virginia Employment Commission Training Programs</a></li>
+													<li class="list-group-item"><a href="/virginia-military-divorce-retirement-pay.html">Virginia Military Divorce Retirement Pay</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-teacher-licensure-renewal.html">Virginia Department Of Education Teacher Licensure Renewal</a></li>
+													<li class="list-group-item"><a href="/virginia-individual-insurance-plans.html">Virginia Individual Insurance Plans</a></li>
+													<li class="list-group-item"><a href="/virginia-education-department.html">Virginia Education Department</a></li>
+													<li class="list-group-item"><a href="/virginia-military-institute-department-of-history.html">Virginia Military Institute Department Of History</a></li>
+													<li class="list-group-item"><a href="/virginia-pay-band-scale.html">Virginia Pay Band Scale</a></li>
+													<li class="list-group-item"><a href="/virginia-labor-law-lunch-break.html">Virginia Labor Law Lunch Break</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

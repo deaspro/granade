@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Vitamin D Iu Vs Mg - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Vitamin D Iu Vs Mg",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/13/58/7a/13587a565eeb2e3e4e41bcd76c0a88ff.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=vitamin+d+iu+vs+mg",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Vitamin D Iu Vs Mg</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">1 IU of vitamin D is equivalent to 0025 micrograms abbreviated as either mcg or I¼g of cholecalciferol or ergocalciferol1 Conversely 1 microgram of vitamin D equals 40 IU of vitamin D. Vitamin D is the back in the spotlight as we are faced with the dual threats of flu season and a significant rise in cases of COVID-19. If your sun exposure and dietary vitamin D intake are limited you may benefit from a vitamin D supplement. <br>				
+			</p>
+										<a class="badge badge-success" href="/what-is-the-post-911-gi-bill.html">what is the post 911 gi bill</a>
+											<a class="badge badge-warning" href="/what-is-the-retirement-age-for-army.html">what is the retirement age for army</a>
+											<a class="badge badge-light" href="/what-is-the-role-of-each-military-branch.html">what is the role of each military branch</a>
+											<a class="badge badge-danger" href="/what-is-the-pt-test-for-national-guard.html">what is the pt test for national guard</a>
+											<a class="badge badge-secondary" href="/what-is-the-payment-date-for-cpp.html">what is the payment date for cpp</a>
+											<a class="badge badge-danger" href="/what-is-the-phone-number-for-the-veterans-administration.html">what is the phone number for the veterans administration</a>
+											<a class="badge badge-light" href="/what-is-the-salary-of-a-financial-advisor.html">what is the salary of a financial advisor</a>
+											<a class="badge badge-dark" href="/what-is-the-national-guard-in-us.html">what is the national guard in us</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the ideal blog.  Our website gives you suggestions for viewing the maximum quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you view.  It is also possible to bring about supporting this site by sharing videos and graphics that you enjoy on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/b6/5b/9db65b4511133eeb3c92b10ccf3687d6.png" data-lightbox="roadtrip" data-title="How To Convert 5000 Iu Of Vitamin D To Mg Quora In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/b6/5b/9db65b4511133eeb3c92b10ccf3687d6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV3pVTlIe07P8OCZqiOA03U_4qhgEhdxYKig';" alt="How To Convert 5000 Iu Of Vitamin D To Mg Quora In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Convert 5000 Iu Of Vitamin D To Mg Quora In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/ba/89/a4ba89097a45aa82e0eb16b7161955e7.jpg" data-lightbox="roadtrip" data-title="Opti Men Vs Orange Triad Vitamins Nutrition Facts Table Comparison Best Vitamins For Men Http Good Vitamins For Women Vitamins For Women Vitamins For Energy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/ba/89/a4ba89097a45aa82e0eb16b7161955e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwPWFjfJEs9JfLkho-3upnZ51LBZ2HVewpPw';" alt="Opti Men Vs Orange Triad Vitamins Nutrition Facts Table Comparison Best Vitamins For Men Http Good Vitamins For Women Vitamins For Women Vitamins For Energy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Opti Men Vs Orange Triad Vitamins Nutrition Facts Table Comparison Best Vitamins For Men Http Good Vitamins For Women Vitamins For Women Vitamins For Energy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/90/18/3090189c515cd05635211b4d62ad14e0.png" data-lightbox="roadtrip" data-title="Pin On Health Supplements Vitamins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/90/18/3090189c515cd05635211b4d62ad14e0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC65EZ6j74jlg8nr_klXbYIRrIpuV8kDwBfg';" alt="Pin On Health Supplements Vitamins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Supplements Vitamins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/1b/d3/ce1bd3ab15a228e3f0d887e45b404cbd.jpg" data-lightbox="roadtrip" data-title="Pin On Vitamin Supplements">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/1b/d3/ce1bd3ab15a228e3f0d887e45b404cbd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1mq1dkMCJv_Wr8xN6waYINA-y7e2xmjrGXg';" alt="Pin On Vitamin Supplements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vitamin Supplements</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/46/5a/ad465a87b2774d1a3d6c63207798e2e4.jpg" data-lightbox="roadtrip" data-title="Supcal Cz Softgels Calcium Carbonate Eq To Calcium 250mg Vitamin D3 200 I U Zinc 2mg Magnesium 75mg Per 5 Pharma Companies Calcium Benefits Pharma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/46/5a/ad465a87b2774d1a3d6c63207798e2e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmDwiDDPS8APAO7k2zPwLk4Z2MIpfq3jMk1w';" alt="Supcal Cz Softgels Calcium Carbonate Eq To Calcium 250mg Vitamin D3 200 I U Zinc 2mg Magnesium 75mg Per 5 Pharma Companies Calcium Benefits Pharma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supcal Cz Softgels Calcium Carbonate Eq To Calcium 250mg Vitamin D3 200 I U Zinc 2mg Magnesium 75mg Per 5 Pharma Companies Calcium Benefits Pharma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/58/7a/13587a565eeb2e3e4e41bcd76c0a88ff.jpg" data-lightbox="roadtrip" data-title="Vitamin K2 Mk7 100mcg With Vitamin D3 5000 Iu From Menaquinone7 And Cholecalciferol A 90 Servings Of Vitamin D And K Comple In 2020 Vitamins Vitamin K2 Heart Healthy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/58/7a/13587a565eeb2e3e4e41bcd76c0a88ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_MZM0YjYMIGu-N0bOgajCGsaISvRIcneskA';" alt="Vitamin K2 Mk7 100mcg With Vitamin D3 5000 Iu From Menaquinone7 And Cholecalciferol A 90 Servings Of Vitamin D And K Comple In 2020 Vitamins Vitamin K2 Heart Healthy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vitamin K2 Mk7 100mcg With Vitamin D3 5000 Iu From Menaquinone7 And Cholecalciferol A 90 Servings Of Vitamin D And K Comple In 2020 Vitamins Vitamin K2 Heart Healthy</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/df/5d/a9/df5da9a18ea79bf0b1d356fd7533486d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_MZM0YjYMIGu-N0bOgajCGsaISvRIcneskA';" alt="Vitamin K2 Mk7 100mcg With Vitamin D3 5000 Iu From Menaquinone7 And Cholecalciferol A 90 Servings Of Vitamin D And K Comple In 2020 Vitamins Vitamin K2 Heart Healthy">
+										<div class="card-body">
+						<h3 class="h5"><b>WhereIU is International Unit.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Vitamin d iu vs mg</strong>. 
+								
+																	Folks older than that need 20 micrograms or 800 IU A serving or two of fatty fish such as salmon or trout should have it covered. 
+																	Consult with your health practitioner for advice on appropriate vitamin D supplementation levels. 
+																	Its very important for children to get enough vitamin D as they are constantly growing and developing. 
+																	The following list substances can be converted between IU and mgmcg. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A daily vitamin D intake of 4000 IU is the tolerable upper intake level for adults according to the Institute of Medicine. 
+																	So 10 micrograms of vitamin D is equal to 400 IU. 
+																	The abbreviation IU stands for International Unit and it is an internationally recognized method to measure vitamins vaccines and other medications. 
+																	Sometimes the amount of vitamin D is expressed as International Units IU. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vitamin D is called the sunshine vitamin because the suns ultraviolet rays trigger its production within the skin. 
+																	Use the guidelines below to compare labels. 
+																	1 mg d-alpha tocopheryl succinate 121 IU. 
+																	1 IU is the biological equivalent of about 067 mg d-alpha-tocopherol or 09 mg of dl-alpha-tocopherol. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 IU 067 mg for d-alpha-tocopherol natural 1 IU 09 mg for dl-alpha-tocopherol synthetic mg alpha-tocopherol. 
+																	This is why I recommend vitamin D3 supplements. 
+																	1 mcg mg vitamin D 40 IU. 
+																	Just what the recommended D dose should be is a subject of great debate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	International Units IU are used to measure vitamin potency. 
+																	1 mg vitamin E as alpha-tocopherol label claim 1 mg of natural a-tocopherol 1 mg vitamin E as alpha-tocopherol label claim 2 mg of synthetic a-tocopherol. 
+																	Vitamin D intakes of less than 10000 IU per day for several months have not been linked to toxicity. 
+																	This calculator calculates the iu international unit using mcg microgram mcg values. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vitamin D mcg to IU Converter. 
+																	Coast Hwy 101 Suite U-87 Encinitas CA 92024. 
+																	Lets say that I have a soft gel capsule that contains 500 IU of Vitamin A as retinol. 
+																	The formula for calculating IU depends on the substance being measured. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 IU 0025 mcg. 
+																	As of 2010 the r. 
+																	1 IU 0025 mcg Folate. 
+																	Use this tool to convert Vitamin D between mcg and IU. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	0 0 One IU of vitamin D is the biological equivalent of 25 ng nanograms of cholecalciferol or ergocalciferol. 
+																	A microgram is 1000 times smaller than a milligram mg. 
+																	1 mg d-alpha tocopherol 149 IU. 
+																	1 microgram of vitamin D is equal to 40 IU. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The current Recommended Dietary Allowance RDA for vitamin D is 15 micrograms or 600 IU for people up to age 70. 
+																	Refreshingly though the buzz around vitamin D is not without foundation. 
+																	1 IU is the biological equivalent of 0025 mcg cholecalciferol or ergocalciferol. 
+																	1 mg beta-carotene 1667 IU. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 mg d-alpha tocopheryl acetate 136 IU. 
+																	Vitamin D Drops for kids. 
+																	A 1000 international unit dose of vitamin D is 25 micrograms which converts to approximately 003 milligrams according to Mayo Clinic. 
+																	50000 IU capsules are available by prescription only. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vitamin Vitamin A retinol Vitamin A Acetate Vitamin A propionate Vitamin A palmitate Beta Carotene Vitamin B1 thiamine Vitamin B2 riboflavin Vitamin CL-ascorbic acid Vitamin D D2 or D3 Vitamin E Natural d-alpha Tocopheryl Acetate Vitamin E Natural d-alpha Tocopherol Vitamin E Natural d-alpha. 
+																	Experts agree its the one vitamin everyone in the UK should be taking. 
+																	Today many countries still use the IU to measure vitamin D. 
+																	Studies suggest that vitamin D3 increases vitamin D levels faster than vitamin D2 does especially at higher doses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Food and Nutrition Board has established a tolerable upper intake level of 4000 IU of vitamin D per day. 
+																	Scientists found that taking 1000 IU 25 mcg of vitamin D daily reduced heart disease risk by 10. 
+																	First convert the 4000 IU of vitamin D to micrograms by dividing 4000 by 40 for a total of 100 micrograms then convert micrograms to milligrams by dividing 100 by 1000 for a total of 010 milligrams. 
+																	Perhaps the most affordable way to take vitamin D vitamin D tablets are easy to take and incorporate into your daily routine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The word microgram is sometimes written with the Greek symbol m followed by the letter g mg. 
+																	Vitamin D3 is available in 400 IU 800 IU 1000 IU 2000 IU 5000 IU 10000 IU and 50000 IU capsules. 
+																	Therefore 5000 IU of Vitamin D is equivalent to 125 mcg or 0125 mg of either of those compounds. 
+																	1 IU 0025 mcg. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Based on current research it seems that consuming 10004000 IU 25100 mcg of vitamin. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/5d/a9/df5da9a18ea79bf0b1d356fd7533486d.jpg" data-lightbox="roadtrip" data-title="Kirkland Signature Extra Strength D3 50 Mcg 600 Softgels In 2021 Vitamins Immune Health Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/5d/a9/df5da9a18ea79bf0b1d356fd7533486d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJJ2RG6Dc-HosPjgdilMsShstrd60xbmGWaQ';" alt="Kirkland Signature Extra Strength D3 50 Mcg 600 Softgels In 2021 Vitamins Immune Health Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kirkland Signature Extra Strength D3 50 Mcg 600 Softgels In 2021 Vitamins Immune Health Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/0e/42/f20e4233495bff04f6d70ffa370850c8.jpg" data-lightbox="roadtrip" data-title="Vitamin D Deficiency Levels Chart Want To Know More Click On The Image Health Tips Vitamins Vitamin D Deficiency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/0e/42/f20e4233495bff04f6d70ffa370850c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr_yPULEYxs3GGIiE6anaKDJl5vg0f3CtDjA';" alt="Vitamin D Deficiency Levels Chart Want To Know More Click On The Image Health Tips Vitamins Vitamin D Deficiency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vitamin D Deficiency Levels Chart Want To Know More Click On The Image Health Tips Vitamins Vitamin D Deficiency</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/63/ae/f263aee311abf180f8989463ed862a89.jpg" data-lightbox="roadtrip" data-title="Pin On Dad Zinc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/63/ae/f263aee311abf180f8989463ed862a89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtHDhv5-hVkor7tNEdpTTr8D1AOhS957RmCQ';" alt="Pin On Dad Zinc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dad Zinc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/8f/7c/938f7c81b80e431ce176bfac22868f4c.png" data-lightbox="roadtrip" data-title="How Do I Convert 5000 Iu Of Vitamin D To Mg Vitamins Vitamin D Muscle Building Supplements">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/8f/7c/938f7c81b80e431ce176bfac22868f4c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_wMLlJ9gZjWRmJBTA1iHSh7NxkgcSJVtkWg';" alt="How Do I Convert 5000 Iu Of Vitamin D To Mg Vitamins Vitamin D Muscle Building Supplements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Do I Convert 5000 Iu Of Vitamin D To Mg Vitamins Vitamin D Muscle Building Supplements</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/ac/7e/c8ac7e892d5f05a9d2b489b44b2aa91a.jpg" data-lightbox="roadtrip" data-title="Citracal Slow Release 1200 1200 Mg Calcium Citrate And Calcium Carbonate Blend With 1000 Iu Vitamin D3 Bone Health Calcium Citrate Vitamins Health Supplements">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/ac/7e/c8ac7e892d5f05a9d2b489b44b2aa91a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU9YhmztY-mQeZlSft2hVMI3zVk3sYbxT01Q';" alt="Citracal Slow Release 1200 1200 Mg Calcium Citrate And Calcium Carbonate Blend With 1000 Iu Vitamin D3 Bone Health Calcium Citrate Vitamins Health Supplements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Citracal Slow Release 1200 1200 Mg Calcium Citrate And Calcium Carbonate Blend With 1000 Iu Vitamin D3 Bone Health Calcium Citrate Vitamins Health Supplements</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/75/ba/cd75bafd69b5850feec4beeafde6cf25.jpg" data-lightbox="roadtrip" data-title="Pin On Supplement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/75/ba/cd75bafd69b5850feec4beeafde6cf25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLN0WlQYEcshBWQW5etgejVF5xYUmP4KwJdQ';" alt="Pin On Supplement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Supplement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/93/93/a293934af67598bd03626d565bf94342.jpg" data-lightbox="roadtrip" data-title="Citracal Slow Release 1200 1200 Mg Calcium Citrate And Calcium Carbonate Blend With 1000 Iu Vitamin D3 Bone Health Calcium Citrate Health Supplements Citracal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/93/93/a293934af67598bd03626d565bf94342.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGLhJdM4AC-oG9P7cuByX4pZC8TPJZj603Q';" alt="Citracal Slow Release 1200 1200 Mg Calcium Citrate And Calcium Carbonate Blend With 1000 Iu Vitamin D3 Bone Health Calcium Citrate Health Supplements Citracal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Citracal Slow Release 1200 1200 Mg Calcium Citrate And Calcium Carbonate Blend With 1000 Iu Vitamin D3 Bone Health Calcium Citrate Health Supplements Citracal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/fc/fa/f7fcfa9189343f500e9fe1bd7fe66970.jpg" data-lightbox="roadtrip" data-title="Vitamin D3 125 Mcg 5 000 Iu 120 Softgels By Natural Factors Vitamins Vitamin D3 Flaxseed Oil">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/fc/fa/f7fcfa9189343f500e9fe1bd7fe66970.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3PlhLBoI6xWXPBqmBrQiN2SERnGpYP7wM7w';" alt="Vitamin D3 125 Mcg 5 000 Iu 120 Softgels By Natural Factors Vitamins Vitamin D3 Flaxseed Oil">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vitamin D3 125 Mcg 5 000 Iu 120 Softgels By Natural Factors Vitamins Vitamin D3 Flaxseed Oil</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/f6/d2/5ef6d2ce62e5d1504e2388c5db0310b8.jpg" data-lightbox="roadtrip" data-title="Wellness Code Muscle Strength Restore Formula 3 32 Oz 94 2 G By Life Extension Natural Vitamins Vitamins Stevia Extract">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/f6/d2/5ef6d2ce62e5d1504e2388c5db0310b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyVqjUjVd4C-EEi_6nTA9NSA0XN_iOwUB0WQ';" alt="Wellness Code Muscle Strength Restore Formula 3 32 Oz 94 2 G By Life Extension Natural Vitamins Vitamins Stevia Extract">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wellness Code Muscle Strength Restore Formula 3 32 Oz 94 2 G By Life Extension Natural Vitamins Vitamins Stevia Extract</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/36/34/323634a75412649c26b502e135900d46.jpg" data-lightbox="roadtrip" data-title="Life Extension Bone Restore With Vitamin K2 120 Capsules Click On The Image For Additional Details This Is An Affiliate Life Extension Astaxanthin Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/36/34/323634a75412649c26b502e135900d46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIU2-pR2af5iZdCqNeRbXB1enyAXF37xsXVQ';" alt="Life Extension Bone Restore With Vitamin K2 120 Capsules Click On The Image For Additional Details This Is An Affiliate Life Extension Astaxanthin Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Life Extension Bone Restore With Vitamin K2 120 Capsules Click On The Image For Additional Details This Is An Affiliate Life Extension Astaxanthin Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/ca/ed/f8caedc58b927ec2ba1713ee3488ccb8.jpg" data-lightbox="roadtrip" data-title="Caltrate 600 D3 120 Count Calcium And Vitamin D Supplement Tablet 600 Mg You Can Get Additional Details At The Image Vitamins Vitamin D Supplement Vitamin D">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/ca/ed/f8caedc58b927ec2ba1713ee3488ccb8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStktHU8_ELtPb-USkHO-PoqnPHvy-Cn196XA';" alt="Caltrate 600 D3 120 Count Calcium And Vitamin D Supplement Tablet 600 Mg You Can Get Additional Details At The Image Vitamins Vitamin D Supplement Vitamin D">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Caltrate 600 D3 120 Count Calcium And Vitamin D Supplement Tablet 600 Mg You Can Get Additional Details At The Image Vitamins Vitamin D Supplement Vitamin D</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0c/3f/2f/0c3f2f7df18fa3d74dccd3638e03074c.jpg" data-lightbox="roadtrip" data-title="Amazon Com Whc Unocardio 1000 60 Softgels 1280 Mg Of Pure Triglyceride Fish Oil With High Concentration Omega 3 Fish Oil Organic Fish Oil Triglycerides">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0c/3f/2f/0c3f2f7df18fa3d74dccd3638e03074c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgiW7qyoKH2b7OSEaN7mDz20cHBkq5l2xwhA';" alt="Amazon Com Whc Unocardio 1000 60 Softgels 1280 Mg Of Pure Triglyceride Fish Oil With High Concentration Omega 3 Fish Oil Organic Fish Oil Triglycerides">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amazon Com Whc Unocardio 1000 60 Softgels 1280 Mg Of Pure Triglyceride Fish Oil With High Concentration Omega 3 Fish Oil Organic Fish Oil Triglycerides</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/d9/24/f9d924bc42e20261a202df3023df3cd6.jpg" data-lightbox="roadtrip" data-title="Vitamin D3 1 000 Iu 365 Softgels 1 Year Supply Vitamin D Soft Gel Supplement Vitamin D Source Cholecalciferol By Nutrav Nutrition Store Vitamins Vitamin D3">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/d9/24/f9d924bc42e20261a202df3023df3cd6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz9vh_zDwWuMbJi-Nv1xjpdB3vQ5imp6FwOg';" alt="Vitamin D3 1 000 Iu 365 Softgels 1 Year Supply Vitamin D Soft Gel Supplement Vitamin D Source Cholecalciferol By Nutrav Nutrition Store Vitamins Vitamin D3">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vitamin D3 1 000 Iu 365 Softgels 1 Year Supply Vitamin D Soft Gel Supplement Vitamin D Source Cholecalciferol By Nutrav Nutrition Store Vitamins Vitamin D3</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wechat-in-uae.html">Wechat In Uae</a></li>
+													<li class="list-group-item"><a href="/wechat-qq-mail.html">Wechat Qq Mail</a></li>
+													<li class="list-group-item"><a href="/wechat-join.html">Wechat Join</a></li>
+													<li class="list-group-item"><a href="/wechat-qr-code-verification.html">Wechat Qr Code Verification</a></li>
+													<li class="list-group-item"><a href="/wechat-login-id-and-password.html">Wechat Login Id And Password</a></li>
+													<li class="list-group-item"><a href="/wechat-kurs.html">Wechat Kurs</a></li>
+													<li class="list-group-item"><a href="/wechat-mod-2020.html">Wechat Mod 2020</a></li>
+													<li class="list-group-item"><a href="/wechat-mod-apk-no-qr-code.html">Wechat Mod Apk No Qr Code</a></li>
+													<li class="list-group-item"><a href="/wechat-mini-program.html">Wechat Mini Program</a></li>
+													<li class="list-group-item"><a href="/wechat-kaios.html">Wechat Kaios</a></li>
+													<li class="list-group-item"><a href="/wechat-official.html">Wechat Official</a></li>
+													<li class="list-group-item"><a href="/wechat-privacy.html">Wechat Privacy</a></li>
+													<li class="list-group-item"><a href="/wechat-hong-kong.html">Wechat Hong Kong</a></li>
+													<li class="list-group-item"><a href="/wechat-penghubung-3-dunia-bahasa-indonesia.html">Wechat Penghubung 3 Dunia Bahasa Indonesia</a></li>
+													<li class="list-group-item"><a href="/wechat-helper.html">Wechat Helper</a></li>
+													<li class="list-group-item"><a href="/wechat-nz.html">Wechat Nz</a></li>
+													<li class="list-group-item"><a href="/wechat-qr-code.html">Wechat Qr Code</a></li>
+													<li class="list-group-item"><a href="/wechat-open-bo.html">Wechat Open Bo</a></li>
+													<li class="list-group-item"><a href="/wechat-security.html">Wechat Security</a></li>
+													<li class="list-group-item"><a href="/wechat-penghubung-tiga-dunia.html">Wechat Penghubung Tiga Dunia</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

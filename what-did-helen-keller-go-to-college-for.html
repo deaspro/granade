@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Did Helen Keller Go To College For - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Did Helen Keller Go To College For",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/c4/b5/60/c4b5608aa0e8e48f7bb8376f5655f942.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+did+helen+keller+go+to+college+for",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Did Helen Keller Go To College For</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">People said to her No deaf-blind person has ever taken a college course. She entered Radcliffe in the fall of 1900 and received a Bachelor of Arts degree cum laude in 1904 the first deafblind person to do so. Helen Keller was an American educator advocate for the blind and deaf and co-founder of the ACLU. <br>				
+			</p>
+										<a class="badge badge-warning" href="/veteran-disability-pay-schedule-2020.html">veteran disability pay schedule 2020</a>
+											<a class="badge badge-info" href="/veteran-employment-lawyers.html">veteran employment lawyers</a>
+											<a class="badge badge-secondary" href="/veteran-disability-rating-benefits.html">veteran disability rating benefits</a>
+											<a class="badge badge-warning" href="/veteran-immunization-records.html">veteran immunization records</a>
+											<a class="badge badge-warning" href="/veteran-education-benefits-after-gi-bill.html">veteran education benefits after gi bill</a>
+											<a class="badge badge-light" href="/veteran-military-contracting-york-pa.html">veteran military contracting york pa</a>
+											<a class="badge badge-light" href="/veteran-job-training-programs.html">veteran job training programs</a>
+											<a class="badge badge-danger" href="/veteran-education-programs.html">veteran education programs</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the ideal blog.  Our site provides you with suggestions for viewing the highest quality video and image content, hunt and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/e8/2b/29e82be6d995a5d15d147c54f9e33567.jpg" data-lightbox="roadtrip" data-title="Helen Keller S Lineage Helen Keller Women In History Historical People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/e8/2b/29e82be6d995a5d15d147c54f9e33567.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbQghwX7YidYibg-6a8rhBLEdefemEJzFhefcsyjAoyT15165CK6gFkB-_Qa-CRHg1nLbwXA&amp;ec=45771803';" alt="Helen Keller S Lineage Helen Keller Women In History Historical People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helen Keller S Lineage Helen Keller Women In History Historical People</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/36/26/ce3626de09101e976fb83da0289481c2.jpg" data-lightbox="roadtrip" data-title="Helen Keller S Certificate Of Admission To Radcliffe College 1899 Radcliffe College Helen Keller College Diploma">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/36/26/ce3626de09101e976fb83da0289481c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu_0wfOe7tCOqiNV2xB4DVGn6ddoDJpvdQOIGC6aKrCUQLtph_9we14OuwOkzzwjTM9URUvw&amp;ec=45771803';" alt="Helen Keller S Certificate Of Admission To Radcliffe College 1899 Radcliffe College Helen Keller College Diploma">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helen Keller S Certificate Of Admission To Radcliffe College 1899 Radcliffe College Helen Keller College Diploma</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/86/7d/0d867de2c8ba4542efc08a96f9554d72.jpg" data-lightbox="roadtrip" data-title="Historic Spots That I Need My Daughter To See Helen Keller Inspirational People Keller">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/86/7d/0d867de2c8ba4542efc08a96f9554d72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7Gaoliryy-ZSrRY6riGI0e7BEa3NDVxWQKX7gvBc4KRPZqFlWKgRdiP17x3rMrGggm3dpw&amp;ec=45771803';" alt="Historic Spots That I Need My Daughter To See Helen Keller Inspirational People Keller">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Historic Spots That I Need My Daughter To See Helen Keller Inspirational People Keller</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/fb/76/28fb76193a397d73b3ec612d1be5d68b.jpg" data-lightbox="roadtrip" data-title="Related Image Radcliffe College Helen Keller Achievement Awards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/fb/76/28fb76193a397d73b3ec612d1be5d68b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGqoOe-zhXE-alZqmHSx7YUg9cX2GO3RUuXcHhoE6gFWSsHS8ZcaLcm3bOwIGI0yKftlus-w&amp;ec=45771803';" alt="Related Image Radcliffe College Helen Keller Achievement Awards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Related Image Radcliffe College Helen Keller Achievement Awards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/cb/99/18cb99b23266a2eac79d2a78b50eef07.jpg" data-lightbox="roadtrip" data-title="1904 Radcliffe College Graduate Helen Keller Radcliffe College College Graduation Homage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/cb/99/18cb99b23266a2eac79d2a78b50eef07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixT5eGCQnCZZUeHbBmBzBt-wM1JdOjzW5WjnDNYwJ94bUPZYCfTsWdeFN1fwRq1OeUgs-Ag&amp;ec=45771803';" alt="1904 Radcliffe College Graduate Helen Keller Radcliffe College College Graduation Homage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1904 Radcliffe College Graduate Helen Keller Radcliffe College College Graduation Homage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/bf/5e/e8bf5e8f12a35cea911258d60ba00e2d.jpg" data-lightbox="roadtrip" data-title="15 People Who Will Inspire You Women In History Womens History Month Historical People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/bf/5e/e8bf5e8f12a35cea911258d60ba00e2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6lOlxr4uiX40p7oS9zf1MrdJ8KdxgLgleJkI61QhB2I8tQ9p7E8WUJFjSoxjBeJbBF9mepA&amp;ec=45771803';" alt="15 People Who Will Inspire You Women In History Womens History Month Historical People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 People Who Will Inspire You Women In History Womens History Month Historical People</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/cd/fd/ee/cdfdee892d4f5def735ae5edd0fd4843.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6lOlxr4uiX40p7oS9zf1MrdJ8KdxgLgleJkI61QhB2I8tQ9p7E8WUJFjSoxjBeJbBF9mepA&amp;ec=45771803';" alt="15 People Who Will Inspire You Women In History Womens History Month Historical People">
+										<div class="card-body">
+						<h3 class="h5"><b>Helen Adams Keller was born on June 27 1880 in Tuscumbia Alabama.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What did helen keller go to college for</strong>. 
+								
+																	The Most Famous Book The Story of My Life In 1903 Helen published The Story of Life the best seller book. 
+																	BY Uma Asher 27-06-2017. 
+																	But it was the 1890s and Harvard didnt accept women so Keller focused on her second choice Radcliffe College. 
+																	Twain introduced Helen to a friend of his Henry H. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Having developed skills never approached by any similarly disabled person Keller began to write of blindness a subject then taboo in womens magazines because of the relationship of many cases to venereal disease. 
+																	Helen Keller worked for the American Foundation for the Blind for more than 40 years. 
+																	Her father Arthur H. 
+																	Until her passing in 1968 she worked unceasingly to improve. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But it was the 1890s and Harvard didnt accept women so Keller focused on her second choice Radcliffe College. 
+																	Two full siblings Mildred Campbell Keller Tyson and Phillip Brooks Keller and two older half-brothers from her fathers prior marriage James McDonald Keller and William Simpson Keller. 
+																	Just 15 Women Have Won The Nobel Prize In Literature. 
+																	This would be pretty impressive for someone with no sight and hearing impairments so it is not surprising that some people were sceptical about her achievements. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Stricken by an illness at the age of 2 Keller was left blind and deaf. 
+																	People said to her No deaf-blind person has ever taken a college course. 
+																	Helen Keller was a deaf and blind American author in the 20th century. 
+																	But it was the 1890s and Harvard didnt accept women so Keller focused on her second choice Radcliffe College. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Helen Keller was NOT a fraud. 
+																	She won admission to Radcliffe College in 1900 and graduated cum laude in 1904. 
+																	So did HabenGirma So have many other Deafblind people. 
+																	Rogers an oil executive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rogers was deeply impressed by Helens passion and talent and agreed to pay the fees of Radcliffe College for Helens higher education. 
+																	Helen Keller wanted to go to college. 
+																	And not just any college Keller wanted to go to Harvard. 
+																	Keller was a retired Confederate Army captain and editor of the local newspaper. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When Helen Keller was 19 months old she was afflicted by an unknown. 
+																	And yes she went to Harvard. 
+																	Keller attended Perkins School for the Blind for four years. 
+																	Helen Keller wanted to go to college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Helen Keller was an American author renowned for her ability to read write and speak despite a childhood disease which had left her deaf and. 
+																	Few could have imagined the leading role she would go on to play in many of the significant political social and cultural movements of the 20th century. 
+																	Has a woman ever won the Nobel Prize for Literature. 
+																	The American Foundation for the Blind records Keller proved to be a brilliant student and would go on to graduate from Radcliffe College in 1904 becoming the first deafblind person to attain a Bachelor of Arts degree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some day I shall go to college - but I shall go to Harvard Keller who became deaf and blind in infancy not only learned several languages but also listened to music wrote poetry and championed several causes. 
+																	In just ten years Helen Keller went from being illiterate and only able to communicate with an extremely small circle of people to passing the entrance exams for an Ivy League college. 
+																	She went to college learned how to read write and communicate. 
+																	Radcliffe was started in 1879 to provide college level classes for women and officially became a college for women in 1894. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	She was born in Tuscumbia Alabama on June 27 1880 and became deaf and blind at 19 months. 
+																	She had four siblings. 
+																	Helen Keller wanted to go to college. 
+																	Professor Elsa Sjunneson MA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And not just any college Keller wanted to go to Harvard. 
+																	Helen Adams Keller was born June 27 1880 in the northwest Alabama city of Tuscumbia. 
+																	Did Helen Keller go to college. 
+																	Keller was famous when she published her autobiography The Story of My Life in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Her family lived on a homestead Ivy Green that Helens grandfather had built decades earlier. 
+																	What high school did Helen Keller go to. 
+																	She then spent a year at the Cambridge School for Young Ladies to prepare for Radcliffe College. 
+																	Activists Reformers Helen Keller Radcliffe graduating class of 1902 Going to Radcliffe College Keller and Sullivan worked hard at Radcliffe College. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Helen Kellers Education and Literary Career From a very young age Helen was determined to go to college. 
+																	In 1904 she graduated cum laude from Radcliffe and became the first person with deafblindness to earn a bachelor of arts degree. 
+																	And not just any college Keller wanted to go to Harvard. 
+																	In 1898 she entered the Cambridge School for Young Ladies to prepare for Radcliffe College. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Her mother Kate Keller was an educated young woman from Memphis. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/b5/60/c4b5608aa0e8e48f7bb8376f5655f942.jpg" data-lightbox="roadtrip" data-title="About Our Collies Helen Keller Women In History People Of Interest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/b5/60/c4b5608aa0e8e48f7bb8376f5655f942.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-y2azuNYbzNMy7q__PCHF0n73_0TnvxXOyqDbMoHaU1stcx5kk5c2jspJtcqKqijgwjnvwA&amp;ec=45771803';" alt="About Our Collies Helen Keller Women In History People Of Interest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About Our Collies Helen Keller Women In History People Of Interest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/32/78/de3278fff8a6f58fd8a6c25f572b21a9.jpg" data-lightbox="roadtrip" data-title="Helen Keller Women In History Helen Keller Facts Historical People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/32/78/de3278fff8a6f58fd8a6c25f572b21a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbzoPJixBGPS-k0J2xcx0M4KezIcMNwlFjLPR1gALkscaC0flx-vgbzPkPPQ2UeUn29QU5kA&amp;ec=45771803';" alt="Helen Keller Women In History Helen Keller Facts Historical People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helen Keller Women In History Helen Keller Facts Historical People</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/76/c9/5476c911efd9e35ef12ff2126f868031.jpg" data-lightbox="roadtrip" data-title="Helen Keller En El Momento De La Graduacion De Radcliffe Helen Keller En Un Retrato Con Su Sombrero Y Bata Tomado En Su Graduaci En 2020 Helen Keller Retratos Libros">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/76/c9/5476c911efd9e35ef12ff2126f868031.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa383eTly_X1EGEoGx4iJsac7iw2KghIdnOzNSSO4rwdEcAnlbT3ZbD71MdY4yrV2ElKG0LA&amp;ec=45771803';" alt="Helen Keller En El Momento De La Graduacion De Radcliffe Helen Keller En Un Retrato Con Su Sombrero Y Bata Tomado En Su Graduaci En 2020 Helen Keller Retratos Libros">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helen Keller En El Momento De La Graduacion De Radcliffe Helen Keller En Un Retrato Con Su Sombrero Y Bata Tomado En Su Graduaci En 2020 Helen Keller Retratos Libros</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/7b/91/aa7b916acdea46970c8d3545e7acbb13.jpg" data-lightbox="roadtrip" data-title="Helen Keller Graduating From Radcliffe College 1904 Pictures Of Helen Keller Radcliffe College School Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/7b/91/aa7b916acdea46970c8d3545e7acbb13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDwFWVVB3SG3wVFAEkaCNNF2sODqRxemKbmUPSLgYmiuGZo7aU7nMJOqABjDfMzjvAqQKATw&amp;ec=45771803';" alt="Helen Keller Graduating From Radcliffe College 1904 Pictures Of Helen Keller Radcliffe College School Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helen Keller Graduating From Radcliffe College 1904 Pictures Of Helen Keller Radcliffe College School Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/f1/e6/eaf1e6a474c088a7200714d252e1dac0.jpg" data-lightbox="roadtrip" data-title="American University Student Helen Keller Blind Deaf And Dumb American Universities University Student Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/f1/e6/eaf1e6a474c088a7200714d252e1dac0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJMylnI067CG-YRFgTxQfLwb-Kx3LH3OGWqxpu4p0Jahn6oaItCnPpqpSgXcaeMwiqKHRBfQ&amp;ec=45771803';" alt="American University Student Helen Keller Blind Deaf And Dumb American Universities University Student Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">American University Student Helen Keller Blind Deaf And Dumb American Universities University Student Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/5a/f9/0a5af944bbde3cf93b5bafc435d03149.jpg" data-lightbox="roadtrip" data-title="Pin On American Faces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/5a/f9/0a5af944bbde3cf93b5bafc435d03149.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrmsrHo7NjMgqa3Wa76k3UksUETvWs9UKcrmKY2M1fvMm9RQrpLVDmUtVSU8NWKLO486hEA&amp;ec=45771803';" alt="Pin On American Faces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On American Faces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/89/a8/4589a8ded553c0e997f54bc620eca83b.jpg" data-lightbox="roadtrip" data-title="Anne Sullivan Receiving Honorary Degree Anne Sullivan Helen Keller Honorary Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/89/a8/4589a8ded553c0e997f54bc620eca83b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgl8nybHp66a0_7BY5p4fMzrPyFefgzSBdKmhmN18s_8QGqquDQhcUC3pHA44OqLHLycye0w&amp;ec=45771803';" alt="Anne Sullivan Receiving Honorary Degree Anne Sullivan Helen Keller Honorary Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anne Sullivan Receiving Honorary Degree Anne Sullivan Helen Keller Honorary Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/44/cc/3e44ccb57201beebe42dd7892654bea7.jpg" data-lightbox="roadtrip" data-title="Quote Of The Month Helen Keller Helen Keller Helen Keller Biography Helen Keller Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/44/cc/3e44ccb57201beebe42dd7892654bea7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaxJxi3DotwqCvutlVDZ5ZrSae1PnYutkc40AJQkmTiNwqE8gn3vdoFA8xpQlmR1NLUscPSg&amp;ec=45771803';" alt="Quote Of The Month Helen Keller Helen Keller Helen Keller Biography Helen Keller Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Quote Of The Month Helen Keller Helen Keller Helen Keller Biography Helen Keller Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/3b/b1/593bb1ed19f685c16dabe075c79835e0.jpg" data-lightbox="roadtrip" data-title="Helen Keller Poses For A Picture Helen Keller Helen Keller Facts Helen Keller Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/3b/b1/593bb1ed19f685c16dabe075c79835e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9DDbajNhuhqrKFOBIrHuPV3eK21EfAG0rKFouUwq71rKVtKlmEc-ABb_JMZH2ihC-aXwOIg&amp;ec=45771803';" alt="Helen Keller Poses For A Picture Helen Keller Helen Keller Facts Helen Keller Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helen Keller Poses For A Picture Helen Keller Helen Keller Facts Helen Keller Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/aa/2c/6faa2c17121597697624d5446c685345.jpg" data-lightbox="roadtrip" data-title="Ensayo De Helen Keller Helen Keller About Helen Keller Helen Keller Story">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/aa/2c/6faa2c17121597697624d5446c685345.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDq6daX58osC8W2rUXqWYZzGyQi1D9K05nVbjlzQowgRD8BqTjvOeX8UMWKM00pCobX7L9Zw&amp;ec=45771803';" alt="Ensayo De Helen Keller Helen Keller About Helen Keller Helen Keller Story">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ensayo De Helen Keller Helen Keller About Helen Keller Helen Keller Story</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/87/29/17/872917b7ca860eee6567a9326e2f4a56--helen-keller-siblings.jpg" data-lightbox="roadtrip" data-title="Helen Keller Parents And Siblings Helen Keller Life Kids Discover">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/87/29/17/872917b7ca860eee6567a9326e2f4a56--helen-keller-siblings.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCRtESRmICcT5A7D9Z7MTHCvT9aW0LmhVW3IMusJcDqltkZb-H5FJDTmgodHTnI7cU8ROdVw&amp;ec=45771803';" alt="Helen Keller Parents And Siblings Helen Keller Life Kids Discover">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helen Keller Parents And Siblings Helen Keller Life Kids Discover</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/14/eb/a514eb4528ba8c0560c481757f5c08d4.jpg" data-lightbox="roadtrip" data-title="Pin By Sarita Armendariz On People I Admire And Respect Inspirational Women Helen Keller Women In History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/14/eb/a514eb4528ba8c0560c481757f5c08d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAVVaocWoq8P2gm-H99gKiQKvH890kF_pwX93uIRo-LraTI8nNAkUGItnl9TN6W0dOCLhlg&amp;ec=45771803';" alt="Pin By Sarita Armendariz On People I Admire And Respect Inspirational Women Helen Keller Women In History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sarita Armendariz On People I Admire And Respect Inspirational Women Helen Keller Women In History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/fd/ee/cdfdee892d4f5def735ae5edd0fd4843.jpg" data-lightbox="roadtrip" data-title="Helen Keller Helen Keller Alexander Graham Bell Helen Keller Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/fd/ee/cdfdee892d4f5def735ae5edd0fd4843.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Nyvvr6vSDsSfCCl9CZSk3-ydqy763iWfN2GZeyVIkyfuA5TTTLWfVOPaNnTToKAx5_oAfQ&amp;ec=45771803';" alt="Helen Keller Helen Keller Alexander Graham Bell Helen Keller Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helen Keller Helen Keller Alexander Graham Bell Helen Keller Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-for-tdiu.html">Va Rating For Tdiu</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-social-anxiety.html">Va Rating For Social Anxiety</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-special-monthly-compensation.html">Va Rating For Special Monthly Compensation</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-spinal-cord-injury.html">Va Rating For Spinal Cord Injury</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-total-knee-replacement.html">Va Rating For Total Knee Replacement</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-wrist-pain.html">Va Rating For Wrist Pain</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-apnea-secondary-to-back-pain.html">Va Rating For Sleep Apnea Secondary To Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-surgical-scars.html">Va Rating For Surgical Scars</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-tricompartmental-osteoarthritis.html">Va Rating For Tricompartmental Osteoarthritis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-upper-back-pain.html">Va Rating For Upper Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-rating-handbook.html">Va Rating Handbook</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-specified-trauma.html">Va Rating For Specified Trauma</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-ssd.html">Va Rating For Ssd</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-urge-incontinence.html">Va Rating For Urge Incontinence</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sinus.html">Va Rating For Sinus</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-tendonitis.html">Va Rating For Tendonitis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-ulnar-nerve-damage.html">Va Rating For Ulnar Nerve Damage</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-trochanteric-pain-syndrome.html">Va Rating For Trochanteric Pain Syndrome</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-urticaria.html">Va Rating For Urticaria</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-torn-meniscus.html">Va Rating For Torn Meniscus</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

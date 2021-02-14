@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Rating Vision Loss - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Rating Vision Loss",
+  "datePublished": "2021-02-14",
+  "image": "https://www.va.gov/OPTOMETRY/images/lowvision.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+rating+vision+loss",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Rating Vision Loss</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The VA Schedule of Rating Disabilities lists the various conditions that qualify for benefits. D Maximum evaluation for visual impairment of one eye. Vision problems are rated according to the VA Schedule of Ratings Disabilities under Section 497 diagnostic codes 6000 to 6091. <br>				
+			</p>
+										<a class="badge badge-dark" href="/what-do-you-do-after-your-wife-dies.html">what do you do after your wife dies</a>
+											<a class="badge badge-danger" href="/what-does-100-military-disability-mean.html">what does 100 military disability mean</a>
+											<a class="badge badge-light" href="/what-does-100-military-disability-pay.html">what does 100 military disability pay</a>
+											<a class="badge badge-info" href="/what-do-you-do-in-the-irish-army.html">what do you do in the irish army</a>
+											<a class="badge badge-secondary" href="/what-does-30-military-disability-pay.html">what does 30 military disability pay</a>
+											<a class="badge badge-secondary" href="/what-does-0-percent-va-disability-mean.html">what does 0 percent va disability mean</a>
+											<a class="badge badge-dark" href="/what-does-40-percent-va-disability-mean.html">what does 40 percent va disability mean</a>
+											<a class="badge badge-light" href="/what-does-70-percent-va-disability-mean.html">what does 70 percent va disability mean</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to pay a visit to the ideal site.  Our website gives you suggestions for seeing the highest quality video and picture content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie that you see.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2018/07/EYE-CONDITIONS-VA-THUMBNAIL.jpg" data-lightbox="roadtrip" data-title="Eye Conditions And The Va Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2018/07/EYE-CONDITIONS-VA-THUMBNAIL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQzFPJ9NiIBixWnM4WTjyNzfQnUzust9b-IA';" alt="Eye Conditions And The Va Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eye Conditions And The Va Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://embed-fastly.wistia.com/deliveries/a2c6d406c436f6639ff0790d6bd9242f.webp?image_crop_resized=1280x720" data-lightbox="roadtrip" data-title="Getting Va Disability Benefits For Visual Eyesight Impairment Cck Law">
+											<img class="card-img v-image ads-img " src="https://embed-fastly.wistia.com/deliveries/a2c6d406c436f6639ff0790d6bd9242f.webp?image_crop_resized=1280x720" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJIkgGV5FbNeh1vTOK90IDqthOWZpf4RiThg';" alt="Getting Va Disability Benefits For Visual Eyesight Impairment Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting Va Disability Benefits For Visual Eyesight Impairment Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/1d/01/1e/1d011eae8f5401e5e2550c73f8d2b9cf.jpg" data-lightbox="roadtrip" data-title="Idea Of Va Disability Rating Chart For Hearing Loss Check More At Https Oakleys Sunglasses Top Pamel Vision Problems Macular Degeneration Military Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/1d/01/1e/1d011eae8f5401e5e2550c73f8d2b9cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQCeknWN4UZGc8McerU7mBOScqol5eP_874w';" alt="Idea Of Va Disability Rating Chart For Hearing Loss Check More At Https Oakleys Sunglasses Top Pamel Vision Problems Macular Degeneration Military Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Idea Of Va Disability Rating Chart For Hearing Loss Check More At Https Oakleys Sunglasses Top Pamel Vision Problems Macular Degeneration Military Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/quinten-de-graaf-iwBfqKwaJQI-unsplash-768x512.jpg" data-lightbox="roadtrip" data-title="Va Disability Benefits For Eye Conditions Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/quinten-de-graaf-iwBfqKwaJQI-unsplash-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIEx5HwzQFyzxoNumaGJn8Ds7zmFFFezzL9A';" alt="Va Disability Benefits For Eye Conditions Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Benefits For Eye Conditions Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/VA-vision-care-768x512.jpg" data-lightbox="roadtrip" data-title="Va Vision Care And Which Veterans Qualify Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/VA-vision-care-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf2O9KuTbjZBDD-mRP5XFEvIhAkJsHdt_IKQ';" alt="Va Vision Care And Which Veterans Qualify Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Vision Care And Which Veterans Qualify Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/special-monthly-compensation-infographic-1.jpg" data-lightbox="roadtrip" data-title="Special Monthly Compensation Explained Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/special-monthly-compensation-infographic-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAC293fgbZqnTyb7FyJ9zZOZUcI3OWRk58Q';" alt="Special Monthly Compensation Explained Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Monthly Compensation Explained Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/EASIEST20CLAIMS20THUMBNAIL-1280x720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAC293fgbZqnTyb7FyJ9zZOZUcI3OWRk58Q';" alt="Special Monthly Compensation Explained Cck Law">
+										<div class="card-body">
+						<h3 class="h5"><b>They found that 99 percent of them reported vision problems 313 percent reported hearing impairments and 346 percent reported both vision and hearing issues.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va rating vision loss</strong>. 
+								
+																	Evaluate under the General Rating Formula for Diseases of the Eye. 
+																	Some of the most common visual impairments for which veterans receive disability compensation include the following. 
+																	Loss of peripheral vision. 
+																	10 6024 Loss of eyelashes complete unilateral or bilateral. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Open-angle glaucoma is a condition where the optic nerve is damaged normally by high fluid pressure in the eye causing loss of vision. 
+																	Unlike angle-closure glaucoma it progresses slowly over time and is harder to detect before significant vision loss occurs. 
+																	We use your disability rating to determine how much disability compensation youll receive each month as well as your eligibility for other VA benefits. 
+																	Ladyduke09 This came from the VA web site 38cfr section 475 d f. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have a diagnosis for any condition on the list and we can connect it to your military service we can build a strong case that you deserve VA disability benefits. 
+																	Impairment of entitled amblyopia is rated on the best corrected distance visual acuity at service discharge. 
+																	6023 Loss of eyebrows complete unilateral or bilateral. 
+																	Visual impairments for which you can receive disability compensation include. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	417 - Total Disability Ratings for Pension Based on Unemployability and Age of the Individual 417a - 418 - Misconduct EtiologyUnemployability 419 - 421 - Age in Service-Connected ClaimsAnalogous RatingsApplication of Rating Schedule 422 - 423 - Rating of Disabilities Aggravated by Active ServiceAttitude of Rating Officers 424. 
+																	A medical impairment of 35 is given for enucleation of the eye. 
+																	In 2012 Palo Alto researchers reported on a study of 21000 Veterans evaluated for TBI in VA outpatient clinics. 
+																	This condition is rated on the Visual Impairment Rating System. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Anything worse than 5200 is considered blind. 
+																	We base your monthly payment amount on your disability rating and details about your dependent family members. 
+																	The evaluation for visual impairment of one eye must not exceed 30 percent unless there is anatomical loss of the eye. 
+																	Compensation rates for Veterans with a 10 to 20 disability rating Effective December 1 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Loss of light. 
+																	If you have multiple disability ratings we use them to calculate your combined VA disability rating. 
+																	10 6025 Disorders of the lacrimal apparatus epiphora dacryocystitis etc. 
+																	A medical impairment of 26 for the total loss of vision in the eye and a medical impairment of 9 for the loss of the eye. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA rates both eyes together so if a veteran is blind in one eye and has 2020 in the other they would probably only receive a 40 rating. 
+																	We assign you a disability rating based on the severity of your service-connected condition. 
+																	Because of the complexity of the Eyes the VASRD offers rating options that cover physical damage to individual parts of the Eyes options that cover conditions affecting one two or all three areas of visual impairment visual acuity visual field and muscle dysfunction and options to rate on incapacitating episodes based on the number of treatments needed to treat the condition. 
+																	The list includes several forms of visual eyesight impairment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA disability ratings for eye conditions are generally rated under 38 CFR 479 Schedule of Ratings Eye Diagnostic Codes 6000 to 6091. 
+																	10 6026 Optic neuropathy 6027 Cataract. 
+																	The central visual acuity measurements go from 2020 to 5200 and the VA rates based on corrected vision if it can be corrected. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/CCKInfographic-What-a-70-PTSD-Disability-Rating-Means.png" data-lightbox="roadtrip" data-title="70 Disability Rating For Ptsd Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/CCKInfographic-What-a-70-PTSD-Disability-Rating-Means.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIU89CfazSCRRDi20m4gUtptEuF3PG3eV9_w';" alt="70 Disability Rating For Ptsd Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">70 Disability Rating For Ptsd Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/0c/15/c10c1547b2568e57244985b587f6f3f6.jpg" data-lightbox="roadtrip" data-title="Alas Fibromyalgia Comes With An Endless List Of Symptoms You Might Think That Fibromyalgia Will Not Affect Your Blepharitis Fibromyalgia Fibromyalgia Causes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/0c/15/c10c1547b2568e57244985b587f6f3f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb64pJ3RJdjoGJTboCH5z8wLOy3izPdjW1BQ';" alt="Alas Fibromyalgia Comes With An Endless List Of Symptoms You Might Think That Fibromyalgia Will Not Affect Your Blepharitis Fibromyalgia Fibromyalgia Causes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alas Fibromyalgia Comes With An Endless List Of Symptoms You Might Think That Fibromyalgia Will Not Affect Your Blepharitis Fibromyalgia Fibromyalgia Causes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/VA-Rating-Schedule-Structure-2-768x708.png" data-lightbox="roadtrip" data-title="Pyramiding How To Avoid Stacking Your Va Ratings Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/VA-Rating-Schedule-Structure-2-768x708.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7CMevNdsD3pE2AdRNDs8cwSCw-VNQL83vHA';" alt="Pyramiding How To Avoid Stacking Your Va Ratings Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pyramiding How To Avoid Stacking Your Va Ratings Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images05.military.com/sites/default/files/styles/full/public/media/benefits/2017/06/glasses.jpg?itok=LMEVdlkC" data-lightbox="roadtrip" data-title="Va Hearing And Vision Benefits Military Com">
+											<img class="card-img v-image ads-img " src="https://images05.military.com/sites/default/files/styles/full/public/media/benefits/2017/06/glasses.jpg?itok=LMEVdlkC" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ThT3O8N35w4bir62m5uER5O52eUv356pHQ';" alt="Va Hearing And Vision Benefits Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Hearing And Vision Benefits Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.marylandinjurylawyerblog.com/files/2019/06/Med-Verdict-Losing-an-Eye.png" data-lightbox="roadtrip" data-title="Loss Of Vision Settlement Value Of Eye Loss And Blindness Lawsuits">
+											<img class="card-img v-image ads-img " src="https://www.marylandinjurylawyerblog.com/files/2019/06/Med-Verdict-Losing-an-Eye.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWDrqpltzYJOYpfQlZGR8cNLRDvaXWWcKPag';" alt="Loss Of Vision Settlement Value Of Eye Loss And Blindness Lawsuits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Loss Of Vision Settlement Value Of Eye Loss And Blindness Lawsuits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/EASIEST20CLAIMS20THUMBNAIL-1280x720.jpg" data-lightbox="roadtrip" data-title="Top 5 Easiest Va Disability Claims To Get Approved Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/EASIEST20CLAIMS20THUMBNAIL-1280x720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd68zvjlBe8csSCkhEyZdFnMZe4xzGoMrwkg';" alt="Top 5 Easiest Va Disability Claims To Get Approved Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 Easiest Va Disability Claims To Get Approved Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b9/50/9a/b9509ada6a03f19eb4dd7a9a8793a7d8.jpg" data-lightbox="roadtrip" data-title="Capability Statement Template Doc Unique Tech P Capability Statement Statement Template Statement Mission Statement Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b9/50/9a/b9509ada6a03f19eb4dd7a9a8793a7d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnMVkgyruryogUo1zDKcQaqGBTxuapXwHJg';" alt="Capability Statement Template Doc Unique Tech P Capability Statement Statement Template Statement Mission Statement Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Capability Statement Template Doc Unique Tech P Capability Statement Statement Template Statement Mission Statement Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/97/b4/d697b4a68e6afa7990c771e1f6a2813f.jpg" data-lightbox="roadtrip" data-title="High Stakes For Cruz Rubio And Paul Double Vision Presidential Candidates Mitch Mcconnell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/97/b4/d697b4a68e6afa7990c771e1f6a2813f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq3MEXn4MJshDiSwH3K_J2XRc60isp-x3LcQ';" alt="High Stakes For Cruz Rubio And Paul Double Vision Presidential Candidates Mitch Mcconnell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">High Stakes For Cruz Rubio And Paul Double Vision Presidential Candidates Mitch Mcconnell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2020/01/va-TBI-RATINGS.png" data-lightbox="roadtrip" data-title="How Va Tbi Ratings Are Evaluated For Compensation Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2020/01/va-TBI-RATINGS.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiRaZUzm13EvaPipVU3k91P9jPsdj5kx4vMw';" alt="How Va Tbi Ratings Are Evaluated For Compensation Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Va Tbi Ratings Are Evaluated For Compensation Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.va.gov/OPTOMETRY/images/lowvision.jpg" data-lightbox="roadtrip" data-title="Low Vision Rehabilitation Optometry">
+											<img class="card-img v-image ads-img " src="https://www.va.gov/OPTOMETRY/images/lowvision.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ6823M3urEVzO4_E0UKzRscLbr5AJpMJTmQ';" alt="Low Vision Rehabilitation Optometry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Low Vision Rehabilitation Optometry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vaclaimsinsider.com/wp-content/uploads/2020/05/VA-Rating-for-Back-Pain-Infographic-scaled.jpg" data-lightbox="roadtrip" data-title="Va Disability Ratings For Back Pain The Definitive Guide Va Claims Insider">
+											<img class="card-img v-image ads-img " src="https://vaclaimsinsider.com/wp-content/uploads/2020/05/VA-Rating-for-Back-Pain-Infographic-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPmFVGAl_EajmDymyWPDgoRPw63j8AUAtvgA';" alt="Va Disability Ratings For Back Pain The Definitive Guide Va Claims Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings For Back Pain The Definitive Guide Va Claims Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/ae/5d/a5ae5dc399d7823077343284ce94ffa7.jpg" data-lightbox="roadtrip" data-title="Pin On Interesting Fun">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/ae/5d/a5ae5dc399d7823077343284ce94ffa7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Gl9eTMIVCl1k5Hdy0h9650hQ73HMQZkClQ';" alt="Pin On Interesting Fun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Interesting Fun</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/eye-exam-cataracts-768x512.jpg" data-lightbox="roadtrip" data-title="Va Disability Ratings For Cataracts Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/eye-exam-cataracts-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2jSF4yft00E9hqDSrrdokSPzT2ka0OZTgTw';" alt="Va Disability Ratings For Cataracts Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings For Cataracts Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2020/11/SECONDARY20TO20MIGRAINES20THUMBNAIL.jpg" data-lightbox="roadtrip" data-title="Service Connecting Migraines And Secondary Conditions Va Benefits Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2020/11/SECONDARY20TO20MIGRAINES20THUMBNAIL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yJ4nF6IbhRIzVJoXzZ3MvsMWu-QVPXdVtA';" alt="Service Connecting Migraines And Secondary Conditions Va Benefits Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Service Connecting Migraines And Secondary Conditions Va Benefits Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/06/VA-Hearing-Loss-Claim-Rating.jpg" data-lightbox="roadtrip" data-title="Va Hearing Loss Claim Rating Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/06/VA-Hearing-Loss-Claim-Rating.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIyTbezsNiAILIwk9nZaC8ovu0ghNnXqFk1Q';" alt="Va Hearing Loss Claim Rating Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Hearing Loss Claim Rating Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-does-100-va-disability-mean.html">What Does 100 Va Disability Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-a-military-lawyer-do.html">What Does A Military Lawyer Do</a></li>
+													<li class="list-group-item"><a href="/what-does-40-va-disability-mean.html">What Does 40 Va Disability Mean</a></li>
+													<li class="list-group-item"><a href="/what-do-you-need-to-go-to-college-in-canada.html">What Do You Need To Go To College In Canada</a></li>
+													<li class="list-group-item"><a href="/what-does-a-100-disabled-veteran-id-card-look-like.html">What Does A 100 Disabled Veteran Id Card Look Like</a></li>
+													<li class="list-group-item"><a href="/what-does-a-40-va-disability-mean.html">What Does A 40 Va Disability Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-60-percent-va-disability-mean.html">What Does 60 Percent Va Disability Mean</a></li>
+													<li class="list-group-item"><a href="/what-do-you-need-to-go-to-a-college.html">What Do You Need To Go To A College</a></li>
+													<li class="list-group-item"><a href="/what-does-a-human-resource-specialist-do-in-the-army.html">What Does A Human Resource Specialist Do In The Army</a></li>
+													<li class="list-group-item"><a href="/what-does-50-va-disability-get-you.html">What Does 50 Va Disability Get You</a></li>
+													<li class="list-group-item"><a href="/what-do-you-go-to-college-for-to-be-a-real-estate-agent.html">What Do You Go To College For To Be A Real Estate Agent</a></li>
+													<li class="list-group-item"><a href="/what-does-50-gi-bill-cover.html">What Does 50 Gi Bill Cover</a></li>
+													<li class="list-group-item"><a href="/what-does-20-percent-va-disability-mean.html">What Does 20 Percent Va Disability Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-a-deferred-va-rating-mean.html">What Does A Deferred Va Rating Mean</a></li>
+													<li class="list-group-item"><a href="/what-do-you-go-to-college-for.html">What Do You Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-do-you-do-when-your-spouse-is-always-negative.html">What Do You Do When Your Spouse Is Always Negative</a></li>
+													<li class="list-group-item"><a href="/what-does-a-military-spouse-id-look-like.html">What Does A Military Spouse Id Look Like</a></li>
+													<li class="list-group-item"><a href="/what-do-veterans-get-discounts-on.html">What Do Veterans Get Discounts On</a></li>
+													<li class="list-group-item"><a href="/what-does-a-100-va-disability-rating-mean.html">What Does A 100 Va Disability Rating Mean</a></li>
+													<li class="list-group-item"><a href="/what-do-the-va-smc-codes-mean.html">What Do The Va Smc Codes Mean</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Reevaluation Age - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Reevaluation Age",
+  "datePublished": "2021-02-14",
+  "image": "https://embed-fastly.wistia.com/deliveries/66285d2eb0a638f34c036368ea30aa8d.webp?image_crop_resized=1280x720",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+reevaluation+age",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Reevaluation Age</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">You have a stabilized rating 5 years or more. 2 No periodic future examinations will be requested. VA normally does not schedule reexaminations for veterans. <br>				
+			</p>
+										<a class="badge badge-info" href="/what-happens-if-someone-dies-without-a-will-in-new-york-state.html">what happens if someone dies without a will in new york state</a>
+											<a class="badge badge-primary" href="/what-does-yellow-ribbon-mean-for-military.html">what does yellow ribbon mean for military</a>
+											<a class="badge badge-info" href="/what-happens-after-my-va-claim-is-approved.html">what happens after my va claim is approved</a>
+											<a class="badge badge-secondary" href="/what-gpa-is-required-for-gi-bill.html">what gpa is required for gi bill</a>
+											<a class="badge badge-danger" href="/what-happens-if-spouse-visa-refused.html">what happens if spouse visa refused</a>
+											<a class="badge badge-success" href="/what-happens-if-your-spouse-dies-without-a-will-in-texas.html">what happens if your spouse dies without a will in texas</a>
+											<a class="badge badge-warning" href="/what-happens-after-a-va-appeal-is-granted.html">what happens after a va appeal is granted</a>
+											<a class="badge badge-light" href="/what-does-wearing-a-black-hat-mean.html">what does wearing a black hat mean</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to visit the right site.  Our website gives you suggestions for viewing the maximum quality video and picture content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/protected-ratings-3.jpg" data-lightbox="roadtrip" data-title="Protected Va Disability Ratings And Va Rules Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/protected-ratings-3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5jB9TGYIv2rPJHVK8b9DRg2pEzgjortfX3A';" alt="Protected Va Disability Ratings And Va Rules Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Protected Va Disability Ratings And Va Rules Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/d6/0d/6ed60d2aeb948e3e748e8c87ac9fabf1.png" data-lightbox="roadtrip" data-title="Pin On Govloop Reports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/d6/0d/6ed60d2aeb948e3e748e8c87ac9fabf1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo0K3dY5nzn8348IgLstWk0-xBSzkJX0hFEg';" alt="Pin On Govloop Reports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Govloop Reports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://embed-fastly.wistia.com/deliveries/66285d2eb0a638f34c036368ea30aa8d.webp?image_crop_resized=1280x720" data-lightbox="roadtrip" data-title="Va Disability Rating Reexaminations And Reevaluations Cck Law">
+											<img class="card-img v-image ads-img " src="https://embed-fastly.wistia.com/deliveries/66285d2eb0a638f34c036368ea30aa8d.webp?image_crop_resized=1280x720" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwHbaJEc0DcBFvrI8LPhwicC3CF3IhMUYyyQ';" alt="Va Disability Rating Reexaminations And Reevaluations Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Rating Reexaminations And Reevaluations Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2019/03/HP-blog-filler-picture.png" data-lightbox="roadtrip" data-title="Age Ptsd Your Va Disability Claim Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2019/03/HP-blog-filler-picture.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAWruvXrVsXkxFChUkjRIbBT_ZXsLQqnFkhA';" alt="Age Ptsd Your Va Disability Claim Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Age Ptsd Your Va Disability Claim Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/how-often-va-reevaluate-disability-ratings-768x512.jpg" data-lightbox="roadtrip" data-title="How Often Does Va Reevaluate Disability Ratings Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/how-often-va-reevaluate-disability-ratings-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPsqP6qurFCrBXxXYE7cTHkU5eMJP9fKVhw';" alt="How Often Does Va Reevaluate Disability Ratings Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Often Does Va Reevaluate Disability Ratings Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/13/3b/02133b31e046dbe80161ace59521287e.jpg" data-lightbox="roadtrip" data-title="A Social Business Embraces Introspection And Extrospection To Reevaluate Internal And Extern Marketing Strategy Social Media Social Media Help Social Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/13/3b/02133b31e046dbe80161ace59521287e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTH-lYVDF2ss5K4elAqd4lyaHfsEr1Q0SjJw';" alt="A Social Business Embraces Introspection And Extrospection To Reevaluate Internal And Extern Marketing Strategy Social Media Social Media Help Social Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Social Business Embraces Introspection And Extrospection To Reevaluate Internal And Extern Marketing Strategy Social Media Social Media Help Social Business</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.disabilitybenefitscenter.org/sites/default/files/images/disabling-conditions/age-award-benefits-dbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTH-lYVDF2ss5K4elAqd4lyaHfsEr1Q0SjJw';" alt="A Social Business Embraces Introspection And Extrospection To Reevaluate Internal And Extern Marketing Strategy Social Media Social Media Help Social Business">
+										<div class="card-body">
+						<h3 class="h5"><b>Who have been assigned the minimum rating for their disability.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va reevaluation age</strong>. 
+								
+																	The VA will typically not request to reexamine your rating under the following conditions. 
+																	The VA can actually lower or terminate your existing rating so you need to. 
+																	In cases of veterans over 55 years of age except under unusual circumstances When the rating is a prescribed scheduled minimum rating. 
+																	Following initial Department of Veterans Affairs examination or any scheduled future or other examination reexamination if in order will be scheduled within not less than 2 years nor more than 5 years within the judgment of the rating board unless another time period is elsewhere specified. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When you request an increase in your VA disability rating you are in effect opening up your claim for re-evaluation. 
+																	With static disabilities such as loss of a limb. 
+																	Typically the VA will order a re-evaluation of a veterans medical condition on two different occasions. 
+																	The first will be six months after your service ends. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When the VA Will Not Schedule You for a Reexamination. 
+																	The disability is static such as a loss of limb. 
+																	Rating in Effect 20 Years or More. 
+																	With a disability resulting from disease that is of a permanent nature. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the Veterans Administration decides that your PTSD requires future re-evaluation you will normally be scheduled within 2 to 5 years from the date of their decision to grant disability benefits. 
+																	Or Where a disability evaluation would not be affected if the future examination should result in reduced evaluation for one or more condition. 
+																	If a disability is static symptoms have persisted without material improvement for 5 or more years a disability from a disease is permanent and not likely to improve a veteran is over 55 years old the disability is rated at the minimal rating level or a combined disability evaluation would not be affected even if a future examination resulted in the reduced evaluation of one or more conditions a future examination will generally not be ordered. 
+																	This is what you are looking for 38 CFR 3327 2 No periodic future examinations will be requested. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	55 Year Rule Veterans are also protected from rating reductions if they are over the age of 55. 
+																	What the VA Does During A Re-examination for PTSD. 
+																	The rule you speculated on is close but no cigar. 
+																	The VA has a policy not to call for reevaluation exams on Veterans OVER AGE 55 not 57. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You are over the age of 55. 
+																	However they can reduce the rating if they have medical evidence that the medical condition improves. 
+																	The second will fall sometime in the range of three to five years after your service ends. 
+																	If a veteran has had the same disability rating for five or more years his or her rating should not be lowered unless a wide and comprehensive examination of all medical records and history concludes that sustained improvement has been demonstrated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The disability is considered permanent and is not expected to improve eg. 
+																	Typically VA will not reevaluate or re-schedule a re-examination for your service-connected disability under the following conditions however there may be exceptions on a case-by-case basis. 
+																	As with the 20-year rule there is an exception to this rule if the VA finds out that the original disability rating was based on fraud. 
+																	All the medical evidence not just the reexamination report must support the conclusion that your improvement is more than temporary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Likewise if the veteran is over the age of 55 or if a re-examination would not change the veterans current rating then a re-examination would not be scheduled. 
+																	The veteran is over age 55. 
+																	If you have had the same rating for five or more years the VA cannot reduce your rating unless your condition has improved on a sustained basis. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/5d/cc/0f5dcc742817a97015b3faac6d8b59f9.jpg" data-lightbox="roadtrip" data-title="17 Transition Activities For Elementary Age Kids Kid Activities Transition Activities Preschool Transitions Classroom Management Preschool">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/5d/cc/0f5dcc742817a97015b3faac6d8b59f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIc5NWP8wosIgZp--UY2lKQInlNifrXGC5g';" alt="17 Transition Activities For Elementary Age Kids Kid Activities Transition Activities Preschool Transitions Classroom Management Preschool">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Transition Activities For Elementary Age Kids Kid Activities Transition Activities Preschool Transitions Classroom Management Preschool</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ahajournals.org/cms/asset/b89c66cb-4ccd-4210-9e08-bfad0cb656ab/2228fig04.gif" data-lightbox="roadtrip" data-title="Age At Diagnosis Of Type 2 Diabetes Mellitus And Associations With Cardiovascular And Mortality Risks Circulation">
+											<img class="card-img v-image ads-img " src="https://www.ahajournals.org/cms/asset/b89c66cb-4ccd-4210-9e08-bfad0cb656ab/2228fig04.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwZrKdZCOltmQsaIGnFX3LrtgDS9QKg-lXXQ';" alt="Age At Diagnosis Of Type 2 Diabetes Mellitus And Associations With Cardiovascular And Mortality Risks Circulation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Age At Diagnosis Of Type 2 Diabetes Mellitus And Associations With Cardiovascular And Mortality Risks Circulation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/bf/39/4ebf396dd354c4d807ec4c58a3efec27.jpg" data-lightbox="roadtrip" data-title="Baby Food Baby Food Recipes Baby Food Guide Starting Solids Baby">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/bf/39/4ebf396dd354c4d807ec4c58a3efec27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR4u4Q50QYscbpl4-iMjMCfA8A8Sjzt7CNQg';" alt="Baby Food Baby Food Recipes Baby Food Guide Starting Solids Baby">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Baby Food Baby Food Recipes Baby Food Guide Starting Solids Baby</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/9c/5c/bf9c5cdd57da8147e33dd6125fbf6e24.jpg" data-lightbox="roadtrip" data-title="30 Genius Ways To Make Extra Money 1000 Working From Home Smartnancials Extra Money Mom Jobs Make Money From Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/9c/5c/bf9c5cdd57da8147e33dd6125fbf6e24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1AByTlvGdLZG9rJbeXVwMd_q4u2Calpi5A';" alt="30 Genius Ways To Make Extra Money 1000 Working From Home Smartnancials Extra Money Mom Jobs Make Money From Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 Genius Ways To Make Extra Money 1000 Working From Home Smartnancials Extra Money Mom Jobs Make Money From Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/b2/bd/45b2bd44d0df27e718664ff3ba7f5ae9.jpg" data-lightbox="roadtrip" data-title="That About Sums Me Up Relatable Love Band Fangirl Problems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/b2/bd/45b2bd44d0df27e718664ff3ba7f5ae9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGTIK4IGJsQDXcOOH_QMtc4upzAITRBzwS3Q';" alt="That About Sums Me Up Relatable Love Band Fangirl Problems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">That About Sums Me Up Relatable Love Band Fangirl Problems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/50/ba/fd50ba1d99fc87abd8a6dd41cce8dcc7.jpg" data-lightbox="roadtrip" data-title="The Easter Bunny And The Great Egg Hunt Calendar Of Events Lee Hall Mansion Egg Hunt Easter Bunny Event Calendar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/50/ba/fd50ba1d99fc87abd8a6dd41cce8dcc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCKc__4VXJbhqekua4h1QwEzcOBwoeUlEeWg';" alt="The Easter Bunny And The Great Egg Hunt Calendar Of Events Lee Hall Mansion Egg Hunt Easter Bunny Event Calendar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Easter Bunny And The Great Egg Hunt Calendar Of Events Lee Hall Mansion Egg Hunt Easter Bunny Event Calendar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/27/8f/ea278f4a716e964f82c03553efeb08a1.jpg" data-lightbox="roadtrip" data-title="Peterbilt Classic Model 378 Truck Tractor Italeri 3857 1 24 With Extra Decal Set Shore Line Hobby 1 Model Truck Kits Peterbilt Tractors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/27/8f/ea278f4a716e964f82c03553efeb08a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd7iyTke8PWvXPEyWRb5z4M0shzNTzZier6w';" alt="Peterbilt Classic Model 378 Truck Tractor Italeri 3857 1 24 With Extra Decal Set Shore Line Hobby 1 Model Truck Kits Peterbilt Tractors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Peterbilt Classic Model 378 Truck Tractor Italeri 3857 1 24 With Extra Decal Set Shore Line Hobby 1 Model Truck Kits Peterbilt Tractors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/64/b4/d064b45bf9616930a33c23a5cca3104c.png" data-lightbox="roadtrip" data-title="Jamestown Settlement 1607 Jamestown Map Jamestown Colony Project Jamestown Colony">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/64/b4/d064b45bf9616930a33c23a5cca3104c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Z4amzYODZKYqki-WnzVeyV27ZJGr9PvLdA';" alt="Jamestown Settlement 1607 Jamestown Map Jamestown Colony Project Jamestown Colony">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jamestown Settlement 1607 Jamestown Map Jamestown Colony Project Jamestown Colony</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.eeoc.gov/eeoc/history/adea50th/images/report_image011.png" data-lightbox="roadtrip" data-title="The State Of Age Discrimination And Older Workers In The U S 50 Years After The Age Discrimination In Employment Act Adea U S Equal Employment Opportunity Commission">
+											<img class="card-img v-image ads-img " src="https://www.eeoc.gov/eeoc/history/adea50th/images/report_image011.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP96s-zsgKuky9XgsY4IbYn2KCaYqHbcLIvw';" alt="The State Of Age Discrimination And Older Workers In The U S 50 Years After The Age Discrimination In Employment Act Adea U S Equal Employment Opportunity Commission">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The State Of Age Discrimination And Older Workers In The U S 50 Years After The Age Discrimination In Employment Act Adea U S Equal Employment Opportunity Commission</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/79/ac/8379acdf31350a1fd6001500c46b2983.jpg" data-lightbox="roadtrip" data-title="Pin By Linda On Future Trips Maryland Heights Trail Maryland Heights Trail Maps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/79/ac/8379acdf31350a1fd6001500c46b2983.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBH0YLJlm8PFhlwSB0vMTvpp7uUna94nokw';" alt="Pin By Linda On Future Trips Maryland Heights Trail Maryland Heights Trail Maps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Linda On Future Trips Maryland Heights Trail Maryland Heights Trail Maps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/AdobeStock_283527987-768x512.jpeg" data-lightbox="roadtrip" data-title="How To Increase Va Disability Rating From 70 To 100 Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/AdobeStock_283527987-768x512.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgW7-mjEyOijHJR8KQg1POhMJGseY6bMIK6w';" alt="How To Increase Va Disability Rating From 70 To 100 Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Increase Va Disability Rating From 70 To 100 Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.disabilitybenefitscenter.org/sites/default/files/images/disabling-conditions/age-award-benefits-dbc.jpg" data-lightbox="roadtrip" data-title="What Age Is Best To Qualify For Ssdi Disability Benefits Center">
+											<img class="card-img v-image ads-img " src="https://www.disabilitybenefitscenter.org/sites/default/files/images/disabling-conditions/age-award-benefits-dbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbH8rLdEHt5nfUO_xrf_MVg_LrzQ5yj5ItA';" alt="What Age Is Best To Qualify For Ssdi Disability Benefits Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Age Is Best To Qualify For Ssdi Disability Benefits Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.washingtonpost.com/r/2010-2019/WashingtonPost/2017/03/29/SocialIssues-Religion-Immigration/Graphics/2300-promo-decideddisabled0330.jpg?c=c42d5657a303dd66652112c4eb54a9465b1cf7f3-1511172971" data-lightbox="roadtrip" data-title="How Much Would You Receive From Disability Benefits Washington Post">
+											<img class="card-img v-image ads-img " src="https://www.washingtonpost.com/r/2010-2019/WashingtonPost/2017/03/29/SocialIssues-Religion-Immigration/Graphics/2300-promo-decideddisabled0330.jpg?c=c42d5657a303dd66652112c4eb54a9465b1cf7f3-1511172971" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReVxD2uosOqfsT_xVbJulzopsceJyVCxMAuw';" alt="How Much Would You Receive From Disability Benefits Washington Post">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Would You Receive From Disability Benefits Washington Post</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/7a/0e/c27a0e03d97fccdaa1ce9590f91e434d.jpg" data-lightbox="roadtrip" data-title="Pin On Face Hair Nails">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/7a/0e/c27a0e03d97fccdaa1ce9590f91e434d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQajCungylqWYrcRGq5SVXSVOFUDxS5gVATIw';" alt="Pin On Face Hair Nails">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Face Hair Nails</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://statchatva.org/files/2016/11/Working-age-population-change-2000-to-2005-1024x645.jpg" data-lightbox="roadtrip" data-title="In Most Of The United States The Working Age Population Is Now Shrinking Statchat">
+											<img class="card-img v-image ads-img " src="http://statchatva.org/files/2016/11/Working-age-population-change-2000-to-2005-1024x645.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxdbohrhFgOpHa5FtYxJs70CCvw7nayXpfUQ';" alt="In Most Of The United States The Working Age Population Is Now Shrinking Statchat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In Most Of The United States The Working Age Population Is Now Shrinking Statchat</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-glaucoma.html">Va Rating Glaucoma</a></li>
+													<li class="list-group-item"><a href="/va-rating-for.html">Va Rating For</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-insomnia.html">Va Rating For Sleep Insomnia</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-wrist-issues.html">Va Rating For Wrist Issues</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-total-knee-replacement.html">Va Rating For Total Knee Replacement</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-ulnar-nerve-damage.html">Va Rating For Ulnar Nerve Damage</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-wrist-pain.html">Va Rating For Wrist Pain</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-stress-and-anxiety.html">Va Rating For Stress And Anxiety</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-disturbances.html">Va Rating For Sleep Disturbances</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-apnea-secondary-to-diabetes.html">Va Rating For Sleep Apnea Secondary To Diabetes</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-apnea-secondary-to-tinnitus.html">Va Rating For Sleep Apnea Secondary To Tinnitus</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-tdiu.html">Va Rating For Tdiu</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-trochanteric-pain-syndrome.html">Va Rating For Trochanteric Pain Syndrome</a></li>
+													<li class="list-group-item"><a href="/va-rating-handbook.html">Va Rating Handbook</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-anxiety.html">Va Rating For Sleep Anxiety</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-tendonitis.html">Va Rating For Tendonitis</a></li>
+													<li class="list-group-item"><a href="/va-rating-hearing-loss.html">Va Rating Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-thyroid-problems.html">Va Rating For Thyroid Problems</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-varicose-veins.html">Va Rating For Varicose Veins</a></li>
+													<li class="list-group-item"><a href="/va-rating-gastritis.html">Va Rating Gastritis</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

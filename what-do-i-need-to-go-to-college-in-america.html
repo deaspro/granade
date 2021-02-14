@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Do I Need To Go To College In America - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Do I Need To Go To College In America",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/9f/05/31/9f0531f2f3fdcee66f77d945d5547648.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+do+i+need+to+go+to+college+in+america",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Do I Need To Go To College In America</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In fact some schools many 2-year colleges are designed to be transfer schools and offer only the first two years of undergraduate study. These tests include the SAT Scholastic Aptitude Test and the ACT American College Testing. It is quite common for students to transfer from one school to another at the undergraduate level. <br>				
+			</p>
+										<a class="badge badge-dark" href="/va-rating-schedule-for-skin-conditions.html">va rating schedule for skin conditions</a>
+											<a class="badge badge-secondary" href="/va-rating-schedule-for-kidney-disease.html">va rating schedule for kidney disease</a>
+											<a class="badge badge-dark" href="/va-rating-site.html">va rating site</a>
+											<a class="badge badge-dark" href="/va-rating-schedule-for-irritable-bowel-syndrome.html">va rating schedule for irritable bowel syndrome</a>
+											<a class="badge badge-info" href="/va-rating-specialist-job-description.html">va rating specialist job description</a>
+											<a class="badge badge-light" href="/va-rating-shoulder-tear.html">va rating shoulder tear</a>
+											<a class="badge badge-dark" href="/va-rating-schedule-for-scars.html">va rating schedule for scars</a>
+											<a class="badge badge-primary" href="/va-rating-schedule-for-vertigo.html">va rating schedule for vertigo</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the right site.  Our website provides you with suggestions for seeing the maximum quality video and image content, hunt and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to see.  You can also bring about supporting this site by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/5f/06/6d5f067636335c177d29a8facd3f12db.png" data-lightbox="roadtrip" data-title="The Top 25 Colleges In America College Fun Harvard Students Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/5f/06/6d5f067636335c177d29a8facd3f12db.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY-LXjjbmNRZQ-yvDHpIWsHIl67O3-dqYHYw';" alt="The Top 25 Colleges In America College Fun Harvard Students Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Top 25 Colleges In America College Fun Harvard Students Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/3a/31/b83a31d26974d66a1cbfe0daa1390301.jpg" data-lightbox="roadtrip" data-title="8 Steps To Go To College Online Infographic Online College Scholarships For College Online Degree Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/3a/31/b83a31d26974d66a1cbfe0daa1390301.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTChhorEhcRZJs_qchobC-gRT9b2OzikFYOtA';" alt="8 Steps To Go To College Online Infographic Online College Scholarships For College Online Degree Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Steps To Go To College Online Infographic Online College Scholarships For College Online Degree Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/db/8e/38db8e7a186c0fb74b20ec340d18dff2.png" data-lightbox="roadtrip" data-title="The 25 Best Colleges In America According To 19 000 Data Points On Cost And Quality College Fun Baruch College College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/db/8e/38db8e7a186c0fb74b20ec340d18dff2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgwXtviwqlzj-vmTekq4Tcnk6YjUWq1PwXrg';" alt="The 25 Best Colleges In America According To 19 000 Data Points On Cost And Quality College Fun Baruch College College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 25 Best Colleges In America According To 19 000 Data Points On Cost And Quality College Fun Baruch College College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/8f/e0/218fe05590534201e5828368b5b812f6.jpg" data-lightbox="roadtrip" data-title="The 50 Best Colleges In The Us College Fun College Rankings Harvard Law School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/8f/e0/218fe05590534201e5828368b5b812f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgQ8armygmyFVTT8_HQWeQU3P8pbIKr7AKmw';" alt="The 50 Best Colleges In The Us College Fun College Rankings Harvard Law School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 50 Best Colleges In The Us College Fun College Rankings Harvard Law School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/05/31/9f0531f2f3fdcee66f77d945d5547648.jpg" data-lightbox="roadtrip" data-title="College Statistics Infographics Teaching College College Stress College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/05/31/9f0531f2f3fdcee66f77d945d5547648.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm0SwSKafV4BV-p2V7hGGhg6dPBS396NNDzw';" alt="College Statistics Infographics Teaching College College Stress College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Statistics Infographics Teaching College College Stress College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/79/45/477945cae7700ad5ffb3a89a6f036f87.png" data-lightbox="roadtrip" data-title="What Ivy League Students Are Reading That You Aren T Ivy League Schools Ivy League College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/79/45/477945cae7700ad5ffb3a89a6f036f87.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36f1h0ju9SZCkfio49BFIqeEGQoMTGqlyow';" alt="What Ivy League Students Are Reading That You Aren T Ivy League Schools Ivy League College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Ivy League Students Are Reading That You Aren T Ivy League Schools Ivy League College</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a9/55/f8/a955f831e07802a82c963d4c55d73456.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36f1h0ju9SZCkfio49BFIqeEGQoMTGqlyow';" alt="What Ivy League Students Are Reading That You Aren T Ivy League Schools Ivy League College">
+										<div class="card-body">
+						<h3 class="h5"><b>Youll also have to write admission essays - each uni has different requirements for this.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What do i need to go to college in america</strong>. 
+								
+																	Find out what you need to do before your appointment. 
+																	How to go to college in America. 
+																	You could go to an American college and spend less than you would have in the UK but receive a worse education. 
+																	How did you do it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Preparing to apply to college is a process that can start at the beginning of high school. 
+																	Before you can apply for a student visa you must be accepted by a SEVP-certified school. 
+																	Community colleges also cost less than universities so it is a good option for students. 
+																	Most universities in the US require foreign applicants to take an English as a second language test such as the Test of English as a Foreign Language TOEFL or the International English Language Testing System IELTS and Scholastic Aptitude Test SAT exams for undergraduates or the Graduate Record Examination GRE for postgraduates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A levels are considered just a bit more than a US high school diploma. 
+																	Each college has different qualifications. 
+																	Be prepared and know. 
+																	In the US you need to apply to each college individually. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is schools for students who want to stay in their home area while pursuing higher education. 
+																	More info on all aspects of applying can be found here. 
+																	However due to the curriculum I believe a school will place you directly into AP courses where necessary as the content is similar to A Levels. 
+																	Applicants who are not Americans are also required to take the TOEFL Test of English as Foreign Language. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When it comes to college and university homework isnt only limited to the classroom. 
+																	Some students who have a stronger mathematicalscience background tend to do Honors in Grade 9 and 10 whilst others go through a basic science course followed by Honors in Grades 1112. 
+																	For more competitive universities you will need to be studying at least 3 A-Levels or their equivalent. 
+																	You arent expected to take the AP exam - most American. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Entry requirements for American Universities Entry requirements will vary across the US but as a minimum you will likely need 5 GCSEs A - C to include English and Maths. 
+																	Did you take any tests Do you need to have a green card How much is it going. 
+																	Colleges and universities in the US ask all their applicants to take one or more standardised tests. 
+																	The person that. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As you go through the college application process youll find that your academic and extracurricular qualifications arent the only parts of your history that become important considerationsAnother factor that can come into play is your citizenship particularly if youre a US. 
+																	Then you need to go in and sit down with someone and find out which universities your school has exchange agreements with. 
+																	Find out what you need to do to attend college in another country with this article. 
+																	March 19 2018 June 14 2019 abugslifestyle Leave a comment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Learn about what you should consider before you make an educational decision and discover the steps you need to. 
+																	But with the knowledge you have from GCSEs youll be able to do the SAT exams no problem. 
+																	As a British student going to study at an American college will look impressive on your CV partly because it shows that youre willing to. 
+																	The SAT and ACT American College Testing are standardised tests used for university admissions in the United States that measure your knowledge in core subjects like Maths English and Science. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once you are accepted all you need to do is apply to the US government for a student visa. 
+																	Student Visas - Learn about the types of student visas how to apply fees and required documents. 
+																	Equally you could go to one of the most expensive universities and get a degree that you feel trumps anything that Britain could have offered. 
+																	Students attending a local community college can live at home and thus save a lot on housing and living costs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll need to put in a fair amount of research before you even go to your first class. 
+																	Immigration issues can be extremely complicated and stressful to manage. 
+																	The very first thing you should do is assuming you are already in college find out where your schools study abroad office is. 
+																	There are third party programs you can go on but its best and cheapest to use the exchange agreements that your university has. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But you still have to take them. 
+																	Before beginning your studies in the US you will need to make travel arrangements find and book your student home obtain health insurance have your finances set up to pay for tuition and expenses and of course pack your suitcases. 
+																	Youll need references from your teachers and a transcript from your school. 
+																	Their graduates often go on to do the last two years of a bachelors degree at another school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You asked what else you need to apply. 
+																	Resident but not a US. 
+																	Universities should accept both tests so the one you go for is completely up to you. 
+																	You will need to be studying post-16 qualifications ie A-Levels. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to Prepare for Your Visa Appointment - You must pass an interview at a US. 
+																	Colleges will look at all four years of your classes grades and extracurricular involvements so it helps to consider your college goals as you make choices throughout 9th 10th 11th and 12th grade. 
+																	When my parents first spread the news that I had been accepted to and was going to study at an American university everyone had the same question. 
+																	Community colleges or junior colleges are two year colleges that primarily cater for local students. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/55/f8/a955f831e07802a82c963d4c55d73456.png" data-lightbox="roadtrip" data-title="Pin On Study Abroad Usa America">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/55/f8/a955f831e07802a82c963d4c55d73456.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3qtvUS6mkkICbsPZj7RFYJe0YTGxxrOUEwQ';" alt="Pin On Study Abroad Usa America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Study Abroad Usa America</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/af/ef/c8afefb3fb95de979713eefd56fd6ce7.jpg" data-lightbox="roadtrip" data-title="Campus Visits Places To Go And Questions To Ask Scholarships For College Campus Visit College Counseling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/af/ef/c8afefb3fb95de979713eefd56fd6ce7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWb62JhwMsX7xU4ypDT2SVIItOCDxsGGtETA';" alt="Campus Visits Places To Go And Questions To Ask Scholarships For College Campus Visit College Counseling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Campus Visits Places To Go And Questions To Ask Scholarships For College Campus Visit College Counseling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/20/0e/2a200ee55685d7d6853d27a845c3e45e.jpg" data-lightbox="roadtrip" data-title="Infographic Why Parents Want Kids To Go To College Education And Careers Education Quotes For Teachers Education College College Parents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/20/0e/2a200ee55685d7d6853d27a845c3e45e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUwKRB-pcVyGcE9UVRC7p-pk-07e9ZTlnz2w';" alt="Infographic Why Parents Want Kids To Go To College Education And Careers Education Quotes For Teachers Education College College Parents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic Why Parents Want Kids To Go To College Education And Careers Education Quotes For Teachers Education College College Parents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/39/4e/0a394eeb67d8332591bb69fbafb42392.gif" data-lightbox="roadtrip" data-title="College Costs More In America But The Payoff Is Bigger College Degree College Costs Harvard Law School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/39/4e/0a394eeb67d8332591bb69fbafb42392.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-_yusmkGIlmtxS7dGXu13EVIfxz933ibAfA';" alt="College Costs More In America But The Payoff Is Bigger College Degree College Costs Harvard Law School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">College Costs More In America But The Payoff Is Bigger College Degree College Costs Harvard Law School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/db/9b/cfdb9b27ab137329bde575092f4193eb.jpg" data-lightbox="roadtrip" data-title="Online Colleges Excellent Advice For Getting The Most Out Of College You Can Find More Details By Online College Online Degree Programs Online Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/db/9b/cfdb9b27ab137329bde575092f4193eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnDSxRgtX0q1CR1sbuF4CLgCkALAOvhHq8GA';" alt="Online Colleges Excellent Advice For Getting The Most Out Of College You Can Find More Details By Online College Online Degree Programs Online Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Colleges Excellent Advice For Getting The Most Out Of College You Can Find More Details By Online College Online Degree Programs Online Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/73/c1/ce/73c1ce4e7ef53a620b680b29d4065647.jpg" data-lightbox="roadtrip" data-title="Go To College And You Need Money To Pay For School Take A Look At My List Of 50 Schools In 2020 Scholarships For College School Scholarship Grants For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/73/c1/ce/73c1ce4e7ef53a620b680b29d4065647.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFqidPVm6Pf5uD_Qni94lvYkRWuRfaDLpbA';" alt="Go To College And You Need Money To Pay For School Take A Look At My List Of 50 Schools In 2020 Scholarships For College School Scholarship Grants For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Go To College And You Need Money To Pay For School Take A Look At My List Of 50 Schools In 2020 Scholarships For College School Scholarship Grants For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/76/2f/ab/762fabf2a41151bf1266df6732440d51.jpg" data-lightbox="roadtrip" data-title="Survey What Do Young Americans Really Think About Trade School Trade School Vocational School Education Lessons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/76/2f/ab/762fabf2a41151bf1266df6732440d51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgyR1LGEhyWO01xJ7Z4lasv7yke98_sdF_g';" alt="Survey What Do Young Americans Really Think About Trade School Trade School Vocational School Education Lessons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Survey What Do Young Americans Really Think About Trade School Trade School Vocational School Education Lessons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/b5/ec/cfb5eca5eeb7612d34eb21d493dcf77d.png" data-lightbox="roadtrip" data-title="Infographic Which Degrees Are Most Difficult Blog Scholarships For College Educational Infographic College Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/b5/ec/cfb5eca5eeb7612d34eb21d493dcf77d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwXs7FJT9WXKfzsC-5Vxl8dY9QqrWPPMvelA';" alt="Infographic Which Degrees Are Most Difficult Blog Scholarships For College Educational Infographic College Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic Which Degrees Are Most Difficult Blog Scholarships For College Educational Infographic College Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/ec/d6/b4ecd690f31194586079b90352c3a3de.png" data-lightbox="roadtrip" data-title="Tips Cpoa In 2020 College Recruiting Recruitment Usa University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/ec/d6/b4ecd690f31194586079b90352c3a3de.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtbYHSKWgWur97e_WRjCX3SSsB3Gm2WEbRnA';" alt="Tips Cpoa In 2020 College Recruiting Recruitment Usa University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tips Cpoa In 2020 College Recruiting Recruitment Usa University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/c4/30/65c4303e062001c4357707506788321a.png" data-lightbox="roadtrip" data-title="What Is The Best College For Photography Masters Degree Mba Student College Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/c4/30/65c4303e062001c4357707506788321a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0WVwQ6Kcme4rUurOr5180k9yWKlVeHKWX0A';" alt="What Is The Best College For Photography Masters Degree Mba Student College Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is The Best College For Photography Masters Degree Mba Student College Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/32/ac/ec32ace004ce2c28d5d05f4ded6a4ffa.png" data-lightbox="roadtrip" data-title="Why Do I Need A University Entrance Consultant In 2020 Study Abroad Student Travel Education Banner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/32/ac/ec32ace004ce2c28d5d05f4ded6a4ffa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVTqLRAVbGrEGRjXfzsSxGwOL57tC-DozdSQ';" alt="Why Do I Need A University Entrance Consultant In 2020 Study Abroad Student Travel Education Banner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Do I Need A University Entrance Consultant In 2020 Study Abroad Student Travel Education Banner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/9f/0b/709f0bf472d46ee35e4e1516a0d164ea.png" data-lightbox="roadtrip" data-title="Getting Into College A Complete Guide To The Application Admissions Process College How To Apply Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/9f/0b/709f0bf472d46ee35e4e1516a0d164ea.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRpggjkigDdpAnyesWatUsBelcbROrOwUmA';" alt="Getting Into College A Complete Guide To The Application Admissions Process College How To Apply Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting Into College A Complete Guide To The Application Admissions Process College How To Apply Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/93/dd/a9/93dda9d211e137debfbf5e510e101c6b.jpg" data-lightbox="roadtrip" data-title="America S College Students Infographic Postsecondary Success Educational Infographic Student Life Higher Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/93/dd/a9/93dda9d211e137debfbf5e510e101c6b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvecFccSLXyci3PLiBKV-eignrR3GZ7_z-Kg';" alt="America S College Students Infographic Postsecondary Success Educational Infographic Student Life Higher Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">America S College Students Infographic Postsecondary Success Educational Infographic Student Life Higher Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-benefits-for-divorced-spouses.html">Veterans Benefits For Divorced Spouses</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-compensation-and-pension.html">Veterans Benefits Compensation And Pension</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-police-salary-increase.html">Veterans Affairs Police Salary Increase</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-eligibility-for-assisted-living.html">Veterans Benefits Eligibility For Assisted Living</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-attorney.html">Veterans Benefits Attorney</a></li>
+													<li class="list-group-item"><a href="/veterans-aid-and-attendance-pay.html">Veterans Aid And Attendance Pay</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-attorney-chicago.html">Veterans Benefits Attorney Chicago</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-administration-compensation-website.html">Veterans Benefits Administration Compensation Website</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-attorney-san-antonio.html">Veterans Benefits Attorney San Antonio</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-ptsd-compensation.html">Veterans Affairs Ptsd Compensation</a></li>
+													<li class="list-group-item"><a href="/veterans-appeals-improvement-and-modernization-act.html">Veterans Appeals Improvement And Modernization Act</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-administration-phone-number.html">Veterans Benefits Administration Phone Number</a></li>
+													<li class="list-group-item"><a href="/veterans-attorneys-florida.html">Veterans Attorneys Florida</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-for-80-disabled.html">Veterans Benefits For 80 Disabled</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-white-card-discounts.html">Veterans Affairs White Card Discounts</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-pay-schedule.html">Veterans Affairs Pay Schedule</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-payment-dates-2020.html">Veterans Affairs Payment Dates 2020</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-attorney-maryland.html">Veterans Benefits Attorney Maryland</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-attorney-florida.html">Veterans Benefits Attorney Florida</a></li>
+													<li class="list-group-item"><a href="/veterans-appeal-attorneys.html">Veterans Appeal Attorneys</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

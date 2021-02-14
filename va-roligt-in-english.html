@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Roligt In English - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Roligt In English",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/90/86/11/9086111d93f3bf899abf3c616262aa4f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+roligt+in+english",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Roligt In English</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Lets go wanna go here we go. Translation for roligt in the free Swedish-English dictionary and many other English translations. On y va pronounced on nee va is an informal expression one of the most common in the French language that means literally were going thereBut in use it means. <br>				
+			</p>
+										<a class="badge badge-warning" href="/virginia-department-of-education-organizational-chart.html">virginia department of education organizational chart</a>
+											<a class="badge badge-danger" href="/virginia-department-of-education-immunization-requirements.html">virginia department of education immunization requirements</a>
+											<a class="badge badge-danger" href="/virginia-department-of-education-certification-lookup.html">virginia department of education certification lookup</a>
+											<a class="badge badge-info" href="/virginia-department-of-education-licensure-eligibility-requirements-to-teach-art.html">virginia department of education licensure eligibility requirements to teach art</a>
+											<a class="badge badge-light" href="/virginia-department-of-education-functional-behavior-assessment.html">virginia department of education functional behavior assessment</a>
+											<a class="badge badge-secondary" href="/virginia-department-of-education-license-query-search.html">virginia department of education license query search</a>
+											<a class="badge badge-dark" href="/virginia-department-of-education-autism.html">virginia department of education autism</a>
+											<a class="badge badge-warning" href="/virginia-department-of-education-parental-rights.html">virginia department of education parental rights</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to pay a visit to the right blog.  Our website gives you suggestions for seeing the highest quality video and image content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/ac/ff/1facfff17caeff4b8c9aa814444aa061.jpg" data-lightbox="roadtrip" data-title="Simply Novel On Instagram Love This Roligt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/ac/ff/1facfff17caeff4b8c9aa814444aa061.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgMrmjQoWQ_1Jv-V6E3SPGVSg7jOuc2WpMeQ';" alt="Simply Novel On Instagram Love This Roligt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Simply Novel On Instagram Love This Roligt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/9f/17/1c9f17bcd91bbc2534b8772262a76609.jpg" data-lightbox="roadtrip" data-title="Glosor Eu Roligt Engelska">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/9f/17/1c9f17bcd91bbc2534b8772262a76609.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3erhFOM8lFngffo0qXp77WZMA4Y1wjhOtkg';" alt="Glosor Eu Roligt Engelska">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Glosor Eu Roligt Engelska</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/64/b4/ac64b402cd5594b541e9c2c3fe8c2143.jpg" data-lightbox="roadtrip" data-title="Pin Pa Worthy Movies Tv Series Music Books">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/64/b4/ac64b402cd5594b541e9c2c3fe8c2143.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0rlwxWhwwyfT5uY7_-Z1gE-aOdPSTewJDwA';" alt="Pin Pa Worthy Movies Tv Series Music Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Pa Worthy Movies Tv Series Music Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/d5/50/65d550adcd340d6a8cdca2861d596c26.jpg" data-lightbox="roadtrip" data-title="A Swede Is A Person Of Few Words Lol Citat Sverige Utbildning Citat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/d5/50/65d550adcd340d6a8cdca2861d596c26.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPJ7QRzgacTXKBbSy-c1yt6G-TLRcX_KZxTQ';" alt="A Swede Is A Person Of Few Words Lol Citat Sverige Utbildning Citat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Swede Is A Person Of Few Words Lol Citat Sverige Utbildning Citat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/a9/99/09a9993811aba6b3ca8ef2fe22830956.jpg" data-lightbox="roadtrip" data-title="Honey You Keep Asking What Do I Do All Day So Today I Didnt Do Anything Skamt Funny Roligt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/a9/99/09a9993811aba6b3ca8ef2fe22830956.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YsT3ovFlovSJvl4u5O8V9hdokBJR9BRbhQ';" alt="Honey You Keep Asking What Do I Do All Day So Today I Didnt Do Anything Skamt Funny Roligt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Honey You Keep Asking What Do I Do All Day So Today I Didnt Do Anything Skamt Funny Roligt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/86/11/9086111d93f3bf899abf3c616262aa4f.jpg" data-lightbox="roadtrip" data-title="Pin On Truelala">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/86/11/9086111d93f3bf899abf3c616262aa4f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDPlkN0I0oi-rwDH_Xzc3y_omR47rqvFR6w';" alt="Pin On Truelala">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Truelala</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/6c/f3/d1/6cf3d1c2439f9a77262982b28f1bd38a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDPlkN0I0oi-rwDH_Xzc3y_omR47rqvFR6w';" alt="Pin On Truelala">
+										<div class="card-body">
+						<h3 class="h5"><b>Googles free service instantly translates words phrases and web pages between English and over 100 other languages.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va roligt in english</strong>. 
+								
+																	Human translations with examples. 
+																	Danish Men det har ikke vaeret roligt med hensyn til kraenkelser af menneskerettighederne. 
+																	Learning the many ways this expression is used will bring you one step closer to speaking French like a native speaker. 
+																	See 23 authoritative translations of Van in English with example sentences conjugations and audio pronunciations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Translation for rolig in the free Swedish-English dictionary and many other English translations. 
+																	English Translation of que va The official Collins Spanish-English Dictionary online. 
+																	English Translation of apprecier The official Collins French-English Dictionary online. 
+																	13967 likes 10 talking about this. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to say va In English - Translation of va to English by Nglish on-line comprehensive Spanish English and English Spanish Dictionary Translation and English learning by Britannica Including. 
+																	So there that is all it was night it was great that is a pity. 
+																	Over 100000 English translations of French words and phrases. 
+																	Babla is not responsible for their content. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Funny have fun life is fun that is good have some fun it is so amusing. 
+																	Over 100000 English translations of Spanish words and phrases. 
+																	Open_in_new Link to source. 
+																	Massa humor med roliga bilder Gilla sidan Dela inlaegg och Bjud in dina vaenner. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Translation for hade roligt in the free Swedish-English dictionary and many other English translations. 
+																	Tjohej va roligt man kan ha de h3jhej15 on TikTok 326 Likes. 
+																	Contextual translation of det var otroligt roligt into English. 
+																	In this post youll get the complete rundown of this two-word phrase and walk away with 10 different ways to use it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These sentences come from external sources and may not be accurate. 
+																	Context sentences for roligt in English These sentences come from external sources and may not be accurate. 
+																	Ca va is a dynamic expression that is regularly used in French. 
+																	Human translations with examples. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Translation for on va aller faire connaissance in the free French-English dictionary and many other English translations. 
+																	Babla is not responsible for their content. 
+																	Contextual translation of roligt into English. 
+																	Watch the latest video from tjohej va roligt man kan ha de h3jhej15. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rolig neuter roligt plural and definite singular attributive rolige comparative roligere superlative predicative roligst superlative attributive roligste calm quiet. 
+																	Norwegian Og jeg provde a holde meg rolig for ikke avslore alt. 
+																	Oversaettelse for rolig i den gratis dansk-engelsk ordbog og mange andre engelske oversaettelser. 
+																	Translation of words and sentences English synonyms example sentences related phrases audio pronunciation personal word lists and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Context sentences for rolig in English. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/04/10/e20410b8eb0c91f2a5ae8d5e23315391.jpg" data-lightbox="roadtrip" data-title="41721914 Petit Garcon Va A L Ecole Jpg 1120 1300 Cartoon Drawing For Kids School Illustration School Painting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/04/10/e20410b8eb0c91f2a5ae8d5e23315391.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx4N4jDK67YwJcUgBvO8SO8uFpAV6d-1QrjQ';" alt="41721914 Petit Garcon Va A L Ecole Jpg 1120 1300 Cartoon Drawing For Kids School Illustration School Painting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">41721914 Petit Garcon Va A L Ecole Jpg 1120 1300 Cartoon Drawing For Kids School Illustration School Painting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1233858869964775" data-lightbox="roadtrip" data-title="De Va Roligt Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1233858869964775" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xAhtWd2Dwm-R_xd5ho0LHzFC5Ijce9exiQ';" alt="De Va Roligt Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">De Va Roligt Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6c/f3/d1/6cf3d1c2439f9a77262982b28f1bd38a.jpg" data-lightbox="roadtrip" data-title="Pin By Naina On Funny To Me Lawyer Humor Funny Cartoons Legal Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6c/f3/d1/6cf3d1c2439f9a77262982b28f1bd38a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQalUcsU_3NfYr-qpvKdV_qNtdTCOgp9naVHA';" alt="Pin By Naina On Funny To Me Lawyer Humor Funny Cartoons Legal Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Naina On Funny To Me Lawyer Humor Funny Cartoons Legal Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/78/dc/68/78dc68c349ffe2254dc1fcd4c59aebae.jpg" data-lightbox="roadtrip" data-title="Pin Pa Spanish Tools For Learning New Language">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/78/dc/68/78dc68c349ffe2254dc1fcd4c59aebae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLKKgiP0vgj1r70zka0E5_SYwzNN0D4j99cA';" alt="Pin Pa Spanish Tools For Learning New Language">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Pa Spanish Tools For Learning New Language</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/08/ad/9108ad7edf9e576c1cc65cbaf6cf2df0.jpg" data-lightbox="roadtrip" data-title="Pinterest 3rin5ucks Cool Words Word Definitions Weird Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/08/ad/9108ad7edf9e576c1cc65cbaf6cf2df0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe3MQDZbfNn9oHMqFdAdZmlBDadfceSchg7Q';" alt="Pinterest 3rin5ucks Cool Words Word Definitions Weird Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pinterest 3rin5ucks Cool Words Word Definitions Weird Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.makeagif.com/media/5-26-2017/V_ImV-.gif" data-lightbox="roadtrip" data-title="Papi Raul Ah Va Roligt On Make A Gif">
+											<img class="card-img v-image ads-img " src="https://i.makeagif.com/media/5-26-2017/V_ImV-.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_qHxMU_9VVCorv5Bwi-idA5GhrXrqFO2Xg';" alt="Papi Raul Ah Va Roligt On Make A Gif">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Papi Raul Ah Va Roligt On Make A Gif</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/9e/69/539e69b47b99b166af32e0f19f234a65.jpg" data-lightbox="roadtrip" data-title="I Need Answers Disney Memes Disneycitat Disney Films">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/9e/69/539e69b47b99b166af32e0f19f234a65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5QmVZ7SrNTL0EjwtPzUdWEaxuxi09PBvGQA';" alt="I Need Answers Disney Memes Disneycitat Disney Films">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Need Answers Disney Memes Disneycitat Disney Films</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/a1/f0/95a1f02601cd582dbaaa2fa31ba44f25.jpg" data-lightbox="roadtrip" data-title="Creative Lesson Plans K 5 Steam Lesson Plans Curriculum Art Integration Lessons Free Homeschool Curriculum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/a1/f0/95a1f02601cd582dbaaa2fa31ba44f25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRypJXFO4PR4IMr_5DPa1hUpn32xahlK7lVag';" alt="Creative Lesson Plans K 5 Steam Lesson Plans Curriculum Art Integration Lessons Free Homeschool Curriculum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Creative Lesson Plans K 5 Steam Lesson Plans Curriculum Art Integration Lessons Free Homeschool Curriculum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4f/8d/09/4f8d09217109934e31b4f7ebda37cb2c.jpg" data-lightbox="roadtrip" data-title="Notitle In 2020 Spongebob Memes Funny Relatable Memes Stupid Funny Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4f/8d/09/4f8d09217109934e31b4f7ebda37cb2c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKJatS8JTYHkroYCGPFvatJCNrDV_OVjnQ9Q';" alt="Notitle In 2020 Spongebob Memes Funny Relatable Memes Stupid Funny Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Notitle In 2020 Spongebob Memes Funny Relatable Memes Stupid Funny Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/76/89/23/7689235a6dc67eac414fdd394c7e8270.jpg" data-lightbox="roadtrip" data-title="Robot Check Coffee Decor Kitchen Diy Wall Art Home Decor Wall Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/76/89/23/7689235a6dc67eac414fdd394c7e8270.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfV8GpVIhNINPeqeqlEYvH-LQ0CeyU2VixPg';" alt="Robot Check Coffee Decor Kitchen Diy Wall Art Home Decor Wall Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Robot Check Coffee Decor Kitchen Diy Wall Art Home Decor Wall Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/1b/71/401b71587a4c66811de0a99f537ce24c.jpg" data-lightbox="roadtrip" data-title="Books In Spanish To Prepare For Kindergarten Kindergarten Books Spanish Books For Kids Bilingual Book">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/1b/71/401b71587a4c66811de0a99f537ce24c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6rbkIs5YX__R12-g3yKdXLmBVrv-4bmxfqw';" alt="Books In Spanish To Prepare For Kindergarten Kindergarten Books Spanish Books For Kids Bilingual Book">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Books In Spanish To Prepare For Kindergarten Kindergarten Books Spanish Books For Kids Bilingual Book</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/14/ab/3714abeeb3afcad88b92ec77a37ba9ce.png" data-lightbox="roadtrip" data-title="Cavalier King Charles Spaniel Large Metal Sign Og 4030 Cavalier King Charles Spaniel Tricolor King Charles Dog Cavalier King Charles Dog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/14/ab/3714abeeb3afcad88b92ec77a37ba9ce.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT654LhOI5TlZhcZAPIKE2v0_ECKKQaF7Nzbw';" alt="Cavalier King Charles Spaniel Large Metal Sign Og 4030 Cavalier King Charles Spaniel Tricolor King Charles Dog Cavalier King Charles Dog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cavalier King Charles Spaniel Large Metal Sign Og 4030 Cavalier King Charles Spaniel Tricolor King Charles Dog Cavalier King Charles Dog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/eb/08/cfeb08165c34c3866594165804e8b61b.png" data-lightbox="roadtrip" data-title="17 Images Parfaites Pour Expliquer La Langue Francaise Aux Gens Qui Ne Parlent Pas Le Francais Langue Francaise Image Parfaite Drole">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/eb/08/cfeb08165c34c3866594165804e8b61b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1S99XSymzNYt1NEHpGwklg52bnPwaV7GcRw';" alt="17 Images Parfaites Pour Expliquer La Langue Francaise Aux Gens Qui Ne Parlent Pas Le Francais Langue Francaise Image Parfaite Drole">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">17 Images Parfaites Pour Expliquer La Langue Francaise Aux Gens Qui Ne Parlent Pas Le Francais Langue Francaise Image Parfaite Drole</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/washington-state-military-department.html">Washington State Military Department</a></li>
+													<li class="list-group-item"><a href="/watch-iu-vs-maryland-football.html">Watch Iu Vs Maryland Football</a></li>
+													<li class="list-group-item"><a href="/was-the-national-guard-deployed-in-iraq.html">Was The National Guard Deployed In Iraq</a></li>
+													<li class="list-group-item"><a href="/wayfair-military-spouse-jobs.html">Wayfair Military Spouse Jobs</a></li>
+													<li class="list-group-item"><a href="/was-the-national-guard-deployed-in-dc.html">Was The National Guard Deployed In Dc</a></li>
+													<li class="list-group-item"><a href="/water-leaking-from-tp-valve.html">Water Leaking From Tp Valve</a></li>
+													<li class="list-group-item"><a href="/was-national-guard-deployed-to-capitol.html">Was National Guard Deployed To Capitol</a></li>
+													<li class="list-group-item"><a href="/was-germany-banned-from-having-an-army.html">Was Germany Banned From Having An Army</a></li>
+													<li class="list-group-item"><a href="/was-the-national-guard-in-portland.html">Was The National Guard In Portland</a></li>
+													<li class="list-group-item"><a href="/was-the-national-guard-deployed-today.html">Was The National Guard Deployed Today</a></li>
+													<li class="list-group-item"><a href="/wave-gi-bill-verify-attendance.html">Wave Gi Bill Verify Attendance</a></li>
+													<li class="list-group-item"><a href="/warzone-bunker-locations-and-codes-military-base.html">Warzone Bunker Locations And Codes Military Base</a></li>
+													<li class="list-group-item"><a href="/was-the-2020-budget-passed.html">Was The 2020 Budget Passed</a></li>
+													<li class="list-group-item"><a href="/waste-management-login-to-my-account.html">Waste Management Login To My Account</a></li>
+													<li class="list-group-item"><a href="/washington-state-military-department-emergency-management-division.html">Washington State Military Department Emergency Management Division</a></li>
+													<li class="list-group-item"><a href="/was-the-2021-defense-budget-passed.html">Was The 2021 Defense Budget Passed</a></li>
+													<li class="list-group-item"><a href="/watch-iu-vs-florida-state.html">Watch Iu Vs Florida State</a></li>
+													<li class="list-group-item"><a href="/washington-dc-national-guard-request.html">Washington Dc National Guard Request</a></li>
+													<li class="list-group-item"><a href="/warzone-south-military-base-bunker-code.html">Warzone South Military Base Bunker Code</a></li>
+													<li class="list-group-item"><a href="/washington-dc-capitol-national-guard.html">Washington Dc Capitol National Guard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

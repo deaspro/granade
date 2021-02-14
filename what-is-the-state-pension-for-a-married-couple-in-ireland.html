@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The State Pension For A Married Couple In Ireland - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The State Pension For A Married Couple In Ireland",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/50/45/7c/50457c009c2ea425e77c334762a58161.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+state+pension+for+a+married+couple+in+ireland",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The State Pension For A Married Couple In Ireland</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It is sometimes called the old-age pension. You have over a certain amount. The other spouse can earn 200 per week also in insurable employment and still get max rate pension. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/va-rating-for-hyperthyroidism.html">va rating for hyperthyroidism</a>
+											<a class="badge badge-success" href="/va-rating-for-mild-obstructive-sleep-apnea.html">va rating for mild obstructive sleep apnea</a>
+											<a class="badge badge-danger" href="/va-rating-for-mild-sleep-apnea.html">va rating for mild sleep apnea</a>
+											<a class="badge badge-danger" href="/va-rating-for-lumbar-spine-strain.html">va rating for lumbar spine strain</a>
+											<a class="badge badge-warning" href="/va-rating-for-kidney-cyst.html">va rating for kidney cyst</a>
+											<a class="badge badge-primary" href="/va-rating-for-meniscus-pain.html">va rating for meniscus pain</a>
+											<a class="badge badge-warning" href="/va-rating-for-ms.html">va rating for ms</a>
+											<a class="badge badge-info" href="/va-rating-for-neck-condition.html">va rating for neck condition</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the right blog.  Our website provides you with suggestions for viewing the highest quality video and image content, search and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you view.  You can also contribute to supporting this site by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/76/69/83766926c43edde4d0c088ea7d6c1192.jpg" data-lightbox="roadtrip" data-title="Ranked The Best And Worst Pension Plans By Country Infographic Population Country Approach Cashing Pension Plan Pensions How To Plan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/76/69/83766926c43edde4d0c088ea7d6c1192.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzTpxKnZ3lyfOd2YQ7DUJ1pxSYQPEtGOpU0A';" alt="Ranked The Best And Worst Pension Plans By Country Infographic Population Country Approach Cashing Pension Plan Pensions How To Plan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ranked The Best And Worst Pension Plans By Country Infographic Population Country Approach Cashing Pension Plan Pensions How To Plan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6f/df/6b/6fdf6b761972034f4aa23304fb4b7adb.jpg" data-lightbox="roadtrip" data-title="Irish Daily Star Money Doctor Column Thursday 17th May 2018 Q A Enforced Pension Money Doctors Daily Star Retirement Money Column">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6f/df/6b/6fdf6b761972034f4aa23304fb4b7adb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbYnBUoejtCGFoh1cdES3hmIBIZiFPnJ0Vrw';" alt="Irish Daily Star Money Doctor Column Thursday 17th May 2018 Q A Enforced Pension Money Doctors Daily Star Retirement Money Column">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Irish Daily Star Money Doctor Column Thursday 17th May 2018 Q A Enforced Pension Money Doctors Daily Star Retirement Money Column</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/42/6b/d7426bea855d75b706b63398b1e037df.jpg" data-lightbox="roadtrip" data-title="The Insurance Program For Multiemployer Pension Plans Which Covers More Than 10 Million Americans Is Likely To Run Out Of M Pensions Divorce Pension Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/42/6b/d7426bea855d75b706b63398b1e037df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMnUj2sYjlU-4SSYS4Zg82XQqBj66VXVaRww';" alt="The Insurance Program For Multiemployer Pension Plans Which Covers More Than 10 Million Americans Is Likely To Run Out Of M Pensions Divorce Pension Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Insurance Program For Multiemployer Pension Plans Which Covers More Than 10 Million Americans Is Likely To Run Out Of M Pensions Divorce Pension Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.irishtimes.com/polopoly_fs/1.3703057.1542641363!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" data-lightbox="roadtrip" data-title="Help I Ve No Prsi Stamps Can I Still Get A Pension">
+											<img class="card-img v-image ads-img " src="https://www.irishtimes.com/polopoly_fs/1.3703057.1542641363!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT__j5fijjDUe5I8R4rE_RQLc-Z2hkEsf4eXw';" alt="Help I Ve No Prsi Stamps Can I Still Get A Pension">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Help I Ve No Prsi Stamps Can I Still Get A Pension</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.irishtimes.com/polopoly_fs/1.3543065.1529934619!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" data-lightbox="roadtrip" data-title="Can I Claim An Irish And Uk State Pension If I Ve Paid Into Both">
+											<img class="card-img v-image ads-img " src="https://www.irishtimes.com/polopoly_fs/1.3543065.1529934619!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFVgcpExMcKAFiLlAeUNxG3b6hcSo4k5FQeA';" alt="Can I Claim An Irish And Uk State Pension If I Ve Paid Into Both">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can I Claim An Irish And Uk State Pension If I Ve Paid Into Both</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/0e/54/310e54bb8e2419ba3043ae2633297644.jpg" data-lightbox="roadtrip" data-title="Free Civil War Records And Tips For Finding State Pensions Free Genealogy Sites Family Genealogy Genealogy Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/0e/54/310e54bb8e2419ba3043ae2633297644.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRli7a1DFy0VW5YVxDp5xBpeSnrkRzdQJUznA';" alt="Free Civil War Records And Tips For Finding State Pensions Free Genealogy Sites Family Genealogy Genealogy Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Civil War Records And Tips For Finding State Pensions Free Genealogy Sites Family Genealogy Genealogy Resources</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ad/95/5e/ad955e38df95a9b41d32aa7c9ab5470a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRli7a1DFy0VW5YVxDp5xBpeSnrkRzdQJUznA';" alt="Free Civil War Records And Tips For Finding State Pensions Free Genealogy Sites Family Genealogy Genealogy Resources">
+										<div class="card-body">
+						<h3 class="h5"><b>Qualifying age for State pensions.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the state pension for a married couple in ireland</strong>. 
+								
+																	Some people do not receive a full State pension because they have not been credited with enough PRSI contribution payments. 
+																	In 202021 the full level of the new State Pension is 17520 a week coming in at 911040 a year a rise of 39 percent on last year. 
+																	You can have the 40000 capital and insurable employment of 200 per week and you would get max rate State Pens Non Con as the employment is covered by the 200 disregard. 
+																	This pension is taxable but you are unlikely to pay tax if it is your only income. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are 66 in 2021 you will still be eligible to apply for State pension contributory. 
+																	Where State Pension Contributory was in payment up to the date of death of a pensioner and included an increase for a Qualified spousecivil partner Widowers Surviving Civil Partner Contributory Pension is automatically awarded to the spousecivil partner this includes a husband or wife divorced from the pensioner who has not re-married. 
+																	The full new State Pension is 17520 per week. 
+																	It had been proposed to increase the age at which you receive State pension contributory to age 67 in 2021 and 68 in 2028. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each private pension scheme operates under its own rules so couples who arent married are urged to state who they wish their pension to be paid out to in the event of their death. 
+																	The lower rate basic State Pension of 8045 a week 2020 to 2021 rate if married and her husband has reached State Pension age the rate of the basic State Pension of 13425 a week 2020 to. 
+																	In these cases lower levels of State pension may be paid. 
+																	The State pension contributory is paid to people from the age of 66 who have enough Irish social insurance contributions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The actual amount you get depends on your National Insurance record. 
+																	These proposals are currently on hold. 
+																	From March 2019 the State pension in Ireland for a person aged 66 or over is 24830 per week. 
+																	Married couples and civil partners receive a joint pension worth up to 17185 a week 17615 from April 2013 if only one of them qualifies for the full basic state pension. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is not means-tested and you can have other incomes and still get the State pension. 
+																	However you may get more or less than this depending on your individual contributions. 
+																	For example the full State Pension Contributory is 12912 per year or 24830 per week. 
+																	The State pension increases by 10 per week for those over age 80. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The only reasons the amount can be higher are if. 
+																	The means-tested State Pension Non-Contributory is a payment for people aged over 66 who do not qualify for a State Pension Contributory or who only qualify for a reduced contributory pension based on their insurance record. 
+																	In 202021 the full level of the new State Pension is 17520 a week coming in at 911040 a year a rise of 39 percent on last year. 
+																	You can have other income and still get it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Could you survive on the State pension alone and what will your finances look like in retirement. 
+																	However you may get more or less than this depending on. 
+																	Basic State Pension weekly rate for 2019 to 2020. 
+																	The following table is an overview of the maximum basic State Pension you can get. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What is the State pension. 
+																	The State Pension Contributory is not means tested. 
+																	The State Pension Contributory is paid to people from the age of 66 who have enough PRSI contributions. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bruenfs.ie/wp-content/uploads/2019/02/Screenshot-15.png" data-lightbox="roadtrip" data-title="Blog Can I Still Get The State Pension Even When I Ve Paid No Prsi Stamps Bruen Financial Services">
+											<img class="card-img v-image ads-img " src="https://bruenfs.ie/wp-content/uploads/2019/02/Screenshot-15.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzqClAzSV4FGlmdfC7fH9W3zjHpVSCrCVBdw';" alt="Blog Can I Still Get The State Pension Even When I Ve Paid No Prsi Stamps Bruen Financial Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blog Can I Still Get The State Pension Even When I Ve Paid No Prsi Stamps Bruen Financial Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/65/9e/74659e6f20704e89e64d75a7feebf6c5.jpg" data-lightbox="roadtrip" data-title="Family And Childcare Law Solicitors In Ireland And Dublin In 2020 Family Law Irs Taxes Irs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/65/9e/74659e6f20704e89e64d75a7feebf6c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx4RBooni-eNPIzWfBtSjZzf8gnO6gh_CFhQ';" alt="Family And Childcare Law Solicitors In Ireland And Dublin In 2020 Family Law Irs Taxes Irs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Family And Childcare Law Solicitors In Ireland And Dublin In 2020 Family Law Irs Taxes Irs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/a7/4c/9ea74c43c5fbd0ccdba33767ab9991fb.png" data-lightbox="roadtrip" data-title="Get Dating And Relationship Advice For Men Women Fiverr Relationship Advice Preparing For Divorce Relationship Experts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/a7/4c/9ea74c43c5fbd0ccdba33767ab9991fb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Jk5GkhIddL1YjJcpwRZmFTkoSeYKwh3qkA';" alt="Get Dating And Relationship Advice For Men Women Fiverr Relationship Advice Preparing For Divorce Relationship Experts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Dating And Relationship Advice For Men Women Fiverr Relationship Advice Preparing For Divorce Relationship Experts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/36/85/f33685cfcdd6f1040131be606d30c9fa.png" data-lightbox="roadtrip" data-title="Funny Quotes Bing Images In 2020 Old Age Quotes Funny Getting Older Quotes Funny Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/36/85/f33685cfcdd6f1040131be606d30c9fa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt7Bjr09PZRA40Qx_c08ralSyDPeIFUiO1Dw';" alt="Funny Quotes Bing Images In 2020 Old Age Quotes Funny Getting Older Quotes Funny Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Funny Quotes Bing Images In 2020 Old Age Quotes Funny Getting Older Quotes Funny Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/a2/10/64a21076c9a9ad4c93ce7218c08641f9.jpg" data-lightbox="roadtrip" data-title="Pink Bridal Bouquet Elope To The World S Most Romantic Town Aeroeskobing In Denmark Www Danishislandweddi Bridal Bouquet Pink Bridal Bouquet Wedding Bouquets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/a2/10/64a21076c9a9ad4c93ce7218c08641f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlaazgLNZLbyVZx-DP0M28Q0PAah0TD5wPgg';" alt="Pink Bridal Bouquet Elope To The World S Most Romantic Town Aeroeskobing In Denmark Www Danishislandweddi Bridal Bouquet Pink Bridal Bouquet Wedding Bouquets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pink Bridal Bouquet Elope To The World S Most Romantic Town Aeroeskobing In Denmark Www Danishislandweddi Bridal Bouquet Pink Bridal Bouquet Wedding Bouquets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/a3/bd/31a3bd8ed6aff1005ffca8dd3a9e416d.jpg" data-lightbox="roadtrip" data-title="Irish Grandad Blog Great Blog Life Grandad Irish">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/a3/bd/31a3bd8ed6aff1005ffca8dd3a9e416d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlt0xQxqqC2XsDQH0EtaKDjtorLUJlTr2rgg';" alt="Irish Grandad Blog Great Blog Life Grandad Irish">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Irish Grandad Blog Great Blog Life Grandad Irish</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.thepensionstore.ie/wp-content/uploads/2018/12/How-Much-Do-I-Need-in-a-Pension-to-Retire-Comfortably.jpg" data-lightbox="roadtrip" data-title="How Much Do I Need In A Pension To Retire Comfortably The Pension Store">
+											<img class="card-img v-image ads-img " src="https://www.thepensionstore.ie/wp-content/uploads/2018/12/How-Much-Do-I-Need-in-a-Pension-to-Retire-Comfortably.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBK_ZUZ9yQd52VKjERtCcC567xPWHquI1NDA';" alt="How Much Do I Need In A Pension To Retire Comfortably The Pension Store">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Do I Need In A Pension To Retire Comfortably The Pension Store</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/45/7c/50457c009c2ea425e77c334762a58161.jpg" data-lightbox="roadtrip" data-title="Mind Mapping Genealogy Research Mind Map Genealogy Research Genealogy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/45/7c/50457c009c2ea425e77c334762a58161.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6DK4_A60b_oYmx7VJksXkvfcvkpXXdXflxA';" alt="Mind Mapping Genealogy Research Mind Map Genealogy Research Genealogy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mind Mapping Genealogy Research Mind Map Genealogy Research Genealogy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/19/a1/1f/19a11f1326b5860415d66b4f3b0940bf.jpg" data-lightbox="roadtrip" data-title="Can You Read Today S Handwriting This From The Carolinas In The 1860s Alamance County Equity Handwriting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/19/a1/1f/19a11f1326b5860415d66b4f3b0940bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjVLX0wJdFubjnmnzXZFnp959OlWfu3BGL-Q';" alt="Can You Read Today S Handwriting This From The Carolinas In The 1860s Alamance County Equity Handwriting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can You Read Today S Handwriting This From The Carolinas In The 1860s Alamance County Equity Handwriting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/8f/70/ca8f70d91e8e0f0b4d158bc628e7bacb.png" data-lightbox="roadtrip" data-title="Salesman From La Tries To Trick Texas Lady The Result Is Hilarious Clean Funny Jokes Funny Long Jokes Long Jokes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/8f/70/ca8f70d91e8e0f0b4d158bc628e7bacb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYn6zFNMLdPNy_xyovsVgBkEKovLt6nGqgQ';" alt="Salesman From La Tries To Trick Texas Lady The Result Is Hilarious Clean Funny Jokes Funny Long Jokes Long Jokes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salesman From La Tries To Trick Texas Lady The Result Is Hilarious Clean Funny Jokes Funny Long Jokes Long Jokes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.irishtimes.com/polopoly_fs/1.3167370.1501069965!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg" data-lightbox="roadtrip" data-title="Will I Have To Pay Tax On My Pension Fund When I Return To Ireland To Retire">
+											<img class="card-img v-image ads-img " src="https://www.irishtimes.com/polopoly_fs/1.3167370.1501069965!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKWAYcVUE-dqCoNCeId913AvSjOAOBLURuNA';" alt="Will I Have To Pay Tax On My Pension Fund When I Return To Ireland To Retire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Will I Have To Pay Tax On My Pension Fund When I Return To Ireland To Retire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/7d/02/e17d027d34105c1ba4535f6ac794f028.jpg" data-lightbox="roadtrip" data-title="Virginia Revolutionary Publick Claims Janice L Abercrombie 9780935931822 Amazon Com Books Family Genealogy Genealogy Help Virginia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/7d/02/e17d027d34105c1ba4535f6ac794f028.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6GuxSPtq5zLvWFF-zjbOxWi5eYj1elcsc2w';" alt="Virginia Revolutionary Publick Claims Janice L Abercrombie 9780935931822 Amazon Com Books Family Genealogy Genealogy Help Virginia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Revolutionary Publick Claims Janice L Abercrombie 9780935931822 Amazon Com Books Family Genealogy Genealogy Help Virginia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/40/62/d6406228ef4675d4d1eb3b5e1db1760f.jpg" data-lightbox="roadtrip" data-title="Nestle Slips As Trouble Mounts For Maggi Across States Is It Still A Buy With Images New Market Social Marketing Web Marketing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/40/62/d6406228ef4675d4d1eb3b5e1db1760f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfZ5wxXfn4gP1ws1-wPAbmJ6O-5JJkCCiQw';" alt="Nestle Slips As Trouble Mounts For Maggi Across States Is It Still A Buy With Images New Market Social Marketing Web Marketing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nestle Slips As Trouble Mounts For Maggi Across States Is It Still A Buy With Images New Market Social Marketing Web Marketing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/c7/d0/cbc7d0fc98b368aab057f2776276350e.jpg" data-lightbox="roadtrip" data-title="Pin On Michael John Neill S Genealogy Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/c7/d0/cbc7d0fc98b368aab057f2776276350e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnd96DYureUmwV1pc9yUyGa2Gd8098PqSehg';" alt="Pin On Michael John Neill S Genealogy Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Michael John Neill S Genealogy Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/95/5e/ad955e38df95a9b41d32aa7c9ab5470a.jpg" data-lightbox="roadtrip" data-title="Lookout Mountain Chattanooga American Revolutionary War Battle Revolutionary War Battles American Revolutionary War Revolutionary War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/95/5e/ad955e38df95a9b41d32aa7c9ab5470a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqWGyJ22mqCI9VFoD9T8GJVYP006VXyBt4vQ';" alt="Lookout Mountain Chattanooga American Revolutionary War Battle Revolutionary War Battles American Revolutionary War Revolutionary War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lookout Mountain Chattanooga American Revolutionary War Battle Revolutionary War Battles American Revolutionary War Revolutionary War</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-the-va-pay-schedule.html">What Is The Va Pay Schedule</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-loss-of-hearing.html">What Is The Va Rating For Loss Of Hearing</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-scoliosis.html">What Is The Va Disability Rating For Scoliosis</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-shoulder.html">What Is The Va Disability Rating For Shoulder</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-carpal-tunnel-syndrome.html">What Is The Va Rating For Carpal Tunnel Syndrome</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-coronary-heart-disease.html">What Is The Va Rating For Coronary Heart Disease</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-scars.html">What Is The Va Rating For Scars</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-percentage-for-gerd.html">What Is The Va Percentage For Gerd</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-allergic-rhinitis.html">What Is The Va Rating For Allergic Rhinitis</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-pay-increase-for-2020.html">What Is The Va Pay Increase For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-depression.html">What Is The Va Rating For Depression</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-vision-loss.html">What Is The Va Disability Rating For Vision Loss</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-back-pain.html">What Is The Va Rating For Back Pain</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-percentage-for-sleep-apnea.html">What Is The Va Percentage For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-bipolar.html">What Is The Va Rating For Bipolar</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-tinnitus.html">What Is The Va Disability Rating For Tinnitus</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-degenerative-disc-disease.html">What Is The Va Rating For Degenerative Disc Disease</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-erectile.html">What Is The Va Rating For Erectile</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-pay-schedule-for-2020.html">What Is The Va Pay Schedule For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-ptsd.html">What Is The Va Rating For Ptsd</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Code For The Bunker In Military Base - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Code For The Bunker In Military Base",
+  "datePublished": "2021-02-14",
+  "image": "https://img.redbull.com/images/w_830/q_auto,f_auto/redbullcom/2020/7/20/ner9nga7eim63h6jg6oq/activation-phones-numbers-warzone-bunkers",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+code+for+the+bunker+in+military+base",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Code For The Bunker In Military Base</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Northwest Military Base Bunker 11 A bunker can be found on the Northern side of the map. Episode 7 of the Mobile Suit Gundam Unicorn OVA features the Cheyenne Mountain Complex being controlled by the Earth Federation. Located northwest of the Military Base no key card will grant you access to this one. <br>				
+			</p>
+										<a class="badge badge-dark" href="/va-rating-neuropathy.html">va rating neuropathy</a>
+											<a class="badge badge-primary" href="/va-rating-of-potential-transformer.html">va rating of potential transformer</a>
+											<a class="badge badge-dark" href="/va-rating-of-100-benefits.html">va rating of 100 benefits</a>
+											<a class="badge badge-success" href="/va-rating-increase-process.html">va rating increase process</a>
+											<a class="badge badge-danger" href="/va-rating-on-fibromyalgia.html">va rating on fibromyalgia</a>
+											<a class="badge badge-success" href="/va-rating-obesity.html">va rating obesity</a>
+											<a class="badge badge-dark" href="/va-rating-mild-sleep-apnea.html">va rating mild sleep apnea</a>
+											<a class="badge badge-danger" href="/va-rating-lawyer.html">va rating lawyer</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to pay a visit to the right site.  Our site provides you with hints for seeing the highest quality video and picture content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to view.  You can also contribute to supporting this site by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.redbull.com/images/w_830/q_auto,f_auto/redbullcom/2020/7/20/ner9nga7eim63h6jg6oq/activation-phones-numbers-warzone-bunkers" data-lightbox="roadtrip" data-title="Cod Warzone Bunkers Where They Are How To Get In">
+											<img class="card-img v-image ads-img " src="https://img.redbull.com/images/w_830/q_auto,f_auto/redbullcom/2020/7/20/ner9nga7eim63h6jg6oq/activation-phones-numbers-warzone-bunkers" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQWuJWFOA_Wpi76TKGbDCmcjgHRw8ErR90g';" alt="Cod Warzone Bunkers Where They Are How To Get In">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cod Warzone Bunkers Where They Are How To Get In</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gamewith-en.akamaized.net/img/original_da2ac8dac9e55326a65422e6ad7186b9.jpg" data-lightbox="roadtrip" data-title="Warzone Military Base Bunker 11 Code Location Map How To Open Call Of Duty Modern Warfare Gamewith">
+											<img class="card-img v-image ads-img " src="https://gamewith-en.akamaized.net/img/original_da2ac8dac9e55326a65422e6ad7186b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDng7Hz5m8Uk0ukke6lMxqejTV0Xf4Jnwyig';" alt="Warzone Military Base Bunker 11 Code Location Map How To Open Call Of Duty Modern Warfare Gamewith">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warzone Military Base Bunker 11 Code Location Map How To Open Call Of Duty Modern Warfare Gamewith</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.mos.cms.futurecdn.net/MveTsKgWvVeDuTHQJtB6YQ-1200-80.jpg" data-lightbox="roadtrip" data-title="Warzone Bunker Locations Maps And Every Warzone Bunker Code Pc Gamer">
+											<img class="card-img v-image ads-img " src="https://cdn.mos.cms.futurecdn.net/MveTsKgWvVeDuTHQJtB6YQ-1200-80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS-SfGqlEUpXRzVXqPNQEycfzQIvZTmVk80Q';" alt="Warzone Bunker Locations Maps And Every Warzone Bunker Code Pc Gamer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warzone Bunker Locations Maps And Every Warzone Bunker Code Pc Gamer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://icdn2.digitaltrends.com/image/digitaltrends/call-of-duty-modern-warfare_20200519122413-416x416.jpg" data-lightbox="roadtrip" data-title="All Warzone Bunker Locations Where They Are And What S Inside Digital Trends">
+											<img class="card-img v-image ads-img " src="https://icdn2.digitaltrends.com/image/digitaltrends/call-of-duty-modern-warfare_20200519122413-416x416.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5O16SBmaLksYXaGrB3flx22ezwRcz6c4k0w';" alt="All Warzone Bunker Locations Where They Are And What S Inside Digital Trends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Warzone Bunker Locations Where They Are And What S Inside Digital Trends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gamewith-en.akamaized.net/img/4ff1f9ebdcf6e96f9b38aaa0a68e8b66.jpg" data-lightbox="roadtrip" data-title="Warzone All Bunkers Vaults Codes Locations Map Season 6 Call Of Duty Modern Warfare Gamewith">
+											<img class="card-img v-image ads-img " src="https://gamewith-en.akamaized.net/img/4ff1f9ebdcf6e96f9b38aaa0a68e8b66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-9smJ0cdq7l7d-R3O6We2qFzq-Q2k9sJMQ';" alt="Warzone All Bunkers Vaults Codes Locations Map Season 6 Call Of Duty Modern Warfare Gamewith">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warzone All Bunkers Vaults Codes Locations Map Season 6 Call Of Duty Modern Warfare Gamewith</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d.newsweek.com/en/full/1591731/call-duty-warzone-bunker-location-11.png" data-lightbox="roadtrip" data-title="Call Of Duty Warzone Bunker 11 Guide Phone Locations How To Open">
+											<img class="card-img v-image ads-img " src="https://d.newsweek.com/en/full/1591731/call-duty-warzone-bunker-location-11.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGPT4JHzOuYkE4SsVE1SBQDaPl0sl-mLFEA';" alt="Call Of Duty Warzone Bunker 11 Guide Phone Locations How To Open">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Call Of Duty Warzone Bunker 11 Guide Phone Locations How To Open</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.ytimg.com/vi/jw8_H0KUCWE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGPT4JHzOuYkE4SsVE1SBQDaPl0sl-mLFEA';" alt="Call Of Duty Warzone Bunker 11 Guide Phone Locations How To Open">
+										<div class="card-body">
+						<h3 class="h5"><b>Once you find a small chapel search.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the code for the bunker in military base</strong>. 
+								
+																	Theres a laptop in the military base that needs a password. 
+																	To access this bunker youll have to gather intel. 
+																	So this going to take you around the map. 
+																	The bunker is also a setting in the series Jeremiah. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Northwest of Arklov Peak Military Base. 
+																	Scroll down to read more about the call of duty warzone bunker code military base bunker warzone all red card bunker locations from this article. 
+																	Code Phone 8 Verdansk Hospital. 
+																	Which are tagged as map_hint_ in the code. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Warzone Farmland code 49285163. 
+																	For Bunker 11 you will need to complete a puzzle. 
+																	Tyc00nMen created Military Base Tycoon NEW. 
+																	An armada of 120 shipments 12000 men and 300000 tons of cargo arrived in North Star Bay in July 1951 and construction immediately began. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 10 red circles indicate the normal bunkers in that you simply need a red access card to get inside. 
+																	Code Phone 0 Military Base. 
+																	Up to date game codes for Military Base Tycoon NEW updates and features and the past Months ratings. 
+																	Know how to find bunkers vaults red cards keys codes map locations bunker 11. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The bunker found at E3 is just South of the Military base before you get to the frozen lake. 
+																	Its a very unique story for bunker 11 northwest of Military Base. 
+																	Military Base Bunker 11 - Code Location Map Bunker 11 Cant Be Opened With Code. 
+																	This bunker can be opened with a red access key card and has a second door at the back of the interior of the bunker. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There is an eleventh secret bunker in Call of Duty. 
+																	An armada of 120 shipments 12000 men and 300000 tons of cargo arrived in North Star Bay in July 1951 and construction immediately began. 
+																	If you make it this far in the game then start lootingyouve earned it. 
+																	In an episode of South Park season 4 episode 12 Trapper Keeper sets off to Cheyenne Mountain to absorb the secret military bases computer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Located in the. 
+																	South Junkyard 97264138. 
+																	Warzone bunker 11 and phone locations. 
+																	All new locations and combinations Warzone Prison shack code 72948531. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Call of Duty Warzone has a bunch of mysterious locked bunkers. 
+																	As for the blue circle at the top of the map thats the bunker 11 location. 
+																	Read this Call Of Duty Warzone Modern Warfare 2021 guide on all bunker code locations. 
+																	Todays Code 1st Oct - 89356. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to Open Bunker In WarZone Inside Bunker SECRET KEYPAD CODE EASTER EGG FOUND IN Warzone Season 5COD IGN - Madfury5777774Subscribe for more Call of Dut. 
+																	After listening to the code you will have to interact with Code Phone 2 Code Phone 8 and Code Phone 0 in the same sequence. 
+																	Use this map to locate them instead of using the games Morse code and. 
+																	Tal secrecy by the US military under the code name Blue Jay in 1951. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Warzone Bunker Locations and Codes - Call Of Duty Warzone has been the most successful games of the COD franchise and the makers have managed to get in several players with their practical and intriguing in-game activities. 
+																	Bunker 11 is different from the other bunkers youll come across in Warzone. 
+																	Head Northwest of the military base. 
+																	Abandoned military bunker at Thule Air Base in Greenland. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At this point know one knows the code to open the second door in this bunker. 
+																	To make your job easy here is a guide for all Morse Code Phone Location from 0 to 9. 
+																	Unlike other bunkers that needs access codes to open Military Base Bunker 11 would require a special phone hunt minigame to be completed before it can be opened. 
+																	The Thule Air Base was constructed in total secrecy by the US military under the code name Blue Jay in 1951. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Code Phone 2 Lozoff Pass. 
+																	Military bunker View on Google Maps. 
+																	Theres a bit of legwork. 
+																	To be the coolest Roblox game of 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Every Warzone bunker code. 
+																	And above this is the breakdown of all the new bunkers with keypads. 
+																	It can be found northwest of the military base in Bloc 23 near the edge of the map. 
+																	But if youre hoping to find the secrets within Warzone bunker 11 more on that below. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://latestnews.fresherslive.com/images/articles/width-900/2020/10/27/warzone-bunker-locations-and-codes-5f97fa0e70024-1603795470.jpg" data-lightbox="roadtrip" data-title="Warzone Bunker Locations And Codes Know Military Base Bunker Warzone Red Card Bunker Locations Here">
+											<img class="card-img v-image ads-img " src="https://latestnews.fresherslive.com/images/articles/width-900/2020/10/27/warzone-bunker-locations-and-codes-5f97fa0e70024-1603795470.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4_0df_-mO9H-mk33PxmKPJTNU9awTKdDsZQ';" alt="Warzone Bunker Locations And Codes Know Military Base Bunker Warzone Red Card Bunker Locations Here">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warzone Bunker Locations And Codes Know Military Base Bunker Warzone Red Card Bunker Locations Here</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/AM9_eQxLVjA/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Warzone New Bunker Easter Egg We Need Help Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/AM9_eQxLVjA/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtcx6jMl5PcbrfVBH-qZmdZv5jt9PkXR0vkw';" alt="Warzone New Bunker Easter Egg We Need Help Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warzone New Bunker Easter Egg We Need Help Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/3wTlVF_gBzU/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Warzone How To Open Bunker 11 With Nuke Inside Full Guide Codes And Phone Locations Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/3wTlVF_gBzU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKcPgLBLWNZ8wyV2F-n5FN3rChX0pC1qyxTg';" alt="Warzone How To Open Bunker 11 With Nuke Inside Full Guide Codes And Phone Locations Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warzone How To Open Bunker 11 With Nuke Inside Full Guide Codes And Phone Locations Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/XzYzG96hssY/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Warzone All Secret Bunker Access Codes New Hidden Door All 6 Bunker Locations Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/XzYzG96hssY/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzsEN7n0JDd74XP54baZO1kfb5F1MGbxhGww';" alt="Warzone All Secret Bunker Access Codes New Hidden Door All 6 Bunker Locations Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warzone All Secret Bunker Access Codes New Hidden Door All 6 Bunker Locations Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.redd.it/1mwe6vi8pej51.jpg" data-lightbox="roadtrip" data-title="There Is A Bunker In E3 That Opens With The Red Key The Second Door Requires The Code Does Anyone Know About It Codwarzone">
+											<img class="card-img v-image ads-img " src="https://i.redd.it/1mwe6vi8pej51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmKZCxqK6VV__nYhzHuJlQy5lubrs_njSGiA';" alt="There Is A Bunker In E3 That Opens With The Red Key The Second Door Requires The Code Does Anyone Know About It Codwarzone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Is A Bunker In E3 That Opens With The Red Key The Second Door Requires The Code Does Anyone Know About It Codwarzone</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/jw8_H0KUCWE/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Call Of Duty Warzone Mysterious 2nd Part Of Bunker 11 Code Keypad Easter Egg Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/jw8_H0KUCWE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Nun-bvDzz7OkYYVcp4QuJ86HHqspKFGnlg';" alt="Call Of Duty Warzone Mysterious 2nd Part Of Bunker 11 Code Keypad Easter Egg Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Call Of Duty Warzone Mysterious 2nd Part Of Bunker 11 Code Keypad Easter Egg Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://assets.vg247.com/current//2020/05/warzone_bunker_11_location_crop_highlight_1.jpg" data-lightbox="roadtrip" data-title="Call Of Duty Warzone Telephone Map How To Open Bunker 11">
+											<img class="card-img v-image ads-img " src="https://assets.vg247.com/current//2020/05/warzone_bunker_11_location_crop_highlight_1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBf94NceWZ0k5IovngvpRSc-prDbx__wQRlw';" alt="Call Of Duty Warzone Telephone Map How To Open Bunker 11">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Call Of Duty Warzone Telephone Map How To Open Bunker 11</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/tf8vdryisuut7xyb_1601462336.jpeg?tr=w-758,h-433" data-lightbox="roadtrip" data-title="Warzone Season 6 Bunker Locations And Bunker Codes Know All Details">
+											<img class="card-img v-image ads-img " src="https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/tf8vdryisuut7xyb_1601462336.jpeg?tr=w-758,h-433" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGWQUx8RWHHEnMomg3D0_Q3u_4Uw7AdNNdQQ';" alt="Warzone Season 6 Bunker Locations And Bunker Codes Know All Details">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warzone Season 6 Bunker Locations And Bunker Codes Know All Details</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.gfinityesports.com/news/image/1/1/1500x0-nc/secret_bunker_guide_uAUFDfa.jpg" data-lightbox="roadtrip" data-title="Warzone Bunker 11 How To Access Bunker 11 Vault All Phones Locations And Orders">
+											<img class="card-img v-image ads-img " src="https://img.gfinityesports.com/news/image/1/1/1500x0-nc/secret_bunker_guide_uAUFDfa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHJJdSi9wWvMzSPwrkCLU_9JS-puTX6UYG4A';" alt="Warzone Bunker 11 How To Access Bunker 11 Vault All Phones Locations And Orders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warzone Bunker 11 How To Access Bunker 11 Vault All Phones Locations And Orders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2.wp.com/cdn.mos.cms.futurecdn.net/npH79d4mxrjSYV5f6t7dEM-1200-80.jpg" data-lightbox="roadtrip" data-title="Warzone Bunker Locations Every Warzone Bunker Code You Need For Top Loot License To Blog">
+											<img class="card-img v-image ads-img " src="https://i2.wp.com/cdn.mos.cms.futurecdn.net/npH79d4mxrjSYV5f6t7dEM-1200-80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrow9NCwOyctsiSnHZ-8_x7ejyHBWCJ2JnZw';" alt="Warzone Bunker Locations Every Warzone Bunker Code You Need For Top Loot License To Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warzone Bunker Locations Every Warzone Bunker Code You Need For Top Loot License To Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/H3Qu-TQ13Ug/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Bunker Alpha Alfa Vault Code Last Day On Earth Survival Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/H3Qu-TQ13Ug/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKXEG39wgMqoOuW-6F7hCsYXpTve5NHLNBNw';" alt="Bunker Alpha Alfa Vault Code Last Day On Earth Survival Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bunker Alpha Alfa Vault Code Last Day On Earth Survival Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.redd.it/5709w38fxiy51.png" data-lightbox="roadtrip" data-title="I Found Other Bunker Code Maps Cluttered So I Made This One People Seemed To Like It So I Ll Try To Post More Stuff Like This Warzonestrategy Com Warzone">
+											<img class="card-img v-image ads-img " src="https://i.redd.it/5709w38fxiy51.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKHCioR5g0uEjIyMl3NB0EPxV4G4hGMh1ERA';" alt="I Found Other Bunker Code Maps Cluttered So I Made This One People Seemed To Like It So I Ll Try To Post More Stuff Like This Warzonestrategy Com Warzone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Found Other Bunker Code Maps Cluttered So I Made This One People Seemed To Like It So I Ll Try To Post More Stuff Like This Warzonestrategy Com Warzone</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://imgix.bustle.com/uploads/image/2020/12/17/3be8815b-ef87-4aee-b74e-b1e09498d5b1-7cbc6213-6975-4e19-98e4-d975f03d6a5b-1_call-of-duty-warzone-bunker-locations.jpeg?w=1200&amp;h=630&amp;fit=crop&amp;crop=faces&amp;fm=jpg" data-lightbox="roadtrip" data-title="Call Of Duty Warzone Bunker Locations How To Open 13 With Access Cards">
+											<img class="card-img v-image ads-img " src="https://imgix.bustle.com/uploads/image/2020/12/17/3be8815b-ef87-4aee-b74e-b1e09498d5b1-7cbc6213-6975-4e19-98e4-d975f03d6a5b-1_call-of-duty-warzone-bunker-locations.jpeg?w=1200&amp;h=630&amp;fit=crop&amp;crop=faces&amp;fm=jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9GONrMxrEPRJro5iJABwA3jSERkzx4fgobQ';" alt="Call Of Duty Warzone Bunker Locations How To Open 13 With Access Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Call Of Duty Warzone Bunker Locations How To Open 13 With Access Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-charity-picks-up-furniture-donations.html">What Charity Picks Up Furniture Donations</a></li>
+													<li class="list-group-item"><a href="/what-colleges-are-going-online-fall-2020.html">What Colleges Are Going Online Fall 2020</a></li>
+													<li class="list-group-item"><a href="/what-college-did-tommyinnit-go-to.html">What College Did Tommyinnit Go To</a></li>
+													<li class="list-group-item"><a href="/what-college-did-kobe-bryant-go-to-college.html">What College Did Kobe Bryant Go To College</a></li>
+													<li class="list-group-item"><a href="/what-college-to-go-to-to-become-a-lawyer.html">What College To Go To To Become A Lawyer</a></li>
+													<li class="list-group-item"><a href="/what-college-do-you-have-to-go-to-be-a-lawyer.html">What College Do You Have To Go To Be A Lawyer</a></li>
+													<li class="list-group-item"><a href="/what-college-do-you-have-to-go-to-be-a-veterinarian.html">What College Do You Have To Go To Be A Veterinarian</a></li>
+													<li class="list-group-item"><a href="/what-conditions-are-secondary-to-depression.html">What Conditions Are Secondary To Depression</a></li>
+													<li class="list-group-item"><a href="/what-color-is-redken-9gi.html">What Color Is Redken 9gi</a></li>
+													<li class="list-group-item"><a href="/what-college-to-go-to-become-a-plastic-surgeon.html">What College To Go To Become A Plastic Surgeon</a></li>
+													<li class="list-group-item"><a href="/what-college-in-nc-should-i-go-to-quiz.html">What College In Nc Should I Go To Quiz</a></li>
+													<li class="list-group-item"><a href="/what-college-should-i-go-to-quiz-college-board.html">What College Should I Go To Quiz College Board</a></li>
+													<li class="list-group-item"><a href="/what-college-is-best-for-zoology.html">What College Is Best For Zoology</a></li>
+													<li class="list-group-item"><a href="/what-college-in-florida-should-i-go-to-quiz.html">What College In Florida Should I Go To Quiz</a></li>
+													<li class="list-group-item"><a href="/what-college-i-should-go-to-quiz.html">What College I Should Go To Quiz</a></li>
+													<li class="list-group-item"><a href="/what-cities-have-the-national-guard-been-deployed-to.html">What Cities Have The National Guard Been Deployed To</a></li>
+													<li class="list-group-item"><a href="/what-colleges-offer-free-laptops.html">What Colleges Offer Free Laptops</a></li>
+													<li class="list-group-item"><a href="/what-chapter-is-post-911-gi-bill.html">What Chapter Is Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-college-should-i-go-to-in-florida-quiz.html">What College Should I Go To In Florida Quiz</a></li>
+													<li class="list-group-item"><a href="/what-colleges-are-doing-free-applications.html">What Colleges Are Doing Free Applications</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

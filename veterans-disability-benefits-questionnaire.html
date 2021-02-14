@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Disability Benefits Questionnaire - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Disability Benefits Questionnaire",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/11/fa/4b/11fa4b88a79fb56734dbdb532c1525a2.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+disability+benefits+questionnaire",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Disability Benefits Questionnaire</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">These include compensation pensions and grants for veterans with certain service-connected disabilities as well as pensions for some veterans 65 and older and grants for vets with age-related disabilities. Disability Benefits Questionnaires DBQs are forms used by VA physicians when performing CP Exams for VA Disability. Disability Benefits Questionnaire DBQ Forms. <br>				
+			</p>
+										<a class="badge badge-dark" href="/veterans-affairs-department-of-education-phone-number.html">veterans affairs department of education phone number</a>
+											<a class="badge badge-warning" href="/veterans-affairs-medical-questionnaire-billing.html">veterans affairs medical questionnaire billing</a>
+											<a class="badge badge-danger" href="/veterans-administration-medical-records.html">veterans administration medical records</a>
+											<a class="badge badge-primary" href="/veterans-affairs-medical-records-department.html">veterans affairs medical records department</a>
+											<a class="badge badge-dark" href="/veterans-affairs-pay-raise.html">veterans affairs pay raise</a>
+											<a class="badge badge-info" href="/veterans-affairs-100-percent-disability-benefits.html">veterans affairs 100 percent disability benefits</a>
+											<a class="badge badge-light" href="/veterans-administration-records-center-st-louis-missouri.html">veterans administration records center st louis missouri</a>
+											<a class="badge badge-light" href="/veterans-advocacy-servicesorg.html">veterans advocacy servicesorg</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the ideal blog.  Our website gives you hints for seeing the highest quality video and picture content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this video that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/b9/ef/60b9ef61a84f714bb069bda9c56e95b9.png" data-lightbox="roadtrip" data-title="Pin On Va">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/b9/ef/60b9ef61a84f714bb069bda9c56e95b9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7KeMIMSxGlVhu-QHfCZH-JGVTdqEVvQoPcA';" alt="Pin On Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/86/98/5d86983e33de82edb406bb201a439c3c.jpg" data-lightbox="roadtrip" data-title="Sample Disability Letter From Doctor Lovely 5 Disability Denial Appeal Letter Examples Oojes Letter Example Lettering Letter Sample">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/86/98/5d86983e33de82edb406bb201a439c3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPBrIL9T9vOqj34vuFsa1UYCQbpKX1Z_pGCw';" alt="Sample Disability Letter From Doctor Lovely 5 Disability Denial Appeal Letter Examples Oojes Letter Example Lettering Letter Sample">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sample Disability Letter From Doctor Lovely 5 Disability Denial Appeal Letter Examples Oojes Letter Example Lettering Letter Sample</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/06/07/1706079b88b7539ba7f805803a72e27d.jpg" data-lightbox="roadtrip" data-title="Pin By Mark Stevens On Veterans Benefits Veterans Benefits Service Program Legal Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/06/07/1706079b88b7539ba7f805803a72e27d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQTfbYKZpiGXrbna5mTFkzdQAtYap2Gt4x_g';" alt="Pin By Mark Stevens On Veterans Benefits Veterans Benefits Service Program Legal Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Mark Stevens On Veterans Benefits Veterans Benefits Service Program Legal Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a4/4e/2b/a44e2b1926fc255900ba809c269a645a.jpg" data-lightbox="roadtrip" data-title="Top 5 Faq Tdiu Benefits Disability Benefit Benefit Faq">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a4/4e/2b/a44e2b1926fc255900ba809c269a645a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM9Mz4aDjypCr-ewqMQ5S2ms73Ad8rzYgIbA';" alt="Top 5 Faq Tdiu Benefits Disability Benefit Benefit Faq">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 Faq Tdiu Benefits Disability Benefit Benefit Faq</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/4a/6f/0a4a6f19ae03382567e4b2385afcd692.jpg" data-lightbox="roadtrip" data-title="1 Ree Medical Reemedical Twitter Medical Medical Professionals Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/4a/6f/0a4a6f19ae03382567e4b2385afcd692.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPqbfzoAf-aGNoUyVfOzMgJrLd2hqU18G_rg';" alt="1 Ree Medical Reemedical Twitter Medical Medical Professionals Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1 Ree Medical Reemedical Twitter Medical Medical Professionals Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/fa/4b/11fa4b88a79fb56734dbdb532c1525a2.png" data-lightbox="roadtrip" data-title="Pin On Psychology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/fa/4b/11fa4b88a79fb56734dbdb532c1525a2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXUleYBjNIni1xwxj9YhosOVywhb9xoHIX-g';" alt="Pin On Psychology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Psychology</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/47/91/f7/4791f7a444d0a2d930030a4e98d904e2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXUleYBjNIni1xwxj9YhosOVywhb9xoHIX-g';" alt="Pin On Psychology">
+										<div class="card-body">
+						<h3 class="h5"><b>If you are a disabled veteran and are submitting a claim you will want to know about the VA DBQ Disability Benefits Questionnaire Here is a little bit of advice and assistance to help you perfect your claim.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans disability benefits questionnaire</strong>. 
+								
+																	Disability Benefits Questionnaires DBQs are standardized forms that are used by VA clinicians when performing disability examinations or Compensation and Pension CP exams. 
+																	Citing abuse of the system the Department of Veterans Affairs VA has removed Disability Benefits Questionnaires DBQs from its public websites. 
+																	Arthritis and Dysbaric Osteonecrosis DBQ. 
+																	Amyotrophic Lateral Sclerosis DBQ. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DBQs are standardized forms used by clinicians. 
+																	If the veteran currently has one or more mental disorders that conform to DSM-IV criteria provide all diagnoses. 
+																	Originally public facing DBQs were designed to assist Veterans living overseas to obtain medical evidence in support of their benefit claims where limited options were available. 
+																	Visit benefitsvagovcpexam for regular updates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The purpose of a DBQ is to ensure that the physician performing the exam records all the information needed to properly rate a disabled veterans conditions. 
+																	If you need additional help please reach out to us at the contact form in this article. 
+																	To do a quick search hold down the Ctrl key and click on the F key. 
+																	VA physicians use DBQs when performing CP exams for VA disability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Artery and Vein Conditions DBQ. 
+																	You may qualify for VA disability benefits for physical conditions like a chronic illness or injury and mental health conditions like PTSD that. 
+																	The VA discontinued public facing DBQ Disability Benefit Questionnaire forms online. 
+																	The chart below matches the Disability Benefits Questionnaires DBQs to medical conditions or symptoms to the corresponding Disability Benefits Questionnaire DBQs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA disability compensation pay offers a monthly tax-free payment to Veterans who got sick or injured while serving in the military and to Veterans whose service made an existing condition worse. 
+																	NAME OF PATIENTVETERAN PATIENTVETERANS SOCIAL SECURITY NUMBER. 
+																	Why rely on an inadequate CP exam for your disability claim. 
+																	VBA has discontinued the use of public facing Disability Benefits Questionnaires DBQs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Disability Benefits Questionnaires DBQs are downloadable forms created for veterans use in the evaluation process for VA disability benefits. 
+																	The purpose of a DBQ is to ensure that the physician performing the exam records all the information needed for VA to properly rate a disabled veterans conditions. 
+																	DOES THE VETERAN NOW HAVE OR HAS HE OR SHE EVER BEEN DIAGNOSED WITH A MENTAL DISORDERS. 
+																	Enter your search in the text box and click next. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA now uses more than 80 different DBQs with standardized language and check boxes to streamline the information intake process and ensure timely and accurate ratings decisions. 
+																	We believe this to be a great disservice to all Veterans. 
+																	Veterans Disability Benefits Learn about types of benefits available to some veterans with disabilities. 
+																	VA has partnered with specialized contract examiners to resume in-person Compensation Pension CP exams related to disability benefits at their designated contract facilities and not at VA medical facilities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Specifically DBQs are intended to speed up the processing of claims for service-connected compensation and give veterans more control over the disability claims process. 
+																	Disability Benefits Questionnaires DBQs are medical examination forms used to obtain important information for evaluating disability compensation andor pension claims. 
+																	Download your own DBQ form s now for your private doctor to complete. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/c2/df/2cc2df88d4ce2802144d6edb5d0be29f.png" data-lightbox="roadtrip" data-title="Pin On Https Veteranappeal Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/c2/df/2cc2df88d4ce2802144d6edb5d0be29f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd73GMbcbheVnCpHRgnYLXfEfTfWDRzrP0mw';" alt="Pin On Https Veteranappeal Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Https Veteranappeal Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4b/93/dc/4b93dc9cb2bface28daffe974bbd1957.jpg" data-lightbox="roadtrip" data-title="Sedentary Employment Doctrine Employment Sedentary Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4b/93/dc/4b93dc9cb2bface28daffe974bbd1957.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7f5V6zF2AHA9kIxfGBLDqRU-WPpwkoW-Bw';" alt="Sedentary Employment Doctrine Employment Sedentary Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sedentary Employment Doctrine Employment Sedentary Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/46/93/23/4693235a84931991e6c8c829808fda0e.jpg" data-lightbox="roadtrip" data-title="Veterans Disability Vs Social Security Disability The Bishop Law Firm Social Security Disability Social Security Disability Benefits Social Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/46/93/23/4693235a84931991e6c8c829808fda0e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNvZtwQL1wvuA9qP2ycifUIgdqeimkQQ1LAw';" alt="Veterans Disability Vs Social Security Disability The Bishop Law Firm Social Security Disability Social Security Disability Benefits Social Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Disability Vs Social Security Disability The Bishop Law Firm Social Security Disability Social Security Disability Benefits Social Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6b/9e/f1/6b9ef145ab530033666ff78a8b076e84.jpg" data-lightbox="roadtrip" data-title="Pin On Sample Editable Letter Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6b/9e/f1/6b9ef145ab530033666ff78a8b076e84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUxHf5zPvBHOWVAR6N5RKvjXpW8EQKb6cOwA';" alt="Pin On Sample Editable Letter Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sample Editable Letter Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/52/f5/cb52f56a5e3e5e0044faf5d8a210cd37.png" data-lightbox="roadtrip" data-title="Pin On Disability Resources">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/52/f5/cb52f56a5e3e5e0044faf5d8a210cd37.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTY_8K8rnANY8F5mZJ-bzYt1OYFY4ZKQtxIg';" alt="Pin On Disability Resources">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Disability Resources</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/26/eb/e9/26ebe9c9a8619712425876340ab44717.jpg" data-lightbox="roadtrip" data-title="If Your Spouse Was A Veteran Their Service To The Country Entitles You Both To Some Benefits That Can Hel Disabled Veterans Benefits Veteran Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/26/eb/e9/26ebe9c9a8619712425876340ab44717.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5XDRKQY1ZiOgAtT1FrOKKJJbiJLYxT52zVg';" alt="If Your Spouse Was A Veteran Their Service To The Country Entitles You Both To Some Benefits That Can Hel Disabled Veterans Benefits Veteran Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If Your Spouse Was A Veteran Their Service To The Country Entitles You Both To Some Benefits That Can Hel Disabled Veterans Benefits Veteran Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/5e/11/575e11956aeeac1e536ab56388e2e52b.jpg" data-lightbox="roadtrip" data-title="12 Things You Most Likely Didnt Know About Can I Draw On My Husbands Social S In 2020 Social Security Disability Benefits Disability Benefit Social Security Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/5e/11/575e11956aeeac1e536ab56388e2e52b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMjSbOwMJcFxffsYOEkq4vUSMXpeLUHu3Rqw';" alt="12 Things You Most Likely Didnt Know About Can I Draw On My Husbands Social S In 2020 Social Security Disability Benefits Disability Benefit Social Security Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Things You Most Likely Didnt Know About Can I Draw On My Husbands Social S In 2020 Social Security Disability Benefits Disability Benefit Social Security Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/99/a2/2399a208c967b61c3708115403787e34.jpg" data-lightbox="roadtrip" data-title="Reinforcement Survey Questionnaire Special Education Teacher Social Behavior Special Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/99/a2/2399a208c967b61c3708115403787e34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTftbgyPVu1_nzbAKohW8JGnR-VmBojkop6zg';" alt="Reinforcement Survey Questionnaire Special Education Teacher Social Behavior Special Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reinforcement Survey Questionnaire Special Education Teacher Social Behavior Special Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/d3/97/1dd3978dc946433b4f51011c3cf9d90c.png" data-lightbox="roadtrip" data-title="Va Benefit Eligibility Matrix Benefit Matrix Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/d3/97/1dd3978dc946433b4f51011c3cf9d90c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6oGHAZBX_7opcS15oo7-U7r9939cSGzZSg';" alt="Va Benefit Eligibility Matrix Benefit Matrix Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Benefit Eligibility Matrix Benefit Matrix Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/59/9a/58599ac7e9fbff9efa7dedc75b3ef3d7.jpg" data-lightbox="roadtrip" data-title="Job Application Form Sample Format Inspirational 8 Job Application Form Samples Employment Application Job Application Template Job Application Letter Format">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/59/9a/58599ac7e9fbff9efa7dedc75b3ef3d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS78_Ww6BvieM1w-E58x2zZL0-FLmYyb__cGA';" alt="Job Application Form Sample Format Inspirational 8 Job Application Form Samples Employment Application Job Application Template Job Application Letter Format">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Job Application Form Sample Format Inspirational 8 Job Application Form Samples Employment Application Job Application Template Job Application Letter Format</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/62/95/b46295df40be1289802a869d0e2984ea.jpg" data-lightbox="roadtrip" data-title="Unemployment Letter Sample Elegant 12 13 Proof Unemployment Letter Sample Letter Example Lettering Letter Sample">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/62/95/b46295df40be1289802a869d0e2984ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxeXDvnTAd2RPSBpXR4Onji1tPn16ws2TWUA';" alt="Unemployment Letter Sample Elegant 12 13 Proof Unemployment Letter Sample Letter Example Lettering Letter Sample">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Letter Sample Elegant 12 13 Proof Unemployment Letter Sample Letter Example Lettering Letter Sample</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/91/f7/4791f7a444d0a2d930030a4e98d904e2.png" data-lightbox="roadtrip" data-title="What Our Alumni Say Wounded Warrior Project Veteran Facts Wounded Warrior Project">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/91/f7/4791f7a444d0a2d930030a4e98d904e2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw8Q97wlA8ytyYWbSnkTJZMqFcB0_1tv_SWA';" alt="What Our Alumni Say Wounded Warrior Project Veteran Facts Wounded Warrior Project">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Our Alumni Say Wounded Warrior Project Veteran Facts Wounded Warrior Project</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/a1/39/9fa1395b95dc213daec80fbfcc81665d.jpg" data-lightbox="roadtrip" data-title="Free Employee Application Form Employment Application Application Form Printable Job Applications">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/a1/39/9fa1395b95dc213daec80fbfcc81665d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14H8ObSw94DEPxe5KXVKmXD2r7ls51LUVyQ';" alt="Free Employee Application Form Employment Application Application Form Printable Job Applications">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Employee Application Form Employment Application Application Form Printable Job Applications</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/93/76/78/93767854c957d77eda4ae8f69291f475.jpg" data-lightbox="roadtrip" data-title="Pin On College Scholarship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/93/76/78/93767854c957d77eda4ae8f69291f475.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsuZGqVhNVGkS_LlWVEM_x5pAyM3y95mVZ_w';" alt="Pin On College Scholarship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College Scholarship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/a3/87/69a387f1120f71c2b7dd465f9942456d.jpg" data-lightbox="roadtrip" data-title="Pin By Ken Ule On All American Veterans Day Quotes Happy Veterans Day Quotes Veterans Day Thank You">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/a3/87/69a387f1120f71c2b7dd465f9942456d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW5dPeA0AJ3c5ZyNmp2gHuLq2V74wdJtBgwQ';" alt="Pin By Ken Ule On All American Veterans Day Quotes Happy Veterans Day Quotes Veterans Day Thank You">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ken Ule On All American Veterans Day Quotes Happy Veterans Day Quotes Veterans Day Thank You</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-affairs-employee-discounts.html">Veterans Affairs Employee Discounts</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-fully-developed-claim.html">Veterans Affairs Fully Developed Claim</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-education-department.html">Veterans Affairs Education Department</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-medical-records-request.html">Veterans Administration Medical Records Request</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-comp-and-pen.html">Veterans Affairs Comp And Pen</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-records.html">Veterans Administration Records</a></li>
+													<li class="list-group-item"><a href="/veterans-advocates-near-me.html">Veterans Advocates Near Me</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-records-center-st-louis-missouri.html">Veterans Administration Records Center St Louis Missouri</a></li>
+													<li class="list-group-item"><a href="/veterans-advocacy-organizations.html">Veterans Advocacy Organizations</a></li>
+													<li class="list-group-item"><a href="/veterans-advocate-las-vegas.html">Veterans Advocate Las Vegas</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-educational-benefits-contact-number.html">Veterans Affairs Educational Benefits Contact Number</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-canada-archives.html">Veterans Affairs Canada Archives</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-medical-records-jobs.html">Veterans Affairs Medical Records Jobs</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-pay-period-calendar-2020.html">Veterans Affairs Pay Period Calendar 2020</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-disability-pay-2020.html">Veterans Affairs Disability Pay 2020</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-education-benefits-office.html">Veterans Affairs Education Benefits Office</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-immunization-records.html">Veterans Affairs Immunization Records</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-education-benefits-phone-number.html">Veterans Affairs Education Benefits Phone Number</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-canada-education-assistance-program.html">Veterans Affairs Canada Education Assistance Program</a></li>
+													<li class="list-group-item"><a href="/veterans-affairs-compensation-and-pension.html">Veterans Affairs Compensation And Pension</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

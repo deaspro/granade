@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Surviving Spouse Benefits Home Loan - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Surviving Spouse Benefits Home Loan",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/21/19/32/211932ad1e001451a6dab155b025f07b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+surviving+spouse+benefits+home+loan",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Surviving Spouse Benefits Home Loan</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In some cases surviving spouses who remarry on or after age 57 may have eligibility DO NOT complete this form if requesting restoration of previously used home loan benefit entitlement. The easiest way for you to obtain a COE is. Were here Monday through Friday 800 am. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/what-is-a-crisis-hotline-for.html">what is a crisis hotline for</a>
+											<a class="badge badge-dark" href="/what-is-a-divorced-military-spouse-entitled-to.html">what is a divorced military spouse entitled to</a>
+											<a class="badge badge-danger" href="/what-is-a-commandant-in-the-irish-army.html">what is a commandant in the irish army</a>
+											<a class="badge badge-dark" href="/what-is-40-percent-va-disability.html">what is 40 percent va disability</a>
+											<a class="badge badge-success" href="/what-is-a-dod-id-card.html">what is a dod id card</a>
+											<a class="badge badge-dark" href="/what-is-a-military-dependent-id-card.html">what is a military dependent id card</a>
+											<a class="badge badge-primary" href="/what-is-90-percent-va-disability.html">what is 90 percent va disability</a>
+											<a class="badge badge-info" href="/what-is-50-percent-va-disability.html">what is 50 percent va disability</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the ideal blog.  Our website provides you with hints for seeing the maximum quality video and image content, search and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f5/b5/ac/f5b5ac680d828903ced3798260fba05b--military-veterans-military-service.jpg" data-lightbox="roadtrip" data-title="Surviving Spouse Benefit Survival Va Loan Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f5/b5/ac/f5b5ac680d828903ced3798260fba05b--military-veterans-military-service.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHq8BqL1CCHj3BgOmQlzta3hnCg-SOGnh0A';" alt="Surviving Spouse Benefit Survival Va Loan Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Surviving Spouse Benefit Survival Va Loan Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/8e/78/9e8e784308927df79228b5e73d7c39fd.jpg" data-lightbox="roadtrip" data-title="Loan Program Preview Va Home Loans For Servicemembers Veterans And Surviving Spouses Home Loans Loan Same Day Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/8e/78/9e8e784308927df79228b5e73d7c39fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzH1FX8yj5-tl-LBF8d5H9nlSv7jnHjX7jRg';" alt="Loan Program Preview Va Home Loans For Servicemembers Veterans And Surviving Spouses Home Loans Loan Same Day Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Loan Program Preview Va Home Loans For Servicemembers Veterans And Surviving Spouses Home Loans Loan Same Day Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/8b/38/808b38bd75ce88a7eb1ca8624dbc3fcf.jpg" data-lightbox="roadtrip" data-title="Va Loan Millionaire Mindset Guaranteed Loan Home Buying">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/8b/38/808b38bd75ce88a7eb1ca8624dbc3fcf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToG4J4RgSvHZkpxfdV-UzvkaHjtb0p1fMtNQ';" alt="Va Loan Millionaire Mindset Guaranteed Loan Home Buying">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loan Millionaire Mindset Guaranteed Loan Home Buying</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7c/1a/4a/7c1a4a7ff262b2cded66ca26b891e4cc.jpg" data-lightbox="roadtrip" data-title="Va Loan Requirements Va Loan Va Loan Tips And Information Valoan Va Valoans Va Loan Requirements Va Mortgage Loans Va Mortgages Refinance Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7c/1a/4a/7c1a4a7ff262b2cded66ca26b891e4cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFfps-epunDxvuB2ZU9NbDus1qrIdaBvNwPg';" alt="Va Loan Requirements Va Loan Va Loan Tips And Information Valoan Va Valoans Va Loan Requirements Va Mortgage Loans Va Mortgages Refinance Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loan Requirements Va Loan Va Loan Tips And Information Valoan Va Valoans Va Loan Requirements Va Mortgage Loans Va Mortgages Refinance Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/32/62/e132622694827023a1f4576e4ba059cc.jpg" data-lightbox="roadtrip" data-title="Va Guaranteed Home Loan Webinar Mortgage Loans Mortgage Lenders Payday Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/32/62/e132622694827023a1f4576e4ba059cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz9uyhocSMjG40R6I2ZnON0mEW7_kyenyqVQ';" alt="Va Guaranteed Home Loan Webinar Mortgage Loans Mortgage Lenders Payday Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Guaranteed Home Loan Webinar Mortgage Loans Mortgage Lenders Payday Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/de/a4/6edea40f14d1bce4019cdb43cec0ad7f.png" data-lightbox="roadtrip" data-title="Get A Va Home Loan In 5 Steps Home Loans Home Financing Refinance Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/de/a4/6edea40f14d1bce4019cdb43cec0ad7f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-hHeEn1cn4Je8Ff33d4PsT2cT3xakrTJHjg';" alt="Get A Va Home Loan In 5 Steps Home Loans Home Financing Refinance Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get A Va Home Loan In 5 Steps Home Loans Home Financing Refinance Loans</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/2d/3e/3b/2d3e3bc3ac611020832db073bd9b7813.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-hHeEn1cn4Je8Ff33d4PsT2cT3xakrTJHjg';" alt="Get A Va Home Loan In 5 Steps Home Loans Home Financing Refinance Loans">
+										<div class="card-body">
+						<h3 class="h5"><b>Unfortunately many women are unaware that they are eligible for this benefit.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va surviving spouse benefits home loan</strong>. 
+								
+																	VA Home Loans are a great benefit to qualified eligible veterans. 
+																	A VA loan is a mortgage guaranteed by the US. 
+																	VA loans are one of the most popular choices among eligible first-time home buyers because of the exceptional benefits they offer military borrowers including lower rates than most traditional banks. 
+																	If you have any questions about your eligibility for a VA home loan please call your VA regional loan center at 877-827-3702. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Well have to deny applications we received after December 15 2004 from surviving spouses who remarried before December 16 2003. 
+																	One of the most important military benefits aside from the GI Bill is the VA home loan program. 
+																	In these cases the surviving spouse can use VA loan eligibility to buy a home with zero down payment just as the veteran would have. 
+																	Include veterans and surviving spouses social security number on the 26-1817 form. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The rate is increased for each dependent child and also if the surviving spouse is housebound or in need of aid and attendance. 
+																	VA Pension Benefits for Widows of Wartime Veterans. 
+																	Borrowers who have used their VA home loan benefits before will have a code on their COE in this section indicating that a higher VA Loan Funding Fee is required for subsequent use for example. 
+																	VA also adds a transitional benefit of 332 to the surviving spouses monthly DIC if there are children under age 18. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Use this VA Home Loan guide to navigate the mortgage process to your dream home. 
+																	As part of our mission to serve you we provide a home loan guaranty benefit and other housing-related programs to help you buy build repair retain or adapt a home for your own personal occupancy. 
+																	A surviving spouse who remarried before December 16 2003 and on or after their 57th birthday must have applied no later than December 15 2004 to establish home loan eligibility. 
+																	Complete this form if applying for home loan benefits as an unmarried surviving spouse of a veteran whose death was service-connected. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Due to utilization of all available funding for the VET TEC Program VA cannot support training for new participants until October 1 2021 or additional funding is secured. 
+																	In order to qualify for a VA backed loan you must obtain a Certificate of Eligibility COE from VA that verifies you or your spouses military service. 
+																	Were here Monday through Friday 800 am. 
+																	VA loan benefits for surviving spouses These spouses have an. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA will guaranty loans up to 100 of the value of your home. 
+																	The VAs home loan limits also apply to eligible surviving military spouses. 
+																	A surviving spouse who remarries on or after age 57 and on or after December 16 2003 may be eligible for the home loan benefit. 
+																	VA Home Loan Limits At the time of publication the VAs double-layered mortgage guaranty was 36000 and 68250 for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To refinance a non-VA loan into a VA loan. 
+																	The basic monthly rate of DIC is 1340 for an eligible surviving spouse. 
+																	Widows of wartime veterans or surviving spouses of deceased wartime veterans may be eligible for a benefit from the Department of Veterans Affairs VA known as Survivors Pension with Aid and Attendance. 
+																	VA helps Servicemembers Veterans and eligible surviving spouses become homeowners. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However a surviving spouse who remarried before December 16 2003 and on or after age 57 must have applied no later than December 15 2004 to establish eligibility. 
+																	VET TEC a pilot program offering training for high-tech careers to Veterans is now taking applications from potential training providers. 
+																	VA home loans can be used to refinance an existing mortgage with either the IRRRL Streamline Refinance or a cash out refinance. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/80/8b/78808b9c3b0334f559261feb17866bca.png" data-lightbox="roadtrip" data-title="Infographic For Va Home Loan Benefits Infographic Home Loans Free Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/80/8b/78808b9c3b0334f559261feb17866bca.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4mfNjbFTmv1dzMoy0V8BqJIolIbLvyTLiOg';" alt="Infographic For Va Home Loan Benefits Infographic Home Loans Free Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic For Va Home Loan Benefits Infographic Home Loans Free Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/7c/b8/557cb87e409433926468af02d20f77f0.png" data-lightbox="roadtrip" data-title="Military Spouses Can Make A Big Impact On Their Service Member S Va Loan Application By Following These 5 Steps Va Mortgages Va Loan Refinance Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/7c/b8/557cb87e409433926468af02d20f77f0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTezLvuNz67G1FvKBTgAeX-Q3flNVAhjsvQrw';" alt="Military Spouses Can Make A Big Impact On Their Service Member S Va Loan Application By Following These 5 Steps Va Mortgages Va Loan Refinance Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouses Can Make A Big Impact On Their Service Member S Va Loan Application By Following These 5 Steps Va Mortgages Va Loan Refinance Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/8e/82/2d8e82ae78b0f392ce6dcae009aad804.png" data-lightbox="roadtrip" data-title="Va Mortgage Refinance Kentucky Va Mortgage Loans Va Mortgages Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/8e/82/2d8e82ae78b0f392ce6dcae009aad804.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYL5QjBDDAYExezsiSJdRnImoXkwuPOwuAAA';" alt="Va Mortgage Refinance Kentucky Va Mortgage Loans Va Mortgages Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Mortgage Refinance Kentucky Va Mortgage Loans Va Mortgages Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/3e/3b/2d3e3bc3ac611020832db073bd9b7813.png" data-lightbox="roadtrip" data-title="Kentucky Va Mortgage Loan Information Va Mortgage Loans Refinance Loans Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/3e/3b/2d3e3bc3ac611020832db073bd9b7813.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcE7BcD16wPAO9MmZjmC1U4lSYgUi9Lm7IWQ';" alt="Kentucky Va Mortgage Loan Information Va Mortgage Loans Refinance Loans Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Va Mortgage Loan Information Va Mortgage Loans Refinance Loans Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/21/19/32/211932ad1e001451a6dab155b025f07b.jpg" data-lightbox="roadtrip" data-title="So In Each And Every Circumstance An Unsecured Loan For House Improvement Is Actually A More Disciplined Refinance Mortgage Va Mortgages Home Improvement Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/21/19/32/211932ad1e001451a6dab155b025f07b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyVizcMmdt6Rk7-NNQ7H9tSgxdBTNJCAAMlw';" alt="So In Each And Every Circumstance An Unsecured Loan For House Improvement Is Actually A More Disciplined Refinance Mortgage Va Mortgages Home Improvement Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">So In Each And Every Circumstance An Unsecured Loan For House Improvement Is Actually A More Disciplined Refinance Mortgage Va Mortgages Home Improvement Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a7/f6/9a/a7f69a89458c1478a638273788fc50fe.jpg" data-lightbox="roadtrip" data-title="Important Tips For Your First Va Loan Va Mortage Home Loan Watch This Before Applying Va Mort Department Of Veterans Affairs Va Mortgage Loans Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a7/f6/9a/a7f69a89458c1478a638273788fc50fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaQVKA-ZEOui3qAEcxtZEiW59ObqqRHoBuXA';" alt="Important Tips For Your First Va Loan Va Mortage Home Loan Watch This Before Applying Va Mort Department Of Veterans Affairs Va Mortgage Loans Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Important Tips For Your First Va Loan Va Mortage Home Loan Watch This Before Applying Va Mort Department Of Veterans Affairs Va Mortgage Loans Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/db/70/e8db70fea421c0532cc12acc2a41f5bd.jpg" data-lightbox="roadtrip" data-title="Considering Taking Advantage Of Your Va Loan Benefits Willow Bend Mortgage Offers Va Home Loans Fin Resume Design Creative Va Loan Human Resources Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/db/70/e8db70fea421c0532cc12acc2a41f5bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj6S74HqUS__nJFxjjYWwgpuDLrqWD72MhXA';" alt="Considering Taking Advantage Of Your Va Loan Benefits Willow Bend Mortgage Offers Va Home Loans Fin Resume Design Creative Va Loan Human Resources Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Considering Taking Advantage Of Your Va Loan Benefits Willow Bend Mortgage Offers Va Home Loans Fin Resume Design Creative Va Loan Human Resources Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/46/4c/61464cffcb21012174a69cc867e13fcf.png" data-lightbox="roadtrip" data-title="Va Home Loans Advantages Eligibility Loan Limits Rates Compare Mortgages Va Mortgages Va Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/46/4c/61464cffcb21012174a69cc867e13fcf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP3tZZRTJgxbLFgVUlRlX91qful43xbDR29A';" alt="Va Home Loans Advantages Eligibility Loan Limits Rates Compare Mortgages Va Mortgages Va Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Home Loans Advantages Eligibility Loan Limits Rates Compare Mortgages Va Mortgages Va Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ed/a9/c2/eda9c25f8dee02473f2603fab84bd0d5.jpg" data-lightbox="roadtrip" data-title="Louisville Kentucky Va Home Loan Mortgage Lender Kentucky Va Facts Va Mortgages Va Mortgage Loans Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ed/a9/c2/eda9c25f8dee02473f2603fab84bd0d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnJR58vqDb8nS9VtKxdyV3n74-SV6qXOyGeA';" alt="Louisville Kentucky Va Home Loan Mortgage Lender Kentucky Va Facts Va Mortgages Va Mortgage Loans Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Louisville Kentucky Va Home Loan Mortgage Lender Kentucky Va Facts Va Mortgages Va Mortgage Loans Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2f/3c/d7/2f3cd78c8f19f71102a081b1d37b5523.jpg" data-lightbox="roadtrip" data-title="There Are Additional Va Home Loan Benefits For Qualifying Disabled Veterans Like Property Tax Exemptions Disabled Veterans Disabled Veterans Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2f/3c/d7/2f3cd78c8f19f71102a081b1d37b5523.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQt9xSEOBigQzAqaLQQkDQIMPm8fs8serkQ';" alt="There Are Additional Va Home Loan Benefits For Qualifying Disabled Veterans Like Property Tax Exemptions Disabled Veterans Disabled Veterans Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Are Additional Va Home Loan Benefits For Qualifying Disabled Veterans Like Property Tax Exemptions Disabled Veterans Disabled Veterans Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/d3/2a/15d32a11f7a9476da5c764214dc7988d.png" data-lightbox="roadtrip" data-title="Veterans Do You Know If You Qualify For A Va Loan Freedommortgage Mortgage Homeloan Newhome Mortgage Infographic Mortgage Marketing Refinancing Mortgage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/d3/2a/15d32a11f7a9476da5c764214dc7988d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4R57fGdFjdcUIbEIM9QjUS50dPEjLIoHrA';" alt="Veterans Do You Know If You Qualify For A Va Loan Freedommortgage Mortgage Homeloan Newhome Mortgage Infographic Mortgage Marketing Refinancing Mortgage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Do You Know If You Qualify For A Va Loan Freedommortgage Mortgage Homeloan Newhome Mortgage Infographic Mortgage Marketing Refinancing Mortgage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/39/b0/8539b04ef8db9054aac8f5e0a47339d1.jpg" data-lightbox="roadtrip" data-title="Ohio Real Estate Guys Google Home Loans Home Equity Loan Home Improvement Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/39/b0/8539b04ef8db9054aac8f5e0a47339d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd959yXd49nHmNvpVAnglaz0yoWhaff8PSig';" alt="Ohio Real Estate Guys Google Home Loans Home Equity Loan Home Improvement Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ohio Real Estate Guys Google Home Loans Home Equity Loan Home Improvement Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/12/17/0a/12170a59c11de461c2562c07479b5767.jpg" data-lightbox="roadtrip" data-title="Va Home Loan Benefits Give Eligible Borrowers Access To Mortgages With Advantage Va Home Loan Watch This Before Applying Va Home Loans Va Mortgages Va Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/12/17/0a/12170a59c11de461c2562c07479b5767.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTej-9HhFMGj3zfLSI2lIVXgzQiklCWjHOCcQ';" alt="Va Home Loan Benefits Give Eligible Borrowers Access To Mortgages With Advantage Va Home Loan Watch This Before Applying Va Home Loans Va Mortgages Va Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Home Loan Benefits Give Eligible Borrowers Access To Mortgages With Advantage Va Home Loan Watch This Before Applying Va Home Loans Va Mortgages Va Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/af/6e/d1af6e9c78bd133b72b2aa65acb1c42d.png" data-lightbox="roadtrip" data-title="Kentucky Va Mortgage Loan Guide For Foreclosures Bankruptcy And Short Sales Or Deed In Lieu Va Mortgage Loans Va Mortgages Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/af/6e/d1af6e9c78bd133b72b2aa65acb1c42d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCmbzZS0LjnQ9P1wBEvfHl-3UTDNrJwbYCqg';" alt="Kentucky Va Mortgage Loan Guide For Foreclosures Bankruptcy And Short Sales Or Deed In Lieu Va Mortgage Loans Va Mortgages Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Va Mortgage Loan Guide For Foreclosures Bankruptcy And Short Sales Or Deed In Lieu Va Mortgage Loans Va Mortgages Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/b6/5b/99/b65b9943f61dd89f60becf38b9af27ce.jpg" data-lightbox="roadtrip" data-title="A Va Loan Is A Mortgage Loan Available Through A Program Established By The United Claims Department Of Veterans Affairs Va Loan Home Equity Loan Home Equity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/b6/5b/99/b65b9943f61dd89f60becf38b9af27ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO0oFjcbnetp-MnGzUi-bx5LG0zAg8IzShVw';" alt="A Va Loan Is A Mortgage Loan Available Through A Program Established By The United Claims Department Of Veterans Affairs Va Loan Home Equity Loan Home Equity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Va Loan Is A Mortgage Loan Available Through A Program Established By The United Claims Department Of Veterans Affairs Va Loan Home Equity Loan Home Equity</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-service-connected-tinnitus.html">Va Service Connected Tinnitus</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-for-sleep-apnea.html">Va Service Connected For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-matrix.html">Va Service Connected Matrix</a></li>
+													<li class="list-group-item"><a href="/va-sleep-apnea-service-connected.html">Va Sleep Apnea Service Connected</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-for-back-pain.html">Va Service Connected For Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-unemployability.html">Va Service Connected Disability Unemployability</a></li>
+													<li class="list-group-item"><a href="/va-sleep-apnea-compensation-chart.html">Va Sleep Apnea Compensation Chart</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-rating-chart.html">Va Service Connected Disability Rating Chart</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-hearing-test.html">Va Service Connected Hearing Test</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-narcolepsy.html">Va Service Connected Narcolepsy</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-id.html">Va Service Connected Id</a></li>
+													<li class="list-group-item"><a href="/va-sleep-apnea-claim-process.html">Va Sleep Apnea Claim Process</a></li>
+													<li class="list-group-item"><a href="/va-service-connection-increase.html">Va Service Connection Increase</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-pay-chart.html">Va Service Connected Disability Pay Chart</a></li>
+													<li class="list-group-item"><a href="/va-service-disabled-veterans-insurance.html">Va Service Disabled Veterans Insurance</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-pay-schedule-2019.html">Va Service Connected Pay Schedule 2019</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-rates.html">Va Service Connected Disability Rates</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-pay-chart.html">Va Service Connected Pay Chart</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-emphysema.html">Va Service Connected Emphysema</a></li>
+													<li class="list-group-item"><a href="/va-service-connection-for-menieres-disease.html">Va Service Connection For Menieres Disease</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does Qtc Stand For Va - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does Qtc Stand For Va",
+  "datePublished": "2021-02-14",
+  "image": "https://www.qtcm.com/wp-content/uploads/2017/07/careers_banner_zoomed_out.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+qtc+stand+for+va",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does Qtc Stand For Va</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Quality Time and Costs. What does QTC stand for in Medical. Quimica Teorica Computacional Spanish. <br>				
+			</p>
+										<a class="badge badge-primary" href="/what-are-the-requirements-to-be-a-flight-nurse.html">what are the requirements to be a flight nurse</a>
+											<a class="badge badge-secondary" href="/what-are-the-requirements-for-the-army-physical-fitness-test.html">what are the requirements for the army physical fitness test</a>
+											<a class="badge badge-danger" href="/what-are-va-presumptive-conditions.html">what are va presumptive conditions</a>
+											<a class="badge badge-light" href="/what-are-the-signs-of-a-selfish-husband.html">what are the signs of a selfish husband</a>
+											<a class="badge badge-info" href="/what-are-the-ranks-in-the-military-in-order.html">what are the ranks in the military in order</a>
+											<a class="badge badge-success" href="/what-are-the-quiet-hours.html">what are the quiet hours</a>
+											<a class="badge badge-light" href="/what-are-va-chapter-benefits.html">what are va chapter benefits</a>
+											<a class="badge badge-success" href="/what-are-the-rankings-for-womens-college-basketball.html">what are the rankings for womens college basketball</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the ideal site.  Our site gives you suggestions for viewing the highest quality video and image content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this video for you to see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.qtcm.com/wp-content/uploads/2018/12/QTC-VBA-Contract-Award.jpg" data-lightbox="roadtrip" data-title="Qtc Awarded Contract By U S Dept Of Veteran Affairs Qtc">
+											<img class="card-img v-image ads-img " src="https://www.qtcm.com/wp-content/uploads/2018/12/QTC-VBA-Contract-Award.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHRg9PyR1GB-s5yyUMOWmzqHrP0EhsEAGuGQ&amp;ec=45768318';" alt="Qtc Awarded Contract By U S Dept Of Veteran Affairs Qtc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qtc Awarded Contract By U S Dept Of Veteran Affairs Qtc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.disabledveterans.org/wp-content/uploads/2017/08/170808-QTC-Medical-Services-1024x584.jpg" data-lightbox="roadtrip" data-title="Qtc Wins 6 8 Billion Contract Or Did Va Just Award Itself A Contract">
+											<img class="card-img v-image ads-img " src="https://www.disabledveterans.org/wp-content/uploads/2017/08/170808-QTC-Medical-Services-1024x584.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh5qf7LU998TeznbSSxYeWS9gojV9uMpn8xA&amp;ec=45768318';" alt="Qtc Wins 6 8 Billion Contract Or Did Va Just Award Itself A Contract">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qtc Wins 6 8 Billion Contract Or Did Va Just Award Itself A Contract</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.qtcm.com/wp-content/uploads/2017/09/va_pr-image.jpg" data-lightbox="roadtrip" data-title="Qtc Medical Services Awarded Contract By U S Dept Of V A Qtc">
+											<img class="card-img v-image ads-img " src="https://www.qtcm.com/wp-content/uploads/2017/09/va_pr-image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_jjg4LEXRTC581sJut_D-2H6kkKzfCKm3rA&amp;ec=45768318';" alt="Qtc Medical Services Awarded Contract By U S Dept Of V A Qtc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qtc Medical Services Awarded Contract By U S Dept Of V A Qtc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.researchgate.net/profile/Shmuel_Gottlieb/publication/19818445/figure/tbl2/AS:601691007250432@1520465723002/QT-QTc-potassium-and-magnesium-levels-before-and-after-magnesium-therapy-of-TdP.png" data-lightbox="roadtrip" data-title="Qt Qtc Potassium And Magnesium Levels Before And After Magnesium Download Table">
+											<img class="card-img v-image ads-img " src="https://www.researchgate.net/profile/Shmuel_Gottlieb/publication/19818445/figure/tbl2/AS:601691007250432@1520465723002/QT-QTc-potassium-and-magnesium-levels-before-and-after-magnesium-therapy-of-TdP.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvsjZAsy3SVOd5eQNoh2aJlYayu-TAlfc5dQ&amp;ec=45768318';" alt="Qt Qtc Potassium And Magnesium Levels Before And After Magnesium Download Table">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qt Qtc Potassium And Magnesium Levels Before And After Magnesium Download Table</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.researchgate.net/profile/Johannes_Struijk/publication/49754882/figure/fig4/AS:202652458721289@1425327519136/Difference-between-QTc-corrected-by-Bazetts-QTcB-and-Fridericias-QTcF-formulas-The.png" data-lightbox="roadtrip" data-title="Difference Between Qtc Corrected By Bazett S Qtcb And Fridericia S Download Scientific Diagram">
+											<img class="card-img v-image ads-img " src="https://www.researchgate.net/profile/Johannes_Struijk/publication/49754882/figure/fig4/AS:202652458721289@1425327519136/Difference-between-QTc-corrected-by-Bazetts-QTcB-and-Fridericias-QTcF-formulas-The.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4O1VR3HiqNFa1y1bEeDuK9aejDthtxKYnWg&amp;ec=45768318';" alt="Difference Between Qtc Corrected By Bazett S Qtcb And Fridericia S Download Scientific Diagram">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Difference Between Qtc Corrected By Bazett S Qtcb And Fridericia S Download Scientific Diagram</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/97a7f70e60cdca9c232b59f4ee860b6a6da9d717-498x405.png?auto=format" data-lightbox="roadtrip" data-title="Qt Prolongation And Antidepressants Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/97a7f70e60cdca9c232b59f4ee860b6a6da9d717-498x405.png?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0eDibbGB1GTb4FjUdzXiUU13UjcwXCuqhjQ&amp;ec=45768318';" alt="Qt Prolongation And Antidepressants Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qt Prolongation And Antidepressants Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://blog.clearedjobs.net/wp-content/uploads/2019/11/QTCMedGroup-300x226.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0eDibbGB1GTb4FjUdzXiUU13UjcwXCuqhjQ&amp;ec=45768318';" alt="Qt Prolongation And Antidepressants Psychiatric Times">
+										<div class="card-body">
+						<h3 class="h5"><b>Much like the Department of Defense DOD the United States Department of Veterans Affairs VA uses many acronyms in the handling of claims and appeals for VA benefits.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does qtc stand for va</strong>. 
+								
+																	QTC is a sort of subcontractor that VA uses to make some of the claim exams for VA - just like a building contractor might hire a separate electrician to do the wiring in the buildings he is erecting. 
+																	Academic Science Colleges. 
+																	Quality Time and Cost. 
+																	Queensland Theological College Brisbane QLD Australia QTC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA medical professionals who perform CP examinations are VA health care providers whose sole job is to perform compensation and pension examinations for veterans seeking disability benefits. 
+																	Theoretical computational chemistry QTC. 
+																	QTC is nothing more than a company that VA contracts with to do medical examinations that are needed by VA. 
+																	Get the top QTC abbreviation related to Medical. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	QTC a Leidos NYSELDOS company was awarded its second prime contract by the US. 
+																	Published by SemperFiGeek on March 20 2019So youve finally received notice of your CP exam in the mail or by phone or email and its through a VA contractor company called QTC. 
+																	QTC - Quality Treatment Corporation a VA medical contractor redux - Military Retirement Reform Act of 1986 RIF. 
+																	QTC is a legit company that has been around for quite some time Other known companies are LHI and VES. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Company profile page for QTC Management Inc including stock price company news press releases executives board members and contact information. 
+																	VA has 9 Regional Centers located throughout the US that handle loan processing. 
+																	There are local doctors here in this town that work for QTC doing VA exams - along with handling their own patients. 
+																	Reduction in Force RLC - Regional Loan Center. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each exam is. 
+																	The following is a sampling of some of the acronyms that a claimant or appellant may see in various military and VA records and documents. 
+																	A VA claim exam isnt like a normal medical exam or other VA health care visits. 
+																	QTC is a contractor for the VA that performs medical examinations for the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The contract has a one-year base period of performance four one-year options and a total contract ceiling of 68 billion if all options are exercised. 
+																	Department of Veterans Affairs VA to continue to provide medical disability examinations for the Veterans Benefits Administration VBA. 
+																	Diamond Bar Calif August 7 2017 QTC Medical Services Inc. 
+																	Quiet Time Coherent microphone QTC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Medical QTC abbreviation meaning defined here. 
+																	Quality Test Coupon engineering QTC. 
+																	The doctor wont treat you for any illness or injury give you referrals to other health care providers or prescribe medicine. 
+																	Quad Terrain Challenge motocross event QTC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	QTC is the largest provider of medical disability and occupational health exams and diagnostic testing services for government agencies and public sectors. 
+																	Thats because the purpose of the exam is to gather information that will help us make a decision on your claim. 
+																	So to that extent if you have a claim that is being appealed and a VA CP exam is needed a QTC doctor will likely do the exam if the VAMC and VARO in that area have a contract with QTC. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mma.prnewswire.com/media/4662/leidos_logo_4817_21071_.jpg" data-lightbox="roadtrip" data-title="Qtc Medical Services Awarded Prime Contract By U S Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://mma.prnewswire.com/media/4662/leidos_logo_4817_21071_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpHbTUTqAvtoG5DqS17aS_3IYUQtN8S0ffRQ&amp;ec=45768318';" alt="Qtc Medical Services Awarded Prime Contract By U S Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qtc Medical Services Awarded Prime Contract By U S Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hughcox.com/default_HDCsmaller.png" data-lightbox="roadtrip" data-title="Hugh D">
+											<img class="card-img v-image ads-img " src="https://www.hughcox.com/default_HDCsmaller.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdvBo_TNI1_IRv8TWPaEFkqZ4kL0hIOstWVQ&amp;ec=45768318';" alt="Hugh D">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hugh D</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hadit.com/wp-content/uploads/forum-003-2048x1346.jpeg" data-lightbox="roadtrip" data-title="Letter From Qtc Medical Hadit Com For Veterans Who Ve Had It With The Va">
+											<img class="card-img v-image ads-img " src="https://hadit.com/wp-content/uploads/forum-003-2048x1346.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTifmQ9TsrO13ACEnSFqV4YsDb0Sn-Ge4_sng&amp;ec=45768318';" alt="Letter From Qtc Medical Hadit Com For Veterans Who Ve Had It With The Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letter From Qtc Medical Hadit Com For Veterans Who Ve Had It With The Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.qtcm.com/wp-content/uploads/2017/08/About-Us-Mission.jpg" data-lightbox="roadtrip" data-title="About Us Quality Timeliness Customer Service Qtc">
+											<img class="card-img v-image ads-img " src="https://www.qtcm.com/wp-content/uploads/2017/08/About-Us-Mission.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7_b1-6yJ0YJZZzLtiXCZ2XysrBWLrzU88qA&amp;ec=45768318';" alt="About Us Quality Timeliness Customer Service Qtc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About Us Quality Timeliness Customer Service Qtc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://litfl.com/wp-content/uploads/2018/10/ECG-waves-segments-and-intervals-LITFL-ECG-library-3.jpg" data-lightbox="roadtrip" data-title="U Wave Litfl Medical Blog Ecg Library Basics">
+											<img class="card-img v-image ads-img " src="https://litfl.com/wp-content/uploads/2018/10/ECG-waves-segments-and-intervals-LITFL-ECG-library-3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ23bt-DndzkTh1nlAco7KR-F5LW-rCDOtHdg&amp;ec=45768318';" alt="U Wave Litfl Medical Blog Ecg Library Basics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U Wave Litfl Medical Blog Ecg Library Basics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.qtcm.com/wp-content/uploads/2017/07/main_banner_govt.png" data-lightbox="roadtrip" data-title="Government Medical Examination Services Solutions Qtc">
+											<img class="card-img v-image ads-img " src="https://www.qtcm.com/wp-content/uploads/2017/07/main_banner_govt.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIyNAKJxHYczVcr4jkNuESw_bG5gnHaeA4jg&amp;ec=45768318';" alt="Government Medical Examination Services Solutions Qtc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Government Medical Examination Services Solutions Qtc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.qtcm.com/wp-content/uploads/2017/09/DOL-pr.jpg" data-lightbox="roadtrip" data-title="Qtc Management Awarded Prime Contract By Department Of Labor Qtc">
+											<img class="card-img v-image ads-img " src="https://www.qtcm.com/wp-content/uploads/2017/09/DOL-pr.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyNuGB6WTbBUzbHMHSuVPYVBQWG9JJ-nXQBA&amp;ec=45768318';" alt="Qtc Management Awarded Prime Contract By Department Of Labor Qtc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qtc Management Awarded Prime Contract By Department Of Labor Qtc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="jDjzPSgxCwddMM" data-lightbox="roadtrip" data-title="Https Www Diva Portal Org Smash Get Diva2 1423707 Fulltext01 Pdf">
+											<img class="card-img v-image ads-img " src="jDjzPSgxCwddMM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMhWzZfCF56f_5nImd72huMdhmDAMbSUKdEg&amp;ec=45768318';" alt="Https Www Diva Portal Org Smash Get Diva2 1423707 Fulltext01 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Diva Portal Org Smash Get Diva2 1423707 Fulltext01 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ars.els-cdn.com/content/image/1-s2.0-S1547527117305805-gr3.jpg" data-lightbox="roadtrip" data-title="Percentile Categorization Of Qt Interval As An Approach For Identifying Adult Patients At Risk For Cardiovascular Death Sciencedirect">
+											<img class="card-img v-image ads-img " src="https://ars.els-cdn.com/content/image/1-s2.0-S1547527117305805-gr3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLq4VdXX7Qw9Lx9MsDOS7Dd0o0gI5rnpc80Q&amp;ec=45768318';" alt="Percentile Categorization Of Qt Interval As An Approach For Identifying Adult Patients At Risk For Cardiovascular Death Sciencedirect">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Percentile Categorization Of Qt Interval As An Approach For Identifying Adult Patients At Risk For Cardiovascular Death Sciencedirect</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.researchgate.net/profile/Sabine_Straus/publication/5388773/figure/tbl2/AS:601629258690560@1520451001037/Association-of-thyroid-status-with-QTc-interval_Q320.jpg" data-lightbox="roadtrip" data-title="Association Of Thyroid Status With Qtc Interval Download Table">
+											<img class="card-img v-image ads-img " src="https://www.researchgate.net/profile/Sabine_Straus/publication/5388773/figure/tbl2/AS:601629258690560@1520451001037/Association-of-thyroid-status-with-QTc-interval_Q320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoJPzArKwmqhzVxzP6sH674Xbyte8eg2IUfw&amp;ec=45768318';" alt="Association Of Thyroid Status With Qtc Interval Download Table">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Association Of Thyroid Status With Qtc Interval Download Table</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="K01VzHxsZyZkyM" data-lightbox="roadtrip" data-title="Https Www Ahajournals Org Doi Pdf 10 1161 Circep 120 008937 Download True">
+											<img class="card-img v-image ads-img " src="K01VzHxsZyZkyM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlVHUZRBLysVxUq1XzRWtrOudZEjhcBkynNQ&amp;ec=45768318';" alt="Https Www Ahajournals Org Doi Pdf 10 1161 Circep 120 008937 Download True">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Ahajournals Org Doi Pdf 10 1161 Circep 120 008937 Download True</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blog.clearedjobs.net/wp-content/uploads/2019/11/QTCMedGroup-300x226.jpg" data-lightbox="roadtrip" data-title="Interview With A Recruiter Linda Harris Qtc Medical News For Security Cleared Job Seekers">
+											<img class="card-img v-image ads-img " src="https://blog.clearedjobs.net/wp-content/uploads/2019/11/QTCMedGroup-300x226.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaF1eSR4ywK81pRxWLRx3IKTc2qWj6iKWhpQ&amp;ec=45768318';" alt="Interview With A Recruiter Linda Harris Qtc Medical News For Security Cleared Job Seekers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Interview With A Recruiter Linda Harris Qtc Medical News For Security Cleared Job Seekers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.qtcm.com/wp-content/uploads/2020/03/Covid19-Thumbnail-300x181.jpg" data-lightbox="roadtrip" data-title="Examinee Login Information On Medical Exam Appointments Qtc">
+											<img class="card-img v-image ads-img " src="https://www.qtcm.com/wp-content/uploads/2020/03/Covid19-Thumbnail-300x181.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRalRgYnVcl_ty4j7dz5xQjwaEWHYyVpLJ4rg&amp;ec=45768318';" alt="Examinee Login Information On Medical Exam Appointments Qtc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Examinee Login Information On Medical Exam Appointments Qtc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.qtcm.com/wp-content/uploads/2017/07/careers_banner_zoomed_out.png" data-lightbox="roadtrip" data-title="Join Our Team Qtc Jobs Career Opportunities Qtc">
+											<img class="card-img v-image ads-img " src="https://www.qtcm.com/wp-content/uploads/2017/07/careers_banner_zoomed_out.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpCvejoLt-UhtDd1woyn91qEmcWEhkm-ogLA&amp;ec=45768318';" alt="Join Our Team Qtc Jobs Career Opportunities Qtc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Join Our Team Qtc Jobs Career Opportunities Qtc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/online-marketing-hIgeoQjS_iE-unsplash-1-768x432.jpg" data-lightbox="roadtrip" data-title="Military Medical Disability Examinations Mde For Va Disability Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/online-marketing-hIgeoQjS_iE-unsplash-1-768x432.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsy0etrxazFxK0Xc8SuGEduYdQXr2oESjL9g';" alt="Military Medical Disability Examinations Mde For Va Disability Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Medical Disability Examinations Mde For Va Disability Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-does-a-military-wife-get-in-divorce.html">What Does A Military Wife Get In Divorce</a></li>
+													<li class="list-group-item"><a href="/what-does-30-va-disability-mean.html">What Does 30 Va Disability Mean</a></li>
+													<li class="list-group-item"><a href="/what-do-you-have-to-go-to-college.html">What Do You Have To Go To College</a></li>
+													<li class="list-group-item"><a href="/what-does-42a-do-in-the-army.html">What Does 42a Do In The Army</a></li>
+													<li class="list-group-item"><a href="/what-does-90-percent-va-disability-mean.html">What Does 90 Percent Va Disability Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-40-percent-va-disability-mean.html">What Does 40 Percent Va Disability Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-a-human-resource-do-in-the-army.html">What Does A Human Resource Do In The Army</a></li>
+													<li class="list-group-item"><a href="/what-does-60-va-disability-rating-mean.html">What Does 60 Va Disability Rating Mean</a></li>
+													<li class="list-group-item"><a href="/what-do-you-need-to-do-to-go-to-college.html">What Do You Need To Do To Go To College</a></li>
+													<li class="list-group-item"><a href="/what-do-you-go-to-college-for-to-be-a-real-estate-agent.html">What Do You Go To College For To Be A Real Estate Agent</a></li>
+													<li class="list-group-item"><a href="/what-do-you-do-when-your-spouse-wont-talk-to-you.html">What Do You Do When Your Spouse Wont Talk To You</a></li>
+													<li class="list-group-item"><a href="/what-do-you-do-when-you-have-fallen-out-of-love-with-your-husband.html">What Do You Do When You Have Fallen Out Of Love With Your Husband</a></li>
+													<li class="list-group-item"><a href="/what-does-a-90-va-disability-rating-mean.html">What Does A 90 Va Disability Rating Mean</a></li>
+													<li class="list-group-item"><a href="/what-do-you-need-to-go-to-college-in-germany.html">What Do You Need To Go To College In Germany</a></li>
+													<li class="list-group-item"><a href="/what-does-a-marine-sniper-do.html">What Does A Marine Sniper Do</a></li>
+													<li class="list-group-item"><a href="/what-does-70-va-disability-pay.html">What Does 70 Va Disability Pay</a></li>
+													<li class="list-group-item"><a href="/what-does-50-va-disability-get-me.html">What Does 50 Va Disability Get Me</a></li>
+													<li class="list-group-item"><a href="/what-do-you-do-when-your-husband-doesnt-listen-to-you.html">What Do You Do When Your Husband Doesnt Listen To You</a></li>
+													<li class="list-group-item"><a href="/what-do-you-have-to-do-to-go-to-college.html">What Do You Have To Do To Go To College</a></li>
+													<li class="list-group-item"><a href="/what-do-va-benefits-include.html">What Do Va Benefits Include</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

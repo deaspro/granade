@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Vfw Va Claims Representative - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Vfw Va Claims Representative",
+  "datePublished": "2021-02-14",
+  "image": "https://vfw577.org/di/vfw/v2/assets/images/vfw-insignia.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=vfw+va+claims+representative",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Vfw Va Claims Representative</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The RVSR analyzes claims applies VAs Schedule for Rating Disabilities Rating Schedule and prepares rating decisions informing the Veteran Service Representative VSR and claimant of the decision and reasons and bases for it. VA reports veterans represented by the VFW have recouped more than 9 billion in earned benefits including 16 billion in new claims in fiscal year 2019 alone. Veteran Service Officers will help you write and submit your benefits claims to the VA. <br>				
+			</p>
+										<a class="badge badge-dark" href="/va-rating-schedule-for-hiatal-hernia.html">va rating schedule for hiatal hernia</a>
+											<a class="badge badge-primary" href="/va-rating-schedule-for-high-blood-pressure.html">va rating schedule for high blood pressure</a>
+											<a class="badge badge-primary" href="/va-rating-severe-radiculopathy.html">va rating severe radiculopathy</a>
+											<a class="badge badge-dark" href="/va-rating-schedule-hearing-loss.html">va rating schedule hearing loss</a>
+											<a class="badge badge-info" href="/va-rating-schedule-tinnitus.html">va rating schedule tinnitus</a>
+											<a class="badge badge-primary" href="/va-rating-schedule-for-tinnitus.html">va rating schedule for tinnitus</a>
+											<a class="badge badge-secondary" href="/va-rating-schedule-for-ptsd.html">va rating schedule for ptsd</a>
+											<a class="badge badge-secondary" href="/va-rating-schedule-voiding-dysfunction.html">va rating schedule voiding dysfunction</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the ideal site.  Our website gives you hints for seeing the highest quality video and picture content, search and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this video that you see.  You can also bring about supporting this website by sharing videos and images that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.veteranslawblog.org/wp-content/uploads/2015/09/VFW-Service-Representative-DPC.jpg" data-lightbox="roadtrip" data-title="What If A Vfw Service Representative Did This To Your Va Claim Veterans Law Blog">
+											<img class="card-img v-image ads-img " src="https://www.veteranslawblog.org/wp-content/uploads/2015/09/VFW-Service-Representative-DPC.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvzRQfyKWT2_qE7i87Xj3eY-8cr54nFMlpA';" alt="What If A Vfw Service Representative Did This To Your Va Claim Veterans Law Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What If A Vfw Service Representative Did This To Your Va Claim Veterans Law Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://vfw754.org/uploads/Documents/Screenshot_2020-01-21-14-22-53~2.png" data-lightbox="roadtrip" data-title="Veteran Benefits Assistance">
+											<img class="card-img v-image ads-img " src="http://vfw754.org/uploads/Documents/Screenshot_2020-01-21-14-22-53~2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgf_FzxkAJJjYqzBQu559U0JLVgZvOqnM_mQ';" alt="Veteran Benefits Assistance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Benefits Assistance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2019/1/What-We-Do-Changes-Lives.jpg?v=1&amp;d=20190111T190850Z" data-lightbox="roadtrip" data-title="What We Do Changes Lives Vfw">
+											<img class="card-img v-image ads-img " src="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2019/1/What-We-Do-Changes-Lives.jpg?v=1&amp;d=20190111T190850Z" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9BXiNAfpz7NpIlayBSMCzyAo63eYse_OzLg';" alt="What We Do Changes Lives Vfw">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What We Do Changes Lives Vfw</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2018/12/Navy-Veteran-Discovers-Gem-in-VFW.jpg?v=1&amp;d=20181218T222304Z" data-lightbox="roadtrip" data-title="Navy Veteran Discovers A Gem In Vfw Pre Discharge Representative Vfw">
+											<img class="card-img v-image ads-img " src="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2018/12/Navy-Veteran-Discovers-Gem-in-VFW.jpg?v=1&amp;d=20181218T222304Z" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJlwXJEKEV6KJ0QTTPjBgAmSrhAncDgbCoMA';" alt="Navy Veteran Discovers A Gem In Vfw Pre Discharge Representative Vfw">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Veteran Discovers A Gem In Vfw Pre Discharge Representative Vfw</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2019/5/Whole-New-Universe.jpg?v=1&amp;d=20190506T210815Z" data-lightbox="roadtrip" data-title="Whole New Universe Opens To Michigan Service Officer Vfw">
+											<img class="card-img v-image ads-img " src="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2019/5/Whole-New-Universe.jpg?v=1&amp;d=20190506T210815Z" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9v6FrdB6p5dZb7d3BhEF8E82VWTLJ3XgUjA';" alt="Whole New Universe Opens To Michigan Service Officer Vfw">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whole New Universe Opens To Michigan Service Officer Vfw</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.studylib.net/store/data/009019956_1-84d5f5ed7940b617fdd29df678dabd07.png" data-lightbox="roadtrip" data-title="Vfw National Dso Roster 2 3 14">
+											<img class="card-img v-image ads-img " src="https://s3.studylib.net/store/data/009019956_1-84d5f5ed7940b617fdd29df678dabd07.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqUzLM2YPi_TTSYdPzdkQBDE_UeWZ__FgVNA';" alt="Vfw National Dso Roster 2 3 14">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vfw National Dso Roster 2 3 14</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="http://www.vfw5337.com/Cindy_Smith.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqUzLM2YPi_TTSYdPzdkQBDE_UeWZ__FgVNA';" alt="Vfw National Dso Roster 2 3 14">
+										<div class="card-body">
+						<h3 class="h5"><b>Or search the VA Office of the General Counsels list to find VA-recognized organizations and VA-accredited individuals by name city state or zip code.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Vfw va claims representative</strong>. 
+								
+																	VA Form 21-22 - Appointment of Veterans Service Organization as Claimants Representative. 
+																	Work with a trained professional called an accredited representative to get help applying for VA disability benefits. 
+																	Most accredited representatives work for veteran service organizations VSOs many of which are private non-profit groups that advocate on behalf of Veterans Servicemembers dependents and survivors. 
+																	VA Form 21-22A - Appointment of Individual As Claimants Representative. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get help filing a claim. 
+																	Our Pre-Discharge representatives are ready to guide you through the veterans claims process conduct physical examinations prior to your separation and answer the questions. 
+																	Home Veterans Find Your Local Office ANNOUNCEMENT DAV Service Office locations are closed to the public until further notice in an effort to implement social distancing and reduce the transmission risk of COVID-19 Coronavirus. 
+																	An accredited representative is an individual who has undergone a formal application and training process and is recognized by VA as being capable of assisting claimants with their affairs before VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find a VA regional office near you. 
+																	The RVSR works in the Veterans Service Center VSC Special Missions or Pension Management Center PMC. 
+																	Manage your policy online file claims for benefits and access helpful resources. 
+																	They will help you gather the information that supports your claim. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once the claim is filed they will help you track the claim through the system. 
+																	These appointment forms must be filed with the VA office that has jurisdiction over the claim generally a VA Regional Office or the Board of Veterans Appeals. 
+																	A VSO that is supposed to be representing a Veterans interest in their claim just discredited the Veterans medical expert TO THE VA. 
+																	Youll see the date we think well complete our review and view evidence youve filed online and any additional evidence weve requested from you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VFW Service Officers are trained experts helping veterans develop their case with ease by reviewing and applying current law pertinent legislation regulations and medical histories. 
+																	Veterans with claims specific or other questions may request information via Inquiry Routing Information System IRIS or telephone at 1-800-827-1000. 
+																	Explore VA life insurance options for Veterans service members and families. 
+																	Apply for and manage your GI Bill and other education benefits to help pay for college and training programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Go to eBenefits to find a local representative including a recognized VSO an attorney or a claims agent by stateterritory zip code or the organizations name. 
+																	Department of Veterans Affairs Claims Intake Center PO Box 4444 Janesville WI 53547-4444. 
+																	The VFW Service Representatives little trick worked too the VA seemed to put decreasing emphasis on the medical opinion because of what Mr. 
+																	Once your claim is filed they track the claim through the VA system act as liaisons between you and the VA and are your official representative by acting as your power of attorney POA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VFWs Pre-Discharge program has offices located on or near major military installations across the county to help you obtain your VA benefits and entitlements. 
+																	VBA benefits and services provided to Veterans families and survivors will continue to be delivered throughout the duration of COVID-19 impacts. 
+																	A VSO representative also known as a Veterans Service Officer helps you with the preparation presentation and prosecution of claims. 
+																	Their services are free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Check your VA claim status or VA appeal status online to find out where your claim or appeal is in our review process. 
+																	Turn it in at a VA regional office near you. 
+																	You can find an accredited representative or a VSO in 1 of 2 ways. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2020/9/A-mission-to-help-my-warfighter-family.jpg?v=1&amp;d=20200921T155728Z" data-lightbox="roadtrip" data-title="A Mission To Help My Warfighter Family Vfw">
+											<img class="card-img v-image ads-img " src="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2020/9/A-mission-to-help-my-warfighter-family.jpg?v=1&amp;d=20200921T155728Z" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR77PTbdSe7M8n_EpospIzXPZLBQk1sg5Nk2w';" alt="A Mission To Help My Warfighter Family Vfw">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Mission To Help My Warfighter Family Vfw</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=319792135304816" data-lightbox="roadtrip" data-title="Vfw Accredited Va Disability Claim Help On Camp Pendleton Home Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=319792135304816" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTigu6YENMdA1OB-AL9sZ37uBU_L7PYYFBtqA';" alt="Vfw Accredited Va Disability Claim Help On Camp Pendleton Home Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vfw Accredited Va Disability Claim Help On Camp Pendleton Home Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vfw577.org/di/vfw/v2/assets/images/vfw-insignia.png" data-lightbox="roadtrip" data-title="Vfw Post 577 Tulsa S Vfw Website">
+											<img class="card-img v-image ads-img " src="https://vfw577.org/di/vfw/v2/assets/images/vfw-insignia.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH8PKfGq7M8QWcEDhXHITC-ro8MYCchKe3Yw';" alt="Vfw Post 577 Tulsa S Vfw Website">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vfw Post 577 Tulsa S Vfw Website</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3563009293742220" data-lightbox="roadtrip" data-title="Vfw Auxiliary National Organization Posts Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=3563009293742220" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ZaKjCp0FTrtUBULdlyqWmK-7FpPwNZBnoA';" alt="Vfw Auxiliary National Organization Posts Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vfw Auxiliary National Organization Posts Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2018/01/american-flag.jpg" data-lightbox="roadtrip" data-title="Should You Use A Vso To File A Va Claim Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2018/01/american-flag.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ0pKb8sRw2zZjw-Qo6z-26cJ-YixMY-mmJw';" alt="Should You Use A Vso To File A Va Claim Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should You Use A Vso To File A Va Claim Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://vfw.convio.net/images/content/pagebuilder/Churchill_400.jpg" data-lightbox="roadtrip" data-title="Advocating For New Veterans At Fort Stewart Veterans Of Foreign Wars Vfw">
+											<img class="card-img v-image ads-img " src="http://vfw.convio.net/images/content/pagebuilder/Churchill_400.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVM4U4QYKyczZidba6-JEG9iwCUMiTN6wOZQ';" alt="Advocating For New Veterans At Fort Stewart Veterans Of Foreign Wars Vfw">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advocating For New Veterans At Fort Stewart Veterans Of Foreign Wars Vfw</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vfw1677.org/uploads/Blue%20Water%20Navy%20Act%20Now%20Law.jpg" data-lightbox="roadtrip" data-title="Vfw1677 Org">
+											<img class="card-img v-image ads-img " src="https://vfw1677.org/uploads/Blue%20Water%20Navy%20Act%20Now%20Law.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZsnsvvISa8ilzWE5o6L42GvJRuMgApJUfw';" alt="Vfw1677 Org">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vfw1677 Org</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.vfw5337.com/Cindy_Smith.JPG" data-lightbox="roadtrip" data-title="Service">
+											<img class="card-img v-image ads-img " src="http://www.vfw5337.com/Cindy_Smith.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGR1rviF8Uaks_JCESx4XFkwUoqjbRub15bg';" alt="Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2019/2/Student-Veterans-Helping-Student-Veterans.jpg?v=1&amp;d=20190226T150417Z" data-lightbox="roadtrip" data-title="Student Veterans Helping Student Veterans Vfw">
+											<img class="card-img v-image ads-img " src="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2019/2/Student-Veterans-Helping-Student-Veterans.jpg?v=1&amp;d=20190226T150417Z" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxySwNcSXHLM6shsAdvPdAAK7I5lJk0_dTcw';" alt="Student Veterans Helping Student Veterans Vfw">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Veterans Helping Student Veterans Vfw</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vfwil.org/uploads/Documents/BobbyEresizedforweb.jpg" data-lightbox="roadtrip" data-title="Vfw Dept Of Illinois">
+											<img class="card-img v-image ads-img " src="https://vfwil.org/uploads/Documents/BobbyEresizedforweb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1_sHMXfrLHbZ1TGrt_kUzC-phm2VtkG9ThA';" alt="Vfw Dept Of Illinois">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vfw Dept Of Illinois</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.mainevfw.org/images/DavisPhoto_002.jpg" data-lightbox="roadtrip" data-title="Maine Veterans Of Foreign Wars">
+											<img class="card-img v-image ads-img " src="http://www.mainevfw.org/images/DavisPhoto_002.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJqnCi-sFWexZetMFoYBuhfrAYCNbxdGvXg';" alt="Maine Veterans Of Foreign Wars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maine Veterans Of Foreign Wars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2020/3/2020-VOD-PP-Winners-Named.jpg?h=270&amp;w=450&amp;v=1&amp;d=20200303T014208Z&amp;la=en" data-lightbox="roadtrip" data-title="Mobirise V4 6 6 Veterans Of Foreign Wars Department Of Indiana Home About Big 10 Hamilton Cty War Memorial Refurb Hours Of Operations About Us Mission Officers Auxiliary Vfw Riders Group Drug Addiction">
+											<img class="card-img v-image ads-img " src="https://vfworg-cdn.azureedge.net/-/media/VFWSite/Images/Media-and-Events/Archive/2020/3/2020-VOD-PP-Winners-Named.jpg?h=270&amp;w=450&amp;v=1&amp;d=20200303T014208Z&amp;la=en" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBFL8H3MnsEshKzGGcOj0IhorXW4BKhANQdQ';" alt="Mobirise V4 6 6 Veterans Of Foreign Wars Department Of Indiana Home About Big 10 Hamilton Cty War Memorial Refurb Hours Of Operations About Us Mission Officers Auxiliary Vfw Riders Group Drug Addiction">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mobirise V4 6 6 Veterans Of Foreign Wars Department Of Indiana Home About Big 10 Hamilton Cty War Memorial Refurb Hours Of Operations About Us Mission Officers Auxiliary Vfw Riders Group Drug Addiction</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://servingtogetherproject.org/wp-content/uploads/2019/12/sweats-for-vets.png" data-lightbox="roadtrip" data-title="Sweats For Vets">
+											<img class="card-img v-image ads-img " src="https://servingtogetherproject.org/wp-content/uploads/2019/12/sweats-for-vets.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs0fY_wTM7a29Nz8SMmYEXAX2qgvYylPnDDw';" alt="Sweats For Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sweats For Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vfw423.org/uploads/horace.JPG" data-lightbox="roadtrip" data-title="Vfw Mi Veterans Of Foreign Wars">
+											<img class="card-img v-image ads-img " src="https://vfw423.org/uploads/horace.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT17-A9PVkv91MeGAvszaWugwV27wbtNXaKyQ';" alt="Vfw Mi Veterans Of Foreign Wars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vfw Mi Veterans Of Foreign Wars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/EiMiSjbtgrc/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Vfw5350 Org">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/EiMiSjbtgrc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg420DDHBFo1OVBlbBTrWpdKWcG8Er07CfyA';" alt="Vfw5350 Org">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vfw5350 Org</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-chronic-pain-syndrome.html">What Is The Va Disability Rating For Chronic Pain Syndrome</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-definition-of-permanent-and-totally-disabled.html">What Is The Va Definition Of Permanent And Totally Disabled</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-pay-chart-for-2020.html">What Is The Va Disability Pay Chart For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-compensation-rate-for-ptsd.html">What Is The Va Compensation Rate For Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-compensation-rates.html">What Is The Va Disability Compensation Rates</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-major-depressive-disorder.html">What Is The Va Disability Rating For Major Depressive Disorder</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-anxiety.html">What Is The Va Disability Rating For Anxiety</a></li>
+													<li class="list-group-item"><a href="/what-is-the-uk-defence-budget-2020.html">What Is The Uk Defence Budget 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-us-department-of-homeland-security-responsible-for.html">What Is The Us Department Of Homeland Security Responsible For</a></li>
+													<li class="list-group-item"><a href="/what-is-the-symbol-for-the-army.html">What Is The Symbol For The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-cp-exam.html">What Is The Va Cp Exam</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-fibromyalgia.html">What Is The Va Disability Rating For Fibromyalgia</a></li>
+													<li class="list-group-item"><a href="/what-is-the-us-army-salary.html">What Is The Us Army Salary</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-cola-for-2020.html">What Is The Va Cola For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-diabetic-neuropathy.html">What Is The Va Disability Rating For Diabetic Neuropathy</a></li>
+													<li class="list-group-item"><a href="/what-is-the-us-army-national-guard.html">What Is The Us Army National Guard</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-lower-back-pain.html">What Is The Va Disability Rating For Lower Back Pain</a></li>
+													<li class="list-group-item"><a href="/what-is-the-tax-period-for-2019.html">What Is The Tax Period For 2019</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-chart.html">What Is The Va Disability Rating Chart</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-cola-increase-for-2020.html">What Is The Va Cola Increase For 2020</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

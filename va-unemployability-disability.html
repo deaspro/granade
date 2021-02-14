@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Unemployability Disability - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Unemployability Disability",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/81/38/1e/81381eecefba1b2222c0efe2803fa441.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+unemployability+disability",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Unemployability Disability</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">VA Individual Unemployability if you cant work. Talk to Woods Woods PTSD Individual Unemployability Benefits Lawyers PTSD is one of the most common disabilities that vets contact our veterans unemployability lawyers about daily. If you have a service-connected disability that prevents you from working you may be entitled to individual unemployability. <br>				
+			</p>
+										<a class="badge badge-warning" href="/veteran-personnel-records.html">veteran personnel records</a>
+											<a class="badge badge-primary" href="/veteran-spouse-dental-benefits.html">veteran spouse dental benefits</a>
+											<a class="badge badge-warning" href="/veteran-social-work-programs.html">veteran social work programs</a>
+											<a class="badge badge-warning" href="/veteran-service-connected-disability-compensation.html">veteran service connected disability compensation</a>
+											<a class="badge badge-light" href="/veterans-administration-death-records.html">veterans administration death records</a>
+											<a class="badge badge-info" href="/veteran-service-connected-rates.html">veteran service connected rates</a>
+											<a class="badge badge-success" href="/veteran-training-records.html">veteran training records</a>
+											<a class="badge badge-dark" href="/veterans-administration-benefits-for-surviving-spouse.html">veterans administration benefits for surviving spouse</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to visit the ideal site.  Our site provides you with hints for seeing the highest quality video and picture content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/1c/9e/ac1c9e3bc8fbd50f69cc2d4055ee3f15.jpg" data-lightbox="roadtrip" data-title="Individual Unemployability Understanding The Basics Understanding Individuality Letter Sample">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/1c/9e/ac1c9e3bc8fbd50f69cc2d4055ee3f15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjm4AOy8MSTHXNJtm6zuFKu7fK9QNZqUq6zw';" alt="Individual Unemployability Understanding The Basics Understanding Individuality Letter Sample">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Individual Unemployability Understanding The Basics Understanding Individuality Letter Sample</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/e4/a4/eae4a4c14f50d82b7fe51655879755e1.png" data-lightbox="roadtrip" data-title="If I Work And Receive Tdiu Are There Any Va Unemployability Income Limits Law Blog Blog Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/e4/a4/eae4a4c14f50d82b7fe51655879755e1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeDx5MQ8nEsuNqrq1nUGPOO16ZoPQts9zL6g';" alt="If I Work And Receive Tdiu Are There Any Va Unemployability Income Limits Law Blog Blog Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If I Work And Receive Tdiu Are There Any Va Unemployability Income Limits Law Blog Blog Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/78/32/41/783241166e982cfed9ac87057253a23e.jpg" data-lightbox="roadtrip" data-title="257 Tdiu How To Get Va Unemployability Youtube In 2020 How To Get Disability Benefit Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/78/32/41/783241166e982cfed9ac87057253a23e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2h9OHKBVcCiq9KVEn5FRCM1UlgTXSuWAiPw';" alt="257 Tdiu How To Get Va Unemployability Youtube In 2020 How To Get Disability Benefit Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">257 Tdiu How To Get Va Unemployability Youtube In 2020 How To Get Disability Benefit Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/97/56/df9756627aa80bef383db0281595e0c2.jpg" data-lightbox="roadtrip" data-title="What Is Total Unemployability In Va Disability Benefits System Gardberg Clausen Va Disability Va Disability Benefits Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/97/56/df9756627aa80bef383db0281595e0c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf8xk0_4QOcfwC_1_P7LpQJuXVUj-orDKrow';" alt="What Is Total Unemployability In Va Disability Benefits System Gardberg Clausen Va Disability Va Disability Benefits Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Total Unemployability In Va Disability Benefits System Gardberg Clausen Va Disability Va Disability Benefits Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4b/93/dc/4b93dc9cb2bface28daffe974bbd1957.jpg" data-lightbox="roadtrip" data-title="Sedentary Employment Doctrine Employment Sedentary Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4b/93/dc/4b93dc9cb2bface28daffe974bbd1957.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7f5V6zF2AHA9kIxfGBLDqRU-WPpwkoW-Bw';" alt="Sedentary Employment Doctrine Employment Sedentary Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sedentary Employment Doctrine Employment Sedentary Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/85/bd/56/85bd56cdd0dc015fc70a2fb7d2350b5c.jpg" data-lightbox="roadtrip" data-title="The Most Comprehensive Guide To Va Unemployability Benefits If You Can T Work Because Of Your Va Disability You Should Have In 2020 Benefit Va Disability What Is 100">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/85/bd/56/85bd56cdd0dc015fc70a2fb7d2350b5c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjO_8Vuu3gqqZtoRPk5rKUtxj3hNJ73pw_yg';" alt="The Most Comprehensive Guide To Va Unemployability Benefits If You Can T Work Because Of Your Va Disability You Should Have In 2020 Benefit Va Disability What Is 100">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Most Comprehensive Guide To Va Unemployability Benefits If You Can T Work Because Of Your Va Disability You Should Have In 2020 Benefit Va Disability What Is 100</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/1e/ff/3c/1eff3cd1d865c3fe22e2f54b1203e966.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjO_8Vuu3gqqZtoRPk5rKUtxj3hNJ73pw_yg';" alt="The Most Comprehensive Guide To Va Unemployability Benefits If You Can T Work Because Of Your Va Disability You Should Have In 2020 Benefit Va Disability What Is 100">
+										<div class="card-body">
+						<h3 class="h5"><b>The courts have determined that substantially gainful occupation means employment where a veteran earns more than what the current federal poverty level is for an individual.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va unemployability disability</strong>. 
+								
+																	What are the Eligibility Requirements for IU. 
+																	To establish entitlement to a total disability rating for compensation based on individual unemployability TDIU the Veteran must be unemployable in fact unable to secure or follow substantially gainful employment by reason of service-connected SC disability and either Meet the schedular requirements of 38 CFR 416 a or. 
+																	You must be a Veteran. 
+																	Also known as Unemployability TDIU pays the same monthly amount as a 100 disability rating. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Unemployability benefits are formally known as Total Disability Individual Unemployability benefits. 
+																	The exact amount of Individual Unemployability pay you receive depends on how many dependents you have. 
+																	Total disability based on individual unemployability TDIU is a benefit offered by VA that allows veterans who are unable to secure and maintain substantially gainful employment due to service-connected conditions to receive disability compensation equal to a 100 percent rating even if their combined disability rating does not reach 100 percent. 
+																	The VA may grant unemployability when a veteran is unable to secure or maintain a substantially gainful occupation due to their service-connected disabilities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Overview of VA Individual Unemployability TDIU Total disability based on individual unemployability TDIU is a disability benefit that allows veterans to be compensated at VAs 100 percent disability rate even if their combined schedular rating does not equal 100 percent. 
+																	TDIU is awarded in circumstances in which veterans are unable to secure and follow substantially gainful employment as a result of their service-connected conditions. 
+																	TDIU is a VA disability benefit available to veterans whose service-connected disability or disabilities prevent them from securing and following a substantially gainful occupation. 
+																	This means you may be able to get disability compensation or benefits at the same level as a Veteran who has a 100 disability rating. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This program allows the VA to pay disability compensation to certain Veterans at the 100 rate even though your service-connected disability may be below that level. 
+																	Who Is Eligible for Individual Unemployability. 
+																	If you do not have any dependents your monthly tax-free payment would be 305713 Individual Unemployability IU is also called Total Disability Individual Unemployability TDIU. 
+																	1 You must be a veteran to get IU Benefits 2 You must have one 60 service-connected disability or two or more service-connected disabilities with one rated at 40 and a combined rating of 70 to qualify for IU. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Under 2019 rates VA will pay TDIU recipients a minimum of 305713 per month tax free. 
+																	If you cant work because of a disability related to your service in the military a service-connected disability you may qualify for whats called Individual Unemployability. 
+																	If the VA grants a Veterans claim for individual unemployability the Veteran will receive monthly compensation as if he or she has a 100 percent rating even if he or she is rated as low as 60 percent. 
+																	You may have also heard these VA benefits called TDIU IU or Individual Unemployability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Individual Unemployability IU is part of the VAs disability compensation program. 
+																	The VA will pay veterans with severe PTSD monthly compensation benefits if they cannot work from their service-connected disabilities. 
+																	When veterans have a TDIU rating this means that the Department of Veterans Affairs found them unable to obtain gainful employment due to an injury sustained while in the military. 
+																	The whole point of TDIU is to compensate veterans who cannot maintain a full-time job due to service-connected disabilities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	TDIU stands for total disability individual unemployability. 
+																	Individual Unemployability IU is a unique part of VAs disability compensation program. 
+																	It allows VA to pay certain Veterans compensation at the 100 percent rate even though VA has not rated their service-connected disabilities at that level. 
+																	Being awarded TDIU will usually result in a substantial financial gain. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Individual Unemployability IU is a part of VAs disability compensation program that allows the VA to pay certain veterans disability compensation at the 100 rate even though VA has not rated. 
+																	The VA awards Total Disability for Individual Unemployability TDIU in situations where the veteran does not have an actual rating of 100 percent but they are unable to secure or follow a substantially gainful occupation as a result of service-connected disabilities 38 CFR 416 a An award of TDIU brings the veterans rating to 100 percent without adding more disabilities or seeking an increase in current disabilities. 
+																	Veterans often have many questions about Individual Unemployability so we have collected these questions and provided answers. 
+																	VA Unemployability are monthly benefits for veterans who can no longer obtain or keep gainful employment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Individual Unemployability is a part of VAs disability compensation program that allows VA to pay certain Veterans disability compensation at the 100 rate even though VA has not rated their service-connected disabilities at the total level. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/2a/16/4b2a16bdc093daf8ad38d4d946d972a6.png" data-lightbox="roadtrip" data-title="Veterans Law Blog Bookstore Law Blog Blog Training Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/2a/16/4b2a16bdc093daf8ad38d4d946d972a6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ82povaHUXIPuKnWXOHNXjZkFjvu7O9vXWMA';" alt="Veterans Law Blog Bookstore Law Blog Blog Training Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Law Blog Bookstore Law Blog Blog Training Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/18/ee/a118eeecd48e2608534e17ab8c39c5b0.png" data-lightbox="roadtrip" data-title="257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/18/ee/a118eeecd48e2608534e17ab8c39c5b0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT4nd-QeaprcH_xHnHjzoe_JEMsaHjg_DIaw';" alt="257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/38/1e/81381eecefba1b2222c0efe2803fa441.png" data-lightbox="roadtrip" data-title="Understanding How The Veterans Disability Process Works Veterans Http Www Veteransbenefitslawfirm Military Life Quotes Veterans Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/38/1e/81381eecefba1b2222c0efe2803fa441.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN07tz3ZxpEwThdeajruhPSMSsx0HCXq7g-Q';" alt="Understanding How The Veterans Disability Process Works Veterans Http Www Veteransbenefitslawfirm Military Life Quotes Veterans Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding How The Veterans Disability Process Works Veterans Http Www Veteransbenefitslawfirm Military Life Quotes Veterans Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/04/31/2c/04312cd30c4b6d4a8fc23f8d0996a932.jpg" data-lightbox="roadtrip" data-title="Individual Unemployability Denials Denial Individuality Appealing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/04/31/2c/04312cd30c4b6d4a8fc23f8d0996a932.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8EwYnCPkD7jl9zes6-DHoponCAnviREkLA';" alt="Individual Unemployability Denials Denial Individuality Appealing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Individual Unemployability Denials Denial Individuality Appealing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/17/7b/22/177b2258eea2182bba9b9c7efff7c117.jpg" data-lightbox="roadtrip" data-title="Statement Of The Case What Is Va Form 9 And How Long Do You Have To Get It To The Va Read More Statement Case Read More">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/17/7b/22/177b2258eea2182bba9b9c7efff7c117.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTD_fHB_n-5pqLSnZFXsrO_t9zPkOCDoLjww';" alt="Statement Of The Case What Is Va Form 9 And How Long Do You Have To Get It To The Va Read More Statement Case Read More">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Statement Of The Case What Is Va Form 9 And How Long Do You Have To Get It To The Va Read More Statement Case Read More</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/86/74/dd867454b1061ebb0862aeccc7324d01.png" data-lightbox="roadtrip" data-title="Click Here For More Information On Increasing Your Va Benefits When You Re Unable To Work Http Www Veteransbenefit Va Benefits Disability Benefit Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/86/74/dd867454b1061ebb0862aeccc7324d01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8EsFaIMkr5EnJkhQIEu_VQbUjbZ9yO6rKug';" alt="Click Here For More Information On Increasing Your Va Benefits When You Re Unable To Work Http Www Veteransbenefit Va Benefits Disability Benefit Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Click Here For More Information On Increasing Your Va Benefits When You Re Unable To Work Http Www Veteransbenefit Va Benefits Disability Benefit Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/de/9c/ba/de9cbae4f62b74abf6f7b59d078c3c8f.jpg" data-lightbox="roadtrip" data-title="Lay Statements In A Disability Claim Disability Va Disability Statement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/de/9c/ba/de9cbae4f62b74abf6f7b59d078c3c8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkeRxpcOjjuXGmDkM1ppoWvAl_cIhqV615PA';" alt="Lay Statements In A Disability Claim Disability Va Disability Statement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lay Statements In A Disability Claim Disability Va Disability Statement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/2e/a1/d82ea199837a334628603923456b1f84.jpg" data-lightbox="roadtrip" data-title="Va Vigilante Google Search Tech Company Logos Company Logo Logos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/2e/a1/d82ea199837a334628603923456b1f84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz0LdRui1u78pZPaMbSRy6DWhCCBjrpVdY2g';" alt="Va Vigilante Google Search Tech Company Logos Company Logo Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Vigilante Google Search Tech Company Logos Company Logo Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/47/8b/c8/478bc8be76f7f3648808a48b88ab61f4.jpg" data-lightbox="roadtrip" data-title="Tdiu Effective Dates Dating Effective Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/47/8b/c8/478bc8be76f7f3648808a48b88ab61f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQIR9NPYr0kzCOA3DorYogWWITy1EkaphK8w';" alt="Tdiu Effective Dates Dating Effective Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tdiu Effective Dates Dating Effective Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b3/cd/35/b3cd354747a66275ddce017318b1f68d.jpg" data-lightbox="roadtrip" data-title="Va Disability Radiation Exposure Claim Radiation Exposure Radiation Exposure">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b3/cd/35/b3cd354747a66275ddce017318b1f68d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPepgOevmAcKtyz13ajzpkz55pNDdZxxwQeA';" alt="Va Disability Radiation Exposure Claim Radiation Exposure Radiation Exposure">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Radiation Exposure Claim Radiation Exposure Radiation Exposure</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/b9/ef/60b9ef61a84f714bb069bda9c56e95b9.png" data-lightbox="roadtrip" data-title="Pin On Va">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/b9/ef/60b9ef61a84f714bb069bda9c56e95b9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7KeMIMSxGlVhu-QHfCZH-JGVTdqEVvQoPcA';" alt="Pin On Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c2/d7/78/c2d778e56e09358a9eafe1e520d0271a.jpg" data-lightbox="roadtrip" data-title="Attiglawfirm Com Http Www Attiglawfirm Com Tdiu Total Va Disability Ratings Utm Source Slideshare Utm Medium 09151 Disability Benefit Disability Cedartown">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c2/d7/78/c2d778e56e09358a9eafe1e520d0271a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1yfouwhNqSI1cAgDqDUdqVpfoJ6FRUJWqKA';" alt="Attiglawfirm Com Http Www Attiglawfirm Com Tdiu Total Va Disability Ratings Utm Source Slideshare Utm Medium 09151 Disability Benefit Disability Cedartown">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Attiglawfirm Com Http Www Attiglawfirm Com Tdiu Total Va Disability Ratings Utm Source Slideshare Utm Medium 09151 Disability Benefit Disability Cedartown</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/ff/3c/1eff3cd1d865c3fe22e2f54b1203e966.jpg" data-lightbox="roadtrip" data-title="Va Disability Claims Law Offices Of Peter S Cameron Veteran Appeals In 2020 Va Disability Veteran Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/ff/3c/1eff3cd1d865c3fe22e2f54b1203e966.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8XNGdI6SfXfZiYBNnNEWewpOoubixi6b8mA';" alt="Va Disability Claims Law Offices Of Peter S Cameron Veteran Appeals In 2020 Va Disability Veteran Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Claims Law Offices Of Peter S Cameron Veteran Appeals In 2020 Va Disability Veteran Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-unemployment-newport-news-office.html">Va Unemployment Newport News Office</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-direct-deposit.html">Va Unemployment Direct Deposit</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-claim-online.html">Va Unemployment Claim Online</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-how-long-to-receive-pin.html">Va Unemployment How Long To Receive Pin</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-claim-assistance.html">Va Unemployment Claim Assistance</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-benefits-not-deposited.html">Va Unemployment Benefits Not Deposited</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-benefits-end-date.html">Va Unemployment Benefits End Date</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-benefits-calculator.html">Va Unemployment Benefits Calculator</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-commission-phone-number.html">Va Unemployment Commission Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-call-back.html">Va Unemployment Call Back</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-direct-deposit-dates.html">Va Unemployment Direct Deposit Dates</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-claim-issue.html">Va Unemployment Claim Issue</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-latest-news.html">Va Unemployment Latest News</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-benefit-application.html">Va Unemployment Benefit Application</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-claim-denied.html">Va Unemployment Claim Denied</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-claims.html">Va Unemployment Claims</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-apply-online.html">Va Unemployment Apply Online</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-maximum-benefit-amount.html">Va Unemployment Maximum Benefit Amount</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-new-claim.html">Va Unemployment New Claim</a></li>
+													<li class="list-group-item"><a href="/va-unemployment-claim-status-online.html">Va Unemployment Claim Status Online</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

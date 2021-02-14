@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Should A College Graduate Resume Look Like - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Should A College Graduate Resume Look Like",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/ec/30/0f/ec300f5ca2190fd32eea855dd55412d3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+should+a+college+graduate+resume+look+like",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Should A College Graduate Resume Look Like</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Your college grad resume has to be on fleek. A college graduate resume is a document that presents your education extracurricular activities and skills. First every recent graduate resume should begin with contact information and an objective. <br>				
+			</p>
+										<a class="badge badge-warning" href="/virginia-unemployment-benefits-extension-2020.html">virginia unemployment benefits extension 2020</a>
+											<a class="badge badge-secondary" href="/virginia-unemployment-pay-2020.html">virginia unemployment pay 2020</a>
+											<a class="badge badge-warning" href="/virginia-unemployment-medical-form.html">virginia unemployment medical form</a>
+											<a class="badge badge-primary" href="/virginia-unemployment-contact-phone-number.html">virginia unemployment contact phone number</a>
+											<a class="badge badge-warning" href="/virginia-unemployment-eligibility-severance.html">virginia unemployment eligibility severance</a>
+											<a class="badge badge-danger" href="/virginia-unemployment-benefit-statement.html">virginia unemployment benefit statement</a>
+											<a class="badge badge-dark" href="/virginia-unemployment-rate-june-2020.html">virginia unemployment rate june 2020</a>
+											<a class="badge badge-dark" href="/virginia-unemployment-rate-fred.html">virginia unemployment rate fred</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to visit the right blog.  Our site gives you suggestions for seeing the maximum quality video and image content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this movie for you to view.  You can also bring about supporting this website by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/42/18/3d4218f7a890ce54c2280172af950c2e.jpg" data-lightbox="roadtrip" data-title="What Your Resume Should Look Like In 2019 Money Best Resume Format Best Resume Template Job Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/42/18/3d4218f7a890ce54c2280172af950c2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRodWBZci1BE2eJOR5sK7wkGlZktByMx7Rrg';" alt="What Your Resume Should Look Like In 2019 Money Best Resume Format Best Resume Template Job Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Your Resume Should Look Like In 2019 Money Best Resume Format Best Resume Template Job Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/6a/fa/686afa2cb0ec20b32d9e811dc6e3c9e5.png" data-lightbox="roadtrip" data-title="What Your Resume Should Look Like In 2018 Money">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/6a/fa/686afa2cb0ec20b32d9e811dc6e3c9e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt4AcPdPCQvxRKvQR31u4xPgIzI9D9loICDQ';" alt="What Your Resume Should Look Like In 2018 Money">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Your Resume Should Look Like In 2018 Money</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/a2/8b/43a28bae3dce4a004c0320b798f27b08.png" data-lightbox="roadtrip" data-title="What Your Resume Should Look Like In 2017 Careermetis Com Resume Template Free Functional Resume Template Resume Template Word">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/a2/8b/43a28bae3dce4a004c0320b798f27b08.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-qu6Ok4FmWk1coC8BspUBPNKojOWpa8u_Mg';" alt="What Your Resume Should Look Like In 2017 Careermetis Com Resume Template Free Functional Resume Template Resume Template Word">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Your Resume Should Look Like In 2017 Careermetis Com Resume Template Free Functional Resume Template Resume Template Word</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/45/be/a345beeb3ec5e847d8c8ba40bee57249.png" data-lightbox="roadtrip" data-title="8 How Cv Look Like Boy Friend Letters Good Cv Good Resume Examples Job Resume Samples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/45/be/a345beeb3ec5e847d8c8ba40bee57249.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6jKIhzxeUyy_ZKqulKNR4DXmRJkrxQLHOdQ';" alt="8 How Cv Look Like Boy Friend Letters Good Cv Good Resume Examples Job Resume Samples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 How Cv Look Like Boy Friend Letters Good Cv Good Resume Examples Job Resume Samples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/a3/b8/dba3b86f9c0b21d66252b5dfa4bd6c96.png" data-lightbox="roadtrip" data-title="What Your Resume Should Look Like In 2016 Resume Advice Resume Layout Resume Writing Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/a3/b8/dba3b86f9c0b21d66252b5dfa4bd6c96.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0_0aEF6ybwQW4hxtnpnManC9v2BkPw6dcXg';" alt="What Your Resume Should Look Like In 2016 Resume Advice Resume Layout Resume Writing Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Your Resume Should Look Like In 2016 Resume Advice Resume Layout Resume Writing Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/da/b8/1edab87b88950b152af43723bf5b2ea5.jpg" data-lightbox="roadtrip" data-title="Nextadvisor With Time Resume Tips Resume Advice Job Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/da/b8/1edab87b88950b152af43723bf5b2ea5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvhOTAbR1KeAt33tdbYd_HJJrq2zytfzqngg';" alt="Nextadvisor With Time Resume Tips Resume Advice Job Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nextadvisor With Time Resume Tips Resume Advice Job Resume</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a3/45/be/a345beeb3ec5e847d8c8ba40bee57249.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvhOTAbR1KeAt33tdbYd_HJJrq2zytfzqngg';" alt="Nextadvisor With Time Resume Tips Resume Advice Job Resume">
+										<div class="card-body">
+						<h3 class="h5"><b>An objective states who you are as a professional and which position you hope to obtain.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What should a college graduate resume look like</strong>. 
+								
+																	If your GPA is 30 or higher go ahead and brag about it. 
+																	Its your personal story. 
+																	But what you CAN do is use your college student resume to paint a picture of a determined positive and productive personality. 
+																	Heres an example of what your contact information section might look like. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Including high school education only makes you look like youre desperate for filler. 
+																	If youve achieved academic honors like the deans list or phi beta kappa include that as well. 
+																	Unless you have significant relevant work experience outside of schoola couple solid semester-long internships for examplethen your Education section should stay at the top of your resume. 
+																	In the education section of your resume list the college you attend or graduated from the degrees you attained and awards and honors you have earned. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The format of your entry-level college-graduate resume will depend on the information you have to work with. 
+																	This is an example of what a perfect resume for a recent college grad should look like. 
+																	As a recent college graduate your education is one of your strongest assets. 
+																	If you are still a college student or are a recent graduate you may also include your GPA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This means you should tailor your resume to your field of study and avoid padding it with too many irrelevant experiences. 
+																	But if you have a 40 in Economics theyll be. 
+																	Besides the obviousyour school your major your degree your graduation year and your current GPA note. 
+																	Tom Brady shows college grads what a resume should look like. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have a strong GPA include that as well. 
+																	As a college student or graduate your academic achievements are among your greatest assetshighlight them by placing the education section at the top of your resume. 
+																	If you have a ton of great internship experience highlight that just below your professional summary and education sections. 
+																	College Recruiter is the leading job board for college students searching for internships and recent graduates hunting for entry-level jobs and other career opportunities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your graduate school resume should include more information such as your GPA the title of your undergrad thesis if you completed one any awards you received classes you took that are relevant to the program youre applying to as well as relevant skills you learned in school. 
+																	Posted at 0000h in Prepare Tools by Dana Manciagli. 
+																	You should check whether the text is rightly aligned and the formatting is consistent. 
+																	Include the college you attended your graduation date and your major and minor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Recent graduate resume examples better than 9 out of 10 other resumes. 
+																	Job seekers should register to make it faster and easier to apply to the hundreds of thousands of internships and entry-level jobs advertised on College Recruiter. 
+																	How to write a resume for a recent college graduate that gets more interviews. 
+																	Clear and easy to follow. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This recent college graduate resume guide will show you. 
+																	Your name should be the largest heading on the page. 
+																	When in doubt leave it out. 
+																	Should You Put Your Address On Your Resume. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a college student you can rarely showcase a rich history of work experience on your resume. 
+																	College grad resume objective statement. 
+																	Free Career Advice Blog. 
+																	Choose a simple and clean font that is easy to read. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is what your SummaryProfile is for. 
+																	Employers must register in order to post their job openings. 
+																	The college graduate resume should be short to the point and tailored to the job. 
+																	Yes its true that you have a ba in psychology but at eight. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Include an Education section towards the top of your resume. 
+																	Make sure to highlight any relevant work experience or internship as doing so will make you stand out from the crowd. 
+																	Tips on how to put skills and achievements on a college grad resume. 
+																	Include your school your major the degree you expect to earn and the year you will graduate. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a new graduate this is still your greatest qualification. 
+																	They wont care if you got a C in Underwater Basket-weaving. 
+																	Graduate school resumes should highlight all of your major academic and professional experiences and accomplishments particularly those most relevant to your field of study. 
+																	And if your GPA within your major is even higher than that showcase that achievement. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wrong formatting can make the resume difficult to read or fonts that are just too big or too small can spoil the look of your resume. 
+																	What is a College Graduate Resume. 
+																	If your GPA isnt great you may want to leave it offthere are several other things you can add to your education if you decide not to make them their own section. 
+																	Avoid scripts or something thats visually distracting. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/83/14/fe8314bdda8854a1af7fc566bba1c8a7.jpg" data-lightbox="roadtrip" data-title="Nextadvisor With Time Resume Skills Resume Writing Examples Resume Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/83/14/fe8314bdda8854a1af7fc566bba1c8a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqVfXo9RQT6ZCDbrkYZjmOqNSXiS1yseaViQ';" alt="Nextadvisor With Time Resume Skills Resume Writing Examples Resume Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nextadvisor With Time Resume Skills Resume Writing Examples Resume Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/9a/e3/1d9ae3f057502581cb37587442442a87.png" data-lightbox="roadtrip" data-title="What An Excellent Resume Looks Like And Know The Reasons Why Pakaccountants Com Writing Jobs Freelance Writing Jobs Human Resources Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/9a/e3/1d9ae3f057502581cb37587442442a87.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKXJ26yeld-1UDpjEW7g5ItUrhlo2tOoqZQ';" alt="What An Excellent Resume Looks Like And Know The Reasons Why Pakaccountants Com Writing Jobs Freelance Writing Jobs Human Resources Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What An Excellent Resume Looks Like And Know The Reasons Why Pakaccountants Com Writing Jobs Freelance Writing Jobs Human Resources Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c0/6d/ef/c06def81af08b7818c0ba57298789211.jpg" data-lightbox="roadtrip" data-title="What Is A Resume Supposed To Look Like Vision Specialist Free Printable Resume Functional Resume Template Free Printable Resume Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c0/6d/ef/c06def81af08b7818c0ba57298789211.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4yD-IIgfdFKXVApF5QqrbxGtp5cTn5-HmQ';" alt="What Is A Resume Supposed To Look Like Vision Specialist Free Printable Resume Functional Resume Template Free Printable Resume Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is A Resume Supposed To Look Like Vision Specialist Free Printable Resume Functional Resume Template Free Printable Resume Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/22/be/3722be5f1b47f9cb700c8874fd994345.gif" data-lightbox="roadtrip" data-title="This Is What A Good Resume Should Look Like Careercup Good Resume Examples Best Resume Resume Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/22/be/3722be5f1b47f9cb700c8874fd994345.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHald_Js6jXNv_onYRnu1Mx8ym7CjERkiKsQ';" alt="This Is What A Good Resume Should Look Like Careercup Good Resume Examples Best Resume Resume Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is What A Good Resume Should Look Like Careercup Good Resume Examples Best Resume Resume Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/30/0f/ec300f5ca2190fd32eea855dd55412d3.jpg" data-lightbox="roadtrip" data-title="Emphasize Career Highlights On Your Resume By Using Color Strategically Learn Resume Template Professional Resume Good Resume Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/30/0f/ec300f5ca2190fd32eea855dd55412d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEaWGIbt9jD3ABPQl1UihVM-ZCEkzZfTLhSA';" alt="Emphasize Career Highlights On Your Resume By Using Color Strategically Learn Resume Template Professional Resume Good Resume Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emphasize Career Highlights On Your Resume By Using Color Strategically Learn Resume Template Professional Resume Good Resume Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/58/33/d758332fdc03838c253968bc8653cd1f.gif" data-lightbox="roadtrip" data-title="Page Not Found College Resume College Application Resume College Resume Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/58/33/d758332fdc03838c253968bc8653cd1f.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_psKCfKNGzT9m7iiZJohh7Nd61t3zPb5WHg';" alt="Page Not Found College Resume College Application Resume College Resume Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Page Not Found College Resume College Application Resume College Resume Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/e0/ea/f9e0ea86115a7d0b7e073cb92634a16f.jpg" data-lightbox="roadtrip" data-title="This Is What A Professional Marketing Directors Resume Looks Like Want It Download It Now Marketing Resume Project Manager Resume Professional Resume Format">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/e0/ea/f9e0ea86115a7d0b7e073cb92634a16f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS93fxzNu8rB8XDvN2kXNgAMysGhFX9ARrO1w';" alt="This Is What A Professional Marketing Directors Resume Looks Like Want It Download It Now Marketing Resume Project Manager Resume Professional Resume Format">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is What A Professional Marketing Directors Resume Looks Like Want It Download It Now Marketing Resume Project Manager Resume Professional Resume Format</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/b8/8a/20b88ade57d50fbbcf2f67b9179147a9.png" data-lightbox="roadtrip" data-title="Modern Resume Template Professional Cv Template For Word Etsy In 2020 Resume Template Professional Resume Template Word Modern Resume Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/b8/8a/20b88ade57d50fbbcf2f67b9179147a9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA78FJw62Om0uUbfbs29wkH9c0yCEr7oi42w';" alt="Modern Resume Template Professional Cv Template For Word Etsy In 2020 Resume Template Professional Resume Template Word Modern Resume Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modern Resume Template Professional Cv Template For Word Etsy In 2020 Resume Template Professional Resume Template Word Modern Resume Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/a3/2e/5fa32e844be3aaabcc492aa2dc1b945c.png" data-lightbox="roadtrip" data-title="What Your Cover Letter Should Look Like In 2017 Cover Letter Tips Cover Letter For Resume Writing A Cover Letter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/a3/2e/5fa32e844be3aaabcc492aa2dc1b945c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXKQU6b7XVPDT2JELlp4eeLrbZC7tCZL9nHQ';" alt="What Your Cover Letter Should Look Like In 2017 Cover Letter Tips Cover Letter For Resume Writing A Cover Letter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Your Cover Letter Should Look Like In 2017 Cover Letter Tips Cover Letter For Resume Writing A Cover Letter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/e4/05/51e405cc6d503363753333f8d7925884.png" data-lightbox="roadtrip" data-title="Resume Template Professional Resume Cv Template Modern Resume Resume Template Word Creative Resume Design Manager Cv Sabrina Resume Template Professional Resume Template Word Cv Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/e4/05/51e405cc6d503363753333f8d7925884.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98C4avFND6nWRsM5GXowznUtEBTqvO21avw';" alt="Resume Template Professional Resume Cv Template Modern Resume Resume Template Word Creative Resume Design Manager Cv Sabrina Resume Template Professional Resume Template Word Cv Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Resume Template Professional Resume Cv Template Modern Resume Resume Template Word Creative Resume Design Manager Cv Sabrina Resume Template Professional Resume Template Word Cv Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/45/00/e64500bb7a1c0eb0ae274e0219a75eb2.png" data-lightbox="roadtrip" data-title="How Your Cv Should Look Like Professional Well Structured And Modern Exactly As This Resume Template Find More Resume Tips Writing Tips Resume Writing Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/45/00/e64500bb7a1c0eb0ae274e0219a75eb2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPEfZXJOyXuVkFBoD8Jr2nTT_Kl9i1vDPnNQ';" alt="How Your Cv Should Look Like Professional Well Structured And Modern Exactly As This Resume Template Find More Resume Tips Writing Tips Resume Writing Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Your Cv Should Look Like Professional Well Structured And Modern Exactly As This Resume Template Find More Resume Tips Writing Tips Resume Writing Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f6/28/f4/f628f42abeb4595276a4e10ce7ff7e4c.jpg" data-lightbox="roadtrip" data-title="Professional Resume Template Instant Download 3 Page Resume Etsy Resume Template Professional Resume Template Word Resume Template">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f6/28/f4/f628f42abeb4595276a4e10ce7ff7e4c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmv6fMCxVyOgCiMiqUQx4fg3qK-m6z9RBlMg';" alt="Professional Resume Template Instant Download 3 Page Resume Etsy Resume Template Professional Resume Template Word Resume Template">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Professional Resume Template Instant Download 3 Page Resume Etsy Resume Template Professional Resume Template Word Resume Template</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/5c/3e/9a5c3ef83fb4b9bc633c835d5b2908da.jpg" data-lightbox="roadtrip" data-title="36 Beautiful Resume Ideas That Work Beautiful Resume Basic Resume Resume Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/5c/3e/9a5c3ef83fb4b9bc633c835d5b2908da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdXoTGn3ceA75K3xOrqYKinEIMHHDcplhjMw';" alt="36 Beautiful Resume Ideas That Work Beautiful Resume Basic Resume Resume Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">36 Beautiful Resume Ideas That Work Beautiful Resume Basic Resume Resume Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-are-the-different-jobs-in-the-national-guard.html">What Are The Different Jobs In The National Guard</a></li>
+													<li class="list-group-item"><a href="/what-are-the-current-army-reenlistment-bonuses.html">What Are The Current Army Reenlistment Bonuses</a></li>
+													<li class="list-group-item"><a href="/what-are-the-best-jobs-for-military-spouses.html">What Are The Best Jobs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/what-are-the-chances-of-winning-a-va-appeal.html">What Are The Chances Of Winning A Va Appeal</a></li>
+													<li class="list-group-item"><a href="/what-are-the-civil-service-pay-grades.html">What Are The Civil Service Pay Grades</a></li>
+													<li class="list-group-item"><a href="/what-are-the-most-common-disabilities-for-which-windows-provide-solutions-class-10.html">What Are The Most Common Disabilities For Which Windows Provide Solutions Class 10</a></li>
+													<li class="list-group-item"><a href="/what-are-the-different-types-of-oysters.html">What Are The Different Types Of Oysters</a></li>
+													<li class="list-group-item"><a href="/what-are-the-chances-of-being-deployed-in-the-national-guard.html">What Are The Chances Of Being Deployed In The National Guard</a></li>
+													<li class="list-group-item"><a href="/what-are-the-different-types-of-va-loans.html">What Are The Different Types Of Va Loans</a></li>
+													<li class="list-group-item"><a href="/what-are-the-department-of-homeland-security-agencies.html">What Are The Department Of Homeland Security Agencies</a></li>
+													<li class="list-group-item"><a href="/what-are-the-best-colleges-to-go-to-for-interior-design.html">What Are The Best Colleges To Go To For Interior Design</a></li>
+													<li class="list-group-item"><a href="/what-are-the-core-competencies-of-human-resources.html">What Are The Core Competencies Of Human Resources</a></li>
+													<li class="list-group-item"><a href="/what-are-the-fitness-requirements-to-join-the-army.html">What Are The Fitness Requirements To Join The Army</a></li>
+													<li class="list-group-item"><a href="/what-are-the-fitness-requirements-for-the-british-army.html">What Are The Fitness Requirements For The British Army</a></li>
+													<li class="list-group-item"><a href="/what-are-the-different-types-of-gi-bill.html">What Are The Different Types Of Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-are-the-military-benefits-for-spouses.html">What Are The Military Benefits For Spouses</a></li>
+													<li class="list-group-item"><a href="/what-are-the-military-departments.html">What Are The Military Departments</a></li>
+													<li class="list-group-item"><a href="/what-are-the-fitness-entry-requirements-for-the-army.html">What Are The Fitness Entry Requirements For The Army</a></li>
+													<li class="list-group-item"><a href="/what-are-the-fitness-tests-for-the-army.html">What Are The Fitness Tests For The Army</a></li>
+													<li class="list-group-item"><a href="/what-are-the-jobs-for-hr.html">What Are The Jobs For Hr</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Regional Office New Orleans - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Regional Office New Orleans",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/7c/19/1b/7c191b77e217c77b4a706d923262600e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+regional+office+new+orleans",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Regional Office New Orleans</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Read our coronavirus FAQs and public health response or use our coronavirus chatbot. Last updated July 3 2019. Southeast Louisiana Veterans Health Care System. <br>				
+			</p>
+										<a class="badge badge-danger" href="/what-to-do-if-my-ex-partner-wont-let-me-see-my-child.html">what to do if my ex partner wont let me see my child</a>
+											<a class="badge badge-dark" href="/what-time-does-netspend-deposit.html">what time does netspend deposit</a>
+											<a class="badge badge-dark" href="/what-to-do-if-boyfriend-ignores-you-after-a-fight.html">what to do if boyfriend ignores you after a fight</a>
+											<a class="badge badge-warning" href="/what-to-do-if-an-employees-spouse-has-covid-19.html">what to do if an employees spouse has covid 19</a>
+											<a class="badge badge-info" href="/what-time-is-it-in-12-hour-format.html">what time is it in 12 hour format</a>
+											<a class="badge badge-info" href="/what-time-does-netspend-deposit-refunds.html">what time does netspend deposit refunds</a>
+											<a class="badge badge-secondary" href="/what-to-do-if-wife-doesnt-respect-you.html">what to do if wife doesnt respect you</a>
+											<a class="badge badge-danger" href="/what-to-do-if-your-husband-belittles-you.html">what to do if your husband belittles you</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the right site.  Our website provides you with suggestions for seeing the maximum quality video and image content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you see.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/6e/eb/386eebcf15839dd800a840c6044b4d25.jpg" data-lightbox="roadtrip" data-title="Building United States Old Post Office Linen Postcard New Orleans Louisiana New Orleans Louisiana Post Office New Orleans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/6e/eb/386eebcf15839dd800a840c6044b4d25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnm8079lVJUNQiIQ1Bl3D_eR7orIYzXN0mEg';" alt="Building United States Old Post Office Linen Postcard New Orleans Louisiana New Orleans Louisiana Post Office New Orleans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Building United States Old Post Office Linen Postcard New Orleans Louisiana New Orleans Louisiana Post Office New Orleans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/3e/c6/313ec67d76ec87de645e68b85b549f9c.jpg" data-lightbox="roadtrip" data-title="Southeast Louisiana Veterans Health Care System Replacement Medical Center New Orleans La Usa Va Hospital Veterans Health Care Healthcare System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/3e/c6/313ec67d76ec87de645e68b85b549f9c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd1Nrem-F06uxAXx3FrICpn2P1NwUf96gz1Q';" alt="Southeast Louisiana Veterans Health Care System Replacement Medical Center New Orleans La Usa Va Hospital Veterans Health Care Healthcare System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Southeast Louisiana Veterans Health Care System Replacement Medical Center New Orleans La Usa Va Hospital Veterans Health Care Healthcare System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/0c/57/000c576a26fe56dce4a553d245c42d43.jpg" data-lightbox="roadtrip" data-title="State Va Leader Questions Chief Of Staff Hire At New Orleans Hospital Veterans Affairs Hospital New Hospital">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/0c/57/000c576a26fe56dce4a553d245c42d43.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhXxZthDEZfbpz_8KsxJgxF2ev5f5l9qyjcw';" alt="State Va Leader Questions Chief Of Staff Hire At New Orleans Hospital Veterans Affairs Hospital New Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Va Leader Questions Chief Of Staff Hire At New Orleans Hospital Veterans Affairs Hospital New Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/38/cd/ea38cd20f59bea721ea08d00b6982a1e.jpg" data-lightbox="roadtrip" data-title="No Mcdonogh Schools 2 New Orleans History School Orleans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/38/cd/ea38cd20f59bea721ea08d00b6982a1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWpHFpwmExk4tN7A49aJBbj0OhzVbvo_fffw';" alt="No Mcdonogh Schools 2 New Orleans History School Orleans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No Mcdonogh Schools 2 New Orleans History School Orleans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/6f/0e/a86f0eeae264a9ce45f600753275005c.jpg" data-lightbox="roadtrip" data-title="Nola Charityhospital New Orleans History Va Hospital Nola">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/6f/0e/a86f0eeae264a9ce45f600753275005c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQChpCPd7iwC93cfHDL9QBg8xgKfX4HO4Zzw';" alt="Nola Charityhospital New Orleans History Va Hospital Nola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nola Charityhospital New Orleans History Va Hospital Nola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/19/1b/7c191b77e217c77b4a706d923262600e.jpg" data-lightbox="roadtrip" data-title="Postcard From The West Virginia And Regional History Collection Trying To Identify The Dead Monongah W Va West Virginia Street View Scenes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/19/1b/7c191b77e217c77b4a706d923262600e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnNPWqWcFwZP1gDLO5V5h3sU8_4qdjHQDnYg';" alt="Postcard From The West Virginia And Regional History Collection Trying To Identify The Dead Monongah W Va West Virginia Street View Scenes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Postcard From The West Virginia And Regional History Collection Trying To Identify The Dead Monongah W Va West Virginia Street View Scenes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/06/3a/5f/063a5fb5b4308253ed3ea1c8fa7e9d38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnNPWqWcFwZP1gDLO5V5h3sU8_4qdjHQDnYg';" alt="Postcard From The West Virginia And Regional History Collection Trying To Identify The Dead Monongah W Va West Virginia Street View Scenes">
+										<div class="card-body">
+						<h3 class="h5"><b>New Orleans Regional Benefit Office leadership team Meet Our Leadership Team - New Orleans Regional Office Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va regional office new orleans</strong>. 
+								
+																	United States Department of Veterans Affairs Regional Office New Orleans 321 New Orleans Regional Office Home Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Department of Veterans Affairs - 810 Vermont Avenue NW - Washington DC 20420. 
+																	Last updated October 12 2018. 
+																	Everyone entering our facilities is screened and visitors are limited. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	United States Department of Veterans Affairs Regional Office New Orleans 321 New Orleans Regional Office Home Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	See reviews photos directions phone numbers and more for Veterans Affairs Regional Office locations in New Orleans LA. 
+																	Regional Benefit Office. 
+																	VA Regional Office New Orleans 321 skip to page content. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Intake Site Pre-Discharge Claims Assistance. 
+																	Face coverings are manda. 
+																	We offer the following additional services. 
+																	Release of Information Office 2400 Canal Street ATTN ROI New Orleans LA 70119. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Because forms must contain an original signature e-mailed forms cannot be accepted. 
+																	Counseling about eligibility for VA benefits and how to apply. 
+																	VAs New Orleans Regional Office RO administers a variety of services including Compensation Education Insurance Loan Guaranty Pension and Veteran Readiness and Employment to servicemembers their families and survivors in Louisiana. 
+																	The map and by state index below provide links to VA regional offices an email address for contacting the regional office director and a listing of additional VA facilities located in each state. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Requests for records will take approximately 10-14 days to process. 
+																	Get help from Veterans Crisis Line. 
+																	Operating status for New Orleans Current Operating Status - New Orleans Regional Office Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Visit your regional office website to learn about the services the regional office provides directions to the facility hours of operation and the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To get the latest updates and sign up to stay informed about COVID-19 vaccines visit our vaccine information page. 
+																	Get help from Veterans Crisis Line. 
+																	Directions to the New Orleans Regional Office Directions and Maps - New Orleans Regional Office Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	Prepare for a visit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	65155 or 66202 M. 
+																	New Orleans Regional Office. 
+																	New Orleans VA 70119. 
+																	Department of Veterans Affairs 810 Vermont Avenue NW Washington DC 20420. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA Regional Office New Orleans Home. 
+																	Enter your search text Button to start search Open Advanced Search Related Links - VA Regional Office New Orleans. 
+																	Department of Veterans Affairs 810 Vermont Avenue NW Washington DC 20420. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/c2/05/54c2059a16d0d2fd43d496fa98c4c088.jpg" data-lightbox="roadtrip" data-title="Despite Using Compromised Technology They Re Now Offering Cyber Protections To Ordinary Americans What Could Go Wrong Washington Dc Hotels Pentagon Dc Hotel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/c2/05/54c2059a16d0d2fd43d496fa98c4c088.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSadLtM2TYlCau2aK7r37H6NK-7-EM11YUwVQ';" alt="Despite Using Compromised Technology They Re Now Offering Cyber Protections To Ordinary Americans What Could Go Wrong Washington Dc Hotels Pentagon Dc Hotel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Despite Using Compromised Technology They Re Now Offering Cyber Protections To Ordinary Americans What Could Go Wrong Washington Dc Hotels Pentagon Dc Hotel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/eb/92/25eb92d800482049895cf9df3638cea8.jpg" data-lightbox="roadtrip" data-title="1944 Postcard New Orleans Loyola University Sandi Miller Collection Louisiana History New Orleans Loyola University">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/eb/92/25eb92d800482049895cf9df3638cea8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGgoSj21CMqR_prSdMj8Uzaybl_KV1PQOTwg';" alt="1944 Postcard New Orleans Loyola University Sandi Miller Collection Louisiana History New Orleans Loyola University">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1944 Postcard New Orleans Loyola University Sandi Miller Collection Louisiana History New Orleans Loyola University</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/2f/e0/0f2fe0033fac0937e2b1be3b505793c1.jpg" data-lightbox="roadtrip" data-title="New Orleans Hospitals Adapt And Overcome Hospital Architecture Healthcare Architecture Courtyard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/2f/e0/0f2fe0033fac0937e2b1be3b505793c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR77OoKrx3bx_8DarMraKz7oRKRJcH-qhDSQ';" alt="New Orleans Hospitals Adapt And Overcome Hospital Architecture Healthcare Architecture Courtyard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Orleans Hospitals Adapt And Overcome Hospital Architecture Healthcare Architecture Courtyard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/61/9f/28619f14b397e03359fa8ac9363c1fd0.jpg" data-lightbox="roadtrip" data-title="Muriel S Jackson Square French Quarter New Orleans La New Orleans Travel New Orleans French Quarter Jackson Square">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/61/9f/28619f14b397e03359fa8ac9363c1fd0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkdn9bbRUJ-zEB3OxS7GZTUk_C4ltq-BUMWQ';" alt="Muriel S Jackson Square French Quarter New Orleans La New Orleans Travel New Orleans French Quarter Jackson Square">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Muriel S Jackson Square French Quarter New Orleans La New Orleans Travel New Orleans French Quarter Jackson Square</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/61/b6/ab61b69d4d5df3a889c2228306f86a94.jpg" data-lightbox="roadtrip" data-title="Andrew V Pestano Washington Dec 6 Upi A New Report Alleges Officials At The Pentagon Suppressed An Internal Stud Washington Dc Hotels Pentagon Dc Hotel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/61/b6/ab61b69d4d5df3a889c2228306f86a94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gNrEZwhRxwSmENKxH2_5f6ci4Kja2BaEQg';" alt="Andrew V Pestano Washington Dec 6 Upi A New Report Alleges Officials At The Pentagon Suppressed An Internal Stud Washington Dc Hotels Pentagon Dc Hotel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Andrew V Pestano Washington Dec 6 Upi A New Report Alleges Officials At The Pentagon Suppressed An Internal Stud Washington Dc Hotels Pentagon Dc Hotel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/bd/21/9ebd2184f46671782f9be0aecf976331.jpg" data-lightbox="roadtrip" data-title="Shorpy Historical Photo Archive The Ice Wagon 1923 New Orleans French Quarter New Orleans History New Orleans Louisiana">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/bd/21/9ebd2184f46671782f9be0aecf976331.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Ndo3hWJbzUEUrsMiVXpnBX4bB8W0DWsxnA';" alt="Shorpy Historical Photo Archive The Ice Wagon 1923 New Orleans French Quarter New Orleans History New Orleans Louisiana">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shorpy Historical Photo Archive The Ice Wagon 1923 New Orleans French Quarter New Orleans History New Orleans Louisiana</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/15/23/0515232ca8b74d8d60407eaf61e28de5.jpg" data-lightbox="roadtrip" data-title="1984 Louisiana World Exposition In New Orleans Postcard U S Pavilion Mike Roberts Color Productions Orleans World New Orleans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/15/23/0515232ca8b74d8d60407eaf61e28de5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC2a_bMJUuZuAUh1flnoG_vz9Nl9m_oWi4Lg';" alt="1984 Louisiana World Exposition In New Orleans Postcard U S Pavilion Mike Roberts Color Productions Orleans World New Orleans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1984 Louisiana World Exposition In New Orleans Postcard U S Pavilion Mike Roberts Color Productions Orleans World New Orleans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/3a/5f/063a5fb5b4308253ed3ea1c8fa7e9d38.jpg" data-lightbox="roadtrip" data-title="Hillcrest Dorm Virginia Tech University Of New Orleans Virginia Is For Lovers Virginia Tech">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/3a/5f/063a5fb5b4308253ed3ea1c8fa7e9d38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCPPlLSHun2TAPnUk8LSer_MWX3nHk1jl3A';" alt="Hillcrest Dorm Virginia Tech University Of New Orleans Virginia Is For Lovers Virginia Tech">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hillcrest Dorm Virginia Tech University Of New Orleans Virginia Is For Lovers Virginia Tech</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/ac/a3/8baca373578aa512ea5cbe2142a2a8c2.jpg" data-lightbox="roadtrip" data-title="Pin On Homes On St Charles Ave New Orleans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/ac/a3/8baca373578aa512ea5cbe2142a2a8c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0-S0-3pAeYmseBl7aDm5HiTzCOeIJigcC3Q';" alt="Pin On Homes On St Charles Ave New Orleans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Homes On St Charles Ave New Orleans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/f1/09/84f1090798182720cd959092ccd77b8b.jpg" data-lightbox="roadtrip" data-title="Postcard St Charles Avenue New Orleans Louisiana Etsy In 2020 New Orleans Louisiana Postcard St Charles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/f1/09/84f1090798182720cd959092ccd77b8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT50bikhI5xneuppnOF3X6bMopSYs22OPnkw';" alt="Postcard St Charles Avenue New Orleans Louisiana Etsy In 2020 New Orleans Louisiana Postcard St Charles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Postcard St Charles Avenue New Orleans Louisiana Etsy In 2020 New Orleans Louisiana Postcard St Charles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/8d/16/a98d16a45b5b6b3abfbfdf4f428a909d.jpg" data-lightbox="roadtrip" data-title="Ponchartrain Beach Lake Pontchartrain New Orleans History Amusement Park">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/8d/16/a98d16a45b5b6b3abfbfdf4f428a909d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbgJ4NfY8gSXfCPky78ECbCvS3GJGVt-7aA';" alt="Ponchartrain Beach Lake Pontchartrain New Orleans History Amusement Park">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ponchartrain Beach Lake Pontchartrain New Orleans History Amusement Park</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/8e/da/0e8eda07fa3bcb3f6244262eff697bf6.jpg" data-lightbox="roadtrip" data-title="T Pineville Louisiana Va Hospital Remember The Christmas Displays On The Grounds Of This Hospital Pineville Louisiana Va Hospital Veteran Hospital">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/8e/da/0e8eda07fa3bcb3f6244262eff697bf6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6sI4cKCBo_mKxXA0CWQdBpyHXhBpzRFPH6A';" alt="T Pineville Louisiana Va Hospital Remember The Christmas Displays On The Grounds Of This Hospital Pineville Louisiana Va Hospital Veteran Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">T Pineville Louisiana Va Hospital Remember The Christmas Displays On The Grounds Of This Hospital Pineville Louisiana Va Hospital Veteran Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/d7/4b/55d74b82150a99ac0f73c35cd1e045d8.jpg" data-lightbox="roadtrip" data-title="Pin On New Orleans Homes And Gardens">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/d7/4b/55d74b82150a99ac0f73c35cd1e045d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH7RhxDJJuMERudorGDmB-M9cwqh8VR_ewRg';" alt="Pin On New Orleans Homes And Gardens">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On New Orleans Homes And Gardens</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/6f/78/906f783f0a3bc0433a7f51898f3993c3.jpg" data-lightbox="roadtrip" data-title="Gonola Neighborhood Guide To Magazine Street Magazine Street New Orleans Neighborhood Guide The Neighbourhood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/6f/78/906f783f0a3bc0433a7f51898f3993c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfOT4YLidweo8KCd7Caxp4IZ5Of-ccD6G6Nw';" alt="Gonola Neighborhood Guide To Magazine Street Magazine Street New Orleans Neighborhood Guide The Neighbourhood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gonola Neighborhood Guide To Magazine Street Magazine Street New Orleans Neighborhood Guide The Neighbourhood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/e1/9d/83e19d231c6e1f7425e38da44bd6534e.jpg" data-lightbox="roadtrip" data-title="Kann Dept Store Arlington Now The Site Of Gmu Arlington Campus Mid Century Office Office Building Building">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/e1/9d/83e19d231c6e1f7425e38da44bd6534e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl03os5s239rBOWMcc0Z2hCUkmfd6nh7pg9Q';" alt="Kann Dept Store Arlington Now The Site Of Gmu Arlington Campus Mid Century Office Office Building Building">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kann Dept Store Arlington Now The Site Of Gmu Arlington Campus Mid Century Office Office Building Building</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/virginia-department-of-education-gifted-endorsement.html">Virginia Department Of Education Gifted Endorsement</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-diploma-seals.html">Virginia Department Of Education Diploma Seals</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-family-and-consumer-sciences.html">Virginia Department Of Education Family And Consumer Sciences</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-human-resources.html">Virginia Department Of Education Human Resources</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-autism.html">Virginia Department Of Education Autism</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-licensure-contact.html">Virginia Department Of Education Licensure Contact</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-algebra-1-sol.html">Virginia Department Of Education Algebra 1 Sol</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-free-and-reduced-lunch.html">Virginia Department Of Education Free And Reduced Lunch</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-preschool-curriculum.html">Virginia Department Of Education Preschool Curriculum</a></li>
+													<li class="list-group-item"><a href="/virginia-continuing-education-insurance.html">Virginia Continuing Education Insurance</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-math-sols.html">Virginia Department Of Education Math Sols</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-nap-credits.html">Virginia Department Of Education Nap Credits</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-email.html">Virginia Department Of Education Email</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-advanced-diploma-requirements.html">Virginia Department Of Education Advanced Diploma Requirements</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-library-media-specialist.html">Virginia Department Of Education Library Media Specialist</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-gifted-and-talented.html">Virginia Department Of Education Gifted And Talented</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-driving-guide.html">Virginia Department Of Education Driving Guide</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-query.html">Virginia Department Of Education Query</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-math.html">Virginia Department Of Education Math</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-kindergarten-readiness.html">Virginia Department Of Education Kindergarten Readiness</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

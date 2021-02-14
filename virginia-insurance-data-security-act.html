@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Insurance Data Security Act - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Insurance Data Security Act",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/6f/70/b6/6f70b61c3e6c80304e53bde5621c1a6e.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+insurance+data+security+act",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Insurance Data Security Act</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Users must comply with all University policies and standards for the data to which they have been granted the ability to view copy generate transmit store download or otherwise acquire access remove or destroy. The bill requires insurers to develop implement and maintain a comprehensive written information security program based on an assessment of its risk and that contains administrative technical and physical safeguards for the protection of nonpublic information and its information system. The New Law is similar to the National Association of Insurance Commissioners Insurance Data Security Model Law with some important modifications. <br>				
+			</p>
+										<a class="badge badge-warning" href="/va-tbi-rating.html">va tbi rating</a>
+											<a class="badge badge-light" href="/va-t-il-pleuvoir-dans-lheure-guyancourt.html">va t il pleuvoir dans lheure guyancourt</a>
+											<a class="badge badge-warning" href="/va-t-il-pleuvoir-dans-lheure-viroflay.html">va t il pleuvoir dans lheure viroflay</a>
+											<a class="badge badge-secondary" href="/va-tbi-rating-system.html">va tbi rating system</a>
+											<a class="badge badge-danger" href="/va-t-il-pleuvoir-dans-lheure-saint-malo.html">va t il pleuvoir dans lheure saint malo</a>
+											<a class="badge badge-danger" href="/va-tax-on-social-security-benefits.html">va tax on social security benefits</a>
+											<a class="badge badge-primary" href="/va-t-il-pleuvoir-dans-lheure-quiberon.html">va t il pleuvoir dans lheure quiberon</a>
+											<a class="badge badge-light" href="/va-table-of-compensation.html">va table of compensation</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the right site.  Our site gives you hints for seeing the maximum quality video and image content, search and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.totalhipaa.com/wp-content/uploads/2020/08/NAIC-Model-Law_WITH-Logo_Updated.jpg" data-lightbox="roadtrip" data-title="Kodhqzgum J1um">
+											<img class="card-img v-image ads-img " src="https://www.totalhipaa.com/wp-content/uploads/2020/08/NAIC-Model-Law_WITH-Logo_Updated.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr8eDc8MJDiid-q1SX3IZ8r48AbHXXZRH6A';" alt="Kodhqzgum J1um">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kodhqzgum J1um</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/9d/bb/329dbb0d5cbbab1bd5c9161f51e736e1.png" data-lightbox="roadtrip" data-title="75 Percent Of Small Businesses Have No Cyber Risk Insurance Small Business Trends Small Business Trends Small Business Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/9d/bb/329dbb0d5cbbab1bd5c9161f51e736e1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrxn1BXhxukPNSw4ioVXNrQ25pxz6NR-LC9w';" alt="75 Percent Of Small Businesses Have No Cyber Risk Insurance Small Business Trends Small Business Trends Small Business Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">75 Percent Of Small Businesses Have No Cyber Risk Insurance Small Business Trends Small Business Trends Small Business Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/f4/74/e3f4746b5e0363a22091ea81612ed352.jpg" data-lightbox="roadtrip" data-title="Competing Cloud Security Demands Call For Credentialed Professionals Cloud Hosting Cloudhost Healthcare Infographics Healthcare Technology Health Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/f4/74/e3f4746b5e0363a22091ea81612ed352.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULaLnGe4Fw9rrcDuS2Ub8i8rOzfSFodjmBA';" alt="Competing Cloud Security Demands Call For Credentialed Professionals Cloud Hosting Cloudhost Healthcare Infographics Healthcare Technology Health Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Competing Cloud Security Demands Call For Credentialed Professionals Cloud Hosting Cloudhost Healthcare Infographics Healthcare Technology Health Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/70/b6/6f70b61c3e6c80304e53bde5621c1a6e.png" data-lightbox="roadtrip" data-title="Heathcare In The United States Visual Ly Healthcare Management Infographic Health Health Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/70/b6/6f70b61c3e6c80304e53bde5621c1a6e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKImpg59VcQFwNf6_d7aO4AbJime4u1ah3-w';" alt="Heathcare In The United States Visual Ly Healthcare Management Infographic Health Health Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Heathcare In The United States Visual Ly Healthcare Management Infographic Health Health Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/bd/e3/7bbde30d5e25151706973baf6e0dea27.png" data-lightbox="roadtrip" data-title="California Leads Among The 13 States That Collect 75 Of Government Revenue Dollars From Airports Government Revenue Data Visualization">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/bd/e3/7bbde30d5e25151706973baf6e0dea27.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Nz_ebTIUMnM600Ko0tG9w1dHZ8MqyLWJag';" alt="California Leads Among The 13 States That Collect 75 Of Government Revenue Dollars From Airports Government Revenue Data Visualization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">California Leads Among The 13 States That Collect 75 Of Government Revenue Dollars From Airports Government Revenue Data Visualization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/90/9b/fd909b1db0314ad71060cdfc4aa6aef7.jpg" data-lightbox="roadtrip" data-title="2healthinsurance Net Healthcare Management Infographic Health Healthcare Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/90/9b/fd909b1db0314ad71060cdfc4aa6aef7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLzDW4PJJs4Co1e0LtnWdeHrJ2pXkJ-Xpmuw';" alt="2healthinsurance Net Healthcare Management Infographic Health Healthcare Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2healthinsurance Net Healthcare Management Infographic Health Healthcare Infographics</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/6f/70/b6/6f70b61c3e6c80304e53bde5621c1a6e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLzDW4PJJs4Co1e0LtnWdeHrJ2pXkJ-Xpmuw';" alt="2healthinsurance Net Healthcare Management Infographic Health Healthcare Infographics">
+										<div class="card-body">
+						<h3 class="h5"><b>Commensurate with the size and complexity of the licensee.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia insurance data security act</strong>. 
+								
+																	Effective July 1 2020 Virginias Insurance Data Security Act requires all regulated insurance companies licensed in Virginia to follow data security and notification requirements. 
+																	Now as required under the Act Virginias Bureau of Insurance has proposed regulations the Proposed Regs implementing the Act. 
+																	On March 11 th 2020 Virginia Governor Northam signed the Insurance Data Security Act the Act HB 1334 imposing requirements on all entities regulated by the Virginia Bureau of Insurance BOI or the Bureau to. 
+																	Virginia amended the states data breach notification law effective July 1 2017 to expand notification requirements for employers and payroll service providers to data breaches that involve unauthorized access and acquisition of unencrypted and unredacted computerized data containing a Virginia taxpayers identification number in combination with the income tax withheld for that taxpayer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One of the primary effects of the Proposed Regs is to distinguish between smaller licensees and the rest of the pack for purposes of specifying requirements and timing around risk assessments and information security program security measures. 
+																	The nature and scope of the licensees activities including its use of thirdparty service -. 
+																	South Carolina was the first state in the nation to pass this important and timely legislation which was modeled after the NAIC Insurance Data Security Model Law. 
+																	The Act defines the requirements applicable to a licensee and establishes standards for data security cybersecurity investigations and notification to the Commissioner of cybersecurity events. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What is An Information Security Program 382-623 of the Code. 
+																	The purpose and intent of this Act is to establish standards for data security and standards for the investigation of and notification to the Commissioner of a Cybersecurity Event applicable to Licensees as defined in Section 3. 
+																	On March 11 th 2020 Virginia Governor Northam signed the Insurance Data Security Act the Act HB 1334 imposing requirements on all entities regulated by the Virginia Bureau of Insurance. 
+																	The New Law is similar to the National Association of Insurance Commissioners Insurance Data Security Model Law with some important modifications. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Notify the Commissioner of Insurance of cybersecurity events and. 
+																	The Act is codified in Title 38 Chapter 99 of the South Carolina Code of Laws. 
+																	Insurance Data Security Act Information Security Program Checklist for Agents 8 -18-20 1. 
+																	6801 et seq and maintains procedures for notification of a breach of the security of the system in accordance with the provision of that Act and any rules regulations or guidelines promulgated thereto shall be deemed to be in compliance with this section. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	December 19 2018 There has been an increased level of activity surrounding states taking action to adopt the NAIC Insurance Data Security Model Law or a version of the law. 
+																	We recently provided an overview of Virginias new Insurance Data Security Act the Act. 
+																	Virginia has a new law the Insurance Data Security Act New Law going into effect on July 1 2020 which will expand the data security and incident notification requirements on insurers licensed in the Commonwealth. 
+																	Now as required under the Act Virginias Bureau of Insurance has proposed regulations the Proposed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Establishes the insurance data security law provides the purpose and intent of the act defines certain terms used in the act requires insurance licensees in this state to develop implement and maintain an information security program requires certain investigation of a cyber security event requires certain notification of a cyber security event provides for certain confidentiality provides exceptions to the act provides for penalties for violations of the act. 
+																	Currently eyes are on Indiana HB 1372 Maine LD 1995 Oklahoma SB 1919 Virginia HB 1334 and Wisconsin AB 819 where legislation to adopt the Model is pending. 
+																	This infographic summarizes Virginias adaptation of the NAIC Insurance Data Security Model Law. 
+																	In other words Congress could act to pass legislation setting uniform requirements for insurance data security. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Establishes standards for insurance data security and for the investigation of a cybersecurity event and the notification to the Commissioner of Insurance and affected consumers of a cybersecurity event. 
+																	We recently provided an overview of Virginias new Insurance Data Security Act the Act. 
+																	The Virginia Insurance Data Security Act was enacted by the 2020 Virginia General AssemblyThis legislation is modeled on the NAIC Insurance Data Security Model Law. 
+																	Virginia has a new law the Insurance Data Security Act New Law going into effect on July 1 2020 which will expand the data security and incident notification requirements on insurers licensed in the Commonwealth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the shadow of the EU General Data Protection Regulation which went into effect in 2018 and the resurgence of global privacy laws Virginia has proposed a new privacy statute HB 2793 that imposes a duty of care on businesses on the disposal of personal information. 
+																	HB 2793 applies to both paper and electronic records. 
+																	An entity that is subject to Title V of the Gramm-Leach-Bliley Act 15 USC. 
+																	The Virginia Insurance Data Security Act What You Need to Know. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Act became effective on January 1 2019. 
+																	Georgia has not released draft insurance data security legislation but reportedly is discussing draft language. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/a8/a8/84a8a8e47376c42e9e0f7426b85e1411.jpg" data-lightbox="roadtrip" data-title="How To Shop More Safely Online With Images Online Infographic Infographic Business Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/a8/a8/84a8a8e47376c42e9e0f7426b85e1411.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFOJP78-vEHP8eww56ftHm2iEXrW3DUs02A';" alt="How To Shop More Safely Online With Images Online Infographic Infographic Business Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Shop More Safely Online With Images Online Infographic Infographic Business Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/46/6f/29466ff16475f89b611042b01413243c.png" data-lightbox="roadtrip" data-title="What Are Best And Or Most Affordable Insurance Companies Cheap Car Insurance Quotes Home Insurance Quotes Health Insurance Quote">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/46/6f/29466ff16475f89b611042b01413243c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfpHzvjzzQ8o1w0ewWGMsN0kB4VfxqTcfF6Q';" alt="What Are Best And Or Most Affordable Insurance Companies Cheap Car Insurance Quotes Home Insurance Quotes Health Insurance Quote">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are Best And Or Most Affordable Insurance Companies Cheap Car Insurance Quotes Home Insurance Quotes Health Insurance Quote</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/88/d0/f288d02a600ec61218cefb0573681f5a.jpg" data-lightbox="roadtrip" data-title="Paul Stewart Cv Resume Template Matching Cover Letter References Resume Tips Icons Resume Template Word Resume Template Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/88/d0/f288d02a600ec61218cefb0573681f5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANZ3stxrzjU8Ppb8JFyDkjfvSU-SuF8z1QA';" alt="Paul Stewart Cv Resume Template Matching Cover Letter References Resume Tips Icons Resume Template Word Resume Template Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paul Stewart Cv Resume Template Matching Cover Letter References Resume Tips Icons Resume Template Word Resume Template Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/cf/b2/07cfb2b488e19d664454bc2b58309cb3.jpg" data-lightbox="roadtrip" data-title="Medical University Of Lublin Medical University Silesia S Graduation Ceremony In Virginia Usa Pressreleasepo Medical University Graduation Ceremony Lublin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/cf/b2/07cfb2b488e19d664454bc2b58309cb3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0d5QDxK4tRFdiOUZ2a6FtRymfiGvcKUJt3g';" alt="Medical University Of Lublin Medical University Silesia S Graduation Ceremony In Virginia Usa Pressreleasepo Medical University Graduation Ceremony Lublin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medical University Of Lublin Medical University Silesia S Graduation Ceremony In Virginia Usa Pressreleasepo Medical University Graduation Ceremony Lublin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/d9/a6/46d9a645c9c2aeb665951cf20648ffab.jpg" data-lightbox="roadtrip" data-title="Speaks For Itself Health Insurance Affordable Healthcare Health Care Coverage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/d9/a6/46d9a645c9c2aeb665951cf20648ffab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD7yP-JACCqTnVHc9_amPNLpJHUoTc-ZN71A';" alt="Speaks For Itself Health Insurance Affordable Healthcare Health Care Coverage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Speaks For Itself Health Insurance Affordable Healthcare Health Care Coverage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/3e/95/183e958758f4755bda2f3102a932846e.jpg" data-lightbox="roadtrip" data-title="Pin On Hipaa Hitech Webinars And Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/3e/95/183e958758f4755bda2f3102a932846e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtzgXnMB1Xfsz2JDpIWayvnm8a4X68Ac3iQQ';" alt="Pin On Hipaa Hitech Webinars And Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hipaa Hitech Webinars And Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/28/f4/6e28f46529b00fffcbebeeea1584d8d9.png" data-lightbox="roadtrip" data-title="Http Www Geekabc Com Pc Computer Repair Maryland Md Apple Mac Laptop Service Tech Support Html Computer Repair Computer Repair Services Computer Support">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/28/f4/6e28f46529b00fffcbebeeea1584d8d9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa_VopwASgqkUfW7Qw5wJN5zklMyLcXKCi7g';" alt="Http Www Geekabc Com Pc Computer Repair Maryland Md Apple Mac Laptop Service Tech Support Html Computer Repair Computer Repair Services Computer Support">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Geekabc Com Pc Computer Repair Maryland Md Apple Mac Laptop Service Tech Support Html Computer Repair Computer Repair Services Computer Support</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/61/40/ff61401a183e34b4d895fd4ae3a15c44.png" data-lightbox="roadtrip" data-title="What Is Coinsurance Co Insurance Health Care Services Insurance Deductible">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/61/40/ff61401a183e34b4d895fd4ae3a15c44.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH-RvZ_g8w_EpHD8pIoBgFN3vxxJ_P1rQLfQ';" alt="What Is Coinsurance Co Insurance Health Care Services Insurance Deductible">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Coinsurance Co Insurance Health Care Services Insurance Deductible</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/1f/ce/891fcef0599ebfb49d93f80b425a719d.gif" data-lightbox="roadtrip" data-title="Outcome Variation In The Social Security Disability Insurance Program The Role Of Primary Diag Social Security Disability Disability Insurance Social Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/1f/ce/891fcef0599ebfb49d93f80b425a719d.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9oX-tHojaIOrvpTiOQQehrPcDXGXVRXU7jQ';" alt="Outcome Variation In The Social Security Disability Insurance Program The Role Of Primary Diag Social Security Disability Disability Insurance Social Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Outcome Variation In The Social Security Disability Insurance Program The Role Of Primary Diag Social Security Disability Disability Insurance Social Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9d/60/ec/9d60ec7a2947ccc3c1181a5254f8c21b.jpg" data-lightbox="roadtrip" data-title="Alcumus Isoqar India Pvt Ltd On Linkedin Hipaa Health Insurance Portability And Accountability Act Of 1996 Is United States Legislation That Provides Dat Medical Information Medical Hipaa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9d/60/ec/9d60ec7a2947ccc3c1181a5254f8c21b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lE3WmXE6Uq8SeG5IfaaqtEZBU81dNAvtgA';" alt="Alcumus Isoqar India Pvt Ltd On Linkedin Hipaa Health Insurance Portability And Accountability Act Of 1996 Is United States Legislation That Provides Dat Medical Information Medical Hipaa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alcumus Isoqar India Pvt Ltd On Linkedin Hipaa Health Insurance Portability And Accountability Act Of 1996 Is United States Legislation That Provides Dat Medical Information Medical Hipaa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="R2ZJVZD4oNY_HM" data-lightbox="roadtrip" data-title="Https Www Oecd Ilibrary Org The Cyber Insurance Market 5jfjc2m0630s Pdf Itemid 2fcontent 2fcomponent 2f9789264282148 5 En Mimetype Pdf">
+											<img class="card-img v-image ads-img " src="R2ZJVZD4oNY_HM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfRtIYpayXEjJbkbQ3kkTkQfNRcxqD0Adv9Q';" alt="Https Www Oecd Ilibrary Org The Cyber Insurance Market 5jfjc2m0630s Pdf Itemid 2fcontent 2fcomponent 2f9789264282148 5 En Mimetype Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Oecd Ilibrary Org The Cyber Insurance Market 5jfjc2m0630s Pdf Itemid 2fcontent 2fcomponent 2f9789264282148 5 En Mimetype Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/cd/6e/e6cd6e949169ab8f281faef7709148c1.png" data-lightbox="roadtrip" data-title="Insurance Cost Sharing Infographic Insurance Healthcare Deduction Benefit Health Care">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/cd/6e/e6cd6e949169ab8f281faef7709148c1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNlbfUS-W1fqm7zYOx2SV-FC8GOKiKblJi4g';" alt="Insurance Cost Sharing Infographic Insurance Healthcare Deduction Benefit Health Care">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Insurance Cost Sharing Infographic Insurance Healthcare Deduction Benefit Health Care</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/51/49/965149b4e8534f7507db4d814bcedfac.jpg" data-lightbox="roadtrip" data-title="According To The U S Bureau Of Labor Statistics The Rate Of Workplace Injuries And Fatalities Workplace Injury National Safety Occupational Health And Safety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/51/49/965149b4e8534f7507db4d814bcedfac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd04vp163xW53JXl1BpmKKcnhRMO0pK3-YWg';" alt="According To The U S Bureau Of Labor Statistics The Rate Of Workplace Injuries And Fatalities Workplace Injury National Safety Occupational Health And Safety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">According To The U S Bureau Of Labor Statistics The Rate Of Workplace Injuries And Fatalities Workplace Injury National Safety Occupational Health And Safety</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-benefits-do-100-disabled-veterans-get-in-california.html">What Benefits Do 100 Disabled Veterans Get In California</a></li>
+													<li class="list-group-item"><a href="/what-benefits-did-the-gi-bill-of-rights-offered-to-veterans.html">What Benefits Did The Gi Bill Of Rights Offered To Veterans</a></li>
+													<li class="list-group-item"><a href="/what-benefit-was-provided-through-the-gi-bill-quizlet.html">What Benefit Was Provided Through The Gi Bill Quizlet</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-veterans-get-in-canada.html">What Benefits Do Veterans Get In Canada</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-100-disabled-veterans-receive-in-texas.html">What Benefits Do 100 Disabled Veterans Receive In Texas</a></li>
+													<li class="list-group-item"><a href="/what-are-va-survivor-benefits.html">What Are Va Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/what-benefits-come-with-being-100-va-disability.html">What Benefits Come With Being 100 Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-are-va-special-monthly-compensation.html">What Are Va Special Monthly Compensation</a></li>
+													<li class="list-group-item"><a href="/what-are-va-smc-rates.html">What Are Va Smc Rates</a></li>
+													<li class="list-group-item"><a href="/what-benefits-are-available-for-the-widow-of-a-veteran.html">What Benefits Are Available For The Widow Of A Veteran</a></li>
+													<li class="list-group-item"><a href="/what-benefits-are-available-to-korean-war-veterans.html">What Benefits Are Available To Korean War Veterans</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-90-disabled-veterans-get-in-virginia.html">What Benefits Do 90 Disabled Veterans Get In Virginia</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-veterans-get-in-california.html">What Benefits Do Veterans Get In California</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-military-retirees-get.html">What Benefits Do Military Retirees Get</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-vietnam-veterans-get.html">What Benefits Do Vietnam Veterans Get</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-spouses-of-100-disabled-veterans-get.html">What Benefits Do Spouses Of 100 Disabled Veterans Get</a></li>
+													<li class="list-group-item"><a href="/what-benefits-are-available-for-vietnam-vets.html">What Benefits Are Available For Vietnam Vets</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-100-disabled-vets-get.html">What Benefits Do 100 Disabled Vets Get</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-military-spouses-get-after-divorce.html">What Benefits Do Military Spouses Get After Divorce</a></li>
+													<li class="list-group-item"><a href="/what-benefits-can-i-claim-if-my-husband-dies.html">What Benefits Can I Claim If My Husband Dies</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

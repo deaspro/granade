@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Means Service Disabled Veteran Owned - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Means Service Disabled Veteran Owned",
+  "datePublished": "2021-02-14",
+  "image": "gNZvvc3Pt4KUJM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+means+service+disabled+veteran+owned",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Means Service Disabled Veteran Owned</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">10116Small business concern means a concern including its affiliates that is independently owned and operated not dominant in the field of operation in which it is bidding on Government contracts and qualified as a small business under the criteria in 13 CFR Part 121 and the size standard in paragraph b of this provisionSmall disadvantaged. The Department of Defense DoD has undertaken an outreach effort to identify small businesses owned and controlled by veterans and service-disabled. Qualifying as a veteran-owned business to receive veteran-owned small business grants is a straightforward process. <br>				
+			</p>
+										<a class="badge badge-primary" href="/va-rating-schedule-for-scars.html">va rating schedule for scars</a>
+											<a class="badge badge-info" href="/va-rating-schedule-for-urticaria.html">va rating schedule for urticaria</a>
+											<a class="badge badge-dark" href="/va-rating-schedule-for-plantar-fasciitis.html">va rating schedule for plantar fasciitis</a>
+											<a class="badge badge-info" href="/va-rating-shoulder-surgery.html">va rating shoulder surgery</a>
+											<a class="badge badge-danger" href="/va-rating-schedule-hiatal-hernia.html">va rating schedule hiatal hernia</a>
+											<a class="badge badge-success" href="/va-rating-schedule-voiding-dysfunction.html">va rating schedule voiding dysfunction</a>
+											<a class="badge badge-dark" href="/va-rating-sleep-apnea.html">va rating sleep apnea</a>
+											<a class="badge badge-dark" href="/va-rating-schedule-for-mental-disorders.html">va rating schedule for mental disorders</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to pay a visit to the ideal blog.  Our website provides you with suggestions for seeing the highest quality video and image content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://r-squaredsolutions.net/wp-content/uploads/2017/03/Screen-Shot-2017-03-20-at-6.58.40-PM.png" data-lightbox="roadtrip" data-title="R Squared Solutions Certified As Service Disable Veteran Owned Small Business R Squared">
+											<img class="card-img v-image ads-img " src="http://r-squaredsolutions.net/wp-content/uploads/2017/03/Screen-Shot-2017-03-20-at-6.58.40-PM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLtmOmuOTL0WM0SKy8yM5VecPAYBJoW7FpWw';" alt="R Squared Solutions Certified As Service Disable Veteran Owned Small Business R Squared">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">R Squared Solutions Certified As Service Disable Veteran Owned Small Business R Squared</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.thomasnet.com/images/images/certification_images/111.png" data-lightbox="roadtrip" data-title="Service Disabled Veteran Owned Small Business Definition What Is Service Disabled Veteran Owned Small Business Find Service Disabled Veteran Owned Small Business Companies On Thomasnet Com Certification Search">
+											<img class="card-img v-image ads-img " src="https://cdn.thomasnet.com/images/images/certification_images/111.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYBSDQSJii9i_9f1lP5ReEQYleoK9mYg7hbA';" alt="Service Disabled Veteran Owned Small Business Definition What Is Service Disabled Veteran Owned Small Business Find Service Disabled Veteran Owned Small Business Companies On Thomasnet Com Certification Search">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Service Disabled Veteran Owned Small Business Definition What Is Service Disabled Veteran Owned Small Business Find Service Disabled Veteran Owned Small Business Companies On Thomasnet Com Certification Search</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aptac-us.org/media/Vets-First-Verification-Logo.png" data-lightbox="roadtrip" data-title="Veteran Owned Small Business Contracting Vosb Sdvosb Aptac">
+											<img class="card-img v-image ads-img " src="https://www.aptac-us.org/media/Vets-First-Verification-Logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDX8Qhs9WU_T68qJrEOGjQmRLAC78aGMulw';" alt="Veteran Owned Small Business Contracting Vosb Sdvosb Aptac">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Small Business Contracting Vosb Sdvosb Aptac</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.riveragroup.com/wp-content/uploads/2018/12/SDVOSBFeaturedImage-1024x512-1024x512.gif" data-lightbox="roadtrip" data-title="How You Win More Contracts With Sdvosb Rivera Group">
+											<img class="card-img v-image ads-img " src="https://www.riveragroup.com/wp-content/uploads/2018/12/SDVOSBFeaturedImage-1024x512-1024x512.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9iwXIv2hKHrrM55qJc67jGpyQSE4tw9ntkg';" alt="How You Win More Contracts With Sdvosb Rivera Group">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How You Win More Contracts With Sdvosb Rivera Group</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.clipartmax.com/png/middle/303-3031259_veteran-owned-business-service-disabled-veteran-owned-small-business.png" data-lightbox="roadtrip" data-title="Veteran Owned Business Service Disabled Veteran Owned Small Business Free Transparent Png Clipart Images Download">
+											<img class="card-img v-image ads-img " src="https://www.clipartmax.com/png/middle/303-3031259_veteran-owned-business-service-disabled-veteran-owned-small-business.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-_ZCBFdz_2QeR5LIbPFNytdySXwqHANaOKA';" alt="Veteran Owned Business Service Disabled Veteran Owned Small Business Free Transparent Png Clipart Images Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Owned Business Service Disabled Veteran Owned Small Business Free Transparent Png Clipart Images Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cvmsolutions.com/hubfs/Conferences%20to%20Attend%20in%202019-1.png" data-lightbox="roadtrip" data-title="The Definitive Guide For Service Disabled Veteran Owned Small Businesses">
+											<img class="card-img v-image ads-img " src="https://www.cvmsolutions.com/hubfs/Conferences%20to%20Attend%20in%202019-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx77A5yIGJM18lZ93_WgVj75_235lpiray5g';" alt="The Definitive Guide For Service Disabled Veteran Owned Small Businesses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Definitive Guide For Service Disabled Veteran Owned Small Businesses</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.titanalpha.us/wp-content/uploads/Logo-SDVOSB-color-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx77A5yIGJM18lZ93_WgVj75_235lpiray5g';" alt="The Definitive Guide For Service Disabled Veteran Owned Small Businesses">
+										<div class="card-body">
+						<h3 class="h5"><b>If youre an entrepreneur and a service-disabled veteran your business may be able to benefit by registering it as service-disabled veteran-owned.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What means service disabled veteran owned</strong>. 
+								
+																	Reservists or members of the. 
+																	A business hoping to be considered Service-Disabled Veteran must be at least 51 owned by an individual who is considered by the government a Service-Disabled Veteran or for a publicly quoted business at least 51 of the stock is owned by one or more service-disabled veterans and the management and daily business operations are controlled by one or more service-disabled veterans. 
+																	1012 with a disability that is service-connected as defined in 38 USC. 
+																	A Service disabled veteran is a person who served in the active military naval or air service and who was discharged or released under conditions other than dishonorable and whose disability was incurred or aggravated in line of duty in the active military naval or air service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Registration ensures that companies qualify for preferential procurement for federal contracts if they are owned and controlled by Veterans. 
+																	The federal governments goal is to award at least three percent of all federal contracting dollars to service-disabled veteran-owned small businesses each year. 
+																	Service-Disabled Veteran-Owned Small Business. 
+																	The label of service-disabled veteran-owned small business SDVOSB is a special distinction given to small businesses that are at least 51 owned by an individual who has suffered a disability while in military service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By doing so you can open up your business to opportunities with government contracts that are specifically earmarked for veteran-owned businesses. 
+																	Service disabled veteran business. 
+																	Service disabled veteran business means a business that is at least 51 percent owned by one or more service disabled veterans or in the case of a corporation partnership or limited liability company or other entity at least 51 percent of the equity ownership interest in the corporation partnership or limited liability company or other entity is owned by one or more individuals who are service disabled veterans and both the management. 
+																	The Veterans Entrepreneurship and Small Business Development Act of 1999 Public Law 106-50 established an annual government-wide goal of not less than 3 of the total value of all prime contract and subcontract awards for participation by small business concerns owned and controlled by service-disabled veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These terms are in place to ensure that Federal funds and provisions are being allocated to those who truly deserve them. 
+																	Government sets aside some contract benefits for service-disabled veteran-owned small businesses. 
+																	38 USCS 101. 
+																	Service-disabled veteran means a veteran as defined in 38 USC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans who runown the business must have a disability that resulted in the execution of duty in the Service. 
+																	Service-disabled veteran is a veteran who possesses either a valid disability rating letter issued by the Department of Veterans Affairs establishing a service-connected rating between 0 and 100 percent or a valid disability determination from the Department of Defense or is registered in the Beneficiary Identification and Records Locator. 
+																	Service-disabled veteran is a veteran who possesses either a valid disability rating letter issued by the Department of Veterans Affairs establishing a service-connected rating between 0 and 100 percent or a valid disability determination from the Department of Defense or is registered in the Beneficiary Identification and Records Locator Subsystem maintained by Department of Veterans Affairs Veterans Benefits Administration as a service-disabled veteran. 
+																	Veteran Owned Small Business VOSB is a company diversity registration designated under the Veteran Benefits Health Care and Information Technology Act of 2006 Public Law 109-461. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ogs.ny.gov/sites/g/files/oee981/files/styles/mobile_lead/public/media/2018/09/gvf4893.JPG?h=a29029be&amp;itok=nfTqwt2g" data-lightbox="roadtrip" data-title="Service Disabled Veteran Owned Business Certification Office Of General Services">
+											<img class="card-img v-image ads-img " src="https://ogs.ny.gov/sites/g/files/oee981/files/styles/mobile_lead/public/media/2018/09/gvf4893.JPG?h=a29029be&amp;itok=nfTqwt2g" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkv51Yud39SkbV0jujwTUWEuyZc4Svbd98Tg';" alt="Service Disabled Veteran Owned Business Certification Office Of General Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Service Disabled Veteran Owned Business Certification Office Of General Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sba.gov/sites/default/files/section_images/contracting-government-contract.jpg" data-lightbox="roadtrip" data-title="Service Disabled Veteran Owned Small Business Concerns Sdvosbc The U S Small Business Administration Sba Gov">
+											<img class="card-img v-image ads-img " src="https://www.sba.gov/sites/default/files/section_images/contracting-government-contract.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUkHE_Aw93KUJ4SD-b94AMYP2iCoH7KXvLQw';" alt="Service Disabled Veteran Owned Small Business Concerns Sdvosbc The U S Small Business Administration Sba Gov">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Service Disabled Veteran Owned Small Business Concerns Sdvosbc The U S Small Business Administration Sba Gov</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="cPnS-78BjK-QrM" data-lightbox="roadtrip" data-title="Https Ogs Ny Gov Discretionary Purchasing Guidelines Service Disabled Veteran Owned Businesses">
+											<img class="card-img v-image ads-img " src="cPnS-78BjK-QrM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ecRwXpFtAergXNy0CnJYdQ5FBPqu-REdGw';" alt="Https Ogs Ny Gov Discretionary Purchasing Guidelines Service Disabled Veteran Owned Businesses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Ogs Ny Gov Discretionary Purchasing Guidelines Service Disabled Veteran Owned Businesses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usveteransmagazine.com/wp-content/uploads/2018/11/Career-Change.png" data-lightbox="roadtrip" data-title="Understanding Veteran Owned Business Certifications U S Veterans Magazine">
+											<img class="card-img v-image ads-img " src="https://usveteransmagazine.com/wp-content/uploads/2018/11/Career-Change.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkcptKu8d0yVKl_ca88TP8kpAmwIPx1FU6Q';" alt="Understanding Veteran Owned Business Certifications U S Veterans Magazine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Understanding Veteran Owned Business Certifications U S Veterans Magazine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blog.cvmsolutions.com/hs-fs/hubfs/Screen%20Shot%202018-05-09%20at%2012.04.02%20PM.png?width=1326&amp;name=Screen%20Shot%202018-05-09%20at%2012.04.02%20PM.png" data-lightbox="roadtrip" data-title="The Definitive Guide For Disability Owned Business Enterprises">
+											<img class="card-img v-image ads-img " src="https://blog.cvmsolutions.com/hs-fs/hubfs/Screen%20Shot%202018-05-09%20at%2012.04.02%20PM.png?width=1326&amp;name=Screen%20Shot%202018-05-09%20at%2012.04.02%20PM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-UgiBdVQvujAc_lOf7olKmeLD77bYDNAIw';" alt="The Definitive Guide For Disability Owned Business Enterprises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Definitive Guide For Disability Owned Business Enterprises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://news.veteranownedbusiness.com/wp-content/uploads/IndianaVeteranOwnedBusinessCertificates.jpg" data-lightbox="roadtrip" data-title="State Of Indiana Veteran Owned Business Certification Veteran Owned Businesses News Vobeacon">
+											<img class="card-img v-image ads-img " src="https://news.veteranownedbusiness.com/wp-content/uploads/IndianaVeteranOwnedBusinessCertificates.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaVvnPDIlI2YTTsH-NP_BUXB9s-Y04bYxq9Q';" alt="State Of Indiana Veteran Owned Business Certification Veteran Owned Businesses News Vobeacon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Of Indiana Veteran Owned Business Certification Veteran Owned Businesses News Vobeacon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.secnav.navy.mil/smallbusiness/headerImages/Veteran.jpg" data-lightbox="roadtrip" data-title="Office Of Small Business Programs">
+											<img class="card-img v-image ads-img " src="https://www.secnav.navy.mil/smallbusiness/headerImages/Veteran.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoOmo4rkZrumacXRYuv0PEkWudOz1nf-GWQ';" alt="Office Of Small Business Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Office Of Small Business Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dynavetsolutions.com/wp-content/uploads/SDVOSB400-white.png" data-lightbox="roadtrip" data-title="Reliable Technology Solutions Leader In The Information Technology">
+											<img class="card-img v-image ads-img " src="https://dynavetsolutions.com/wp-content/uploads/SDVOSB400-white.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlTjH0psD6yMaOdRTMdgoTmMizgZjQBQXo4w';" alt="Reliable Technology Solutions Leader In The Information Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reliable Technology Solutions Leader In The Information Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/80/41/c78041fbeb2cf3941fb6c125678c6314.png" data-lightbox="roadtrip" data-title="Service Disabled Veteran Owned Staffing Technical Solutions Company Success Inspirational Quotes Success Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/80/41/c78041fbeb2cf3941fb6c125678c6314.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy7ae4fBeTncGb_aQgof_RJiXsSdtzrBD-rg';" alt="Service Disabled Veteran Owned Staffing Technical Solutions Company Success Inspirational Quotes Success Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Service Disabled Veteran Owned Staffing Technical Solutions Company Success Inspirational Quotes Success Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.academysecurities.com/wordpress/wp-content/uploads/2018/11/veteran-minority-owned-tracker-map.jpg" data-lightbox="roadtrip" data-title="Veteran And Minority Owned Status Academy Securities">
+											<img class="card-img v-image ads-img " src="https://www.academysecurities.com/wordpress/wp-content/uploads/2018/11/veteran-minority-owned-tracker-map.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQorgO6bLhVCwWxpt63aYy6NLD5-xDMHVTcaQ';" alt="Veteran And Minority Owned Status Academy Securities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran And Minority Owned Status Academy Securities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.titanalpha.us/wp-content/uploads/Logo-SDVOSB-color-2.png" data-lightbox="roadtrip" data-title="Home Titan Alpha">
+											<img class="card-img v-image ads-img " src="https://www.titanalpha.us/wp-content/uploads/Logo-SDVOSB-color-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT84xZFk-UslGn4coSu5adQ7O_yRnINnAeuCw';" alt="Home Titan Alpha">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Titan Alpha</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="gNZvvc3Pt4KUJM" data-lightbox="roadtrip" data-title="Https Www Mybusinessmatches Com Media Transfer Doc 5491d4148327f Pdf">
+											<img class="card-img v-image ads-img " src="gNZvvc3Pt4KUJM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl1XjgJsaRmmTz0ZvYMqHnVAU8Cv9kkeTLeA';" alt="Https Www Mybusinessmatches Com Media Transfer Doc 5491d4148327f Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Mybusinessmatches Com Media Transfer Doc 5491d4148327f Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bdsva.com/wp-content/uploads/2018/03/bdsva.jpg" data-lightbox="roadtrip" data-title="Business Document Solutions">
+											<img class="card-img v-image ads-img " src="https://www.bdsva.com/wp-content/uploads/2018/03/bdsva.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREDDXAgRWo9tdIhqc2ZeiRw0b3gWPSaS1quA';" alt="Business Document Solutions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Business Document Solutions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/8f/af/4a8faf29f7dabca1847dd3d86ffd5586.jpg" data-lightbox="roadtrip" data-title="Logos And Certifications For Your Inspection Business Veteran Logo Veteran Owned Business Pole Barn House Plans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/8f/af/4a8faf29f7dabca1847dd3d86ffd5586.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTw7EJBbcd-oEnlSdQf2NHvBq9uAjxQO4k5g';" alt="Logos And Certifications For Your Inspection Business Veteran Logo Veteran Owned Business Pole Barn House Plans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Logos And Certifications For Your Inspection Business Veteran Logo Veteran Owned Business Pole Barn House Plans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="_lXndVEoYd8o1M" data-lightbox="roadtrip" data-title="Https Www Va Gov Osdbu Docs Vab Understandingcommunitypropertyandapplicantownership Pdf">
+											<img class="card-img v-image ads-img " src="_lXndVEoYd8o1M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRkNaJiFkPrsr2BEfXETV-7QzZgiwnBUHNiA';" alt="Https Www Va Gov Osdbu Docs Vab Understandingcommunitypropertyandapplicantownership Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Osdbu Docs Vab Understandingcommunitypropertyandapplicantownership Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wes-montgomery-billy-taylor.html">Wes Montgomery Billy Taylor</a></li>
+													<li class="list-group-item"><a href="/were-lever-action-rifles-used-in-the-civil-war.html">Were Lever Action Rifles Used In The Civil War</a></li>
+													<li class="list-group-item"><a href="/west-virginia-unemployment-back-pay.html">West Virginia Unemployment Back Pay</a></li>
+													<li class="list-group-item"><a href="/west-virginia-archives-birth-records.html">West Virginia Archives Birth Records</a></li>
+													<li class="list-group-item"><a href="/west-virginia-unemployment-questions.html">West Virginia Unemployment Questions</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-employment.html">West Virginia Department Of Education Employment</a></li>
+													<li class="list-group-item"><a href="/west-virginia-army-national-guard-jobs.html">West Virginia Army National Guard Jobs</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-certification-forms.html">West Virginia Department Of Education Certification Forms</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-assessment.html">West Virginia Department Of Education Assessment</a></li>
+													<li class="list-group-item"><a href="/west-virginia-disabled-veteran-benefits.html">West Virginia Disabled Veteran Benefits</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-forms.html">West Virginia Department Of Education Forms</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-certification.html">West Virginia Department Of Education Certification</a></li>
+													<li class="list-group-item"><a href="/west-point-military-police-station-phone-number.html">West Point Military Police Station Phone Number</a></li>
+													<li class="list-group-item"><a href="/west-point-military-police-number.html">West Point Military Police Number</a></li>
+													<li class="list-group-item"><a href="/west-virginia-lawyer-referral-service.html">West Virginia Lawyer Referral Service</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-and-the-arts-division-of-rehabilitation-services.html">West Virginia Department Of Education And The Arts Division Of Rehabilitation Services</a></li>
+													<li class="list-group-item"><a href="/wes-montgomery-and-the-billy-taylor-trio.html">Wes Montgomery And The Billy Taylor Trio</a></li>
+													<li class="list-group-item"><a href="/westminster-college-womens-basketball.html">Westminster College Womens Basketball</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-login.html">West Virginia Department Of Education Login</a></li>
+													<li class="list-group-item"><a href="/west-virginia-unemployment-quarterly-filing.html">West Virginia Unemployment Quarterly Filing</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

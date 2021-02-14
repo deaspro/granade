@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Vicksburg National Military Park Tour Guides - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Vicksburg National Military Park Tour Guides",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/83/b0/42/83b042cba608c51fb9d3ca4f8308477f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=vicksburg+national+military+park+tour+guides",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Vicksburg National Military Park Tour Guides</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Jun 30 2020 - The park commemorates the campaign siege and defense of Vicksburg in 1863 and includes over 1340 monuments and markers a 16-mile tour road a restored Union gunboat and a National Cemetery. Guides have made history come alive since the 1950s. Confederate forces stood and battled is a tremendous experience for families and those curious about what civil war battles were like. <br>				
+			</p>
+										<a class="badge badge-warning" href="/what-can-you-go-to-college-for-with-a-ged.html">what can you go to college for with a ged</a>
+											<a class="badge badge-secondary" href="/what-benefits-does-a-military-spouse-get.html">what benefits does a military spouse get</a>
+											<a class="badge badge-info" href="/what-can-i-go-to-college-for-without-a-ged.html">what can i go to college for without a ged</a>
+											<a class="badge badge-info" href="/what-budgeting-review-for-the-next-fiscal-year-occurs.html">what budgeting review for the next fiscal year occurs</a>
+											<a class="badge badge-info" href="/what-boots-do-they-wear-in-the-army.html">what boots do they wear in the army</a>
+											<a class="badge badge-light" href="/what-causes-the-gas-bill-to-go-up.html">what causes the gas bill to go up</a>
+											<a class="badge badge-info" href="/what-benefits-does-a-protected-veteran-have.html">what benefits does a protected veteran have</a>
+											<a class="badge badge-secondary" href="/what-can-i-use-mycaa-for.html">what can i use mycaa for</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the right site.  Our site provides you with hints for viewing the maximum quality video and image content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nps.gov/vick/planyourvisit/images/lbg-patch_2.jpg?maxwidth=650&amp;autorotate=false" data-lightbox="roadtrip" data-title="Licensed Tour Guides Vicksburg National Military Park U S National Park Service">
+											<img class="card-img v-image ads-img " src="https://www.nps.gov/vick/planyourvisit/images/lbg-patch_2.jpg?maxwidth=650&amp;autorotate=false" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpvPfVxujB-U8vQEWCQYrZZ9hNELWdIZLUGA';" alt="Licensed Tour Guides Vicksburg National Military Park U S National Park Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Licensed Tour Guides Vicksburg National Military Park U S National Park Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/3e/0a/613e0a76e15e31009eb4970fc6d5aa27.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Military Park Vicksburg Mississippi Travel Louisiana Vacation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/3e/0a/613e0a76e15e31009eb4970fc6d5aa27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYKTOrGLYobG5bl8w0rWqy9hqJ7bSPCYfY4A';" alt="Vicksburg National Military Park Vicksburg Mississippi Travel Louisiana Vacation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park Vicksburg Mississippi Travel Louisiana Vacation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/89/61/de/8961decf4035395ad3870fdd575aa244.jpg" data-lightbox="roadtrip" data-title="Visiting Vicksburg National Military Park This Is My South In 2020 Vicksburg Mississippi Vacation Mississippi Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/89/61/de/8961decf4035395ad3870fdd575aa244.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwxer58zuIQpUeneeFF6fnQTPsDDEv6OOtGw';" alt="Visiting Vicksburg National Military Park This Is My South In 2020 Vicksburg Mississippi Vacation Mississippi Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Visiting Vicksburg National Military Park This Is My South In 2020 Vicksburg Mississippi Vacation Mississippi Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c6/c9/db/c6c9dbcba2248cdd07b39612c5af655e.jpg" data-lightbox="roadtrip" data-title="Exploring Vicksburg National Military Park In Mississippi National Park Passport National Parks Louisiana Vacation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c6/c9/db/c6c9dbcba2248cdd07b39612c5af655e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0H31O9PHmRkQM1hAZrzBtu_PkX0YjFrFQyg';" alt="Exploring Vicksburg National Military Park In Mississippi National Park Passport National Parks Louisiana Vacation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exploring Vicksburg National Military Park In Mississippi National Park Passport National Parks Louisiana Vacation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/88/1d/b1881d9e2203b924eaab8d53f53e951d.jpg" data-lightbox="roadtrip" data-title="Exploring Vicksburg National Military Park In Mississippi National Park Passport Vicksburg National">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/88/1d/b1881d9e2203b924eaab8d53f53e951d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC-4AEEw4aHCu7LEw6z4Il0RN-ZbPnVaZANg';" alt="Exploring Vicksburg National Military Park In Mississippi National Park Passport Vicksburg National">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exploring Vicksburg National Military Park In Mississippi National Park Passport Vicksburg National</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/8a/73/f38a73def04302738e2a7e4fe4025b4b.jpg" data-lightbox="roadtrip" data-title="Exploring Vicksburg National Military Park In Mississippi Mississippi Travel Usa Travel Destinations Mississippi Vacation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/8a/73/f38a73def04302738e2a7e4fe4025b4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbi4KA8zG5BBGUFM5OE2tSpaBmOVOKZw4uQ';" alt="Exploring Vicksburg National Military Park In Mississippi Mississippi Travel Usa Travel Destinations Mississippi Vacation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exploring Vicksburg National Military Park In Mississippi Mississippi Travel Usa Travel Destinations Mississippi Vacation</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/53/ac/38/53ac387b8f82646cc7263a60df5660c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbi4KA8zG5BBGUFM5OE2tSpaBmOVOKZw4uQ';" alt="Exploring Vicksburg National Military Park In Mississippi Mississippi Travel Usa Travel Destinations Mississippi Vacation">
+										<div class="card-body">
+						<h3 class="h5"><b>The Vicksburg National Military Park is a perfect opportunity for both the Civil War buff and those just interested in American history to learn about this tumultuous time in our nations history.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Vicksburg national military park tour guides</strong>. 
+								
+																	The preservation of the trenches fortifications and documentation of where Union and. 
+																	They offer visitors the unique opportunity to explore the battlefield with a professional guide who has excellent knowledge of civilian life and military operations of the campaign siege and defense of Vicksburg in the spring and summer of 1863. 
+																	The tours will be conducted using cell phones and hands-free equipment. 
+																	The Licensed Battlefield Guides have been making history come alive at Vicksburg National Military Park since the 1950s. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Collection by Visit Vicksburg. 
+																	Whatever time you have our guides can tailor a tour to meet your schedule interest level and knowledge. 
+																	A guided tour is the best way to visit Vicksburg National Military Parks historicbattlefield the USS Cairo Gunboat Museum and the Vicksburg National Cemetery. 
+																	Vicksburg National Military Park preserves the site of one of the greatest and most significant battles of the Civil War. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vicksburg National Military Park. 
+																	Visitors taking the tour will be given instructions on tour payment and guide link up. 
+																	This post is the fifth installment of a 6-part Mississippi Road Trip series. 
+																	Licensed Park Tour Guides Tours can be arranged for individuals families and large groups and the services can be provided upon request but reservations are preferred. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However I used a CD Tour at Shiloh National Military Park and I can say without hesitation that the CD is the best source of information for those doing a self-guided tour. 
+																	Our guides provide almost endless ways to experience the vast array of historical cultural and natural resources throughout the Vicksburg National Military Park. 
+																	ADMISSION is 20 per private vehicle 15 for motorcycles and 10 for bicycles and pedestrians and is valid for 7 days. 
+																	Licensed guide service is 50 per private vehicle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To schedule a tour visitors should call 1-800-221-3536 or 601-636-3827. 
+																	Published 219 pm Wednesday September 30 2020 Vicksburg National Military Park announced Wednesday it was resuming guided tours of the park with social distanced tours. 
+																	Guides must ride in the visitors vehicle since they are not permitted to provide transportation. 
+																	Things to Do USS Cairo Museum. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View the international-award winning video about the Campaign for Vicksburg. 
+																	An audio cell phone tour is available at 601 262-2100. 
+																	Vicksburg National Military Park. 
+																	A guided tour of the national Military park is a must - See 2999 traveller reviews 1892 candid photos and great deals for Vicksburg MS at Tripadvisor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Admission may vary during special events. 
+																	CD tours are 1495-2995. 
+																	Tours are based on 2 hours in length and are easily arranged for individuals families and groups of all sizes. 
+																	Guided tour of Vicksburg Battlefield - See 2999 traveler reviews 1892 candid photos and great deals for Vicksburg MS at Tripadvisor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vicksburg National Military Park resumes social distanced Licensed Battlefield Guided tours. 
+																	Take Our Siege of Vicksburg Quiz. 
+																	Disappointed a tour guide was not available due to COVID. 
+																	Guided tour of Vicksburg Battlefield - See 2999 traveller reviews 1890 candid photos and great deals for Vicksburg MS at Tripadvisor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The tour is done in your car and the guide rides along with you. 
+																	Tours will be scheduled through the Vicksburg Convention and Visitors Bureau. 
+																	The tours will be. 
+																	Was nice day for the drive through. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vicksburg National Military Park. 
+																	Reservations are suggested and preferred. 
+																	Let a Vicksburg National Military Park Licensed Battlefield Guide forever change the way you view that pivotal moment in history in just a 2-hour or3-hour tour. 
+																	Vicksburg National Military Park is a must see for any American. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A self-guided tour on the parks 16-mile tour road is an excellent starting point while a guided tour provided by a licensed battlefield guide is sure to lend color and perspective to any visit. 
+																	Vicksburg National Military Park announced Wednesday it was resuming guided tours of the park with social distanced tours. 
+																	Availability information and reservations can be made through the Vicksburg Convention and Visitors Bureau by calling 1800-221-3536 or 601 636-3827. 
+																	See more ideas about vicksburg national cemetery park. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are many ways to explore and experience the many attractions spread throughout Vicksburg National Military Park. 
+																	The tours will be conducted with the guide and those taking the tours in separate vehicles. 
+																	Things the CDs Brochures or Audio Guides Wont Tell You. 
+																	Vicksburg National Military Park. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VNMP staff agree a licensed guide is the best way to experience the Battlefield. 
+																	Will make plans to return. 
+																	Professional guides are available for hire at Vicksburg National Military Park. 
+																	The civil war battle at Vicksburg was a turning point in the war and is worth something time to reflect as experiencing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Visitors may get out of. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/0f/3c/d5/98/illinois-monument.jpg" data-lightbox="roadtrip" data-title="Guided Tour Of Vicksburg Battlefield Review Of Vicksburg National Military Park Vicksburg Ms Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/0f/3c/d5/98/illinois-monument.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShMURCHko6pCHVULqb5HINwzwhMBIJygvnwA';" alt="Guided Tour Of Vicksburg Battlefield Review Of Vicksburg National Military Park Vicksburg Ms Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guided Tour Of Vicksburg Battlefield Review Of Vicksburg National Military Park Vicksburg Ms Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nps.gov/vick/learn/historyculture/images/VICK_150_IllinoisWreath_AA_026.jpg?maxwidth=1200&amp;maxheight=1200&amp;autorotate=false" data-lightbox="roadtrip" data-title="Illinois Memorial Vicksburg National Military Park U S National Park Service">
+											<img class="card-img v-image ads-img " src="https://www.nps.gov/vick/learn/historyculture/images/VICK_150_IllinoisWreath_AA_026.jpg?maxwidth=1200&amp;maxheight=1200&amp;autorotate=false" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRekvTH6qjBrCDYXWD9R23fWfxeauW_CmlAfw';" alt="Illinois Memorial Vicksburg National Military Park U S National Park Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Illinois Memorial Vicksburg National Military Park U S National Park Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nps.gov/vick/planyourvisit/images/entrance2-3-06.jpg?maxwidth=650&amp;autorotate=false" data-lightbox="roadtrip" data-title="14 Mile Hike Introduction Vicksburg National Military Park U S National Park Service">
+											<img class="card-img v-image ads-img " src="https://www.nps.gov/vick/planyourvisit/images/entrance2-3-06.jpg?maxwidth=650&amp;autorotate=false" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH0ByNEKu3yZMkT1BR5szBqRhC4vhqlSlq1A';" alt="14 Mile Hike Introduction Vicksburg National Military Park U S National Park Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">14 Mile Hike Introduction Vicksburg National Military Park U S National Park Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nps.gov/vick/planyourvisit/images/arch3.jpg" data-lightbox="roadtrip" data-title="Park Tour Options Vicksburg National Military Park U S National Park Service">
+											<img class="card-img v-image ads-img " src="https://www.nps.gov/vick/planyourvisit/images/arch3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwstbxKdm7nTJ3snLjv8sp8ihOXkE2F2RZLg';" alt="Park Tour Options Vicksburg National Military Park U S National Park Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Park Tour Options Vicksburg National Military Park U S National Park Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/a7/c1/53a7c15983ce3d008f31f9a81f277e16.jpg" data-lightbox="roadtrip" data-title="Shirley S House The Surviving Wartime Building Vicksburg National Military Park Vicksburg Gothic Revival Architecture Architecture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/a7/c1/53a7c15983ce3d008f31f9a81f277e16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUXsmTcNwFzBx3rZQiPW4_L8Vro8CmzloGOA';" alt="Shirley S House The Surviving Wartime Building Vicksburg National Military Park Vicksburg Gothic Revival Architecture Architecture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shirley S House The Surviving Wartime Building Vicksburg National Military Park Vicksburg Gothic Revival Architecture Architecture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/63/79/0a6379843daa716a38b70ac0b72c4af1.jpg" data-lightbox="roadtrip" data-title="The Best Way To Visit Vicksburg National Military Park Vicksburg Visiting National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/63/79/0a6379843daa716a38b70ac0b72c4af1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL41wGp6hE-_I8O70gHQsp47GsbAO4XOXAMg';" alt="The Best Way To Visit Vicksburg National Military Park Vicksburg Visiting National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Way To Visit Vicksburg National Military Park Vicksburg Visiting National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/72/9e/13729e4b77ca3186d5a846df1bcc8d32.jpg" data-lightbox="roadtrip" data-title="The Best Way To Visit Vicksburg National Military Park Maniglie Porte Finestra">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/72/9e/13729e4b77ca3186d5a846df1bcc8d32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFrARNxzORhPksRbFI5cJInAQFcWpPaXWynw';" alt="The Best Way To Visit Vicksburg National Military Park Maniglie Porte Finestra">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Way To Visit Vicksburg National Military Park Maniglie Porte Finestra</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/53/ac/38/53ac387b8f82646cc7263a60df5660c4.jpg" data-lightbox="roadtrip" data-title="Exploring Vicksburg National Military Park In Mississippi Mississippi Travel National Park Passport National Parks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/53/ac/38/53ac387b8f82646cc7263a60df5660c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR85vPiyAjPCWSIp2k20vxovschPv3aZGo3FA';" alt="Exploring Vicksburg National Military Park In Mississippi Mississippi Travel National Park Passport National Parks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exploring Vicksburg National Military Park In Mississippi Mississippi Travel National Park Passport National Parks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/12/b6/5712b607f44d3d18c8305ae563e4e811.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Military Park Vicksburg Military Park">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/12/b6/5712b607f44d3d18c8305ae563e4e811.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqz4ZSj-xYqcaB1xZwzdIldlxlwdlgdokreg';" alt="Vicksburg National Military Park Vicksburg Military Park">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park Vicksburg Military Park</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/b0/42/83b042cba608c51fb9d3ca4f8308477f.jpg" data-lightbox="roadtrip" data-title="Exploring Vicksburg National Military Park In Mississippi Vicksburg Civil War Sites Mississippi Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/b0/42/83b042cba608c51fb9d3ca4f8308477f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKx0egS-NOlLA3u4JHhgKQrrhL2n3u4mA_rw';" alt="Exploring Vicksburg National Military Park In Mississippi Vicksburg Civil War Sites Mississippi Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exploring Vicksburg National Military Park In Mississippi Vicksburg Civil War Sites Mississippi Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/45/f8/85/45f885baffd683f5ee9390ea66ef79ff.jpg" data-lightbox="roadtrip" data-title="The Best Way To Visit Vicksburg National Military Park Vicksburg National Park Road Trip National Parks Trip">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/45/f8/85/45f885baffd683f5ee9390ea66ef79ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVapsotOJQ9FOGn4eFAyApuvinKkPheWnQNg';" alt="The Best Way To Visit Vicksburg National Military Park Vicksburg National Park Road Trip National Parks Trip">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Way To Visit Vicksburg National Military Park Vicksburg National Park Road Trip National Parks Trip</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/95/19/9f9519b4e6ed3ddb4573d2a4e6e87bdf.jpg" data-lightbox="roadtrip" data-title="Pin On East Coast Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/95/19/9f9519b4e6ed3ddb4573d2a4e6e87bdf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGjNhm4xnn1SMj3tgQ6HtI09yPY8HL569g9A';" alt="Pin On East Coast Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On East Coast Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/2a/73/0f/2a730f329b1c3594dda3ec58fa4dca8b.jpg" data-lightbox="roadtrip" data-title="Vicksburg Battlefield Mississippi Civil War Battlefield Driving Tour Restored Ironclad Cairo Unbeli Vicksburg National Parks Places Around The World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/2a/73/0f/2a730f329b1c3594dda3ec58fa4dca8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8RNc0ho5HoI0Dwr1R6sZ78K9VDrjA4Fzig';" alt="Vicksburg Battlefield Mississippi Civil War Battlefield Driving Tour Restored Ironclad Cairo Unbeli Vicksburg National Parks Places Around The World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg Battlefield Mississippi Civil War Battlefield Driving Tour Restored Ironclad Cairo Unbeli Vicksburg National Parks Places Around The World</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-sleep-apnea-rating-schedule.html">Va Sleep Apnea Rating Schedule</a></li>
+													<li class="list-group-item"><a href="/va-sleep-study-results.html">Va Sleep Study Results</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-zero-percent-service-connected-disability.html">Va Service Connected Zero Percent Service Connected Disability</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-testicular-cancer.html">Va Service Connected Testicular Cancer</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-taxable.html">Va Service Connected Disability Taxable</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-hearing-test.html">Va Service Connected Hearing Test</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-for-headaches.html">Va Service Connected For Headaches</a></li>
+													<li class="list-group-item"><a href="/va-service-connection-for-gerd.html">Va Service Connection For Gerd</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-pay-scale.html">Va Service Connected Disability Pay Scale</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-pension.html">Va Service Connected Pension</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-long-term-care.html">Va Service Connected Long Term Care</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-neuropathy.html">Va Service Connected Neuropathy</a></li>
+													<li class="list-group-item"><a href="/va-service-connection-for-obstructive-sleep-apnea.html">Va Service Connection For Obstructive Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-sleep-study.html">Va Sleep Study</a></li>
+													<li class="list-group-item"><a href="/va-sleep-apnea-compensation.html">Va Sleep Apnea Compensation</a></li>
+													<li class="list-group-item"><a href="/va-sinus-rating.html">Va Sinus Rating</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-spousal-benefits.html">Va Service Connected Disability Spousal Benefits</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-hemorrhoids.html">Va Service Connected Hemorrhoids</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-list.html">Va Service Connected Disability List</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-phone-number.html">Va Service Connected Disability Phone Number</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

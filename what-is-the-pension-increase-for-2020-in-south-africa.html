@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Pension Increase For 2020 In South Africa - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Pension Increase For 2020 In South Africa",
+  "datePublished": "2021-02-14",
+  "image": "https://i.ytimg.com/vi/2ipO-hE4Crk/maxresdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+pension+increase+for+2020+in+south+africa",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Pension Increase For 2020 In South Africa</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">According to the GEP Law the Funds stated aim is to grant annual pension increases on 1 April each year equal to. The maximum amount that you will get is R1 860 per month. George said the amendments would. <br>				
+			</p>
+										<a class="badge badge-warning" href="/wechat-tidak-bisa-login.html">wechat tidak bisa login</a>
+											<a class="badge badge-dark" href="/well-dressed-child.html">well dressed child</a>
+											<a class="badge badge-dark" href="/wechat-wiki.html">wechat wiki</a>
+											<a class="badge badge-primary" href="/wechat-zeitkapsel.html">wechat zeitkapsel</a>
+											<a class="badge badge-primary" href="/wedding-dress-with-a-cape.html">wedding dress with a cape</a>
+											<a class="badge badge-info" href="/wechat-verification-without-friend.html">wechat verification without friend</a>
+											<a class="badge badge-info" href="/wechat-untuk-apa.html">wechat untuk apa</a>
+											<a class="badge badge-success" href="/wechat-top-up.html">wechat top up</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the right blog.  Our site provides you with hints for viewing the highest quality video and picture content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie that you see.  You can also bring about supporting this site by sharing videos and graphics that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/00/5e/2d/005e2d194b69308bd31c8008a8f525fc.jpg" data-lightbox="roadtrip" data-title="Alexander Forbes Group Holdings Limited Review 2020 Investment Services Investing For Retirement Forbes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/00/5e/2d/005e2d194b69308bd31c8008a8f525fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSceR2SYVX0pHwMWx0oq97T5YF3NAY-pA-hfQ';" alt="Alexander Forbes Group Holdings Limited Review 2020 Investment Services Investing For Retirement Forbes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alexander Forbes Group Holdings Limited Review 2020 Investment Services Investing For Retirement Forbes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.statssa.gov.za/wp-content/uploads/2020/12/afs1.png" data-lightbox="roadtrip" data-title="Three Facts About Small Business Turnover In South Africa Statistics South Africa">
+											<img class="card-img v-image ads-img " src="http://www.statssa.gov.za/wp-content/uploads/2020/12/afs1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIyrc-7-DekqDbssnoqE7f88ce20JQT0DMg';" alt="Three Facts About Small Business Turnover In South Africa Statistics South Africa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Three Facts About Small Business Turnover In South Africa Statistics South Africa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.primedia.co.za/primedia-broadcasting/image/upload/c_fill,w_700/joiwuurzflyqlsfpfbqo" data-lightbox="roadtrip" data-title="Here S All The Social Grant Increases For 2020">
+											<img class="card-img v-image ads-img " src="https://cdn.primedia.co.za/primedia-broadcasting/image/upload/c_fill,w_700/joiwuurzflyqlsfpfbqo" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiRPopzYfr69k7SSx0keBSslW2SOzISqrezA';" alt="Here S All The Social Grant Increases For 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S All The Social Grant Increases For 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.salaryexplorer.com/charts/south-africa/median-and-salary-distribution-monthly-south-africa.jpg" data-lightbox="roadtrip" data-title="Average Salary In South Africa 2021 The Complete Guide">
+											<img class="card-img v-image ads-img " src="http://www.salaryexplorer.com/charts/south-africa/median-and-salary-distribution-monthly-south-africa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIsiqFjMl93gX80K4xEsYXAypmoY2u9bDlyw';" alt="Average Salary In South Africa 2021 The Complete Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Average Salary In South Africa 2021 The Complete Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/SA_government_income_%26_expenses_2019.png/380px-SA_government_income_%26_expenses_2019.png" data-lightbox="roadtrip" data-title="Taxation In South Africa Wikipedia">
+											<img class="card-img v-image ads-img " src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/SA_government_income_%26_expenses_2019.png/380px-SA_government_income_%26_expenses_2019.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReeNPyiAYlVHJBSfZBF9XpLuw2aT66PEx36g';" alt="Taxation In South Africa Wikipedia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Taxation In South Africa Wikipedia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://businesstech.co.za/news/wp-content/uploads/2018/11/Teacher-salaries.png" data-lightbox="roadtrip" data-title="How Much Money Teachers Get Paid In South Africa Vs Other Countries">
+											<img class="card-img v-image ads-img " src="https://businesstech.co.za/news/wp-content/uploads/2018/11/Teacher-salaries.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzL3PV4zPtd-yPypUfaxVs6gYDYttKs0Oslw';" alt="How Much Money Teachers Get Paid In South Africa Vs Other Countries">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Money Teachers Get Paid In South Africa Vs Other Countries</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://cdn.primedia.co.za/primedia-broadcasting/image/upload/c_fill,w_700/joiwuurzflyqlsfpfbqo" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzL3PV4zPtd-yPypUfaxVs6gYDYttKs0Oslw';" alt="How Much Money Teachers Get Paid In South Africa Vs Other Countries">
+										<div class="card-body">
+						<h3 class="h5"><b>Pretoria Government Employees Pension Fund GEPF announced today that an annual pension increase of 36 to its pensioners will effect from 1 April 2020.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the pension increase for 2020 in south africa</strong>. 
+								
+																	If you are older than 75 years you will get R1 880. 
+																	Pension provident and retirement annuity are treated. 
+																	At least 75 of the year-on-year increase on the Consumer Price Index to the previous 30 November. 
+																	Last update on November 23 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The table below illustrates the real increases granted by South African companies over the last 17 years. 
+																	New pension law proposed for South Africa. 
+																	Information about the increase according to GEP law or pension increase policy. 
+																	The hard lockdown also showed the countrys workforce decreased by 22-million according to the latest unemployment figures from Statistics South Africa. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A national minimum wage came into effect in South Africa on 1 January 2019 after several years of political debate. 
+																	29 October 2020 - 0817. 
+																	Some expats who live and work in South Africa can claim a South African pension. 
+																	Finance Minister Tito Mboweni today announced an R80 increase for old age disability and care dependency grants which will now pay R1860 per month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Heres all the social grant increases for 2020 Over 18 million South Africans rely on social grants. 
+																	Small increases in social grants have been announced to reduce inequality and protect the most vulnerable in South Africa Finance Minister Tito Mboweni announced in his 2020 Budget address today. 
+																	The Finance Minister said the number of social grant beneficiaries was expected to increase to. 
+																	How will you be paid. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Government relaxes pensions withdrawal rules. 
+																	Pensioners who retired on or before 1 April 2019 are to be increased with a total increase equal to 100 CPI which is 36 over the year to the previous 30 November with effect from 1 April 2020. 
+																	Whichever is the highest is the one thatll determine the following years State Pension increase. 
+																	R80 more for old age. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mboweni unveils plan to establish fund for workers with no pension cover. 
+																	Staff Writer 21 September 2020. 
+																	Get to grips with pensions in South Africa including details of how the South African state pension works and whether you should pay into a workplace pension. 
+																	The South African Social Security Agency SASSA will pay the grant to you through one of the following methods. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By contrast the difficulties of 2020 have played havoc with both wages and inflation. 
+																	Last year annual wage growth was by far the highest at 39 inflation came in at 17 so this was the figure applied to the 20202021 State Pension. 
+																	As an example if the salary increase is 60 and inflation is 40 then a 20 real increase has been granted. 
+																	A real increase is defined as the increase after inflation has been taken into account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As it depends on your income many expats typically dont qualify. 
+																	Any additional amount after the increase above necessary to maintain the purchasing power of at least 75 of the pension at retirement. 
+																	Godongwana explained that the policy of prescribed assets came as a result of the challenges in South Africa which. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.geysercoetzee.co.za/resources/transnet/3.jpg" data-lightbox="roadtrip" data-title="Geyser And Coetzee Attorneys Centurion">
+											<img class="card-img v-image ads-img " src="http://www.geysercoetzee.co.za/resources/transnet/3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ETCs79NhT-Tx7kKCNOY_-LKBSMrlfLrgzA';" alt="Geyser And Coetzee Attorneys Centurion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Geyser And Coetzee Attorneys Centurion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.ntbc.org.za/covid19/regulation/2.jpg" data-lightbox="roadtrip" data-title="National Textile Bargaining Council">
+											<img class="card-img v-image ads-img " src="http://www.ntbc.org.za/covid19/regulation/2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-qRQzDVHd1YmG4OzZyeUpBd0QWDVV4sQsVA';" alt="National Textile Bargaining Council">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Textile Bargaining Council</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/a9/02/e2a902ee9c6ad4f6b727f364982850e0.jpg" data-lightbox="roadtrip" data-title="Can I Withdraw My Old Mutual Retirement Annuity What Are The Rules Annuity Retirement Annuity Pension Fund">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/a9/02/e2a902ee9c6ad4f6b727f364982850e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvTPx9ZNbwigNBjv8N1upJElPu4p_lEIwbVQ';" alt="Can I Withdraw My Old Mutual Retirement Annuity What Are The Rules Annuity Retirement Annuity Pension Fund">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can I Withdraw My Old Mutual Retirement Annuity What Are The Rules Annuity Retirement Annuity Pension Fund</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/14/41/a914412790a50a759269ad8a245cf9ef.png" data-lightbox="roadtrip" data-title="For Those In Formal Employment In South Africa The Current Average Monthly Salary Is Just Under R22 400 But After Dedu In 2020 Salary Home Loans Agricultural Sector">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/14/41/a914412790a50a759269ad8a245cf9ef.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQktAPqaQGQ_fyoDpBlGWwFUeI2ZbG1L4gUpw';" alt="For Those In Formal Employment In South Africa The Current Average Monthly Salary Is Just Under R22 400 But After Dedu In 2020 Salary Home Loans Agricultural Sector">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Those In Formal Employment In South Africa The Current Average Monthly Salary Is Just Under R22 400 But After Dedu In 2020 Salary Home Loans Agricultural Sector</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.salaryexplorer.com/charts/south-africa/administration-reception-secretarial/personal-assistant/median-and-salary-distribution-monthly-south-africa-personal-assistant.jpg" data-lightbox="roadtrip" data-title="Personal Assistant Average Salary In South Africa 2021 The Complete Guide">
+											<img class="card-img v-image ads-img " src="http://www.salaryexplorer.com/charts/south-africa/administration-reception-secretarial/personal-assistant/median-and-salary-distribution-monthly-south-africa-personal-assistant.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1qaI0lK03W1h_eJOJ5gUw932Qy4clst8R8Q';" alt="Personal Assistant Average Salary In South Africa 2021 The Complete Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Personal Assistant Average Salary In South Africa 2021 The Complete Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/df/2e/e5df2ee39487989f055fc661ed26116b.jpg" data-lightbox="roadtrip" data-title="Barclays Citi Helped South Africa With Forex Trading Probe Sources Sovereign Wealth Fund Pension Fund Things To Sell">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/df/2e/e5df2ee39487989f055fc661ed26116b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0OZAl7gRxXAJN9XoB7LDM5q9guf9vH6OCg';" alt="Barclays Citi Helped South Africa With Forex Trading Probe Sources Sovereign Wealth Fund Pension Fund Things To Sell">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barclays Citi Helped South Africa With Forex Trading Probe Sources Sovereign Wealth Fund Pension Fund Things To Sell</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/48/3f/fe/483ffec71fcac7e516bf1d52ae7400a2.jpg" data-lightbox="roadtrip" data-title="Pin By Sans Newsfeed On South Africa News New Africa Black Friday South">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/48/3f/fe/483ffec71fcac7e516bf1d52ae7400a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzgtgxXp8tEd2df6Good2D1r6PoH8RFCjlNQ';" alt="Pin By Sans Newsfeed On South Africa News New Africa Black Friday South">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sans Newsfeed On South Africa News New Africa Black Friday South</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/57/91/b65791f44a10a31af17bdabd429c078b.png" data-lightbox="roadtrip" data-title="Globeleq Acquires Brookfields Interests In Its South African Renewable Energy Portfolio Renewable Energy Energy Renew">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/57/91/b65791f44a10a31af17bdabd429c078b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTGv4rGg4WwV4zh33Sz3IKROALKRLoZedZ6g';" alt="Globeleq Acquires Brookfields Interests In Its South African Renewable Energy Portfolio Renewable Energy Energy Renew">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Globeleq Acquires Brookfields Interests In Its South African Renewable Energy Portfolio Renewable Energy Energy Renew</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://businesstech.co.za/news/wp-content/uploads/2018/03/Money-e1522138063666.jpg" data-lightbox="roadtrip" data-title="This Is The Average Salary In South Africa Right Now">
+											<img class="card-img v-image ads-img " src="https://businesstech.co.za/news/wp-content/uploads/2018/03/Money-e1522138063666.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlYtz_hx8J8pz3erw2E1a_COD2jseRNf2R-w';" alt="This Is The Average Salary In South Africa Right Now">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is The Average Salary In South Africa Right Now</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/2ipO-hE4Crk/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Tax Tables 2020 2021 Know Your Tax Brackets Quickbooks">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/2ipO-hE4Crk/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5qXrziU-YO25wSCh4GAFtAobI8-ccq5gx0Q';" alt="Tax Tables 2020 2021 Know Your Tax Brackets Quickbooks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tax Tables 2020 2021 Know Your Tax Brackets Quickbooks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dc/ce/3d/dcce3d957afbed99c81187fdeb06703a.jpg" data-lightbox="roadtrip" data-title="Discovery Card Review 2020 All You Need To Know Discovery Card Debit Card Design Bank Rewards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dc/ce/3d/dcce3d957afbed99c81187fdeb06703a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_5gUwb-UXCZqQaxAcCftT5v4puMNDTmpoYg';" alt="Discovery Card Review 2020 All You Need To Know Discovery Card Debit Card Design Bank Rewards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discovery Card Review 2020 All You Need To Know Discovery Card Debit Card Design Bank Rewards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://cdn.24.co.za/files/Cms/General/d/8674/9b807ef6090743489d48fe36bdf7cf6d.png" data-lightbox="roadtrip" data-title="New R350 Unemployment Grants Will Use Whatsapp For Registration And First Tests Have Been Completed">
+											<img class="card-img v-image ads-img " src="http://cdn.24.co.za/files/Cms/General/d/8674/9b807ef6090743489d48fe36bdf7cf6d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKCnMgSfR-pbNDBQglDXTA_M1LOdjqAtZYA';" alt="New R350 Unemployment Grants Will Use Whatsapp For Registration And First Tests Have Been Completed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New R350 Unemployment Grants Will Use Whatsapp For Registration And First Tests Have Been Completed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e8/37/a3/e837a3d4caf0c65b7c8831267eb79b46.jpg" data-lightbox="roadtrip" data-title="How Much Money Does A Person Working In Ethiopia Make Https Yegdaily Com How Much Money Does A Person Working In Ethiop In 2020 Ethiopia South Africa Marketing Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e8/37/a3/e837a3d4caf0c65b7c8831267eb79b46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW4Zi3USYcwPeWnNc2zcMQHIXvwasRDsO4-A';" alt="How Much Money Does A Person Working In Ethiopia Make Https Yegdaily Com How Much Money Does A Person Working In Ethiop In 2020 Ethiopia South Africa Marketing Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Money Does A Person Working In Ethiopia Make Https Yegdaily Com How Much Money Does A Person Working In Ethiop In 2020 Ethiopia South Africa Marketing Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/de/10/ebde10822178d85a6b5f129e431c7697.png" data-lightbox="roadtrip" data-title="Nedbank Credit Card Review 2020 All You Need To Know Credit Card Design Credit Card Application American Express Card">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/de/10/ebde10822178d85a6b5f129e431c7697.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsAPe9M7mlhlDGiS1tqf_Nzx921ar92u9MUw';" alt="Nedbank Credit Card Review 2020 All You Need To Know Credit Card Design Credit Card Application American Express Card">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nedbank Credit Card Review 2020 All You Need To Know Credit Card Design Credit Card Application American Express Card</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/249997896_The_Status_of_Fatherhood_and_Fathering_in_South_Africa/links/53e9ae630cf28f342f41384d/largepreview.png" data-lightbox="roadtrip" data-title="Pdf The Status Of Fatherhood And Fathering In South Africa">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/249997896_The_Status_of_Fatherhood_and_Fathering_in_South_Africa/links/53e9ae630cf28f342f41384d/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_PiSzL8vEW-5voBcbCuLgDrPYAPKODQAgA';" alt="Pdf The Status Of Fatherhood And Fathering In South Africa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf The Status Of Fatherhood And Fathering In South Africa</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-service-connected-disability-for-dental.html">Va Service Connected Disability For Dental</a></li>
+													<li class="list-group-item"><a href="/va-schedule-rating.html">Va Schedule Rating</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-ischemic-heart-disease.html">Va Secondary Conditions To Ischemic Heart Disease</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-but-no-rating.html">Va Service Connected But No Rating</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-back-pain.html">Va Secondary Conditions To Back Pain</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-ankle-pain.html">Va Secondary Conditions To Ankle Pain</a></li>
+													<li class="list-group-item"><a href="/va-secondary-disabilities.html">Va Secondary Disabilities</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-knee.html">Va Secondary Conditions To Knee</a></li>
+													<li class="list-group-item"><a href="/va-secondary-claim-process.html">Va Secondary Claim Process</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-radiculopathy.html">Va Secondary Conditions To Radiculopathy</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-compensation-rates.html">Va Service Connected Disability Compensation Rates</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-conditions.html">Va Service Connected Disability Conditions</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-ibs.html">Va Secondary Conditions To Ibs</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-high-blood-pressure.html">Va Secondary Conditions To High Blood Pressure</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-criteria.html">Va Service Connected Disability Criteria</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-als.html">Va Service Connected Als</a></li>
+													<li class="list-group-item"><a href="/va-secondary-claims-to-tbi.html">Va Secondary Claims To Tbi</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-appeal.html">Va Service Connected Appeal</a></li>
+													<li class="list-group-item"><a href="/va-secondary-knee-claim.html">Va Secondary Knee Claim</a></li>
+													<li class="list-group-item"><a href="/va-schedule-rating-for-ptsd.html">Va Schedule Rating For Ptsd</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

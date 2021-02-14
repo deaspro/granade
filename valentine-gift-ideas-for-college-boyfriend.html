@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Valentine Gift Ideas For College Boyfriend - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Valentine Gift Ideas For College Boyfriend",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/7b/09/0c/7b090cf49f7cf8777aea27cae7064757.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=valentine+gift+ideas+for+college+boyfriend",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Valentine Gift Ideas For College Boyfriend</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This company oozes American toughness and innovation and makes shopping for boyfriend Valentines Day gifts that much easier. Etsy offers tons of cool ways for you tocustomize jewelry such as adding your anniversary date cool name signatures and mini pictures inside of it. But just because our kids are teens and in college and way too cool for silly cards and crafts doesnt mean we shouldnt shower them with a little love on Valentines Day. <br>				
+			</p>
+										<a class="badge badge-info" href="/what-are-some-reasons-not-to-go-to-college.html">what are some reasons not to go to college</a>
+											<a class="badge badge-primary" href="/what-are-some-secondary-conditions-to-sleep-apnea.html">what are some secondary conditions to sleep apnea</a>
+											<a class="badge badge-danger" href="/what-are-the-benefits-for-a-100-percent-disabled-veteran.html">what are the benefits for a 100 percent disabled veteran</a>
+											<a class="badge badge-primary" href="/what-are-the-benefits-of-being-a-marine-wife.html">what are the benefits of being a marine wife</a>
+											<a class="badge badge-info" href="/what-are-some-secondary-conditions-to-ptsd.html">what are some secondary conditions to ptsd</a>
+											<a class="badge badge-success" href="/what-are-the-benefits-of-90-va-disability.html">what are the benefits of 90 va disability</a>
+											<a class="badge badge-danger" href="/what-are-the-benefits-of-being-an-army-wife.html">what are the benefits of being an army wife</a>
+											<a class="badge badge-primary" href="/what-are-the-5-military-police-functions.html">what are the 5 military police functions</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to pay a visit to the ideal blog.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie for you to see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/18/46/af184695e47c2d8a6a46fa03d3e354ea.jpg" data-lightbox="roadtrip" data-title="Pin By Alex Miller On Great Ideas Diy Valentines Gifts Valentine S Day Gift Baskets Creative Valentines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/18/46/af184695e47c2d8a6a46fa03d3e354ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfglVUwDznhpliMSYwx6ccJxK8K_h7WOI6Bg';" alt="Pin By Alex Miller On Great Ideas Diy Valentines Gifts Valentine S Day Gift Baskets Creative Valentines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Alex Miller On Great Ideas Diy Valentines Gifts Valentine S Day Gift Baskets Creative Valentines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/6a/a5/b46aa5c31dee0e7dafca88f4a7624cf6.jpg" data-lightbox="roadtrip" data-title="Valentines Day Care Package Valentines Day Care Package Diy Valentines Gifts Valentines Day Package">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/6a/a5/b46aa5c31dee0e7dafca88f4a7624cf6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxP_KVx_WlTtsyxsQTRehLDaqn6w4aD20aqw';" alt="Valentines Day Care Package Valentines Day Care Package Diy Valentines Gifts Valentines Day Package">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valentines Day Care Package Valentines Day Care Package Diy Valentines Gifts Valentines Day Package</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/cb/dc/d4cbdc57697172845d84b08701af0273.png" data-lightbox="roadtrip" data-title="100 Cute Valentine S Day Gifts For Boyfriends That Are Sweet And Romantic Hike N Dip Valentine Gifts For Husband Diy Valentine Gifts For Boyfriend Valentines Gifts For Boyfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/cb/dc/d4cbdc57697172845d84b08701af0273.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKL1nWjjPSdN-3Iy_59piA8yfKsr5rSUjemA';" alt="100 Cute Valentine S Day Gifts For Boyfriends That Are Sweet And Romantic Hike N Dip Valentine Gifts For Husband Diy Valentine Gifts For Boyfriend Valentines Gifts For Boyfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Cute Valentine S Day Gifts For Boyfriends That Are Sweet And Romantic Hike N Dip Valentine Gifts For Husband Diy Valentine Gifts For Boyfriend Valentines Gifts For Boyfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/09/0c/7b090cf49f7cf8777aea27cae7064757.jpg" data-lightbox="roadtrip" data-title="Valentines Day Gift For Him Valentines Day Gift Basket Diy Valentines Day Gifts For Him Valentine S Day Gift Baskets Valentines Day Gifts For Him Boyfriends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/09/0c/7b090cf49f7cf8777aea27cae7064757.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrLotbuJ4MTZbbb-NyM7-mBkMwZnukf9Ig4g';" alt="Valentines Day Gift For Him Valentines Day Gift Basket Diy Valentines Day Gifts For Him Valentine S Day Gift Baskets Valentines Day Gifts For Him Boyfriends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valentines Day Gift For Him Valentines Day Gift Basket Diy Valentines Day Gifts For Him Valentine S Day Gift Baskets Valentines Day Gifts For Him Boyfriends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/a4/c8/aca4c889edfb1dbc842bac664782fbd6.jpg" data-lightbox="roadtrip" data-title="Great Valentines Day Gift For Your Boyfriend Who Plays College Football Birthday Present For Boyfriend Gifts For Your Boyfriend Valentines Gifts For Boyfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/a4/c8/aca4c889edfb1dbc842bac664782fbd6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzeSEH-wqOvNFoBvRMGk2q5kC-w1eeHR2Keg';" alt="Great Valentines Day Gift For Your Boyfriend Who Plays College Football Birthday Present For Boyfriend Gifts For Your Boyfriend Valentines Gifts For Boyfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Great Valentines Day Gift For Your Boyfriend Who Plays College Football Birthday Present For Boyfriend Gifts For Your Boyfriend Valentines Gifts For Boyfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/4b/a1/3c4ba1f4e347f8a165a61f71e599f357.jpg" data-lightbox="roadtrip" data-title="Pin By Simone Sannelli On Holiday Fun College Gifts Valentines Day Care Package College Care Package">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/4b/a1/3c4ba1f4e347f8a165a61f71e599f357.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Z4hHj8Vk3CRC_uGGkg2lhOS3ccbPjlzu8g';" alt="Pin By Simone Sannelli On Holiday Fun College Gifts Valentines Day Care Package College Care Package">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Simone Sannelli On Holiday Fun College Gifts Valentines Day Care Package College Care Package</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/86/95/20/8695206cdbc512335f75ec1ca9843e2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Z4hHj8Vk3CRC_uGGkg2lhOS3ccbPjlzu8g';" alt="Pin By Simone Sannelli On Holiday Fun College Gifts Valentines Day Care Package College Care Package">
+										<div class="card-body">
+						<h3 class="h5"><b>When he goes on his experience day and you finally get a day.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Valentine gift ideas for college boyfriend</strong>. 
+								
+																	If outdoor adventures are a staple in your relationship or the man in your life likes to be one with nature then the Grizzly 20 cooler is the perfect gift for Valentines Day. 
+																	Jan 28 2021 - Explore Jackie Rushs board Valentines Ideas For Boyfriend followed by 5050 people on Pinterest. 
+																	Thats why picking him up something from Bulova makes sense. 
+																	Or maybe youre in a long-term relationship and need fresh new ideas for what to get your boyfriend for Valentines Day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can get a matching set of rings bracelets or necklaces. 
+																	And so will you wink wink. 
+																	As you know that friends are a gift from God and if you bless with true friends then its your responsibility to give gifts to your friends. 
+																	Valentine day is not only friends but you can give gifts to your friends and also your college best friends. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Valentine Gift Baskets For College Students 2021. 
+																	Awesome design with a cute statement. 
+																	Valentines Day Gift Ideas for all Recipients. 
+																	Wondering what to get him aka your boyfriend or husband for Valentines Day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Valentines Day Gift Ideas for Teenage Boyfriend 2021 1. 
+																	If youre all about the romance a heartfelt art print or classy. 
+																	See more ideas about valentine gifts boyfriend gifts valentines diy. 
+																	But our selection is much more than that including funny quirky and unique presents thatll fill their heart with joy and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Make him feel like a King this Valentines with Prezzyboxs cracking range of Valentines Gifts for Him. 
+																	See more ideas about boyfriend gifts diy gifts gifts. 
+																	Whether hes into gizmos and gadgets a tipple or two or three etc driving fast cars or something a little more grown up hell have more fun this Valentines than ever before. 
+																	Find the perfect Valentines gift for your boyfriend. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A match striker because if your boyfriend appreciates fine ceramics as well as gifts from small businesses youve struck gold. 
+																	Date Night Box Set with Conversation Starters. 
+																	Show him how wonderful he - and how flipping wonderful you are for putting so much thought into his gift - with our awesome range of Valentines prezzies for boyfriends sure to put the va-va-voom in his Valentines Day. 
+																	There are plenty of cute things think. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether youre after a night of naughtiness or want to give him an Experience Day thats out of this world we. 
+																	Traditional Valentines Gifts tend to centre around cute pretty and tasty things like scented candles flowers chocolates many of which you can find on IWOOT. 
+																	A really nice Valentine gift for your husband or boyfriend is a sports watch. 
+																	10 Romantic Non-Cheesy Valentines Day Gift Ideas for Him. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Grizzly 20 will hold 5 pounds of ice and 24 cans making it the only cooler he will. 
+																	Buckets Full of Drinks and Candies. 
+																	See more ideas about valentines valentines diy valentine gifts. 
+																	Here are some of the best romantic non-cheesy gifts you can get for your partner. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They look good on both guys and girls. 
+																	Take the stress out of finding the best Valentines Day gifts for him in 2021your boyfriend husband man whoeverwith these unique gift ideas for men of all tastes and hobbies. 
+																	Whats nice about this accessory is its high degree of utility. 
+																	Jan 24 2021 - Explore Gabys board Gift ideas on Pinterest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	25 DIY Valentines Day Gift Ideas Teens Will Love Updated 12021 Gone are the days of Valentines Day card exchanges in the classroom and heart-shaped crafts on the kitchen table. 
+																	Something Cute and Romantic His Princess Her Prince Couple Bracelet Set. 
+																	A truly romantic Valentines Day gift idea for your college boyfriend is a photo album of your favorite memories of you and him together. 
+																	Not only is it stylish the watch also can be worn at work or the gym. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Whether you cant wait to get stuck into browsing gifts or simply want it ticked off the list were ready to lend a helping hand with a range of great Valentines Day gift ideas for boyfriends. 
+																	You could get the photos printed at your local drugstore like Walgreens or CVS. 
+																	We have a few of the best gift ideas. 
+																	Valentines Day Gift Keychain for Husband Boyfriend From Girlfriend Wife Anniversary Birthday Gifts For Couple Keyring Women Men You Have My Heart Him Her Wedding 48 out of 5 stars 1317 1099 10. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Crossing the line from romantic to cheesy on Valentines Day is often difficult especially when there is an abundance of intentionally cheesy gifts. 
+																	You could also go a slightly more sentimentalbut still appropriateroute with a. 
+																	Jun 21 2018 - Explore Karli Fowlers board College boyfriend gifts on Pinterest. 
+																	This is one of the best Valentines Day gifts for your college boyfriend that likes wearing jewelry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is a simple gift that literally anyone could use to spruce up. 
+																	You will love this set of titanium stainless steel bracelets. 
+																	A matching set of coffee mugs and creative finds from cooking and beer-making kits to custom socks and neck massagers that will fit the bill. 
+																	Thats precisely why something small yet thoughtful is the best option for a first Valentines Day gift for your boyfriend. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/9a/c2/b5/9ac2b562b1b9d96a2f2de900611df4a0.jpg" data-lightbox="roadtrip" data-title="Valentine S Day Care Package Ideas For Your Far Away Love The Candy Lei Valentines Day Care Package Valentines Day Gifts For Friends Boyfriend Care Package">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/9a/c2/b5/9ac2b562b1b9d96a2f2de900611df4a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5QSXwik7uuTZiX8CzxWQEEjZYBcwX9xNyPA';" alt="Valentine S Day Care Package Ideas For Your Far Away Love The Candy Lei Valentines Day Care Package Valentines Day Gifts For Friends Boyfriend Care Package">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valentine S Day Care Package Ideas For Your Far Away Love The Candy Lei Valentines Day Care Package Valentines Day Gifts For Friends Boyfriend Care Package</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/fc/75/c6fc757795afe834aca36d2bc47540f3.jpg" data-lightbox="roadtrip" data-title="Military Valentines Day Package Valentines Day Care Package Diy Gifts For Him Valentines Day Package">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/fc/75/c6fc757795afe834aca36d2bc47540f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4KLCJNbB7V6RvDXSczI__5JDS-BiMuaIIeA';" alt="Military Valentines Day Package Valentines Day Care Package Diy Gifts For Him Valentines Day Package">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Valentines Day Package Valentines Day Care Package Diy Gifts For Him Valentines Day Package</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/61/f0/f861f08f428eafa34a6afe57fe15e8a5.jpg" data-lightbox="roadtrip" data-title="Valentine S Day Military Care Package Valentines Day Care Package Diy Christmas Gifts Deployment Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/61/f0/f861f08f428eafa34a6afe57fe15e8a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnxGkxx6A9jnMGUEsc-5j-HAXiEIzXh4SZ_w';" alt="Valentine S Day Military Care Package Valentines Day Care Package Diy Christmas Gifts Deployment Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valentine S Day Military Care Package Valentines Day Care Package Diy Christmas Gifts Deployment Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e9/fa/55/e9fa55a85927f20de6a6c30f3bc25c3f--valentines-day-care-package-fun-mail.jpg" data-lightbox="roadtrip" data-title="Valentines Day Care Package Valentines Day Baskets Cute Valentines Day Gifts Valentines Gift Box">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e9/fa/55/e9fa55a85927f20de6a6c30f3bc25c3f--valentines-day-care-package-fun-mail.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFpDhCaDwf7q-VDpAgr6pBd-xkTOIX-QszWg';" alt="Valentines Day Care Package Valentines Day Baskets Cute Valentines Day Gifts Valentines Gift Box">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valentines Day Care Package Valentines Day Baskets Cute Valentines Day Gifts Valentines Gift Box</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/62/eb/9562ebbfebf9b03dba6d530f07b5fe3e.jpg" data-lightbox="roadtrip" data-title="Simple Diy Valentine S Day Gift For Him Or Her Valentinesday Diy Diy Valentines Gifts Valentine S Day Diy Valentines Diy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/62/eb/9562ebbfebf9b03dba6d530f07b5fe3e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc5wPNDcJl0hQNgh6k_4E6gEOIo70pmmjyaQ';" alt="Simple Diy Valentine S Day Gift For Him Or Her Valentinesday Diy Diy Valentines Gifts Valentine S Day Diy Valentines Diy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Simple Diy Valentine S Day Gift For Him Or Her Valentinesday Diy Diy Valentines Gifts Valentine S Day Diy Valentines Diy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f9/e8/d3/f9e8d38458ba6debb1add6891e363711.jpg" data-lightbox="roadtrip" data-title="15 Diy Valentine S Day Gift Ideas That Will Cover Everyone On Your List Valentine S Day Diy Valentines Diy Diy Valentines Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f9/e8/d3/f9e8d38458ba6debb1add6891e363711.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPoatmb3H8HtbNZd592--SunXXvhchuvkoag';" alt="15 Diy Valentine S Day Gift Ideas That Will Cover Everyone On Your List Valentine S Day Diy Valentines Diy Diy Valentines Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Diy Valentine S Day Gift Ideas That Will Cover Everyone On Your List Valentine S Day Diy Valentines Diy Diy Valentines Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/0a/83/dd0a831df137d23b5eb3aab852845977.jpg" data-lightbox="roadtrip" data-title="Deployment Care Package Diy Valentine S Day Care Package Deployment Gift Valentines Day Care Package Diy Valentines Gifts Diy Valentine Gifts For Boyfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/0a/83/dd0a831df137d23b5eb3aab852845977.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54km8NwYg0YKh6J5KCYhD-yOfUyIqCsJRWQ';" alt="Deployment Care Package Diy Valentine S Day Care Package Deployment Gift Valentines Day Care Package Diy Valentines Gifts Diy Valentine Gifts For Boyfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Deployment Care Package Diy Valentine S Day Care Package Deployment Gift Valentines Day Care Package Diy Valentines Gifts Diy Valentine Gifts For Boyfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/74/62/647462a8285b0a22b2db12163dffb48e.png" data-lightbox="roadtrip" data-title="Care Package For Basketball Boyfriend Boyfriend Crafts Boyfriend Gifts Christmas Gifts For Boyfriend">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/74/62/647462a8285b0a22b2db12163dffb48e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapWxd9ghrCuudukqMklz8mkfNDi7zJDWKCg';" alt="Care Package For Basketball Boyfriend Boyfriend Crafts Boyfriend Gifts Christmas Gifts For Boyfriend">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Care Package For Basketball Boyfriend Boyfriend Crafts Boyfriend Gifts Christmas Gifts For Boyfriend</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/86/95/20/8695206cdbc512335f75ec1ca9843e2f.jpg" data-lightbox="roadtrip" data-title="Open When Letters Valentine Gifts For Him Diy Valentines Gifts Simple Valentines Gifts Vday Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/86/95/20/8695206cdbc512335f75ec1ca9843e2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROM2ISsa8wpLOATR8nlFDXKLFpK9-6KtS0Lg';" alt="Open When Letters Valentine Gifts For Him Diy Valentines Gifts Simple Valentines Gifts Vday Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Open When Letters Valentine Gifts For Him Diy Valentines Gifts Simple Valentines Gifts Vday Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/37/14/633714b60e8cc2c39e9538d2b1c6949e.jpg" data-lightbox="roadtrip" data-title="Valentine S Gift Idea For Him Diy Valentines Gifts Valentines Day Care Package Valentines Day Gifts For Him Boyfriends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/37/14/633714b60e8cc2c39e9538d2b1c6949e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyRR58S8SK9k9kHZcZUMRWGh4NIVjiSEimTA';" alt="Valentine S Gift Idea For Him Diy Valentines Gifts Valentines Day Care Package Valentines Day Gifts For Him Boyfriends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valentine S Gift Idea For Him Diy Valentines Gifts Valentines Day Care Package Valentines Day Gifts For Him Boyfriends</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/26/44/52/26445299659ab48ee0245f20575c37ae.jpg" data-lightbox="roadtrip" data-title="Valentine S Care Packages For College Students Organized 31 Valentines Day Care Package Sent Valentine College Care Package">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/26/44/52/26445299659ab48ee0245f20575c37ae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT43oYyeHeOxqUnemDGEvTzo5W-82GADzHFPg';" alt="Valentine S Care Packages For College Students Organized 31 Valentines Day Care Package Sent Valentine College Care Package">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valentine S Care Packages For College Students Organized 31 Valentines Day Care Package Sent Valentine College Care Package</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/89/cb/4589cb297f0b98159de9115c4691b96d.jpg" data-lightbox="roadtrip" data-title="30 More Last Minute Diy Gifts For Your Valentine Diy Valentines Gifts Valentines Diy Valentine S Day Diy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/89/cb/4589cb297f0b98159de9115c4691b96d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxXAL90n5ssklh-2cI4vMFkB-z8SGMnpMXaA';" alt="30 More Last Minute Diy Gifts For Your Valentine Diy Valentines Gifts Valentines Diy Valentine S Day Diy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">30 More Last Minute Diy Gifts For Your Valentine Diy Valentines Gifts Valentines Diy Valentine S Day Diy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/61/d7/b561d7e14643b0ae3231242bb70b8c61.jpg" data-lightbox="roadtrip" data-title="Valentine S Day Care Package Valentines Day Care Package Valentines Diy Valentine S Day Diy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/61/d7/b561d7e14643b0ae3231242bb70b8c61.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3UqYG9HfEE6A1ExFjTEr9T_NMsGAVOzf9QA';" alt="Valentine S Day Care Package Valentines Day Care Package Valentines Diy Valentine S Day Diy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Valentine S Day Care Package Valentines Day Care Package Valentines Diy Valentine S Day Diy</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-hypertensive-heart-disease.html">What Is The Va Disability Rating For Hypertensive Heart Disease</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-chronic-pain-syndrome.html">What Is The Va Disability Rating For Chronic Pain Syndrome</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-ischemic-heart-disease.html">What Is The Va Disability Rating For Ischemic Heart Disease</a></li>
+													<li class="list-group-item"><a href="/what-is-the-uniformed-services-former-spouses-protection-act.html">What Is The Uniformed Services Former Spouses Protection Act</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-compensation-for-sleep-apnea.html">What Is The Va Compensation For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/what-is-the-strongest-armies-in-the-world.html">What Is The Strongest Armies In The World</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-gulf-war-syndrome.html">What Is The Va Disability Rating For Gulf War Syndrome</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-5-year-rule.html">What Is The Va 5 Year Rule</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-payment-schedule.html">What Is The Va Disability Payment Schedule</a></li>
+													<li class="list-group-item"><a href="/what-is-the-us-military-budget-compared-to-other-countries.html">What Is The Us Military Budget Compared To Other Countries</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-a-knee-replacement.html">What Is The Va Disability Rating For A Knee Replacement</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-compensation-for-agent-orange.html">What Is The Va Compensation For Agent Orange</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-kidney-stones.html">What Is The Va Disability Rating For Kidney Stones</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-chart.html">What Is The Va Disability Rating Chart</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-pay-scale-2019.html">What Is The Va Disability Pay Scale 2019</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-enlarged-prostate.html">What Is The Va Disability Rating For Enlarged Prostate</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-diabetic-neuropathy.html">What Is The Va Disability Rating For Diabetic Neuropathy</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-dependents-educational-assistance.html">What Is The Va Dependents Educational Assistance</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-disability-rating-for-alcohol-abuse.html">What Is The Va Disability Rating For Alcohol Abuse</a></li>
+													<li class="list-group-item"><a href="/what-is-the-story-behind-gingerbread-houses.html">What Is The Story Behind Gingerbread Houses</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

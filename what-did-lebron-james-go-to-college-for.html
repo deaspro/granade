@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Did Lebron James Go To College For - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Did Lebron James Go To College For",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/81/50/27/815027b4033a92825a06f40bae65961a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+did+lebron+james+go+to+college+for",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Did Lebron James Go To College For</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">LeBron James says he will go to college and has already chosen a school. AKRON Ohio -- LeBron James skipped college for the NBA. David West taken 18th got his first invite in 2008 while 6th overall selection Chris Kaman finally. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/vocational-schools-that-accept-the-gi-bill.html">vocational schools that accept the gi bill</a>
+											<a class="badge badge-dark" href="/vonapp-post-911-gi-bill.html">vonapp post 911 gi bill</a>
+											<a class="badge badge-info" href="/voc-rehab-program-for-veteran.html">voc rehab program for veteran</a>
+											<a class="badge badge-secondary" href="/virginia-unemployment-statement.html">virginia unemployment statement</a>
+											<a class="badge badge-danger" href="/wagner-college-womens-basketball-coach.html">wagner college womens basketball coach</a>
+											<a class="badge badge-danger" href="/want-to-go-to-college-but-dont-know-what-for.html">want to go to college but dont know what for</a>
+											<a class="badge badge-success" href="/virginia-wesleyan-college-womens-basketball.html">virginia wesleyan college womens basketball</a>
+											<a class="badge badge-dark" href="/virginia-wgs-insurance-provider-phone-number.html">virginia wgs insurance provider phone number</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to pay a visit to the ideal site.  Our website gives you suggestions for viewing the highest quality video and image content, search and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie for you to view.  It is also possible to contribute to supporting this site by sharing videos and graphics that you enjoy on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/3d/a0/533da0ccc33d92efebc25eb566cd1577.jpg" data-lightbox="roadtrip" data-title="What If Lebron Went To College Myfantasysportstalk Lebron James College Lebron James King Lebron James">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/3d/a0/533da0ccc33d92efebc25eb566cd1577.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn6SiKLmyC6T1bZUtSRjY4djoxx3YAYTnE1A';" alt="What If Lebron Went To College Myfantasysportstalk Lebron James College Lebron James King Lebron James">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What If Lebron Went To College Myfantasysportstalk Lebron James College Lebron James King Lebron James</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/b0/e0/aeb0e0c9fc42cd92c8e910e4c70c7d52.jpg" data-lightbox="roadtrip" data-title="Lebron James High School Recruiting Congratulates King James On His Decision To Move On He Is Lebron James High School Lebron James King Lebron James">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/b0/e0/aeb0e0c9fc42cd92c8e910e4c70c7d52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSraZ7o_L6oHz_5J8uK0gGKMs1mnPdoUbOEfg';" alt="Lebron James High School Recruiting Congratulates King James On His Decision To Move On He Is Lebron James High School Lebron James King Lebron James">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lebron James High School Recruiting Congratulates King James On His Decision To Move On He Is Lebron James High School Lebron James King Lebron James</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/1f/d7/c41fd79ab8e53600258c3eae2a94184d.jpg" data-lightbox="roadtrip" data-title="High School He Had To Wear Plasters To Cover Up His Tattoos School Lebron James High School King Lebron James Lebron James">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/1f/d7/c41fd79ab8e53600258c3eae2a94184d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ4uqKaOy-wlO7KbeCw5s7UyEoZevR3TExbg';" alt="High School He Had To Wear Plasters To Cover Up His Tattoos School Lebron James High School King Lebron James Lebron James">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">High School He Had To Wear Plasters To Cover Up His Tattoos School Lebron James High School King Lebron James Lebron James</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/bc/82/c1bc826fd6740dc336e08916fde6f787.jpg" data-lightbox="roadtrip" data-title="Lebron James Lebron James High School Lebron James Lebron James Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/bc/82/c1bc826fd6740dc336e08916fde6f787.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1FDhjJumkZEmfADLS2TmgVxQeKXNcTGYg7g';" alt="Lebron James Lebron James High School Lebron James Lebron James Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lebron James Lebron James High School Lebron James Lebron James Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://media.cleveland.com/cavs_impact/photo/lebron-james-kobe-bryant-2ce5aedcf6ebdbf0.jpg" data-lightbox="roadtrip" data-title="Image From Http Media Cleveland Com Cavs Impact Photo Lebron James Kobe Bryant 2ce5aedcf6ebdbf0 Jpg Kobe Bryant Lebron James Kobe Bryant Wallpaper">
+											<img class="card-img v-image ads-img " src="http://media.cleveland.com/cavs_impact/photo/lebron-james-kobe-bryant-2ce5aedcf6ebdbf0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIZ6wRAnlTrK1wNZ0yIZzq5cafm3qdymU1jQ';" alt="Image From Http Media Cleveland Com Cavs Impact Photo Lebron James Kobe Bryant 2ce5aedcf6ebdbf0 Jpg Kobe Bryant Lebron James Kobe Bryant Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image From Http Media Cleveland Com Cavs Impact Photo Lebron James Kobe Bryant 2ce5aedcf6ebdbf0 Jpg Kobe Bryant Lebron James Kobe Bryant Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/29/1c/a2/291ca22df2dd8a14c408cc8a95e2a80c.jpg" data-lightbox="roadtrip" data-title="18 Pictures Of Young Lebron James King Lebron James Lebron James Lebron James Wallpapers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/29/1c/a2/291ca22df2dd8a14c408cc8a95e2a80c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfH7L_xR7M9V-asuRfejO3wo5vdAOQRwh70w';" alt="18 Pictures Of Young Lebron James King Lebron James Lebron James Lebron James Wallpapers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">18 Pictures Of Young Lebron James King Lebron James Lebron James Lebron James Wallpapers</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/2b/5e/32/2b5e3201b92a91a83050ed6296552b3e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfH7L_xR7M9V-asuRfejO3wo5vdAOQRwh70w';" alt="18 Pictures Of Young Lebron James King Lebron James Lebron James Lebron James Wallpapers">
+										<div class="card-body">
+						<h3 class="h5"><b>1 overall pick in 2003 but he most likely.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What did lebron james go to college for</strong>. 
+								
+																	Instead James took advantage of the NBA rules at the time that allowed him to go straight from his high school of. 
+																	Born December 30 1984 is an American professional basketball player for the Los Angeles Lakers of the National Basketball Association NBA. 
+																	Also know did LeBron James go to college Yes or no. 
+																	Did Lebron ever commit to a college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I want to know if they add his college to that and also what team is the irish. 
+																	Its as much a part of the LeBron brand as the players moves on the court. 
+																	He wants to go back some day. 
+																	LeBron went to high school at St. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Obviously Lebron went straight out of high school to the nba but other players like Kobe Bryant committed to schools KB com. 
+																	He led the Miami Heat to NBA titles in 2012 and 2013 and won another championship with Cleveland. 
+																	LeBron James has gone a long way toward helping kids in his community. 
+																	LeBron James would have gone to Ohio State if he had played college basketball. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LeBron James has accomplished virtually. 
+																	Well King James is taking the love one step further announcing that he will fund over 1000 kids educations with a scholarship to the University of Akron ESPN reported. 
+																	Where did LeBron go to school. 
+																	He has a shirt that says irish but dont knwow if thats his high school or college team. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mary High School in Akron Ohio. 
+																	He then jumped straight to the pro ranks as hed deliberately forfeited his NCAA eligibility. 
+																	He was drafted by the Cleveland Cavaliers directly out of high school in 2003. 
+																	To Duke before they decide to enter the draft. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is rumored that LeBron James got an 870 over 1600 on his SAT score although this is not 100 certain. 
+																	He led his basketball team to three state titles and was named Mr. 
+																	However this didnt affect him at all because he never got to play college basketball. 
+																	It could have happened had King James gone to college instead of jumping straight to the NBA as the No. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The sports star actually went from high-school to the NBA without ever playing in the NCAA. 
+																	This comes after James said he trained to play football during the 2011 NBA lockout. 
+																	LeBron James in full LeBron Raymone James byname King James born December 30 1984 Akron Ohio US American professional basketball player who is widely considered one of the greatest all-around players of all time and who won National Basketball Association NBA championships with the Miami Heat 2012 and 2013 the Cleveland Cavaliers 2016 and the Los Angeles Lakers 2020. 
+																	Fourth selection Chris Bosh made it to eleven consecutive NBA All-Star Games between 2006 and 2016 while third pick Carmelo Anthony and 29th selection Josh Howard got their first invitations in 2007. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But under the current eligibility rules established two years after James went pro players need to be 19 before they can enter the NBA. 
+																	I see him in those commercials when he plays basketball and gets older in age and its about being better then him. 
+																	This happened during the press conference after game 1 of the CavaliersNets series. 
+																	Basketball in Ohio for three straight years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LeBron James never played college basketball. 
+																	His I Promise program provides interventions at third grade that help push kids to graduate high school. 
+																	LeBron James received his first nomination in 2005 as did fifth overall selection Dwyane Wade. 
+																	ALL OFFENSIVE COMMENTS WILL BE IMMEDIATELY REMOVED PLEASE KEEP IT CL. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Just this week he. 
+																	Widely considered one of the greatest NBA players in history James is frequently compared to Michael Jordan in debates over the greatest basketball player of all time. 
+																	LeBron Raymone James Sr. 
+																	LeBron James in a Duke or North Carolina uniform. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Facebook twitter reddit link. 
+																	L ə ˈ b r ɒ n. 
+																	LeBron James Was Once Recruited to Play Football for a Legendary College Coach by David Wysong on May 20 2020 The topic of how successful LeBron James would have been as a football player has come up in recent days. 
+																	Part of the deal when I bought into U of P was letting me take a special test to get the degree The exam James said consisted of maybe nine or 10 questions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BY Nunzio Ingrassia November 15 2016. 
+																	LeBron James became an immediate star after skipping college to join the NBAs Cleveland Cavaliers. 
+																	What college did lebron james go to. 
+																	He attended St Vincent-St Marys HS in Akron Ohio and graduated from there in 2003. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	James intends to take classes at the University of Akron his business partner in helping get college. 
+																	Helping to speed up the process for James receiving a diploma was his recent purchase of a majority stake in University of Phoenix the for-profit online college. 
+																	He didnt - he was a prep-to-pro athlete who went straight from high school into the NBA in the days before the current CBA made it impossible. 
+																	He decided not to go to college and went straight to the NBA where he was the number 1 pick in the 2003 NBA draft. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The deep ties LeBron James shares with his hometown of Akron Ohio arent news to anyone. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/7b/1b/9c7b1b49d8a9d342cab999f1126345de.jpg" data-lightbox="roadtrip" data-title="Young King James King Lebron James Lebron James Family Lebron James High School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/7b/1b/9c7b1b49d8a9d342cab999f1126345de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEgiBSwp7f-xWmPx__D4FQh8r_WT2i3Vr-Sg';" alt="Young King James King Lebron James Lebron James Family Lebron James High School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Young King James King Lebron James Lebron James Family Lebron James High School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/e2/59/41e25932d5a3d91a93a1bd0534a6e3eb.jpg" data-lightbox="roadtrip" data-title="Lebron James Lebron James High School Pinterest Lebron James Lebron James Finals Lebron James High School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/e2/59/41e25932d5a3d91a93a1bd0534a6e3eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1iQ3w6qym1ayKhf8BjNVsGfPVQ8_Rry_IPA';" alt="Lebron James Lebron James High School Pinterest Lebron James Lebron James Finals Lebron James High School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lebron James Lebron James High School Pinterest Lebron James Lebron James Finals Lebron James High School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/50/27/815027b4033a92825a06f40bae65961a.jpg" data-lightbox="roadtrip" data-title="What I Learned About Student Choice By Watching Lebron James Grow Up Lebron James Lebron James Autograph Lebron James High School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/50/27/815027b4033a92825a06f40bae65961a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyoMo4qDRIwwWkQZxzlqeja-eV1Okt8Z_Qgg';" alt="What I Learned About Student Choice By Watching Lebron James Grow Up Lebron James Lebron James Autograph Lebron James High School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What I Learned About Student Choice By Watching Lebron James Grow Up Lebron James Lebron James Autograph Lebron James High School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/41/5e/17/415e1734025667898f668465316698c8.jpg" data-lightbox="roadtrip" data-title="18 Pictures Of Young Lebron James Lebron James High School Lebron James King Lebron James">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/41/5e/17/415e1734025667898f668465316698c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt1Me5Ph-0nJKMXOVHwiJFnXEv8lMrLUUTUw';" alt="18 Pictures Of Young Lebron James Lebron James High School Lebron James King Lebron James">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">18 Pictures Of Young Lebron James Lebron James High School Lebron James King Lebron James</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/6d/ef/8a6defde003f59b6313f1da7364ad708.png" data-lightbox="roadtrip" data-title="Mah Chissa Chicca Dal Passato N S Lebron James Lebron James High School Lebron James Lakers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/6d/ef/8a6defde003f59b6313f1da7364ad708.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6GXz1kjZZu-e-s-EudFt_LAAeyZC2mtoCRw';" alt="Mah Chissa Chicca Dal Passato N S Lebron James Lebron James High School Lebron James Lakers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mah Chissa Chicca Dal Passato N S Lebron James Lebron James High School Lebron James Lakers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/4f/66/b74f669a1455a4ea807aab968bbcf8d6.jpg" data-lightbox="roadtrip" data-title="Basketball Wallpaper Best Basketball Wallpapers 2020 Lebron James Wallpapers Lebron James Nba Lebron James">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/4f/66/b74f669a1455a4ea807aab968bbcf8d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs_hzDvSjrJISdiXk76mEuSBAp4Aq9aTfmzg';" alt="Basketball Wallpaper Best Basketball Wallpapers 2020 Lebron James Wallpapers Lebron James Nba Lebron James">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basketball Wallpaper Best Basketball Wallpapers 2020 Lebron James Wallpapers Lebron James Nba Lebron James</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/2e/94/e32e94c202d19694829daf01c15482e5.jpg" data-lightbox="roadtrip" data-title="Slam 62 High School All Americans Sebastian Telfair And Lebron James Appeared On The Cover Of The 62nd I Lebron James Slam Basketball Lebron James High School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/2e/94/e32e94c202d19694829daf01c15482e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSseGGXn3Ax3ydkhQi6GBVuJE4EVT1c-1_kYA';" alt="Slam 62 High School All Americans Sebastian Telfair And Lebron James Appeared On The Cover Of The 62nd I Lebron James Slam Basketball Lebron James High School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Slam 62 High School All Americans Sebastian Telfair And Lebron James Appeared On The Cover Of The 62nd I Lebron James Slam Basketball Lebron James High School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/81/30/d181303d4c2bc9f6812b1835a718c48c.jpg" data-lightbox="roadtrip" data-title="Rare Photos Of Carmelo Anthony Lebron James Lebron James High School Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/81/30/d181303d4c2bc9f6812b1835a718c48c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5i1nevIoDEF1I1C4rTB3Gm0c7OCm1x5-C4Q';" alt="Rare Photos Of Carmelo Anthony Lebron James Lebron James High School Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rare Photos Of Carmelo Anthony Lebron James Lebron James High School Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/db/bd/d2dbbd3f830cbbe492a9bfe0626cf400.jpg" data-lightbox="roadtrip" data-title="Lebron James Basketball Academy Website Doubleclutchhoops Com Twitter Dblclu Lebron James High School Basketball Compression Pants Lebron James Basketball">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/db/bd/d2dbbd3f830cbbe492a9bfe0626cf400.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG68QXrUk1PpxirXw6TpPBgcKvAabfXh8Z9A';" alt="Lebron James Basketball Academy Website Doubleclutchhoops Com Twitter Dblclu Lebron James High School Basketball Compression Pants Lebron James Basketball">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lebron James Basketball Academy Website Doubleclutchhoops Com Twitter Dblclu Lebron James High School Basketball Compression Pants Lebron James Basketball</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/a3/ef/8fa3ef1a2ccfc93163a46b3300c22ab9.jpg" data-lightbox="roadtrip" data-title="Lebron James Sebastian Telflair Lebron James Pictures Basketball Jones Lebron James High School Lebron James Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/a3/ef/8fa3ef1a2ccfc93163a46b3300c22ab9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRZe239e5aod7CYAYMYJqlhrh4x_5cHJMfSQ';" alt="Lebron James Sebastian Telflair Lebron James Pictures Basketball Jones Lebron James High School Lebron James Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lebron James Sebastian Telflair Lebron James Pictures Basketball Jones Lebron James High School Lebron James Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/2a/1c/522a1c564ba2ee81a7323892c903ad73.jpg" data-lightbox="roadtrip" data-title="How To Make An Interesting Art Piece Using Tree Branches Ehow Lebron James Lebron James High School Nba Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/2a/1c/522a1c564ba2ee81a7323892c903ad73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPds9lumfZlZ7psS_ki9tnrGNh4oRzhiGSIQ';" alt="How To Make An Interesting Art Piece Using Tree Branches Ehow Lebron James Lebron James High School Nba Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Make An Interesting Art Piece Using Tree Branches Ehow Lebron James Lebron James High School Nba Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/5e/32/2b5e3201b92a91a83050ed6296552b3e.jpg" data-lightbox="roadtrip" data-title="Lebron James High School Recruiting Lebron James Lebron James High School Lebron James Lebron James Dunking">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/5e/32/2b5e3201b92a91a83050ed6296552b3e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXTH8yZHnpbHl0SsMp7GVCfCMR1QwbhHuyAw';" alt="Lebron James High School Recruiting Lebron James Lebron James High School Lebron James Lebron James Dunking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lebron James High School Recruiting Lebron James Lebron James High School Lebron James Lebron James Dunking</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/d0/17/c9d0172d44ef4154deeea99c8c1d5298.jpg" data-lightbox="roadtrip" data-title="Download Image Lebron James High School Pc Android Iphone And Ipad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/d0/17/c9d0172d44ef4154deeea99c8c1d5298.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTed2jfyQrfPWaadv4zO-TUl3EglmcnawJ-Yg';" alt="Download Image Lebron James High School Pc Android Iphone And Ipad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Image Lebron James High School Pc Android Iphone And Ipad</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-regional-office-fort-worth-texas.html">Va Regional Office Fort Worth Texas</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-tucson.html">Va Regional Office Tucson</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-san-francisco.html">Va Regional Office San Francisco</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-detroit-phone-number.html">Va Regional Office Detroit Phone Number</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-new-york.html">Va Regional Office New York</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-fayetteville-nc.html">Va Regional Office Fayetteville Nc</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-bay-pines.html">Va Regional Office Bay Pines</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-raleigh-nc.html">Va Regional Office Raleigh Nc</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-denver.html">Va Regional Office Denver</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-tampa-fl.html">Va Regional Office Tampa Fl</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-waco.html">Va Regional Office Waco</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-knoxville-tn.html">Va Regional Office Knoxville Tn</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-germany.html">Va Regional Office Germany</a></li>
+													<li class="list-group-item"><a href="/va-representative-for-claims.html">Va Representative For Claims</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-compensation-fax-number.html">Va Regional Office Compensation Fax Number</a></li>
+													<li class="list-group-item"><a href="/va-representative-jobs.html">Va Representative Jobs</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-seattle.html">Va Regional Office Seattle</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-tucson-az.html">Va Regional Office Tucson Az</a></li>
+													<li class="list-group-item"><a href="/va-regional-office-janesville-wi.html">Va Regional Office Janesville Wi</a></li>
+													<li class="list-group-item"><a href="/va-remand-decision.html">Va Remand Decision</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

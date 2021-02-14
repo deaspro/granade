@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Unemployment News 300 - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Unemployment News 300",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/564x/75/45/48/7545482c5cf0ccbe3f76f8fd65f9adcb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+unemployment+news+300",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Unemployment News 300</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The extra 300 a week as well as additional weeks of unemployment probably wont be enough for many jobless workers to dig themselves out of debt Stettner added but would likely help many meet. President Donald Trump ordered the Lost Wages Assistance LWA program in early August to provide those who are eligible with up to 6 weeks of 300 dollar payments. WWBT - The Virginia Employment Commission VEC has released new information on when extended and enhanced unemployment benefits will begin to rollout. <br>				
+			</p>
+										<a class="badge badge-info" href="/what-does-the-forever-gi-bill-cover.html">what does the forever gi bill cover</a>
+											<a class="badge badge-success" href="/what-does-va-effective-date-mean.html">what does va effective date mean</a>
+											<a class="badge badge-light" href="/what-does-total-and-permanent-va-disability-mean.html">what does total and permanent va disability mean</a>
+											<a class="badge badge-dark" href="/what-does-the-gi-bill-give-you.html">what does the gi bill give you</a>
+											<a class="badge badge-light" href="/what-does-the-post-911-gi-bill-cover.html">what does the post 911 gi bill cover</a>
+											<a class="badge badge-light" href="/what-does-the-irish-army-do-in-the-lebanon.html">what does the irish army do in the lebanon</a>
+											<a class="badge badge-primary" href="/what-does-va-pay-for-disability.html">what does va pay for disability</a>
+											<a class="badge badge-warning" href="/what-does-the-gi-bill-pay-for.html">what does the gi bill pay for</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the ideal site.  Our site gives you hints for seeing the maximum quality video and picture content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to view.  You can also contribute to supporting this site by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f0/6e/fd/f06efdb8aede2ce902b45d987fcf076b.jpg" data-lightbox="roadtrip" data-title="What Is Better 15 Year Vs 30 Year The Loans Are Structurally Similar The Main Difference Is The Term Of Years A Sh 30 Year Mortgage Mortgage Mortgage Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f0/6e/fd/f06efdb8aede2ce902b45d987fcf076b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuYcjKEQGdetDUa5At-PFhAi_bOrVIohXoJA';" alt="What Is Better 15 Year Vs 30 Year The Loans Are Structurally Similar The Main Difference Is The Term Of Years A Sh 30 Year Mortgage Mortgage Mortgage Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Better 15 Year Vs 30 Year The Loans Are Structurally Similar The Main Difference Is The Term Of Years A Sh 30 Year Mortgage Mortgage Mortgage Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/6c/6d/026c6d76d318e0734d40dad3147bf1b0.jpg" data-lightbox="roadtrip" data-title="Fannie And Freddie Share Continue Selloff Both Fannie Mae Fnma And Freddie Mac Fmcc Shares Are Poised Fannie Mae Financial News Wall Street News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/6c/6d/026c6d76d318e0734d40dad3147bf1b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXILUHyEiEcVsI2PTk91oD6VnVbtaEKuT-bA';" alt="Fannie And Freddie Share Continue Selloff Both Fannie Mae Fnma And Freddie Mac Fmcc Shares Are Poised Fannie Mae Financial News Wall Street News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fannie And Freddie Share Continue Selloff Both Fannie Mae Fnma And Freddie Mac Fmcc Shares Are Poised Fannie Mae Financial News Wall Street News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/02/da/3202dab8dd90718be15191e803e3d9cd.jpg" data-lightbox="roadtrip" data-title="5 Goals Of Life Finance Personal Finance Money Saving Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/02/da/3202dab8dd90718be15191e803e3d9cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvA2ZFgdqtKygoVLIS4C2lliL4KXUPoEWebA';" alt="5 Goals Of Life Finance Personal Finance Money Saving Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Goals Of Life Finance Personal Finance Money Saving Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/75/a6/a375a6567881cbf1baa2e727b40cd8dd.png" data-lightbox="roadtrip" data-title="Love How Venmo Recognizes My Bank From The Routing Number Learn Ux Design Learning Ux Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/75/a6/a375a6567881cbf1baa2e727b40cd8dd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcDsmydI03bDQUUHL796xkSB7XyafDcdRF6g';" alt="Love How Venmo Recognizes My Bank From The Routing Number Learn Ux Design Learning Ux Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Love How Venmo Recognizes My Bank From The Routing Number Learn Ux Design Learning Ux Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dd/dd/20/dddd20ce30fcd79751b0d4b27071fd56--military-spending-homework.jpg" data-lightbox="roadtrip" data-title="Pin On Red White And Blue">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dd/dd/20/dddd20ce30fcd79751b0d4b27071fd56--military-spending-homework.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTKiKs9psftlLQa3jbcUx9ID1ht7KRumV6lw';" alt="Pin On Red White And Blue">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Red White And Blue</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/8c/4c/fc8c4ca793a9f8a2c57d9aab2f01cff7.png" data-lightbox="roadtrip" data-title="Employment Confirmation Letter Confirmation Letter Credit Repair Letters Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/8c/4c/fc8c4ca793a9f8a2c57d9aab2f01cff7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTCg2aGaqQXeDlhiRtnQK0sghVR0HpknFgCA';" alt="Employment Confirmation Letter Confirmation Letter Credit Repair Letters Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employment Confirmation Letter Confirmation Letter Credit Repair Letters Lettering</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/50/61/a2/5061a2f7b23097d22e833cc33e427121.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTCg2aGaqQXeDlhiRtnQK0sghVR0HpknFgCA';" alt="Employment Confirmation Letter Confirmation Letter Credit Repair Letters Lettering">
+										<div class="card-body">
+						<h3 class="h5"><b>Regular Unemployment Insurance UI State Extended Benefits EB Pandemic Unemployment Assistance PUA and Pandemic Emergency Unemployment Compensation PEUC.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va unemployment news 300</strong>. 
+								
+																	The VEC says as long as you have been claiming weeks you should still receive those new benefits once available but instead of 600 the payout will only be 300 on top of your base unemployment. 
+																	AP Virginia ns on unemployment will get an extra 300 on top of what the state pays out. 
+																	States like Oklahoma Virginia and Texas dont plan to issue those funds for a few. 
+																	Additionally those eligible will receive the extra 300 per week under these programs through the Federal Pandemic Unemployment Compensation program FPUC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All workers who get regular unemployment benefits should be eligible for the Federal Pandemic Unemployment Compensation FPUC programs additional weekly 300 benefits beginning the week ending. 
+																	Several states have already begun administering the latest 300 weekly enhancement to unemployment benefits a week after President Donald Trump signed the Covid relief package to extend federal. 
+																	Until Bidens stimulus plan is passed unemployed workers will continue receiving 300 each week until March 14 as laid out in a 900 billion relief package passed back in December. 
+																	The VEC says as long as you have been claiming weeks you should still receive those new benefits once available but instead of 600 the payout will only be 300 on top of your base unemployment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As for people who went through all. 
+																	WRIC Unemployed workers in Virginia wondering whether they will get 300 in extra weekly benefits can expect to get a message within the next week if they are. 
+																	Virginia plans to start distributing an additional 300 per week in unemployment benefits to workers by the end of September but that money will be limited to just three weeks of. 
+																	Getting the 300 Federal Pandemic Unemployment Compensation FPUC in Virginia The program will add an additional 300 each week that you receive benefits under the following programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WRIC Additional funding for Virginians on unemployment is being delayed for a second time partially due to a system outage that affected multiple state agencies earlier this week. 
+																	Additionally the VEC stated Wednesday the Federal Pandemic Unemployment Compensation FPUC which adds an additional 300 per week was being added to individuals under the following programs. 
+																	The 900 billion Covid relief law extends unemployment benefits in two programs PUA and PEUC by up to 15 weeks. 
+																	Of the 49 states that applied to participate in the Lost Wage Assistance program only Virginia Alaska Nevada New Jersey and Wisconsin had not yet begun distributing the money as of this week according to the Virginia Mercurys review of official statements and news reports detailing the status of the program in all 50 states. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Joyce Fogg a spokeswoman for the commission said in an email that text messages will go out to eligible recipients within the next week. 
+																	WRIC Unemployed workers in Virginia may have to wait a little longer than they expected to get 300 in extra weekly benefits after the Virginia Employment Commission pushed back. 
+																	Ralph Northams administration said this week that state is preparing to pay the. 
+																	Getty Images RICHMOND Va. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Virginia Employment Commission said Thursday it expects to begin distributing 300-a-week in additional unemployment benefits in about two and a half weeks which would fall on the week of Sept. 
+																	There was no universal. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/7a/2a/7b7a2a4bb06b41e9996ba7dd6b737041.jpg" data-lightbox="roadtrip" data-title="Facebook Marketing For Real Estate Agents Lead Generation For Realtors Home Mortgage Refinance Mortgage Home Buying">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/7a/2a/7b7a2a4bb06b41e9996ba7dd6b737041.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiO4fwrqcNflrINKPlqyOgqSumIoahxqmT8A';" alt="Facebook Marketing For Real Estate Agents Lead Generation For Realtors Home Mortgage Refinance Mortgage Home Buying">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Facebook Marketing For Real Estate Agents Lead Generation For Realtors Home Mortgage Refinance Mortgage Home Buying</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/93/b9/2293b92800a92d12d33578e323a17af9.jpg" data-lightbox="roadtrip" data-title="Important Moments In Real Estate History Infographic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/93/b9/2293b92800a92d12d33578e323a17af9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnDnCN3HdpamlSmkgkvh9penPAMo4_f43SEw';" alt="Important Moments In Real Estate History Infographic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Important Moments In Real Estate History Infographic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/67/fe/1367fea675611a2a0e3159e7e6fefeb9.jpg" data-lightbox="roadtrip" data-title="Lincoln And His Son Tad The Statue Of Abraham Lincoln And His Son Tad Commemorates Their Historic Arrival And Tour Of Richmond Virginia Is For Lovers Statue">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/67/fe/1367fea675611a2a0e3159e7e6fefeb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTasmgXuDLkqwLApV2pknEnszfeKLSnMWumKg';" alt="Lincoln And His Son Tad The Statue Of Abraham Lincoln And His Son Tad Commemorates Their Historic Arrival And Tour Of Richmond Virginia Is For Lovers Statue">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lincoln And His Son Tad The Statue Of Abraham Lincoln And His Son Tad Commemorates Their Historic Arrival And Tour Of Richmond Virginia Is For Lovers Statue</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/c6/bd/9f/c6bd9f87e0d6bd01e1e3561790a232f5.jpg" data-lightbox="roadtrip" data-title="Today S Front Page Of The Durango Herald Http Www Durangoherald Com Via Newseum Tfp Http Www Newseum Org Todaysfro Redlands Dallas Morning News Newseum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/c6/bd/9f/c6bd9f87e0d6bd01e1e3561790a232f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfaP6wbZSO7vtrmr85VB_hfgGnZbEaiFnlUQ';" alt="Today S Front Page Of The Durango Herald Http Www Durangoherald Com Via Newseum Tfp Http Www Newseum Org Todaysfro Redlands Dallas Morning News Newseum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Today S Front Page Of The Durango Herald Http Www Durangoherald Com Via Newseum Tfp Http Www Newseum Org Todaysfro Redlands Dallas Morning News Newseum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/75/45/48/7545482c5cf0ccbe3f76f8fd65f9adcb.jpg" data-lightbox="roadtrip" data-title="Pin On Arlington Va Home Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/75/45/48/7545482c5cf0ccbe3f76f8fd65f9adcb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs00Bo0xyJJm1WclSBPWYmU9LtEk9R9pHbsA';" alt="Pin On Arlington Va Home Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Arlington Va Home Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c6/bd/9f/c6bd9f87e0d6bd01e1e3561790a232f5.jpg" data-lightbox="roadtrip" data-title="Today S Front Page Of The Durango Herald Http Www Durangoherald Com Via Newseum Tfp Http Www Newseum Org Todaysfro Redlands Dallas Morning News Newseum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c6/bd/9f/c6bd9f87e0d6bd01e1e3561790a232f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEds-hpIPTU5J0eZ66G8Snm7C4ozBuhVxddg';" alt="Today S Front Page Of The Durango Herald Http Www Durangoherald Com Via Newseum Tfp Http Www Newseum Org Todaysfro Redlands Dallas Morning News Newseum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Today S Front Page Of The Durango Herald Http Www Durangoherald Com Via Newseum Tfp Http Www Newseum Org Todaysfro Redlands Dallas Morning News Newseum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c3/3b/e6/c33be611104a17fa3642c9cd5f2397ac.jpg" data-lightbox="roadtrip" data-title="Pin On Stimulus Checks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c3/3b/e6/c33be611104a17fa3642c9cd5f2397ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaI57fr6jGcfc_Zj03ImXWeAlPIsfjIfy3Ag';" alt="Pin On Stimulus Checks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Stimulus Checks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/61/a2/5061a2f7b23097d22e833cc33e427121.jpg" data-lightbox="roadtrip" data-title="1986 Chrysler New Yorker Turbo Ad Canada Chrysler New Yorker Chrysler Car Advertising">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/61/a2/5061a2f7b23097d22e833cc33e427121.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-rsgwTMjLho2zadrkxOYGw-rgZoEocTgSg';" alt="1986 Chrysler New Yorker Turbo Ad Canada Chrysler New Yorker Chrysler Car Advertising">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1986 Chrysler New Yorker Turbo Ad Canada Chrysler New Yorker Chrysler Car Advertising</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/34/6b/03346b0747103edbc439b07988400e85.png" data-lightbox="roadtrip" data-title="Is Logistics About To Get Amazon Ed Techcrunch Logistics Supply Business Development Strategy Logistics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/34/6b/03346b0747103edbc439b07988400e85.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwfQTXG1luN5euyKP5EBCMTboIOFaNWfY7kg';" alt="Is Logistics About To Get Amazon Ed Techcrunch Logistics Supply Business Development Strategy Logistics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is Logistics About To Get Amazon Ed Techcrunch Logistics Supply Business Development Strategy Logistics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e1/5d/fd/e15dfd9afd146abbe99c8bce7557cc8c--statistics-labor.jpg" data-lightbox="roadtrip" data-title="Episode 392 Keeping The Biggest Secret In The U S Economy Locksmith Locksmith Services Mobile Locksmith">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e1/5d/fd/e15dfd9afd146abbe99c8bce7557cc8c--statistics-labor.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNGPrrypWxHyrBG-AgbIASnflSasRZgdkXCQ';" alt="Episode 392 Keeping The Biggest Secret In The U S Economy Locksmith Locksmith Services Mobile Locksmith">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Episode 392 Keeping The Biggest Secret In The U S Economy Locksmith Locksmith Services Mobile Locksmith</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wavy.com/wp-content/uploads/sites/3/2020/11/f503e098dffe46b5a33bbc78fd37dd7e-1.jpg?w=640" data-lightbox="roadtrip" data-title="Extended Benefit Payments For 20 000 Virginians On Unemployment Ending This Week Wavy Com">
+											<img class="card-img v-image ads-img " src="https://www.wavy.com/wp-content/uploads/sites/3/2020/11/f503e098dffe46b5a33bbc78fd37dd7e-1.jpg?w=640" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCQOxluO71HTk8bv03YpXw53gp1qqZBvy0w';" alt="Extended Benefit Payments For 20 000 Virginians On Unemployment Ending This Week Wavy Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Extended Benefit Payments For 20 000 Virginians On Unemployment Ending This Week Wavy Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/f6/3e/0b/f63e0b0a0681325a179af08c041964a1.jpg" data-lightbox="roadtrip" data-title="Tucson Az Tucson Arizona Arizona Tucson Az">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/f6/3e/0b/f63e0b0a0681325a179af08c041964a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnvfpVfrDuH-7le8gQj0QPZPgfc_VXrrq0Ww';" alt="Tucson Az Tucson Arizona Arizona Tucson Az">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tucson Az Tucson Arizona Arizona Tucson Az</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106165409-157021251621720191002-img_1621.jpg?v=1570212563" data-lightbox="roadtrip" data-title="What Workers Should Know About Unemployment Benefits Ending Resuming">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106165409-157021251621720191002-img_1621.jpg?v=1570212563" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRdkdvIQn12d2RjKaEnIR97lQm7GpdzYSRxw';" alt="What Workers Should Know About Unemployment Benefits Ending Resuming">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Workers Should Know About Unemployment Benefits Ending Resuming</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-compensation-stimulus-check.html">Veterans Compensation Stimulus Check</a></li>
+													<li class="list-group-item"><a href="/veterans-chapter-1606.html">Veterans Chapter 1606</a></li>
+													<li class="list-group-item"><a href="/veterans-cost-of-living-increase.html">Veterans Cost Of Living Increase</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-hotline-documentary.html">Veterans Crisis Hotline Documentary</a></li>
+													<li class="list-group-item"><a href="/veterans-compensation-chart.html">Veterans Compensation Chart</a></li>
+													<li class="list-group-item"><a href="/veterans-career-pathway-program.html">Veterans Career Pathway Program</a></li>
+													<li class="list-group-item"><a href="/veterans-crisis-hotline-number-uk.html">Veterans Crisis Hotline Number Uk</a></li>
+													<li class="list-group-item"><a href="/veterans-compensation-for-2020.html">Veterans Compensation For 2020</a></li>
+													<li class="list-group-item"><a href="/veterans-compensation-rate-calculator.html">Veterans Compensation Rate Calculator</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-website.html">Veterans Benefits Website</a></li>
+													<li class="list-group-item"><a href="/veterans-compensation-cola-2021.html">Veterans Compensation Cola 2021</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-va.html">Veterans Benefits Va</a></li>
+													<li class="list-group-item"><a href="/veterans-compensation-and-pension-exam.html">Veterans Compensation And Pension Exam</a></li>
+													<li class="list-group-item"><a href="/veterans-compensation-for-hearing-loss.html">Veterans Compensation For Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/veterans-benefits-utah.html">Veterans Benefits Utah</a></li>
+													<li class="list-group-item"><a href="/veterans-compensation-flat-feet.html">Veterans Compensation Flat Feet</a></li>
+													<li class="list-group-item"><a href="/veterans-compensation-lawyers.html">Veterans Compensation Lawyers</a></li>
+													<li class="list-group-item"><a href="/veterans-compensation-questions.html">Veterans Compensation Questions</a></li>
+													<li class="list-group-item"><a href="/veterans-cola-increase.html">Veterans Cola Increase</a></li>
+													<li class="list-group-item"><a href="/veterans-compensation-pay.html">Veterans Compensation Pay</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

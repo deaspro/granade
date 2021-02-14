@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Vicksburg National Military Park Dog Friendly - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Vicksburg National Military Park Dog Friendly",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/07/78/05/077805d8731a22211f035dd1f3c295ca.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=vicksburg+national+military+park+dog+friendly",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Vicksburg National Military Park Dog Friendly</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">An explanation of how Vicksburg National Military Park is operating under the Covid-19 pandemic. The waffles was great and staff friendly. If you plan to bring your pet with you on a visit to Vicksburg National Military Park you should be prepared. <br>				
+			</p>
+										<a class="badge badge-warning" href="/va-schedular-rating.html">va schedular rating</a>
+											<a class="badge badge-success" href="/va-rheumatoid-arthritis.html">va rheumatoid arthritis</a>
+											<a class="badge badge-danger" href="/va-rn-nurse-pay-scale.html">va rn nurse pay scale</a>
+											<a class="badge badge-dark" href="/va-retro-pay-for-dependents.html">va retro pay for dependents</a>
+											<a class="badge badge-light" href="/va-schedule-of-ratings-arthritis.html">va schedule of ratings arthritis</a>
+											<a class="badge badge-primary" href="/va-schedule-of-ratings-foot.html">va schedule of ratings foot</a>
+											<a class="badge badge-secondary" href="/va-saturday-premium-back-pay-update.html">va saturday premium back pay update</a>
+											<a class="badge badge-success" href="/va-salary-employee.html">va salary employee</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the ideal blog.  Our website gives you suggestions for viewing the maximum quality video and image content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you see.  You can also bring about supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nps.gov/vick/planyourvisit/images/dog-walker-DSC_0031.jpg?maxwidth=650&amp;autorotate=false" data-lightbox="roadtrip" data-title="Pets Vicksburg National Military Park U S National Park Service">
+											<img class="card-img v-image ads-img " src="https://www.nps.gov/vick/planyourvisit/images/dog-walker-DSC_0031.jpg?maxwidth=650&amp;autorotate=false" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwSv_YExlD2XDA793oTIvuKK4ZkQxDmdy-A';" alt="Pets Vicksburg National Military Park U S National Park Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pets Vicksburg National Military Park U S National Park Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://petfriendlytravel.com/wp-content/uploads/2019/04/pet-friendly-travel-vicksburg-national-military-park-ms-960x636.jpg" data-lightbox="roadtrip" data-title="Vicksburg Vicksburg National Military Park Pet Friendly Travel">
+											<img class="card-img v-image ads-img " src="https://petfriendlytravel.com/wp-content/uploads/2019/04/pet-friendly-travel-vicksburg-national-military-park-ms-960x636.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgUao3Le34wesODOAt-Mqqj0CKwsyhug1ZQ';" alt="Vicksburg Vicksburg National Military Park Pet Friendly Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg Vicksburg National Military Park Pet Friendly Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://photos.bringfido.com/attractions/5/2/6/23625/23625_56803.jpg?size=tile&amp;density=1x" data-lightbox="roadtrip" data-title="Vicksburg National Military Park">
+											<img class="card-img v-image ads-img " src="https://photos.bringfido.com/attractions/5/2/6/23625/23625_56803.jpg?size=tile&amp;density=1x" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdPPFtilpbnwlV6j6Iq7VMCobWp7oduNFoMw';" alt="Vicksburg National Military Park">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/31/2c/c2312c72560e580762f26c89be7a51e6.jpg" data-lightbox="roadtrip" data-title="Exploring Vicksburg National Military Park In Mississippi Road Trips Coffee Travel Blog Vicksburg Military Travel Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/31/2c/c2312c72560e580762f26c89be7a51e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREjtujPcjELGsXLIHx9iEeFnKGuxW0Ad2Hxw';" alt="Exploring Vicksburg National Military Park In Mississippi Road Trips Coffee Travel Blog Vicksburg Military Travel Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Exploring Vicksburg National Military Park In Mississippi Road Trips Coffee Travel Blog Vicksburg Military Travel Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nps.gov/vick/planyourvisit/images/Picture1_13.png" data-lightbox="roadtrip" data-title="B A R K Ranger Vicksburg National Military Park U S National Park Service">
+											<img class="card-img v-image ads-img " src="https://www.nps.gov/vick/planyourvisit/images/Picture1_13.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLr3foIJucPu6Im-vNOWvZdLDt2LdiGMFKrg';" alt="B A R K Ranger Vicksburg National Military Park U S National Park Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">B A R K Ranger Vicksburg National Military Park U S National Park Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/thegoodthebadandtherv.com/wp-content/uploads/2018/01/Wisonsin-memorial-statue.jpg?resize=1080%2C675&amp;ssl=1" data-lightbox="roadtrip" data-title="Vicksburg National Military Park The Good The Bad And The Rv">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/thegoodthebadandtherv.com/wp-content/uploads/2018/01/Wisonsin-memorial-statue.jpg?resize=1080%2C675&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgAyWyM1_NYAUEjj8JSIwdA4skVOgqfx2W-A';" alt="Vicksburg National Military Park The Good The Bad And The Rv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park The Good The Bad And The Rv</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://cdn-amfln.nitrocdn.com/zVpLKdNXXhNyylDQhsNXZwAOCYPJTuHL/assets/static/optimized/rev-9c1e64d/wp-content/uploads/2020/02/Vicksburg-NMP.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgAyWyM1_NYAUEjj8JSIwdA4skVOgqfx2W-A';" alt="Vicksburg National Military Park The Good The Bad And The Rv">
+										<div class="card-body">
+						<h3 class="h5"><b>Vicksburg is home to 40 hotels and other accommodations so you can find something thats perfect for your stay.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Vicksburg national military park dog friendly</strong>. 
+								
+																	Vicksburg National Military Park is located in a historic area of Vicksburg known for its beautiful river views and sporting events. 
+																	Vicksburg National Military Park Vicksburg Picture. 
+																	The preservation of the trenches fortifications and documentation of where Union and Confederate forces stood and battled is a tremendous experience for families and those curious about what civil war. 
+																	Dogs are not allowed in any buildings. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Are service dogs allowed Check out 7 answers plus see 2999 reviews articles and 1892 photos of Vicksburg National Military Park ranked No1 on Tripadvisor among 53 attractions in Vicksburg. 
+																	Vicksburg National Military Park is Pet Friendly. 
+																	Ranger program teaches dog owners about the importance of following the Rules of BARK while visiting Vicksburg NMP. 
+																	Staying Near Vicksburg National Military Park. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Furthermore your dog should always be on a leash that is no more than six feet long or you must keep your dog in a secured enclosure. 
+																	First you should always ensure that you have immediate control of your dog at all times and that you do not let your dog wander into park buildings or into any pet-restricted areas of the park. 
+																	Dogs are not allowed in any buildings. 
+																	Vicksburg National Military Park January 31 2019 January 31 2019 We could have spent a few weeks in New Orleans soaking in more of the food culture and history. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Keep an eye out for special BARK ranger programs throughout the year. 
+																	Holding your dog. 
+																	Pets must be on a leash. 
+																	An important thing to remember is that heat can kill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Playing a pivotal role in the Unions victory in the Civil War Vicksburg National Military Park is a solemn place where you can learn about one of the most important moments in American history. 
+																	Vicksburg National Military Park preserves the site of the American Civil War Battle of Vicksburg waged from March 29 to July 4 1863The park located in Vicksburg Mississippi flanking the Mississippi River also commemorates the greater Vicksburg Campaign which led up to the battle. 
+																	Vicksburg National Military Park. 
+																	Vicksburg National Military Park Dog-Friendly Parks 3201 Clay Street Vicksburg Mississippi 39183 601-636-0583 Get Map or Directions Dogs must be on leash and must be cleaned up after in this Civil War battlesite. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Leashed pets are permitted in the park but are not allowed in the buildings or in the USS Cairo exhibit. 
+																	The Park demonstrates how Vicksburg a highly significant area during the war was sieged defended and surrendered for command of the Mississippi River. 
+																	The civil war battle at Vicksburg was a turning point in the war and is worth something time to reflect as experiencing. 
+																	The Econo Lodge hotel is conveniently located off Interstate 20 within walking distance from the Vicksburg National Military Park the U. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Over 1300 monuments and markers. 
+																	Vicksburg National Military Park-3201 Clay Street Vicksburg Dogs must be on leash and must be cleaned up after in this Civil War battlesite. 
+																	A 116 acre National Cemetery. 
+																	Get Your Own Battlefield Guide. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dogs completing this short program can be sworn in as Bark Rangers and will receive a special tag to commemorate their achievement. 
+																	Vicksburg National Military Park is a Civil War site on 1728 acres with. 
+																	Grants victory along the way. 
+																	Bring your dogs to the park and learn how responsible recreation can earn your canine friends a BARK. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A restored Union gunboat. 
+																	It includes 1325 historic monuments and markers 20 miles of reconstructed trenches and earthworks a 16 mile tour road antebellum home 144 emplaced cannon restored Union gunboat-USS Cairo and the Vicksburg National Cemetery. 
+																	This park preserves the site of the American Civil War Battle of Vicksburg and commemorates the greater Vicksburg Campaign which led up to the battle. 
+																	Army Corps of Engineers Vicksburg District the local YMCA and one of the largest outlet shopping centers in the area. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vicksburg National Military Park is pet-friendly. 
+																	The park features auto touring hiking and more. 
+																	- Check out Tripadvisor members 4301 candid photos and videos of Vicksburg National Military Park. 
+																	Not to be Missed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vicksburg National Military Park Vicksburg. 
+																	A 16 mile road tour. 
+																	- Check out Tripadvisor members 4305 candid photos and videos. 
+																	Bringing your dog into the park to enjoy the outdoors is permitted as long as you respect park rules park visitors and all park resources. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vicksburg National Military Park Vicksburg Picture. 
+																	Bring your leashed pooch on a walk around the trails and learn about Ulysses S. 
+																	Reconstructed forts and trenches evoke memories of the 47-day siege that ended in the surrender of the city. 
+																	2021 Run Thru History. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cruising down roads of south and east United States on our Perimeter Trip I passed maybe. 
+																	Pets are welcome in Vicksburg National Military Park and many a visitor and local citizen enjoy an outing in the park walking their pets. 
+																	Leashed dogs are welcome in the outdoor areas on the trails as long as they are leashed and all mess is cleaned up after them. 
+																	The park features auto touring hiking and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vicksburg National Military Park is a must see for any American. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hipcamp-res.cloudinary.com/image/upload/c_fill,f_auto,g_auto:subject,h_300,q_auto,w_750/v1541858158/park_images/poi/cw9wglvonkaefujdqojk.jpg" data-lightbox="roadtrip" data-title="Best Camping In And Near Vicksburg National Military Park">
+											<img class="card-img v-image ads-img " src="https://hipcamp-res.cloudinary.com/image/upload/c_fill,f_auto,g_auto:subject,h_300,q_auto,w_750/v1541858158/park_images/poi/cw9wglvonkaefujdqojk.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnBC5WJLHplY5OPG3dS8yykznV5ew0S-xe9Q';" alt="Best Camping In And Near Vicksburg National Military Park">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Camping In And Near Vicksburg National Military Park</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-i/0d/d8/e1/9a/illinois-monument.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-i/0d/d8/e1/9a/illinois-monument.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrGtS23vs--KFHrXk4iCKjLaBHioVFakM58A';" alt="Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.visitvicksburg.com/_social/page-image/dog-friendly-spots-in-vicksburg" data-lightbox="roadtrip" data-title="Dog Friendly Spots In Vicksburg Mississippi Visit Vicksburg">
+											<img class="card-img v-image ads-img " src="https://www.visitvicksburg.com/_social/page-image/dog-friendly-spots-in-vicksburg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRXGugRCe4GPadTI1N4JWRpEBTZSbpa773yg';" alt="Dog Friendly Spots In Vicksburg Mississippi Visit Vicksburg">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dog Friendly Spots In Vicksburg Mississippi Visit Vicksburg</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.adventureforse.com/wp-content/uploads/2019/01/Large-Monument-730x350.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Military Park Adventure Forse">
+											<img class="card-img v-image ads-img " src="https://www.adventureforse.com/wp-content/uploads/2019/01/Large-Monument-730x350.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQrBXL2oQyvEfaGbTMgbSOLTAz6gjaOBEqpw';" alt="Vicksburg National Military Park Adventure Forse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park Adventure Forse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.letsgodog.com/wp-content/uploads/PPost-12-Zoe-at-Window-1.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Military Park Pet Friendly">
+											<img class="card-img v-image ads-img " src="https://www.letsgodog.com/wp-content/uploads/PPost-12-Zoe-at-Window-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkcqX3ngtZLNDwpdYiDs56rBiY2JYBCIwcXw';" alt="Vicksburg National Military Park Pet Friendly">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park Pet Friendly</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.roadsideamerica.com/attract/images/ms/MSVICbattle_ks14.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Military Park Vicksburg Mississippi">
+											<img class="card-img v-image ads-img " src="https://www.roadsideamerica.com/attract/images/ms/MSVICbattle_ks14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJylNg5v4ACKCFesh9m7iUlcOyHldUcRO00Q';" alt="Vicksburg National Military Park Vicksburg Mississippi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park Vicksburg Mississippi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/08/55/a8/82/vicksburg-national-military.jpg" data-lightbox="roadtrip" data-title="This Is Our Dog Spots Checking Out The Ironclad Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/08/55/a8/82/vicksburg-national-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSds1W7si7_MHzk-zpA6b5-9vV-8Ddp6WqbyQ';" alt="This Is Our Dog Spots Checking Out The Ironclad Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is Our Dog Spots Checking Out The Ironclad Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/e5/8f/8ee58f036af9f0e94bc546b3567db2f1.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Military Park Vicksburg Mississippi Vicksburg Mississippi Travel Confederate Monuments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/e5/8f/8ee58f036af9f0e94bc546b3567db2f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWT4vEtldbhfpFi_AtpzmqxLg93F67Cka8KA';" alt="Vicksburg National Military Park Vicksburg Mississippi Vicksburg Mississippi Travel Confederate Monuments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park Vicksburg Mississippi Vicksburg Mississippi Travel Confederate Monuments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://misspreservation.files.wordpress.com/2012/03/vicksburgnationalmilitaryparka.jpg" data-lightbox="roadtrip" data-title="Seeing The 101 Vicksburg National Military Park Preservation In Mississippi">
+											<img class="card-img v-image ads-img " src="https://misspreservation.files.wordpress.com/2012/03/vicksburgnationalmilitaryparka.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ0yQUKRqlKH0eA2ueZXEzg0LYUhjtS2F2SQ';" alt="Seeing The 101 Vicksburg National Military Park Preservation In Mississippi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seeing The 101 Vicksburg National Military Park Preservation In Mississippi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://npplan.com/wp-content/uploads/2018/11/Vicksburg-146.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Military Park Hiking And Biking">
+											<img class="card-img v-image ads-img " src="https://npplan.com/wp-content/uploads/2018/11/Vicksburg-146.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjLg4yYf94G-I_6fy0xs26uoPEjepqFhmGCw';" alt="Vicksburg National Military Park Hiking And Biking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park Hiking And Biking</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-amfln.nitrocdn.com/zVpLKdNXXhNyylDQhsNXZwAOCYPJTuHL/assets/static/optimized/rev-9c1e64d/wp-content/uploads/2020/02/Vicksburg-NMP.jpg" data-lightbox="roadtrip" data-title="How To Visit Vicksburg In One Day My Flying Leap">
+											<img class="card-img v-image ads-img " src="https://cdn-amfln.nitrocdn.com/zVpLKdNXXhNyylDQhsNXZwAOCYPJTuHL/assets/static/optimized/rev-9c1e64d/wp-content/uploads/2020/02/Vicksburg-NMP.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-By23L1WDfuEPZ5tYdGcJkzvK0JxM2qgMHg';" alt="How To Visit Vicksburg In One Day My Flying Leap">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Visit Vicksburg In One Day My Flying Leap</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.justshortofcrazy.com/wp-content/uploads/Vicksburg-National-Military-Park.jpg" data-lightbox="roadtrip" data-title="Stroll Through Art History At Vicksburg National Military Park Just Short Of Crazy">
+											<img class="card-img v-image ads-img " src="https://www.justshortofcrazy.com/wp-content/uploads/Vicksburg-National-Military-Park.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRHXgRok-QAGlEQm1sRhHerZJ-icrSzsumHQ';" alt="Stroll Through Art History At Vicksburg National Military Park Just Short Of Crazy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stroll Through Art History At Vicksburg National Military Park Just Short Of Crazy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/07/78/05/077805d8731a22211f035dd1f3c295ca.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Cemetery Vicksburg National Military Park Vicksburg Mississippi Susan Tregoning Photog Vicksburg National Cemetery Military Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/07/78/05/077805d8731a22211f035dd1f3c295ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREHCEgJuDKipj_UkAvNf_rSsuUu1gGFhfd-A';" alt="Vicksburg National Cemetery Vicksburg National Military Park Vicksburg Mississippi Susan Tregoning Photog Vicksburg National Cemetery Military Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Cemetery Vicksburg National Military Park Vicksburg Mississippi Susan Tregoning Photog Vicksburg National Cemetery Military Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-smc-compensation-tables.html">Va Smc Compensation Tables</a></li>
+													<li class="list-group-item"><a href="/va-smc-amputation.html">Va Smc Amputation</a></li>
+													<li class="list-group-item"><a href="/va-smc-descriptions.html">Va Smc Descriptions</a></li>
+													<li class="list-group-item"><a href="/va-smc-k1.html">Va Smc K1</a></li>
+													<li class="list-group-item"><a href="/va-smc-pay-rates-2018.html">Va Smc Pay Rates 2018</a></li>
+													<li class="list-group-item"><a href="/va-smc-mean.html">Va Smc Mean</a></li>
+													<li class="list-group-item"><a href="/va-smc-qualifications.html">Va Smc Qualifications</a></li>
+													<li class="list-group-item"><a href="/va-smc-l-12.html">Va Smc L 12</a></li>
+													<li class="list-group-item"><a href="/va-smc-for-depression.html">Va Smc For Depression</a></li>
+													<li class="list-group-item"><a href="/va-smc-rating-table.html">Va Smc Rating Table</a></li>
+													<li class="list-group-item"><a href="/va-smc-requirements.html">Va Smc Requirements</a></li>
+													<li class="list-group-item"><a href="/va-smc-pay-chart-2018.html">Va Smc Pay Chart 2018</a></li>
+													<li class="list-group-item"><a href="/va-smc-l-rate.html">Va Smc L Rate</a></li>
+													<li class="list-group-item"><a href="/va-smc-payments.html">Va Smc Payments</a></li>
+													<li class="list-group-item"><a href="/va-smc-payment-rates.html">Va Smc Payment Rates</a></li>
+													<li class="list-group-item"><a href="/va-smc-calculator.html">Va Smc Calculator</a></li>
+													<li class="list-group-item"><a href="/va-smc-s-rate.html">Va Smc S Rate</a></li>
+													<li class="list-group-item"><a href="/va-smc-k-form.html">Va Smc K Form</a></li>
+													<li class="list-group-item"><a href="/va-smc-t-requirements.html">Va Smc T Requirements</a></li>
+													<li class="list-group-item"><a href="/va-smc-pay.html">Va Smc Pay</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

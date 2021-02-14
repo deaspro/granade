@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Dress Code Of A Pilot - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Dress Code Of A Pilot",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/df/d0/0d/dfd00d35a4a8a26d2a4bcfba20700992.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+dress+code+of+a+pilot",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Dress Code Of A Pilot</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Interviews Hiring Process Dress Code Benefits Salaries Job Opportunities Working Hours Drug Test Office Locations Part Time Jobs Working Environment Hiring Age CEO Shifts Working Culture Work from Home Work Life Balance. Coaches at Hampton Old Dominion and Norfolk State are all for. Blue ATP Polo shirt provided by ATP must be clean unwrinkled and tucked in. <br>				
+			</p>
+										<a class="badge badge-primary" href="/va-workers-comp-website.html">va workers comp website</a>
+											<a class="badge badge-secondary" href="/va-yellow-ribbon-cap.html">va yellow ribbon cap</a>
+											<a class="badge badge-secondary" href="/vaccine-to-go-to-college.html">vaccine to go to college</a>
+											<a class="badge badge-secondary" href="/vagov-compensation-calculator.html">vagov compensation calculator</a>
+											<a class="badge badge-primary" href="/va-womens-ptsd-programs.html">va womens ptsd programs</a>
+											<a class="badge badge-dark" href="/vagov-schedule-of-ratings.html">vagov schedule of ratings</a>
+											<a class="badge badge-warning" href="/vagov-insurance.html">vagov insurance</a>
+											<a class="badge badge-danger" href="/vagov-compensation-rates-2020.html">vagov compensation rates 2020</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to visit the ideal blog.  Our website gives you suggestions for seeing the highest quality video and picture content, hunt and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/67/cc/2067cc6845e91392c58240e785e08f27.jpg" data-lightbox="roadtrip" data-title="Indian Pilot Dress Code Dress Codes Double Breasted Suit Jacket Clothes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/67/cc/2067cc6845e91392c58240e785e08f27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZC1zNYwkpsXSGVc-CJTO0I2grKuqtrwFV0g';" alt="Indian Pilot Dress Code Dress Codes Double Breasted Suit Jacket Clothes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Pilot Dress Code Dress Codes Double Breasted Suit Jacket Clothes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/72/4e/7f724e9118124dce43655cba0cf41a36.jpg" data-lightbox="roadtrip" data-title="Gorgeous Emilysnellgrove Femalepilot Pilot Pilotsofinstagram Pilotlife Pilots Aircraft Crew Women Wearing Ties Suits For Women Aesthetic Clothes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/72/4e/7f724e9118124dce43655cba0cf41a36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7KBxkHNZXmD--BWy42FsLzE_TTS7T4UrKLQ';" alt="Gorgeous Emilysnellgrove Femalepilot Pilot Pilotsofinstagram Pilotlife Pilots Aircraft Crew Women Wearing Ties Suits For Women Aesthetic Clothes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gorgeous Emilysnellgrove Femalepilot Pilot Pilotsofinstagram Pilotlife Pilots Aircraft Crew Women Wearing Ties Suits For Women Aesthetic Clothes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/ab/e6/99abe6979d641cd2114c2b12dbf97212.gif" data-lightbox="roadtrip" data-title="Pin On Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/ab/e6/99abe6979d641cd2114c2b12dbf97212.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlM83Z7LmtaPJkwkeqL3tx3XfvM644grPXVA';" alt="Pin On Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/95/ca/fd95caa19e1626ac667006a4c707016b.jpg" data-lightbox="roadtrip" data-title="Pin By Ayu Ferani Hasmoro On Nineteen Lounge Pilot Uniform Pilot Shirt Female Pilot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/95/ca/fd95caa19e1626ac667006a4c707016b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfomHdIvtFeJ8zFpLspe3pyEV8VDVRubtxg';" alt="Pin By Ayu Ferani Hasmoro On Nineteen Lounge Pilot Uniform Pilot Shirt Female Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ayu Ferani Hasmoro On Nineteen Lounge Pilot Uniform Pilot Shirt Female Pilot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/76/03/d6760328e7384688d371185e012e6253.jpg" data-lightbox="roadtrip" data-title="Official Wasp Uniform Wwii Women Female Pilot Pilot Costume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/76/03/d6760328e7384688d371185e012e6253.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmqJQBhaHI0PqKJX4PF_kkw2LjjYT-RzaxTw';" alt="Official Wasp Uniform Wwii Women Female Pilot Pilot Costume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Official Wasp Uniform Wwii Women Female Pilot Pilot Costume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a5/49/39/a54939af0bbb6aba1a26664f004e04be.jpg" data-lightbox="roadtrip" data-title="Pin On Aviation Fuel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a5/49/39/a54939af0bbb6aba1a26664f004e04be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNFbbtVzNRZmD3W4MAfJ0u5TgSqd8fsIAFIg';" alt="Pin On Aviation Fuel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aviation Fuel</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/20/67/cc/2067cc6845e91392c58240e785e08f27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNFbbtVzNRZmD3W4MAfJ0u5TgSqd8fsIAFIg';" alt="Pin On Aviation Fuel">
+										<div class="card-body">
+						<h3 class="h5"><b>Some airlines like Delta dont have specific dress code policies in place for employees and those flying on pass privileges though the airline did Tweet that they encourage no swimwear.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the dress code of a pilot</strong>. 
+								
+																	Clean closed-toe dress shoes or sneakers. 
+																	Also AA and Eagle now have navy blue leather bomber jackets that can be worn instead of the uniform coat under a trench coatwool overcoat during cold weather months. 
+																	However Delta Air Lines pilots still wear a double-breasted black jacket with gold trim and traditional pilot hats. 
+																	The Service Dress Blue uniform of US Navy officers an example of the naval style that was copied by early airline pilot uniforms Following the development of advanced and integrated cockpit systems since the late 1980s airline pilots are mainly operating their respective aircraft on a dual-pilot basis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So it may be that pilots do take off their ties while on the flight deck since its very easy to put them back on. 
+																	Whats the dress code what color pants. 
+																	Rather I should say while the rules are quite specific as to what is acceptable uniform attire at work the enforcement of said rules lag far far behind. 
+																	You cant dress up. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1004 questions and answers about Pilot Flying J Dress Code. 
+																	You can ALWAYS dress down. 
+																	Flight suits are designed to keep you warm while flying at high altitudes and most flight suits are also flame retardant to protect your skin from burns in case of a fire. 
+																	At my airline The Worlds Largest Airline its pretty lax. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pilot and flight attendant uniforms. 
+																	See questions about Clear. 
+																	Whether you have a first class ticket or a standby seat in economy not wearing shoes or proper clothing could be grounds for dismissal on a United Delta and American Airlines flight. 
+																	At the very least wear slacks and a blazer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a helicopter pilot you will wear safety equipment to help protect yourself in the event of an accident. 
+																	Khaki navy or black chino-style pants or shorts with a belt. 
+																	Today most airlines wear some sort of black or blue blazer or leather jacket over a standard white pilot shirt and tie. 
+																	Questions and Answers about Spirit Airlines Dress Code. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The meaning behind the outfit Inside Singapore Airlines tough training school for flight attendants Website slammed for rating airlines by the beauty of. 
+																	Most modern airlines have made the traditional pilot hats optional. 
+																	Airline Career Pilot Program students receive five free student uniform shirts included in their ATP Training Bundle. 
+																	Personally do you want to work at a company that penalizes you for looking good. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Once you get there evaluate the situation but you should be at least equal to or one level of dress above what the interviewers are wearing. 
+																	Aside from safety equipment what you wear as a helo pilot depends largely on your employer. 
+																	Dress Code For Pilots 4827671. 
+																	College basketball coaches are dressing down during this strange COVID-interrupted season trading sharp suits for casual warmups. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For instance youll likely wear a helmet gloves and a flight suit. 
+																	Over the years airline pilot uniforms evolved. 
+																	Whats the dress code for an airline pilot. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/d0/0d/dfd00d35a4a8a26d2a4bcfba20700992.jpg" data-lightbox="roadtrip" data-title="Korean Entertainment News Flight Attendant Flight Attendant Uniform Airline Cabin Crew">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/d0/0d/dfd00d35a4a8a26d2a4bcfba20700992.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVzYBS0Px82Lo3AeSrLYv_jPiYIympXzNm3Q';" alt="Korean Entertainment News Flight Attendant Flight Attendant Uniform Airline Cabin Crew">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Korean Entertainment News Flight Attendant Flight Attendant Uniform Airline Cabin Crew</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/f6/7d/1df67d3bb763145043b6b21584126222.jpg" data-lightbox="roadtrip" data-title="Pin On Women In Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/f6/7d/1df67d3bb763145043b6b21584126222.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPxqesoW6Ix8kZMaZ_H6_hPRDkTu02zXFtzA';" alt="Pin On Women In Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Women In Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/ef/3b/acef3b1e058652efbd4b87796e9bcadf.jpg" data-lightbox="roadtrip" data-title="Airline Cabin Crew Or Hotel Staff Uniforms Mock Up Staff Uniforms Hospitality Uniform Hotel Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/ef/3b/acef3b1e058652efbd4b87796e9bcadf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5pOzQFCL4-WTEnUdYCtnyLcss6hAr7_vmWA';" alt="Airline Cabin Crew Or Hotel Staff Uniforms Mock Up Staff Uniforms Hospitality Uniform Hotel Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Airline Cabin Crew Or Hotel Staff Uniforms Mock Up Staff Uniforms Hospitality Uniform Hotel Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/47/10/9b471047f03f63d31bb0ef3f260b7063.jpg" data-lightbox="roadtrip" data-title="Pin On Baby Toddler Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/47/10/9b471047f03f63d31bb0ef3f260b7063.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOS8bJRKFOz07kQR_4ocKI-h6nkkgG6GQ6yA';" alt="Pin On Baby Toddler Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Baby Toddler Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/b1/e2/ecb1e24087a8da7db81c88ccd7c64d47.jpg" data-lightbox="roadtrip" data-title="Pin On The Ninety Nines Women Pilots">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/b1/e2/ecb1e24087a8da7db81c88ccd7c64d47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeiTbKT6hPXEdlYDS0w8ovuj8ELFmbP3PGfA';" alt="Pin On The Ninety Nines Women Pilots">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Ninety Nines Women Pilots</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/bd/70/0ebd70812b345a73c4d2e62140b232d4.jpg" data-lightbox="roadtrip" data-title="Cute Female Pilot Female Pilot Pilot Uniform Pilot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/bd/70/0ebd70812b345a73c4d2e62140b232d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKVY0ODVMF8mTQ46m_lI50i4gFGDaaiJVETg';" alt="Cute Female Pilot Female Pilot Pilot Uniform Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cute Female Pilot Female Pilot Pilot Uniform Pilot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/63/ce/d163ce69e272d953e837fd0dbece54ca.jpg" data-lightbox="roadtrip" data-title="Pin On Other Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/63/ce/d163ce69e272d953e837fd0dbece54ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQQoi6ivfegtwGO3fuRzm_lZkjQyNsR2kOrw';" alt="Pin On Other Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Other Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/f8/16/3cf81612ec9896686afa3a0c34de8f08.jpg" data-lightbox="roadtrip" data-title="Pin On Modern Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/f8/16/3cf81612ec9896686afa3a0c34de8f08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1gxtue_0ij4gfNA786LDovYI76If6DZry1Q';" alt="Pin On Modern Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Modern Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/c7/37/30c737d1c86992a0076a3b03f69d63bf.jpg" data-lightbox="roadtrip" data-title="Pin On Cabin Crew">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/c7/37/30c737d1c86992a0076a3b03f69d63bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5bPVhbove0oI-VJ7f6wpWi0Rp987b8oOe6A';" alt="Pin On Cabin Crew">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cabin Crew</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/68/0f/3f/680f3f332b357b8859d4b60ffd223604.jpg" data-lightbox="roadtrip" data-title="Pin On Female Pilot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/68/0f/3f/680f3f332b357b8859d4b60ffd223604.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCqHwYk6nUDolvQKBGF1glT2ZdNOuLmfS03g';" alt="Pin On Female Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Female Pilot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/4d/c3/5b4dc31b78cea1c5c0c35ba1be7be1fe.jpg" data-lightbox="roadtrip" data-title="Miiostore Pilot Costume Pilot Costume Kids Pilot Costume Diy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/4d/c3/5b4dc31b78cea1c5c0c35ba1be7be1fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7sk4ghqkZcPsieyRXK03_TxQvXrSfjPKq3Q';" alt="Miiostore Pilot Costume Pilot Costume Kids Pilot Costume Diy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Miiostore Pilot Costume Pilot Costume Kids Pilot Costume Diy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/ce/3c/1ace3ca31f5bbc34e0aa8be1f0a1f03a.png" data-lightbox="roadtrip" data-title="Pin On Senior Sing Song Mood Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/ce/3c/1ace3ca31f5bbc34e0aa8be1f0a1f03a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyrhDRT3pNyOZUb5pkRb9XxmE6Ob6OjXO5_g';" alt="Pin On Senior Sing Song Mood Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Senior Sing Song Mood Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/46/46/9b464698c122e632468d85162d1b17c3.jpg" data-lightbox="roadtrip" data-title="Emirates Seeks Women Pilots At Women In Aviation Conference News Aviation Female Pilot Pilot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/46/46/9b464698c122e632468d85162d1b17c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZh1ETprQ5iWgUBPe9RcCdUOPSMq-cFhU4g';" alt="Emirates Seeks Women Pilots At Women In Aviation Conference News Aviation Female Pilot Pilot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emirates Seeks Women Pilots At Women In Aviation Conference News Aviation Female Pilot Pilot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/71/84/9871848f689ebe935991124286e7d648.jpg" data-lightbox="roadtrip" data-title="Follow My Profile Best Content For Men Menz Daily Style Matching Your Watch By Dress Code Tag Your Mens Fashion Inspiration Dress Codes Real Men Real Style">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/71/84/9871848f689ebe935991124286e7d648.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ25cZTJRgYN3h9dXv1sWLPNxW9zypDY6_dQ';" alt="Follow My Profile Best Content For Men Menz Daily Style Matching Your Watch By Dress Code Tag Your Mens Fashion Inspiration Dress Codes Real Men Real Style">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Follow My Profile Best Content For Men Menz Daily Style Matching Your Watch By Dress Code Tag Your Mens Fashion Inspiration Dress Codes Real Men Real Style</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/29/61/142961fbe0e9bae43cf3b5f05fe4543e.jpg" data-lightbox="roadtrip" data-title="Lift Aviation Pilot Equipment Helmets And Shoes Pilot Shirt Fitted Dress Shirts Date Outfit Summer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/29/61/142961fbe0e9bae43cf3b5f05fe4543e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNe98LyWlr7NVl52Z86f8IevJDfzPPLKbGA';" alt="Lift Aviation Pilot Equipment Helmets And Shoes Pilot Shirt Fitted Dress Shirts Date Outfit Summer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lift Aviation Pilot Equipment Helmets And Shoes Pilot Shirt Fitted Dress Shirts Date Outfit Summer</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-radiculopathy.html">Va Secondary Conditions To Radiculopathy</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-ibs.html">Va Secondary Conditions To Ibs</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-flat-feet.html">Va Service Connected Disability Flat Feet</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-hemorrhoids.html">Va Secondary Conditions To Hemorrhoids</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-hearing-loss.html">Va Service Connected Disability Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-for-hearing-loss.html">Va Service Connected Disability For Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-claim-form.html">Va Service Connected Claim Form</a></li>
+													<li class="list-group-item"><a href="/va-schedule-rating-for-ptsd.html">Va Schedule Rating For Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-claim.html">Va Service Connected Disability Claim</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-anxiety.html">Va Secondary Conditions To Anxiety</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-sinusitis.html">Va Secondary Conditions To Sinusitis</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-conditions.html">Va Service Connected Conditions</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-ptsd.html">Va Secondary Conditions To Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-compensation.html">Va Service Connected Compensation</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-ankle-pain.html">Va Secondary Conditions To Ankle Pain</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-form.html">Va Service Connected Disability Form</a></li>
+													<li class="list-group-item"><a href="/va-secondary-conditions-to-shoulder.html">Va Secondary Conditions To Shoulder</a></li>
+													<li class="list-group-item"><a href="/va-secondary-claims-to-tbi.html">Va Secondary Claims To Tbi</a></li>
+													<li class="list-group-item"><a href="/va-secondary-ratings.html">Va Secondary Ratings</a></li>
+													<li class="list-group-item"><a href="/va-service-connected-disability-letter.html">Va Service Connected Disability Letter</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

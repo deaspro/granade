@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Colleges Are Going Online This Fall - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Colleges Are Going Online This Fall",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/83/75/f0/8375f00be3e44b7737e82deda0e947fd.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+colleges+are+going+online+this+fall",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Colleges Are Going Online This Fall</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The University of Pennsylvania is offering four scenarios three of which are mainly online. Many colleges and universities offer online degrees for a fraction of the on-campus cost but in a COVID-19 world every student becomes an online student despite paying the full freight. Purdue and Indiana University have announced plans to offer classes both online and in person. <br>				
+			</p>
+										<a class="badge badge-dark" href="/va-salary-tables.html">va salary tables</a>
+											<a class="badge badge-dark" href="/va-schedule-of-ratings-allergic-rhinitis.html">va schedule of ratings allergic rhinitis</a>
+											<a class="badge badge-success" href="/va-rn-locality-pay-scale.html">va rn locality pay scale</a>
+											<a class="badge badge-primary" href="/va-retirement-benefits-taxable.html">va retirement benefits taxable</a>
+											<a class="badge badge-info" href="/va-rn-pay-scales-2020.html">va rn pay scales 2020</a>
+											<a class="badge badge-warning" href="/va-retroactive-pay-unemployment.html">va retroactive pay unemployment</a>
+											<a class="badge badge-secondary" href="/va-schedule-of-ratings-ankylosing-spondylitis.html">va schedule of ratings ankylosing spondylitis</a>
+											<a class="badge badge-danger" href="/va-says-not-service-connected.html">va says not service connected</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to visit the ideal site.  Our site provides you with hints for viewing the highest quality video and image content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/75/f0/8375f00be3e44b7737e82deda0e947fd.jpg" data-lightbox="roadtrip" data-title="The Ultimate Survival Guide To Online College Classes Juliet Meiling In 2020 Online College Classes Online College College Classes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/75/f0/8375f00be3e44b7737e82deda0e947fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAuc4IA9SmF5jdoqmegPUbu_ZFkGhEHIL4Tg';" alt="The Ultimate Survival Guide To Online College Classes Juliet Meiling In 2020 Online College Classes Online College College Classes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ultimate Survival Guide To Online College Classes Juliet Meiling In 2020 Online College Classes Online College College Classes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/da/7e/88da7e3ffc0f4c1b302760cb5d990810.jpg" data-lightbox="roadtrip" data-title="Pin On On Going Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/da/7e/88da7e3ffc0f4c1b302760cb5d990810.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX3vJzZOn_YcH0eeD9KWefL6D-39if_nLNMA';" alt="Pin On On Going Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On On Going Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/2f/85/542f85543ccb81cdf00d229ee6594c8e.png" data-lightbox="roadtrip" data-title="The Perfect Routine To Succeed In Online College Classes Online College Classes College Classes Online College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/2f/85/542f85543ccb81cdf00d229ee6594c8e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPwXCtKgPlzBtRgeZuwUmH3dDGr1S_uWZSFw';" alt="The Perfect Routine To Succeed In Online College Classes Online College Classes College Classes Online College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Perfect Routine To Succeed In Online College Classes Online College Classes College Classes Online College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6d/07/b3/6d07b377282d1b4a11b8be2966cced45.jpg" data-lightbox="roadtrip" data-title="Free Online Courses To Help You Prepare For College The University Network Free Online Classes Free Online Courses Free Online Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6d/07/b3/6d07b377282d1b4a11b8be2966cced45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH9hsJ6xPImAHa-497ym2PQ4mEzs7xUI91kA';" alt="Free Online Courses To Help You Prepare For College The University Network Free Online Classes Free Online Courses Free Online Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Online Courses To Help You Prepare For College The University Network Free Online Classes Free Online Courses Free Online Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/50/f0/1d50f0b071b61bfa787ece1dd6a58dd1.jpg" data-lightbox="roadtrip" data-title="My First Week Of Online University College In 2020 Online University Colleges And Universities College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/50/f0/1d50f0b071b61bfa787ece1dd6a58dd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN5zzpLvYAjcaBNnjz2Gg0dhSomSj9aaID_Q';" alt="My First Week Of Online University College In 2020 Online University Colleges And Universities College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My First Week Of Online University College In 2020 Online University Colleges And Universities College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/5f/4f/e45f4fe6c65d8be88a44523c9438c510.png" data-lightbox="roadtrip" data-title="Verify When Is Finest To Look For Scholarships Some Only Enable Application When You Have Been Accep In 2020 Online College Classes Online Student Student Loans Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/5f/4f/e45f4fe6c65d8be88a44523c9438c510.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM4RURb1h5F-GQ7GPdoujFMKCMLS_oF3Xo_Q';" alt="Verify When Is Finest To Look For Scholarships Some Only Enable Application When You Have Been Accep In 2020 Online College Classes Online Student Student Loans Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Verify When Is Finest To Look For Scholarships Some Only Enable Application When You Have Been Accep In 2020 Online College Classes Online Student Student Loans Funny</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/d4/90/9f/d4909fb2260776c1c9602e4cce77d738.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM4RURb1h5F-GQ7GPdoujFMKCMLS_oF3Xo_Q';" alt="Verify When Is Finest To Look For Scholarships Some Only Enable Application When You Have Been Accep In 2020 Online College Classes Online Student Student Loans Funny">
+										<div class="card-body">
+						<h3 class="h5"><b>Colleges are increasingly going online for fall 2020 semester as COVID-19 cases rise.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What colleges are going online this fall</strong>. 
+								
+																	USC will offer nearly every course in an online version. 
+																	Students at Harvard University and University of California schools including UC Berkeley and UCLA can expect remote classes in the fall even if theyre technically allowed to live on campus. 
+																	There may be in-person classes online learning only or a. 
+																	Even as more US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	California State University the. 
+																	On May 12 the 23-campus California State University system was the first major American post-secondary institution to admit the inevitable. 
+																	The sprawling California State University System with 23 campuses and more than 480000 students said last Tuesday it would operate primarily online in the fall. 
+																	Six of Harvards graduate and professional schools including Harvard Medical School have also announced that their students will take classes online in fall. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Six of Harvards 12 schools including its. 
+																	Amid the uncertainty of what college will look like this fall one thing is for sure it wont be the typical experience for students. 
+																	Last fall Arizona State University enrolled 45000 online students mostly undergraduatesmore than the total number who attend the University of California at Berkeley in person. 
+																	Boston University last week said that 44 of its graduate and professional programs will be offered both online and in-person next fall to accommodate students who may not be able to make it to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Six of Harvards 12 schools including its. 
+																	Fall 2020 is going online. 
+																	Smith College president Kathleen McCartney announced last week that the college would not bring students back to campus this fall citing new scientific evidence as well as recent and troubling trends nationally and in Massachusetts. 
+																	Back in March when a regionwide shutdown forced schools to shutter few families and educators anticipated beginning the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The University of Pennsylvania is offering four scenarios three of which are mainly online. 
+																	HARVARD TO BRING AS MANY AS 40 PERCENT OF UNDERGRADS TO CAMPUS IN FALL BUT MOST WILL STAY HOME The Chronicle of Higher Education tallied a list of colleges and universities who are so far planning. 
+																	At Lewis-Clark State the college is offering on-campus activities to keep students engaged along with a mix of in-person online and hybrid courses spokesman Logan Fowler said. 
+																	The University of Pennsylvania is offering four scenarios three of which are mainly online. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That means about half of Elliotts students will be in the. 
+																	But the fall will present a new challenge. 
+																	Many colleges planning to bring students back to campus for the fall semester have reversed course entirely and opted for online-only instruction. 
+																	The virus beat us. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	USC will offer nearly every course in an online version. 
+																	USC will offer nearly every course in an online version. 
+																	Colleges will have classes and programs this fall their classes will have freshmen and returning students. 
+																	What will be different is that those classes are likely to be far. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eastern Washington University has. 
+																	The colleges join many Bay Area K-12 schools in moving online for the fall. 
+																	Six of Harvards 12 schools including its. 
+																	With colleges going online this fall activists must get creative to drive youth voter turnout. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Those include the University of Southern California which announced on July 1 they were considering a hybrid of classes that would be a mixture of online and in-person classes this fall if they. 
+																	By Isabella Simonetti thesimonetti Sep 1 2020 310pm EDT Share this story. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/27/a0/c827a030af5530767d80492e96244f48.png" data-lightbox="roadtrip" data-title="8 Things You Need To Survive Online Classes My College Savvy Surviving Online Classes Online Classes College Writing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/27/a0/c827a030af5530767d80492e96244f48.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT86ejiw66lov9l9VRRkNezSsuFDBA8ZlAhAA';" alt="8 Things You Need To Survive Online Classes My College Savvy Surviving Online Classes Online Classes College Writing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Things You Need To Survive Online Classes My College Savvy Surviving Online Classes Online Classes College Writing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/0c/02/650c025d226c3cb2ed6293102b678584.png" data-lightbox="roadtrip" data-title="Top 10 Things You Need To Know About Online College Online College Online College Classes Online College Organization">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/0c/02/650c025d226c3cb2ed6293102b678584.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT47JMDquUxhac199xAtXuqv1YmgIpQlCVClg';" alt="Top 10 Things You Need To Know About Online College Online College Online College Classes Online College Organization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Things You Need To Know About Online College Online College Online College Classes Online College Organization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/bc/ef/41bcef6c3fe4a3950a61e77f407f6f60.jpg" data-lightbox="roadtrip" data-title="Csu Plans To Cancel Most In Person Classes And Go Online This Fall Chancellor Says Los Angeles Times In 2020 California Baptist University Going Back To College University Of California">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/bc/ef/41bcef6c3fe4a3950a61e77f407f6f60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfsmcN_QNbuSsNA6tXZ4iQcLqgin0_dt1Xw';" alt="Csu Plans To Cancel Most In Person Classes And Go Online This Fall Chancellor Says Los Angeles Times In 2020 California Baptist University Going Back To College University Of California">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Csu Plans To Cancel Most In Person Classes And Go Online This Fall Chancellor Says Los Angeles Times In 2020 California Baptist University Going Back To College University Of California</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/1d/2a/971d2a6d58741eb2d684a79d4c0d3ce0.jpg" data-lightbox="roadtrip" data-title="The Ultimate Survival Guide To Online College Classes Juliet Meiling In 2020 College Classes Online College Classes Online College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/1d/2a/971d2a6d58741eb2d684a79d4c0d3ce0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSPrECOHwbfVYvwEWiRzWY7lE0I8hp5U-Ahg';" alt="The Ultimate Survival Guide To Online College Classes Juliet Meiling In 2020 College Classes Online College Classes Online College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ultimate Survival Guide To Online College Classes Juliet Meiling In 2020 College Classes Online College Classes Online College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/c3/07/62c3075176e80b572caf18a2aa02044f.png" data-lightbox="roadtrip" data-title="9 Steps To Choosing The Right College College Counseling Scholarships For College College Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/c3/07/62c3075176e80b572caf18a2aa02044f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjp4SaedtHJTeTkDCOgQzq3gTYUPLlVDKHmg';" alt="9 Steps To Choosing The Right College College Counseling Scholarships For College College Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Steps To Choosing The Right College College Counseling Scholarships For College College Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d4/90/9f/d4909fb2260776c1c9602e4cce77d738.jpg" data-lightbox="roadtrip" data-title="Going To College Is Very Pricey It Does Not Matter What Where Or How You Go It Will Cost You However When College Bucket List College College Event Ideas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d4/90/9f/d4909fb2260776c1c9602e4cce77d738.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8dZei5149URPPkpgKwMbORIqraEC4EyNQHA';" alt="Going To College Is Very Pricey It Does Not Matter What Where Or How You Go It Will Cost You However When College Bucket List College College Event Ideas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Going To College Is Very Pricey It Does Not Matter What Where Or How You Go It Will Cost You However When College Bucket List College College Event Ideas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/7f/93/e47f933b04cc66f36af7b170d99e663b.jpg" data-lightbox="roadtrip" data-title="Fall 2014 Class Schedule Online Education Importance Of Time Management Time Management Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/7f/93/e47f933b04cc66f36af7b170d99e663b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7TQM9ubdIPArh86wskV_dQmkUkzlgKLxFsw';" alt="Fall 2014 Class Schedule Online Education Importance Of Time Management Time Management Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fall 2014 Class Schedule Online Education Importance Of Time Management Time Management Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/78/e2/8278e292b910c81f3aed143a6da3bc08.jpg" data-lightbox="roadtrip" data-title="Pin On Free Online Courses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/78/e2/8278e292b910c81f3aed143a6da3bc08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe7i932Q435RFDBN0DeJNlOYmA7TfSu_5aSg';" alt="Pin On Free Online Courses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Free Online Courses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/b7/88/a5b7886f37c95ab3a25a8ef64742ddcc.png" data-lightbox="roadtrip" data-title="Pin On College University Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/b7/88/a5b7886f37c95ab3a25a8ef64742ddcc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJqPhj_TB8sP4Fe2m8HpltkoWjgO1gutBu3A';" alt="Pin On College University Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On College University Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/be/75/4cbe7503f5ab9fa0a616dce9485bf2cc.png" data-lightbox="roadtrip" data-title="Courses You Can Take Right Now For Free Ivy League College Classes Digital Marketing More In 2020 College Classes Ivy League Colleges Free College Courses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/be/75/4cbe7503f5ab9fa0a616dce9485bf2cc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKLJV_VweH3fyhBYWhBt1jPIZ9QNaOKIv-xg';" alt="Courses You Can Take Right Now For Free Ivy League College Classes Digital Marketing More In 2020 College Classes Ivy League Colleges Free College Courses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Courses You Can Take Right Now For Free Ivy League College Classes Digital Marketing More In 2020 College Classes Ivy League Colleges Free College Courses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c9/ed/c6/c9edc637fd8dfcba9efc45059fa5ba01.jpg" data-lightbox="roadtrip" data-title="Pin On Lifestyle Blogger Tribe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c9/ed/c6/c9edc637fd8dfcba9efc45059fa5ba01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlCL-1alcr5RfQTd275KaNApzh2uZnwXJmZg';" alt="Pin On Lifestyle Blogger Tribe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lifestyle Blogger Tribe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/96/b7/ae96b78554e549372b670508fa81f88c.jpg" data-lightbox="roadtrip" data-title="My Child Is Going To College How Can We Make Sure He Stays There In 2020 Online Learning Public Speaking Learning Disabilities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/96/b7/ae96b78554e549372b670508fa81f88c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7k8wB26gifJJQAMdUdwbmKbpFsF_IYYWCzQ';" alt="My Child Is Going To College How Can We Make Sure He Stays There In 2020 Online Learning Public Speaking Learning Disabilities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Child Is Going To College How Can We Make Sure He Stays There In 2020 Online Learning Public Speaking Learning Disabilities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/d9/5a/58d95aafd5e357ea32ca1159710a9670.png" data-lightbox="roadtrip" data-title="How To Get Ready For School In 2020 School Stress School Readiness Online School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/d9/5a/58d95aafd5e357ea32ca1159710a9670.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoeX5rWYsmViYEOTurSQfZx6daNXzpddkSJg';" alt="How To Get Ready For School In 2020 School Stress School Readiness Online School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Ready For School In 2020 School Stress School Readiness Online School</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-hernia.html">Va Rating Hernia</a></li>
+													<li class="list-group-item"><a href="/va-rating-herniated-disc.html">Va Rating Herniated Disc</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-apnea-secondary-to-fibromyalgia.html">Va Rating For Sleep Apnea Secondary To Fibromyalgia</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-apnea-2019.html">Va Rating For Sleep Apnea 2019</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-vitamin-d-deficiency.html">Va Rating For Vitamin D Deficiency</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-tinnitus-and-vertigo.html">Va Rating For Tinnitus And Vertigo</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-vertigo-secondary-to-sinusitis.html">Va Rating For Vertigo Secondary To Sinusitis</a></li>
+													<li class="list-group-item"><a href="/va-rating-gerd.html">Va Rating Gerd</a></li>
+													<li class="list-group-item"><a href="/va-rating-hiatal-hernia.html">Va Rating Hiatal Hernia</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-torn-meniscus.html">Va Rating For Torn Meniscus</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-apnea-secondary-to-ptsd.html">Va Rating For Sleep Apnea Secondary To Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-rating-guidelines.html">Va Rating Guidelines</a></li>
+													<li class="list-group-item"><a href="/va-rating-formula-for-ptsd.html">Va Rating Formula For Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-traumatic-brain-injury.html">Va Rating For Traumatic Brain Injury</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-stage-3-kidney-disease.html">Va Rating For Stage 3 Kidney Disease</a></li>
+													<li class="list-group-item"><a href="/va-rating-good-calculator.html">Va Rating Good Calculator</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-wrist-conditions.html">Va Rating For Wrist Conditions</a></li>
+													<li class="list-group-item"><a href="/va-rating-gulf-war-syndrome.html">Va Rating Gulf War Syndrome</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-spinal-cord-injury.html">Va Rating For Spinal Cord Injury</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-teeth-grinding.html">Va Rating For Teeth Grinding</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

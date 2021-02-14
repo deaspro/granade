@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Well Dressed Opposite Word - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Well Dressed Opposite Word",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/0e/52/f5/0e52f5b83cf07cd598905a24987d81e8.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=well+dressed+opposite+word",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Well Dressed Opposite Word</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Smart elegant stylish chic spruce dapper well turned out dressed to kill dressed up to the nines soigne or soignee. Another word for well-dressed. 11 synonyms for well-dressed. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/well-dressed-football-players.html">well dressed football players</a>
+											<a class="badge badge-success" href="/well-dressed-mens-style.html">well dressed mens style</a>
+											<a class="badge badge-primary" href="/well-dressed-zodiac-sign.html">well dressed zodiac sign</a>
+											<a class="badge badge-success" href="/well-dressed-lady-quotes.html">well dressed lady quotes</a>
+											<a class="badge badge-primary" href="/well-dressed-jumpsuit-fashion-nova.html">well dressed jumpsuit fashion nova</a>
+											<a class="badge badge-success" href="/well-dressed-up.html">well dressed up</a>
+											<a class="badge badge-danger" href="/well-dressed-person-korean-movie.html">well dressed person korean movie</a>
+											<a class="badge badge-warning" href="/well-dressed-expressions.html">well dressed expressions</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the right site.  Our site provides you with hints for viewing the highest quality video and picture content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/08/9e/54089ed307cbb42016f1b384be1f307a.png" data-lightbox="roadtrip" data-title="Degrees Of Adjectives Comparative And Superlative English Grammar Here English Grammar English Words Opposite Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/08/9e/54089ed307cbb42016f1b384be1f307a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY-rxxy0KuJknKr2abdCs4CWmRWu3BSVSNUw';" alt="Degrees Of Adjectives Comparative And Superlative English Grammar Here English Grammar English Words Opposite Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Degrees Of Adjectives Comparative And Superlative English Grammar Here English Grammar English Words Opposite Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/bf/61/5dbf61a04be13eac4e78d59d2d8fec87.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/bf/61/5dbf61a04be13eac4e78d59d2d8fec87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVz6ewIwGwfthowHrWevpX0SF43-YzliWuVQ';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/25/04/812504c111410abfa4b4fba582336e43.png" data-lightbox="roadtrip" data-title="100 Opposite Words With Urdu Opposite Words English Opposite Words English Vocabulary Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/25/04/812504c111410abfa4b4fba582336e43.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGzXzrILsyPyakT1YJkg2ekjGnd8rjVoViZA';" alt="100 Opposite Words With Urdu Opposite Words English Opposite Words English Vocabulary Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Opposite Words With Urdu Opposite Words English Opposite Words English Vocabulary Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/52/f5/0e52f5b83cf07cd598905a24987d81e8.png" data-lightbox="roadtrip" data-title="Pin On Prince Kumar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/52/f5/0e52f5b83cf07cd598905a24987d81e8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HXEr9qeKT2PEPuvr7eCAIDArVEMg6_6ynQ';" alt="Pin On Prince Kumar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Prince Kumar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/b4/59/acb4592a3897b58251fa9021e53de3e3.jpg" data-lightbox="roadtrip" data-title="240 Food Adjectives Adjectives To Describe Food In English English Study Online Adjectives English Adjectives Opposite Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/b4/59/acb4592a3897b58251fa9021e53de3e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4H7mcGCOv7nRIAnfEtq9JDGxC6RX_XimtA';" alt="240 Food Adjectives Adjectives To Describe Food In English English Study Online Adjectives English Adjectives Opposite Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">240 Food Adjectives Adjectives To Describe Food In English English Study Online Adjectives English Adjectives Opposite Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/a9/ab/64a9ab408d0792591795d2cb9e17ad04.png" data-lightbox="roadtrip" data-title="Pin On Vocabulary Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/a9/ab/64a9ab408d0792591795d2cb9e17ad04.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPnALM0fxfNk8g1KY9KN7eoPaLQ4QhMTcsQ';" alt="Pin On Vocabulary Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vocabulary Words</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/64/a9/ab/64a9ab408d0792591795d2cb9e17ad04.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPnALM0fxfNk8g1KY9KN7eoPaLQ4QhMTcsQ';" alt="Pin On Vocabulary Words">
+										<div class="card-body">
+						<h3 class="h5"><b>Another word for more well-dressed.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Well dressed opposite word</strong>. 
+								
+																	Synonyms for well-dressed in Free Thesaurus. 
+																	Opposite of polite elegant and sophisticated in manner. 
+																	Antonyms for well-groomed include disheveled dishevelled disordered disorderly messy mussed mussy sloven slovenly and unkempt. 
+																	Opposite of pleasing or appealing to the senses especially to look at. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Synonyms for well-dressed include chic dapper elegant smart spruce stylish natty neat schmick and spiffy. 
+																	Full list of antonyms for Well-dressed is here. 
+																	What are opposite words of Well-dressed. 
+																	Synonyms for well dressed include dashing smart stylish chic crisp dapper debonair elegant spruce and trim. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Opposite of neat and well-dressed. 
+																	Opposite of stylish and fashionable. 
+																	Apart from similar words there are always opposite words in dictionary too the opposite words for Well-dressed are Awkward Disagreeable Dull Homely Insignificant Poor Rough Ruffled Small Stingy Ugly Unattractive Unfashionable Unsophisticated Wrinkled Ungiving and Unstylish. 
+																	Smart elegant stylish chic spruce Collins English Thesaurus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Other words for well-dressed. 
+																	Top synonyms for well-dressed other words for well-dressed are smart spiffy and dapper. 
+																	Opposite of pleasing or appealing to the senses especially to look at. 
+																	Dressed to the teeth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Opposite of characterized by fashionable attractive clothes. 
+																	Opposite of polite elegant and sophisticated in manner. 
+																	Another word for badly dressed. 
+																	Find more opposite words at. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/28/09/8c2809f45ebb3258bdae8b761e36fbc5.png" data-lightbox="roadtrip" data-title="Collocations With Have In English English Grammar Here English Vocabulary Words Learn English Words English Grammar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/28/09/8c2809f45ebb3258bdae8b761e36fbc5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ82dVA9j22r1lyqNxqC_qp1rX7eAk0y2vkkw';" alt="Collocations With Have In English English Grammar Here English Vocabulary Words Learn English Words English Grammar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Collocations With Have In English English Grammar Here English Vocabulary Words Learn English Words English Grammar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/9e/d8/2d9ed80fe80e0405a38eb0ce51aa36b0.jpg" data-lightbox="roadtrip" data-title="Visual Inspiration Photo Mens Fashion Bows Well Dressed Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/9e/d8/2d9ed80fe80e0405a38eb0ce51aa36b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcovbM6qPsa0mxNFayY2W39TFNFQVEUzeZow';" alt="Visual Inspiration Photo Mens Fashion Bows Well Dressed Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Visual Inspiration Photo Mens Fashion Bows Well Dressed Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/b7/59/48b7597105f2badee9fff4802e1aaa78.png" data-lightbox="roadtrip" data-title="The Three Degrees Of Adjectives Are Positive Comparative And Superlative The Comparative And Superlative Superlative Adjectives Adjectives List Of Adjectives">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/b7/59/48b7597105f2badee9fff4802e1aaa78.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXCaos0HwM3GnRK76isi7a5GcSko_xQGc5Dg';" alt="The Three Degrees Of Adjectives Are Positive Comparative And Superlative The Comparative And Superlative Superlative Adjectives Adjectives List Of Adjectives">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Three Degrees Of Adjectives Are Positive Comparative And Superlative The Comparative And Superlative Superlative Adjectives Adjectives List Of Adjectives</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/e3/05/f2e305f3b0e2d79552ec9b4f474a519a.jpg" data-lightbox="roadtrip" data-title="Pin On English">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/e3/05/f2e305f3b0e2d79552ec9b4f474a519a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsygTgx_X3Ix2vNXbyM0E2XtX9FZh0beTG4A';" alt="Pin On English">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On English</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/b1/36/73b1360e4bcb759b4f4ff467e702d0b9.jpg" data-lightbox="roadtrip" data-title="Opposites Are Words Lying In An Inherently Incompatible Binary Relationship Like The Opposite Pairs Big Smal In 2020 English Adjectives List Of Opposites Adjectives">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/b1/36/73b1360e4bcb759b4f4ff467e702d0b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZwkF-WBp_BfX3rUPDRBcl2a8y6bzZ1tMc0w';" alt="Opposites Are Words Lying In An Inherently Incompatible Binary Relationship Like The Opposite Pairs Big Smal In 2020 English Adjectives List Of Opposites Adjectives">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Opposites Are Words Lying In An Inherently Incompatible Binary Relationship Like The Opposite Pairs Big Smal In 2020 English Adjectives List Of Opposites Adjectives</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/dc/af/4c/dcaf4c4713a715769710509927ffcfde.jpg" data-lightbox="roadtrip" data-title="English Ways To Say Because Synonym Words Because Kitap Yazma Yazma Ipuclari Yazma Ngữ Phap Tiếng Anh Ngữ Phap Giao Dục">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/dc/af/4c/dcaf4c4713a715769710509927ffcfde.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOXe-Awq5CSllqnctA7afR836soJryjTNjPA';" alt="English Ways To Say Because Synonym Words Because Kitap Yazma Yazma Ipuclari Yazma Ngữ Phap Tiếng Anh Ngữ Phap Giao Dục">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">English Ways To Say Because Synonym Words Because Kitap Yazma Yazma Ipuclari Yazma Ngữ Phap Tiếng Anh Ngữ Phap Giao Dục</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/94/86/7f94869698831482b7e24095cb473b42.png" data-lightbox="roadtrip" data-title="50 Most Common Adverbs Meanings And Example Sentences English Grammar Here English Vocabulary Words Words To Use Writing Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/94/86/7f94869698831482b7e24095cb473b42.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiBF8bvK1xOxpSgY20A7H2XCRy3R87TF-9SQ';" alt="50 Most Common Adverbs Meanings And Example Sentences English Grammar Here English Vocabulary Words Words To Use Writing Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">50 Most Common Adverbs Meanings And Example Sentences English Grammar Here English Vocabulary Words Words To Use Writing Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a5/4b/23/a54b2355563a78ea56e61bd79b701587.jpg" data-lightbox="roadtrip" data-title="Pin On Jezyk Angielski">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a5/4b/23/a54b2355563a78ea56e61bd79b701587.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGHB_zHUtKZqWQErlaKfi7hYByMCtIyjviHg';" alt="Pin On Jezyk Angielski">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Jezyk Angielski</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/4d/71/cd4d71ee2d2bffcc70cb96357570dde0.jpg" data-lightbox="roadtrip" data-title="Only A Handful Of People In The World Can Solve This In Under 30 Seconds Opposite Words Words Solving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/4d/71/cd4d71ee2d2bffcc70cb96357570dde0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tVkeevlxUSYy5fFzZ83y_OAHiwRSOIwjdA';" alt="Only A Handful Of People In The World Can Solve This In Under 30 Seconds Opposite Words Words Solving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Only A Handful Of People In The World Can Solve This In Under 30 Seconds Opposite Words Words Solving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/5e/25/a05e252bb3486ed74f27676d779d5f46.jpg" data-lightbox="roadtrip" data-title="Pin By Jayjay Brown On Magnetic Males Gentleman Style Well Dressed Men Stylish Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/5e/25/a05e252bb3486ed74f27676d779d5f46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfxIwqF7Md-9CRoHFEztcp3Xzst_s5J45j2A';" alt="Pin By Jayjay Brown On Magnetic Males Gentleman Style Well Dressed Men Stylish Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jayjay Brown On Magnetic Males Gentleman Style Well Dressed Men Stylish Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/2b/e5/3b2be5a2db89ead6db7d95c1d911d04b.jpg" data-lightbox="roadtrip" data-title="Watches For Men And Unisex Watches Free Shipping Http Findanswerhere Com Menswatches Well Dressed Men Mens Outfits Stylish Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/2b/e5/3b2be5a2db89ead6db7d95c1d911d04b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHyLPHaAnWftrNKNISF6dxRVBXRLZADR8rdA';" alt="Watches For Men And Unisex Watches Free Shipping Http Findanswerhere Com Menswatches Well Dressed Men Mens Outfits Stylish Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watches For Men And Unisex Watches Free Shipping Http Findanswerhere Com Menswatches Well Dressed Men Mens Outfits Stylish Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/e3/73/dee3735cdb64e9fd9877ee05b6386d4d.jpg" data-lightbox="roadtrip" data-title="Pin On Style Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/e3/73/dee3735cdb64e9fd9877ee05b6386d4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwpamaahp8mKpR57330FnhJg_sPuO64F18w';" alt="Pin On Style Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Style Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/82/04/ba82042daf0a1367a7f298d10e7dce08.png" data-lightbox="roadtrip" data-title="However Synonym 15 Synonyms For However In English 7 E S L Apprendreanglais Apprendreangla Apprendre L Anglais Exercice Anglais Apprendre A Parler Anglais">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/82/04/ba82042daf0a1367a7f298d10e7dce08.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Rk_hVtq0_sSN1qv3H7aG7fzG1gkw7RKQ8Q';" alt="However Synonym 15 Synonyms For However In English 7 E S L Apprendreanglais Apprendreangla Apprendre L Anglais Exercice Anglais Apprendre A Parler Anglais">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">However Synonym 15 Synonyms For However In English 7 E S L Apprendreanglais Apprendreangla Apprendre L Anglais Exercice Anglais Apprendre A Parler Anglais</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/25/56/6825568506741b205512b5362ced5f2b.jpg" data-lightbox="roadtrip" data-title="Pin On My Style">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/25/56/6825568506741b205512b5362ced5f2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO6ie2wbm05tBd2eMqLV8hAWoVy8Gxm22xzg';" alt="Pin On My Style">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Style</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/6d/1e/166d1e6539d42cd1bf72abccddbc4d40.png" data-lightbox="roadtrip" data-title="Pin On Petit Bout De Phrase">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/6d/1e/166d1e6539d42cd1bf72abccddbc4d40.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGaxyUGx9FO_70XeYjIbMgzGtqchls6EKOQA';" alt="Pin On Petit Bout De Phrase">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Petit Bout De Phrase</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-do-need-to-go-to-college.html">What Do Need To Go To College</a></li>
+													<li class="list-group-item"><a href="/what-day-will-va-checks-be-deposited-this-month.html">What Day Will Va Checks Be Deposited This Month</a></li>
+													<li class="list-group-item"><a href="/what-did-peter-parker-go-to-college-for.html">What Did Peter Parker Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-did-the-irish-republican-army-do.html">What Did The Irish Republican Army Do</a></li>
+													<li class="list-group-item"><a href="/what-do-army-reserves-get-paid.html">What Do Army Reserves Get Paid</a></li>
+													<li class="list-group-item"><a href="/what-did-the-gi-bill-of-rights-provide-to-veterans-brainly.html">What Did The Gi Bill Of Rights Provide To Veterans Brainly</a></li>
+													<li class="list-group-item"><a href="/what-did-mark-zuckerberg-go-to-college-for.html">What Did Mark Zuckerberg Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-do-army-dogs-eat.html">What Do Army Dogs Eat</a></li>
+													<li class="list-group-item"><a href="/what-disease-are-secondary-to-ptsd.html">What Disease Are Secondary To Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-direction-is-the-military-base-in-dayz-standalone.html">What Direction Is The Military Base In Dayz Standalone</a></li>
+													<li class="list-group-item"><a href="/what-do-i-do-if-my-husband-is-depressed.html">What Do I Do If My Husband Is Depressed</a></li>
+													<li class="list-group-item"><a href="/what-disabilities-qualify-for-va-compensation.html">What Disabilities Qualify For Va Compensation</a></li>
+													<li class="list-group-item"><a href="/what-did-kanye-go-to-college-for.html">What Did Kanye Go To College For</a></li>
+													<li class="list-group-item"><a href="/what-day-of-the-week-is-uk-state-pension-paid.html">What Day Of The Week Is Uk State Pension Paid</a></li>
+													<li class="list-group-item"><a href="/what-do-soldiers-get-paid-while-deployed.html">What Do Soldiers Get Paid While Deployed</a></li>
+													<li class="list-group-item"><a href="/what-did-gi-bill-mean.html">What Did Gi Bill Mean</a></li>
+													<li class="list-group-item"><a href="/what-did-gi-joe-doll-say.html">What Did Gi Joe Doll Say</a></li>
+													<li class="list-group-item"><a href="/what-do-i-do-if-someone-forged-my-signature.html">What Do I Do If Someone Forged My Signature</a></li>
+													<li class="list-group-item"><a href="/what-department-stores-offer-military-discount.html">What Department Stores Offer Military Discount</a></li>
+													<li class="list-group-item"><a href="/what-do-gi-bill-mean.html">What Do Gi Bill Mean</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

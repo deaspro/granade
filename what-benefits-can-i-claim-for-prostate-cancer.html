@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Benefits Can I Claim For Prostate Cancer - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Benefits Can I Claim For Prostate Cancer",
+  "datePublished": "2021-02-14",
+  "image": "https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/7a1e3934-0835-4687-b248-b34121072597/gr1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+benefits+can+i+claim+for+prostate+cancer",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Benefits Can I Claim For Prostate Cancer</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If your cancer was diagnosed at an earlier stage you may still qualify for disability benefits. By Susan Kelley on February 14 2019 in Conditions. If your prostate cancer was advanced when diagnosed or has recurred after initial treatment then you automatically medically qualify Social Security Disability. <br>				
+			</p>
+										<a class="badge badge-info" href="/va-service-connected-disability-for-hearing-loss.html">va service connected disability for hearing loss</a>
+											<a class="badge badge-warning" href="/va-seizure-rating.html">va seizure rating</a>
+											<a class="badge badge-danger" href="/va-service-connected-disability-form.html">va service connected disability form</a>
+											<a class="badge badge-secondary" href="/va-service-connected-burial-benefits.html">va service connected burial benefits</a>
+											<a class="badge badge-primary" href="/va-service-connected-award-letter.html">va service connected award letter</a>
+											<a class="badge badge-success" href="/va-secondary-conditions-to-radiculopathy.html">va secondary conditions to radiculopathy</a>
+											<a class="badge badge-primary" href="/va-service-connected-disability-calculator.html">va service connected disability calculator</a>
+											<a class="badge badge-info" href="/va-secondary-conditions-to-ptsd.html">va secondary conditions to ptsd</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the ideal site.  Our website provides you with hints for seeing the maximum quality video and image content, hunt and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this video that you view.  You can also bring about supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.disability-benefits-help.org/sites/default/files/images/medical-criteria/prostate-cancer-criteria.jpg" data-lightbox="roadtrip" data-title="Medical Criteria Needed To Qualify With Prostate Cancer Disability Benefits Help">
+											<img class="card-img v-image ads-img " src="https://www.disability-benefits-help.org/sites/default/files/images/medical-criteria/prostate-cancer-criteria.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ7Gh99oQ8HzTnu3SbEHQkn0NDEj7YJZJQOg';" alt="Medical Criteria Needed To Qualify With Prostate Cancer Disability Benefits Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Medical Criteria Needed To Qualify With Prostate Cancer Disability Benefits Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.disability-benefits-help.org/sites/default/files/images/disabling-conditions/prostate-cancer.jpg" data-lightbox="roadtrip" data-title="Prostate Cancer And Social Security Disability Disability Benefits Help">
+											<img class="card-img v-image ads-img " src="http://www.disability-benefits-help.org/sites/default/files/images/disabling-conditions/prostate-cancer.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcXmMPCc8uYBTjYgBkMiwnAQpB1V4Hi0ks1Q';" alt="Prostate Cancer And Social Security Disability Disability Benefits Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prostate Cancer And Social Security Disability Disability Benefits Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://417n6askfdo3na0t04com9tv-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/infographic-updated-dark-blue.png" data-lightbox="roadtrip" data-title="Veterans And Prostate Cancer Zero The End Of Prostate Cancer">
+											<img class="card-img v-image ads-img " src="https://417n6askfdo3na0t04com9tv-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/infographic-updated-dark-blue.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPXDzXfWcPxNDAHvfW6Wca67TOVnf69jUpw';" alt="Veterans And Prostate Cancer Zero The End Of Prostate Cancer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans And Prostate Cancer Zero The End Of Prostate Cancer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2020/02/prostate-cancer-AO.png" data-lightbox="roadtrip" data-title="Va Disability For Agent Orange Prostate Cancer Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2020/02/prostate-cancer-AO.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEybyJX282FX5iUyX1_2NKpTB1qVgZDTqbg';" alt="Va Disability For Agent Orange Prostate Cancer Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability For Agent Orange Prostate Cancer Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/gotchastream/article-images/c71f5f4fcfe645e8c538393309982461d6efb8d1/2c6df22fbab703ea0627f8a788157249.png" data-lightbox="roadtrip" data-title="Update On Adt In Advanced Prostate Cancer Urology Of Virginia Innova">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/gotchastream/article-images/c71f5f4fcfe645e8c538393309982461d6efb8d1/2c6df22fbab703ea0627f8a788157249.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD7JQ1SZJhlSUOE5FRaXlykG0l-9MFa-aYnQ';" alt="Update On Adt In Advanced Prostate Cancer Urology Of Virginia Innova">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Update On Adt In Advanced Prostate Cancer Urology Of Virginia Innova</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://417n6askfdo3na0t04com9tv-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/ZERO360-Postcard-Sep-2020-Image-768x512.png" data-lightbox="roadtrip" data-title="Financial Resources Zero The End Of Prostate Cancer">
+											<img class="card-img v-image ads-img " src="https://417n6askfdo3na0t04com9tv-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/ZERO360-Postcard-Sep-2020-Image-768x512.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvR-posKMyXL3D2nTJgiMovwUkLGY9_b_HHA';" alt="Financial Resources Zero The End Of Prostate Cancer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Resources Zero The End Of Prostate Cancer</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/1e9431e6-9717-427c-af96-5bf9949a1889/gr1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvR-posKMyXL3D2nTJgiMovwUkLGY9_b_HHA';" alt="Financial Resources Zero The End Of Prostate Cancer">
+										<div class="card-body">
+						<h3 class="h5"><b>The VA has established a rating system for prostate cancer based on the severity of the symptoms.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What benefits can i claim for prostate cancer</strong>. 
+								
+																	The Social Security Administration SSA now lists prostate cancer on their compassionate allowances CAL condition list. 
+																	Car drivers who have a cancer diagnosis can claim for a host of benefits on the road such as free access to toll roads and tunnels as well as dispensation from the London roads Congestion Charge which works out at around 8 a time. 
+																	Veterans who were exposed to Agent Orange and developed prostate cancer may be eligible to receive VA disability benefits. 
+																	Prostate Cancer - Social Security Disability Benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prostate cancer that has spread is progressive or has returned will automatically qualify for benefits. 
+																	Disability Benefits for Pancreatic Cancer. 
+																	While prostate cancer is among the leading causes of cancer-related death for American men as well it is also among the most treatable and curable forms of cancer which is why it may or may not qualify you for disability benefits. 
+																	How The VA Rates Prostate Cancer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many veterans suffer from prostate cancer due to their time in military service. 
+																	Some veterans will also be eligible for VA Aid Attendance benefits money for dependent children and parents and healthcare. 
+																	You might run out of sick time to get to your appointments and so you wont receive compensation for the time missed from work. 
+																	For this reason men with this diagnosis are usually eligible for Social Security disability SSD benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many benefits are available including help for people in hospital on a low income disabled over pension age or parents and carers. 
+																	If you are not paying National Insurance for example because you are not working you may be able to get National Insurance credits. 
+																	The SSA has whats called a Medical Vocational Allowance which is a medical approval based on an applicants inability to perform any work that he or she is qualified for due to an illness that will last at least 12 months. 
+																	According to the American Cancer Society 1 in every 9 American men develops prostate cancer during their lifetime. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Claiming IS can mean you are eligible for other benefits such as Disability Living Allowance free school meals free prescriptions and Housing Benefit. 
+																	To claim Income Support visit or phone your local Jobcentre Plus office or phone 0800 055 6688 textphone 0800 023 4888 between 8am and 6pm Monday to Friday. 
+																	Prostate Cancer and VA Disability Compensation. 
+																	Local councils can also provide grants for school uniforms if the family is deemed as being on a low-income. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Paying National Insurance means that you will be able to claim some benefits such as the State Pension. 
+																	These credits can mean you are still eligible for contribution-based benefits. 
+																	Aside from VA benefits as a prostate cancer patient for 16 years so far I suggest you consider all available treatments and not rush into a decision. 
+																	If the effects of your prostate cancer are making it impossible for you to meet the demands of your job then applying for Social Security disability benefits might be an option for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA offers service-connected compensation to these veterans based on the active cancer or the presence and severity of the cancer residuals. 
+																	But as long as your own doctor has diagnosed active prostate cancer you should qualify for 100 percent from date of your initial claim to at least six months after end of treatment. 
+																	Most patients with a diagnosis of pancreatic cancer will get an automatic approval of disability benefits. 
+																	Some veterans receive over 2900 a month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prostate cancer that isnt diagnosed until an advanced stage or that has recurred following initial treatment will automatically qualify for Social Security Disability benefits. 
+																	If your cancer is caught early on you will need to provide documentation that indicates your symptoms treatments side effects and complications affect your ability to work. 
+																	This guide will outline how the VA rates prostate cancer for disability compensation claims as well as what Vietnam veterans should know when seeking VA benefits for this condition. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.lubinandmeyer.com/images/prostate-cancer-psa-test.jpg" data-lightbox="roadtrip" data-title="Psa Test Results Withheld Prostate Cancer Lawsuit">
+											<img class="card-img v-image ads-img " src="http://www.lubinandmeyer.com/images/prostate-cancer-psa-test.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_DQs0Lhv6O5YO9oiB3r7RESMsYHIr5Js8YQ';" alt="Psa Test Results Withheld Prostate Cancer Lawsuit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Psa Test Results Withheld Prostate Cancer Lawsuit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/cancernetwork/5a3be791005c2097ec81424dc4b3eef070338184-754x267.png?auto=format" data-lightbox="roadtrip" data-title="Favorable Vs Unfavorable Intermediate Risk Prostate Cancer A Review Of The New Classification System And Its Impact On Treatment Recommendations Cancer Network">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/cancernetwork/5a3be791005c2097ec81424dc4b3eef070338184-754x267.png?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmBau17fL3BZ73S0eEXHKxDp7vOFbLCqCtIw';" alt="Favorable Vs Unfavorable Intermediate Risk Prostate Cancer A Review Of The New Classification System And Its Impact On Treatment Recommendations Cancer Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Favorable Vs Unfavorable Intermediate Risk Prostate Cancer A Review Of The New Classification System And Its Impact On Treatment Recommendations Cancer Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/2018.02.26-Prostate-Cancer-and-VA-Disability-Compensation-image-768x768.jpg" data-lightbox="roadtrip" data-title="Prostate Cancer And Va Disability Benefits Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/2018.02.26-Prostate-Cancer-and-VA-Disability-Compensation-image-768x768.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTufSPSOm4lXEu4TLlcrw6-t0LU4ivR2JTP9w';" alt="Prostate Cancer And Va Disability Benefits Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prostate Cancer And Va Disability Benefits Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/7a1e3934-0835-4687-b248-b34121072597/gr1.jpg" data-lightbox="roadtrip" data-title="Advanced Prostate Cancer Treatment Advances And Future Directions Trends In Cancer">
+											<img class="card-img v-image ads-img " src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/7a1e3934-0835-4687-b248-b34121072597/gr1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTATcYTV_TrBM2k3oIq1f0Y-MowKRyjwdmXbA';" alt="Advanced Prostate Cancer Treatment Advances And Future Directions Trends In Cancer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advanced Prostate Cancer Treatment Advances And Future Directions Trends In Cancer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://prostatecanceruk.org/media/2490554/2084-locally-advanced-prostate-cancer.jpg?anchor=center&amp;mode=crop&amp;width=362&amp;height=362&amp;format=&amp;quality=90&amp;rnd=131745742000000000" data-lightbox="roadtrip" data-title="Locally Advanced Prostate Cancer Prostate Cancer Uk">
+											<img class="card-img v-image ads-img " src="https://prostatecanceruk.org/media/2490554/2084-locally-advanced-prostate-cancer.jpg?anchor=center&amp;mode=crop&amp;width=362&amp;height=362&amp;format=&amp;quality=90&amp;rnd=131745742000000000" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvZ5K9Ek78AdTq3YYq0yy0c2HVos7k_iKaTQ';" alt="Locally Advanced Prostate Cancer Prostate Cancer Uk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Locally Advanced Prostate Cancer Prostate Cancer Uk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/a30d8943-4112-429c-a9ea-c6759edf9596/gr1.jpg" data-lightbox="roadtrip" data-title="Prostate Cancer Esmo Clinical Practice Guidelines For Diagnosis Treatment And Follow Up Annals Of Oncology">
+											<img class="card-img v-image ads-img " src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/a30d8943-4112-429c-a9ea-c6759edf9596/gr1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZjdca4pGmhCeRytWGxrkVNMkJVTmyrXItvA';" alt="Prostate Cancer Esmo Clinical Practice Guidelines For Diagnosis Treatment And Follow Up Annals Of Oncology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prostate Cancer Esmo Clinical Practice Guidelines For Diagnosis Treatment And Follow Up Annals Of Oncology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/984169c6-79ae-4cd8-bf9a-334cab7196a9/gr1.jpg" data-lightbox="roadtrip" data-title="Parp Inhibitor Receives Fda Breakthrough Therapy Designation In Castration Resistant Prostate Cancer Beyond Germline Brca Mutations Annals Of Oncology">
+											<img class="card-img v-image ads-img " src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/asset/984169c6-79ae-4cd8-bf9a-334cab7196a9/gr1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrkzm1lk16brLaPoD_cNjpHZEd24E9xYmZzQ';" alt="Parp Inhibitor Receives Fda Breakthrough Therapy Designation In Castration Resistant Prostate Cancer Beyond Germline Brca Mutations Annals Of Oncology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Parp Inhibitor Receives Fda Breakthrough Therapy Designation In Castration Resistant Prostate Cancer Beyond Germline Brca Mutations Annals Of Oncology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41585-019-0274-3/MediaObjects/41585_2019_274_Fig1_HTML.png" data-lightbox="roadtrip" data-title="Tumour Innervation And Neurosignalling In Prostate Cancer Nature Reviews Urology">
+											<img class="card-img v-image ads-img " src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41585-019-0274-3/MediaObjects/41585_2019_274_Fig1_HTML.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShHISlM70CBnEJPnokmPTSo7NfY9UyZfmWzA';" alt="Tumour Innervation And Neurosignalling In Prostate Cancer Nature Reviews Urology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tumour Innervation And Neurosignalling In Prostate Cancer Nature Reviews Urology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/4fa548e9-4a67-455a-b1e2-c1780e9fee9c/gr1.jpg" data-lightbox="roadtrip" data-title="Prostate Cancer Incidence And Mortality In Relationship To Family History Of Prostate Cancer Findings From The Plco Trial Clinical Genitourinary Cancer">
+											<img class="card-img v-image ads-img " src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/4fa548e9-4a67-455a-b1e2-c1780e9fee9c/gr1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLTKaB7txHVyFx48M1l3hrumTqJuJK6CoIfg';" alt="Prostate Cancer Incidence And Mortality In Relationship To Family History Of Prostate Cancer Findings From The Plco Trial Clinical Genitourinary Cancer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prostate Cancer Incidence And Mortality In Relationship To Family History Of Prostate Cancer Findings From The Plco Trial Clinical Genitourinary Cancer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/d4275e05-137b-4539-849f-cbdc0804aae5/gr1_lrg.jpg" data-lightbox="roadtrip" data-title="The Impact Of Exercise During Radiation Therapy For Prostate Cancer On Fatigue And Quality Of Life A Systematic Review And Meta Analysis Journal Of Medical Imaging And Radiation Sciences">
+											<img class="card-img v-image ads-img " src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/d4275e05-137b-4539-849f-cbdc0804aae5/gr1_lrg.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPjULtxiPPUqDS8-4WtTVvTZDOopxiecBT3g';" alt="The Impact Of Exercise During Radiation Therapy For Prostate Cancer On Fatigue And Quality Of Life A Systematic Review And Meta Analysis Journal Of Medical Imaging And Radiation Sciences">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Impact Of Exercise During Radiation Therapy For Prostate Cancer On Fatigue And Quality Of Life A Systematic Review And Meta Analysis Journal Of Medical Imaging And Radiation Sciences</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/12f4b011-c55c-477b-9771-d44ba9423d26/gr1.jpg" data-lightbox="roadtrip" data-title="Digital Rectal Examination For Prostate Cancer Screening Performed With Colonoscopy For Colon Cancer Screening 2 For The Price Of 1 Gastrointestinal Endoscopy">
+											<img class="card-img v-image ads-img " src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/12f4b011-c55c-477b-9771-d44ba9423d26/gr1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOW0ibguJhjl2X6PSN_LnmmUyqNzwYAu6Qdw';" alt="Digital Rectal Examination For Prostate Cancer Screening Performed With Colonoscopy For Colon Cancer Screening 2 For The Price Of 1 Gastrointestinal Endoscopy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Digital Rectal Examination For Prostate Cancer Screening Performed With Colonoscopy For Colon Cancer Screening 2 For The Price Of 1 Gastrointestinal Endoscopy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.futuremedicine.com/pb-assets/Infographics/FON-2019-0639%20IFG_thumbnail-1575548877820.jpg" data-lightbox="roadtrip" data-title="Economic Burden Of Illness Associated With Localized Prostate Cancer In The United States Future Oncology">
+											<img class="card-img v-image ads-img " src="https://www.futuremedicine.com/pb-assets/Infographics/FON-2019-0639%20IFG_thumbnail-1575548877820.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8KeldNSglnNYNgtQ_Y2LxbE90vdcG1v8yqA';" alt="Economic Burden Of Illness Associated With Localized Prostate Cancer In The United States Future Oncology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Economic Burden Of Illness Associated With Localized Prostate Cancer In The United States Future Oncology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/1e9431e6-9717-427c-af96-5bf9949a1889/gr1.jpg" data-lightbox="roadtrip" data-title="Dna Damage Repair Deficiency In Prostate Cancer Trends In Cancer">
+											<img class="card-img v-image ads-img " src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/1e9431e6-9717-427c-af96-5bf9949a1889/gr1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6vpNc9LAB9iZfH9bqqIHMJVdTSDRh3MkDdQ';" alt="Dna Damage Repair Deficiency In Prostate Cancer Trends In Cancer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dna Damage Repair Deficiency In Prostate Cancer Trends In Cancer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/c7/c3/4fc7c3b3bfafacd40d62ba1c5a0dd3b2.jpg" data-lightbox="roadtrip" data-title="Pin On Holistic Wellness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/c7/c3/4fc7c3b3bfafacd40d62ba1c5a0dd3b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ8oaAlTH7QTLb-sECEgw8uyvCjwWsGeDT3g';" alt="Pin On Holistic Wellness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Holistic Wellness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/83/1f/f5831fd9f857c9b311ad93a54f9f7b6e.jpg" data-lightbox="roadtrip" data-title="Https News Of Today Telling The Untold News Researchers Are Investigating If Men Could Benefit From A One Off Scan To Check Their Risk Of Prostate Cance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/83/1f/f5831fd9f857c9b311ad93a54f9f7b6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8r9uweAReR84nZ7Sgole6evGxtOryuUayXA';" alt="Https News Of Today Telling The Untold News Researchers Are Investigating If Men Could Benefit From A One Off Scan To Check Their Risk Of Prostate Cance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https News Of Today Telling The Untold News Researchers Are Investigating If Men Could Benefit From A One Off Scan To Check Their Risk Of Prostate Cance</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/virginia-dept-of-education-phone-number.html">Virginia Dept Of Education Phone Number</a></li>
+													<li class="list-group-item"><a href="/virginia-lawyer-referral-service-richmond.html">Virginia Lawyer Referral Service Richmond</a></li>
+													<li class="list-group-item"><a href="/virginia-independent-insurance-agents.html">Virginia Independent Insurance Agents</a></li>
+													<li class="list-group-item"><a href="/virginia-pay-raise-2020.html">Virginia Pay Raise 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-national-guard-deployment-2019.html">Virginia National Guard Deployment 2019</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-wiki.html">Virginia Department Of Education Wiki</a></li>
+													<li class="list-group-item"><a href="/virginia-employee-pay-raise.html">Virginia Employee Pay Raise</a></li>
+													<li class="list-group-item"><a href="/virginia-employment-law-lunch-break.html">Virginia Employment Law Lunch Break</a></li>
+													<li class="list-group-item"><a href="/virginia-education-of-department.html">Virginia Education Of Department</a></li>
+													<li class="list-group-item"><a href="/virginia-pay-calendar.html">Virginia Pay Calendar</a></li>
+													<li class="list-group-item"><a href="/virginia-insurance-gap.html">Virginia Insurance Gap</a></li>
+													<li class="list-group-item"><a href="/virginia-lawyer-referral-service.html">Virginia Lawyer Referral Service</a></li>
+													<li class="list-group-item"><a href="/virginia-department-of-education-teacher-evaluation-system.html">Virginia Department Of Education Teacher Evaluation System</a></li>
+													<li class="list-group-item"><a href="/virginia-education-job-bank.html">Virginia Education Job Bank</a></li>
+													<li class="list-group-item"><a href="/virginia-pay-and-holiday-calendar.html">Virginia Pay And Holiday Calendar</a></li>
+													<li class="list-group-item"><a href="/virginia-insurance-monitoring.html">Virginia Insurance Monitoring</a></li>
+													<li class="list-group-item"><a href="/virginia-pay-dates-2020.html">Virginia Pay Dates 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-national-guard-deployment-schedule.html">Virginia National Guard Deployment Schedule</a></li>
+													<li class="list-group-item"><a href="/virginia-insurance-jobs.html">Virginia Insurance Jobs</a></li>
+													<li class="list-group-item"><a href="/virginia-dmv-disabled-veteran-benefits.html">Virginia Dmv Disabled Veteran Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

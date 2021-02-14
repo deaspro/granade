@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Dollar Amount For 100 Va Disability - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Dollar Amount For 100 Va Disability",
+  "datePublished": "2021-02-14",
+  "image": "https://vaclaimsinsider.com/wp-content/uploads/2019/07/Symptoms-of-100-Percent-VA-Rating-for-PTSD-scaled.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+dollar+amount+for+100+va+disability",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Dollar Amount For 100 Va Disability</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In order to be eligible for housebound benefits the veteran must have. If the disabled veteran is married the compensation is 327922. For example veteran has AA spouse and 2 minor children and is 70 disabled. <br>				
+			</p>
+										<a class="badge badge-primary" href="/what-to-do-when-your-husband-lies-about-little-things.html">what to do when your husband lies about little things</a>
+											<a class="badge badge-success" href="/what-to-do-when-you-have-an-alcoholic-husband.html">what to do when you have an alcoholic husband</a>
+											<a class="badge badge-success" href="/what-to-do-when-a-spouse-dies-without-a-will.html">what to do when a spouse dies without a will</a>
+											<a class="badge badge-danger" href="/what-to-do-when-husband-constantly-lies.html">what to do when husband constantly lies</a>
+											<a class="badge badge-warning" href="/what-to-do-when-you-feel-like-your-relationship-is-drifting-apart.html">what to do when you feel like your relationship is drifting apart</a>
+											<a class="badge badge-primary" href="/what-to-do-when-your-husband-dies-suddenly.html">what to do when your husband dies suddenly</a>
+											<a class="badge badge-info" href="/what-to-do-if-your-partner-is-boring-in-bed.html">what to do if your partner is boring in bed</a>
+											<a class="badge badge-success" href="/what-to-do-if-your-spouse-gets-a-dui.html">what to do if your spouse gets a dui</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the ideal blog.  Our site gives you suggestions for viewing the highest quality video and image content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/18/ee/a118eeecd48e2608534e17ab8c39c5b0.png" data-lightbox="roadtrip" data-title="257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/18/ee/a118eeecd48e2608534e17ab8c39c5b0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT4nd-QeaprcH_xHnHjzoe_JEMsaHjg_DIaw';" alt="257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/va-disability-calculator-mb.jpg" data-lightbox="roadtrip" data-title="2021 Va Disability Calculator Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/va-disability-calculator-mb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvdNoK-KEuwhGy1FOfpPBV7r16SshZa37QIQ';" alt="2021 Va Disability Calculator Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Va Disability Calculator Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2019/12/va-disability-compensation-rates-relaythat-580x387.jpg" data-lightbox="roadtrip" data-title="2021 Va Service Connected Disability Compensation Rate Charts">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2019/12/va-disability-compensation-rates-relaythat-580x387.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJmZcvqp9k-iIUZIPFAm8tQ4YtYxJnKKCQA';" alt="2021 Va Service Connected Disability Compensation Rate Charts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Va Service Connected Disability Compensation Rate Charts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/be/18/83/be188387b9e88eae7b51810f62d6fbce.jpg" data-lightbox="roadtrip" data-title="Va Special Monthly Compensation Va Benefits Disabled Veterans Benefits Compensation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/be/18/83/be188387b9e88eae7b51810f62d6fbce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_hXGLQnDQac5G4iGg7pwxrNde6y9DHH6WA';" alt="Va Special Monthly Compensation Va Benefits Disabled Veterans Benefits Compensation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Special Monthly Compensation Va Benefits Disabled Veterans Benefits Compensation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/35/9e/12359e23cfec15f72988b027ae6b541b.jpg" data-lightbox="roadtrip" data-title="Va Disability Rates 2020 S Updated Pay Chart Military Disability Disabled Veterans Benefits Va Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/35/9e/12359e23cfec15f72988b027ae6b541b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROljJygnoyu72Yj925WGkqJXUvTL9kXRUqVw';" alt="Va Disability Rates 2020 S Updated Pay Chart Military Disability Disabled Veterans Benefits Va Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Rates 2020 S Updated Pay Chart Military Disability Disabled Veterans Benefits Va Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vaclaimsinsider.com/wp-content/uploads/2019/07/Symptoms-of-100-Percent-VA-Rating-for-PTSD-scaled.jpg" data-lightbox="roadtrip" data-title="Ptsd Rating Scale Explained Va Claims Insider">
+											<img class="card-img v-image ads-img " src="https://vaclaimsinsider.com/wp-content/uploads/2019/07/Symptoms-of-100-Percent-VA-Rating-for-PTSD-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVaWfrvD4pl7FOr1QzmTVwwvMvLE1MKMHZA';" alt="Ptsd Rating Scale Explained Va Claims Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ptsd Rating Scale Explained Va Claims Insider</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/07/Differences-Between-Military-VA-Disability-Ratings.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVaWfrvD4pl7FOr1QzmTVwwvMvLE1MKMHZA';" alt="Ptsd Rating Scale Explained Va Claims Insider">
+										<div class="card-body">
+						<h3 class="h5"><b>If you do not have any dependents your monthly tax-free payment would be 305713 Individual Unemployability IU is also called Total Disability Individual Unemployability TDIU.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the dollar amount for 100 va disability</strong>. 
+								
+																	In previous years the amount was rounded down to the nearest dollar. 
+																	290683 is considered the minimum amount for such beneficiaries. 
+																	80 disability rating in US. 
+																	100 disability rating in US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See how your disability rating affects your VA Home Loan benefit. 
+																	The amount of CRSC is the lesser of the dollar amount of VA disability compensation awarded for combat related disabilities OR the amount of longevity earned retired pay. 
+																	These percentages guide the precise dollar amount VA must pay to a disabled veteran. 
+																	70 100 Without Children. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These mileage subject to a deductible of 3 for a one way trip 6 for a round trip with a maximum of 18 per or the amount after six. 
+																	To do this the SSA will adjust or index your lifetime earnings to account for the increase in general wages that happened during the years you worked. 
+																	70 100 With Children. 
+																	Monthly Social Security disability benefits range from 100 to 3148. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As of 2020 the monthly compensation for a single 100 disabled veteran is 310604. 
+																	Where the veteran has a spouse who is determined to require AA add the figure shown as additional for AA spouse to the amount shown for the proper dependency code. 
+																	CRSC replaces waived longevity pay up to the dollar amount of VA compensation for combat related disabilities. 
+																	Average Indexed Monthly Earnings First the SSA will determine your AIME. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Or talk with a Veterans United loan specialist at 855-870-8845 about your path to homeownership. 
+																	The amount can increase depending on the number of dependents a veteran has. 
+																	For instance a veteran with no dependents who is 100 disabled currently receives 267300 according to the Rate Tables. 
+																	The average disability benefit for a recipient of SSDI in mid-2020 was 1259 per month but a beneficiary can receive up to 2861. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The exact monetary amount of compensation given for a 100 VA Disability Rating is the same for every veteran but does change for factors like children spouses etc. 
+																	Combined Ratings VA Disability Compensation Rates 2020 Combined VA Disability Compensation Rates 2020. 
+																	The total amount payable is 180717. 
+																	For example if you were previously getting 1000 per month tax-free a 11 VA pay increase is 11 so a veterans VA disability compensation pay in 2021 would go up to 1011 per month. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mileage Reimbursement is at the rate of 415 cents per mile. 
+																	Compensation Like those receiving benefits for 100 percent disability ratings veterans who qualify for TDIU benefits receive monthly payments from the VA. 
+																	The total amount payable is 182471. 
+																	A veteran with a 50 disability rating however receives only 77000. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	These benefits vary from 117 to 2527 per month as of 2008 contingent upon the level of disability. 
+																	A retiree with a pension of 3000 a month and a 100 combat related disability would waive all of his retirement on his VA claim form and receive 3000 VA compensation and after approval for CRSC receive 3000 as tax free CRSC. 
+																	The rating and compensation criteria fall under SMC S. 
+																	2014 was the first year the VA has included amounts above a flat dollar amount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To find the amount payable to a 70 disabled Veteran with a spouse and four children one of whom is over 18 and attending school take the 70 rate for a veteran with a spouse and 3 children 164271 and add the rate for one school child 18200. 
+																	Published on November 21st 2019 The exact amount of Individual Unemployability pay you receive depends on how many dependents you have. 
+																	Even though it is easy to come up with the correct dollar amount however the numbers may not always make sense. 
+																	Our VA Disability Chart details the current monetary amounts give for a 100 VA Disability Rating. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If our prediction holds true this means Disabled Veterans with a current VA disability rating of 10 of higher would receive a 11 increase in their VA disability pay rate for calendar year 2021. 
+																	30 60 With Children. 
+																	Add 11100 additional for AA spouse to the rate for a 70 veteran with dependency code 12 169617. 
+																	Longevity earned retired pay is normally calculated at 25 per year of active duty service multiplied by your high three base pay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How VLG Can Help. 
+																	A 100 disability compensation rating is the maximum permitted by law. 
+																	Many veterans with a 100 VA Disability Rating also qualify for additional. 
+																	100 disability rating in US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With spouse and 2 parents no children 70 disability rating in US. 
+																	The total amount payable is 195017. 
+																	Amounts Paid For Disability Compensation Veterans are eligible for monthly disability compensation that is tax-free if they have a disability rating allocated by the VA for a service-related condition Determining disability rating. 
+																	This change wont make a huge. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	90 disability rating in US. 
+																	If the veteran is currently at a 100 va disability rate and VA finds that the veteran is housebound they will pay the veteran at the 100 rate with an additional 375 per month. 
+																	If there is a spouse and child monthly compensation is 340604. 
+																	For each additional child under age 18 add another 8605. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/65/b8/5f65b85eff7748ea505ca65f3644f018.jpg" data-lightbox="roadtrip" data-title="Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com Veterans Benefits Va Disability Benefits Disabled Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/65/b8/5f65b85eff7748ea505ca65f3644f018.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1MC_53jqgtEbNe7E-z0Ye7Z8gKrWNmkbuQA';" alt="Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com Veterans Benefits Va Disability Benefits Disabled Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Additional 100 Disabled Veteran Benefits For Permanently Disabled Veterans Affairs And Veterans News From Hadit Com Veterans Benefits Va Disability Benefits Disabled Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/va-pay-chart-infographic-2021-scaled.jpg" data-lightbox="roadtrip" data-title="2021 Va Disability Pay Chart And Rates Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/va-pay-chart-infographic-2021-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK_ynurvbiK5HsRZ956QQNdDhcvEP59sP3ug';" alt="2021 Va Disability Pay Chart And Rates Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Va Disability Pay Chart And Rates Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/CCKInfographic-What-a-70-PTSD-Disability-Rating-Means.png" data-lightbox="roadtrip" data-title="70 Disability Rating For Ptsd Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/CCKInfographic-What-a-70-PTSD-Disability-Rating-Means.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIU89CfazSCRRDi20m4gUtptEuF3PG3eV9_w';" alt="70 Disability Rating For Ptsd Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">70 Disability Rating For Ptsd Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/2d/34/c32d344f313a607c84ff8d5717841629.png" data-lightbox="roadtrip" data-title="Pin On Va Tips Info">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/2d/34/c32d344f313a607c84ff8d5717841629.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYYIcGPN3YSf0OKwuJNFk4QvFS0W-Q61uDYw';" alt="Pin On Va Tips Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va Tips Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/General-Ratings-for-Mental-Health-Disorders-1024x627-1.jpg" data-lightbox="roadtrip" data-title="Va Disability Rating For Depression And Anxiety Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/General-Ratings-for-Mental-Health-Disorders-1024x627-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGzmoldqhXpSgL1P1RQK1L5beeI0ABm4eHZg';" alt="Va Disability Rating For Depression And Anxiety Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Rating For Depression And Anxiety Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://embed-fastly.wistia.com/deliveries/dbcfa36acbd5abec4aba39ff138e906d.webp?image_crop_resized=1280x720" data-lightbox="roadtrip" data-title="How To Increase Va Disability Rating From 70 To 100 Cck Law">
+											<img class="card-img v-image ads-img " src="https://embed-fastly.wistia.com/deliveries/dbcfa36acbd5abec4aba39ff138e906d.webp?image_crop_resized=1280x720" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbYREWau5KfVyX3ytvNU1X4p77XnOmlkDO0g';" alt="How To Increase Va Disability Rating From 70 To 100 Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Increase Va Disability Rating From 70 To 100 Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/CCKInfographic-Getting-VA-Disability-for-PTSD-scaled.jpg" data-lightbox="roadtrip" data-title="Getting Va Disability Benefits For Ptsd Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/CCKInfographic-Getting-VA-Disability-for-PTSD-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfxnJG10h6Lb2TGyLk85qNCNgWn8VyrMQMQ';" alt="Getting Va Disability Benefits For Ptsd Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting Va Disability Benefits For Ptsd Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/a0/0d/82a00d3acfaec6e5f261c300489b8956.png" data-lightbox="roadtrip" data-title="Steps To Apply For Veterans Benefits From The Va Veterans Benefits Military Benefits Va Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/a0/0d/82a00d3acfaec6e5f261c300489b8956.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQ1r5MIMvV1_cvKzXA4Qcv8csm6UsFlMmoA';" alt="Steps To Apply For Veterans Benefits From The Va Veterans Benefits Military Benefits Va Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Steps To Apply For Veterans Benefits From The Va Veterans Benefits Military Benefits Va Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/07/Differences-Between-Military-VA-Disability-Ratings.jpg" data-lightbox="roadtrip" data-title="Differences Between Military Va Disability Ratings Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/07/Differences-Between-Military-VA-Disability-Ratings.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaEaAMZYjFChCdhkbvL7eY3IWtu1uth4c1Dw';" alt="Differences Between Military Va Disability Ratings Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Differences Between Military Va Disability Ratings Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/b1/66/60b1667a706d62af72cddd69076865dc.png" data-lightbox="roadtrip" data-title="Veterans Disability Compensation A Beginner S Guide Military Dollar In 2020 Veteran Disabled Veterans Benefits Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/b1/66/60b1667a706d62af72cddd69076865dc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0NzlOC5i5zrfNF4S3aDHtjnoTNIGBQ1O63Q';" alt="Veterans Disability Compensation A Beginner S Guide Military Dollar In 2020 Veteran Disabled Veterans Benefits Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Disability Compensation A Beginner S Guide Military Dollar In 2020 Veteran Disabled Veterans Benefits Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/disability-ratings-higher-100-percent-768x512.jpg" data-lightbox="roadtrip" data-title="Va Disability Ratings Higher Than 100 Percent Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/disability-ratings-higher-100-percent-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVV2faQ7nUQwcdzVsKjvMNvAqurRsJfcTZzw';" alt="Va Disability Ratings Higher Than 100 Percent Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings Higher Than 100 Percent Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/4b/87/3f/4b873fe60c58d948c8c657cea339cbf4.jpg" data-lightbox="roadtrip" data-title="Actual Va Raters Reveal 3 Secret Va Claim Tips Youtube Va Disability Disabled Veterans Benefits Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/4b/87/3f/4b873fe60c58d948c8c657cea339cbf4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_09qSmvY5byeZPtQnXjCA273phhinyrLspA';" alt="Actual Va Raters Reveal 3 Secret Va Claim Tips Youtube Va Disability Disabled Veterans Benefits Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Actual Va Raters Reveal 3 Secret Va Claim Tips Youtube Va Disability Disabled Veterans Benefits Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/d8/27/3ad8273abecec0c8c9b79b3333584ccd.png" data-lightbox="roadtrip" data-title="223 7 Most Important Va Forms And How To Use Them Youtube In 2020 Va Disability Disability Disabled Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/d8/27/3ad8273abecec0c8c9b79b3333584ccd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNdrJofnPkeKVkF2L-jVmjk4SFzI6tf7z9bw';" alt="223 7 Most Important Va Forms And How To Use Them Youtube In 2020 Va Disability Disability Disabled Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">223 7 Most Important Va Forms And How To Use Them Youtube In 2020 Va Disability Disability Disabled Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-special-monthly-compensation-smc-for-serious-disabilities.html">Va Special Monthly Compensation Smc For Serious Disabilities</a></li>
+													<li class="list-group-item"><a href="/va-specially-adapted-housing-form.html">Va Specially Adapted Housing Form</a></li>
+													<li class="list-group-item"><a href="/va-special-monthly-compensation-for-erectile-dysfunction.html">Va Special Monthly Compensation For Erectile Dysfunction</a></li>
+													<li class="list-group-item"><a href="/va-special-monthly-compensation-eligibility.html">Va Special Monthly Compensation Eligibility</a></li>
+													<li class="list-group-item"><a href="/va-smc.html">Va Smc</a></li>
+													<li class="list-group-item"><a href="/va-snap-benefits-for-october-2020.html">Va Snap Benefits For October 2020</a></li>
+													<li class="list-group-item"><a href="/va-special-monthly-compensation-ed.html">Va Special Monthly Compensation Ed</a></li>
+													<li class="list-group-item"><a href="/va-special-compensation-rate-table.html">Va Special Compensation Rate Table</a></li>
+													<li class="list-group-item"><a href="/va-special-monthly-compensation-amount.html">Va Special Monthly Compensation Amount</a></li>
+													<li class="list-group-item"><a href="/va-specially-adapted-housing-sah-grant.html">Va Specially Adapted Housing Sah Grant</a></li>
+													<li class="list-group-item"><a href="/va-social-security-card-application.html">Va Social Security Card Application</a></li>
+													<li class="list-group-item"><a href="/va-special-monthly-compensation-calculator.html">Va Special Monthly Compensation Calculator</a></li>
+													<li class="list-group-item"><a href="/va-social-security-income-documentation-requirements.html">Va Social Security Income Documentation Requirements</a></li>
+													<li class="list-group-item"><a href="/va-special-compensation.html">Va Special Compensation</a></li>
+													<li class="list-group-item"><a href="/va-special-salary-rates-2020.html">Va Special Salary Rates 2020</a></li>
+													<li class="list-group-item"><a href="/va-special-monthly-compensation-levels.html">Va Special Monthly Compensation Levels</a></li>
+													<li class="list-group-item"><a href="/va-special-monthly-compensation-qualifications.html">Va Special Monthly Compensation Qualifications</a></li>
+													<li class="list-group-item"><a href="/va-special-compensation-category-s.html">Va Special Compensation Category S</a></li>
+													<li class="list-group-item"><a href="/va-special-monthly-compensation-form.html">Va Special Monthly Compensation Form</a></li>
+													<li class="list-group-item"><a href="/va-special-monthly-compensation-program.html">Va Special Monthly Compensation Program</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

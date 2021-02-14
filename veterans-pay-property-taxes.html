@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Veterans Pay Property Taxes - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Veterans Pay Property Taxes",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/78/54/d2/7854d2ef67990a9c512ac1834af66d14.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=veterans+pay+property+taxes",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Veterans Pay Property Taxes</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Available only on residential property of a veteran who served during the Cold War period. Authorized by Real Property Tax Law section 458-b. Exemptions may apply to school district taxes. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/what-is-the-hardest-hike-in-virginia.html">what is the hardest hike in virginia</a>
+											<a class="badge badge-success" href="/what-is-the-max-the-gi-bill-will-pay.html">what is the max the gi bill will pay</a>
+											<a class="badge badge-dark" href="/what-is-the-lowest-va-refinance-rate.html">what is the lowest va refinance rate</a>
+											<a class="badge badge-warning" href="/what-is-the-largest-military-plane-in-the-world.html">what is the largest military plane in the world</a>
+											<a class="badge badge-info" href="/what-is-the-hardest-army-basic-training-location.html">what is the hardest army basic training location</a>
+											<a class="badge badge-primary" href="/what-is-the-interest-rate-for-veterans.html">what is the interest rate for veterans</a>
+											<a class="badge badge-success" href="/what-is-the-largest-us-military-base-in-the-world.html">what is the largest us military base in the world</a>
+											<a class="badge badge-primary" href="/what-is-the-highest-va-disability-rating-for-back-pain.html">what is the highest va disability rating for back pain</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the right blog.  Our site provides you with hints for seeing the highest quality video and image content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you view.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/6c/ab/e66cabaf70fa95bdfc34a6cedc37cfb9.png" data-lightbox="roadtrip" data-title="All Veteran Property Tax Exemptions By State And Disability Rating Military Benefits Veteran Property Tax">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/6c/ab/e66cabaf70fa95bdfc34a6cedc37cfb9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa5f0oVSeTGjWpP-Bb2BAF7IyxZgH8-2XYKg';" alt="All Veteran Property Tax Exemptions By State And Disability Rating Military Benefits Veteran Property Tax">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Veteran Property Tax Exemptions By State And Disability Rating Military Benefits Veteran Property Tax</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/d4/68/c2d468f4bb3c56663323125feb0297ca.jpg" data-lightbox="roadtrip" data-title="Dav Oklahoma 100 Disabled American Veterans Pay No Property Tax Ad Valorem Tax Tax Emption For Sal American Veterans Financial Assistance Disabled Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/d4/68/c2d468f4bb3c56663323125feb0297ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV7KGnGKt20GvKiraTJzmKpy2nYkoK2mjG9w';" alt="Dav Oklahoma 100 Disabled American Veterans Pay No Property Tax Ad Valorem Tax Tax Emption For Sal American Veterans Financial Assistance Disabled Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dav Oklahoma 100 Disabled American Veterans Pay No Property Tax Ad Valorem Tax Tax Emption For Sal American Veterans Financial Assistance Disabled Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/a9/bc/7aa9bcefdf9dde3e88e37746bf3943dd.png" data-lightbox="roadtrip" data-title="Tax Help For Area Veterans Money Debt Tax Irs Help Information Informative Infographics Tax Help Debt Relief Programs Debt Problem">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/a9/bc/7aa9bcefdf9dde3e88e37746bf3943dd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnpn39BnnJKaE-WLSO4Gc616_DddCI2Cyww';" alt="Tax Help For Area Veterans Money Debt Tax Irs Help Information Informative Infographics Tax Help Debt Relief Programs Debt Problem">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tax Help For Area Veterans Money Debt Tax Irs Help Information Informative Infographics Tax Help Debt Relief Programs Debt Problem</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/16/b3/6f16b30ec8d5744fe3d7b2f1840d19cb.png" data-lightbox="roadtrip" data-title="All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Tax Exemption Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/16/b3/6f16b30ec8d5744fe3d7b2f1840d19cb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQBP1Jjw3JQaLeaX9UlNNU14ZErKWQd0pfVw';" alt="All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Tax Exemption Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All Veteran Property Tax Exemptions By State And Disability Rating Property Tax Tax Exemption Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/41/11/b14111f10a888196edae0bef506ba43a.png" data-lightbox="roadtrip" data-title="Real Wealth Network California S 1 Real Estate Club Property Tax Estate Tax Property">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/41/11/b14111f10a888196edae0bef506ba43a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoAyWdq8AlI8n6SMnXoo2kctt9LOQ4s19Kg';" alt="Real Wealth Network California S 1 Real Estate Club Property Tax Estate Tax Property">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Real Wealth Network California S 1 Real Estate Club Property Tax Estate Tax Property</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2f/3c/d7/2f3cd78c8f19f71102a081b1d37b5523.jpg" data-lightbox="roadtrip" data-title="Pin On Housing Home Ownership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2f/3c/d7/2f3cd78c8f19f71102a081b1d37b5523.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQt9xSEOBigQzAqaLQQkDQIMPm8fs8serkQ';" alt="Pin On Housing Home Ownership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Housing Home Ownership</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/40/c8/e8/40c8e8f80fdc1db5bf9a38cc4fe0a073.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQt9xSEOBigQzAqaLQQkDQIMPm8fs8serkQ';" alt="Pin On Housing Home Ownership">
+										<div class="card-body">
+						<h3 class="h5"><b>An increase in the veterans percentage of disability from the Department of Veterans Affairs which may include a retroactive determination or the combat-disabled veteran applying for and being granted Combat-Related Special Compensation after an award for Concurrent Retirement and Disability.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Veterans pay property taxes</strong>. 
+								
+																	Surviving spouses of veterans who are killed in the line of duty will receive additional property tax relief to assist families in maintaining their homes. 
+																	There are a variety of other property tax benefits but one of the important ones is the Florida Homestead Tax Exemption For Veterans disabled or not that exempts all property taxes on any veteran-owned primary residence. 
+																	Up to 15000 of military basic pay received during the taxable year may be exempted from Virginia income tax. 
+																	Counties cities towns villages and school districts have the option to offer this exemption to qualified veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans with a full 100 disability rating are fully exempt from property taxes. 
+																	A 100 total and permanent disability rating from being a prisoner of war. 
+																	Veterans served in the armed forces in order for America to remain the land of the free it doesnt mean their land is tax free. 
+																	The program offers a 50 to 100 reduction in property taxes for 100 disabled veterans earning 53955 or less if single and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are also provisions made for qualifying surviving spouses of the veteran for the same type of property tax benefit. 
+																	50- 69 percent may receive a 10000 property tax exemption. 
+																	There are three different property tax exemptions available to Veterans who have served in the United States Armed Forces. 
+																	30- 49 percent may receive a 7500 property tax exemption. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Must own and use property as primary residence. 
+																	Real Estate Tax Exemption Any honorably discharged Pennsylvania resident veteran with a 100 VA disability and wartime service may be exempt from property taxes on their home. 
+																	Disabled veterans may be eligible to claim a federal tax refund based on. 
+																	Veterans have to pay property taxes on their homes though most states allows for an exemption of some of the taxes owed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Service pay for non-resident military personnel on active duty in South Carolina who are legal residents of other states. 
+																	A service-connected permanent and total disability or disabilities as determined by the United States Department of Veterans Affairs. 
+																	Veterans or surviving spouses of veterans with a service-connected disability of 70 or more will be exempt from paying property taxes on their primary residences 100 reduction in EAV. 
+																	In Texas a veteran with a disability rating of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For more information on the changes to the Property Tax Relief Program read. 
+																	70- 100 percent may receive a 12000 property tax exemption. 
+																	Check with your assessor or clerk to see whether the Cold War veterans exemption is offered. 
+																	Veterans Exemption The California Constitution provides a 4000 real property eg a home or personal property eg a boat exemption for honorably discharged veterans or the spouse or pensioned-parent of a deceased honorably discharged veteran. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Provides a partial exemption. 
+																	Veterans can receive one of the three following exemptions. 
+																	Montana has a property tax relief program for disabled veterans. 
+																	The exemption applies to county city town and village taxes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For every 100 of income over 15000 the maximum subtraction is. 
+																	A disabled veteran in Florida may receive a property tax discount on a primary residence based on the amount of disability the applicant is VA-rated at. 
+																	Income received for service in the National Guard or the Reserves for customary annual training weekend drills and other inactive duty training is generally exempt. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/54/d2/7854d2ef67990a9c512ac1834af66d14.jpg" data-lightbox="roadtrip" data-title="Instagram Photo By Pro Spine Sport May 30 2016 At 12 26am Utc American Flag Overseas Travel American Flags Flying">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/54/d2/7854d2ef67990a9c512ac1834af66d14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_c97xLebqAVOtv38xz_cQ9_VT8ZsAvw_GJg';" alt="Instagram Photo By Pro Spine Sport May 30 2016 At 12 26am Utc American Flag Overseas Travel American Flags Flying">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instagram Photo By Pro Spine Sport May 30 2016 At 12 26am Utc American Flag Overseas Travel American Flags Flying</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c4/af/cc/c4afcc02a180af08dbffbb6864d3c3f4.jpg" data-lightbox="roadtrip" data-title="Disabled Veterans Property Tax Exemptions By State Veterans Affairs And Veterans News From Hadit Com Disabled Veterans Disability Property Tax">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c4/af/cc/c4afcc02a180af08dbffbb6864d3c3f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP20h70wHTW1QubX84hrvojmOyXGfVZgbq7Q';" alt="Disabled Veterans Property Tax Exemptions By State Veterans Affairs And Veterans News From Hadit Com Disabled Veterans Disability Property Tax">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Disabled Veterans Property Tax Exemptions By State Veterans Affairs And Veterans News From Hadit Com Disabled Veterans Disability Property Tax</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/20/7a/2a207a3410fcc36fa5469c17aba3f60d.jpg" data-lightbox="roadtrip" data-title="Pin On Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/20/7a/2a207a3410fcc36fa5469c17aba3f60d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfvOF3_rsluOJYcpOXTROKXsmPb7_0wnc4Lg';" alt="Pin On Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/95/59/f8/9559f84a6e329308b3b75d499c3af5fd.jpg" data-lightbox="roadtrip" data-title="The Iowa Finance Authority Ifa Offers Veteran Friendly Home Loan Programs With Lower Interest Rates And Other Perks For Home Loans The Borrowers Loan Lenders">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/95/59/f8/9559f84a6e329308b3b75d499c3af5fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPmbL1-oQNKmEUX_27n3uTVTqH-4vnAweSzQ';" alt="The Iowa Finance Authority Ifa Offers Veteran Friendly Home Loan Programs With Lower Interest Rates And Other Perks For Home Loans The Borrowers Loan Lenders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Iowa Finance Authority Ifa Offers Veteran Friendly Home Loan Programs With Lower Interest Rates And Other Perks For Home Loans The Borrowers Loan Lenders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/8d/1f/358d1f4244a385ebc943e8a9b2d9d6d5.png" data-lightbox="roadtrip" data-title="There Are Three Different Property Tax Exemptions Available To Veterans Who Have Served In The United States Armed Forces T In 2020 Property Tax Tax Exemption Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/8d/1f/358d1f4244a385ebc943e8a9b2d9d6d5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66UWbND9SW5ydXFLqpoTmCIu9sZOeWDi2eQ';" alt="There Are Three Different Property Tax Exemptions Available To Veterans Who Have Served In The United States Armed Forces T In 2020 Property Tax Tax Exemption Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Are Three Different Property Tax Exemptions Available To Veterans Who Have Served In The United States Armed Forces T In 2020 Property Tax Tax Exemption Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/c8/e8/40c8e8f80fdc1db5bf9a38cc4fe0a073.png" data-lightbox="roadtrip" data-title="Texas Property Tax Discounts For Disabled Veterans Property Tax Veterans Administration Tax Exemption">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/c8/e8/40c8e8f80fdc1db5bf9a38cc4fe0a073.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeTVnKfytNQa0H1Df4fri-plHXl9xZbIQ4g';" alt="Texas Property Tax Discounts For Disabled Veterans Property Tax Veterans Administration Tax Exemption">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Property Tax Discounts For Disabled Veterans Property Tax Veterans Administration Tax Exemption</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/ef/fc/cdeffc512e444082b533125d18d3abef.jpg" data-lightbox="roadtrip" data-title="Are You A Veteran In Needs To Help With Disability Claim Veteran Veterans Benefits Estate Planning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/ef/fc/cdeffc512e444082b533125d18d3abef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMmLOFDCfEObEuQDCS8U8Abd-El6vTfakOAA';" alt="Are You A Veteran In Needs To Help With Disability Claim Veteran Veterans Benefits Estate Planning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You A Veteran In Needs To Help With Disability Claim Veteran Veterans Benefits Estate Planning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/d6/a8/07d6a83feb1f38504198256043faa276.jpg" data-lightbox="roadtrip" data-title="As A Military Spouse Tax Rules For Civilians Can Seem Complex After Your Partner Has Spent Time In The Servic Tax Preparation Better Money Habits Money Habits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/d6/a8/07d6a83feb1f38504198256043faa276.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfGaUdVhhfh8cl6_zhf1aeJDpQH_pIDB_MPQ';" alt="As A Military Spouse Tax Rules For Civilians Can Seem Complex After Your Partner Has Spent Time In The Servic Tax Preparation Better Money Habits Money Habits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">As A Military Spouse Tax Rules For Civilians Can Seem Complex After Your Partner Has Spent Time In The Servic Tax Preparation Better Money Habits Money Habits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/49/e2/5f49e2b840831777f8caf5fc4e6a4494.png" data-lightbox="roadtrip" data-title="The Benefits To Having An Agent Va Homebuyers Home Buying Home Buying Tips New Homeowner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/49/e2/5f49e2b840831777f8caf5fc4e6a4494.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0sS369ZSc_sriEl1eF_djHlgRjEOXa2q5gw';" alt="The Benefits To Having An Agent Va Homebuyers Home Buying Home Buying Tips New Homeowner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Benefits To Having An Agent Va Homebuyers Home Buying Home Buying Tips New Homeowner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/0b/c6/950bc62191b55e25c92c72a47bc48221.png" data-lightbox="roadtrip" data-title="States With The Highest And Lowest Property Taxes Homes Com Property Tax States State Tax">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/0b/c6/950bc62191b55e25c92c72a47bc48221.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYrc3KaU-XLT8wssM23gywEonrksK4u3YpfA';" alt="States With The Highest And Lowest Property Taxes Homes Com Property Tax States State Tax">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">States With The Highest And Lowest Property Taxes Homes Com Property Tax States State Tax</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/bc/29/cabc29306621d76cafde9b8ba6ac5ce7.jpg" data-lightbox="roadtrip" data-title="Va Loan Calculator For Pennsylvania Va Loan Calculator Mortgage Loans Loan Calculator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/bc/29/cabc29306621d76cafde9b8ba6ac5ce7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aL6_Ly64hy3AYBFc18tQNIZeprKQOgWZ0g';" alt="Va Loan Calculator For Pennsylvania Va Loan Calculator Mortgage Loans Loan Calculator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Loan Calculator For Pennsylvania Va Loan Calculator Mortgage Loans Loan Calculator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/e7/ba/dbe7bab0a99767a91085bc7e3ca29bda.png" data-lightbox="roadtrip" data-title="Harford County Property Tax Credit Do You Qualify Find Out Here Http Www Tarawoodfin Com Blog Harford County Tax Tax Credits Harford County Estate Tax">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/e7/ba/dbe7bab0a99767a91085bc7e3ca29bda.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxiHcLDPVEYQRP8zrzCps12ZtRfj6i0STEw';" alt="Harford County Property Tax Credit Do You Qualify Find Out Here Http Www Tarawoodfin Com Blog Harford County Tax Tax Credits Harford County Estate Tax">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Harford County Property Tax Credit Do You Qualify Find Out Here Http Www Tarawoodfin Com Blog Harford County Tax Tax Credits Harford County Estate Tax</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e3/ee/4e/e3ee4e247469ccc3f4e3c230da944e70.jpg" data-lightbox="roadtrip" data-title="How To Find Small Business Grants For Veterans Grants For Veterans Business Grants Business Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e3/ee/4e/e3ee4e247469ccc3f4e3c230da944e70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrfokRQvzgCZkUNMxMpaKpSVD26SBYGAd1hQ';" alt="How To Find Small Business Grants For Veterans Grants For Veterans Business Grants Business Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Find Small Business Grants For Veterans Grants For Veterans Business Grants Business Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/ca/d1/8bcad10e3108a23ee7ba6361f725b34b.jpg" data-lightbox="roadtrip" data-title="Our Free Home Buying Guide For Veterans Is Now Available Online Navigating The Crazy World Of Va Credit Repair Credit Repair Companies Credit Repair Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/ca/d1/8bcad10e3108a23ee7ba6361f725b34b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq3U2k2m98UANClrUFjkQuQn4-jGROq-gS_Q';" alt="Our Free Home Buying Guide For Veterans Is Now Available Online Navigating The Crazy World Of Va Credit Repair Credit Repair Companies Credit Repair Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Free Home Buying Guide For Veterans Is Now Available Online Navigating The Crazy World Of Va Credit Repair Credit Repair Companies Credit Repair Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/b1/66/60b1667a706d62af72cddd69076865dc.png" data-lightbox="roadtrip" data-title="Veterans Disability Compensation A Beginner S Guide Military Dollar In 2020 Veteran Disabled Veterans Benefits Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/b1/66/60b1667a706d62af72cddd69076865dc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0NzlOC5i5zrfNF4S3aDHtjnoTNIGBQ1O63Q';" alt="Veterans Disability Compensation A Beginner S Guide Military Dollar In 2020 Veteran Disabled Veterans Benefits Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Disability Compensation A Beginner S Guide Military Dollar In 2020 Veteran Disabled Veterans Benefits Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veterans-legal-assistance-california.html">Veterans Legal Assistance California</a></li>
+													<li class="list-group-item"><a href="/veterans-pay-for-tricare.html">Veterans Pay For Tricare</a></li>
+													<li class="list-group-item"><a href="/veterans-pay-chart.html">Veterans Pay Chart</a></li>
+													<li class="list-group-item"><a href="/veterans-insurance-ny.html">Veterans Insurance Ny</a></li>
+													<li class="list-group-item"><a href="/veterans-lawyers-orlando-fl.html">Veterans Lawyers Orlando Fl</a></li>
+													<li class="list-group-item"><a href="/veterans-mental-health-crisis-line.html">Veterans Mental Health Crisis Line</a></li>
+													<li class="list-group-item"><a href="/veterans-preference-lawsuit.html">Veterans Preference Lawsuit</a></li>
+													<li class="list-group-item"><a href="/veterans-payday-2019.html">Veterans Payday 2019</a></li>
+													<li class="list-group-item"><a href="/veterans-pay-for-funeral.html">Veterans Pay For Funeral</a></li>
+													<li class="list-group-item"><a href="/veterans-job-training-programs.html">Veterans Job Training Programs</a></li>
+													<li class="list-group-item"><a href="/veterans-lawyer-referral-service.html">Veterans Lawyer Referral Service</a></li>
+													<li class="list-group-item"><a href="/veterans-pay-day-2021.html">Veterans Pay Day 2021</a></li>
+													<li class="list-group-item"><a href="/veterans-legal-assistance-pennsylvania.html">Veterans Legal Assistance Pennsylvania</a></li>
+													<li class="list-group-item"><a href="/veterans-pension-qualifications.html">Veterans Pension Qualifications</a></li>
+													<li class="list-group-item"><a href="/veterans-lawyers.html">Veterans Lawyers</a></li>
+													<li class="list-group-item"><a href="/veterans-lawyer-charlotte-nc.html">Veterans Lawyer Charlotte Nc</a></li>
+													<li class="list-group-item"><a href="/veterans-lawyers-san-diego.html">Veterans Lawyers San Diego</a></li>
+													<li class="list-group-item"><a href="/veterans-ptsd-and-yoga.html">Veterans Ptsd And Yoga</a></li>
+													<li class="list-group-item"><a href="/veterans-pay-raise-for-2021.html">Veterans Pay Raise For 2021</a></li>
+													<li class="list-group-item"><a href="/veterans-nurse-pay-scale.html">Veterans Nurse Pay Scale</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

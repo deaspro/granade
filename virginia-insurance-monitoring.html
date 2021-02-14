@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Insurance Monitoring - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Insurance Monitoring",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/32/9d/bb/329dbb0d5cbbab1bd5c9161f51e736e1.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+insurance+monitoring",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Insurance Monitoring</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Electronic Motor Vehicle Liability Insurance Reporting is the cornerstone of all monitoring methods. Published on Jan 21 2021. Electronic Motor Vehicle Liability Insurance Reporting. <br>				
+			</p>
+										<a class="badge badge-warning" href="/vicksburg-national-military-park-closed.html">vicksburg national military park closed</a>
+											<a class="badge badge-dark" href="/vicksburg-national-military-park-dog-friendly.html">vicksburg national military park dog friendly</a>
+											<a class="badge badge-secondary" href="/veterans-ptsd-unemployment.html">veterans ptsd unemployment</a>
+											<a class="badge badge-primary" href="/veterans-vocational-rehab-program.html">veterans vocational rehab program</a>
+											<a class="badge badge-success" href="/vets-helpline.html">vets helpline</a>
+											<a class="badge badge-dark" href="/veterans-widows-benefits-world-war-ii.html">veterans widows benefits world war ii</a>
+											<a class="badge badge-success" href="/veterans-service-connected-benefits.html">veterans service connected benefits</a>
+											<a class="badge badge-danger" href="/veterans-united-pay-closing-costs.html">veterans united pay closing costs</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the right site.  Our website gives you hints for viewing the highest quality video and image content, search and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie that you see.  It is also possible to bring about supporting this website by sharing videos and images that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/f4/1b/6cf41b51275da5aef6659b5eb60b1b76.jpg" data-lightbox="roadtrip" data-title="Have You Ever Wondered How Much Money You Could Save On Insurance By Installing Security Cameras Our Security Camera Ex Security Camera Security Installation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/f4/1b/6cf41b51275da5aef6659b5eb60b1b76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyZIVxibKlDUempqfFQ82xfy7KWD4PCXvIIw';" alt="Have You Ever Wondered How Much Money You Could Save On Insurance By Installing Security Cameras Our Security Camera Ex Security Camera Security Installation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Have You Ever Wondered How Much Money You Could Save On Insurance By Installing Security Cameras Our Security Camera Ex Security Camera Security Installation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/19/f7/ae19f71ecadd2f316b6f4d671654dc88.png" data-lightbox="roadtrip" data-title="Find Great Price And Friendly Customer Service For Homeowners Insurance In West Virginia In 2020 Home And Auto Insurance Home Insurance Homeowners Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/19/f7/ae19f71ecadd2f316b6f4d671654dc88.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6gcIDmwomSwfJ6vE8EZJlzxyLMvXrzsebw';" alt="Find Great Price And Friendly Customer Service For Homeowners Insurance In West Virginia In 2020 Home And Auto Insurance Home Insurance Homeowners Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Find Great Price And Friendly Customer Service For Homeowners Insurance In West Virginia In 2020 Home And Auto Insurance Home Insurance Homeowners Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/ce/6a/3fce6aa7f288267458196078a590591b.jpg" data-lightbox="roadtrip" data-title="Offer Employees Peace Of Mind With Coverage To Protect Their Physical And Financial Health When The Unexpec Financial Health Dental Coverage Personal Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/ce/6a/3fce6aa7f288267458196078a590591b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYi5zBsf1tyDqnfpb23VuXl-FFODoKo-mQnw';" alt="Offer Employees Peace Of Mind With Coverage To Protect Their Physical And Financial Health When The Unexpec Financial Health Dental Coverage Personal Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Offer Employees Peace Of Mind With Coverage To Protect Their Physical And Financial Health When The Unexpec Financial Health Dental Coverage Personal Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/9d/bb/329dbb0d5cbbab1bd5c9161f51e736e1.png" data-lightbox="roadtrip" data-title="75 Percent Of Small Businesses Have No Cyber Risk Insurance Small Business Trends Small Business Trends Small Business Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/9d/bb/329dbb0d5cbbab1bd5c9161f51e736e1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrxn1BXhxukPNSw4ioVXNrQ25pxz6NR-LC9w';" alt="75 Percent Of Small Businesses Have No Cyber Risk Insurance Small Business Trends Small Business Trends Small Business Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">75 Percent Of Small Businesses Have No Cyber Risk Insurance Small Business Trends Small Business Trends Small Business Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/cd/eb/39cdebe801fefd7ae463034ac9abcf11.jpg" data-lightbox="roadtrip" data-title="Free Credit Score And Free Monitoring Ad Free Credit Score Debt Management Credit Score">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/cd/eb/39cdebe801fefd7ae463034ac9abcf11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA1dE8zv0KALYr73jJH26RPfNFrpkTZcgq9Q';" alt="Free Credit Score And Free Monitoring Ad Free Credit Score Debt Management Credit Score">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Credit Score And Free Monitoring Ad Free Credit Score Debt Management Credit Score</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/90/f5/da90f5203195537d353eb8a32361269e.png" data-lightbox="roadtrip" data-title="Insurance Advice Insurancetips Best Fish Oil Cheap Pet Insurance Medical Alert System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/90/f5/da90f5203195537d353eb8a32361269e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5p2hwXQWHXczKKYsu7bYfHxrBX8HUwZrlbw';" alt="Insurance Advice Insurancetips Best Fish Oil Cheap Pet Insurance Medical Alert System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Insurance Advice Insurancetips Best Fish Oil Cheap Pet Insurance Medical Alert System</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a0/eb/a9/a0eba939f15fcf673eabdcafa9ac7322.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5p2hwXQWHXczKKYsu7bYfHxrBX8HUwZrlbw';" alt="Insurance Advice Insurancetips Best Fish Oil Cheap Pet Insurance Medical Alert System">
+										<div class="card-body">
+						<h3 class="h5"><b>This is the cornerstone of all monitoring methods.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia insurance monitoring</strong>. 
+								
+																	West Virginia bank is first to fail since onset of coronavirus. 
+																	A West Virginia bank was closed by its state regulator Friday afternoon becoming the first failure since coronavirus was declared a pandemic. 
+																	The state of Virginia uses an electronic insurance verification program to monitor which drivers carry insurance. 
+																	The Electronic Motor Vehicle Insurance Program combined with DMVs three other highly successful insurance monitoring methods constitute a highly effective insurance verification program one in which the citizens of Virginia can be proud. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Published on 1512 GMT. 
+																	Insurance Monitoring Program DMV is responsible for making sure that all owners of vehicles with a valid registration comply with the Virginia laws on insurance requirements. 
+																	If the department of motor vehicles hears youve been driving without coverage youll receive a notification. 
+																	Regulations Related to Private Security Services Training Schools 6VAC20-173. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to the Company Appointment Billing Inquiry and Administrative Fee Portal for the Bureau of Insurance. 
+																	Get by Email RSS. 
+																	Electronic Motor Vehicle Liability Insurance Reporting is the cornerstone of all monitoring methods. 
+																	2021 will begin with several new laws in Virginia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CHESTERFIELD COURT HOUSE Va. 
+																	This information is required when insurance policies are canceled new policies are written and when there are additions to existing polices for motor vehicles registered in Virginia. 
+																	Insurance Monitoring Change screen shot. 
+																	Insurance Monitoring Change screen shot. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This information is required when insurance policies are canceled new policies are written and when there are additions to existing polices for motor vehicles registered in Virginia. 
+																	This information is required when insurance policies are canceled new policies are written and when there are additions to existing polices for motor vehicles registered in Virginia. 
+																	When registering a motor vehicle you must sign a statement on the registration application that you have liability insurance coverage for your motor vehicle. 
+																	The new year will begin with some new laws in Virginia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sports betting launches in Virginia. 
+																	Virginia lawmakers have taken new steps to expand the use of remote patient monitoring among the States residents with both the House and Senate unanimously passing bipartisan legislation ensuring that commercial health plans will cover remote patient monitoring services. 
+																	Police fatally shoot suspect after standoff in Virginia. 
+																	The motor vehicle Code of Virginia 462-7061 requires insurance companies authorized or licensed to do business in Virginia to furnish liability insurance information to DMV electronically. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The legislation HB 1970 and SB 1221 amends Virginias current telehealth commercial insurance coverage law Va. 
+																	Get by Email RSS. 
+																	Published on Dec 31 2020. 
+																	Regulations Related to Private Security Businesses 6VAC20-172. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The bank and. 
+																	Insurance Monitoring Verification screen shot. 
+																	Private Security Services Code - 91-138 - 91-150. 
+																	Get by Email RSS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Insurance Industry News Topics Virginia Media Directory. 
+																	West Virginia Universal Health Insurance News Monitoring Get by Email RSS Published on Jan 9 2021. 
+																	AP - A man who was wanted for violating a protective order was fatally shot by police in Virginia after. 
+																	Was appointed receiver for First State Bank in Barboursville. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The changes impact concealed handgun permits the use of your cell phone when driving the cost of insulin surprise medical bills and how independent. 
+																	The motor vehicle Code of Virginia 462-7061 requires insurance companies authorized or licensed to do business in Virginia to furnish liability insurance information to DMV electronically. 
+																	The motor vehicle Code of Virginia 462-7061 requires insurance companies authorized or licensed to do business in Virginia to furnish liability insurance information to DMV electronically. 
+																	The bill now heads to the office of Governor Ralph Northam for signature. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginias Monitoring Program Fights Doctor Shopping for Prescription Drugs July 1 2014 The fidgety patient stood a bit too close to the counter at DownHome Pharmacy in Roanoke Virginia. 
+																	Code 382-341816 to. 
+																	To gain access to the Company Appointment Billing Inquiry and Administrative Fee Portal please enter the companys NAIC ID and PIN assigned to your company by the Bureau of Insurance. 
+																	Virginia Insurance Industry News Topics Virginia Media Directory. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Federal Deposit Insurance Corp. 
+																	This information is required when insurance policies are canceled new policies are written and when there are additions to existing polices for motor vehicles registered in Virginia. 
+																	This is the cornerstone of all monitoring methods. 
+																	The motor vehicle Code of Virginia 462-7061 requires insurance companies authorized or licensed to do business in Virginia to furnish liability insurance information to DMV electronically. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Insurance News Monitoring. 
+																	Insurance Monitoring Verification screen shot. 
+																	Electronic Motor Vehicle Liability Insurance Reporting. 
+																	AP - Sports betting in Virginia is now a reality after the state lottery approved an online sportsbook. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/70/7e/e8707e7f378d26edeb65bf18a9c2621a.jpg" data-lightbox="roadtrip" data-title="Pin On All About Teens">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/70/7e/e8707e7f378d26edeb65bf18a9c2621a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwAXhudNevlgEWvbJAEcqz1I3BsvD1ejPJgw';" alt="Pin On All About Teens">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On All About Teens</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/96/22/20/962220836cc5f3c5ccbc47f0c6331c83.jpg" data-lightbox="roadtrip" data-title="There Are Two Very Different Main Components Of This Law Title I Of Fisa Requires That T In 2020 Wireless Home Security Systems Home Security Wireless Security System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/96/22/20/962220836cc5f3c5ccbc47f0c6331c83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzq6NxQODgXO0T2Wr1wY7uVdYy7DeHmI-q7w';" alt="There Are Two Very Different Main Components Of This Law Title I Of Fisa Requires That T In 2020 Wireless Home Security Systems Home Security Wireless Security System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">There Are Two Very Different Main Components Of This Law Title I Of Fisa Requires That T In 2020 Wireless Home Security Systems Home Security Wireless Security System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/de/b9/3bdeb9cbbd750bd15f790f957405b773.jpg" data-lightbox="roadtrip" data-title="Pin Auf Car And Automotive Infographics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/de/b9/3bdeb9cbbd750bd15f790f957405b773.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8YC-3vZ-wxaGn0vG7YjI5CRZTqXVCxzflAQ';" alt="Pin Auf Car And Automotive Infographics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Auf Car And Automotive Infographics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/96/5a/73965a816cd2034540264a5242dff297.jpg" data-lightbox="roadtrip" data-title="Certification Of Servicing For Self Insurers Florida Self Financial Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/96/5a/73965a816cd2034540264a5242dff297.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFl3ukmdJFljs4zudo6mwTbq3W_oJufhyAPw';" alt="Certification Of Servicing For Self Insurers Florida Self Financial Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Certification Of Servicing For Self Insurers Florida Self Financial Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/80/5b/3f805b1d824780f9a70d04417cbf41bc.png" data-lightbox="roadtrip" data-title="Pin On Browsegrades Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/80/5b/3f805b1d824780f9a70d04417cbf41bc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDj6UW5Cg6FkpOKy2OeDCa07yjUbOT8HPlBQ';" alt="Pin On Browsegrades Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Browsegrades Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/eb/a9/a0eba939f15fcf673eabdcafa9ac7322.png" data-lightbox="roadtrip" data-title="Waystar Acquires Upmc S Ovation Transaction Services Business For Enhanced Claims Monitor Healthcare Technology Services Business Health Information Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/eb/a9/a0eba939f15fcf673eabdcafa9ac7322.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsxgieDP45LhsOx8QeJvoRtkjeX1tpRabFyA';" alt="Waystar Acquires Upmc S Ovation Transaction Services Business For Enhanced Claims Monitor Healthcare Technology Services Business Health Information Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Waystar Acquires Upmc S Ovation Transaction Services Business For Enhanced Claims Monitor Healthcare Technology Services Business Health Information Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/cd/b3/39cdb3ca82566e7a8d4ebf27d52ea23c.jpg" data-lightbox="roadtrip" data-title="Print Manager Print Management Software Management Solutions Software">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/cd/b3/39cdb3ca82566e7a8d4ebf27d52ea23c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLv8UqBYOY6yRIxnZbh-xihoonDMj-idCWsw';" alt="Print Manager Print Management Software Management Solutions Software">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Print Manager Print Management Software Management Solutions Software</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/2e/e9/872ee968b3db6fbe49ab3ca2db320a69.png" data-lightbox="roadtrip" data-title="How To Start A Wordpress Blog On Hostgator In 2020 Online Jobs From Home Wordpress Blog Blog Setup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/2e/e9/872ee968b3db6fbe49ab3ca2db320a69.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiA7ZBlhFnusamT8R1bEUq6evVdZtn_bCkaw';" alt="How To Start A Wordpress Blog On Hostgator In 2020 Online Jobs From Home Wordpress Blog Blog Setup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Start A Wordpress Blog On Hostgator In 2020 Online Jobs From Home Wordpress Blog Blog Setup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/97/88/fd9788af65dfe05ac5d76270db861b10.png" data-lightbox="roadtrip" data-title="Physical Therapy Billing Services Physical Therapy Billing Company In Virginia Usa Physical Therapy Medical Billing Billing Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/97/88/fd9788af65dfe05ac5d76270db861b10.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBa8ucxE1PUcnkgLSCmIUgkraM3HtECoaKtA';" alt="Physical Therapy Billing Services Physical Therapy Billing Company In Virginia Usa Physical Therapy Medical Billing Billing Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Physical Therapy Billing Services Physical Therapy Billing Company In Virginia Usa Physical Therapy Medical Billing Billing Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/6e/0c/846e0c74ff6ca28cf93ea45f70302cfb.jpg" data-lightbox="roadtrip" data-title="Sample Resume Templates Ttarquj Format Pdf For Employers Free Regarding Easy Builderg Resume Builder Student Resume Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/6e/0c/846e0c74ff6ca28cf93ea45f70302cfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNZGuBf8nO_ybCprjqe0BSYSAQl-_wBlh3Ow';" alt="Sample Resume Templates Ttarquj Format Pdf For Employers Free Regarding Easy Builderg Resume Builder Student Resume Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sample Resume Templates Ttarquj Format Pdf For Employers Free Regarding Easy Builderg Resume Builder Student Resume Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/ba/22/25ba22553c8fecf551ceecba1178fcf2.jpg" data-lightbox="roadtrip" data-title="Account Suspended Customer Service Resume Examples Resume Examples Job Resume Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/ba/22/25ba22553c8fecf551ceecba1178fcf2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHyI1-J6CdvVdp5TkKOk9V6DZi2DfsV7Mq1g';" alt="Account Suspended Customer Service Resume Examples Resume Examples Job Resume Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Account Suspended Customer Service Resume Examples Resume Examples Job Resume Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/55/46/6855466623f73b6df58c0a4a64e857e5.png" data-lightbox="roadtrip" data-title="Pin On Frugality Lifestyle">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/55/46/6855466623f73b6df58c0a4a64e857e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5N7SPb9vzRvO7286o7DYCZ5EuMRKb4UCEgA';" alt="Pin On Frugality Lifestyle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Frugality Lifestyle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/99/f8/d399f818b1d5809d0fb8d4ec33f779f2.jpg" data-lightbox="roadtrip" data-title="Proactive Network Monitoring Helps With Data Security Identity Theft Protection Surveillance Burglar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/99/f8/d399f818b1d5809d0fb8d4ec33f779f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEn4Gt0ELr3I6JAwRuifFDW__xo9zQpM3WrA';" alt="Proactive Network Monitoring Helps With Data Security Identity Theft Protection Surveillance Burglar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Proactive Network Monitoring Helps With Data Security Identity Theft Protection Surveillance Burglar</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-the-veterans-day-parade.html">What Is The Veterans Day Parade</a></li>
+													<li class="list-group-item"><a href="/what-is-va-dependents-educational-assistance.html">What Is Va Dependents Educational Assistance</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-special-monthly-compensation.html">What Is The Va Special Monthly Compensation</a></li>
+													<li class="list-group-item"><a href="/what-is-the-veterans-day-google-doodle.html">What Is The Veterans Day Google Doodle</a></li>
+													<li class="list-group-item"><a href="/what-is-va-ebenefits.html">What Is Va Ebenefits</a></li>
+													<li class="list-group-item"><a href="/what-is-the-worst-asthma-attack.html">What Is The Worst Asthma Attack</a></li>
+													<li class="list-group-item"><a href="/what-is-va-compensation-pay.html">What Is Va Compensation Pay</a></li>
+													<li class="list-group-item"><a href="/what-is-the-yellow-ribbon-program-for-veterans.html">What Is The Yellow Ribbon Program For Veterans</a></li>
+													<li class="list-group-item"><a href="/what-is-the-womens-college-basketball-rankings.html">What Is The Womens College Basketball Rankings</a></li>
+													<li class="list-group-item"><a href="/what-is-utc-time-converter.html">What Is Utc Time Converter</a></li>
+													<li class="list-group-item"><a href="/what-is-va-qtc.html">What Is Va Qtc</a></li>
+													<li class="list-group-item"><a href="/what-is-va-housebound.html">What Is Va Housebound</a></li>
+													<li class="list-group-item"><a href="/what-is-the-veterans-crisis-phone-number.html">What Is The Veterans Crisis Phone Number</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-of-a-transformer.html">What Is The Va Rating Of A Transformer</a></li>
+													<li class="list-group-item"><a href="/what-is-va-bilateral-factor.html">What Is Va Bilateral Factor</a></li>
+													<li class="list-group-item"><a href="/what-is-va-rating-for-adjustment-disorder.html">What Is Va Rating For Adjustment Disorder</a></li>
+													<li class="list-group-item"><a href="/what-is-va-chapter-33-benefits.html">What Is Va Chapter 33 Benefits</a></li>
+													<li class="list-group-item"><a href="/what-is-unconditional-love-in-a-relationship-quotes.html">What Is Unconditional Love In A Relationship Quotes</a></li>
+													<li class="list-group-item"><a href="/what-is-va-education-benefits.html">What Is Va Education Benefits</a></li>
+													<li class="list-group-item"><a href="/what-is-va-housebound-benefits.html">What Is Va Housebound Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

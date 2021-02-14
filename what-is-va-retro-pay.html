@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is Va Retro Pay - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is Va Retro Pay",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/fd/ad/26/fdad262ce7a78a6de24de4ac7515e111.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+va+retro+pay",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is Va Retro Pay</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">All other benefits awarded in connection with the claim are referred to as future benefits paid in monthly installments. Retro benefits are bound to the effective date of the claim. The VA will not consider these to be effective dates in any circumstance. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/what-percentage-of-va-disability-is-ptsd.html">what percentage of va disability is ptsd</a>
+											<a class="badge badge-danger" href="/what-percentage-of-donation-goes-to-dav.html">what percentage of donation goes to dav</a>
+											<a class="badge badge-success" href="/what-percentage-of-donations-to-dav-go-to-veterans.html">what percentage of donations to dav go to veterans</a>
+											<a class="badge badge-info" href="/what-percentage-of-us-citizens-go-to-college.html">what percentage of us citizens go to college</a>
+											<a class="badge badge-dark" href="/what-percentage-of-us-budget-goes-to-military.html">what percentage of us budget goes to military</a>
+											<a class="badge badge-secondary" href="/what-percentage-va-disability-is-sleep-apnea.html">what percentage va disability is sleep apnea</a>
+											<a class="badge badge-dark" href="/what-percentage-of-vietnam-veterans-have-ptsd.html">what percentage of vietnam veterans have ptsd</a>
+											<a class="badge badge-warning" href="/what-percentage-is-the-us-military-budget.html">what percentage is the us military budget</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the right site.  Our site gives you suggestions for viewing the highest quality video and image content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you view.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/16/30/aa1630eeb51ae5aed964a4f002544b7c.jpg" data-lightbox="roadtrip" data-title="Va Disability Compensation Rates 1974 Present Retro Pay Calculation Investors Business Daily Dollar Investing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/16/30/aa1630eeb51ae5aed964a4f002544b7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjKG2lbJe_Akfrv95FvNIDYkc2OAZ8KZa5lw';" alt="Va Disability Compensation Rates 1974 Present Retro Pay Calculation Investors Business Daily Dollar Investing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Compensation Rates 1974 Present Retro Pay Calculation Investors Business Daily Dollar Investing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8e/92/b7/8e92b7ebae5acffb40c6fa699af183d5--military-veterans-military-spouse.jpg" data-lightbox="roadtrip" data-title="Veterans United Home Loans Takes Pride In Providing The Most Comprehensive Information On The Va Home Loan Program In Home Improvement Loans Home Loans Va Loan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8e/92/b7/8e92b7ebae5acffb40c6fa699af183d5--military-veterans-military-spouse.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV3gVsnDlcmHvZMNXESw7zKyrnsV2IK2G5Dw';" alt="Veterans United Home Loans Takes Pride In Providing The Most Comprehensive Information On The Va Home Loan Program In Home Improvement Loans Home Loans Va Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans United Home Loans Takes Pride In Providing The Most Comprehensive Information On The Va Home Loan Program In Home Improvement Loans Home Loans Va Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/87/b7/2287b7f47b05c62df43c6a0d83c10ebe.jpg" data-lightbox="roadtrip" data-title="Retro Vintage Streetgirls And Sailors Print By Buckaroosmercantile 9 95 In 2020 Retro Bathroom Decor Rockabilly Decor Retro Bathrooms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/87/b7/2287b7f47b05c62df43c6a0d83c10ebe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7l7ieqoTsk4RqThhQIWWUCqiA1gahbUAIWg';" alt="Retro Vintage Streetgirls And Sailors Print By Buckaroosmercantile 9 95 In 2020 Retro Bathroom Decor Rockabilly Decor Retro Bathrooms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retro Vintage Streetgirls And Sailors Print By Buckaroosmercantile 9 95 In 2020 Retro Bathroom Decor Rockabilly Decor Retro Bathrooms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f0/9c/5c/f09c5cfd5a021a8aac05534f4f6d0dc9.jpg" data-lightbox="roadtrip" data-title="Pin On Miscellaneous Signs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f0/9c/5c/f09c5cfd5a021a8aac05534f4f6d0dc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4JeDLudNIcCZCCQ8oULDzM5Eqnsb-x235Pw';" alt="Pin On Miscellaneous Signs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Miscellaneous Signs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/ad/26/fdad262ce7a78a6de24de4ac7515e111.jpg" data-lightbox="roadtrip" data-title="Md Enjoy Steady Pay See Https Pinterest Com Pin 287386019947755489 Nurse Vintage Nurse Nurse Practitioner School Nurse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/ad/26/fdad262ce7a78a6de24de4ac7515e111.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi6wAD99dplM8RweRtIDT2Cmi89zBgVR3LBw';" alt="Md Enjoy Steady Pay See Https Pinterest Com Pin 287386019947755489 Nurse Vintage Nurse Nurse Practitioner School Nurse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Md Enjoy Steady Pay See Https Pinterest Com Pin 287386019947755489 Nurse Vintage Nurse Nurse Practitioner School Nurse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/cd/8f/9bcd8f220620abd395d71f267c868462.jpg" data-lightbox="roadtrip" data-title="National Lipstick Day Va Voom Vintage Retro Makeup Makeup Ads Vintage Makeup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/cd/8f/9bcd8f220620abd395d71f267c868462.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFbZR9RGIOSHRj_kt9pGcTOlFpCg1GkiMUrg';" alt="National Lipstick Day Va Voom Vintage Retro Makeup Makeup Ads Vintage Makeup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Lipstick Day Va Voom Vintage Retro Makeup Makeup Ads Vintage Makeup</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ba/6e/1f/ba6e1f7ae05a52225a3b114b695ac220.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFbZR9RGIOSHRj_kt9pGcTOlFpCg1GkiMUrg';" alt="National Lipstick Day Va Voom Vintage Retro Makeup Makeup Ads Vintage Makeup">
+										<div class="card-body">
+						<h3 class="h5"><b>The retro benefits come in a lump sum paid all at once after the grant of benefits.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is va retro pay</strong>. 
+								
+																	Most of the time that is months or years before the veteran wins. 
+																	The rule is that the effective date is the latter of the date the VA received the initial claim for an Agent Orange-related disease initial claim means the first claim filed after or pending on September 25 1985 or the date the Agent Orange-related disease was. 
+																	The laws and regulations that apply when a retiree is eligible for both types of pay are complex and can be confusing. 
+																	The VA revises disability compensation rates every year according to the Cost of Living Adjustment COLA established by the Social Security Administration SSA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The retroactive award therefore would be 2575052 4598832 - 2023780. 
+																	The amount of back pay a Veteran can receive is not subject to any limit. 
+																	Due to its backlog of disability compensation claims VA can often take months or years to grant benefits. 
+																	Many military retirees who are eligible for DoD retired pay are also eligible for VA disability pay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Retro Pay Retro pay is compensation the veteran receives for the time period between the time the VA receives his claim for benefits and the time he actually receives the benefits. 
+																	Our calculator goes back to 1975 and is up to date. 
+																	This is known. 
+																	VA disability back pay is the monies owed to veterans from the effective date of their claim to the date they were granted those benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is different from all other benefits awarded in connection with the veterans claim as those are referred to as future benefits paid on a monthly basis. 
+																	Veterans who receive back pay will be paid based on the rates respective to the years being paid. 
+																	Once he does win he receives his new rate every month going forward. 
+																	To calculate an estimate of your retro benefits click here. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA back pay is paid to the veteran all at once in one lump sum following the grant of benefits. 
+																	The rule is that the effective date is usually the date the veteran files the current claim. 
+																	Earlier this month VA officials announced a years worth of retroactive benefits for any veterans submitting Fully Developed Claims a streamlined filing process designed to ensure that raters. 
+																	Again the retroactive award that is due takes into consideration the payments previously made to the Veteran at the 40 percent disability rate during the period from January 1 2013 to November 1 2015. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But under the special Nehmer effective date rules it does not matter when the VA adds a disease to the presumptive list. 
+																	Retroactive Payments DFAS and the Department of Veterans Affairs VA manage the CRDPCRSC Processing program formerly known as VA Retro to pay eligible military retirees any retroactive CRSC CRDP andor VA disability compensation they are owed. 
+																	Back pay or what the VA calls retroactive benefits is the lump sum payment for benefits which have been accruing since the filing of a granted claim. 
+																	Often it is believed that the VA will grant back pay all the way to the date of the veterans injury or the event to which the disability is considered to have begun. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The law requires that a military retiree waive a portion of their gross DoD retired pay dollar for dollar by the amount of their Department of Veterans Affairs VA disability compensation pay. 
+																	This is a common misconception. 
+																	How far back should retro benefits go. 
+																	Understanding the VA Waiver and Retired PayCRDPCRSC Adjustments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans can use our VA disability retro back pay calculator to figure out what they may be owed. 
+																	If the veteran applies for benefits within a year of retiring from the military he receives retro pay from the date he retired from active duty service. 
+																	But the VA must also pay that back paythe retro paymentto the date of the claim. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/2f/ba/d62fbac815075b80cc0bac21207449d4.jpg" data-lightbox="roadtrip" data-title="Pin On Chesterfield">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/2f/ba/d62fbac815075b80cc0bac21207449d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX6skAnhGvVVtZjGOORuzK_vkceem1k8dNXA';" alt="Pin On Chesterfield">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chesterfield</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6c/eb/70/6ceb7055a51113ae42d78c88dd2bf36e.jpg" data-lightbox="roadtrip" data-title="Vintage Advertisements Will Drive You Mad Man 26 Photos In 2020 Funny Vintage Ads Vintage Ads Vintage Advertisements">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6c/eb/70/6ceb7055a51113ae42d78c88dd2bf36e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAJ7OsDu2ts2RzPlWbvhvN76e8vGwzbOBvSA';" alt="Vintage Advertisements Will Drive You Mad Man 26 Photos In 2020 Funny Vintage Ads Vintage Ads Vintage Advertisements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vintage Advertisements Will Drive You Mad Man 26 Photos In 2020 Funny Vintage Ads Vintage Ads Vintage Advertisements</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/06/16/6c0616515aeaf5acb2df9ccd93b5a43b.jpg" data-lightbox="roadtrip" data-title="Pin On Va">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/06/16/6c0616515aeaf5acb2df9ccd93b5a43b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQT3jlYjO1IT0pn3t2m2p6rj4NyiyLySn8uw';" alt="Pin On Va">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/06/a7/e806a71a148a84d5f2d893faee6f7c41.jpg" data-lightbox="roadtrip" data-title="Pick N Pay Ad 4 16 1971 Retro Ads Grocery Ads Grocery Store Ads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/06/a7/e806a71a148a84d5f2d893faee6f7c41.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQ5A65OxKKj-sYC7aiygaQ6r_GyGugG4VWg';" alt="Pick N Pay Ad 4 16 1971 Retro Ads Grocery Ads Grocery Store Ads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pick N Pay Ad 4 16 1971 Retro Ads Grocery Ads Grocery Store Ads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/af/11/feaf1157935c7b6d4b745a151d756de1.jpg" data-lightbox="roadtrip" data-title="Pin On Sleazeballs Bad Companions Booze And Cigarette Ads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/af/11/feaf1157935c7b6d4b745a151d756de1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ01lauvHWCWhbKhGOWNhwNbQnVuL32gHysyQ';" alt="Pin On Sleazeballs Bad Companions Booze And Cigarette Ads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sleazeballs Bad Companions Booze And Cigarette Ads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/b6/54/69b65495698cf3e7efe2a12190814dee.jpg" data-lightbox="roadtrip" data-title="Panam Roman Holiday Vintage Airlines Vintage Airline Ads Retro Ads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/b6/54/69b65495698cf3e7efe2a12190814dee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3UVm8yY_fW6h9TwiahES1dPZ2cJc1EgvFYQ';" alt="Panam Roman Holiday Vintage Airlines Vintage Airline Ads Retro Ads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Panam Roman Holiday Vintage Airlines Vintage Airline Ads Retro Ads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/62/eb/0562eb23f6e0ffb0bb3142a18102bb28.jpg" data-lightbox="roadtrip" data-title="Shaunda Necole Celebrate Every Moment Va Beach Oceanfront Parking Most Beautiful Dresses Celebrities Retro Style Dress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/62/eb/0562eb23f6e0ffb0bb3142a18102bb28.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMWABCjilXjD71T_RkT_2ksnXvENQjImegTA';" alt="Shaunda Necole Celebrate Every Moment Va Beach Oceanfront Parking Most Beautiful Dresses Celebrities Retro Style Dress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shaunda Necole Celebrate Every Moment Va Beach Oceanfront Parking Most Beautiful Dresses Celebrities Retro Style Dress</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/22/92/ed/2292ed1cd6a30bc917c5dc9fefc4e16a.jpg" data-lightbox="roadtrip" data-title="Harrisonburg Virginia Va Vintage Travel Postcard Postcard Zazzle Com Vintage Postcards Travel Travel Postcard Vintage Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/22/92/ed/2292ed1cd6a30bc917c5dc9fefc4e16a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXwb7vsQdJxqr465pqBpGDGlt14hJsBpMcGw';" alt="Harrisonburg Virginia Va Vintage Travel Postcard Postcard Zazzle Com Vintage Postcards Travel Travel Postcard Vintage Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Harrisonburg Virginia Va Vintage Travel Postcard Postcard Zazzle Com Vintage Postcards Travel Travel Postcard Vintage Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d8/fb/1a/d8fb1aa89a9001911db5e771f8b9519d.jpg" data-lightbox="roadtrip" data-title="March 1950 Country Gentleman Magazine Vintage Ads Vintage Ads Vintage Magazines Vintage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d8/fb/1a/d8fb1aa89a9001911db5e771f8b9519d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlh1wpPiNixkkP7uVtQJuZWjWdQbYd5ilNsA';" alt="March 1950 Country Gentleman Magazine Vintage Ads Vintage Ads Vintage Magazines Vintage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">March 1950 Country Gentleman Magazine Vintage Ads Vintage Ads Vintage Magazines Vintage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/6e/1f/ba6e1f7ae05a52225a3b114b695ac220.jpg" data-lightbox="roadtrip" data-title="1930s Sping Fashions Va Voom Vintage Sping Fashion Vintage Fashion 1930s Vintage Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/6e/1f/ba6e1f7ae05a52225a3b114b695ac220.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9E-lidhezp6coDE4XM7_9k8i5YF1LHdHwPg';" alt="1930s Sping Fashions Va Voom Vintage Sping Fashion Vintage Fashion 1930s Vintage Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1930s Sping Fashions Va Voom Vintage Sping Fashion Vintage Fashion 1930s Vintage Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/ce/87/2dce87d46b87f5c1322433de8c5d7596.png" data-lightbox="roadtrip" data-title="Ca Va Okay French Style Retro Protest Poster Print Home Etsy Protest Posters Poster Prints Home Decor Wall Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/ce/87/2dce87d46b87f5c1322433de8c5d7596.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMGXurCEKVWHcvUJUlR9KCoHeHJf9F2GA7w';" alt="Ca Va Okay French Style Retro Protest Poster Print Home Etsy Protest Posters Poster Prints Home Decor Wall Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ca Va Okay French Style Retro Protest Poster Print Home Etsy Protest Posters Poster Prints Home Decor Wall Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/d8/15/dcd815f9cbaaf87f24dd98a6764357cc.jpg" data-lightbox="roadtrip" data-title="Va Voom Vintage Vintage Fashion Hair Tutorials And Diy Style Leopard Cardigan Knitting Needle Conversion Chart Free Pattern">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/d8/15/dcd815f9cbaaf87f24dd98a6764357cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGNWE2KXrFGV_rpVfb0FWBP0jLcrafxWH3Rg';" alt="Va Voom Vintage Vintage Fashion Hair Tutorials And Diy Style Leopard Cardigan Knitting Needle Conversion Chart Free Pattern">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Voom Vintage Vintage Fashion Hair Tutorials And Diy Style Leopard Cardigan Knitting Needle Conversion Chart Free Pattern</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/f0/81/f9/f081f9c783d3815493eb924c858710fb.jpg" data-lightbox="roadtrip" data-title="V A Japanese Superhero And Retro Anime Song Soundtrack Etsy Anime Songs Japanese Superheroes Anime">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/f0/81/f9/f081f9c783d3815493eb924c858710fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvMlsjM4XafOChKrGMTOWu9WlxH8psOBhEmw';" alt="V A Japanese Superhero And Retro Anime Song Soundtrack Etsy Anime Songs Japanese Superheroes Anime">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">V A Japanese Superhero And Retro Anime Song Soundtrack Etsy Anime Songs Japanese Superheroes Anime</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0f/3c/d7/0f3cd795b8ff2da769b18595e48997ce.jpg" data-lightbox="roadtrip" data-title="Daimler Georges Leonnec 1912 France Giclee Print Allposters Com In 2020 Classic Cars Racing Posters Vintage Poster Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0f/3c/d7/0f3cd795b8ff2da769b18595e48997ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbVEv43Sc4hqj4uC48uHGSJShYB_oK2QQz0A';" alt="Daimler Georges Leonnec 1912 France Giclee Print Allposters Com In 2020 Classic Cars Racing Posters Vintage Poster Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Daimler Georges Leonnec 1912 France Giclee Print Allposters Com In 2020 Classic Cars Racing Posters Vintage Poster Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/11/ef/3e11ef2502e25af5cca36040f8040736.jpg" data-lightbox="roadtrip" data-title="Street Girls Vintage Sign From Palace Hotel By Chloevaux On Etsy 11 00 Vintage Signs Palace Hotel Street Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/11/ef/3e11ef2502e25af5cca36040f8040736.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT3ez0HnOGWSUAi8xhFkLxeE77hY9CHHyixg';" alt="Street Girls Vintage Sign From Palace Hotel By Chloevaux On Etsy 11 00 Vintage Signs Palace Hotel Street Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Street Girls Vintage Sign From Palace Hotel By Chloevaux On Etsy 11 00 Vintage Signs Palace Hotel Street Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-are-chapter-31-va-benefits.html">What Are Chapter 31 Va Benefits</a></li>
+													<li class="list-group-item"><a href="/what-air-force-jobs-require-the-highest-asvab-scores.html">What Air Force Jobs Require The Highest Asvab Scores</a></li>
+													<li class="list-group-item"><a href="/what-are-army-lawyers-called.html">What Are Army Lawyers Called</a></li>
+													<li class="list-group-item"><a href="/what-are-good-jobs-for-military-spouses.html">What Are Good Jobs For Military Spouses</a></li>
+													<li class="list-group-item"><a href="/what-are-dod-civilians.html">What Are Dod Civilians</a></li>
+													<li class="list-group-item"><a href="/what-age-do-sims-go-to-university-sims-4.html">What Age Do Sims Go To University Sims 4</a></li>
+													<li class="list-group-item"><a href="/what-are-ex-military-spouse-entitlements.html">What Are Ex Military Spouse Entitlements</a></li>
+													<li class="list-group-item"><a href="/what-are-good-part-time-jobs-for-retirees.html">What Are Good Part Time Jobs For Retirees</a></li>
+													<li class="list-group-item"><a href="/what-are-chapter-35-benefits.html">What Are Chapter 35 Benefits</a></li>
+													<li class="list-group-item"><a href="/what-age-do-u-have-to-be-to-join-the-irish-army.html">What Age Do U Have To Be To Join The Irish Army</a></li>
+													<li class="list-group-item"><a href="/what-age-military-dependent-id.html">What Age Military Dependent Id</a></li>
+													<li class="list-group-item"><a href="/what-age-do-you-have-to-be-to-join-the-irish-army.html">What Age Do You Have To Be To Join The Irish Army</a></li>
+													<li class="list-group-item"><a href="/what-are-army-civilian-jobs.html">What Are Army Civilian Jobs</a></li>
+													<li class="list-group-item"><a href="/what-are-good-names-for-a-german-shepherd.html">What Are Good Names For A German Shepherd</a></li>
+													<li class="list-group-item"><a href="/what-are-good-names-for-male-german-shepherds.html">What Are Good Names For Male German Shepherds</a></li>
+													<li class="list-group-item"><a href="/what-air-force-jobs-have-signing-bonus.html">What Air Force Jobs Have Signing Bonus</a></li>
+													<li class="list-group-item"><a href="/what-agencies-are-under-department-of-homeland-security.html">What Agencies Are Under Department Of Homeland Security</a></li>
+													<li class="list-group-item"><a href="/what-age-do-you-go-to-junior-college-in-usa.html">What Age Do You Go To Junior College In Usa</a></li>
+													<li class="list-group-item"><a href="/what-age-do-you-have-to-be-to-go-to-college-in-sims-4.html">What Age Do You Have To Be To Go To College In Sims 4</a></li>
+													<li class="list-group-item"><a href="/what-are-army-ranks-from-highest-to-lowest.html">What Are Army Ranks From Highest To Lowest</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

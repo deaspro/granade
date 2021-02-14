@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Irish Army Fitness Test - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Irish Army Fitness Test",
+  "datePublished": "2021-02-14",
+  "image": "https://www.bodybuilding.com/images/2020/june/combat-fit-square-1200x1200.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+irish+army+fitness+test",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Irish Army Fitness Test</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The results of the test also serve to help the Irish Army choose where the recruit should be placed and what role is best suited for them. The Rangers constitutes the Irish Defence Forces special forces capability Murtagh 2016. The physical fitness assessment is designed to test the candidates current level of physical fitness and hisher capacity to undergo the rigours of military training. <br>				
+			</p>
+										<a class="badge badge-light" href="/what-is-the-unemployment-benefit-in-virginia.html">what is the unemployment benefit in virginia</a>
+											<a class="badge badge-light" href="/what-is-the-va-disability-rating-for-acid-reflux.html">what is the va disability rating for acid reflux</a>
+											<a class="badge badge-success" href="/what-is-the-va-disability-rating-for-chronic-lower-back-pain.html">what is the va disability rating for chronic lower back pain</a>
+											<a class="badge badge-info" href="/what-is-the-va-disability-rating-for-ibs.html">what is the va disability rating for ibs</a>
+											<a class="badge badge-danger" href="/what-is-the-us-department-of-homeland-security-responsible-for.html">what is the us department of homeland security responsible for</a>
+											<a class="badge badge-dark" href="/what-is-the-va-disability-rating-for-gulf-war-syndrome.html">what is the va disability rating for gulf war syndrome</a>
+											<a class="badge badge-light" href="/what-is-the-va-disability-pay-scale.html">what is the va disability pay scale</a>
+											<a class="badge badge-primary" href="/what-is-the-tax-rate-on-military-retirement-pay.html">what is the tax rate on military retirement pay</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to pay a visit to the right site.  Our website gives you suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/5G_qvEcqL1g/hqdefault.jpg" data-lightbox="roadtrip" data-title="Irish Defence Forces Fitness Test Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/5G_qvEcqL1g/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv0ybIjexD7WwNnCW2jphn16ZObFyq1UyAhQ';" alt="Irish Defence Forces Fitness Test Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Irish Defence Forces Fitness Test Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.armytimes.com/resizer/-F4VCRh-ZHAaS3UDyr63stlOITo=/800x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/Z6Q3WYOJYNFWTJ7RCHNT6AA7VM.jpg" data-lightbox="roadtrip" data-title="Here S An Early Draft Of The Army S New Fitness Test Standards">
+											<img class="card-img v-image ads-img " src="https://www.armytimes.com/resizer/-F4VCRh-ZHAaS3UDyr63stlOITo=/800x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/Z6Q3WYOJYNFWTJ7RCHNT6AA7VM.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRovKomtOCbN_4dIS78H1VmIugzqK0Kpauyw';" alt="Here S An Early Draft Of The Army S New Fitness Test Standards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here S An Early Draft Of The Army S New Fitness Test Standards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/zJQtz-L7wq8/maxresdefault.jpg" data-lightbox="roadtrip" data-title="I Took The Irish Defence Forces Fitness Test Without Training Oglaigh Na Heireann Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/zJQtz-L7wq8/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBHHMyK74hc4RyRzLyDsHnytiW92LcGrhkg';" alt="I Took The Irish Defence Forces Fitness Test Without Training Oglaigh Na Heireann Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Took The Irish Defence Forces Fitness Test Without Training Oglaigh Na Heireann Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://powertestdyno.com/wp-content/uploads/sites/2/2016/12/standards.png" data-lightbox="roadtrip" data-title="Army Physical Fitness Test Power Test Inc">
+											<img class="card-img v-image ads-img " src="http://powertestdyno.com/wp-content/uploads/sites/2/2016/12/standards.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFuFJvdwWYPnVAnm3hgTe8bt7U-JVTo-1jLA';" alt="Army Physical Fitness Test Power Test Inc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Physical Fitness Test Power Test Inc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://qph.fs.quoracdn.net/main-qimg-dcb03ca9ccdb87bc3ece11b8ce2a4d40" data-lightbox="roadtrip" data-title="How Hard Is The Ranger Physical Fitness Test 75th Ranger Regiment Quora">
+											<img class="card-img v-image ads-img " src="https://qph.fs.quoracdn.net/main-qimg-dcb03ca9ccdb87bc3ece11b8ce2a4d40" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0eGe6JpLIVjxucQ4xlUicP651qSIvxt160g';" alt="How Hard Is The Ranger Physical Fitness Test 75th Ranger Regiment Quora">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Hard Is The Ranger Physical Fitness Test 75th Ranger Regiment Quora</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/bootcampmilitaryfitnessinstitute.com/wp-content/uploads/2018/10/Irish-Army-Ranger-Wing-Tab-1.jpg?fit=960%2C640&amp;ssl=1" data-lightbox="roadtrip" data-title="Irish Army Ranger Wing Arw Selection Training Boot Camp Military Fitness Institute">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/bootcampmilitaryfitnessinstitute.com/wp-content/uploads/2018/10/Irish-Army-Ranger-Wing-Tab-1.jpg?fit=960%2C640&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcMe-d5537mlUQ0K_l68PYbID22AmhNi1EQ';" alt="Irish Army Ranger Wing Arw Selection Training Boot Camp Military Fitness Institute">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Irish Army Ranger Wing Arw Selection Training Boot Camp Military Fitness Institute</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.ytimg.com/vi/UrojT8NpTE0/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcMe-d5537mlUQ0K_l68PYbID22AmhNi1EQ';" alt="Irish Army Ranger Wing Arw Selection Training Boot Camp Military Fitness Institute">
+										<div class="card-body">
+						<h3 class="h5"><b>An tArm is the land component of the Defence Forces of Ireland.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the irish army fitness test</strong>. 
+								
+																	BACKGROUND 10 Introduction This article provides an overview of the Irish Army Ranger Wing ARW the Special Operations Force SOF of the Irish Defence Forces IDF. 
+																	An aerobic test consisting of a 24 km 15 mile run or multi-stage fitness test MST. 
+																	What is the Irish Army fitness test. 
+																	The Irish Defense Forces of the Republic of Ireland uses a pass-or-fail-only standard with no scores to distinguish passes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Defence Forces Fitness Test outlines the physiological and anthropometrical differences between men and women and the differences that arise due to age. 
+																	The old format PFA required a pass at the gender fair level equivalent to a PFA Green. 
+																	Your A-Day fitness test is conducted in the same way for Navy Army and Air Force and consists of a Multi-Stage Fitness Test beep test press ups and curl ups. 
+																	Aerobic endurance Local muscular endurance b. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is composed of two aspects. 
+																	Each inductee will under go a local muscular endurance test where they are required to complete push-ups and sit-ups under a timed test. 
+																	Defence Forces Fitness Tests It is a requirement that each person who wished to join the Defence Forces to undergo a Physical fitness test and thereafter und. 
+																	As well as maintaining its primary roles of defending the State and internal security within. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Ranger Wing ARW Irish. 
+																	Security expert Tom Clonan a former captain in the army said young men and women were. 
+																	What is the Irish Army fitness test. 
+																	For Navy and Air Force you will complete the curl ups but they are not counted for your final grade. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Approximately 7300 men and women served in the Irish Army on a permanent basis as of May 2016 and there were 1600 active reservists divided into two geographically organised brigades. 
+																	Sciathan Fiannoglaigh an Airm SFA is the special operations force of the Irish Defence Forces the military of IrelandA branch of the Irish Army it also selects personnel from the Naval Service and Air CorpsIt serves at the behest of the Defence Forces and Government of Ireland operating internally and overseas and reports directly to the Chief of. 
+																	Within the Irish Defence Force there is a unit known as Sciathan Fhiannoglaigh an. 
+																	The Fitness Test Push up test 20 in 1 minute female candidates may complete modified push-ups Sit up test 20 in 1 minute. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For Army your curl ups will factor in your score. 
+																	The Irish Army known simply as the Army Irish. 
+																	Applicants must meet a certain benchmark put in place by the Irish Army in order to proceed through the recruitment process. 
+																	Components of physical fitness consisting of body fat assessment hand grip strength and flexibility. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Only the running standards differ between male and female soldiers. 
+																	This is the Defence Forces fitness test A LOT of you are failing. 
+																	Aerobic capacity test 24km run in 11m minutes 40 seconds for males 24km run in 13 minutes 10 seconds for females. 
+																	How hard is the ranger physical fitness anti drill in dublin top 10 most dangerous special forces army ranger wing exercise in the irish sea how hard is the ranger physical fitness See Inside The Of Irish Army Ranger Wing That Aims To Scare S E Out New RecruitsElite Army Rangers Among The Hundreds Of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Local Muscular and Cardio Vascular Endurance. 
+																	The Irish Armys psychometric tests appraise a variety of skills that inform the recruiters of the candidates mental capacity and general intelligence. 
+																	The hex bar deadlift is a basic deadlift that will assess lower limb strength. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b2/06/8b/b2068b7cce56db9f812d98e0f95e7f9c.jpg" data-lightbox="roadtrip" data-title="Pin On Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b2/06/8b/b2068b7cce56db9f812d98e0f95e7f9c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Kpe-a_M_CC4rz8cXK9s8Xo8h3kLIG6cuLg';" alt="Pin On Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.thesun.co.uk/wp-content/uploads/2018/09/NINTCHDBPICT000435748180.jpg" data-lightbox="roadtrip" data-title="Army Set To End Easier Fitness Tests For Women And Older Soldiers With Exercises Including 4km Hikes With 40kg Bags">
+											<img class="card-img v-image ads-img " src="https://www.thesun.co.uk/wp-content/uploads/2018/09/NINTCHDBPICT000435748180.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS96SL-I8syNu89cn_3kLJJX5pRuKxMLhaP2w';" alt="Army Set To End Easier Fitness Tests For Women And Older Soldiers With Exercises Including 4km Hikes With 40kg Bags">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Set To End Easier Fitness Tests For Women And Older Soldiers With Exercises Including 4km Hikes With 40kg Bags</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://careerservices.ie/sites/default/files/army-navy-recruits%20animation_1.png" data-lightbox="roadtrip" data-title="Army Navy Recruitment Process Career Services">
+											<img class="card-img v-image ads-img " src="https://careerservices.ie/sites/default/files/army-navy-recruits%20animation_1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgJUp9Zymv6Fg35ttr_XGIBF4Kc1vPwmfgHA';" alt="Army Navy Recruitment Process Career Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Navy Recruitment Process Career Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/iUzC0uIrg5w/maxresdefault.jpg" data-lightbox="roadtrip" data-title="I Failed The Army Fitness Test Army Pft Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/iUzC0uIrg5w/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6U7vUAzznOavrAjc2mJIeR17GG0LbuPHkgg';" alt="I Failed The Army Fitness Test Army Pft Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Failed The Army Fitness Test Army Pft Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://clarksvillenow.sagacom.com/files/2018/07/Division-Run-2017-1170-1170x768.jpg" data-lightbox="roadtrip" data-title="Army Combat Fitness Test Set To Become New Pt Test Of Record Clarksvillenow Com">
+											<img class="card-img v-image ads-img " src="https://clarksvillenow.sagacom.com/files/2018/07/Division-Run-2017-1170-1170x768.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKheJ8drMa5CQT5avgamV448F9p41DHawxA';" alt="Army Combat Fitness Test Set To Become New Pt Test Of Record Clarksvillenow Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Combat Fitness Test Set To Become New Pt Test Of Record Clarksvillenow Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/UrojT8NpTE0/hqdefault.jpg" data-lightbox="roadtrip" data-title="New Army Fitness Standards British Army Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/UrojT8NpTE0/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-_xFHZ8OfSJILTyBUmitFl4_7nvbzeAL2Rw';" alt="New Army Fitness Standards British Army Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Army Fitness Standards British Army Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/c0/e4/47c0e404c9fe19eacc98eee787f3fe9b.jpg" data-lightbox="roadtrip" data-title="Pin On Fitness Stuff 3">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/c0/e4/47c0e404c9fe19eacc98eee787f3fe9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlwSdWpAGxmLf_O15kUweVEBLvminuPy8b9Q';" alt="Pin On Fitness Stuff 3">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fitness Stuff 3</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.thesun.co.uk/wp-content/uploads/2018/09/NINTCHDBPICT000435748887.jpg" data-lightbox="roadtrip" data-title="New Gender Neutral Army Training Sees Press Ups And Sit Ups Dropped In Favour Of New Achievable Fitness Test">
+											<img class="card-img v-image ads-img " src="https://www.thesun.co.uk/wp-content/uploads/2018/09/NINTCHDBPICT000435748887.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNbsMNzwnG89ENyruAm3tadTi_xnb29skBEg';" alt="New Gender Neutral Army Training Sees Press Ups And Sit Ups Dropped In Favour Of New Achievable Fitness Test">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Gender Neutral Army Training Sees Press Ups And Sit Ups Dropped In Favour Of New Achievable Fitness Test</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.armytimes.com/resizer/w29dKoZpVldJEWxtSW2W3wp__D0=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/6J446L3IQZEUXPLXZD2S5573L4.jpg" data-lightbox="roadtrip" data-title="Official All 3 Women In Ranger School Pass Pt Test">
+											<img class="card-img v-image ads-img " src="https://www.armytimes.com/resizer/w29dKoZpVldJEWxtSW2W3wp__D0=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/6J446L3IQZEUXPLXZD2S5573L4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaHV0FSL9RJZqzvl9aid6F-0ug8LBXcz8gQw';" alt="Official All 3 Women In Ranger School Pass Pt Test">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Official All 3 Women In Ranger School Pass Pt Test</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/7a/38/c07a38b2c2a8057adb75c431d2fd63d9.jpg" data-lightbox="roadtrip" data-title="Pin By Mike Merrill On Military Portfolio Military Workout Air Force Basic Training Army Workout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/7a/38/c07a38b2c2a8057adb75c431d2fd63d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVL0A9VBR10ud0K_efwqPNECPXsM75UmmGdw';" alt="Pin By Mike Merrill On Military Portfolio Military Workout Air Force Basic Training Army Workout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Mike Merrill On Military Portfolio Military Workout Air Force Basic Training Army Workout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/ec/e5/10ece5c82a745422328e9f99ac5c6e08.jpg" data-lightbox="roadtrip" data-title="Pin On Military Tactical Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/ec/e5/10ece5c82a745422328e9f99ac5c6e08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQaJcv9g7FxMRHIu_cnlPKrJooCisgVynmZA';" alt="Pin On Military Tactical Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Tactical Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="iJkqNBTfip497M" data-lightbox="roadtrip" data-title="Https Www Military Ie En Careers Defence Forces Fitness Testing Physical Fitness Test Programme Pdf">
+											<img class="card-img v-image ads-img " src="iJkqNBTfip497M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTON2Tb4nYLONJVJC_SNuA5_xF_i_RBqPAKlg';" alt="Https Www Military Ie En Careers Defence Forces Fitness Testing Physical Fitness Test Programme Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Military Ie En Careers Defence Forces Fitness Testing Physical Fitness Test Programme Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5a/0c/74/5a0c7411cf2cd019fa772136b41a654c.jpg" data-lightbox="roadtrip" data-title="Pin On Acft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5a/0c/74/5a0c7411cf2cd019fa772136b41a654c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgxfcPEPnzzLhN50kaeyDs31MYqSdFiNvrQ';" alt="Pin On Acft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Acft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bodybuilding.com/images/2020/june/combat-fit-square-1200x1200.jpg" data-lightbox="roadtrip" data-title="Military Training For The Army Combat Fitness Test Bodybuilding Com">
+											<img class="card-img v-image ads-img " src="https://www.bodybuilding.com/images/2020/june/combat-fit-square-1200x1200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThZ7BwttaJq6tGehfimVrtZQ-QRVmfm0YQAw';" alt="Military Training For The Army Combat Fitness Test Bodybuilding Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Training For The Army Combat Fitness Test Bodybuilding Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://msigwarrior.com/img/challenges/uk-sas.jpg" data-lightbox="roadtrip" data-title="Msig Warrior Physical Fitness Test Sas United Kingdom">
+											<img class="card-img v-image ads-img " src="https://msigwarrior.com/img/challenges/uk-sas.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUduI7BEVIS3-5MQL-qe4jBPCA3BmN36ocMg';" alt="Msig Warrior Physical Fitness Test Sas United Kingdom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Msig Warrior Physical Fitness Test Sas United Kingdom</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-does-it-mean-if-a-va-disability-claim-is-deferred.html">What Does It Mean If A Va Disability Claim Is Deferred</a></li>
+													<li class="list-group-item"><a href="/what-does-dependency-and-indemnity-compensation-mean.html">What Does Dependency And Indemnity Compensation Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-a-va-remanded-appeal-mean.html">What Does A Va Remanded Appeal Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-gi-detox-do.html">What Does Gi Detox Do</a></li>
+													<li class="list-group-item"><a href="/what-does-foia-stand-for.html">What Does Foia Stand For</a></li>
+													<li class="list-group-item"><a href="/what-does-hrt-stand-for.html">What Does Hrt Stand For</a></li>
+													<li class="list-group-item"><a href="/what-does-it-cost-to-go-to-the-university-of-florida.html">What Does It Cost To Go To The University Of Florida</a></li>
+													<li class="list-group-item"><a href="/what-does-department-of-homeland-security-mean-in-history.html">What Does Department Of Homeland Security Mean In History</a></li>
+													<li class="list-group-item"><a href="/what-does-couldnt-fully-grant-your-appeal-mean.html">What Does Couldnt Fully Grant Your Appeal Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-deferred-mean-for-va-claim.html">What Does Deferred Mean For Va Claim</a></li>
+													<li class="list-group-item"><a href="/what-does-deferred-mean-on-va-claim.html">What Does Deferred Mean On Va Claim</a></li>
+													<li class="list-group-item"><a href="/what-does-intercostal-neuralgia-feel-like.html">What Does Intercostal Neuralgia Feel Like</a></li>
+													<li class="list-group-item"><a href="/what-does-a-spouse-mean.html">What Does A Spouse Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-it-mean-if-you-never-dream-about-your-spouse.html">What Does It Mean If You Never Dream About Your Spouse</a></li>
+													<li class="list-group-item"><a href="/what-does-god-want-me-to-do-if-my-husband-cheated.html">What Does God Want Me To Do If My Husband Cheated</a></li>
+													<li class="list-group-item"><a href="/what-does-army-civil-affairs-do.html">What Does Army Civil Affairs Do</a></li>
+													<li class="list-group-item"><a href="/what-does-an-army-inspector-general-do.html">What Does An Army Inspector General Do</a></li>
+													<li class="list-group-item"><a href="/what-does-comp-value-mean.html">What Does Comp Value Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-chapter-33-benefits-pay-for.html">What Does Chapter 33 Benefits Pay For</a></li>
+													<li class="list-group-item"><a href="/what-does-dhs-pay-for-daycare.html">What Does Dhs Pay For Daycare</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

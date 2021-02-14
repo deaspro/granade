@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Strongest Army In The World - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Strongest Army In The World",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/f0/5c/47/f05c47930fc3c91984fea402378a9601.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+strongest+army+in+the+world",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Strongest Army In The World</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">General rehearsal of the military parade of the 72nd anniversary of the Victory in the great Patriotic war. The top 5 militaries on the globe. This is how the US and Iran rank among the worlds 25 most powerful militaries. <br>				
+			</p>
+										<a class="badge badge-warning" href="/what-is-military-and-defense-insider.html">what is military and defense insider</a>
+											<a class="badge badge-info" href="/what-is-military-time-conversion-chart.html">what is military time conversion chart</a>
+											<a class="badge badge-info" href="/what-is-major-depressive-disorder-with-psychotic-features.html">what is major depressive disorder with psychotic features</a>
+											<a class="badge badge-warning" href="/what-is-moderate-episode-of-major-depressive-disorder.html">what is moderate episode of major depressive disorder</a>
+											<a class="badge badge-secondary" href="/what-is-non-service-connected-disability-compensation.html">what is non service connected disability compensation</a>
+											<a class="badge badge-secondary" href="/what-is-military-spouse-preference.html">what is military spouse preference</a>
+											<a class="badge badge-secondary" href="/what-is-it-like-being-an-army-wife.html">what is it like being an army wife</a>
+											<a class="badge badge-info" href="/what-is-my-gi-bill-status.html">what is my gi bill status</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to pay a visit to the ideal blog.  Our site provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/24/a2/fa24a2a8cc91bbf3819148ad28229374.png" data-lightbox="roadtrip" data-title="The 35 Most Powerful Militaries In The World Military Ranks Military Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/24/a2/fa24a2a8cc91bbf3819148ad28229374.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMfik9T5pHgLt5O-iUVWREScPDuqDObS0TMN-Nq5GxskbONLHE_HBMXcHWdCBx5qS6p967HEZUkp7IddkX4bZp_xL__q1BsPA5Eg&amp;ec=45768321';" alt="The 35 Most Powerful Militaries In The World Military Ranks Military Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 35 Most Powerful Militaries In The World Military Ranks Military Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/b4/36/b0b4366adb5867c8cb958bca9dfe11b9.png" data-lightbox="roadtrip" data-title="Most Powerful Military Top 35 Military Ranks Military Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/b4/36/b0b4366adb5867c8cb958bca9dfe11b9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh4rBbQlRxL7EVZY3P8Ro-zA7ypBmDSnGeNfPhIND-ryk-NTg6XRWWfWni-vWO_V80eUCLMtqLKnTTKqlKXuDAI5ptwbwsXXmpow&amp;ec=45768321';" alt="Most Powerful Military Top 35 Military Ranks Military Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Most Powerful Military Top 35 Military Ranks Military Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/dd/25/10dd2502a5093bb985020de4bd037031.png" data-lightbox="roadtrip" data-title="The 35 Most Powerful Militaries In The World Military Ranks Military Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/dd/25/10dd2502a5093bb985020de4bd037031.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEeUKYnU7Q2NU9cVNATqXndbyjFNY3iU5j3ugSFehbWOsh_G3rJv03slYZQlSGDm-xJR2DndHnVK6zsYAR0pCAO1wWgLNAVzng6A&amp;ec=45768321';" alt="The 35 Most Powerful Militaries In The World Military Ranks Military Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 35 Most Powerful Militaries In The World Military Ranks Military Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/5c/47/f05c47930fc3c91984fea402378a9601.png" data-lightbox="roadtrip" data-title="The 35 Most Powerful Militaries In The World Military Ranks Military Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/5c/47/f05c47930fc3c91984fea402378a9601.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwjx2JSjzDrH0F0qPWG8AosKM2W_ErXghAy2THqxR8Zy7LyMjzxfkt6gIYQ_eT5HeytiItIaXXMTCRYA6xEiBujX1tUXkqtag2Q&amp;ec=45768321';" alt="The 35 Most Powerful Militaries In The World Military Ranks Military Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 35 Most Powerful Militaries In The World Military Ranks Military Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/b9/2e/f8b92ef9acc4b4969bc5053c4e4335d6.jpg" data-lightbox="roadtrip" data-title="35 Most Powerful Militaries In The World Military Ranks Military Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/b9/2e/f8b92ef9acc4b4969bc5053c4e4335d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0sOQvlUu_2yEicvdrce-8XYo0yXCE723QeK9mLpFW_rxOQV8bfIiwO_XsehUivXCBJQYdZ-vl-50rd6IUt2pZS4cqZ2dR9tcxCQ&amp;ec=45768321';" alt="35 Most Powerful Militaries In The World Military Ranks Military Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">35 Most Powerful Militaries In The World Military Ranks Military Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/a4/bf/b0a4bf9d6ad19af17bc06e601ba20247.jpg" data-lightbox="roadtrip" data-title="Infographic The World S Most Powerful Militaries World History Facts General Knowledge Facts World Data">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/a4/bf/b0a4bf9d6ad19af17bc06e601ba20247.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZkDibGXs251GnWhC8bfO2oiqgFwvuDR0Ab4KBPRbN3zaDJS9GjHPPMemqUniBTuhRHxCJ_IzvXgthV7R0savlYQAOFJ5xuBGTPA&amp;ec=45768321';" alt="Infographic The World S Most Powerful Militaries World History Facts General Knowledge Facts World Data">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic The World S Most Powerful Militaries World History Facts General Knowledge Facts World Data</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b0/b4/36/b0b4366adb5867c8cb958bca9dfe11b9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZkDibGXs251GnWhC8bfO2oiqgFwvuDR0Ab4KBPRbN3zaDJS9GjHPPMemqUniBTuhRHxCJ_IzvXgthV7R0savlYQAOFJ5xuBGTPA&amp;ec=45768321';" alt="Infographic The World S Most Powerful Militaries World History Facts General Knowledge Facts World Data">
+										<div class="card-body">
+						<h3 class="h5"><b>Our unique in-house formula allows for smaller more technologically-advanced nations to compete with.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the strongest army in the world</strong>. 
+								
+																	Egypts military is the strongest in Africa ranking at number 12 worldwide according to the latest research by Global Firepower. 
+																	And if you rank it in that way then America would be somewhere around 7 whereas Pakistan would be on top because it surely is the strongest bravest and courageous army in the world. 
+																	The Army of the United States as it is officially called is the largest unit of the US Armed Forces. 
+																	The strongest army in the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 10 Most Powerful Militaries in the World 2020. 
+																	Pakistan has the sixth-largest military force in the region. 
+																	India has put its massive population to use and built an army of a sizeable 35 million including 1325 million active military. 
+																	The United States of America has the strongest army in the world today. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	United States of America. 
+																	The finalized Global Firepower ranking below utilizes over 50 individual factors to determine a given nations PowerIndex PwrIndx score with categories ranging from military might and financials to logistical capability and geography. 
+																	Pakistans land goes back to the cradle of civilization with many rounds of cultures and ancient populations. 
+																	They have around only 390000 people in the military but one has to remember they have a much smaller country than all the others on the list so far and their budget is still a very healthy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Global powers ranked by potential military strength. 
+																	Army is best when your soldiers can defend without updated weapons. 
+																	Well whatever it is most people arent going to say how irritated they are to their faces because Frances military is the 5th strongest in the world. 
+																	Soldiers are Using Drone for Scouting During Military Operation in the Desert. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Russia whose military has become involved in Syria and Ukraine in recent years has the most tanks of. 
+																	The United States military still remains the strongest in the world as Russia and China maintain the second and third positions respectively. 
+																	China is the country with the largest standing army and is one of the best trained. 
+																	With an incredible budget of 601 billion the US army is better funded than any other army across the globe. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Islamic Republic of Pakistan lands at number 17 on the list of strongest armies in the world. 
+																	In what shouldnt be a surprise the US. 
+																	Today Pakistan has 199085847 people within its borders. 
+																	Retains its top spot as the undisputed military power in the world Global Firepower. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The huge size of the Indian military is one of the reasons why it has always remained among the countries with strongest armies in the world. 
+																	10 Most Powerful Armies in The World 1. 
+																	List of Strongest Armies in the World 2021 USA Russia China India United Kingdom France South Korea Germany Japan Turkey. 
+																	Check out the current military capabilities and available firepower for the nation of United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Plus Pakistan and India must seriously get over their shit its 2015. 
+																	Chinese Peoples Liberation Army Is the Largest Standing Army In The World When judging the largest standing armies in the world we see that many armies are really big and strong. 
+																	List Of Top 50 Strongest Militaries in The World 2020. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/2a/fb/c12afb0855e1b72a4620dff613764c33.jpg" data-lightbox="roadtrip" data-title="Top 10 Most Powerful Militaries Countries In The World 2019 List Hindi Military Countries Of The World Country">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/2a/fb/c12afb0855e1b72a4620dff613764c33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLRszF9c2gIQvjaxVQcXmnmZMYQTvIHGRHuG9WgfNWTI0B51ECRc7ltiztCY2S5QwrTVYctK97VQjjLOrcm8sqvvKF3flRF0IFpQ&amp;ec=45768321';" alt="Top 10 Most Powerful Militaries Countries In The World 2019 List Hindi Military Countries Of The World Country">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Most Powerful Militaries Countries In The World 2019 List Hindi Military Countries Of The World Country</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/41/78/70/4178704bac8000b453cc3d744e3ac606.jpg" data-lightbox="roadtrip" data-title="Perfect Diy Patio Ideas Projects The Budget Decorator Special Forces Military Female Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/41/78/70/4178704bac8000b453cc3d744e3ac606.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT11RejmsdgwV7PvdzMZv3gVB5qrhZWSzuFVgfgqG_M25HU-1L-AFrutbZYJFj81yEqYNvxKBgJKkw36n8iyKXwFN_O9M6xLEY_OA&amp;ec=45768321';" alt="Perfect Diy Patio Ideas Projects The Budget Decorator Special Forces Military Female Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Perfect Diy Patio Ideas Projects The Budget Decorator Special Forces Military Female Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/15/e6/8815e62ee10806d9a7a110729342c4a5.jpg" data-lightbox="roadtrip" data-title="10 Most Powerful Militaries In The World Strongest Army In The World Army World Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/15/e6/8815e62ee10806d9a7a110729342c4a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV1GKVQdptMD35L5GJH-4q4wRPwouKz_ClNut48DbZkfSeQobCGZekne1pz-7NtCSLYaikQ7LZfPvWKtjr2W_uJSAV37tb0ikbyw&amp;ec=45768321';" alt="10 Most Powerful Militaries In The World Strongest Army In The World Army World Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Most Powerful Militaries In The World Strongest Army In The World Army World Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/dd/b5/0eddb5e600c57049607badfe6f08ffab.jpg" data-lightbox="roadtrip" data-title="World S Top Ten Strongest Military Military United States Military World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/dd/b5/0eddb5e600c57049607badfe6f08ffab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgoh1Qmz4A8BYe0HjxUNBiXcg48vhs_PLB212ATjrjCPz5lvmEeWuCU9XBzK8dj9bIltESNEQHmO8Gf0xva1ej-qOFIpqN_FtJeg&amp;ec=45768321';" alt="World S Top Ten Strongest Military Military United States Military World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World S Top Ten Strongest Military Military United States Military World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/22/e4/2922e43caf8a929a2af4e0af2eacec1f.jpg" data-lightbox="roadtrip" data-title="Top 10 Largest Armies In The World 1990 2020 Army World Thats Not My">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/22/e4/2922e43caf8a929a2af4e0af2eacec1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROKiXFS8kRdcoV2E2Hw5oA65P4xbRgJfWDyJIalIWwkc-8g2lfvmpEoS0127oHGZheQ0-Hp-34u0DFm-aWlhhnpbEPLEsyJZOKVw&amp;ec=45768321';" alt="Top 10 Largest Armies In The World 1990 2020 Army World Thats Not My">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Largest Armies In The World 1990 2020 Army World Thats Not My</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/88/13/cb/8813cb7ecf8aee3bc98920c4b2229969.jpg" data-lightbox="roadtrip" data-title="Top 10 Strongest Armies In The World Mexican Army Special Police Forces Military Guns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/88/13/cb/8813cb7ecf8aee3bc98920c4b2229969.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyxfwThTbJArUD1utXmDrQ34R7m1hOMopq5i1yEU-EiFotvw8DonaDm9FRgCZ4JWOrf8_D722VpCP5nnEP5cMLg1mYmesvy8xVQQ&amp;ec=45768321';" alt="Top 10 Strongest Armies In The World Mexican Army Special Police Forces Military Guns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Strongest Armies In The World Mexican Army Special Police Forces Military Guns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/d7/be/a4d7bec112ad3d7cc0c8e9ed250f06be.jpg" data-lightbox="roadtrip" data-title="Top 10 Most Powerful Army In The World Military Power Pakistan Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/d7/be/a4d7bec112ad3d7cc0c8e9ed250f06be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrxlqNvBnUyh7cQ6Fz_97FCD2iFU_p0ZnRAfoNzam480cCZ41RIX12NSf7fQAgHqAs2i7Zn4SiLeMd0D-j79OudJyZygMpGEBpzw&amp;ec=45768321';" alt="Top 10 Most Powerful Army In The World Military Power Pakistan Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Most Powerful Army In The World Military Power Pakistan Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a6/94/14/a6941417158bb247daadd5f4c78e4874.jpg" data-lightbox="roadtrip" data-title="Armies Are The Strength Of A Nation Here Are 12 Of The Most Powerful Armies In The World Determined By Ordinance Milita Military Forces Military Combat Tanks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a6/94/14/a6941417158bb247daadd5f4c78e4874.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0FjpyfYq0MnveEbK_JGckRx4n3Jre_HE2KnLjyuOJO0DZ13GImlt5BfCdtXeohNahl-k45wPI13uBTXX2kX5KPJEAXuT1C28_bA&amp;ec=45768321';" alt="Armies Are The Strength Of A Nation Here Are 12 Of The Most Powerful Armies In The World Determined By Ordinance Milita Military Forces Military Combat Tanks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armies Are The Strength Of A Nation Here Are 12 Of The Most Powerful Armies In The World Determined By Ordinance Milita Military Forces Military Combat Tanks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/db/74/29db74561390c0d81519403206a861c2.png" data-lightbox="roadtrip" data-title="Ranked The Strongest Militaries In The World Military Ranks Military Ranking">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/db/74/29db74561390c0d81519403206a861c2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHjh9mbIK_5Gx1XkcTrcwFiDicDDRlUWByy-SBVYl1zohqlFYKg47U-HtKD5rm9fKOSlH645In8ppMvyY1HO6Tv3dqO_louFZ6Q&amp;ec=45768321';" alt="Ranked The Strongest Militaries In The World Military Ranks Military Ranking">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ranked The Strongest Militaries In The World Military Ranks Military Ranking</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d6/cc/a7/d6cca7c5f7ce7825989c66030a0f61d9.jpg" data-lightbox="roadtrip" data-title="Top 10 Strongest Armies In The World Special Forces Military Special Forces Military Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d6/cc/a7/d6cca7c5f7ce7825989c66030a0f61d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWs4Et9Il-F762-x9ZwdTAlCKrncqUlCj6VzyfChJRsuARKKpF55w6Brvl3qund_pa0NyeCNZTzPPEx2RNNrolDWg0M6oirJwRIA&amp;ec=45768321';" alt="Top 10 Strongest Armies In The World Special Forces Military Special Forces Military Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Strongest Armies In The World Special Forces Military Special Forces Military Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/42/e3/04/42e304568a6c5296e3bc0353b061ca75.jpg" data-lightbox="roadtrip" data-title="Pin On Warriors And Operators Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/42/e3/04/42e304568a6c5296e3bc0353b061ca75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREP9KrH6cDC4jMKanzMk0cE6eBzMYhrxV_AI8iAwtOGD1TBqrrDDKIoRbIn_Zqy-uo2zFjPDpGOKbQuwnFvp5dNpmG8uvk_i2Oeg&amp;ec=45768321';" alt="Pin On Warriors And Operators Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Warriors And Operators Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/87/36/75/8736755264cf05f6fc30046cd52672cb.jpg" data-lightbox="roadtrip" data-title="Top 10 Strongest Armies In The World In 2020 Military Army World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/87/36/75/8736755264cf05f6fc30046cd52672cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYXAlaHAaFqUQAVWPu41vSYLIcfQRaoGXD9hTVU6gC8sXtwvwIe0IVD-hQiMeeJJkZvibS4Q5VozM0Wka88lnOXedyhst2OnYKJQ&amp;ec=45768321';" alt="Top 10 Strongest Armies In The World In 2020 Military Army World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 Strongest Armies In The World In 2020 Military Army World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/7f/84/4d7f8418261dbefdf8170ca4bbaa0acf.jpg" data-lightbox="roadtrip" data-title="The Strongest Armies In The World Worldation Military Videos Troops Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/7f/84/4d7f8418261dbefdf8170ca4bbaa0acf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREu2kR-rOvzakQf-ueTZFql_8fRSksjgadgVuonqy7j8qZjxHOlZrEetioET6k37oFKpH3ueifKJYnmZYBdT_WtjgZyG9wn9i6jg&amp;ec=45768321';" alt="The Strongest Armies In The World Worldation Military Videos Troops Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Strongest Armies In The World Worldation Military Videos Troops Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/ae/c6/dfaec615e2e70639358959480b86acee.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/ae/c6/dfaec615e2e70639358959480b86acee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo_4hix7q_NqE5f8FCzqsj_R1UwQ52mu-Oaw6vKCb9az_LJIcGr5YEpjNCw40jKARIs40zosT3gPT9_17OBLIBetN-a0hCahsFwA&amp;ec=45768321';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/82/b6/7982b614280a65db3fb19953ffbea754.jpg" data-lightbox="roadtrip" data-title="10 Most Powerful Military Forces In The World Military Forces Military World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/82/b6/7982b614280a65db3fb19953ffbea754.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhPQraQKOJh0MM_gTprdtHT7n_4drXcihu9A';" alt="10 Most Powerful Military Forces In The World Military Forces Military World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Most Powerful Military Forces In The World Military Forces Military World</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-companies-hire-military-spouses.html">What Companies Hire Military Spouses</a></li>
+													<li class="list-group-item"><a href="/what-college-can-you-go-to-for-modeling.html">What College Can You Go To For Modeling</a></li>
+													<li class="list-group-item"><a href="/what-college-am-i-going-to-go-to-quiz.html">What College Am I Going To Go To Quiz</a></li>
+													<li class="list-group-item"><a href="/what-colleges-accept-post-911-gi-bill.html">What Colleges Accept Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-college-should-i-go-go-quiz.html">What College Should I Go Go Quiz</a></li>
+													<li class="list-group-item"><a href="/what-college-to-go-to-to-become-an-fbi-agent.html">What College To Go To To Become An Fbi Agent</a></li>
+													<li class="list-group-item"><a href="/what-college-should-i-go-to-for-physics.html">What College Should I Go To For Physics</a></li>
+													<li class="list-group-item"><a href="/what-college-should-i-go-to-for-real-estate.html">What College Should I Go To For Real Estate</a></li>
+													<li class="list-group-item"><a href="/what-college-did-tommyinnit-go-to.html">What College Did Tommyinnit Go To</a></li>
+													<li class="list-group-item"><a href="/what-college-should-i-go-to-for-business.html">What College Should I Go To For Business</a></li>
+													<li class="list-group-item"><a href="/what-college-to-go-to-become-an-astronaut.html">What College To Go To Become An Astronaut</a></li>
+													<li class="list-group-item"><a href="/what-college-did-steve-jobs-go-to.html">What College Did Steve Jobs Go To</a></li>
+													<li class="list-group-item"><a href="/what-chapter-is-the-gi-bill.html">What Chapter Is The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-classifies-a-protected-veteran.html">What Classifies A Protected Veteran</a></li>
+													<li class="list-group-item"><a href="/what-college-does-tommyinnit-go-to.html">What College Does Tommyinnit Go To</a></li>
+													<li class="list-group-item"><a href="/what-companies-hire-the-most-veterans.html">What Companies Hire The Most Veterans</a></li>
+													<li class="list-group-item"><a href="/what-college-did-kobe-bryant-go-to-college.html">What College Did Kobe Bryant Go To College</a></li>
+													<li class="list-group-item"><a href="/what-college-should-i-go-to-for-veterinarians.html">What College Should I Go To For Veterinarians</a></li>
+													<li class="list-group-item"><a href="/what-color-glasses-can-you-wear-in-military-uniform.html">What Color Glasses Can You Wear In Military Uniform</a></li>
+													<li class="list-group-item"><a href="/what-college-should-i-go-to-for-criminal-justice.html">What College Should I Go To For Criminal Justice</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

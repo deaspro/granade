@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Vicksburg National Military Park Reviews - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Vicksburg National Military Park Reviews",
+  "datePublished": "2021-02-14",
+  "image": "https://media-cdn.tripadvisor.com/media/photo-i/0d/d8/e1/9a/illinois-monument.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=vicksburg+national+military+park+reviews",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Vicksburg National Military Park Reviews</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Reconstructed forts and trenches evoke memories of the 47-day siege that ended in the surrender of the city. There are several areas to pull over to read the markers and memorials. Browse Expedias selection of 69 hotels and places to stay closest to Vicksburg National Military Park. <br>				
+			</p>
+										<a class="badge badge-primary" href="/what-to-do-if-your-husband-ignores-you-after-a-fight.html">what to do if your husband ignores you after a fight</a>
+											<a class="badge badge-warning" href="/what-to-claim-to-get-100-va-disability.html">what to claim to get 100 va disability</a>
+											<a class="badge badge-success" href="/what-to-be-thankful-for-quotes.html">what to be thankful for quotes</a>
+											<a class="badge badge-warning" href="/what-to-do-if-i-didnt-go-to-college.html">what to do if i didnt go to college</a>
+											<a class="badge badge-danger" href="/what-time-does-national-guard-drill-start.html">what time does national guard drill start</a>
+											<a class="badge badge-danger" href="/what-time-does-usaa-pay-military.html">what time does usaa pay military</a>
+											<a class="badge badge-success" href="/what-to-do-if-husband-cheated-on-you.html">what to do if husband cheated on you</a>
+											<a class="badge badge-secondary" href="/what-to-do-if-husband-refuses-to-work.html">what to do if husband refuses to work</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to pay a visit to the right blog.  Our website gives you suggestions for seeing the highest quality video and picture content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, so we recommend this movie for you to see.  You can also bring about supporting this website by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/11/86/14/9f/vicksburg-national-military.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Military Park Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/11/86/14/9f/vicksburg-national-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS80ZlE5sC5y0ddgG4jvK49fWvDP7peDIpc9w';" alt="Vicksburg National Military Park Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/05/38/8f/6a/vicksburg-national-military.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Military Park Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/05/38/8f/6a/vicksburg-national-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPuvY-DfG_Kx3vxOE37HR3TVXqhrSGELK04Q';" alt="Vicksburg National Military Park Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/05/65/2f/4d/vicksburg-national-military.jpg" data-lightbox="roadtrip" data-title="Entrance Sign Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/05/65/2f/4d/vicksburg-national-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTsBUuNdTDALLBbCCQng9F6S3CJ58raaoa6Q';" alt="Entrance Sign Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Entrance Sign Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/05/77/8d/5b/vicksburg-national-military.jpg" data-lightbox="roadtrip" data-title="Kentucky Memorial Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/05/77/8d/5b/vicksburg-national-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsX8IYUJu2R8w-9nKJxif7t4AmTA85E_V28w';" alt="Kentucky Memorial Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Memorial Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/13/3a/68/87/photo2jpg.jpg" data-lightbox="roadtrip" data-title="Photo2 Jpg Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/13/3a/68/87/photo2jpg.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3EwKWdhbJwWX1UNpZlo7CmwuLXSdVrYnojg';" alt="Photo2 Jpg Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo2 Jpg Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/01/26/c7/f1/louisiana-monument.jpg" data-lightbox="roadtrip" data-title="Louisiana Monument Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/01/26/c7/f1/louisiana-monument.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRruXfNCW3QvfWKblZnHGcnCrB_uW2zk7RAEA';" alt="Louisiana Monument Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Louisiana Monument Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/0e/7f/44/1e/the-alabama-monument.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRruXfNCW3QvfWKblZnHGcnCrB_uW2zk7RAEA';" alt="Louisiana Monument Picture Of Vicksburg National Military Park Tripadvisor">
+										<div class="card-body">
+						<h3 class="h5"><b>To be able to see the areas where the union and confederate soldiers encamped as well as the monuments erected by the different states honoring their fallen was awesome.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Vicksburg national military park reviews</strong>. 
+								
+																	A surprisingly informative military park. 
+																	Read all 2999 reviews. 
+																	The park is a self guided driving tour that have memorials statues and cannons depicting the Battle of Vicksburg. 
+																	Vicksburg National Military Park preserves the site of the American Civil War Battle of Vicksburg waged from March 29 to July 4 1863The park located in Vicksburg Mississippi flanking the Mississippi River also commemorates the greater Vicksburg Campaign which led up to the battle. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Last Minute Hotels in Vicksburg. 
+																	The Vicksburg National Military Park is a perfect opportunity for both the Civil War buff and those just interested in American history to learn about this tumultuous time in our nations history. 
+																	Njoytravl wrote a review Jul 2012. 
+																	4-stars Hotels in Vicksburg. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A wonderful memorial park Wish we could have spent more time in this park that is very well done and full of reverence for this epic battle of the Civil War. 
+																	Tour Drive is Open The National Park Service has closed the visitors center which is a real miss. 
+																	Historians say Vicksburg and Gettysburg vie for importance It is so tastefully done and very informative. 
+																	All reviews visitor center driving tour uss cairo civil war both sides audio tour cell phone military park shirley house two hours confederate lines american history drive thru mile drive battle field gift shop take your time great history mississippi river welcome center visitors cd. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Gibraltar of the Confederacy Review of Vicksburg National Military Park Reviewed 10 December 2018 Located high on bluffs overlooking a bend in the Mississippi River and surrounded by a maze of swamps and bayou Vicksburg was a natural stronghold that became known as the Gibraltar of the Confederacy. 
+																	Bed and Breakfast Vicksburg. 
+																	Austin Texas 438 contributions 146 helpful votes. 
+																	35 Other Attractions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Vicksburg National Military Park is a perfect opportunity for both the Civil War buff and those just interested in American history to learn about this tumultuous time in our nations history. 
+																	The Vicksburg National Military Park is a perfect opportunity for both the Civil War buff and those just interested in American history to learn about this tumultuous time in our nations history. 
+																	3201 Clay St Vicksburg MS 39183-3495. 
+																	112 Restaurants within 5 miles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We hiked one. 
+																	Waged on the heights overlooking the Mississippi River in Vicksburg Mississip. 
+																	Vicksburg National Military Park - See 2999 traveller reviews 1892 candid photos and great deals for Vicksburg MS at Tripadvisor. 
+																	The drive is interesting and views spectacular. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vicksburg National Military Park. 
+																	Even if you can only take time for. 
+																	The Vicksburg National Military Park is a perfect opportunity for both the Civil War buff and those just interested in American history to learn about this tumultuous time in our nations history. 
+																	Save on popular hotels near Vicksburg National Military Park Vicksburg. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find cheap deals and discount rates that best fit your budget. 
+																	Book now save with no cancellation fee. 
+																	Decided to visit the Vicksburg National Memorial and was the only thing we found gratifying here. 
+																	The civil war battle at Vicksburg was a turning point in the war and is worth something time to reflect as experiencing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Saint Paul Minnesota 399 contributions 66 helpful votes Definitely worth a walk on the road- not super user friendly when you arrive Vicksburg National Military Park is a must see for any American. 
+																	The lack of orientation of the historical events that took place here leave a visitor without context of what occurred here. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/0f/3c/d5/98/illinois-monument.jpg" data-lightbox="roadtrip" data-title="The Most Monumented National Military Park In Us Review Of Vicksburg National Military Park Vicksburg Ms Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/0f/3c/d5/98/illinois-monument.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShMURCHko6pCHVULqb5HINwzwhMBIJygvnwA';" alt="The Most Monumented National Military Park In Us Review Of Vicksburg National Military Park Vicksburg Ms Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Most Monumented National Military Park In Us Review Of Vicksburg National Military Park Vicksburg Ms Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/05/65/31/40/vicksburg-national-military.jpg" data-lightbox="roadtrip" data-title="Texas Monument Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/05/65/31/40/vicksburg-national-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxT0RuW69yABE42pAvWXWS3NAMnFNpEf6hCw';" alt="Texas Monument Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Monument Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/0e/7f/44/1e/the-alabama-monument.jpg" data-lightbox="roadtrip" data-title="The Alabama Monument Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/0e/7f/44/1e/the-alabama-monument.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhX1kc9-HBhF_gfl3Jsc0aGZekw3e_xHQmBg';" alt="The Alabama Monument Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Alabama Monument Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/06/84/50/21/vicksburg-national-military.jpg" data-lightbox="roadtrip" data-title="Iowa Memorial Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/06/84/50/21/vicksburg-national-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHT4max_nUOl1Ls6uoMIt_hN1aUxl6t-eM6Q';" alt="Iowa Memorial Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iowa Memorial Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/08/1c/c0/9b/vicksburg-national-military.jpg" data-lightbox="roadtrip" data-title="Visitor Center Vicksburg National Military Park May 2015 Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/08/1c/c0/9b/vicksburg-national-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSivQByqTIOT8Z9UZ0wPd_HWGPfzLnWJRXWeg';" alt="Visitor Center Vicksburg National Military Park May 2015 Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Visitor Center Vicksburg National Military Park May 2015 Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/00/10/6a/be/this-is-the-location.jpg" data-lightbox="roadtrip" data-title="This Is The Location Of General Ulysses S Grant S Headquarters During The Vicksburg Siege Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/00/10/6a/be/this-is-the-location.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYlEHLP6kXLQCQNyxMUDLQByZorMAOJKOSug';" alt="This Is The Location Of General Ulysses S Grant S Headquarters During The Vicksburg Siege Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is The Location Of General Ulysses S Grant S Headquarters During The Vicksburg Siege Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/07/98/ef/7a/alabama-memorial.jpg" data-lightbox="roadtrip" data-title="Alabama Memorial Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/07/98/ef/7a/alabama-memorial.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIE9iSVpYrG_47njqFkSQpmqqDRHZYMX08A';" alt="Alabama Memorial Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama Memorial Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-i/0d/d8/e1/9a/illinois-monument.jpg" data-lightbox="roadtrip" data-title="Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-i/0d/d8/e1/9a/illinois-monument.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrGtS23vs--KFHrXk4iCKjLaBHioVFakM58A';" alt="Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/05/38/8f/90/vicksburg-national-military.jpg" data-lightbox="roadtrip" data-title="Union Obelisk Memorial Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/05/38/8f/90/vicksburg-national-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZXsN7wxexCsiVr-6lPWAyiD6NVlLUwcfDw';" alt="Union Obelisk Memorial Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Union Obelisk Memorial Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/05/eb/db/06/wisconsin-monument-featuring.jpg" data-lightbox="roadtrip" data-title="Wisconsin Monument Featuring Old Abe Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/05/eb/db/06/wisconsin-monument-featuring.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWzG5RUvAE5qb2ardb8CeD3mPeyqH18oRwXA';" alt="Wisconsin Monument Featuring Old Abe Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wisconsin Monument Featuring Old Abe Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/0d/d8/e1/7d/texas-monument.jpg" data-lightbox="roadtrip" data-title="Texas Monument Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/0d/d8/e1/7d/texas-monument.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0rf8IYmzSMESWe4nZnKA0J7t4aDnKNlVjVg';" alt="Texas Monument Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Monument Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/05/de/bd/90/vicksburg-national-military.jpg" data-lightbox="roadtrip" data-title="Us Grant On His Horse Kangaroo Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/05/de/bd/90/vicksburg-national-military.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuWPk5DBkt-qALEfgIen8wHDQ31vZ1LfozDw';" alt="Us Grant On His Horse Kangaroo Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Grant On His Horse Kangaroo Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-cdn.tripadvisor.com/media/photo-s/0e/7f/44/0a/bronze-sculpture-on-one.jpg" data-lightbox="roadtrip" data-title="Bronze Sculpture On One Of Wisconsin S Monuments Picture Of Vicksburg National Military Park Tripadvisor">
+											<img class="card-img v-image ads-img " src="https://media-cdn.tripadvisor.com/media/photo-s/0e/7f/44/0a/bronze-sculpture-on-one.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPvlZgUREhLXyiYNKIpqpKomRlg1iDW2Vaqg';" alt="Bronze Sculpture On One Of Wisconsin S Monuments Picture Of Vicksburg National Military Park Tripadvisor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bronze Sculpture On One Of Wisconsin S Monuments Picture Of Vicksburg National Military Park Tripadvisor</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/west-virginia-state-university-education-department.html">West Virginia State University Education Department</a></li>
+													<li class="list-group-item"><a href="/west-virginia-unemployment-quarterly-filing.html">West Virginia Unemployment Quarterly Filing</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education.html">West Virginia Department Of Education</a></li>
+													<li class="list-group-item"><a href="/west-virginia-national-guard-deployed.html">West Virginia National Guard Deployed</a></li>
+													<li class="list-group-item"><a href="/western-illinois-university-womens-basketball-questionnaire.html">Western Illinois University Womens Basketball Questionnaire</a></li>
+													<li class="list-group-item"><a href="/west-virginia-ui-benefits.html">West Virginia Ui Benefits</a></li>
+													<li class="list-group-item"><a href="/went-to-college-in-france.html">Went To College In France</a></li>
+													<li class="list-group-item"><a href="/west-virginia-unemployment-claim-status.html">West Virginia Unemployment Claim Status</a></li>
+													<li class="list-group-item"><a href="/west-virginia-unemployment-rate-by-county.html">West Virginia Unemployment Rate By County</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-address.html">West Virginia Department Of Education Address</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-e-learning.html">West Virginia Department Of Education E Learning</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-transportation.html">West Virginia Department Of Education Transportation</a></li>
+													<li class="list-group-item"><a href="/westminster-college-gift-shop.html">Westminster College Gift Shop</a></li>
+													<li class="list-group-item"><a href="/were-black-veterans-eligible-for-gi-bill.html">Were Black Veterans Eligible For Gi Bill</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-wveis.html">West Virginia Department Of Education Wveis</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-homeschooling.html">West Virginia Department Of Education Homeschooling</a></li>
+													<li class="list-group-item"><a href="/west-dean-college-gift-vouchers.html">West Dean College Gift Vouchers</a></li>
+													<li class="list-group-item"><a href="/west-virginia-air-national-guard-jobs.html">West Virginia Air National Guard Jobs</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-phone-number.html">West Virginia Department Of Education Phone Number</a></li>
+													<li class="list-group-item"><a href="/west-virginia-department-of-education-standards.html">West Virginia Department Of Education Standards</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

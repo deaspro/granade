@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Are Good Reasons To Go To College - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Are Good Reasons To Go To College",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/ee/ab/8f/eeab8fc7b2c622ef1717e2727d840403.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+are+good+reasons+to+go+to+college",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Are Good Reasons To Go To College</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For some people the number one reason to go to college may simply be the opportunity to move to a new location. The unemployment rate for college grads is also about half the jobless rate of high school graduates. March 29 2019 by Kasia OBrien. <br>				
+			</p>
+										<a class="badge badge-danger" href="/what-does-a-nypd-sergeant-do.html">what does a nypd sergeant do</a>
+											<a class="badge badge-success" href="/what-does-gi-detox-do.html">what does gi detox do</a>
+											<a class="badge badge-primary" href="/what-does-compensation-issue-mean-with-the-va.html">what does compensation issue mean with the va</a>
+											<a class="badge badge-secondary" href="/what-does-gi-bill-pay-for.html">what does gi bill pay for</a>
+											<a class="badge badge-secondary" href="/what-does-it-mean-if-your-wife-doesnt-want-to-make-love.html">what does it mean if your wife doesnt want to make love</a>
+											<a class="badge badge-light" href="/what-does-a-va-rating-of-100-permanent-and-total-mean.html">what does a va rating of 100 permanent and total mean</a>
+											<a class="badge badge-success" href="/what-does-gi-bill-mean-in-us-history.html">what does gi bill mean in us history</a>
+											<a class="badge badge-warning" href="/what-does-iliopsoas-tendonitis-feel-like.html">what does iliopsoas tendonitis feel like</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the right blog.  Our website provides you with suggestions for viewing the highest quality video and picture content, hunt and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you view.  You can also bring about supporting this site by sharing videos and graphics that you enjoy on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/20/0e/2a200ee55685d7d6853d27a845c3e45e.jpg" data-lightbox="roadtrip" data-title="Infographic Why Parents Want Kids To Go To College Education And Careers Education Quotes For Teachers Education College College Parents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/20/0e/2a200ee55685d7d6853d27a845c3e45e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUwKRB-pcVyGcE9UVRC7p-pk-07e9ZTlnz2w';" alt="Infographic Why Parents Want Kids To Go To College Education And Careers Education Quotes For Teachers Education College College Parents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Infographic Why Parents Want Kids To Go To College Education And Careers Education Quotes For Teachers Education College College Parents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ee/ab/8f/eeab8fc7b2c622ef1717e2727d840403.jpg" data-lightbox="roadtrip" data-title="10 Reasons Not To Go To College Icreatedaily Personal Development Alternative Education Tutoring Business Millionaire Success Habits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ee/ab/8f/eeab8fc7b2c622ef1717e2727d840403.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKM8_C4cu0AhaANlmuuvtlvVLoLXZ9WTwAbg';" alt="10 Reasons Not To Go To College Icreatedaily Personal Development Alternative Education Tutoring Business Millionaire Success Habits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Reasons Not To Go To College Icreatedaily Personal Development Alternative Education Tutoring Business Millionaire Success Habits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e1/51/90/e151902847c2b36e4c9f102ffe17946a.jpg" data-lightbox="roadtrip" data-title="Why Go To College 6 Wrong Right Reasons To Go To College College College Survival Guide College Survival">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e1/51/90/e151902847c2b36e4c9f102ffe17946a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUbHV9DtaQvAL9X08_9XxPwISiyBFz-f31g';" alt="Why Go To College 6 Wrong Right Reasons To Go To College College College Survival Guide College Survival">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Go To College 6 Wrong Right Reasons To Go To College College College Survival Guide College Survival</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/7c/c1/447cc11d2dea0b23f5cf9531d9efff7a.png" data-lightbox="roadtrip" data-title="5 Good Reasons To Go To College Education College College Liberal Arts College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/7c/c1/447cc11d2dea0b23f5cf9531d9efff7a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAasuFbyWKu8c0ZR65fdJQ8J_izHhLqoAsEw';" alt="5 Good Reasons To Go To College Education College College Liberal Arts College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Good Reasons To Go To College Education College College Liberal Arts College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/7a/c9/5c7ac9a248cea428d8612716c1328768.jpg" data-lightbox="roadtrip" data-title="10 Reasons To Study Now Study Motivation School Motivation Study Skills">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/7a/c9/5c7ac9a248cea428d8612716c1328768.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8FoToNHfdtGeUPWgCqS9WL6ECxKAUzTCt7g';" alt="10 Reasons To Study Now Study Motivation School Motivation Study Skills">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Reasons To Study Now Study Motivation School Motivation Study Skills</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/c4/2f/37c42f58a46d3bfcd5d08b0534d4d579.jpg" data-lightbox="roadtrip" data-title="Why School Is Important First Year Teaching College Essay Teacher Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/c4/2f/37c42f58a46d3bfcd5d08b0534d4d579.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUW05gkET14zFoXdZ1vQV5_JNprwhSUl2qNA';" alt="Why School Is Important First Year Teaching College Essay Teacher Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why School Is Important First Year Teaching College Essay Teacher Images</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/56/e6/2c/56e62cdbe961768c92672ff96774fc0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUW05gkET14zFoXdZ1vQV5_JNprwhSUl2qNA';" alt="Why School Is Important First Year Teaching College Essay Teacher Images">
+										<div class="card-body">
+						<h3 class="h5"><b>Teachers play a key role in any students life.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What are good reasons to go to college</strong>. 
+								
+																	They are knowledgeable on a lot of things and they should be able to impart a wide array of information and wisdom on specific subject matters as well as life in general. 
+																	Getting a Bachelors degree typically takes 4 years and if you get behind in your classes take time off or explore outside of your major it could take much longer. 
+																	Beyond financial rewards there are other ways college can change your life. 
+																	This type of essay is written to encourage the reader to take action on a given subject. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your college is prestigious This may be true but what distinguishes the college from other prestigious colleges. 
+																	Many northerners may want to go to school in the south to escape the cold. 
+																	However there are many good reasons to go to college including career stability. 
+																	Others may just want to get out of a small town and see the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Getting a good-paying job is one of the top reasons why most people go to college. 
+																	Getting some level of education after high school whether at a traditional four-year campus or community college or through a career-specific certificate program pays out more often than not. 
+																	Your answer should show that you have specific and admirable reasons for attending the college. 
+																	I chose to go to a large university because I wanted to maximize my post-college opportunities while still in school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As most people ponder whether or not to start college or return to college. 
+																	You all have to live your own lives and make decisions rooted in what feels right. 
+																	According to a 2018 study conducted by the Association of American Colleges and Universities 82 percent of. 
+																	Theyre also less likely to smoke and more likely to exercise. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College Degrees Can Help Build Better People. 
+																	Following are five good reasons to go to college and most have nothing to do with securing a job after college even though the end result will be finding a career. 
+																	According to the National Center for Education Statistics the amount of first-time Bachelors seeking students who. 
+																	College Degrees Help Families Live More Comfortably. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	College Degrees Make Healthy Living Easier. 
+																	College Degrees Make Retirement More Comfortable. 
+																	1 Youre Going to Lose 4 or more years. 
+																	Developing academic knowledge to become good at school Entirely mastering a given curriculum of study. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The ability to expertly create your own curriculumlearning literacythis. 
+																	Mastering and then applying academic and non-academic knowledge to live eg to get a jobwhich is different than doing good work Gaining and using academic knowledge to do good work. 
+																	College Degrees Create More Career Opportunities. 
+																	While there are no obligatory reasons why you should go to college benefits are obvious including financial personal educational cultural even healthcare grounds. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Make lifelong friends. 
+																	Shares 120 Facebook Tweet. 
+																	To get an education. 
+																	I wanted to escape the comfort of home and the familiar to achieve independence in college. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We have a vast alumni network and this helped me land a great summer internship Community College. 
+																	They are like the childrens second parents adults who are there to supervise when they are not at home. 
+																	No matter how much love you have for your friends or significant other. 
+																	Im currently on my college journey just 20 minutes from home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	5 REASONS WHY COLLEGE IS STILL A GOOD IDEA Why College is a Good Idea Still. 
+																	Things dont always go as planned though. 
+																	As kids people often interpret higher education as something alike to school with tons of homework that should be completed. 
+																	When considering reasons to go to college and where you want to go think about the environments you are most comfortable in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Finally people who go to college tend to be healthier. 
+																	Deciding to go to college mainly because your friends or significant other decides to is likely to result in resentment disappointment frustration and possibly even a fractured relationship. 
+																	The following answers are not likely to impress your interviewer. 
+																	While you may feel you chose a community college out of necessity you can incorporate the benefits this type of school offers into your answer. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Distance from home doesnt determine whether or not youll grow and. 
+																	According to a CDC report people with a bachelors degree live about nine years longer than people without one. 
+																	Find out the reasons why you shouldnt go to college. 
+																	There are a large variety of smaller colleges and community colleges that can provide you an excellent education without the big school feel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are myriad reasons to enroll in college and these reasons can be presented in a persuasive essay. 
+																	For these reasons we can think of college graduates as people who have had a strong first-hand education in learning about how to play the game and follow the rules. 
+																	10 Reasons Why You Should Go to College Close to Home. 
+																	This might seem obvious but you would be amazed how low this ranks on the list of criteria involved in making the decision to attend college. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/22/3e/de223e9f035d5664f9e2e9a5df81f989.jpg" data-lightbox="roadtrip" data-title="Top 5 Reasons Why School Is Important According To My 4th Graders So You Can Move Out Of Your Family S House Bec College Essay Back To School Images Essay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/22/3e/de223e9f035d5664f9e2e9a5df81f989.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWsGF0QIafIlTtQerA50abmn0FTKhrxYJ2gQ';" alt="Top 5 Reasons Why School Is Important According To My 4th Graders So You Can Move Out Of Your Family S House Bec College Essay Back To School Images Essay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 Reasons Why School Is Important According To My 4th Graders So You Can Move Out Of Your Family S House Bec College Essay Back To School Images Essay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/91/2c/cc912c77af35a71547c3dcb59013b1aa.jpg" data-lightbox="roadtrip" data-title="Top 5 Reasons Why School Is Important According To My 4th Graders So You Can Mov Why Is School Important Education Quotes Inspirational First Year Teaching">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/91/2c/cc912c77af35a71547c3dcb59013b1aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdVDNBHDSd7IaoowFnY_R5LjRA1hDYnF1IlA';" alt="Top 5 Reasons Why School Is Important According To My 4th Graders So You Can Mov Why Is School Important Education Quotes Inspirational First Year Teaching">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 Reasons Why School Is Important According To My 4th Graders So You Can Mov Why Is School Important Education Quotes Inspirational First Year Teaching</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/aa/eb/1baaeb6d48a96c76f95a04463de4455f.jpg" data-lightbox="roadtrip" data-title="Ptos Top 10 Reasons Students Leave Or Drop Out Of College High School Dropouts Dropping Out Of College Higher Education Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/aa/eb/1baaeb6d48a96c76f95a04463de4455f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRndy6y08FD4Ab3RVj4n6yg_Mqpud7hyhyZzg';" alt="Ptos Top 10 Reasons Students Leave Or Drop Out Of College High School Dropouts Dropping Out Of College Higher Education Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ptos Top 10 Reasons Students Leave Or Drop Out Of College High School Dropouts Dropping Out Of College Higher Education Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/be/fd/7fbefd8973e4f34580b5389bf63013bb.png" data-lightbox="roadtrip" data-title="5 Reasons To Join College Clubs The University Network Best Essay Writing Service College Club Good Essay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/be/fd/7fbefd8973e4f34580b5389bf63013bb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmoiaGGK5D4Dg-o5GEyi_RWsHZEMuoqo7fog';" alt="5 Reasons To Join College Clubs The University Network Best Essay Writing Service College Club Good Essay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Reasons To Join College Clubs The University Network Best Essay Writing Service College Club Good Essay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/e4/10/0fe4104c3748ab324ec0f6745e68036a.jpg" data-lightbox="roadtrip" data-title="5 Reasons For Getting Involved In College And How To Go About It College College Advice Homeschool High School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/e4/10/0fe4104c3748ab324ec0f6745e68036a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZTgpum3mcV9CPW8fB7wAIcHP-v0Oc-Z4kkA';" alt="5 Reasons For Getting Involved In College And How To Go About It College College Advice Homeschool High School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Reasons For Getting Involved In College And How To Go About It College College Advice Homeschool High School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/49/f0/3549f0574bce6faab457b5d1159dc6cc.png" data-lightbox="roadtrip" data-title="5 Reasons Why Community College Makes You A Better Student In 2020 Good Student Student Community College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/49/f0/3549f0574bce6faab457b5d1159dc6cc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1OaV6nskhXxyj_fSO9P4QCEsHDg_pNpJQxA';" alt="5 Reasons Why Community College Makes You A Better Student In 2020 Good Student Student Community College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Reasons Why Community College Makes You A Better Student In 2020 Good Student Student Community College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/31/56/d43156bf29b234950cdef0193a479ebb.png" data-lightbox="roadtrip" data-title="Surprising Reasons You Should Think Twice About Going To College Scholarships For College College Budgeting Education Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/31/56/d43156bf29b234950cdef0193a479ebb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA_oxGh68RBOk4FREzDzuGC6YVobJBoFuNTw';" alt="Surprising Reasons You Should Think Twice About Going To College Scholarships For College College Budgeting Education Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Surprising Reasons You Should Think Twice About Going To College Scholarships For College College Budgeting Education Degree</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/2e/da/902eda967326e5f316f4edf5d04e6ca6.png" data-lightbox="roadtrip" data-title="6 Very Good Reasons To Drop A Class Like A Hot Potato To Maintain Your Gpa And Sanity Chiclypoised College College Survival Make Friends In College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/2e/da/902eda967326e5f316f4edf5d04e6ca6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7z5iP1ahFwuYaoTOWI_8SoSujUVVK9-ighA';" alt="6 Very Good Reasons To Drop A Class Like A Hot Potato To Maintain Your Gpa And Sanity Chiclypoised College College Survival Make Friends In College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Very Good Reasons To Drop A Class Like A Hot Potato To Maintain Your Gpa And Sanity Chiclypoised College College Survival Make Friends In College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/56/e6/2c/56e62cdbe961768c92672ff96774fc0b.jpg" data-lightbox="roadtrip" data-title="Pros And Cons Of Community College The Prudent Professor Community College College Freshman Advice Freshman College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/56/e6/2c/56e62cdbe961768c92672ff96774fc0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR23B9SJeaqzV41Tvg31WzPwDRnVGvIZ5M6OA';" alt="Pros And Cons Of Community College The Prudent Professor Community College College Freshman Advice Freshman College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pros And Cons Of Community College The Prudent Professor Community College College Freshman Advice Freshman College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/19/28/8419287937d1046ae14df971d280a46a.jpg" data-lightbox="roadtrip" data-title="Steps From Seed To The Store Reasons Why College Student Should Start Drinking Coffee Coffee Student Coffee Drinks Student College Students">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/19/28/8419287937d1046ae14df971d280a46a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYh6AcqDCFIDI0IWNVqCkTBA0IFvaqhK9ByQ';" alt="Steps From Seed To The Store Reasons Why College Student Should Start Drinking Coffee Coffee Student Coffee Drinks Student College Students">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Steps From Seed To The Store Reasons Why College Student Should Start Drinking Coffee Coffee Student Coffee Drinks Student College Students</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1a/5c/77/1a5c774016455d4243f87ad66a1b717f.jpg" data-lightbox="roadtrip" data-title="Why It S Probably A Good Thing If Your College Student Never Calls College Parents College Kids Parenting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1a/5c/77/1a5c774016455d4243f87ad66a1b717f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMmYnMVdmmpoBWZS6TD2teyx2JSZ1FPA3cXA';" alt="Why It S Probably A Good Thing If Your College Student Never Calls College Parents College Kids Parenting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why It S Probably A Good Thing If Your College Student Never Calls College Parents College Kids Parenting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/eb/27/1deb27c7e43343161356fc528cf4f487.png" data-lightbox="roadtrip" data-title="10 Good Reasons For Learning English Poster English Posters Learn English English Lessons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/eb/27/1deb27c7e43343161356fc528cf4f487.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzucubeyGvL5-5RNfsIjW7OKlkoAGBkUb-rg';" alt="10 Good Reasons For Learning English Poster English Posters Learn English English Lessons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Good Reasons For Learning English Poster English Posters Learn English English Lessons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ac/26/2a/ac262aa47c812ece111d198b578ba8bb.jpg" data-lightbox="roadtrip" data-title="4 Brilliant Reasons To Not Go To College College Alternative Healing Good Advice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ac/26/2a/ac262aa47c812ece111d198b578ba8bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT76SBPAFkdRh0Y9hejT7HD4UD-CICTUgEhDg';" alt="4 Brilliant Reasons To Not Go To College College Alternative Healing Good Advice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Brilliant Reasons To Not Go To College College Alternative Healing Good Advice</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/vacp-treas-310.html">Vacp Treas 310</a></li>
+													<li class="list-group-item"><a href="/vagov-dependents.html">Vagov Dependents</a></li>
+													<li class="list-group-item"><a href="/vagov-cola-2020.html">Vagov Cola 2020</a></li>
+													<li class="list-group-item"><a href="/vagov-compensation-rates-2020.html">Vagov Compensation Rates 2020</a></li>
+													<li class="list-group-item"><a href="/vagov-chapter-36.html">Vagov Chapter 36</a></li>
+													<li class="list-group-item"><a href="/vagov-permanent-and-total.html">Vagov Permanent And Total</a></li>
+													<li class="list-group-item"><a href="/vagov-chapter-35.html">Vagov Chapter 35</a></li>
+													<li class="list-group-item"><a href="/va-yellow-ribbon-cap.html">Va Yellow Ribbon Cap</a></li>
+													<li class="list-group-item"><a href="/vagov-chapter-35-benefits.html">Vagov Chapter 35 Benefits</a></li>
+													<li class="list-group-item"><a href="/vagov-dependent-benefits.html">Vagov Dependent Benefits</a></li>
+													<li class="list-group-item"><a href="/va-widow-medical-benefits.html">Va Widow Medical Benefits</a></li>
+													<li class="list-group-item"><a href="/va-widow-survivor-benefits.html">Va Widow Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/va-yellow-ribbon-rates.html">Va Yellow Ribbon Rates</a></li>
+													<li class="list-group-item"><a href="/vagov-compensation-calculator.html">Vagov Compensation Calculator</a></li>
+													<li class="list-group-item"><a href="/va-widows-benefits-and-social-security.html">Va Widows Benefits And Social Security</a></li>
+													<li class="list-group-item"><a href="/vagov-education-benefits.html">Vagov Education Benefits</a></li>
+													<li class="list-group-item"><a href="/vaf-526ez.html">Vaf 526ez</a></li>
+													<li class="list-group-item"><a href="/vagov-intranet.html">Vagov Intranet</a></li>
+													<li class="list-group-item"><a href="/va-yellow-ribbon-2019.html">Va Yellow Ribbon 2019</a></li>
+													<li class="list-group-item"><a href="/vaed-treas-310-xxva-ch33-payment.html">Vaed Treas 310 Xxva Ch33 Payment</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

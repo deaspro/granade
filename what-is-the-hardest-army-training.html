@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Hardest Army Training - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Hardest Army Training",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/600x315/f4/27/e9/f427e9a0554b5362f366ddde04e5f53c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+hardest+army+training",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Hardest Army Training</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Infantry and Calvary training are conducted in what is called One Unit Station Training or OSUT. Which one is the toughest and best trained. It doesnt have a high attrition rate compared to other Military schools but that doesnt matter. <br>				
+			</p>
+										<a class="badge badge-danger" href="/what-to-do-when-your-spouse-has-anxiety-and-depression.html">what to do when your spouse has anxiety and depression</a>
+											<a class="badge badge-danger" href="/what-to-do-when-your-wife-talks-too-much.html">what to do when your wife talks too much</a>
+											<a class="badge badge-primary" href="/what-to-do-when-your-spouse-keeps-bringing-up-the-past.html">what to do when your spouse keeps bringing up the past</a>
+											<a class="badge badge-dark" href="/what-to-do-when-your-spouse-repeatedly-cheats.html">what to do when your spouse repeatedly cheats</a>
+											<a class="badge badge-light" href="/what-to-expect-in-basic-training-national-guard.html">what to expect in basic training national guard</a>
+											<a class="badge badge-primary" href="/what-to-expect-being-a-navy-wife.html">what to expect being a navy wife</a>
+											<a class="badge badge-warning" href="/what-to-do-when-your-spouse-treats-you-like-a-child.html">what to do when your spouse treats you like a child</a>
+											<a class="badge badge-dark" href="/what-to-do-when-your-wife-has-anxiety.html">what to do when your wife has anxiety</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the ideal site.  Our website provides you with suggestions for seeing the maximum quality video and picture content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie for you to view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/f4/27/e9/f427e9a0554b5362f366ddde04e5f53c.jpg" data-lightbox="roadtrip" data-title="Documentary 2017 Toughest Military Most Brutal Military Training In The World Part 2 Funny Cat Photos Just For Gags Funny Girl Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/f4/27/e9/f427e9a0554b5362f366ddde04e5f53c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyfOsVTW2LGAjEicoVyOVYR4KxfRf2eJe5Q';" alt="Documentary 2017 Toughest Military Most Brutal Military Training In The World Part 2 Funny Cat Photos Just For Gags Funny Girl Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Documentary 2017 Toughest Military Most Brutal Military Training In The World Part 2 Funny Cat Photos Just For Gags Funny Girl Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/13/84/bd13840740d75bd954ed9de336b58c47.jpg" data-lightbox="roadtrip" data-title="That First Step Is Always The Hardest Airborne Army Airborne Ranger Us Army Rangers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/13/84/bd13840740d75bd954ed9de336b58c47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDqa6wwATfJISRlQs5Y5jqvLyKaOg5hkPGAg';" alt="That First Step Is Always The Hardest Airborne Army Airborne Ranger Us Army Rangers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">That First Step Is Always The Hardest Airborne Army Airborne Ranger Us Army Rangers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cf/dd/77/cfdd77e92b99f18d26ca21a6d9e9d792.jpg" data-lightbox="roadtrip" data-title="The Hardest Battle You Will Ever Have To Fight Is Between Who You Are Now And Who You Want To Be Hardest Bat Army Quotes Military Jobs Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cf/dd/77/cfdd77e92b99f18d26ca21a6d9e9d792.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbnbyNTL1cgXDkj_D2E2Vypggk5gGspfnUkA';" alt="The Hardest Battle You Will Ever Have To Fight Is Between Who You Are Now And Who You Want To Be Hardest Bat Army Quotes Military Jobs Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Hardest Battle You Will Ever Have To Fight Is Between Who You Are Now And Who You Want To Be Hardest Bat Army Quotes Military Jobs Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/74/11/cf7411fb2490ac5be97c43a6ee1ce2d5.jpg" data-lightbox="roadtrip" data-title="This Is The Hardest Week You Re Going To Have As A Military Husband Wife Mom Or Dad It Was One Of Fort Leonard Wood Fort Leonard Wood Missouri Leonard Wood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/74/11/cf7411fb2490ac5be97c43a6ee1ce2d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV3bBH3nooFMhYrFiXwNdb1pSGC3veGFsomA';" alt="This Is The Hardest Week You Re Going To Have As A Military Husband Wife Mom Or Dad It Was One Of Fort Leonard Wood Fort Leonard Wood Missouri Leonard Wood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is The Hardest Week You Re Going To Have As A Military Husband Wife Mom Or Dad It Was One Of Fort Leonard Wood Fort Leonard Wood Missouri Leonard Wood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/46/d1/9d46d1da1b97038d8c99cc722e9b71cc.jpg" data-lightbox="roadtrip" data-title="After 15 Miles Of Marching The Armys Hardest 26 Obstacle Course Had Teams Low Crawling Under Barbed Wire Army Life Obstacle Course Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/46/d1/9d46d1da1b97038d8c99cc722e9b71cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfeAL76R1NjQrTfLyB3z3Xthi-csfsBpWPPQ';" alt="After 15 Miles Of Marching The Armys Hardest 26 Obstacle Course Had Teams Low Crawling Under Barbed Wire Army Life Obstacle Course Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After 15 Miles Of Marching The Armys Hardest 26 Obstacle Course Had Teams Low Crawling Under Barbed Wire Army Life Obstacle Course Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/83/cb/3783cb1baef421b6d828552909885e57.jpg" data-lightbox="roadtrip" data-title="Army Basic Combat Training Us Boot Camp Military Preparation How To Train For Army Bct Youtube Us Army Basic Training Army Basic Training Train Activities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/83/cb/3783cb1baef421b6d828552909885e57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHqWlFshRfh7oQgY2BYhgrmvRDfAKWOfiEKA';" alt="Army Basic Combat Training Us Boot Camp Military Preparation How To Train For Army Bct Youtube Us Army Basic Training Army Basic Training Train Activities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Basic Combat Training Us Boot Camp Military Preparation How To Train For Army Bct Youtube Us Army Basic Training Army Basic Training Train Activities</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/cf/74/11/cf7411fb2490ac5be97c43a6ee1ce2d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHqWlFshRfh7oQgY2BYhgrmvRDfAKWOfiEKA';" alt="Army Basic Combat Training Us Boot Camp Military Preparation How To Train For Army Bct Youtube Us Army Basic Training Army Basic Training Train Activities">
+										<div class="card-body">
+						<h3 class="h5"><b>Special Air Services UK.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the hardest army training</strong>. 
+								
+																	Peoples Liberation Army of China. 
+																	Given that Fort Benning would have the toughest training of the four bases given that is is the home for the Armys Infantry Calvary and Armor training the cornerstones of the Armys Combat Arms. 
+																	The Basic Recon Course is one of the toughest military schools you will attend. 
+																	Deciding which are 10 best most elite hardest training special forces in the world is a very difficult assignment since these units are a great source of pride in their respective countries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Marine Corps is known as the toughest branch of the military already. 
+																	Otherwise known as basic training its the militarys way of preparing you mentally and physically for life in the armed forces. 
+																	Top 10 Hardest Special Forces Training In The World 2021. 
+																	The Top 5 Toughest Schools In the Military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In case you are wondering which is the toughest military training academy in the world check out 10 Toughest Military Training Academies in the World. 
+																	Its still one of the toughest military schools you will find. 
+																	Pakistani Special Services Group. 
+																	The first week or two is often considered to be the most difficult as recruits engage in intense physical fitness training and an introduction to required knowledge. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are 4 Army basic training locations in the United States. 
+																	Hardest Military Training in The World 1. 
+																	Pararescue School US Air Force. 
+																	After three days of intake and admin Recruit Training begins in earnest when recruits are assigned to a company and introduced to their Company Commander CC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BUDS US Navy SEAL selection and training. 
+																	When you think of the military one of the first images that probably comes to mind is boot camp. 
+																	Basic trainees move in formation during the Forge the final field training exercise of Army initial entry training on Feb. 
+																	At the Belarus Red Berets all the trainees will do a particular exercise called testing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The toughest and also most risky training that one can get while at the Peoples. 
+																	For the people of Nepal who aspire to join this British military organization the first set of punishing tests that. 
+																	US Army Special Forces Selection and Training. 
+																	List Rules Vote up the training programs that would kick your butt the hardest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Now lets see which 5 hardest to easiest. 
+																	The United Kingdoms Gurkhas. 
+																	Lawton Oklahoma Map of army basic training locations. 
+																	Some training programs Army Rangers add another area to challenge the will to keep moving - one meal a day or less. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	19 at Fort Jackson SC. 
+																	Early numbers show the two test events that require the most training are the leg tuck and standing power throw according a spokeswoman for the Armys Center for Initial Military Training. 
+																	Pararescuemen and a simulated survivor watch as an HH-60G Pave Hawk helicopter comes in for a landing. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/ba/9b/6aba9bcd9e25ba8a54cfdf6e1c913053.jpg" data-lightbox="roadtrip" data-title="Top 5 Hardest Parts Of Marines Boot Camp Training Push You To The Limit Youtube Marines Boot Camp Bootcamp United States Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/ba/9b/6aba9bcd9e25ba8a54cfdf6e1c913053.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOn7U-uC402OMTBoMSR590j_2nQ3H_3mVYpg';" alt="Top 5 Hardest Parts Of Marines Boot Camp Training Push You To The Limit Youtube Marines Boot Camp Bootcamp United States Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 Hardest Parts Of Marines Boot Camp Training Push You To The Limit Youtube Marines Boot Camp Bootcamp United States Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/54/49/ab5449247f640122bfadd508a37a385e.jpg" data-lightbox="roadtrip" data-title="Military Life 6 Strategies To Take Away The Sting Of Being Apart Military Life Army Wife Life Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/54/49/ab5449247f640122bfadd508a37a385e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2qkmnvLIfhGiejPRrJ2I_pdiFnwLuxncgg';" alt="Military Life 6 Strategies To Take Away The Sting Of Being Apart Military Life Army Wife Life Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Life 6 Strategies To Take Away The Sting Of Being Apart Military Life Army Wife Life Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/2a/df/9a2adf5498fa575f02034ab79307c3b8.jpg" data-lightbox="roadtrip" data-title="The Hardest Good Bye There Is Military Kids Military Child Month Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/2a/df/9a2adf5498fa575f02034ab79307c3b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdGjbmxxybPFCbsu1RPAJDsbTi3vJYMLbM9g';" alt="The Hardest Good Bye There Is Military Kids Military Child Month Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Hardest Good Bye There Is Military Kids Military Child Month Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/b8/75/77b875f91f57a62d02f7d6e1d9fe1626.jpg" data-lightbox="roadtrip" data-title="Army Basic Training Army Basic Training Army Strong Joining The Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/b8/75/77b875f91f57a62d02f7d6e1d9fe1626.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuoRK6w2Ne0itj8upsaPicAaErbPZ7oVtgSg';" alt="Army Basic Training Army Basic Training Army Strong Joining The Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Basic Training Army Basic Training Army Strong Joining The Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/33/7d/7b/337d7b10ef5eba15e10934f00f41617b.jpg" data-lightbox="roadtrip" data-title="Pin On Best Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/33/7d/7b/337d7b10ef5eba15e10934f00f41617b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-JMj7DcsgBvZujUaKCf71i8v1yoJjY0z3Vw';" alt="Pin On Best Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Best Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/2a/eb/7a2aeb5d99d9e6bc3fb60596843f05d9.jpg" data-lightbox="roadtrip" data-title="Pin On Exercises">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/2a/eb/7a2aeb5d99d9e6bc3fb60596843f05d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSlRQr1O8kHur6dYjNSe7z8jxL0eqLHxUm7w';" alt="Pin On Exercises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Exercises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/74/7a/6f747a43efeaba025956458c3d8636f0.jpg" data-lightbox="roadtrip" data-title="Basic Training Is More Than Just Physical Challenges To Help You Get Ahead Here Are 6 Thi Army Basic Training How To Memorize Things Basic Training Graduation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/74/7a/6f747a43efeaba025956458c3d8636f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ3KnHtNlVmbUkAGnSCWa2ptiftdtsZGqDag';" alt="Basic Training Is More Than Just Physical Challenges To Help You Get Ahead Here Are 6 Thi Army Basic Training How To Memorize Things Basic Training Graduation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basic Training Is More Than Just Physical Challenges To Help You Get Ahead Here Are 6 Thi Army Basic Training How To Memorize Things Basic Training Graduation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/e9/f1/cce9f175be25b5356e8d7add92047a38.jpg" data-lightbox="roadtrip" data-title="14633209 1784210615167663 5278117876239487434 O Jpg 1269 846 Special Forces Best Special Forces Us Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/e9/f1/cce9f175be25b5356e8d7add92047a38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy2hInbdzKlLOaSjhHknzSr3GOYvntrq2W0A';" alt="14633209 1784210615167663 5278117876239487434 O Jpg 1269 846 Special Forces Best Special Forces Us Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">14633209 1784210615167663 5278117876239487434 O Jpg 1269 846 Special Forces Best Special Forces Us Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/a1/17/85a1178169827d5a12b4730c92af65fa.jpg" data-lightbox="roadtrip" data-title="Ranger School Women In Combat Army Rangers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/a1/17/85a1178169827d5a12b4730c92af65fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmVEEb05MhqT2QIx-9xvZgRgnk_l7OQ6nmeQ';" alt="Ranger School Women In Combat Army Rangers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ranger School Women In Combat Army Rangers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/ff/59/f2/ff59f29eaaa8dc0efbe1b698cf41b010.jpg" data-lightbox="roadtrip" data-title="Rangers Lead The Way Army Rangers Us Army Rangers Ranger">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/ff/59/f2/ff59f29eaaa8dc0efbe1b698cf41b010.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3K5mivouUyl8ZLZS6hjmQ0_ZATn8elrguDw';" alt="Rangers Lead The Way Army Rangers Us Army Rangers Ranger">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rangers Lead The Way Army Rangers Us Army Rangers Ranger</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/ad/62/d1ad620a0916053ab3a1a995d993a0df.jpg" data-lightbox="roadtrip" data-title="The Hardest Part Of Leaving The Military Military Military Life Marine Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/ad/62/d1ad620a0916053ab3a1a995d993a0df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL_fr1LZKu5jRB7jscge47nXAmAUJayb5QzA';" alt="The Hardest Part Of Leaving The Military Military Military Life Marine Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Hardest Part Of Leaving The Military Military Military Life Marine Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/33/e9/9c33e95fd181fcd7b8daa2902184d334.jpg" data-lightbox="roadtrip" data-title="Mercian Regiment On Twitter British Armed Forces Army Training Military Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/33/e9/9c33e95fd181fcd7b8daa2902184d334.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUyHtGnsFqBUb_N1YqcZNy1Wq0iOv3AnmY_g';" alt="Mercian Regiment On Twitter British Armed Forces Army Training Military Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mercian Regiment On Twitter British Armed Forces Army Training Military Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/3a/a8/0c3aa8087f1292f79761a5a4118c28a2.jpg" data-lightbox="roadtrip" data-title="French Foreigne Legion Soldiers Training In French Guyana French Foreign Legion French Foreign Legion Training French Legion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/3a/a8/0c3aa8087f1292f79761a5a4118c28a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOQsuTDhwH1Msqu5Wid6_vX07TGDtD1I_f9g';" alt="French Foreigne Legion Soldiers Training In French Guyana French Foreign Legion French Foreign Legion Training French Legion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">French Foreigne Legion Soldiers Training In French Guyana French Foreign Legion French Foreign Legion Training French Legion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/64/4a/13644a42eee04b19fdae16f7628b1e6e.jpg" data-lightbox="roadtrip" data-title="Army Basic Training Army Basic Training Army Training Combat Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/64/4a/13644a42eee04b19fdae16f7628b1e6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkpntgKvdbb9gG3QP_C5HhgShNOpgtNzGQBw';" alt="Army Basic Training Army Basic Training Army Training Combat Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Basic Training Army Basic Training Army Training Combat Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/b9/2e/4ab92efff0a733535f520569142cc478.jpg" data-lightbox="roadtrip" data-title="After Pushing Through The Last Nine Miles Of The Crucible The 54 Hour Culminating Event Of Marine Corps Recruit Trainin Marine Corps Marines Boot Camp Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/b9/2e/4ab92efff0a733535f520569142cc478.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22RkF8IHbw4L2uA__-QvfjdgFMeTduxNOMg';" alt="After Pushing Through The Last Nine Miles Of The Crucible The 54 Hour Culminating Event Of Marine Corps Recruit Trainin Marine Corps Marines Boot Camp Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After Pushing Through The Last Nine Miles Of The Crucible The 54 Hour Culminating Event Of Marine Corps Recruit Trainin Marine Corps Marines Boot Camp Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-percentage-of-va-disability-is-carpal-tunnel-syndrome.html">What Percentage Of Va Disability Is Carpal Tunnel Syndrome</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-students-go-to-college-in-the-us.html">What Percentage Of Students Go To College In The Us</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-us-veterans-have-ptsd.html">What Percentage Of Us Veterans Have Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-students-go-out-of-state-for-college.html">What Percentage Of Students Go Out Of State For College</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-officers-make-lieutenant-colonel.html">What Percentage Of Officers Make Lieutenant Colonel</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-students-in-the-us-go-to-college.html">What Percentage Of Students In The Us Go To College</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-donations-does-dav-go-to-veterans.html">What Percentage Of Donations Does Dav Go To Veterans</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-federal-budget-goes-to-welfare.html">What Percentage Of Federal Budget Goes To Welfare</a></li>
+													<li class="list-group-item"><a href="/what-programs-are-available-for-homeless-veterans.html">What Programs Are Available For Homeless Veterans</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-combat-veterans-have-ptsd.html">What Percentage Of Combat Veterans Have Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-va-claims-are-denied.html">What Percentage Of Va Claims Are Denied</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-va-disability-for-sleep-apnea.html">What Percentage Of Va Disability For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-college-football-players-go-to-the-pros.html">What Percentage Of College Football Players Go To The Pros</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-college-baseball-players-go-pro.html">What Percentage Of College Baseball Players Go Pro</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-donations-go-to-dav.html">What Percentage Of Donations Go To Dav</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-pro-baseball-players-go-to-college.html">What Percentage Of Pro Baseball Players Go To College</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-college-athletes-go-pro.html">What Percentage Of College Athletes Go Pro</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-the-military-is-deployed.html">What Percentage Of The Military Is Deployed</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-the-budget-goes-to-military.html">What Percentage Of The Budget Goes To Military</a></li>
+													<li class="list-group-item"><a href="/what-percentage-of-gdp-is-spent-on-defense.html">What Percentage Of Gdp Is Spent On Defense</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

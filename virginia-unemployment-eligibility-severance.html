@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Virginia Unemployment Eligibility Severance - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Virginia Unemployment Eligibility Severance",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/68/75/60/6875600d6de12f78d0a2eaec8b192ae2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=virginia+unemployment+eligibility+severance",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Virginia Unemployment Eligibility Severance</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">After your states department of labor or similar applicable agency verifies the claim for unemployment insurance you will start receiving unemployment checks each week that you file a continuing claim which simply verifies that you are still unemployed and looking for work. If you file when severance is exhausted in Jan 2018 your base period would be October 1 2016-September 2017 which is not enough quarters of wages to qualify in NY. Vacation or severance pay you received will receive or are entitled to receive. <br>				
+			</p>
+										<a class="badge badge-light" href="/what-to-do-if-your-spouse-is-lazy.html">what to do if your spouse is lazy</a>
+											<a class="badge badge-primary" href="/what-to-do-if-your-husband-never-compliments-you.html">what to do if your husband never compliments you</a>
+											<a class="badge badge-warning" href="/what-to-do-when-your-husband-undermines-you.html">what to do when your husband undermines you</a>
+											<a class="badge badge-danger" href="/what-to-do-when-husband-belittles-you.html">what to do when husband belittles you</a>
+											<a class="badge badge-info" href="/what-to-do-if-your-husband-kicks-you-out.html">what to do if your husband kicks you out</a>
+											<a class="badge badge-success" href="/what-to-do-when-your-husband-dies-suddenly.html">what to do when your husband dies suddenly</a>
+											<a class="badge badge-info" href="/what-to-do-if-your-partner-has-gonorrhea.html">what to do if your partner has gonorrhea</a>
+											<a class="badge badge-primary" href="/what-to-do-if-your-husbands-family-doesnt-like-you.html">what to do if your husbands family doesnt like you</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the right site.  Our website provides you with suggestions for seeing the maximum quality video and picture content, search and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to view.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="fwXk405I_rAqHM" data-lightbox="roadtrip" data-title="Http Www Vec Virginia Gov Printpdf 441">
+											<img class="card-img v-image ads-img " src="fwXk405I_rAqHM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl8hrMCq2A4zb3VlkpWMnmRXPfYdkN2MLMyQ';" alt="Http Www Vec Virginia Gov Printpdf 441">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Vec Virginia Gov Printpdf 441</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vec.virginia.gov/sites/all/themes/custom/vecbootstrap/images/VEC-Logo-transparent-web.png" data-lightbox="roadtrip" data-title="Faq S Unemployment Insurance Issue Virginia Employment Commission">
+											<img class="card-img v-image ads-img " src="https://www.vec.virginia.gov/sites/all/themes/custom/vecbootstrap/images/VEC-Logo-transparent-web.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqYRBkeqckVVmE90O0GWybKbNCcbKDXhiWDg';" alt="Faq S Unemployment Insurance Issue Virginia Employment Commission">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Faq S Unemployment Insurance Issue Virginia Employment Commission</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="KpVVFbuRi3FOYM" data-lightbox="roadtrip" data-title="Https Www Dhrm Virginia Gov Docs Default Source Layoffinfo Unemploymentinsuranceeligibility Pdf Sfvrsn 2">
+											<img class="card-img v-image ads-img " src="KpVVFbuRi3FOYM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy_S81JtegxHhH1zNCd93X01uhyYtJlwZtYQ';" alt="Https Www Dhrm Virginia Gov Docs Default Source Layoffinfo Unemploymentinsuranceeligibility Pdf Sfvrsn 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Dhrm Virginia Gov Docs Default Source Layoffinfo Unemploymentinsuranceeligibility Pdf Sfvrsn 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="BUsj3JwAE_eoYM" data-lightbox="roadtrip" data-title="Http Www Vec Virginia Gov Printpdf 1026">
+											<img class="card-img v-image ads-img " src="BUsj3JwAE_eoYM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY-S6-QhUy4byn371B4lQiW_-KlqZzRa7kPA';" alt="Http Www Vec Virginia Gov Printpdf 1026">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Vec Virginia Gov Printpdf 1026</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="gRu0G7RDufo5uM" data-lightbox="roadtrip" data-title="Http Www Vec Virginia Gov Vecportal Unins Pdf Effectiveuiadjudication Pdf">
+											<img class="card-img v-image ads-img " src="gRu0G7RDufo5uM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN-8OjclXfzkTXVDRkDSc-PqMD_JOGZ1qeGw';" alt="Http Www Vec Virginia Gov Vecportal Unins Pdf Effectiveuiadjudication Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Vec Virginia Gov Vecportal Unins Pdf Effectiveuiadjudication Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fileunemployment.org/wp-content/uploads/2018/04/virginia.jpg" data-lightbox="roadtrip" data-title="Virginia Unemployment Va Benefits Eligibility Claims">
+											<img class="card-img v-image ads-img " src="https://fileunemployment.org/wp-content/uploads/2018/04/virginia.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCir5e6RgKYq5VWGA6En3dFfPs4mVEFPi1Tw';" alt="Virginia Unemployment Va Benefits Eligibility Claims">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Unemployment Va Benefits Eligibility Claims</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="nS_uZmAi5MX2rM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCir5e6RgKYq5VWGA6En3dFfPs4mVEFPi1Tw';" alt="Virginia Unemployment Va Benefits Eligibility Claims">
+										<div class="card-body">
+						<h3 class="h5"><b>As of May 2013 the AAW of Minnesota is 47370.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Virginia unemployment eligibility severance</strong>. 
+								
+																	Each state runs its own unemployment program under rules set by the USDOL so program guidelines including eligibility requirements and benefits vary from state to state. 
+																	This state employment law section provides a range of state employment laws and posters. 
+																	Even if the firing was because of negative circumstances you might still be eligible to collect unemployment checks. 
+																	Minnesota has two methods in determining eligibility for unemployment insurance but considered whichever method results in the higher amount. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Applications can be file via the Internet or the telephone. 
+																	Either a total base period earnings of 2400 is used or 53 of Minnesotas Average Annual Wages AAW rounded to the lower 100 is used. 
+																	When you make a UI claim your benefits will be calculated under the guidelines of the state where the claim is made. 
+																	Youll find website links andor phone numbers to file and learn more about eligibility benefits and other questions you might have. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You must have earned minimum wage credits set by the Virginia Unemployment Agency. 
+																	For more information about eligibility. 
+																	For your convenience the poster section features both downloadable state and federal posters. 
+																	To complete your application you must provide Read More. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you have received severance package when you lost job you do not qualify. 
+																	Same goes for vacation or sick days paid out after your last day says Douglas Holmes president of Strategic Services on Unemployment Workers Compensation. 
+																	In NY you need two quarters of wages for a claim. 
+																	For most workplaces using computers has become a part of doing business every day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Losing a job is always stressful but luckily there are state benefits to help you get back on your feet. 
+																	To apply for unemployment benefits select the state where you worked below. 
+																	As a result more and more questions have arisen as to the legal rights of an employee to use his or her work computer for personal purposes. 
+																	Claimants wishing to file for unemployment insurance in Virginia can do so at the local offices of VEC the Virginia Employment Commission. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The guidance provided in the Regulations and General Rules Affecting Unemployment Compensation published May 1 2003 provides the following. 
+																	You can get get complete eligibility criteria from state website mentioned in the next. 
+																	If severance begins within 30 days of discharge then NY delays benefit payments until severance is exhausted. 
+																	Each state administers their own Unemployment Insurance program so individual state websites are the best source for updated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You are generally able to collect unemployment if you were fired or let go from a company. 
+																	However it is unsure if telephone claims can be made from all areas in Virginia. 
+																	This amount may change every year. 
+																	To file a claim for benefits a claimant shall report in a manner prescribed by the commission and shall file a claim for benefits setting forth i his unemployment and that he claims benefits ii. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you get severance for example it could impact your eligibility and the amount of money you qualify for. 
+																	You must have earned an average weekly wage of at least 5000. 
+																	How to apply for unemployment in West Virginia. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/78/13/8f/78138f706b8f04a812379ff0a9cbacd0.jpg" data-lightbox="roadtrip" data-title="Pin On Anesthesiology Medical">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/78/13/8f/78138f706b8f04a812379ff0a9cbacd0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPKMOo0rOyZANjJAF77b61dccrAkQuoZhP3g';" alt="Pin On Anesthesiology Medical">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Anesthesiology Medical</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mcplegal.com/wp-content/uploads/2020/05/4-min.jpg" data-lightbox="roadtrip" data-title="Unemployment Insurance Benefits In Response To Covid 19">
+											<img class="card-img v-image ads-img " src="https://www.mcplegal.com/wp-content/uploads/2020/05/4-min.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSB7VhNTu72sLDBem6rWTwnDbq0u8RAcAuGw';" alt="Unemployment Insurance Benefits In Response To Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Insurance Benefits In Response To Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://info.homeworksolutions.com/hs-fs/hubfs/Unemployment-for-Household-Employees-R01.png?width=650&amp;name=Unemployment-for-Household-Employees-R01.png" data-lightbox="roadtrip" data-title="Unemployment Claims For Household Employees During Covid 19">
+											<img class="card-img v-image ads-img " src="https://info.homeworksolutions.com/hs-fs/hubfs/Unemployment-for-Household-Employees-R01.png?width=650&amp;name=Unemployment-for-Household-Employees-R01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSmtzQVgH4-0sp8ENAMEHs5mmAXdkBKGsgaw';" alt="Unemployment Claims For Household Employees During Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unemployment Claims For Household Employees During Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/1b/03/401b03c2b94752ab18395b932d9dd74f.png" data-lightbox="roadtrip" data-title="Pin On Things I Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/1b/03/401b03c2b94752ab18395b932d9dd74f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcSiSnGd-yAEnp_zloogsPKpHYhMhHRL4uQ';" alt="Pin On Things I Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Things I Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/30/77/1a30773f8b0ff80a4a029c2b5e25bd25.png" data-lightbox="roadtrip" data-title="Increase Your Productivity By 10 Folds While Having Fun Truly Unique And Effective Start Being More Productive To Fun At Work Work From Home Tips Have Fun">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/30/77/1a30773f8b0ff80a4a029c2b5e25bd25.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCjvWbKfe_93AE0G4KFKIRctZG62dahGzZCQ';" alt="Increase Your Productivity By 10 Folds While Having Fun Truly Unique And Effective Start Being More Productive To Fun At Work Work From Home Tips Have Fun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Increase Your Productivity By 10 Folds While Having Fun Truly Unique And Effective Start Being More Productive To Fun At Work Work From Home Tips Have Fun</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/75/60/6875600d6de12f78d0a2eaec8b192ae2.jpg" data-lightbox="roadtrip" data-title="Pin On Blogging Tips Tools">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/75/60/6875600d6de12f78d0a2eaec8b192ae2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKRm0ftfphXWeSE-LYddyR6hx6SEY4qnePgA';" alt="Pin On Blogging Tips Tools">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Blogging Tips Tools</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="xRKD2sXykcET-M" data-lightbox="roadtrip" data-title="Https Www Mnbar Org Docs Default Source Labor Employment Newsletter Winter 2014 Unemployment Pdf Sfvrsn 0">
+											<img class="card-img v-image ads-img " src="xRKD2sXykcET-M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSijgeayA6qxQap3Vc-JE9shhgH7na0c6mHrg';" alt="Https Www Mnbar Org Docs Default Source Labor Employment Newsletter Winter 2014 Unemployment Pdf Sfvrsn 0">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Mnbar Org Docs Default Source Labor Employment Newsletter Winter 2014 Unemployment Pdf Sfvrsn 0</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://64.media.tumblr.com/7893d533efc4a8e4d2132535c8cffd26/32228fb8ee58da83-7f/s500x750/372d3c9236e89edc15f90e3345964c9aa38e7d01.png" data-lightbox="roadtrip" data-title="The Commonwealth Institute Covid 19 Unemployment Insurance Recent Reforms">
+											<img class="card-img v-image ads-img " src="https://64.media.tumblr.com/7893d533efc4a8e4d2132535c8cffd26/32228fb8ee58da83-7f/s500x750/372d3c9236e89edc15f90e3345964c9aa38e7d01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4aLWH9xzG_aYcvsYaiyG2JeKa1z9j2FnKyg';" alt="The Commonwealth Institute Covid 19 Unemployment Insurance Recent Reforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Commonwealth Institute Covid 19 Unemployment Insurance Recent Reforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/8d/46/3b8d463255e65cb7ac3b114a45068be9.png" data-lightbox="roadtrip" data-title="From Simple Side Hustle Ideas To Work From Home Jobs To Business Ideas This List Is Filled With All Sorts Work From Home Jobs Extra Money Work From Home Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/8d/46/3b8d463255e65cb7ac3b114a45068be9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRowModoyfr_u3_yHMI04l24LrSgZxCShEQtg';" alt="From Simple Side Hustle Ideas To Work From Home Jobs To Business Ideas This List Is Filled With All Sorts Work From Home Jobs Extra Money Work From Home Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From Simple Side Hustle Ideas To Work From Home Jobs To Business Ideas This List Is Filled With All Sorts Work From Home Jobs Extra Money Work From Home Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Q4mUGb9S99ueGM" data-lightbox="roadtrip" data-title="Http Johngoldhamer Com Workshops 12 Good Causes For Leaving A Job And Receiving Virginia Unemployment Pdf">
+											<img class="card-img v-image ads-img " src="Q4mUGb9S99ueGM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT59URWZZgXiDVCJefCVgS4NDdOMM-Uj-D0Ag';" alt="Http Johngoldhamer Com Workshops 12 Good Causes For Leaving A Job And Receiving Virginia Unemployment Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Johngoldhamer Com Workshops 12 Good Causes For Leaving A Job And Receiving Virginia Unemployment Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://studentloanhero.com/wp-content/uploads/2020/12/retro-businessmen-waiting-in-line-at-the-unemployment-office-vector-id842467150-640x301.jpg" data-lightbox="roadtrip" data-title="How To Get Unemployment Benefits Even If You Quit Your Job Student Loan Hero">
+											<img class="card-img v-image ads-img " src="https://studentloanhero.com/wp-content/uploads/2020/12/retro-businessmen-waiting-in-line-at-the-unemployment-office-vector-id842467150-640x301.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUWLK4-FWA6NO-vyA3HwroNuSlVhapgB5ilA';" alt="How To Get Unemployment Benefits Even If You Quit Your Job Student Loan Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Unemployment Benefits Even If You Quit Your Job Student Loan Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mercer.com/our-thinking/law-and-policy-group/cares-act-expands-unemployment-benefits/_jcr_content/root/articleblock1/image.coreimg.jpeg/1587137260238/gl-2020-japan-covid-results.jpeg" data-lightbox="roadtrip" data-title="Cares Act Expands Unemployment Benefits Aims To Stem Job Losses Mercer">
+											<img class="card-img v-image ads-img " src="https://www.mercer.com/our-thinking/law-and-policy-group/cares-act-expands-unemployment-benefits/_jcr_content/root/articleblock1/image.coreimg.jpeg/1587137260238/gl-2020-japan-covid-results.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlqXLExNiP6M1lbhZa8_KJgmrESecGVWVq-w';" alt="Cares Act Expands Unemployment Benefits Aims To Stem Job Losses Mercer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cares Act Expands Unemployment Benefits Aims To Stem Job Losses Mercer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/1f/ee/e91fee8b7748439a3c18d3cd413c4e2b.jpg" data-lightbox="roadtrip" data-title="All 7 Shark Tank Stars Share Tips On How To Become A Millionaire With Images Become A Millionaire How To Become Shark Tank">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/1f/ee/e91fee8b7748439a3c18d3cd413c4e2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4NxEUqKZRImqBg1aOpSrYM-uB76E2THGaw';" alt="All 7 Shark Tank Stars Share Tips On How To Become A Millionaire With Images Become A Millionaire How To Become Shark Tank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All 7 Shark Tank Stars Share Tips On How To Become A Millionaire With Images Become A Millionaire How To Become Shark Tank</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="nS_uZmAi5MX2rM" data-lightbox="roadtrip" data-title="Https Www Scstatehouse Gov Archives Committeeinfo Escadhocsubcomm 120909meeting Escoption6 Pdf">
+											<img class="card-img v-image ads-img " src="nS_uZmAi5MX2rM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8pQbCw_F7HpMeIRSaCknpCS-qhvhTz3G0jQ';" alt="Https Www Scstatehouse Gov Archives Committeeinfo Escadhocsubcomm 120909meeting Escoption6 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Scstatehouse Gov Archives Committeeinfo Escadhocsubcomm 120909meeting Escoption6 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fileunemployment.org/wp-content/uploads/2018/04/michigan.jpg" data-lightbox="roadtrip" data-title="Michigan Unemployment Eligibility Fileunemployment Org">
+											<img class="card-img v-image ads-img " src="https://fileunemployment.org/wp-content/uploads/2018/04/michigan.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZiu-akCEeAuG8jmejh3k_BUqD64aS7Wnk4w';" alt="Michigan Unemployment Eligibility Fileunemployment Org">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Michigan Unemployment Eligibility Fileunemployment Org</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-va-cash-out.html">What Is Va Cash Out</a></li>
+													<li class="list-group-item"><a href="/what-is-the-weekly-rate-for-unemployment.html">What Is The Weekly Rate For Unemployment</a></li>
+													<li class="list-group-item"><a href="/what-is-va-preparation-for-decision.html">What Is Va Preparation For Decision</a></li>
+													<li class="list-group-item"><a href="/what-is-title-38-employees-for-the-va.html">What Is Title 38 Employees For The Va</a></li>
+													<li class="list-group-item"><a href="/what-is-va-compensation-for-diabetes.html">What Is Va Compensation For Diabetes</a></li>
+													<li class="list-group-item"><a href="/what-is-va-medical-retirement.html">What Is Va Medical Retirement</a></li>
+													<li class="list-group-item"><a href="/what-is-va-rating-for-gerd.html">What Is Va Rating For Gerd</a></li>
+													<li class="list-group-item"><a href="/what-is-va-qtc.html">What Is Va Qtc</a></li>
+													<li class="list-group-item"><a href="/what-is-va-non-service-connected.html">What Is Va Non Service Connected</a></li>
+													<li class="list-group-item"><a href="/what-is-va-claims-insider.html">What Is Va Claims Insider</a></li>
+													<li class="list-group-item"><a href="/what-is-va-disability-rating-for-hearing-loss.html">What Is Va Disability Rating For Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/what-is-utc-time-converter.html">What Is Utc Time Converter</a></li>
+													<li class="list-group-item"><a href="/what-is-va-rating-for-insomnia.html">What Is Va Rating For Insomnia</a></li>
+													<li class="list-group-item"><a href="/what-is-va-disability-offset.html">What Is Va Disability Offset</a></li>
+													<li class="list-group-item"><a href="/what-is-the-va-rating-for-somatic-symptom-disorder.html">What Is The Va Rating For Somatic Symptom Disorder</a></li>
+													<li class="list-group-item"><a href="/what-is-va-chapter-35.html">What Is Va Chapter 35</a></li>
+													<li class="list-group-item"><a href="/what-is-va-disability-percentage-based-on.html">What Is Va Disability Percentage Based On</a></li>
+													<li class="list-group-item"><a href="/what-is-total-and-permanent-va-disability.html">What Is Total And Permanent Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-is-va-financial-hardship.html">What Is Va Financial Hardship</a></li>
+													<li class="list-group-item"><a href="/what-is-va-lay-evidence.html">What Is Va Lay Evidence</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Rating Migraine Associated Vertigo - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Rating Migraine Associated Vertigo",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/0c/52/b1/0c52b1583390d30cb33e9152c74a2d73.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+rating+migraine+associated+vertigo",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Rating Migraine Associated Vertigo</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A large survey in 2006 by Neuhauser found that the rate of spontaneous rotatory vertigo is 67 while the rate of positional vertigo is 24. Also known as Menieres syndrome is a disorder of the. VA Ratings for Vertigo Peripheral Vestibular Disorders. <br>				
+			</p>
+										<a class="badge badge-light" href="/what-does-dav-pick-up.html">what does dav pick up</a>
+											<a class="badge badge-success" href="/what-does-gi-bill-cover-for-spouses.html">what does gi bill cover for spouses</a>
+											<a class="badge badge-light" href="/what-does-a-va-patient-advocate-do.html">what does a va patient advocate do</a>
+											<a class="badge badge-dark" href="/what-does-hrt-stand-for-in-law-enforcement.html">what does hrt stand for in law enforcement</a>
+											<a class="badge badge-danger" href="/what-does-a-public-affairs-officer-do.html">what does a public affairs officer do</a>
+											<a class="badge badge-secondary" href="/what-does-homeland-security-fall-under.html">what does homeland security fall under</a>
+											<a class="badge badge-dark" href="/what-does-it-mean-if-you-tested-positive-for-covid-antibodies.html">what does it mean if you tested positive for covid antibodies</a>
+											<a class="badge badge-primary" href="/what-does-it-cost-to-go-to-the-university-of-florida.html">what does it cost to go to the university of florida</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the right blog.  Our website provides you with suggestions for seeing the highest quality video and image content, hunt and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8a/d8/87/8ad88746b7c2b983cf3ba7b4b1a7752a.jpg" data-lightbox="roadtrip" data-title="3 Wonderful Tricks What Would Make You Feel Dizzy Is There Medicine For Vertigo What Causes Someone To Feel Dizz Tratamientos Naturales Vertigo Cervical Mareo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8a/d8/87/8ad88746b7c2b983cf3ba7b4b1a7752a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNQD_BV0tG0huWhz9W-2pxvtBWDm4Dq39zvA';" alt="3 Wonderful Tricks What Would Make You Feel Dizzy Is There Medicine For Vertigo What Causes Someone To Feel Dizz Tratamientos Naturales Vertigo Cervical Mareo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Wonderful Tricks What Would Make You Feel Dizzy Is There Medicine For Vertigo What Causes Someone To Feel Dizz Tratamientos Naturales Vertigo Cervical Mareo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4c/bf/ba/4cbfbada658b2d401714c834b063e3f1.jpg" data-lightbox="roadtrip" data-title="Pin En Inner Ear Vertigo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4c/bf/ba/4cbfbada658b2d401714c834b063e3f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSguYbdnXccwLpu_OSjNc3R4RnK5O4lnxUp_w';" alt="Pin En Inner Ear Vertigo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin En Inner Ear Vertigo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/07/AdobeStock_305418487-768x512.jpeg" data-lightbox="roadtrip" data-title="Va Disability Ratings For Vertigo Explained Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/07/AdobeStock_305418487-768x512.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZo2saskBDhM9XZitRNTU97xDCq3shFBQqLQ';" alt="Va Disability Ratings For Vertigo Explained Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings For Vertigo Explained Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/www.woodslawyers.com/wp-content/uploads/Vertigo-and-Dizziness-VA-Ratings-Benefits.jpg?fit=1024%2C536&amp;ssl=1" data-lightbox="roadtrip" data-title="Va Disability Ratings For Vertigo Dizziness Or Inner Ear Problems">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/www.woodslawyers.com/wp-content/uploads/Vertigo-and-Dizziness-VA-Ratings-Benefits.jpg?fit=1024%2C536&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPQmXXgj2WzWmBVxVUSqZdRteS1U7bbIaBw';" alt="Va Disability Ratings For Vertigo Dizziness Or Inner Ear Problems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Ratings For Vertigo Dizziness Or Inner Ear Problems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/52/b1/0c52b1583390d30cb33e9152c74a2d73.jpg" data-lightbox="roadtrip" data-title="Stetoskop Tua Benign Paroxysmal Positional Vertigo Bppv Vertigo Vertigo Symptoms Vertigo Exercises">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/52/b1/0c52b1583390d30cb33e9152c74a2d73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgiUqWXfadwDusYy8_f2iF3AGOYqtA_FNmCw';" alt="Stetoskop Tua Benign Paroxysmal Positional Vertigo Bppv Vertigo Vertigo Symptoms Vertigo Exercises">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stetoskop Tua Benign Paroxysmal Positional Vertigo Bppv Vertigo Vertigo Symptoms Vertigo Exercises</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/e1/e4/39e1e4631b0e989d9f875d9ca1d21651.jpg" data-lightbox="roadtrip" data-title="Pin On Tbi Information">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/e1/e4/39e1e4631b0e989d9f875d9ca1d21651.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnbORiyfVa3sMkV_QehhmIPS7OrcdH_YfgGw';" alt="Pin On Tbi Information">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tbi Information</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.rehabmart.com/include-mt/img-resize.asp?path=/blogphotos/rehabmart/library/common_triggers___treatments_for_dizziness.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnbORiyfVa3sMkV_QehhmIPS7OrcdH_YfgGw';" alt="Pin On Tbi Information">
+										<div class="card-body">
+						<h3 class="h5"><b>About 1 of the general population has migraine associated vertigo but the diagnosis can be confusing as it may resemble or actually be another disorder happening coincidentally in a migraineur.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va rating migraine associated vertigo</strong>. 
+								
+																	1 The dizziness or vertigo may vary in length and intensity lasting from a few minutes to up to 3 days. 
+																	1 Vertigo can happen without any trigger. 
+																	Fast forward a year now with the vertigo attacks still occuring regularly. 
+																	There are a number of ways in which veterans can show that their migraine headaches meet the 50 rating criteria. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The highest VA disability rating for migraines is 50. 
+																	As a result these conditions can affect the way they work and live. 
+																	About 30 to 50 percent of people living with migraine experience vertigo. 
+																	The rating criteria are as follows. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vertigo and Dizziness are VA Disabilities with Ratings Many veterans suffer from different ear conditions later in life like vertigo dizziness and tinnitus. 
+																	0 10 30 or 50. 
+																	A vestibular migraine is a nervous system problem that causes repeated dizziness or vertigo in people who have a history of migraine symptomsUnlike traditional migraines you may not always. 
+																	Here are the ratings according to the Department of Veterans Affairs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Long story short two ENTs I saw on my own dime in Dubai think it is not an ENT condition but rather something called migraine associated vertigo MAV which would be the area of expertise of a neurologist. 
+																	For example lay statements can be helpful as they allow veterans to detail their symptoms and the impact they have on their daily life or ability to work. 
+																	Migraine headaches are rated as follows. 
+																	VA ratings for migraines are principally rated according to the frequency of the migraine attacks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	30 dizziness and occasional staggering 10 occasional dizziness. 
+																	Vestibular migraines are migraines that include vertigo as a symptom or the only symptom. 
+																	With vestibular migraine both rotational and non-rotational vertigo can occur with position changes as well. 
+																	Dizziness that includes occasional staggering when walking. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Service members are exposed to innumerable loud noises which can cause permanent ear damage and disability. 
+																	Vertigo and Dizziness ratings can be found under 487 Schedule of ratings - ear. 
+																	I suppose one could pursue a vertigo rating analogously associated to your migraines if you have been diagnosed with vestibular migraines. 
+																	It has been estimated that migraineurs are more likely to have benign positional vertigo a common disorder that may be twice as common in migraineurs as the general population but is not associated with head pain. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Conditions that affect the ears ability to sense proper body balance. 
+																	Menieres disease is an uncommon condition affecting the inner ear and the sensory perceptions associated with it. 
+																	Brian Reese here Air Force service-disabled veteran VA disability expert and founder of VA Claims Insiderthe most trusted name in VA disability claims. 
+																	In spite of its acutely disabling effects migraines take up a very small section in the VA diagnostic code for ratings and have a maximum schedular rating of 50. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The condition causes vertigo ringing and pressure in the ears nausea and vomiting and progressive hearing loss. 
+																	Today were going in-depth to examine the VA rating for migraines. 
+																	You wont find a true vertigo diagnosis under VAs migraine disability criteria. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/b6/11/38b611fcf47f3f8dfddc1088c62e024c.png" data-lightbox="roadtrip" data-title="Pin On My Dizzy Brain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/b6/11/38b611fcf47f3f8dfddc1088c62e024c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDShDSaMd890U6v4lqf1G4_4GPkVGFam62Pg';" alt="Pin On My Dizzy Brain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Dizzy Brain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2020/11/SECONDARY20TO20MIGRAINES20THUMBNAIL.jpg" data-lightbox="roadtrip" data-title="Service Connecting Migraines And Secondary Conditions Va Benefits Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2020/11/SECONDARY20TO20MIGRAINES20THUMBNAIL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yJ4nF6IbhRIzVJoXzZ3MvsMWu-QVPXdVtA';" alt="Service Connecting Migraines And Secondary Conditions Va Benefits Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Service Connecting Migraines And Secondary Conditions Va Benefits Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/269103168_Current_Treatment_Options_in_Vestibular_Migraine/links/548087630cf20f081e7258b6/largepreview.png" data-lightbox="roadtrip" data-title="Pdf Current Treatment Options In Vestibular Migraine">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/269103168_Current_Treatment_Options_in_Vestibular_Migraine/links/548087630cf20f081e7258b6/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqUOk-irYwlOKW5QrhaGb4OVuv40BFzrc5Rw';" alt="Pdf Current Treatment Options In Vestibular Migraine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf Current Treatment Options In Vestibular Migraine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2d/da/0a/2dda0a64b10c62fa6cab744d970f7c47.jpg" data-lightbox="roadtrip" data-title="9 Productive Tips Vertigo Maneuver How To Treat Dizziness Chronic Vertigo Medicine To Treat Vertigo Benign Vertigo Exercises En 2020 Vertigo Cervical">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2d/da/0a/2dda0a64b10c62fa6cab744d970f7c47.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGSyb8ENSuz-f1CclArc8Tsx7ReR1k1-m4eA';" alt="9 Productive Tips Vertigo Maneuver How To Treat Dizziness Chronic Vertigo Medicine To Treat Vertigo Benign Vertigo Exercises En 2020 Vertigo Cervical">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Productive Tips Vertigo Maneuver How To Treat Dizziness Chronic Vertigo Medicine To Treat Vertigo Benign Vertigo Exercises En 2020 Vertigo Cervical</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/1c/45/2c1c45e4042b6640bf0b837d809fe612.jpg" data-lightbox="roadtrip" data-title="Pin On Brandy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/1c/45/2c1c45e4042b6640bf0b837d809fe612.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTXWlB9BtNlGX8J77eM2Juxm2MnPvKMI540A';" alt="Pin On Brandy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Brandy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/4f/2c/11/4f2c114d9985d45e8290e6c2f4ab1aec.jpg" data-lightbox="roadtrip" data-title="What To Take For Dizziness Chronic Vertigo What Causes Inner Ear Vertigo What Causes Severe Vertigo Ear P Migraines Remedies Vertigo Symptoms Headache Remedies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/4f/2c/11/4f2c114d9985d45e8290e6c2f4ab1aec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx29Tpd2hFUtXdviLpOE1Zv9qISUDXfnF1sg';" alt="What To Take For Dizziness Chronic Vertigo What Causes Inner Ear Vertigo What Causes Severe Vertigo Ear P Migraines Remedies Vertigo Symptoms Headache Remedies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Take For Dizziness Chronic Vertigo What Causes Inner Ear Vertigo What Causes Severe Vertigo Ear P Migraines Remedies Vertigo Symptoms Headache Remedies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thedizzycook.com/wp-content/uploads/2019/11/PPPD-The-Dizzy-Cook-Copyright-683x1024.jpg" data-lightbox="roadtrip" data-title="Persistent Postural Perceptual Dizziness Pppd Explained The Dizzy Cook">
+											<img class="card-img v-image ads-img " src="https://thedizzycook.com/wp-content/uploads/2019/11/PPPD-The-Dizzy-Cook-Copyright-683x1024.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy9da8hsGM3IlO8fpNrs21Q7UNMnOX0OK6QA';" alt="Persistent Postural Perceptual Dizziness Pppd Explained The Dizzy Cook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Persistent Postural Perceptual Dizziness Pppd Explained The Dizzy Cook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/330655514_Multidisciplinary_experts_consensus_for_assessment_and_management_of_vestibular_migraine/links/5c717825299bf1268d1fcb8e/largepreview.png" data-lightbox="roadtrip" data-title="Pdf Multidisciplinary Experts Consensus For Assessment And Management Of Vestibular Migraine">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/330655514_Multidisciplinary_experts_consensus_for_assessment_and_management_of_vestibular_migraine/links/5c717825299bf1268d1fcb8e/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRlGthFlBFccX1FqE2CrekLd_mnbtn_WU8GQ';" alt="Pdf Multidisciplinary Experts Consensus For Assessment And Management Of Vestibular Migraine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf Multidisciplinary Experts Consensus For Assessment And Management Of Vestibular Migraine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images-na.ssl-images-amazon.com/images/I/71yKJtbocBL.jpg" data-lightbox="roadtrip" data-title="The Borderland Of Epilepsy Faints Vagal Attacks Vertigo Migraine Sleep Symptoms And Their Treatment 1907 Gowers William Richard 9781165079483 Amazon Com Books">
+											<img class="card-img v-image ads-img " src="https://images-na.ssl-images-amazon.com/images/I/71yKJtbocBL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQin3fTIG6fMJPQwYP3oU2oefaxq6IqknnrJw';" alt="The Borderland Of Epilepsy Faints Vagal Attacks Vertigo Migraine Sleep Symptoms And Their Treatment 1907 Gowers William Richard 9781165079483 Amazon Com Books">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Borderland Of Epilepsy Faints Vagal Attacks Vertigo Migraine Sleep Symptoms And Their Treatment 1907 Gowers William Richard 9781165079483 Amazon Com Books</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thedizzycook.com/wp-content/uploads/2019/08/vestibular-migraine-walt-disney-world-683x1024.png" data-lightbox="roadtrip" data-title="5 Tips For Visiting Disney World With Vestibular Migraine The Dizzy Cook">
+											<img class="card-img v-image ads-img " src="https://thedizzycook.com/wp-content/uploads/2019/08/vestibular-migraine-walt-disney-world-683x1024.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJlDKvuwK7FuO3e4rLRqr4IU8racKx6euKLw';" alt="5 Tips For Visiting Disney World With Vestibular Migraine The Dizzy Cook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Tips For Visiting Disney World With Vestibular Migraine The Dizzy Cook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/64/a7/1364a7ffa4cb0982a94ae54d64a2a3e7.png" data-lightbox="roadtrip" data-title="6 Rare Types Of Migraines Migraineremedies Hemiplegic Migraine Types Of Migraines Migraine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/64/a7/1364a7ffa4cb0982a94ae54d64a2a3e7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5motZRzCnj_93i-4XvapmWurtMP2EuR31MA';" alt="6 Rare Types Of Migraines Migraineremedies Hemiplegic Migraine Types Of Migraines Migraine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Rare Types Of Migraines Migraineremedies Hemiplegic Migraine Types Of Migraines Migraine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thedizzycook.com/wp-content/uploads/2020/06/FMLA_for_migraines-683x1024.jpg" data-lightbox="roadtrip" data-title="I Lost My Job Due To A Migraine Disorder The Dizzy Cook">
+											<img class="card-img v-image ads-img " src="https://thedizzycook.com/wp-content/uploads/2020/06/FMLA_for_migraines-683x1024.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd3-Wc6aWqAFlcpSKmPISRreUYN_OstnVA0g';" alt="I Lost My Job Due To A Migraine Disorder The Dizzy Cook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Lost My Job Due To A Migraine Disorder The Dizzy Cook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/8a/f6/368af6b9efdb494fe7085e126cd96af3.png" data-lightbox="roadtrip" data-title="Dr Shanda Rae Dorff Md Medical Advice Medicine Doctor Migraine Relief">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/8a/f6/368af6b9efdb494fe7085e126cd96af3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjhbyGXfDFBvLpVy_hjDlPo_VVmQDhiVqX6w';" alt="Dr Shanda Rae Dorff Md Medical Advice Medicine Doctor Migraine Relief">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dr Shanda Rae Dorff Md Medical Advice Medicine Doctor Migraine Relief</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.rehabmart.com/include-mt/img-resize.asp?path=/blogphotos/rehabmart/library/common_triggers___treatments_for_dizziness.jpg" data-lightbox="roadtrip" data-title="Why Am I Dizzy Top 5 Causes Of Dizziness What To Do">
+											<img class="card-img v-image ads-img " src="https://www.rehabmart.com/include-mt/img-resize.asp?path=/blogphotos/rehabmart/library/common_triggers___treatments_for_dizziness.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Lbp3bx2-AiQBuAWQVMJKFez9w-CKll_QyA';" alt="Why Am I Dizzy Top 5 Causes Of Dizziness What To Do">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Am I Dizzy Top 5 Causes Of Dizziness What To Do</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/e4/74/23e474528f1764ead10cd3bbc67083fb.jpg" data-lightbox="roadtrip" data-title="4 Quick Tips To Relieve Headache Easy Home Remedies To Remember Health Aim How To Relieve Headaches Headache Relieve">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/e4/74/23e474528f1764ead10cd3bbc67083fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdFzf_kdf1L-AA3iAt8ribGyC29-DvzRwUBw';" alt="4 Quick Tips To Relieve Headache Easy Home Remedies To Remember Health Aim How To Relieve Headaches Headache Relieve">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 Quick Tips To Relieve Headache Easy Home Remedies To Remember Health Aim How To Relieve Headaches Headache Relieve</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wagner-college-womens-basketball-coaching-staff.html">Wagner College Womens Basketball Coaching Staff</a></li>
+													<li class="list-group-item"><a href="/virtual-fundraising-ideas-for-college-clubs.html">Virtual Fundraising Ideas For College Clubs</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-tax-exemptions.html">Virginia Unemployment Tax Exemptions</a></li>
+													<li class="list-group-item"><a href="/virginia-va-education-benefits.html">Virginia Va Education Benefits</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-tax-statement.html">Virginia Unemployment Tax Statement</a></li>
+													<li class="list-group-item"><a href="/waiting-on-va-retro-pay.html">Waiting On Va Retro Pay</a></li>
+													<li class="list-group-item"><a href="/war-animal-heroes.html">War Animal Heroes</a></li>
+													<li class="list-group-item"><a href="/voc-rehab-program-for-veteran.html">Voc Rehab Program For Veteran</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-weekly-claim-file.html">Virginia Unemployment Weekly Claim File</a></li>
+													<li class="list-group-item"><a href="/wappapello-national-guard-training-site.html">Wappapello National Guard Training Site</a></li>
+													<li class="list-group-item"><a href="/vo-lawyers-sl.html">Vo Lawyers Sl</a></li>
+													<li class="list-group-item"><a href="/wagner-college-womens-basketball-twitter.html">Wagner College Womens Basketball Twitter</a></li>
+													<li class="list-group-item"><a href="/vonapp-post-911-gi-bill.html">Vonapp Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/waco-va-compensation-office.html">Waco Va Compensation Office</a></li>
+													<li class="list-group-item"><a href="/voa-learning-english.html">Voa Learning English</a></li>
+													<li class="list-group-item"><a href="/virginia-veteran-dependent-education-benefits.html">Virginia Veteran Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/virginia-yellow-ribbon.html">Virginia Yellow Ribbon</a></li>
+													<li class="list-group-item"><a href="/vocational-schools-that-accept-the-gi-bill.html">Vocational Schools That Accept The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/vocational-rehabilitation-for-veterans-chapter-31.html">Vocational Rehabilitation For Veterans Chapter 31</a></li>
+													<li class="list-group-item"><a href="/virginia-university-gi.html">Virginia University Gi</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

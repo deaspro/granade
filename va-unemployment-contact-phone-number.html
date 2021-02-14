@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Unemployment Contact Phone Number - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Unemployment Contact Phone Number",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/c9/b0/1a/c9b01aeb6ba6f477ca33667d4d17eb0b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+unemployment+contact+phone+number",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Unemployment Contact Phone Number</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Box 26441 Richmond VA 23261-6441. 866-832-2363 815am to 430pm Monday - Friday and 9am to 1pm on Saturday closed Sunday and state holidays Mailing Address PO. Please contact the moderators of this subreddit if you have any questions or concerns. <br>				
+			</p>
+										<a class="badge badge-danger" href="/what-is-the-va-disability-rating-for-generalized-anxiety-disorder.html">what is the va disability rating for generalized anxiety disorder</a>
+											<a class="badge badge-light" href="/what-is-the-va-disability-rating-for-irritable-bowel-syndrome.html">what is the va disability rating for irritable bowel syndrome</a>
+											<a class="badge badge-success" href="/what-is-the-va-disability-rating-for-knee-replacement.html">what is the va disability rating for knee replacement</a>
+											<a class="badge badge-secondary" href="/what-is-the-us-military-budget-for-2020.html">what is the us military budget for 2020</a>
+											<a class="badge badge-warning" href="/what-is-the-tuition-cap-for-gi-bill.html">what is the tuition cap for gi bill</a>
+											<a class="badge badge-success" href="/what-is-the-va-disability-rating-for-gout.html">what is the va disability rating for gout</a>
+											<a class="badge badge-primary" href="/what-is-the-va-disability-rating-for-alcohol-abuse.html">what is the va disability rating for alcohol abuse</a>
+											<a class="badge badge-secondary" href="/what-is-the-va-disability-rating-for-diabetic-retinopathy.html">what is the va disability rating for diabetic retinopathy</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the right site.  Our website gives you suggestions for seeing the highest quality video and image content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/7b/16/9e7b16708a042942593edea66fe23c4a.jpg" data-lightbox="roadtrip" data-title="Are You Interested In Attending A Free Tax Preparation Please Contact 804 775 6433 To Reserve A Time Slot Today Tax Preparation Tax Free Preparation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/7b/16/9e7b16708a042942593edea66fe23c4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmdiYqHCrBvpVtVLwALAJFmvoZVu6-97vTpw';" alt="Are You Interested In Attending A Free Tax Preparation Please Contact 804 775 6433 To Reserve A Time Slot Today Tax Preparation Tax Free Preparation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You Interested In Attending A Free Tax Preparation Please Contact 804 775 6433 To Reserve A Time Slot Today Tax Preparation Tax Free Preparation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/30/f1/4630f1966613f0598fa48c8bee7e7192.jpg" data-lightbox="roadtrip" data-title="If You Are Interested In Starting A Business Make Sure You Visit The Small Business Blog We Cover Topics Business Checklist Small Business Start Up Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/30/f1/4630f1966613f0598fa48c8bee7e7192.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGd7ULUImmKquSdi_QdzHYYWMIwcmcf0UMg';" alt="If You Are Interested In Starting A Business Make Sure You Visit The Small Business Blog We Cover Topics Business Checklist Small Business Start Up Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Are Interested In Starting A Business Make Sure You Visit The Small Business Blog We Cover Topics Business Checklist Small Business Start Up Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c3/16/32/c3163269a7ba2e97cb2e0fe89331045b.jpg" data-lightbox="roadtrip" data-title="Qps Employment Group Employment Warning Process Unemployment Nc Employment Security Commission Medical Employment Agenc Employment Agency Career Packing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c3/16/32/c3163269a7ba2e97cb2e0fe89331045b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HbzvcJLUWZtyg_XUw7s9XF_weTDYRyE25g';" alt="Qps Employment Group Employment Warning Process Unemployment Nc Employment Security Commission Medical Employment Agenc Employment Agency Career Packing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Qps Employment Group Employment Warning Process Unemployment Nc Employment Security Commission Medical Employment Agenc Employment Agency Career Packing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/8c/4c/fc8c4ca793a9f8a2c57d9aab2f01cff7.png" data-lightbox="roadtrip" data-title="Employment Confirmation Letter Confirmation Letter Credit Repair Letters Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/8c/4c/fc8c4ca793a9f8a2c57d9aab2f01cff7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTCg2aGaqQXeDlhiRtnQK0sghVR0HpknFgCA';" alt="Employment Confirmation Letter Confirmation Letter Credit Repair Letters Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Employment Confirmation Letter Confirmation Letter Credit Repair Letters Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/b0/1a/c9b01aeb6ba6f477ca33667d4d17eb0b.jpg" data-lightbox="roadtrip" data-title="Letter Confirming Unemployment Fresh 14 Employment Verification Letter Examples Pdf Doc Job Letter Lettering Letter Templates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/b0/1a/c9b01aeb6ba6f477ca33667d4d17eb0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYM5XnaxCQTTjsN2taQlh1_Ey4k_LFSSs5nA';" alt="Letter Confirming Unemployment Fresh 14 Employment Verification Letter Examples Pdf Doc Job Letter Lettering Letter Templates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letter Confirming Unemployment Fresh 14 Employment Verification Letter Examples Pdf Doc Job Letter Lettering Letter Templates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/c4/dc/73c4dc9941075b9f0aaff3119e3ed1d8.jpg" data-lightbox="roadtrip" data-title="Check Out Veterans Statistics On Virginia Learn More At Go Usa Gov Cy6pa Economic Statistics Virginia Business Ownership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/c4/dc/73c4dc9941075b9f0aaff3119e3ed1d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzA2MrO5k6GEOWU4D9n-Mpj8yIGeYJjYOmwg';" alt="Check Out Veterans Statistics On Virginia Learn More At Go Usa Gov Cy6pa Economic Statistics Virginia Business Ownership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out Veterans Statistics On Virginia Learn More At Go Usa Gov Cy6pa Economic Statistics Virginia Business Ownership</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/46/30/f1/4630f1966613f0598fa48c8bee7e7192.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzA2MrO5k6GEOWU4D9n-Mpj8yIGeYJjYOmwg';" alt="Check Out Veterans Statistics On Virginia Learn More At Go Usa Gov Cy6pa Economic Statistics Virginia Business Ownership">
+										<div class="card-body">
+						<h3 class="h5"><b>9 of 51 Unemployment Offices in Virginia 383 in Unemployment Offices Petersburg Unemployment Office Contact Information Address and Phone Number for Petersburg Unemployment Office an Unemployment Office at N Union St Petersburg VA.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va unemployment contact phone number</strong>. 
+								
+																	944 Glenwood Station Lane Suite 103 Charlottesville VA 22901. 
+																	Anonymously report Unemployment Insurance Fraud to the VEC by calling 1-800-782-4001. 
+																	Suite 100 Bristol VA 24201. 
+																	Box 26441 Richmond VA 23261-6441. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You may contact a Workforce Center using the information below. 
+																	Virginia Relay call 711 or 800-828-1120. 
+																	Fogg said the best way to get in contact with VEC about problems is by sending an email to customer service at customerservicevecvirginiagov with your phone number included so someone can call. 
+																	The Richmond Unemployment Office located in Richmond VA is a government agency that oversees Virginia unemployment compensation programs and unemployment insurance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please use the details link to review key information about a specific location including services provided and the hours of operation. 
+																	Virginia Relay call 711 or 800-828-1120. 
+																	By WhatIs - 1752. 
+																	3 points 5 months ago. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Notice to Unemployment Insurance Claimants Unemployment claim filing and weekly requests for payment are no longer available on this site. 
+																	20 of 51 Unemployment Offices in Virginia 610 in Unemployment Offices Portsmouth Unemployment Office Contact Information Address and Phone Number for Portsmouth Unemployment Office an Unemployment Office at George Washington Hwy Portsmouth VA. 
+																	25036 Lankford Highway Unit 16 Onley 23418 757 302-2029 757 302-2025. 
+																	Southwest Virginia often abbreviated as SWVA is a mountainous region of Virginia in the westernmost part of the commonwealth. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	866-832-2363 815am to 430pm Monday - Friday and 9am to 1pm on Saturday closed Sunday and state holidays Mailing Address PO. 
+																	Farmville Unemployment Office 223 Sunchase Blvd Farmville 23901. 
+																	Emporia 23847 434 634-2326 434 634-9943. 
+																	A local branch of the Virginia Department of Labor the Unemployment Office issues unemployment benefits to individuals in Richmond who have lost their jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Anonymously report Unemployment Insurance Fraud to the VEC by calling 1-800-782-4001. 
+																	Anonymously report Unemployment Insurance Fraud to the VEC by calling 1-800-782-4001. 
+																	Eastern Shore Unemployment Office. 
+																	Virginia Relay call 711 or 800-828-1120. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	200 Bob Morrison Blvd. 
+																	2100 Washington Boulevard Arlington Employment Center First Floor Arlington VA 22206. 
+																	6 of 51 Unemployment Offices in Virginia 357 in Unemployment Offices Harrisonburg Unemployment Office Contact Information Address and Phone Number for Harrisonburg Unemployment Office an Unemployment Office at East Market Street Harrisonburg VA. 
+																	Va Unemployment Phone Number. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	22 of 51 Unemployment Offices in Virginia 615 in Unemployment Offices Winchester Unemployment Office Contact Information Address and Phone Number for Winchester Unemployment Office an Unemployment Office at Premier Place Winchester VA. 
+																	Box 26441 Richmond VA 23261-6441. 
+																	1781 Greensville County Circle. 
+																	These contacts have been floating around and apparently they respond pretty quick. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	866-832-2363 815am to 430pm Monday - Friday and 9am to 1pm on Saturday closed Sunday and state holidays Mailing Address PO. 
+																	Southwest Virginia has been defined alternatively as all Virginia counties on the Appalachian Plateau all Virginia counties west of the. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c8/c0/73/c8c0736e44151e90a5c253bb6fc1979b.jpg" data-lightbox="roadtrip" data-title="Pin On Employment Graphics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c8/c0/73/c8c0736e44151e90a5c253bb6fc1979b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-s3418o3n_SnNGln8BL1xBeKH9FBq-8gxQ';" alt="Pin On Employment Graphics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Employment Graphics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/20/9b/f1209bb396ab9e69864a856c53b3913d.png" data-lightbox="roadtrip" data-title="Davinci Live Receptionist Vs An In House Receptionist Infographic Virtual Assistant Jobs Receptionist Virtual Receptionist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/20/9b/f1209bb396ab9e69864a856c53b3913d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg8eqawKy1k6Q6tE9nzj09OOr7WyJzeGo0rw';" alt="Davinci Live Receptionist Vs An In House Receptionist Infographic Virtual Assistant Jobs Receptionist Virtual Receptionist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Davinci Live Receptionist Vs An In House Receptionist Infographic Virtual Assistant Jobs Receptionist Virtual Receptionist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/b3/c6/00b3c69e639723f6da3c94a601e3e9dd.jpg" data-lightbox="roadtrip" data-title="Separating Or Retiring From The Air Force Upcoming Tap Sessions At Raf Lakenheath Military Transition Lakenheath Airman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/b3/c6/00b3c69e639723f6da3c94a601e3e9dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZoYc5C59B0jGX6ZDLR4SEgO3Eao0NRKIy4w';" alt="Separating Or Retiring From The Air Force Upcoming Tap Sessions At Raf Lakenheath Military Transition Lakenheath Airman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Separating Or Retiring From The Air Force Upcoming Tap Sessions At Raf Lakenheath Military Transition Lakenheath Airman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/3c/57/763c5730d92c11d3f159a5594704b703.jpg" data-lightbox="roadtrip" data-title="Here Is Good News For The Job Seekers Looking For A Bright Future And Life In Canada The Number Of Job Seekers From India Keeps Canada Work Opportunities Job">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/3c/57/763c5730d92c11d3f159a5594704b703.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMj-aeJbvJ97tGmk8RnIUM7d4ZiIuuhMg3WQ';" alt="Here Is Good News For The Job Seekers Looking For A Bright Future And Life In Canada The Number Of Job Seekers From India Keeps Canada Work Opportunities Job">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Is Good News For The Job Seekers Looking For A Bright Future And Life In Canada The Number Of Job Seekers From India Keeps Canada Work Opportunities Job</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/81/20/b2812057d9ff84b3575a16d9a82c1ce0.png" data-lightbox="roadtrip" data-title="Pin On Slapshotstudio Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/81/20/b2812057d9ff84b3575a16d9a82c1ce0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFCUuk8imitxgCXNcvAS_jtc2qDdCd2-fovw';" alt="Pin On Slapshotstudio Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Slapshotstudio Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/87/34/d2/8734d20752928cdbe29a5a6052e3abd0.jpg" data-lightbox="roadtrip" data-title="Quick Business Loans For Startups In Sydney Business Loans Loan Quick Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/87/34/d2/8734d20752928cdbe29a5a6052e3abd0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRafM4LDRkVvD_hhtu0En9RJ67c2CpTVeEQaQ';" alt="Quick Business Loans For Startups In Sydney Business Loans Loan Quick Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Quick Business Loans For Startups In Sydney Business Loans Loan Quick Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/5a/bc/945abc966d146a0bf1b2a7a21678982a.jpg" data-lightbox="roadtrip" data-title="What Exactly Will This Mean For Us Epa Office Lost After Ig Shake Up Crew In 2020 Programme Manager Federal Agencies Epa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/5a/bc/945abc966d146a0bf1b2a7a21678982a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGCzCAGCXp8HXD4KxAjLN_NpqMjtnIeNGxaA';" alt="What Exactly Will This Mean For Us Epa Office Lost After Ig Shake Up Crew In 2020 Programme Manager Federal Agencies Epa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Exactly Will This Mean For Us Epa Office Lost After Ig Shake Up Crew In 2020 Programme Manager Federal Agencies Epa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/24/47/3f24474be16c9c410247affe4018b786.png" data-lightbox="roadtrip" data-title="Pin On Bank Account">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/24/47/3f24474be16c9c410247affe4018b786.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlhlDnUXh0B8TaEx71YXonaHrc_3u_0CZFtw';" alt="Pin On Bank Account">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bank Account</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/17/91/1c1791daa60a5106d682c1c9af4c302a.jpg" data-lightbox="roadtrip" data-title="Get Best Life Insurance Advisor In Scarborough On Insurance Investments Dental Insurance Plans Dental Insurance">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/17/91/1c1791daa60a5106d682c1c9af4c302a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJG0g10jFRiE8KDZH5bKb6I5rLlnn2lS97Sw';" alt="Get Best Life Insurance Advisor In Scarborough On Insurance Investments Dental Insurance Plans Dental Insurance">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Get Best Life Insurance Advisor In Scarborough On Insurance Investments Dental Insurance Plans Dental Insurance</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/34/20/bc342084a4bfa3f9710248581245a6ee.png" data-lightbox="roadtrip" data-title="3 Ways Your Child Could Directly Impact Your Va Loan Home Loans Va Loan Child Support Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/34/20/bc342084a4bfa3f9710248581245a6ee.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuUPSzZjPPgR-cx24_jBj9W26iZ7RS-rd1PQ';" alt="3 Ways Your Child Could Directly Impact Your Va Loan Home Loans Va Loan Child Support Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Ways Your Child Could Directly Impact Your Va Loan Home Loans Va Loan Child Support Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/21/ea/2421eaa5789a693b86e61b5ff6ae9442.jpg" data-lightbox="roadtrip" data-title="Landing Page Design For Immigration Law Firm By Mel D 039 Web Carpenter Landing Page Design Law Firm Page Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/21/ea/2421eaa5789a693b86e61b5ff6ae9442.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMXGeJEmgjpJB-dJT_xA9SnQSalXKk52W4Aw';" alt="Landing Page Design For Immigration Law Firm By Mel D 039 Web Carpenter Landing Page Design Law Firm Page Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Landing Page Design For Immigration Law Firm By Mel D 039 Web Carpenter Landing Page Design Law Firm Page Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/66/b6/e166b6b8cee46e0e37d75ee42351842d.gif" data-lightbox="roadtrip" data-title="Pin On Resume">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/66/b6/e166b6b8cee46e0e37d75ee42351842d.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA8eTDlDmQdTJchJkCxtqLs_9CIhr62gFVoQ';" alt="Pin On Resume">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Resume</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/34/68/073468f18a758f16f5407e372d3842da.jpg" data-lightbox="roadtrip" data-title="Pin On Great Template Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/34/68/073468f18a758f16f5407e372d3842da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThJaY8RlaVCLw8u-UQAsiSwZW1BOwiFHHTuw';" alt="Pin On Great Template Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Great Template Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-rating-for-ssd.html">Va Rating For Ssd</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-tmj-pain.html">Va Rating For Tmj Pain</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-thyroid.html">Va Rating For Thyroid</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sinus.html">Va Rating For Sinus</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-apnea-secondary-to-migraines.html">Va Rating For Sleep Apnea Secondary To Migraines</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-ulcerative-colitis.html">Va Rating For Ulcerative Colitis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-vertigo-secondary-to-sinusitis.html">Va Rating For Vertigo Secondary To Sinusitis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-special-monthly-compensation.html">Va Rating For Special Monthly Compensation</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-apnea.html">Va Rating For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-tinnitus.html">Va Rating For Tinnitus</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-skin-disorders.html">Va Rating For Skin Disorders</a></li>
+													<li class="list-group-item"><a href="/va-rating-from-90-to-100.html">Va Rating From 90 To 100</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-apnea-secondary-to-tmj.html">Va Rating For Sleep Apnea Secondary To Tmj</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-tendonitis.html">Va Rating For Tendonitis</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-apnea-secondary-to-ptsd.html">Va Rating For Sleep Apnea Secondary To Ptsd</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-squamous-cell-carcinoma.html">Va Rating For Squamous Cell Carcinoma</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-sleep-apnea-secondary-to-anxiety.html">Va Rating For Sleep Apnea Secondary To Anxiety</a></li>
+													<li class="list-group-item"><a href="/va-rating-for-spinal-cord-injury.html">Va Rating For Spinal Cord Injury</a></li>
+													<li class="list-group-item"><a href="/va-rating-hearing-loss.html">Va Rating Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/va-rating-gastritis.html">Va Rating Gastritis</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

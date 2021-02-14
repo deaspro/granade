@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Valium History - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Valium History",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/736x/59/82/1c/59821c567caa012cc81c8e3f9afc4c44.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=valium+history",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Valium History</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A familiar cycle was soon in motion. Diazepam is a benzodiazepine ben-zoe-dye-AZE-eh-peens. HISTORY AND ORIGIN OF VALIUM. <br>				
+			</p>
+										<a class="badge badge-danger" href="/va-unemployability-time-frame.html">va unemployability time frame</a>
+											<a class="badge badge-secondary" href="/va-unemployability-ssdi.html">va unemployability ssdi</a>
+											<a class="badge badge-success" href="/va-treasury-ch33.html">va treasury ch33</a>
+											<a class="badge badge-info" href="/va-unemployability-pay-chart-2020.html">va unemployability pay chart 2020</a>
+											<a class="badge badge-primary" href="/va-unemployability-hearing-loss.html">va unemployability hearing loss</a>
+											<a class="badge badge-dark" href="/va-unemployability-reddit.html">va unemployability reddit</a>
+											<a class="badge badge-danger" href="/va-travel-claim-online.html">va travel claim online</a>
+											<a class="badge badge-success" href="/va-unemployability-how-long.html">va unemployability how long</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to pay a visit to the right blog.  Our site provides you with suggestions for viewing the maximum quality video and image content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie that you view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/5b/9a/a45b9ad78dcd30478294b7244cd46b6c.jpg" data-lightbox="roadtrip" data-title="Civil War Soldiers Letters And Diaries Archive Civil War Unit Civil War Civil War History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/5b/9a/a45b9ad78dcd30478294b7244cd46b6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb1ZdWiiufs6X6RouYS-5omWFhIpMR10JNQg';" alt="Civil War Soldiers Letters And Diaries Archive Civil War Unit Civil War Civil War History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil War Soldiers Letters And Diaries Archive Civil War Unit Civil War Civil War History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/c9/e2/78c9e209bb7d7336bbe3c81eeb67bbe0.jpg" data-lightbox="roadtrip" data-title="In A Rare And Wonderful Treat For Titanic Historians And Casual Fans Alike New Photos Of The Titanic Have Surfa Titanic Ship Titanic Photos Titanic History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/c9/e2/78c9e209bb7d7336bbe3c81eeb67bbe0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHI9MPPdXg5mS4jLqMSIACxKVRKbcqhT0xsA';" alt="In A Rare And Wonderful Treat For Titanic Historians And Casual Fans Alike New Photos Of The Titanic Have Surfa Titanic Ship Titanic Photos Titanic History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In A Rare And Wonderful Treat For Titanic Historians And Casual Fans Alike New Photos Of The Titanic Have Surfa Titanic Ship Titanic Photos Titanic History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/12/a9/9e12a9acd77afcb11506fd24f9e49aac.jpg" data-lightbox="roadtrip" data-title="Pin On Art I Admire">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/12/a9/9e12a9acd77afcb11506fd24f9e49aac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSGQXCX8aAKXq25RGbUOadWyAuDtYvyNfbYw';" alt="Pin On Art I Admire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Art I Admire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/ce/84/a9ce84d0aa9be9c8991d774d47f3bbca.jpg" data-lightbox="roadtrip" data-title="Drone Psychedelic Ambient Desert Stoner Earth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/ce/84/a9ce84d0aa9be9c8991d774d47f3bbca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbJa1b17UkrhAAlYAQLBg77Sw4XT8tFQ5ZcA';" alt="Drone Psychedelic Ambient Desert Stoner Earth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drone Psychedelic Ambient Desert Stoner Earth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/a3/b8/13a3b80d9c0419fe4cfbf0d85afd6b34.jpg" data-lightbox="roadtrip" data-title="Civil War Soldiers Manner Kleidung Bilder Kleidung">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/a3/b8/13a3b80d9c0419fe4cfbf0d85afd6b34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShJaRPYeq9IxEZNLwx-g1w7nlPRZz7jRH-nQ';" alt="Civil War Soldiers Manner Kleidung Bilder Kleidung">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil War Soldiers Manner Kleidung Bilder Kleidung</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/30/a7/cb30a7a01dabed5afa2a6a0a128d5ccc.jpg" data-lightbox="roadtrip" data-title="Civil War Era Envelope Civil War Photos Civil War War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/30/a7/cb30a7a01dabed5afa2a6a0a128d5ccc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQDAqJBLNw5kP-Zn5hi2Hn-8wlvNAJWZ4VLg';" alt="Civil War Era Envelope Civil War Photos Civil War War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil War Era Envelope Civil War Photos Civil War War</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/01/c2/7e/01c27e07ebfd45e3435684c22b46bc11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQDAqJBLNw5kP-Zn5hi2Hn-8wlvNAJWZ4VLg';" alt="Civil War Era Envelope Civil War Photos Civil War War">
+										<div class="card-body">
+						<h3 class="h5"><b>Diazepam marketed under brand names Valium Seduxen and in Europe Apozepam and Diapam is a drug which is a benzodiazepine derivative.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Valium history</strong>. 
+								
+																	Side effects include drowsiness and muscular incoordination. 
+																	It was less dangerous and less physically addictive. 
+																	Valium acts on levels of gamma-aminobutyric acid GABA and dopamine in the brain. 
+																	It is thought that diazepam works by enhancing the activity of certain neurotransmitters in the brain. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Valium is the trademark name for the anti-anxiety drug diazepam a type of benzodiazepine. 
+																	Diazepams potency was found to be more than twice that of chlordiazepoxide meaning lower dosages could be used to achieve desired clinical effects. 
+																	Released in 1963 as an improved version of Librium diazepam became incredibly popular helping Roche to become a pharmaceutical. 
+																	Benzodiazepines latch onto a receptor in the brain which then activates a neighbouring neurotransmitter known as GABA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A degree of physical dependence can result after prolonged use. 
+																	Valium is a form of benzodiazepine for treating anxiety and panic attacks. 
+																	It is thought that diazepam works by enhancing the activity of certain neurotransmitters in the brain. 
+																	Valium trade name of a tranquilizer drug introduced by the pharmaceutical company Hoffmann-La Roche in 1963. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Valium The Food and Drug Administration approved Librium the history benzodiazepine in and Valium in Benzodiazepines latch onto a receptor in 2 xanax brain which then activates a neighbouring neurotransmitter known as GABA. 
+																	The predecessor to Valium was Librium chlordiazepoxide approved for use in the US. 
+																	Some people also use it as a muscle relaxant a sedative or an anticonvulsant. 
+																	Valium is a benzodiazepine ben-zoe-dye-AZE-eh-peens. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sales of the new drug quickly eclipsed the old barbiturates. 
+																	When it first gained popularity Valium was considered to be an improvement from barbiturates. 
+																	The Food and Drug Administration approved Librium the first-ever benzodiazepine in 1960 and Valium in 1963. 
+																	Diazepam Valium is a benzodiazepine that provides sedation and good muscle relaxation and can potentiate the action of anesthetics and opioid analgesics Flecknell 1996. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is also a mild tranquilizer used for similar reasons primarily anxiety. 
+																	In 1958 Hoffmann-La Roche patented another benzodiazepine called diazepam soon to become world-famous as Valium. 
+																	Both are chemical messengers. 
+																	Diazepam is used to treat anxiety disorders alcohol withdrawal symptoms or muscle spasms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Diazepam was developed in 1963 by the Polish chemist Dr. 
+																	The drug occurs as colourless crystals and it is available for use in solution and in tablet form. 
+																	Safer and more effective than earlier sedative-hypnotic drugs Valium quickly became a standard drug for the treatment of anxiety and one of the most commonly prescribed drugs of all time. 
+																	After a few years he created 40 new compounds. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was the second benzodiazepine drug to be developed -succeeding chlordiazepoxide Librium. 
+																	Despite industry assurances about safety stories of dependence social dislocation and difficult withdrawal began to tarnish Valiums reputation during the 1970s. 
+																	By affecting GABA neurotransmitters Valium slows down brain activity which then reduces anxiety. 
+																	GABA release makes people calm and sleepy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Diazepam was the second successful compound which was introduced in 1963 with the brand name for Valium. 
+																	GABA works on the stress response acting like a natural tranquilizer to slow down some of the functions of the central nervous system like heart rate body temperature and blood pressure as well as minimizing anxiety and stress. 
+																	Valium valium trade name of a tranquilizer drug introduced by the pharmaceutical company Hoffmann-La Roche in history Safer and more effective than earlier sedative-hypnotic drugs Valium quickly became a standard drug for the treatment tramadol 20mg anxiety and one of the most commonly prescribed drugs of all time. 
+																	Valium is used to treat anxiety disorders alcohol withdrawal symptoms or muscle spasms. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Valium is the brand name for Diazepam. 
+																	Anti-anxiety medications that are classified as benzodiazepines such as Valium are also known as sedatives due to their tranquilizing and calming effects. 
+																	Valium just one of the 241 drugs he patented over his long career between 1969 and 1982 was the most prescribed drug in the world and turned Hoffman-La Roche its producer into a pharmaceutical giant. 
+																	Its association in the popular mind with harried middle-class housewives won it the nickname Mothers Little Helper in a 1966 song of that name by the British rock band the Rolling Stones. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Classically diazepam has been used as an anticonvulsant and it can be antagonized in rodents by flumazenil 10 mgkg IP Metten et al 2007. 
+																	Valium also known as diazepam is a depressant prescription drug. 
+																	Diazepam is sometimes used with other medications to treat seizures. 
+																	Sternbach at work at the Jagiellonian University in the 1930sJagiellonian University. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Valium is sometimes used with other medications to treat seizures. 
+																	Leo Sternbach while working at the Swiss pharmaceutical company Hoffmann-La Roche. 
+																	In 1954 Leo Sternbach who is a pharmacist and chemist worked on a task to develop an alternative of barbiturates. 
+																	Finally valiumafter adding history a colourless gas derived from ammonia to one compound he produced valium white powder that made mice sleepy and calm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Diazepam known by several trade names including Valium was introduced in 1963. 
+																	It possesses anxiolytic anticonvulsant sedative and skeletal muscle relaxant properties. 
+																	Diazepam was the second benzodiazepine invented by Leo Sternbach of Hoffmann-La Roche at the companys Nutley New Jersey facility following chlordiazepoxide Librium which was approved for use in 1960. 
+																	History welcome suggested improvements to any of our articles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Other types of frequently prescribed benzodiazepines include. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/e8/57/c6e8579c3b8bffb2874f0ba4e73825de.jpg" data-lightbox="roadtrip" data-title="American Civil War Soldier Webquest Grades 9 12 Civil War Soldiers Letters And Diaries Archive Civilwar Diaries Civil War Art Civil War History Civil War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/e8/57/c6e8579c3b8bffb2874f0ba4e73825de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzaRWu6ZWxRY_0Q036ESVoubit8ceGsBL3EA';" alt="American Civil War Soldier Webquest Grades 9 12 Civil War Soldiers Letters And Diaries Archive Civilwar Diaries Civil War Art Civil War History Civil War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">American Civil War Soldier Webquest Grades 9 12 Civil War Soldiers Letters And Diaries Archive Civilwar Diaries Civil War Art Civil War History Civil War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/c2/7e/01c27e07ebfd45e3435684c22b46bc11.jpg" data-lightbox="roadtrip" data-title="Magnificenttitanic In A Rare And Wonderful Treat For Titanic Historians And Casual Fans Alike New Photos Of The Tita Titanic History Titanic Titanic Ship">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/c2/7e/01c27e07ebfd45e3435684c22b46bc11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6VmuiFvEJK5jViX-PX91391s37oBzSo-k8w';" alt="Magnificenttitanic In A Rare And Wonderful Treat For Titanic Historians And Casual Fans Alike New Photos Of The Tita Titanic History Titanic Titanic Ship">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Magnificenttitanic In A Rare And Wonderful Treat For Titanic Historians And Casual Fans Alike New Photos Of The Tita Titanic History Titanic Titanic Ship</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/2e/86/752e86dbafeff6a74134cb9752925050.jpg" data-lightbox="roadtrip" data-title="Civil War 1861 1865 U S Sanitary Commission Fair Christian Tract Society Ebay Medals And Tokens Great Central Fair Philadel Civil War Christian Tracts War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/2e/86/752e86dbafeff6a74134cb9752925050.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQU_O9lsQ1oh0jV3eyeCDRC-VWH0VEyBnJzw';" alt="Civil War 1861 1865 U S Sanitary Commission Fair Christian Tract Society Ebay Medals And Tokens Great Central Fair Philadel Civil War Christian Tracts War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Civil War 1861 1865 U S Sanitary Commission Fair Christian Tract Society Ebay Medals And Tokens Great Central Fair Philadel Civil War Christian Tracts War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/e2/b2/33e2b27cbbbfd7f4df7713bab85bef30.jpg" data-lightbox="roadtrip" data-title="Ms M 638 Fol 43r Miniature Map Illuminated Manuscript Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/e2/b2/33e2b27cbbbfd7f4df7713bab85bef30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoNRuwGqGY9qBGLYB9mgxEvKDSByxrOYD04A';" alt="Ms M 638 Fol 43r Miniature Map Illuminated Manuscript Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ms M 638 Fol 43r Miniature Map Illuminated Manuscript Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/57/bb/3057bb6af3b3a151787101171ccebbf0.jpg" data-lightbox="roadtrip" data-title="Launching The Titanic Titanic Ship Titanic History Titanic Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/57/bb/3057bb6af3b3a151787101171ccebbf0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGLabomS9EoH1ghvybi87sC2nBj9N7JEgJA';" alt="Launching The Titanic Titanic Ship Titanic History Titanic Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Launching The Titanic Titanic Ship Titanic History Titanic Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/cb/09/8bcb096f39f5b572ec6737af0ff89f70.jpg" data-lightbox="roadtrip" data-title="Week 11 American Civil War In 10 Minutes Major Events In History American Civil War History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/cb/09/8bcb096f39f5b572ec6737af0ff89f70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaGS2Syt6-PLSrYD3HiMjgw51hQAo2fy4agg';" alt="Week 11 American Civil War In 10 Minutes Major Events In History American Civil War History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Week 11 American Civil War In 10 Minutes Major Events In History American Civil War History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/2d/7f/de2d7f114766386ec929422e2a8551b4.jpg" data-lightbox="roadtrip" data-title="Pin By Modine Gunch On Old Medicine Vintage Ads History Olds">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/2d/7f/de2d7f114766386ec929422e2a8551b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTjmOFD8T7Mm_CKW_W1Tc62GvE5vlDsJr3xA';" alt="Pin By Modine Gunch On Old Medicine Vintage Ads History Olds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Modine Gunch On Old Medicine Vintage Ads History Olds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/08/c7/6208c7ec83cb02058d3c4a0d6bf1b3a7.jpg" data-lightbox="roadtrip" data-title="History And Other Truths Behind Plus Size Modeling Plus Size Modeling Model Professional Dancers Musical Audition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/08/c7/6208c7ec83cb02058d3c4a0d6bf1b3a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlN5_fJhTBVMUY7QyTluLxxORJd7ZsPgW9CQ';" alt="History And Other Truths Behind Plus Size Modeling Plus Size Modeling Model Professional Dancers Musical Audition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">History And Other Truths Behind Plus Size Modeling Plus Size Modeling Model Professional Dancers Musical Audition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/76/44/787644690e74669d0647fc581a68db97.jpg" data-lightbox="roadtrip" data-title="Pin On Indie Scene">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/76/44/787644690e74669d0647fc581a68db97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBOnTh6RRxyH8q1xjjIdlr63ejdYCutOb6Q';" alt="Pin On Indie Scene">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Indie Scene</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8b/01/9c/8b019ca7d086a18175d7a8956b183adb.jpg" data-lightbox="roadtrip" data-title="Pin On Aes Suburban Hell Vacuuming And Valium">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8b/01/9c/8b019ca7d086a18175d7a8956b183adb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfTZg73SpwWluSj2dOBCa6Va9kCrohAJoe3A';" alt="Pin On Aes Suburban Hell Vacuuming And Valium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aes Suburban Hell Vacuuming And Valium</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/29/e4/ba29e4f6943eb7f8141621e93e465860.jpg" data-lightbox="roadtrip" data-title="Pin Em Sherlock Holmes Sherlok Holms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/29/e4/ba29e4f6943eb7f8141621e93e465860.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYom1QYR88kkoklIqVo77MBcg-QidSryqxXQ';" alt="Pin Em Sherlock Holmes Sherlok Holms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Em Sherlock Holmes Sherlok Holms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/59/82/1c/59821c567caa012cc81c8e3f9afc4c44.jpg" data-lightbox="roadtrip" data-title="If You Haven T Visited The St George S Manor Cemetery You Should It Is A Beautiful Property On The Water A American Civil War American War Historical Sites">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/59/82/1c/59821c567caa012cc81c8e3f9afc4c44.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXwJ3FSNiIQQkVp7oLb6yeoROeMxkuEErLKQ';" alt="If You Haven T Visited The St George S Manor Cemetery You Should It Is A Beautiful Property On The Water A American Civil War American War Historical Sites">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Haven T Visited The St George S Manor Cemetery You Should It Is A Beautiful Property On The Water A American Civil War American War Historical Sites</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/6d/18/036d183a96d8e8bd1f334b2e1645228a.jpg" data-lightbox="roadtrip" data-title="Burne Hogarth Dynamic Figure Drawing Book Cover Lovely Painted Wood History And Conservation Wood Figure Drawing Books Figure Drawing Painting On Wood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/6d/18/036d183a96d8e8bd1f334b2e1645228a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4V_BOPqZLFtXHdQJCLO4XzZx_KLvsqfLaXQ';" alt="Burne Hogarth Dynamic Figure Drawing Book Cover Lovely Painted Wood History And Conservation Wood Figure Drawing Books Figure Drawing Painting On Wood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Burne Hogarth Dynamic Figure Drawing Book Cover Lovely Painted Wood History And Conservation Wood Figure Drawing Books Figure Drawing Painting On Wood</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-the-irish-republican-army.html">What Is The Irish Republican Army</a></li>
+													<li class="list-group-item"><a href="/what-is-the-hierarchy-of-army-ranks.html">What Is The Hierarchy Of Army Ranks</a></li>
+													<li class="list-group-item"><a href="/what-is-the-largest-military-ship-in-the-world.html">What Is The Largest Military Ship In The World</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gs-pay-scale-for-2020-increase.html">What Is The Gs Pay Scale For 2020 Increase</a></li>
+													<li class="list-group-item"><a href="/what-is-the-hardest-military-training.html">What Is The Hardest Military Training</a></li>
+													<li class="list-group-item"><a href="/what-is-the-highest-va-disability-rating-for-ptsd.html">What Is The Highest Va Disability Rating For Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-is-the-highest-disability-rating-for-ptsd.html">What Is The Highest Disability Rating For Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-is-the-largest-military-aircraft-in-the-world.html">What Is The Largest Military Aircraft In The World</a></li>
+													<li class="list-group-item"><a href="/what-is-the-highest-va-rating-for-ptsd.html">What Is The Highest Va Rating For Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-is-the-highest-va-rating-for-hearing-loss.html">What Is The Highest Va Rating For Hearing Loss</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-quizlet.html">What Is The Gi Bill Quizlet</a></li>
+													<li class="list-group-item"><a href="/what-is-the-highest-rank-in-the-nypd.html">What Is The Highest Rank In The Nypd</a></li>
+													<li class="list-group-item"><a href="/what-is-the-history-of-the-gi-bill.html">What Is The History Of The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-used-for.html">What Is The Gi Bill Used For</a></li>
+													<li class="list-group-item"><a href="/what-is-the-maximum-age-to-join-army-reserves.html">What Is The Maximum Age To Join Army Reserves</a></li>
+													<li class="list-group-item"><a href="/what-is-the-highest-va-disability-rating-for-neck-pain.html">What Is The Highest Va Disability Rating For Neck Pain</a></li>
+													<li class="list-group-item"><a href="/what-is-the-main-purpose-of-army-public-affairs.html">What Is The Main Purpose Of Army Public Affairs</a></li>
+													<li class="list-group-item"><a href="/what-is-the-irish-army-fitness-test.html">What Is The Irish Army Fitness Test</a></li>
+													<li class="list-group-item"><a href="/what-is-the-gi-bill-yellow-ribbon-program.html">What Is The Gi Bill Yellow Ribbon Program</a></li>
+													<li class="list-group-item"><a href="/what-is-the-largest-army-in-the-world.html">What Is The Largest Army In The World</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

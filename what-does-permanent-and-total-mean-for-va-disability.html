@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does Permanent And Total Mean For Va Disability - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does Permanent And Total Mean For Va Disability",
+  "datePublished": "2021-02-14",
+  "image": "https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/Individual-Unemployability-TDIU-Infographic-1536x1095.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+permanent+and+total+mean+for+va+disability",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does Permanent And Total Mean For Va Disability</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The thought of 100 Permanent and Total makes a person think that they will not be able to work. 100 Permanent Total Disability Ratings. When being evaluated for a disability claim filed with the Department of Veterans Affairs it is possible to be assigned a percentage of disability and the corresponding compensation due within a range of 0 percent to 100 percent. <br>				
+			</p>
+										<a class="badge badge-warning" href="/veterans-affairs-pay-day.html">veterans affairs pay day</a>
+											<a class="badge badge-secondary" href="/veterans-advocate-group-of-america.html">veterans advocate group of america</a>
+											<a class="badge badge-light" href="/veterans-affairs-employee-discounts.html">veterans affairs employee discounts</a>
+											<a class="badge badge-light" href="/veterans-affairs-pay-calendar-2020.html">veterans affairs pay calendar 2020</a>
+											<a class="badge badge-light" href="/veterans-administration-records-request.html">veterans administration records request</a>
+											<a class="badge badge-primary" href="/veterans-affairs-education-benefits-office.html">veterans affairs education benefits office</a>
+											<a class="badge badge-dark" href="/veterans-affairs-appeal-lawyers.html">veterans affairs appeal lawyers</a>
+											<a class="badge badge-secondary" href="/veterans-administration-service-records.html">veterans administration service records</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the ideal site.  Our website provides you with suggestions for seeing the highest quality video and image content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/permanent-and-total-2.jpg" data-lightbox="roadtrip" data-title="What Are Va Permanent And Total Ratings Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/permanent-and-total-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxubLykhGMk42uoFoi2uMlaMnGvoELPh_rA';" alt="What Are Va Permanent And Total Ratings Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are Va Permanent And Total Ratings Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/z10MRqy0vzc/maxresdefault.jpg" data-lightbox="roadtrip" data-title="How To Obtain Permanent And Total Disability Va Benefits Ratings For Vets">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/z10MRqy0vzc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSKQH4-BTbP6guSAZh7HuBGPL-4dtbaBOkw';" alt="How To Obtain Permanent And Total Disability Va Benefits Ratings For Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Obtain Permanent And Total Disability Va Benefits Ratings For Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/Individual-Unemployability-TDIU-Infographic-1536x1095.jpg" data-lightbox="roadtrip" data-title="100 Percent Va Disability And Working Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/Individual-Unemployability-TDIU-Infographic-1536x1095.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWzmGE5MuuK2H7aSylpTvBE7UeEVH6D_ybbg';" alt="100 Percent Va Disability And Working Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Percent Va Disability And Working Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/01/100-Percent-Disability-Ratings.jpg" data-lightbox="roadtrip" data-title="100 Permanent Total Disability Ratings Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/01/100-Percent-Disability-Ratings.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXr--Mn81S5eAM09KxezGxBmXdD_dkyWvWGg';" alt="100 Permanent Total Disability Ratings Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Permanent Total Disability Ratings Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://embedwistia-a.akamaihd.net/deliveries/162198e5bd86516e45c6dcf5a03095df.webp?image_crop_resized=1280x720" data-lightbox="roadtrip" data-title="Permanent And Total Va Disability Ratings For Ptsd Cck Law">
+											<img class="card-img v-image ads-img " src="https://embedwistia-a.akamaihd.net/deliveries/162198e5bd86516e45c6dcf5a03095df.webp?image_crop_resized=1280x720" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQUh9lgzX9E2hpznO1acEBTPsP1vxnWuxNg';" alt="Permanent And Total Va Disability Ratings For Ptsd Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Permanent And Total Va Disability Ratings For Ptsd Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nebula.wsimg.com/9951d39f9ccebea145e7cd90b30e51df?AccessKeyId=1FBD76F67BF87C8DD859&amp;disposition=0&amp;alloworigin=1" data-lightbox="roadtrip" data-title="Permanent And Total P T">
+											<img class="card-img v-image ads-img " src="https://nebula.wsimg.com/9951d39f9ccebea145e7cd90b30e51df?AccessKeyId=1FBD76F67BF87C8DD859&amp;disposition=0&amp;alloworigin=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoz_dCotTC_zWhiW2omi9fmBP3e1lhQgywQ';" alt="Permanent And Total P T">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Permanent And Total P T</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/Individual-Unemployability-TDIU-Infographic-1536x1095.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoz_dCotTC_zWhiW2omi9fmBP3e1lhQgywQ';" alt="Permanent And Total P T">
+										<div class="card-body">
+						<h3 class="h5"><b>When Does My VA Rating Become Permanent.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does permanent and total mean for va disability</strong>. 
+								
+																	Meaning of Permanent Total Disability. 
+																	Those with multiple service-connected health issues may receive individual disability ratings at varying percentages with the combined disability compensation percentage coming from the combination of ratings up to 100. 
+																	Permanent means that a veteran has a disability that has no chance or close to no chance of the disability improving. 
+																	Though Permanent and Total is often used as a single phrase veterans can have a total disability thats temporary or a permanent disability rated less than 100 percent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	First lets break down each word in the phrase permanent and total. 
+																	This is because both concepts deal with the veterans conditions long-term effects the VA deals with the veterans condition over time and not just the veterans condition at discharge the DoD only rates a condition at the time of separation. 
+																	The rating you will receive for a service-connected impairment is based upon how much that impairment affects your ability to function at work and in your personal life. 
+																	An easy way to tell if your VA disability ratings are permanent is if the VA has deemed you to be totally and permanently disabled. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Department of Veterans Affairs considers a disability to be permanent when the medical evidence shows that it is reasonably certain the severity of the veterans condition will continue for the rest of the veterans life. 
+																	While a total rating is equivalent to being 100 percent service connected in contrast a rating of permanent and total disability or permanent total disability is reserved for circumstances when the veterans impairment is reasonably certain to continue throughout his or her life. 
+																	Both Permanent Total Ratings and Individual Unemployability are concepts that only apply to VA Disability not DoD Disability. 
+																	Definitions of Permanent and Total Disability VA Benefits Ratings Total. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	100 Permanent and Total means that you are 100 permanently disabled and most likely are never going to be re-evaluated. 
+																	Under 38 USCS Section 110 states. 
+																	A 100 disability rating is instead considered total and likewise it doesnt necessarily mean your rating is permanent. 
+																	You have a permanent and total disability if you cannot engage in any substantial gainful activity because of your physical or mental condition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Problem is that phrase doesnt always mean the same thing to everyone. 
+																	Until then you are subject to whatever exams for rating purposes the VA desire. 
+																	Total and Permanent Disability VA also known as 100 percent PT applies to veterans whose disabilities are Total any impairment of mind or body which is sufficient to render it impossible for the average person to follow a substantially gainful occupation AND Permanent impairment is reasonably certain to continue throughout the life of the disabled person. 
+																	In fact it can mean several different things in at least 5 different types of service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All service-connected impairments will be given a disability rating of 0-100. 
+																	The phrases 100 disabled permanent and total VA disability ratings and total VA disability rating get thrown around a lot in Veterans disability benefits claims. 
+																	You are still able to work as much as you want and can. 
+																	A total rating of 100 or other permanant rating that has been in continous force for twenty years shall not be reduced. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However if you are not permanent and total the VA has regulatory protections for reductions of service-connected disabilities. 
+																	This means that the VA does not see a reasonable chance of your conditions improving. 
+																	A physician must certify that the condition has lasted or can be expected to last continuously for 12 months or more or that the condition can be expected to result in death. 
+																	However barring no reduction permanent and total service connected disability is a 100 rating that entitles you to many benefits not available to those who are not P T ie dental treatment commissary privileges veteran s employment preference. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Permanent and Total disability or PT refers to veterans whose disabilities are total rated 100 disabling by VA and permanent zero or close to zero chance of improvement. 
+																	Having a permanent and total rating will in fact protect you from reexamination and rating reduction later in life but both conditions must be satisfied in your initial exam or later exam down the line. 
+																	This is where confusion can occur. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/protected-ratings-3.jpg" data-lightbox="roadtrip" data-title="Protected Va Disability Ratings And Va Rules Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/protected-ratings-3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5jB9TGYIv2rPJHVK8b9DRg2pEzgjortfX3A';" alt="Protected Va Disability Ratings And Va Rules Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Protected Va Disability Ratings And Va Rules Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2019/07/Differences-Between-Military-VA-Disability-Ratings.jpg" data-lightbox="roadtrip" data-title="Differences Between Military Va Disability Ratings Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2019/07/Differences-Between-Military-VA-Disability-Ratings.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaEaAMZYjFChCdhkbvL7eY3IWtu1uth4c1Dw';" alt="Differences Between Military Va Disability Ratings Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Differences Between Military Va Disability Ratings Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vaclaimsinsider.com/wp-content/uploads/2020/02/Average-VA-Disability-Rating-for-Veterans-1.png" data-lightbox="roadtrip" data-title="60 Va Disability Benefits Explained Va Claims Insider">
+											<img class="card-img v-image ads-img " src="https://vaclaimsinsider.com/wp-content/uploads/2020/02/Average-VA-Disability-Rating-for-Veterans-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHAVGRsnHWMfpZ7dy5G82csWK3GvDcr2cwg';" alt="60 Va Disability Benefits Explained Va Claims Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">60 Va Disability Benefits Explained Va Claims Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vaclaimsinsider.com/wp-content/uploads/2019/12/Total-Veteran-Population-Decline-from-2017-to-2037.png" data-lightbox="roadtrip" data-title="We Analyzed 4 7 Million Veterans With A Va Rating Here S What We Learned About The Average Va Disability Rating For Ptsd Va Claims Insider">
+											<img class="card-img v-image ads-img " src="https://vaclaimsinsider.com/wp-content/uploads/2019/12/Total-Veteran-Population-Decline-from-2017-to-2037.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnB7pDHppftzmbAeGtpClKoeuuGBMTXFakug';" alt="We Analyzed 4 7 Million Veterans With A Va Rating Here S What We Learned About The Average Va Disability Rating For Ptsd Va Claims Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Analyzed 4 7 Million Veterans With A Va Rating Here S What We Learned About The Average Va Disability Rating For Ptsd Va Claims Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/1e/aa/291eaa482e2f761bde2f19720dcb6421.png" data-lightbox="roadtrip" data-title="Military Mom Home Of The Brave Sacred Ground Sticky Floors In 2020 Military Mom Encouragement Quotes Christian Marine Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/1e/aa/291eaa482e2f761bde2f19720dcb6421.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqh-2B-XF7H11reTXzsTlW9Vaq5qtpR68LQ';" alt="Military Mom Home Of The Brave Sacred Ground Sticky Floors In 2020 Military Mom Encouragement Quotes Christian Marine Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Mom Home Of The Brave Sacred Ground Sticky Floors In 2020 Military Mom Encouragement Quotes Christian Marine Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/05/how-va-disability-benefits-impact-social-security-payments.jpg" data-lightbox="roadtrip" data-title="How Va Disability Pay Affects Ssa Pay Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/05/how-va-disability-benefits-impact-social-security-payments.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Cj4gO_l4NtW2ceddxqb3wyNeXsekdHjlIA';" alt="How Va Disability Pay Affects Ssa Pay Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Va Disability Pay Affects Ssa Pay Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/www.woodslawyers.com/wp-content/uploads/Permanent-stabilized-VA-ratings.jpg?fit=1024%2C536&amp;ssl=1" data-lightbox="roadtrip" data-title="Stabilized Permanent And Protected Va Ratings And How Long They Last">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/www.woodslawyers.com/wp-content/uploads/Permanent-stabilized-VA-ratings.jpg?fit=1024%2C536&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQUkakuA8PTMZKWHybRDVhMlesPFybrDSjg';" alt="Stabilized Permanent And Protected Va Ratings And How Long They Last">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stabilized Permanent And Protected Va Ratings And How Long They Last</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://themilitarywallet.com/wp-content/uploads/2019/12/va-disability-compensation-rates-relaythat-580x387.jpg" data-lightbox="roadtrip" data-title="2021 Va Service Connected Disability Compensation Rate Charts">
+											<img class="card-img v-image ads-img " src="https://themilitarywallet.com/wp-content/uploads/2019/12/va-disability-compensation-rates-relaythat-580x387.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQJmZcvqp9k-iIUZIPFAm8tQ4YtYxJnKKCQA';" alt="2021 Va Service Connected Disability Compensation Rate Charts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Va Service Connected Disability Compensation Rate Charts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/VA-Combined-ratings-1280x720.png" data-lightbox="roadtrip" data-title="Va Math How To Calculate Your Combined Disability Rating Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/VA-Combined-ratings-1280x720.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAmNNKwgglsjZcZLKKh80xblt11sDzI6Z9iw';" alt="Va Math How To Calculate Your Combined Disability Rating Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Math How To Calculate Your Combined Disability Rating Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/YZbq321V6zM/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Can A Veteran Receive Both Va And Social Security Benefits Cck Law">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/YZbq321V6zM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVVstxSnr0Xfyg6RXFnii8p3N1o7F8EPjVXw';" alt="Can A Veteran Receive Both Va And Social Security Benefits Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Can A Veteran Receive Both Va And Social Security Benefits Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/va-disability-calculator-mb.jpg" data-lightbox="roadtrip" data-title="2021 Va Disability Calculator Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/va-disability-calculator-mb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvdNoK-KEuwhGy1FOfpPBV7r16SshZa37QIQ';" alt="2021 Va Disability Calculator Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Va Disability Calculator Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/www.woodslawyers.com/wp-content/uploads/80-percent-VA-ratings-1.jpg?fit=1200%2C628&amp;ssl=1" data-lightbox="roadtrip" data-title="80 Percent Va Disability How To Increase Or Appeal To 100">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/www.woodslawyers.com/wp-content/uploads/80-percent-VA-ratings-1.jpg?fit=1200%2C628&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScCN63SXPCgmLBx68z9hVhpn5Wlxh9M3EPkQ';" alt="80 Percent Va Disability How To Increase Or Appeal To 100">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">80 Percent Va Disability How To Increase Or Appeal To 100</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-apohn.nitrocdn.com/cyoBkQXxGaLRAklWGOkSQxCXbxrQqKNM/assets/static/optimized/wp-content/uploads/2019/04/356ec23ba4da1ed9ff1b808dd5d30238.faqs-how-much-is-100-va-disability-per-month-300x200.jpg" data-lightbox="roadtrip" data-title="How Much Is 100 Percent Va Disability Disabled Vets">
+											<img class="card-img v-image ads-img " src="https://cdn-apohn.nitrocdn.com/cyoBkQXxGaLRAklWGOkSQxCXbxrQqKNM/assets/static/optimized/wp-content/uploads/2019/04/356ec23ba4da1ed9ff1b808dd5d30238.faqs-how-much-is-100-va-disability-per-month-300x200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHoBsyqFCT0tSoCpN8YRvR35pyRlmbpoA43g';" alt="How Much Is 100 Percent Va Disability Disabled Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Is 100 Percent Va Disability Disabled Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2012/01/non-service-connected-pension-3.png" data-lightbox="roadtrip" data-title="Non Service Connected Pension Benefits Explained Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2012/01/non-service-connected-pension-3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTT0DMQbEDMkAqlc25-8yzMcoEHGZOPxjL8A';" alt="Non Service Connected Pension Benefits Explained Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Non Service Connected Pension Benefits Explained Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.statesidelegal.org/sites/default/files/styles/2020_content_list/public/2020-12/DD214_0.jpg?itok=ScyZfupV" data-lightbox="roadtrip" data-title="Va Disability Compensation And Disability Pension Stateside Legal">
+											<img class="card-img v-image ads-img " src="https://www.statesidelegal.org/sites/default/files/styles/2020_content_list/public/2020-12/DD214_0.jpg?itok=ScyZfupV" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiV-lzZpERy26LOCKsD_vBTQ0ay8_7R-qg_g';" alt="Va Disability Compensation And Disability Pension Stateside Legal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Disability Compensation And Disability Pension Stateside Legal</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/va-unemployability-disability.html">Va Unemployability Disability</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-compensation-amount.html">Va Unemployability Compensation Amount</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-and-voc-rehab.html">Va Unemployability And Voc Rehab</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-worker.html">Va Unemployability Worker</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-back-pay.html">Va Unemployability Back Pay</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-forms.html">Va Unemployability Forms</a></li>
+													<li class="list-group-item"><a href="/va-tuition-assistance-application.html">Va Tuition Assistance Application</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-rating.html">Va Unemployability Rating</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-reviews.html">Va Unemployability Reviews</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-benefits-for-dependents.html">Va Unemployability Benefits For Dependents</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-marginal-employment.html">Va Unemployability Marginal Employment</a></li>
+													<li class="list-group-item"><a href="/va-transfer-post-911-gi-bill.html">Va Transfer Post 911 Gi Bill</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-letter.html">Va Unemployability Letter</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-news-2020.html">Va Unemployability News 2020</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-reddit.html">Va Unemployability Reddit</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-approval-rate.html">Va Unemployability Approval Rate</a></li>
+													<li class="list-group-item"><a href="/va-travel-claim-forms.html">Va Travel Claim Forms</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-law.html">Va Unemployability Law</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-definition.html">Va Unemployability Definition</a></li>
+													<li class="list-group-item"><a href="/va-unemployability-service-connected-compensation.html">Va Unemployability Service Connected Compensation</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Wave Portal Gi Bill - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Wave Portal Gi Bill",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/564x/6e/27/47/6e27476c03047af457ee7d851bd3a421.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=wave+portal+gi+bill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Wave Portal Gi Bill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">If youre receiving the Montgomery GI Bill Active Duty or MGIB - Selected Reserve GI Bill use the Web Automated Verification of Enrollment WAVE or call our toll free Interactive Voice Response IVR telephone line at 1-877-VA-ECERT. Students using the Montogmery GI Bill can confirm their monthly school enrollment using this online tool. Please note If you have a checking or savings account Direct Deposit is a simple safe option. <br>				
+			</p>
+										<a class="badge badge-primary" href="/veterans-compensation-for-dependents.html">veterans compensation for dependents</a>
+											<a class="badge badge-secondary" href="/veterans-compensation-claim-status.html">veterans compensation claim status</a>
+											<a class="badge badge-warning" href="/veterans-compensation-increase-2020.html">veterans compensation increase 2020</a>
+											<a class="badge badge-dark" href="/veterans-crisis-hotline-text.html">veterans crisis hotline text</a>
+											<a class="badge badge-dark" href="/veterans-benefits-you-didnt-know-about.html">veterans benefits you didnt know about</a>
+											<a class="badge badge-light" href="/veterans-compensation-and-pension-examinations.html">veterans compensation and pension examinations</a>
+											<a class="badge badge-info" href="/veterans-benefits-with-100-disability.html">veterans benefits with 100 disability</a>
+											<a class="badge badge-dark" href="/veterans-compensation-rate-table-2018.html">veterans compensation rate table 2018</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the ideal blog.  Our site gives you suggestions for seeing the maximum quality video and picture content, search and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gibill.va.gov/wave/images/wave_top.gif" data-lightbox="roadtrip" data-title="Welcome To The Gi Bill Website U S Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://www.gibill.va.gov/wave/images/wave_top.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbLVnorByXx5k2HW6z9y6rHufTRQ8VcfDa3Q';" alt="Welcome To The Gi Bill Website U S Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome To The Gi Bill Website U S Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gibill.va.gov/wave/images/frame/inter-header-banner-print.jpg" data-lightbox="roadtrip" data-title="Wave U S Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://www.gibill.va.gov/wave/images/frame/inter-header-banner-print.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO1pQeh9vo86bLMHiguTp5O7GcP3obawfAsg';" alt="Wave U S Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wave U S Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6e/27/47/6e27476c03047af457ee7d851bd3a421.jpg" data-lightbox="roadtrip" data-title="Easily Build A Toon Shaded Wave In Cinema 4d Youtube Cinema 4d Tutorial Cinema 4d Animation Tutorial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6e/27/47/6e27476c03047af457ee7d851bd3a421.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8IvIewp3N7udIBlkMSXIQntrq0GJXZhw_Hg';" alt="Easily Build A Toon Shaded Wave In Cinema 4d Youtube Cinema 4d Tutorial Cinema 4d Animation Tutorial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Easily Build A Toon Shaded Wave In Cinema 4d Youtube Cinema 4d Tutorial Cinema 4d Animation Tutorial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gibill.va.gov/images/vonapplogo.png" data-lightbox="roadtrip" data-title="Welcome To The Gi Bill Web Site The Home For All Educational Benefits Provided By The Department Of Veterans Affairs">
+											<img class="card-img v-image ads-img " src="https://www.gibill.va.gov/images/vonapplogo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRGpzQ4eCpZRAKAYDBcvafNxnlEcJaqMbfFg';" alt="Welcome To The Gi Bill Web Site The Home For All Educational Benefits Provided By The Department Of Veterans Affairs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome To The Gi Bill Web Site The Home For All Educational Benefits Provided By The Department Of Veterans Affairs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/86/e1/5186e1bce85d3c6802c4874257da6903.png" data-lightbox="roadtrip" data-title="Zandraart On Twitter Waves Wallpaper Landscape Art Waves">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/86/e1/5186e1bce85d3c6802c4874257da6903.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCHgfqxEPox1i-WnLlM7uyzjkKk2VIhFML9w';" alt="Zandraart On Twitter Waves Wallpaper Landscape Art Waves">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zandraart On Twitter Waves Wallpaper Landscape Art Waves</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/bd/8d/c9bd8d82035bb6b4ba816e74c7d302b7.jpg" data-lightbox="roadtrip" data-title="What Difficulties Did You Face Upon Returning To College Word Cloud Veteran Student Survey Student Survey College Words Alone Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/bd/8d/c9bd8d82035bb6b4ba816e74c7d302b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR26-f-S-j8a7r8HgDC-KaPvu2Qfq2kjtPIlw';" alt="What Difficulties Did You Face Upon Returning To College Word Cloud Veteran Student Survey Student Survey College Words Alone Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Difficulties Did You Face Upon Returning To College Word Cloud Veteran Student Survey Student Survey College Words Alone Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/6e/27/47/6e27476c03047af457ee7d851bd3a421.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR26-f-S-j8a7r8HgDC-KaPvu2Qfq2kjtPIlw';" alt="What Difficulties Did You Face Upon Returning To College Word Cloud Veteran Student Survey Student Survey College Words Alone Life">
+										<div class="card-body">
+						<h3 class="h5"><b>Roosevelt to provide benefits to World War II veterans.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Wave portal gi bill</strong>. 
+								
+																	This service is available to account holders with Basic Access or Premium Access. 
+																	You have reached a web server that is the property of the United States Government. 
+																	The second section shows your school. 
+																	Exit WAVE Exits the web site and takes you back to the GI Bill page. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Contact Us - Education and Training Apply for and manage the VA benefits and services youve earned as a Veteran Servicemember or family memberlike health care disability education and more. 
+																	But there isnt just one GI Bill. 
+																	The Benefit Status and Verify Monthly Enrollment Status links will be explained below. 
+																	The Post 911 version that most people are familiar with obviously did not exist before the year 2009. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Home Screen. 
+																	DoD Self-Service Logon DS Logon or Common Access Card CAC needed to access this feature. 
+																	To pay a Wave bill for a friend or family member call 1-866-WAVE-123 and one of our helpful representatives can help you make a payment. 
+																	If the address is incorrect you can click the link to make a change. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Montgomery GI Bill WAVE Enrollment Verification Confirm your monthly school attendance using Web Automated Verification Enrollment WAVE. 
+																	Sign in Forgot it. 
+																	Programa de Asistencia Educativa Informacion en Espanol GI Bill Site Map Contact Webmaster Compensation and Pension GI Bill Vocational Rehabilitation Home Loans Life. 
+																	If you were not given a password or have forgotten it please call 1-866-928-3123 to have it reset. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WAVE and the telephone Interactive Voice Response Systems require at least three workdays to process and update the system. 
+																	The GI Bill provides education benefits to veterans and their dependents. 
+																	Currently you cannot pay a bill for someone else online. 
+																	First Time Users - Please review the WAVE User Guide. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enter your 10 digit telephone number and your password. 
+																	Today the definition of the GI Bill is broader in scope. 
+																	For questions and additional information please contact. 
+																	Notifications and reminders of the approaching August 31 st continuing education deadline will be posted on the GI Bill website and sent to SCOs via Gov Delivery notice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill is an overarching term that refers to any education benefit earned by Active Duty National Guard Selected Reserve members and their families via. 
+																	Both systems process data every workday but it sometimes takes some additional time before they are updated to reflect the new information. 
+																	If you have an inquiry regarding your benefits you may contact your Regional Processing Office by using the Ask a Question tab in the Questions and Answers section of the GI BILL web site. 
+																	Notifications and reminders of the approaching August 31 st continuing education deadline will be posted on the GI Bill website and sent to SCOs via Gov Delivery notice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Benefit Status Information page This shows your information. 
+																	You have reached a web. 
+																	Checks are mailed after processing. 
+																	Advertise on Wave TV. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you wish you can call us at 1-888-442-4551 1 888 GI BILL 1 from 7AM - 7PM Central Time. 
+																	Direct Debit is a simple convenient and secure way to pay your bill. 
+																	This option is only available through calling our Care Center. 
+																	It saves time and helps manage your bills. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You will need to have the account number handy for the bill you are paying. 
+																	Sign in with Google Sign in with Yahoo. 
+																	512 463-3168 or. 
+																	The benefit is designed to help servicemembers and eligible veterans cover the costs associated with getting an education or training. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Unauthorized use of this system will result in criminal prosecution. 
+																	Through your online account you can choose a monthly payment date that works for your business and your payments will be made automatically. 
+																	The first section is your name claim number and address. 
+																	The GI Bill also called the Servicemens Readjustment Act of 1944 was signed into law by former President Franklin D. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You MUST have a current or active benefit award for MGIB-Active Duty Chapter 30 or MGIB Selected Reserve Chapter 1606 or Reserve Educational Assistance Program REAP Chapter 1607 or Veterans Retraining Assistance Program VRAP in our system. 
+																	Log in if you have an account. 
+																	If youre receiving the Montgomery GI Bill Active Duty or MGIB - Selected Reserve GI Bill use the Web Automated Verification of Enrollment WAVE or call our toll free Interactive Voice Response IVR telephone line at 1-877-VA-ECERT 1-877-823-2378 to verify your attendance. 
+																	Active records are those with activity in the last 12 months. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill is a Department of Veterans Affairs education benefit earned by members of Active Duty Selected Reserve and National Guard Armed Forces and their dependents. 
+																	Find out how we are prepared for Coronavirus. 
+																	Sign in with a partner Dont have a Wave account yet. 
+																	GI Bill WAVE Guide The GI Bill is one of the most popular and important military benefits offered as an incentive to join the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Explore helpful online tools entertainment options and more Wave Phone Portal Guide Logging In Go to the Wave Phone Portal to log in. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d8/52/4a/d8524a32775d8334c0bbdb2426deb108.jpg" data-lightbox="roadtrip" data-title="Pin By Lionel T On Vintage Video Game Promo Ads Vintage Video Games Video Game Magazines Online Video Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d8/52/4a/d8524a32775d8334c0bbdb2426deb108.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQboQcXqKc_D_3cd1ptauAtjDZ72VIkmaYpEw';" alt="Pin By Lionel T On Vintage Video Game Promo Ads Vintage Video Games Video Game Magazines Online Video Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lionel T On Vintage Video Game Promo Ads Vintage Video Games Video Game Magazines Online Video Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/96/db/4196db1050a828a2996e0f5344546ecb.jpg" data-lightbox="roadtrip" data-title="The First Wave Of Action Figures From G I Joe To Star Trek Classic Toys Gi Joe Vintage Toys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/96/db/4196db1050a828a2996e0f5344546ecb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWzxPbk5s7I0kBa4kKwmkmjV29trytZoqcFg';" alt="The First Wave Of Action Figures From G I Joe To Star Trek Classic Toys Gi Joe Vintage Toys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The First Wave Of Action Figures From G I Joe To Star Trek Classic Toys Gi Joe Vintage Toys</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/18/b4/6418b4df2a2f3af3e59f659a7f65e08b.jpg" data-lightbox="roadtrip" data-title="Transformers Transformers Autobots Transformers Artwork Transformers Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/18/b4/6418b4df2a2f3af3e59f659a7f65e08b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0G8Zqja6LLSwbHcui22G10tGG-qDjG5QRFg';" alt="Transformers Transformers Autobots Transformers Artwork Transformers Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Transformers Transformers Autobots Transformers Artwork Transformers Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/9a/bc/829abcc42f7d258c024cf26fb7cc24aa.jpg" data-lightbox="roadtrip" data-title="Photos Of The Day February 14 2014 Love Lock Paris Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/9a/bc/829abcc42f7d258c024cf26fb7cc24aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOiIM5q1kFUsXvbKTnUrRKkJSf4YRRYNYhfQ';" alt="Photos Of The Day February 14 2014 Love Lock Paris Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Of The Day February 14 2014 Love Lock Paris Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/de/5a/f0de5ac1858d823e62f1f9d488de8e61.jpg" data-lightbox="roadtrip" data-title="Sun Tzu Quotes Sayings Deep Wisdom Plans Positive Operation Market Garden World War Two Airborne Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/de/5a/f0de5ac1858d823e62f1f9d488de8e61.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKur3KaUWeeaUFGtNvlbxoeEzGLG4NnCkmWw';" alt="Sun Tzu Quotes Sayings Deep Wisdom Plans Positive Operation Market Garden World War Two Airborne Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sun Tzu Quotes Sayings Deep Wisdom Plans Positive Operation Market Garden World War Two Airborne Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/f6/a7/14f6a713ca560cfb45f0fc8e09ffa08d.jpg" data-lightbox="roadtrip" data-title="A Heartbreaking Tribute History Nerd Interesting History Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/f6/a7/14f6a713ca560cfb45f0fc8e09ffa08d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHKat4ic6tiiFAglZDB2GV7UFcLVB8Prumkw';" alt="A Heartbreaking Tribute History Nerd Interesting History Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Heartbreaking Tribute History Nerd Interesting History Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/24/8b/a5248b35aeac317abbc47fc35a53b311.jpg" data-lightbox="roadtrip" data-title="Pin By Larry Drozd On Early Cj5 Willys Jeep Vintage Jeep Willys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/24/8b/a5248b35aeac317abbc47fc35a53b311.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5m4MyX1rEBr4mn1iJBD_0BNUFfJQdm8vGVQ';" alt="Pin By Larry Drozd On Early Cj5 Willys Jeep Vintage Jeep Willys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Larry Drozd On Early Cj5 Willys Jeep Vintage Jeep Willys</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/07/94/a30794f8a254b40b3876ef6c33c73fb0.jpg" data-lightbox="roadtrip" data-title="Yesterday We Published An Article On Our Favorite Four Wheel Drives Of Sema But It Was Missing One Key Category Jeeps Jeep Expedition Portal Four Wheel Drive">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/07/94/a30794f8a254b40b3876ef6c33c73fb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRETxu2QSnwSSLjawnf6c1snQfuxfVBnJ6-4Q';" alt="Yesterday We Published An Article On Our Favorite Four Wheel Drives Of Sema But It Was Missing One Key Category Jeeps Jeep Expedition Portal Four Wheel Drive">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yesterday We Published An Article On Our Favorite Four Wheel Drives Of Sema But It Was Missing One Key Category Jeeps Jeep Expedition Portal Four Wheel Drive</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/39/f6/2d39f62679802e883507f92eb91923bb.gif" data-lightbox="roadtrip" data-title="Voice Agent Interface Equalizer Wave Gifs Find Share On Giphy Sound Waves Design Waving Gif Sound Waves">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/39/f6/2d39f62679802e883507f92eb91923bb.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH8q545sXEYfKwTVZXgpLONChAcrWNkt0uQw';" alt="Voice Agent Interface Equalizer Wave Gifs Find Share On Giphy Sound Waves Design Waving Gif Sound Waves">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Voice Agent Interface Equalizer Wave Gifs Find Share On Giphy Sound Waves Design Waving Gif Sound Waves</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/0c/61/240c614271d418baa0d6c7dc31e9d40c.jpg" data-lightbox="roadtrip" data-title="Transformers Line Up Poster Print 24 X 36 Item Sco4122 Transformers Characters Transformers Poster Transformers Autobots">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/0c/61/240c614271d418baa0d6c7dc31e9d40c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0R-alzMQ9LARTKRgFnxtz2ZYu_sV895_E1w';" alt="Transformers Line Up Poster Print 24 X 36 Item Sco4122 Transformers Characters Transformers Poster Transformers Autobots">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Transformers Line Up Poster Print 24 X 36 Item Sco4122 Transformers Characters Transformers Poster Transformers Autobots</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/c4/6c/2ac46cd68e28abe56d2fc651a7cac6fe.jpg" data-lightbox="roadtrip" data-title="Vnd 1r Vindicator Mech Cool Art Landmarks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/c4/6c/2ac46cd68e28abe56d2fc651a7cac6fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf03BxnjlNMqnCshGIMjFIyNVXkJRDbKveIw';" alt="Vnd 1r Vindicator Mech Cool Art Landmarks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vnd 1r Vindicator Mech Cool Art Landmarks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/1c/fd/ee1cfd1f2ec65b866330ea98349461e7.jpg" data-lightbox="roadtrip" data-title="Pin Op Sailing Vessels Of The Past">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/1c/fd/ee1cfd1f2ec65b866330ea98349461e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3AEnzERPDg5PE6MoUqr1_-wNyATPt1dO0MQ';" alt="Pin Op Sailing Vessels Of The Past">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Op Sailing Vessels Of The Past</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/26/7c/b1267c298689471886c062b1db511c72.jpg" data-lightbox="roadtrip" data-title="Lego Dimensions Tumblr Lego Dimensions Lego Art Lego Knights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/26/7c/b1267c298689471886c062b1db511c72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbQboYfIc9hE1rAlKNMzhnRxK7tcJWk43N5Q';" alt="Lego Dimensions Tumblr Lego Dimensions Lego Art Lego Knights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lego Dimensions Tumblr Lego Dimensions Lego Art Lego Knights</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/vet-tec-and-gi-bill.html">Vet Tec And Gi Bill</a></li>
+													<li class="list-group-item"><a href="/veteran-100-pt-benefits.html">Veteran 100 Pt Benefits</a></li>
+													<li class="list-group-item"><a href="/veteran-100-pt.html">Veteran 100 Pt</a></li>
+													<li class="list-group-item"><a href="/veteran-affairs-service-records.html">Veteran Affairs Service Records</a></li>
+													<li class="list-group-item"><a href="/veteran-affairs-dependent-education-benefits.html">Veteran Affairs Dependent Education Benefits</a></li>
+													<li class="list-group-item"><a href="/vet-comp-and-pen-sleep-apnea.html">Vet Comp And Pen Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/veteran-crisis-line-canada.html">Veteran Crisis Line Canada</a></li>
+													<li class="list-group-item"><a href="/veteran-crisis-hotline-number.html">Veteran Crisis Hotline Number</a></li>
+													<li class="list-group-item"><a href="/veteran-dependent-id.html">Veteran Dependent Id</a></li>
+													<li class="list-group-item"><a href="/veteran-compensation-for-asthma.html">Veteran Compensation For Asthma</a></li>
+													<li class="list-group-item"><a href="/vet-tech-gi-bill-program.html">Vet Tech Gi Bill Program</a></li>
+													<li class="list-group-item"><a href="/veteran-compensation-for-2021.html">Veteran Compensation For 2021</a></li>
+													<li class="list-group-item"><a href="/veteran-benefits-for-dependents-education.html">Veteran Benefits For Dependents Education</a></li>
+													<li class="list-group-item"><a href="/veteran-benefits-lawyers.html">Veteran Benefits Lawyers</a></li>
+													<li class="list-group-item"><a href="/veteran-cola-2020.html">Veteran Cola 2020</a></li>
+													<li class="list-group-item"><a href="/vet-shot-records.html">Vet Shot Records</a></li>
+													<li class="list-group-item"><a href="/veteran-benefits-attorney-near-me.html">Veteran Benefits Attorney Near Me</a></li>
+													<li class="list-group-item"><a href="/veteran-crisis-line-phone-number.html">Veteran Crisis Line Phone Number</a></li>
+													<li class="list-group-item"><a href="/veteran-compensation-pay-dates-2019.html">Veteran Compensation Pay Dates 2019</a></li>
+													<li class="list-group-item"><a href="/vet-tec-gi-bill.html">Vet Tec Gi Bill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

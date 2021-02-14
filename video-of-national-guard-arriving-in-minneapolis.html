@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Video Of National Guard Arriving In Minneapolis - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Video Of National Guard Arriving In Minneapolis",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/5b/0d/68/5b0d688b5db9d7abe38b3a4acdccb93c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=video+of+national+guard+arriving+in+minneapolis",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Video Of National Guard Arriving In Minneapolis</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Paul and a wounded Minneapolis braced for more violence after rioting over the. Fed up residents and local businesses that have been looted and set on fire hope the city will see some calm with the arrival of the National Guard. The National Guards top general confirmed that up to 7000 National Guardsmen will remain in Washington through mid-March to assist federal law enforcement. <br>				
+			</p>
+										<a class="badge badge-warning" href="/what-is-a-96-in-the-military.html">what is a 96 in the military</a>
+											<a class="badge badge-info" href="/what-is-a-100-percent-schedular-rating.html">what is a 100 percent schedular rating</a>
+											<a class="badge badge-primary" href="/what-is-a-72-hour-bag-military.html">what is a 72 hour bag military</a>
+											<a class="badge badge-success" href="/what-is-a-100-disability-rating.html">what is a 100 disability rating</a>
+											<a class="badge badge-warning" href="/what-is-a-good-college-gpa.html">what is a good college gpa</a>
+											<a class="badge badge-info" href="/what-is-a-disability-rating-from-the-va.html">what is a disability rating from the va</a>
+											<a class="badge badge-warning" href="/what-is-70-military-disability-pay.html">what is 70 military disability pay</a>
+											<a class="badge badge-danger" href="/what-is-a-gold-star-wife.html">what is a gold star wife</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the ideal site.  Our site provides you with suggestions for viewing the highest quality video and picture content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you see.  It is also possible to bring about supporting this website by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/c3/55/57c3558cc0a9bd2944803987cc88d937.jpg" data-lightbox="roadtrip" data-title="Three Police Officers Appeared To Kneel On George Floyd In New Video Police Officer Police Chief George">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/c3/55/57c3558cc0a9bd2944803987cc88d937.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxzl88A-8dxnabr2AyLtZ8ekdzbuOp5B18Ow';" alt="Three Police Officers Appeared To Kneel On George Floyd In New Video Police Officer Police Chief George">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Three Police Officers Appeared To Kneel On George Floyd In New Video Police Officer Police Chief George</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a6/f7/99/a6f799619f673ffd290e2eb79b10c019.jpg" data-lightbox="roadtrip" data-title="Pin On Opposition Party">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a6/f7/99/a6f799619f673ffd290e2eb79b10c019.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT76kWfMV_fsDgtY3S2ZwdItJsn9OPU4B3_xw';" alt="Pin On Opposition Party">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Opposition Party</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/79/82/7f79824b49b05dbfbd8d2a2dad929bea.jpg" data-lightbox="roadtrip" data-title="The Truck Can Be Seen Speeding Toward Protesters On A Highway As Demonstrations Continued In Minneapolis For T Tanker Trucking Minneapolis Protest Truck Driver">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/79/82/7f79824b49b05dbfbd8d2a2dad929bea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyEZT8Ldz92C5AWgRDf7c-d6loSBY3AlxrOw';" alt="The Truck Can Be Seen Speeding Toward Protesters On A Highway As Demonstrations Continued In Minneapolis For T Tanker Trucking Minneapolis Protest Truck Driver">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Truck Can Be Seen Speeding Toward Protesters On A Highway As Demonstrations Continued In Minneapolis For T Tanker Trucking Minneapolis Protest Truck Driver</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/a8/15/a2a815bef43ae3469acf5dbd8efe566a.jpg" data-lightbox="roadtrip" data-title="Pin On Blogging">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/a8/15/a2a815bef43ae3469acf5dbd8efe566a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrsFypW19xmhZ2WuMuL35ZM05MyX2Gt5naLA';" alt="Pin On Blogging">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Blogging</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/d0/97/72d097cc0ce3d96b060b710677bf733c.jpg" data-lightbox="roadtrip" data-title="Pin On Cc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/d0/97/72d097cc0ce3d96b060b710677bf733c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH2SqRWojpENuHJ5QoTBBnYSZBjgU3iatCmg';" alt="Pin On Cc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/0b/48/950b48a13de4d725ba013c93ba3f38c0.jpg" data-lightbox="roadtrip" data-title="Pin On Injustice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/0b/48/950b48a13de4d725ba013c93ba3f38c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRps-ayg6yexOFaohSljLK2ZV7waRy7bdGXNQ';" alt="Pin On Injustice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Injustice</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/7f/79/82/7f79824b49b05dbfbd8d2a2dad929bea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRps-ayg6yexOFaohSljLK2ZV7waRy7bdGXNQ';" alt="Pin On Injustice">
+										<div class="card-body">
+						<h3 class="h5"><b>Curfew took effect to break up the demonstrations.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Video of national guard arriving in minneapolis</strong>. 
+								
+																	National Guard officials said a New York Guard spokesman and Governor Andrew Cuomo on Wednesday. 
+																	Tim Walz called in the National Guard on Thursday as looting broke out in St. 
+																	The National Guard has arrived on the scene. 
+																	Tim Walz has activated the states National Guard to maintain peace in Minneapolis where protests over the death of George Floyd have become violent and destructive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our mission is to protect. 
+																	Minnesotas National Guard is comprised of more. 
+																	The New York National Guard is sending 1000 troops to Washington DC at the request of US. 
+																	National Guard spokesman Col. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Guard responded on Twitter. 
+																	The last time the Minnesota National Guard was called out to deal with civil unrest was in a backup role during the 2008 Republican National Convention in St. 
+																	Kohler declined say how many were arriving. 
+																	Tim Walz deployed the National Guard to Minneapolis in response to civil unrest including looting following what authorities described as misinformation about the suicide death of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Minnesota called in its National Guard days earlier enforcing a curfew and trying to quell the violence. 
+																	The additional bureaucratic hurdle delayed the DC Guards response after US Capitol Police Chief Steven Sund asked on Wednesday for 200 guardsmen to provide backup - with guardsmen not arriving. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+																	We are all-in to restore order and maintain and keep the peace in Minnesota The National Guard was founded in 1850 and currently has around. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The users claim that the. 
+																	In Minneapolis the city where the protests began police state troopers and National Guard members moved in soon after an 8 pm. 
+																	The Minnesota National Guard tweeted that more than 500 soldiers were activated following the executive order. 
+																	MINNEAPOLIS AP Minnesota Gov. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	President has urged state and local leaders to dominate the streets of their cities with law. 
+																	Social media users have been sharing a video shot from a vehicle that shows some National Guard soldiers facing away from the road as Bidens motorcade drives past them. 
+																	The most comparable situation to the current disturbances happened when the Guard was called up to deal with the riots in Minneapolis in 1967 a summer when anger over racial inequalities came to a boil in many cities across the. 
+																	They are in Minneapolis and fully prepared. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It marks the biggest National Guard deployment in the states history according to local press. 
+																	Military trucks seen arriving at White House after Trump tells governors to be tough on protests. 
+																	Trump realDonaldTrump May 29 2020. 
+																	President Donald Trump during a June 11 event in Dallas praised the National Guards use of force to disperse Minneapolis protesters describing it as like a knife cutting butter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Charles Kohler says guard members are hooking up with police and providing additional security at critical infrastructure. 
+																	Currently there are some 4100 guardsmen deployed to Minneapolis metro area and the vicinity with 6000 more set to arrive. 
+																	-- Hundreds of National Guard troops on emergency mobilization orders began arriving Thursday to reinforce security in the city a day after the violent breach of the US. 
+																	The show of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	George Floyd will not have died in vain. 
+																	Earlier on Thursday Minnesota Governor Tim Walz had activated the states National Guard troops at the request of the mayors of Minneapolis and the neighbouring city of St Paul declaring the. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/d1/20/bbd12071c398d3433b6db49283ecc80a.png" data-lightbox="roadtrip" data-title="Pin On Deployments And Homecomings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/d1/20/bbd12071c398d3433b6db49283ecc80a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzYcB3Xw7NIhuDC4KfnfltD7-QqeddNuWaPg';" alt="Pin On Deployments And Homecomings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Deployments And Homecomings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/02/90/dd02905ae661268060a07d6e363b7c32.jpg" data-lightbox="roadtrip" data-title="Pin On About Auto Connection Manassas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/02/90/dd02905ae661268060a07d6e363b7c32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcPAF_OQgNXZXaIQaSVhqoxXxfcygMv_HE8A';" alt="Pin On About Auto Connection Manassas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On About Auto Connection Manassas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f4/f2/85/f4f285da5defd675f0bd42dfa90385b3--national-guard-minnesota.jpg" data-lightbox="roadtrip" data-title="Pin On Photography Of Minnesota">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f4/f2/85/f4f285da5defd675f0bd42dfa90385b3--national-guard-minnesota.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLZf4FOYVpgTBHmWNBA8D_1E7ivNKxo3vJ-A';" alt="Pin On Photography Of Minnesota">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Photography Of Minnesota</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/e1/c8/34e1c8a3acdb7ff3fcf9974833450d58.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/e1/c8/34e1c8a3acdb7ff3fcf9974833450d58.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_A-xwiOfocctWO2Ku0RCBqtm2M4L5t2BZEg';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/4f/1f/de4f1fe125b9604380869fe995c5f087.jpg" data-lightbox="roadtrip" data-title="Pin By Sharon Mcgunigle On Mom Video Military Soldiers Coming Home Military Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/4f/1f/de4f1fe125b9604380869fe995c5f087.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXD9UHxJ_TwBAtWrJFtLr4yQYErncEIsMEhA';" alt="Pin By Sharon Mcgunigle On Mom Video Military Soldiers Coming Home Military Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sharon Mcgunigle On Mom Video Military Soldiers Coming Home Military Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/2e/cc/472ecc122cc15a48ddb90c2c26a7ad54.jpg" data-lightbox="roadtrip" data-title="Pin On Sports Partnerships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/2e/cc/472ecc122cc15a48ddb90c2c26a7ad54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIzRPp3RkV1rNidtI4RaInWB8hUSKQKCIYEg';" alt="Pin On Sports Partnerships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sports Partnerships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/7f/03/9e/7f039e785093cf614d4a3f6b09e4b6d7.jpg" data-lightbox="roadtrip" data-title="Pin On Shtf Prepping">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/7f/03/9e/7f039e785093cf614d4a3f6b09e4b6d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSrnPK8j3DekcneGO8Y8mAgJFsJNCCygjTBw';" alt="Pin On Shtf Prepping">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Shtf Prepping</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/10/9b/a7109b149b97bf2bf6d724c6eb309745.png" data-lightbox="roadtrip" data-title="Pin On Trending Now">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/10/9b/a7109b149b97bf2bf6d724c6eb309745.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbdj-Tz61pLrx9mdHs-7R8EHj_kyjBk02eng';" alt="Pin On Trending Now">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Trending Now</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/0d/68/5b0d688b5db9d7abe38b3a4acdccb93c.jpg" data-lightbox="roadtrip" data-title="Pin On Welcome Home Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/0d/68/5b0d688b5db9d7abe38b3a4acdccb93c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVQUUPfnRbcW8XR7nT8QTtW5KirIduAJJzZw';" alt="Pin On Welcome Home Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Welcome Home Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/37/5f/87375ffc3790e0b81fabd0635bcdbced.jpg" data-lightbox="roadtrip" data-title="Pin On Minnesotans Overseas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/37/5f/87375ffc3790e0b81fabd0635bcdbced.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9c8e0cdyecDEdIZqq3N2py95Gpmw9Gem45w';" alt="Pin On Minnesotans Overseas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Minnesotans Overseas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/b9/40/f0b9402a0fc279964b96cf97231f8527.jpg" data-lightbox="roadtrip" data-title="Law Enforcement Appears To Shoot Paint Canisters At Minneapolis Residents On Front Porch In 2020 Front Porch Minneapolis Law Enforcement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/b9/40/f0b9402a0fc279964b96cf97231f8527.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj2EGIOnygbW1BcZccUCHOg2sb1Nq4_CIqow';" alt="Law Enforcement Appears To Shoot Paint Canisters At Minneapolis Residents On Front Porch In 2020 Front Porch Minneapolis Law Enforcement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Law Enforcement Appears To Shoot Paint Canisters At Minneapolis Residents On Front Porch In 2020 Front Porch Minneapolis Law Enforcement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/4c/a6/864ca687ad2e8fd795041c185dc2d470.jpg" data-lightbox="roadtrip" data-title="Pin On Coronovirus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/4c/a6/864ca687ad2e8fd795041c185dc2d470.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmifIzzcICTRy4DW5OHKyoBK5BDmB6q41iRQ';" alt="Pin On Coronovirus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coronovirus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/4c/cd/334ccd95b9eebed805e7113ca95fd37d.jpg" data-lightbox="roadtrip" data-title="Pin On Minnesota Guard Diversity">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/4c/cd/334ccd95b9eebed805e7113ca95fd37d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0GOp9loCTynIS1o6J4nTBmneWIxSwGkviCw';" alt="Pin On Minnesota Guard Diversity">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Minnesota Guard Diversity</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-does-70-service-connected-mean.html">What Does 70 Service Connected Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-80-percent-va-disability-mean.html">What Does 80 Percent Va Disability Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-40-va-disability-pay.html">What Does 40 Va Disability Pay</a></li>
+													<li class="list-group-item"><a href="/what-do-you-have-to-have-to-go-to-college.html">What Do You Have To Have To Go To College</a></li>
+													<li class="list-group-item"><a href="/what-does-a-military-warrant-officer-do.html">What Does A Military Warrant Officer Do</a></li>
+													<li class="list-group-item"><a href="/what-do-you-do-when-your-husband-dies-suddenly.html">What Do You Do When Your Husband Dies Suddenly</a></li>
+													<li class="list-group-item"><a href="/what-does-70-percent-va-disability-mean.html">What Does 70 Percent Va Disability Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-a-gi-bill-mean.html">What Does A Gi Bill Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-30-va-disability-get-you.html">What Does 30 Va Disability Get You</a></li>
+													<li class="list-group-item"><a href="/what-does-a-canadian-intelligence-officer-do.html">What Does A Canadian Intelligence Officer Do</a></li>
+													<li class="list-group-item"><a href="/what-do-you-do-when-you-have-nothing-in-common-with-your-spouse.html">What Do You Do When You Have Nothing In Common With Your Spouse</a></li>
+													<li class="list-group-item"><a href="/what-does-a-game-ranger-earn-in-south-africa.html">What Does A Game Ranger Earn In South Africa</a></li>
+													<li class="list-group-item"><a href="/what-does-80-percent-va-disability-pay.html">What Does 80 Percent Va Disability Pay</a></li>
+													<li class="list-group-item"><a href="/what-does-a-0-va-disability-rating-mean.html">What Does A 0 Va Disability Rating Mean</a></li>
+													<li class="list-group-item"><a href="/what-does-a-human-resource-do-in-the-army.html">What Does A Human Resource Do In The Army</a></li>
+													<li class="list-group-item"><a href="/what-do-you-call-a-military-hat.html">What Do You Call A Military Hat</a></li>
+													<li class="list-group-item"><a href="/what-do-you-need-to-join-the-irish-army.html">What Do You Need To Join The Irish Army</a></li>
+													<li class="list-group-item"><a href="/what-do-you-do-when-your-husband-refuses-to-talk.html">What Do You Do When Your Husband Refuses To Talk</a></li>
+													<li class="list-group-item"><a href="/what-do-you-do-when-your-wife-doesnt-want-to-make-love-anymore.html">What Do You Do When Your Wife Doesnt Want To Make Love Anymore</a></li>
+													<li class="list-group-item"><a href="/what-does-0-percent-va-disability-mean.html">What Does 0 Percent Va Disability Mean</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

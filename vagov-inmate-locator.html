@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Vagov Inmate Locator - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Vagov Inmate Locator",
+  "datePublished": "2021-02-14",
+  "image": "https://vadoc.virginia.gov/images/nav/secondary-nav/cardinal.svg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=vagov+inmate+locator",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Vagov Inmate Locator</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Current active COVID-19 cases include 587 inmates and 239 VADOC staff members. Virginia inmate records include all official documents containing information about individuals incarcerated in prisons correctional centers and jails in the Commonwealth of Virginia. Follow the instructions below to look up someone incarcerated in a Virginia state prison. <br>				
+			</p>
+										<a class="badge badge-primary" href="/what-is-the-gi-bill-of-rights-what-benefits-did-it-grant-to-veterans.html">what is the gi bill of rights what benefits did it grant to veterans</a>
+											<a class="badge badge-dark" href="/what-is-the-maximum-age-to-join-the-reserves.html">what is the maximum age to join the reserves</a>
+											<a class="badge badge-warning" href="/what-is-the-hardest-college-to-get-into-in-virginia.html">what is the hardest college to get into in virginia</a>
+											<a class="badge badge-dark" href="/what-is-the-hardest-phase-of-army-basic-training.html">what is the hardest phase of army basic training</a>
+											<a class="badge badge-light" href="/what-is-the-maximum-age-to-join-the-air-national-guard.html">what is the maximum age to join the air national guard</a>
+											<a class="badge badge-warning" href="/what-is-the-gpa-requirement-for-air-force-officer.html">what is the gpa requirement for air force officer</a>
+											<a class="badge badge-info" href="/what-is-the-highest-va-rating-for-fibromyalgia.html">what is the highest va rating for fibromyalgia</a>
+											<a class="badge badge-info" href="/what-is-the-maximum-age-to-join-army-reserves.html">what is the maximum age to join army reserves</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the ideal site.  Our website gives you suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.inmatelocator.us/img/state/Virginia1.jpg" data-lightbox="roadtrip" data-title="Virginia Inmate Search Inmate Locator">
+											<img class="card-img v-image ads-img " src="http://www.inmatelocator.us/img/state/Virginia1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH3XpiJdB-7sf2VJxoHPdrMprNKDnlw3dOyg';" alt="Virginia Inmate Search Inmate Locator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Inmate Search Inmate Locator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.searchquarry.com/wp-content/uploads/2016/07/virginia.jpg" data-lightbox="roadtrip" data-title="Free Virginia Inmate Finder Searchquarry Com">
+											<img class="card-img v-image ads-img " src="https://www.searchquarry.com/wp-content/uploads/2016/07/virginia.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTATpPiLG1dPLfHmcSqUR5Ah5_nDbNV_VYhhQ';" alt="Free Virginia Inmate Finder Searchquarry Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Virginia Inmate Finder Searchquarry Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://inmatesearchinfo.com/wp-content/uploads/2020/03/Virginia-Offender-Search-1024x434.jpg" data-lightbox="roadtrip" data-title="Virginia Inmate Search Va Department Of Corrections Inmate Locator">
+											<img class="card-img v-image ads-img " src="https://inmatesearchinfo.com/wp-content/uploads/2020/03/Virginia-Offender-Search-1024x434.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxMePxNCXXEkmp8teQ1dbk_X_4FlNfpA3C8g';" alt="Virginia Inmate Search Va Department Of Corrections Inmate Locator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Inmate Search Va Department Of Corrections Inmate Locator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vadoc.virginia.gov/images/nav/main-nav/general-public.svg" data-lightbox="roadtrip" data-title="Video Visitation Virginia Department Of Corrections">
+											<img class="card-img v-image ads-img " src="https://vadoc.virginia.gov/images/nav/main-nav/general-public.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpUsBlQQsT807SxrWoXzuN4QxqZWYwFOFXHQ';" alt="Video Visitation Virginia Department Of Corrections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Video Visitation Virginia Department Of Corrections</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vadoc.virginia.gov/images/family-and-friends/visitation/application-help.svg" data-lightbox="roadtrip" data-title="Visiting An Offender Virginia Department Of Corrections">
+											<img class="card-img v-image ads-img " src="https://vadoc.virginia.gov/images/family-and-friends/visitation/application-help.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9IDB9t99kW_kLCDcvKJr9NRdH7ckE6OmogQ';" alt="Visiting An Offender Virginia Department Of Corrections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Visiting An Offender Virginia Department Of Corrections</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vadoc.virginia.gov/images/family-and-friends/offender-locator.svg" data-lightbox="roadtrip" data-title="Sending Mail To An Offender Virginia Department Of Corrections">
+											<img class="card-img v-image ads-img " src="https://vadoc.virginia.gov/images/family-and-friends/offender-locator.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8fxhJ8qvYHFweLFZkEqd9OZiVLHrLpsY4WA';" alt="Sending Mail To An Offender Virginia Department Of Corrections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sending Mail To An Offender Virginia Department Of Corrections</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://leflorecounty.org/wp-content/uploads/prisons-core/img/states/virginia-state-department-of-corrections-vadoc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8fxhJ8qvYHFweLFZkEqd9OZiVLHrLpsY4WA';" alt="Sending Mail To An Offender Virginia Department Of Corrections">
+										<div class="card-body">
+						<h3 class="h5"><b>We can help you find people who may be incarcerated in Virginia.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Vagov inmate locator</strong>. 
+								
+																	Criminal Records and Contact Info aggregated from real law enforcement agencies and government court houses. 
+																	Locate the whereabouts of a federal inmate incarcerated from 1982 to the present. 
+																	The California Department of Corrections and Rehabilitation CDCR is committed to continually improving the Public Inmate Locator System web experience to locate inmates. 
+																	Visit the Virginia Department of Corrections website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For all searches you will be required to enter. 
+																	Virginia Inmate Search Records of inmates serving their sentence in VA state prisons are maintained by Virginia State Department of Corrections VADOC. 
+																	You simply search for the inmate by the first name last night or ID number. 
+																	Virginia State Department of Corrections VADOC manage all the records of state prisons in Virginia VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Their online database have records about every inmate in the state prisons across entire Virginia VA. 
+																	Locate an offender. 
+																	Some of these records are identifying personal information while others are administrative records detailing inmates offender status and location. 
+																	25 South Liberty Street Harrisonburg VA 22801-3714. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Offender Search Jails Offender Search Prisons Escapees and Absconders. 
+																	The Montgomery County Inmate Search Virginia links below open in a new window and take you to third party websites that provide access to Montgomery County public records. 
+																	News Press Releases. 
+																	VA DOC - Mecklenburg Correctional Center 960 Prison Road P. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Website visitors should continue to check back periodically to see if any changes have occurred. 
+																	Due to the First Step Act sentences are being reviewed and recalculated to address pending Good Conduct Time changes. 
+																	A prison search or inmate search in the Virginia State Department of Corrections is easier than you can imagine. 
+																	The Virginia Department of Corrections has an inmate locator feature right on their website and they keep all inmate records online and searchable. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Visitation and volunteer activities at all VADOC facilities are. 
+																	Designed for ease-of-use this site categorizes information for browsing by state and administration as well as by viewing through an interactive map of the United States. 
+																	The Virginia DOC website contains an offender locator search function where one can look up an inmate by their seven-digit offender ID number or their full last name and first name or at least two characters for first name partial searches. 
+																	1409 Greenbrier Street Charleston WV 25311 304 558-2036 Contact Us Site Map Staff Directory. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A list of Jail and Prison locations in Virginia including the name address and phone number. 
+																	Rockingham-Harrisonburg Regional Jail VA VA Inmate Search Mugshots Prison Roster. 
+																	Locate offender by first andor last name First Name Last Name Locate. 
+																	Offender Locator Search for an offenders location and release date if they are incarcerated and under the custody of the Virginia Department of Corrections VADOC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VADOC maintains a centralized inmate database which one can easily search refer the guide below. 
+																	Locate offender by ID. 
+																	Virginia Incarceration Stats for Federal State and Local Jail Jurisdiction. 
+																	The list of results you will get will show the offender number name gender race release date and location. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Using a quick name or inmate ID search you can see a list of inmate matching your criteria. 
+																	Perform a free Montgomery County VA public inmate records search including inmate rosters lists locators lookups inquiries and active jail inmates. 
+																	Offenders who are not under VADOC custody will not appear in the search results. 
+																	Free Virginia Inmate Lookup DOC Inmate Locator Virginia Inmate Search Guide Find inmates incarcerated in Virginia VA State prisons Federal prison County jails and the Virginia Department of Corrections VA DOC system. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How to Perform Virginia Inmate Lookup The state makes it easy for you to locate an inmate incarcerated in one of their jails or prisons. 
+																	While the inmates in federal prison can be searched directly on BOP website. 
+																	West Virginia Division of Corrections and Rehabilitation Offender Search. 
+																	Offender Search Daily Incarcerations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Largest Database of Virginia Mugshots. 
+																	Public Records Online Search. 
+																	Pigeonly Inmate Locator in Richmond City Jail VA Pigeonly Inmate Locator is a useful tool which has been created for the families of the incarcerated in order for them to learn where someone is housed. 
+																	This site is a storehouse of facility and key staff information within 1950 VA facilities maintained on a regular basis by editors and administrators nationwide throughout the VA network. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rockingham-Harrisonburg Regional Jail VA offender lookup. 
+																	As a result an inmates release date may not be up-to-date. 
+																	Inmate locator updates you on the information about race Date of Birth and release date. 
+																	The Richmond City Jail VA updates the information on a daily basis to ensure that it is complete and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you need assistance accessing or viewing any material on the Public Inmate Locator website please contact CDCRs Identification Unit at 916 445-6713 Monday through Friday excluding holidays between the hours of 8. 
+																	You can easily find an inmate through official VADOC website. 
+																	Additionally it would help if you have the inmates BOP register INS DCDC or FBI number. 
+																	Search arrest records and find latests mugshots and bookings for Misdemeanors and Felonies. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://leflorecounty.org/wp-content/uploads/prisons-core/img/states/virginia-state-department-of-corrections-vadoc.jpg" data-lightbox="roadtrip" data-title="Virginia Inmate Search Virginia State Department Of Corrections Offender Lookup">
+											<img class="card-img v-image ads-img " src="https://leflorecounty.org/wp-content/uploads/prisons-core/img/states/virginia-state-department-of-corrections-vadoc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRPvIIvQ4qHrKlTCV7fr4BFRYuv4RPPhoo1g';" alt="Virginia Inmate Search Virginia State Department Of Corrections Offender Lookup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Inmate Search Virginia State Department Of Corrections Offender Lookup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://visitationform.vadoc.virginia.gov/images/global/header/DOC-Logo-White-Transparent-BG.png" data-lightbox="roadtrip" data-title="Commonwealth Of Virginia Department Of Corrections Offenders Adult Visitor Application And Background Investigation Authorization">
+											<img class="card-img v-image ads-img " src="https://visitationform.vadoc.virginia.gov/images/global/header/DOC-Logo-White-Transparent-BG.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBRz2DxP9a_WSunbBGwm8vNmFxJhiE2k9Bzg';" alt="Commonwealth Of Virginia Department Of Corrections Offenders Adult Visitor Application And Background Investigation Authorization">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Commonwealth Of Virginia Department Of Corrections Offenders Adult Visitor Application And Background Investigation Authorization</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://infotracer.com/img/prison_juvenile.svg" data-lightbox="roadtrip" data-title="Virginia Inmate Search Locator Find A Va Offender Infotracer">
+											<img class="card-img v-image ads-img " src="https://infotracer.com/img/prison_juvenile.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPTz8coDCPnTVTW6NFLPOHbcZZlwCRsaH5BA';" alt="Virginia Inmate Search Locator Find A Va Offender Infotracer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Inmate Search Locator Find A Va Offender Infotracer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vadoc.virginia.gov/images/nav/secondary-nav/cardinal.svg" data-lightbox="roadtrip" data-title="Visitors And Volunteers To Virginia Doc Facilities Suspended Until Further Notice Virginia Department Of Corrections">
+											<img class="card-img v-image ads-img " src="https://vadoc.virginia.gov/images/nav/secondary-nav/cardinal.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7aYt3t5UIhCK0SxfUs8aTFhRP4QAwwJudlQ';" alt="Visitors And Volunteers To Virginia Doc Facilities Suspended Until Further Notice Virginia Department Of Corrections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Visitors And Volunteers To Virginia Doc Facilities Suspended Until Further Notice Virginia Department Of Corrections</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vadoc.virginia.gov/images/family-and-friends/approved-list.svg" data-lightbox="roadtrip" data-title="Phone Correspondence With An Offender Virginia Department Of Corrections">
+											<img class="card-img v-image ads-img " src="https://vadoc.virginia.gov/images/family-and-friends/approved-list.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQWkPSCj6GhQeHuzIiPGbmPulvjPAHvkDgA';" alt="Phone Correspondence With An Offender Virginia Department Of Corrections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Phone Correspondence With An Offender Virginia Department Of Corrections</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://apps.wv.gov/OIS/OffenderSearch/Content/rja/header-agencyprint.jpg" data-lightbox="roadtrip" data-title="Ois Search">
+											<img class="card-img v-image ads-img " src="https://apps.wv.gov/OIS/OffenderSearch/Content/rja/header-agencyprint.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQthk_9anuwo8F6vUgqzcDMT_6Csox6M-15_A';" alt="Ois Search">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ois Search</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vadoc.virginia.gov/images/offender-resources/nurse.svg" data-lightbox="roadtrip" data-title="Offender Health Services Virginia Department Of Corrections">
+											<img class="card-img v-image ads-img " src="https://vadoc.virginia.gov/images/offender-resources/nurse.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnYt4f936ebrnlJc5V9H2d3sOTJhO4LCug_w';" alt="Offender Health Services Virginia Department Of Corrections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Offender Health Services Virginia Department Of Corrections</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dcr.wv.gov/images/docrlogo.png" data-lightbox="roadtrip" data-title="Wv Division Of Corrections And Rehabilitation">
+											<img class="card-img v-image ads-img " src="https://dcr.wv.gov/images/docrlogo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJKIXof0s5Vgv_Cysr1MkziUw_97JJDq4-w';" alt="Wv Division Of Corrections And Rehabilitation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wv Division Of Corrections And Rehabilitation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vadoc.virginia.gov/images/global/icons/job-seekers.svg" data-lightbox="roadtrip" data-title="Virginia Bonding Program Virginia Department Of Corrections">
+											<img class="card-img v-image ads-img " src="https://vadoc.virginia.gov/images/global/icons/job-seekers.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaHspzHtoPZpHAMMFoPuylK1nYbhMzgXloxw';" alt="Virginia Bonding Program Virginia Department Of Corrections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Bonding Program Virginia Department Of Corrections</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="G9kodip_oya79M" data-lightbox="roadtrip" data-title="Https Www Ea Oit Va Gov Eaoit Docs Oct2017 20170510 Bdmr Fom V4 Pdf">
+											<img class="card-img v-image ads-img " src="G9kodip_oya79M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQzoDRdh1Z442CEMGSxN8HqG6EsATe-5hMA';" alt="Https Www Ea Oit Va Gov Eaoit Docs Oct2017 20170510 Bdmr Fom V4 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Ea Oit Va Gov Eaoit Docs Oct2017 20170510 Bdmr Fom V4 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vdh.virginia.gov/content/uploads/sites/10/2019/01/IRB-SBS-Recruitment-Flyer_TGNC_11.jpg" data-lightbox="roadtrip" data-title="Transgender Health Services Support Disease Prevention">
+											<img class="card-img v-image ads-img " src="https://www.vdh.virginia.gov/content/uploads/sites/10/2019/01/IRB-SBS-Recruitment-Flyer_TGNC_11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPlObmUfm4QLeBl4JxxDYcQzr4YVi9GqPpNQ';" alt="Transgender Health Services Support Disease Prevention">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Transgender Health Services Support Disease Prevention</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="69f2lExpV_gH0M" data-lightbox="roadtrip" data-title="Https Www Southernoregon Va Gov Docs Veteranbenefits Pdf">
+											<img class="card-img v-image ads-img " src="69f2lExpV_gH0M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQomDI5_GBY2CkGeV1PvgoVo6ifBZTKi4_LhQ';" alt="Https Www Southernoregon Va Gov Docs Veteranbenefits Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Southernoregon Va Gov Docs Veteranbenefits Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="fFGLc9n6gnGtqM" data-lightbox="roadtrip" data-title="Https Www Vendorportal Ecms Va Gov Fbodocumentserver Documentserver Aspx Documentid 2469346 Filename Va260 15 R 0922 005 Pdf">
+											<img class="card-img v-image ads-img " src="fFGLc9n6gnGtqM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWZkX0SNFDk1JO8NJQ_hLaEyABHnBM5xeqAg';" alt="Https Www Vendorportal Ecms Va Gov Fbodocumentserver Documentserver Aspx Documentid 2469346 Filename Va260 15 R 0922 005 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Vendorportal Ecms Va Gov Fbodocumentserver Documentserver Aspx Documentid 2469346 Filename Va260 15 R 0922 005 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-percent-of-us-college-students-do-not-drink-at-all-in-a-typical-week.html">What Percent Of Us College Students Do Not Drink At All In A Typical Week</a></li>
+													<li class="list-group-item"><a href="/what-percentage-does-the-va-pay-for-post-traumatic-stress-disorder.html">What Percentage Does The Va Pay For Post Traumatic Stress Disorder</a></li>
+													<li class="list-group-item"><a href="/what-percent-of-national-guard-get-deployed.html">What Percent Of National Guard Get Deployed</a></li>
+													<li class="list-group-item"><a href="/what-percentage-college-athletes-go-pro.html">What Percentage College Athletes Go Pro</a></li>
+													<li class="list-group-item"><a href="/what-organizations-help-homeless-veterans.html">What Organizations Help Homeless Veterans</a></li>
+													<li class="list-group-item"><a href="/what-percentage-do-you-need-to-get-100-va-disability.html">What Percentage Do You Need To Get 100 Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-percent-of-us-graduates-college.html">What Percent Of Us Graduates College</a></li>
+													<li class="list-group-item"><a href="/what-percent-of-us-are-college-graduates.html">What Percent Of Us Are College Graduates</a></li>
+													<li class="list-group-item"><a href="/what-other-benefits-do-100-disabled-veterans-receive.html">What Other Benefits Do 100 Disabled Veterans Receive</a></li>
+													<li class="list-group-item"><a href="/what-percentage-does-the-va-give-for-sleep-apnea.html">What Percentage Does The Va Give For Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/what-percent-of-us-go-to-college.html">What Percent Of Us Go To College</a></li>
+													<li class="list-group-item"><a href="/what-percent-of-military-have-ptsd.html">What Percent Of Military Have Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-online-colleges-offer-laptops.html">What Online Colleges Offer Laptops</a></li>
+													<li class="list-group-item"><a href="/what-percent-of-us-population-goes-to-college.html">What Percent Of Us Population Goes To College</a></li>
+													<li class="list-group-item"><a href="/what-percentage-do-veterans-get-for-ptsd.html">What Percentage Do Veterans Get For Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-military-benefits-do-i-qualify-for-with-a-general-discharge.html">What Military Benefits Do I Qualify For With A General Discharge</a></li>
+													<li class="list-group-item"><a href="/what-percent-of-combat-veterans-have-ptsd.html">What Percent Of Combat Veterans Have Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-percent-of-college-athletes-go-pro.html">What Percent Of College Athletes Go Pro</a></li>
+													<li class="list-group-item"><a href="/what-national-guard-jobs-offer-bonuses.html">What National Guard Jobs Offer Bonuses</a></li>
+													<li class="list-group-item"><a href="/what-number-do-i-call-to-file-my-weekly-unemployment-claim.html">What Number Do I Call To File My Weekly Unemployment Claim</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

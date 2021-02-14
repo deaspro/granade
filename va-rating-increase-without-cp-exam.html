@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Rating Increase Without Cp Exam - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Rating Increase Without Cp Exam",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/7c/cb/a9/7ccba9070517c79819fe5632719e2499.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+rating+increase+without+cp+exam",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Rating Increase Without Cp Exam</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">However if the Veteran files a new compensation claim or files for an increase then it is YOU that. This is known as a VA claim exam or a compensation pension CP exam. The VA Compensation and Pension exam also known as a CP exam is the 1 most important day in the entire VA claim process. <br>				
+			</p>
+										<a class="badge badge-primary" href="/what-time-does-netspend-deposit-payroll.html">what time does netspend deposit payroll</a>
+											<a class="badge badge-secondary" href="/what-time-of-day-are-va-disability-checks-deposited.html">what time of day are va disability checks deposited</a>
+											<a class="badge badge-info" href="/what-to-do-if-your-boyfriends-ex-is-pregnant.html">what to do if your boyfriends ex is pregnant</a>
+											<a class="badge badge-success" href="/what-to-do-if-partner-tests-positive-for-covid.html">what to do if partner tests positive for covid</a>
+											<a class="badge badge-info" href="/what-to-do-after-husbands-death.html">what to do after husbands death</a>
+											<a class="badge badge-success" href="/what-time-does-va-direct-deposit-hit.html">what time does va direct deposit hit</a>
+											<a class="badge badge-primary" href="/what-to-buy-a-college-kid-for-christmas.html">what to buy a college kid for christmas</a>
+											<a class="badge badge-secondary" href="/what-time-of-day-does-va-disability-pay.html">what time of day does va disability pay</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the ideal blog.  Our website gives you hints for seeing the highest quality video and image content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie for you to see.  You can also bring about supporting this website by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/cb/a9/7ccba9070517c79819fe5632719e2499.png" data-lightbox="roadtrip" data-title="218 C P Exam Answer Key The Veteran Claims Expert Richard Shuminsky Youtube Exam Exam Answer Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/cb/a9/7ccba9070517c79819fe5632719e2499.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_tmDId96i-dJYpM8rSWpI3vvtBkYVxcttQ';" alt="218 C P Exam Answer Key The Veteran Claims Expert Richard Shuminsky Youtube Exam Exam Answer Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">218 C P Exam Answer Key The Veteran Claims Expert Richard Shuminsky Youtube Exam Exam Answer Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/C26P20REEXAMINATION201.png" data-lightbox="roadtrip" data-title="Do You Really Need That C P Exam Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/C26P20REEXAMINATION201.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ9zaSvS41poRVvDaH_x_3K-3FviFuRo56uQ';" alt="Do You Really Need That C P Exam Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do You Really Need That C P Exam Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2017/07/C26P20REEXAMINATION20THUMBNAIL.jpg" data-lightbox="roadtrip" data-title="C P Exam Reexamination Second C P Exam Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2017/07/C26P20REEXAMINATION20THUMBNAIL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlna4kxEgI-iMC4xPg2Ef8ulane2zHuEYUdQ';" alt="C P Exam Reexamination Second C P Exam Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">C P Exam Reexamination Second C P Exam Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/22/5b/f7225b4127db612455a9882069738dd8.png" data-lightbox="roadtrip" data-title="6 C P Exam Success Tips For Disabled Veterans Va Disability Benefits Disabled Veterans Benefits Disabled Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/22/5b/f7225b4127db612455a9882069738dd8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFb4QRCnF7lvrrEWSBcdL_gcr7ixLCuJLuA';" alt="6 C P Exam Success Tips For Disabled Veterans Va Disability Benefits Disabled Veterans Benefits Disabled Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 C P Exam Success Tips For Disabled Veterans Va Disability Benefits Disabled Veterans Benefits Disabled Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/ea/28/2bea283fccdcab68954f357cb71f9fdd.png" data-lightbox="roadtrip" data-title="219 C P Exam Walk Through The Veteran Claims Expert Richard Shuminsky Youtube Disabled Veterans Benefits Va Benefits Va Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/ea/28/2bea283fccdcab68954f357cb71f9fdd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtmtJLDti-bsMFvwlHwvgmNC8CnW_fIy5_yA';" alt="219 C P Exam Walk Through The Veteran Claims Expert Richard Shuminsky Youtube Disabled Veterans Benefits Va Benefits Va Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">219 C P Exam Walk Through The Veteran Claims Expert Richard Shuminsky Youtube Disabled Veterans Benefits Va Benefits Va Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/3d/d2/3c3dd25b9779f1bfb86c9da15c4a60fc.jpg" data-lightbox="roadtrip" data-title="Pin By Robert Jackson On Military Information In 2020 Exam Va Disability Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/3d/d2/3c3dd25b9779f1bfb86c9da15c4a60fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4FO9Bq9i_OmYPQ5u16UmEXSAqFY13im3Zog';" alt="Pin By Robert Jackson On Military Information In 2020 Exam Va Disability Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Robert Jackson On Military Information In 2020 Exam Va Disability Veteran</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3c/3d/d2/3c3dd25b9779f1bfb86c9da15c4a60fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4FO9Bq9i_OmYPQ5u16UmEXSAqFY13im3Zog';" alt="Pin By Robert Jackson On Military Information In 2020 Exam Va Disability Veteran">
+										<div class="card-body">
+						<h3 class="h5"><b>VA CP Exam Changes Amid Coronavirus The in-person CP exams have been discontinued as of April 2 2020.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va rating increase without cp exam</strong>. 
+								
+																	A High-Value VA Claim is a disability or condition with a HIGH likelihood of getting rated at 30 or higher on its own. 
+																	However it is probably more accurate to say that CP exams have been suspended as it is likely that VA will go back to conducting in-person exams in the future. 
+																	In the case of pension claims the exam documents the level of your disability. 
+																	This might be an unwise question but I am getting so many conflicting answers from different fellow vets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When you request an increase in your VA disability rating you are in effect opening up your claim for re-evaluation. 
+																	Would anyone share some advice towards an upcoming SMC INCREASE CP EXAM. 
+																	In order for the VA to have a duty to schedule a CP examination there must be some evidence that there has been a material change in the veterans disability. 
+																	VA claim exam CP exam After you file your disability benefits claim we may ask you to have a claim exam also known as a compensation and pension or CP exam. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre a Veteran with a 70 disability rating and you have a spouse plus 3 dependent children under the age of 18 you would start with the basic rate of 165671 for a Veteran with a spouse and 1 child. 
+																	The VA cannot reduce your rating unless it finds the rating was based on fraud. 
+																	This is a very high standard and its unlikely the rating would get reduced. 
+																	For disability compensation this exam helps VA determine if you have a disability related to your military service or if your condition should receive an increased rating due to it worsening. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A veteran can do everything else right but if you miss your VA CP exam or worse get a bad CP exam the results can literally make or break your final VA rating. 
+																	With the VAs CP bigotry I am trying to take a proactive approach to the upcoming SMC INCREASE CP EXAM coming up in 2 weeks. 
+																	Focusing on High-Value VA disability claims is a great way to increase your VA disability rating in less time. 
+																	Many veterans who file a claim for an increased rating assume that the VA will automatically schedule them for a CP examination. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Claims Without Cp Exam. 
+																	The 100 va disability will be granted for up to six months after successful treatment and then the rating may be decreased if the cancer is no longer malignant and the residuals do not warrant a 100 rating. 
+																	My husband received his decision without a CP exam. 
+																	This is not the case. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After 5 years of appeals he received a letter saying he was being rated at 30 but since they had never done a CP that it may change and they ordered a physical and also an eye exam. 
+																	Be sure to inform VA of your inability to attend this exam as soon as possible and reschedule it. 
+																	However as everyone knows the VA rarely orders a CP exam for increased rating and often orders them to decrease ratings when there is no justifiable reason in the veterans files to do so. 
+																	The VA can actually lower or terminate your existing rating so you need to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You will often hear that the VA is required to offer a CP Examination to Veterans seeking compensation for a service-connected disabilityIt is true that as part of the VAs Duty to Assist it may have to offer an examination to the Veteran seeking compensation or benefitsHowever that does not mean that they must offer a VA compensation exam in every single claim or appeal. 
+																	Get answers to commonly asked questions about the VA claim exam below. 
+																	If you are seeking an increased rating missing your CP exam could mean depriving your claim of up-to-date medical evidence as adjudicators may have to rely on the potentially outdated evidence of record. 
+																	How to get your questions answered. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Increase VA Disability Rating Tip 1. 
+																	Focus on High Value VA Disability Claims. 
+																	They paid him at 30 with 5 years back pay. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/95/6c/5c/956c5c8d2a31d34ce1e8ea357fb6340c.jpg" data-lightbox="roadtrip" data-title="Common Mistakes Attending C P Exam Youtube Exam Va Disability Disabled Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/95/6c/5c/956c5c8d2a31d34ce1e8ea357fb6340c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRINsLyr31CxANOhU3SwpEVmTyCk7tNN6nGBQ';" alt="Common Mistakes Attending C P Exam Youtube Exam Va Disability Disabled Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Common Mistakes Attending C P Exam Youtube Exam Va Disability Disabled Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://embed-fastly.wistia.com/deliveries/b9e00781b418ca1193ece5d88b0b6a93.webp?image_crop_resized=1280x720" data-lightbox="roadtrip" data-title="C P Exams And The Role They Play In Va Disability Cases Cck Law">
+											<img class="card-img v-image ads-img " src="https://embed-fastly.wistia.com/deliveries/b9e00781b418ca1193ece5d88b0b6a93.webp?image_crop_resized=1280x720" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQbCyogxa2e4OXMh0T4uUG3mNCz0SfqUWlg';" alt="C P Exams And The Role They Play In Va Disability Cases Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">C P Exams And The Role They Play In Va Disability Cases Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/Asset-14-1.jpg" data-lightbox="roadtrip" data-title="Is My Va Disability Rating Permanent Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/Asset-14-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlDlTmhSXfxVGb5CPs35YQ-OGPKIXnsy7d0w';" alt="Is My Va Disability Rating Permanent Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is My Va Disability Rating Permanent Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hillandponton.com/wp-content/uploads/2016/07/dos-and-donts-cp-exams.jpg" data-lightbox="roadtrip" data-title="Seven Do S And Don Ts For Va C P Exams Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://www.hillandponton.com/wp-content/uploads/2016/07/dos-and-donts-cp-exams.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1jlQrvmFpKKesmsdaspfudl83fRsMo2Pt8A';" alt="Seven Do S And Don Ts For Va C P Exams Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seven Do S And Don Ts For Va C P Exams Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/How-Does-VA-Disability-Back-Pay-Work.jpg" data-lightbox="roadtrip" data-title="How To Increase Va Disability Rating For Ptsd Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/How-Does-VA-Disability-Back-Pay-Work.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSByy6E8nuaCEbg9QmkiOM5w22Of0YGyMzyIQ';" alt="How To Increase Va Disability Rating For Ptsd Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Increase Va Disability Rating For Ptsd Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://video.fosterwebmarketing.com/cuddiganlaw.com/httpdocs/evm/16-c-p-exam-splash_764x430_Splash.png" data-lightbox="roadtrip" data-title="What Happens During And After A Va C P Exam Cuddigan Law">
+											<img class="card-img v-image ads-img " src="https://video.fosterwebmarketing.com/cuddiganlaw.com/httpdocs/evm/16-c-p-exam-splash_764x430_Splash.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdFsWyyc9J6wzQgDDHip6y4U7ld7ciIUeIA';" alt="What Happens During And After A Va C P Exam Cuddigan Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Happens During And After A Va C P Exam Cuddigan Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/80/e3/6880e32583893cdec3fce166cd4495e5.png" data-lightbox="roadtrip" data-title="Getting Va Disability Benefits For Gulf War Syndrome Va Disability Va Disability Benefits Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/80/e3/6880e32583893cdec3fce166cd4495e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYDskY1lzynkzHGRhEbTwfcq0vSEyVxYpkg';" alt="Getting Va Disability Benefits For Gulf War Syndrome Va Disability Va Disability Benefits Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting Va Disability Benefits For Gulf War Syndrome Va Disability Va Disability Benefits Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/49/f1/9649f10aeba0891ad900fc926350760f.png" data-lightbox="roadtrip" data-title="215 Top 5 C P Exam Tips New 2019 2020 Youtube Exams Tips Disabled Veterans Benefits Exam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/49/f1/9649f10aeba0891ad900fc926350760f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_9UbSApBMrze13oeUv1ccs0uDwVgvoAgF5g';" alt="215 Top 5 C P Exam Tips New 2019 2020 Youtube Exams Tips Disabled Veterans Benefits Exam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">215 Top 5 C P Exam Tips New 2019 2020 Youtube Exams Tips Disabled Veterans Benefits Exam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://archive.vaclaimsinsider.com/wp-content/uploads/2020/02/GERD-DBQ-Symptoms.png" data-lightbox="roadtrip" data-title="Gerd Va Rating Explained The Experts Guide 3 New Tips For 2021 Va Claims Insider">
+											<img class="card-img v-image ads-img " src="https://archive.vaclaimsinsider.com/wp-content/uploads/2020/02/GERD-DBQ-Symptoms.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYiCMvwv16BX7vkY7WruKjoZZijMEvq1pwbw';" alt="Gerd Va Rating Explained The Experts Guide 3 New Tips For 2021 Va Claims Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gerd Va Rating Explained The Experts Guide 3 New Tips For 2021 Va Claims Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/LAY20EVIDENCE203.png" data-lightbox="roadtrip" data-title="How Do I Increase My Va Disability Rating Hill Ponton P A">
+											<img class="card-img v-image ads-img " src="https://2cifs12chxqx3agryc2g13kr-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/LAY20EVIDENCE203.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzn71JxpYuVv2Z8lVL6lx1TRZSh7TBjeqUQA';" alt="How Do I Increase My Va Disability Rating Hill Ponton P A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Do I Increase My Va Disability Rating Hill Ponton P A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/17/8f/01178f98255e141767431afc194cf8f3.png" data-lightbox="roadtrip" data-title="How To Get Veterans Disability Benefits For Hearing Loss Disability Benefit Disabled Veterans Benefits Hearing Loss">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/17/8f/01178f98255e141767431afc194cf8f3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6YD5WTwE8Uolx7qfSFdW0FSD5a2XlGkK8og';" alt="How To Get Veterans Disability Benefits For Hearing Loss Disability Benefit Disabled Veterans Benefits Hearing Loss">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Veterans Disability Benefits For Hearing Loss Disability Benefit Disabled Veterans Benefits Hearing Loss</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/a7/cc/02a7cc8325c87acce1d4bf2baf0200bf.png" data-lightbox="roadtrip" data-title="List Of Benefits Due To Service Connected Disability Veterans Resources Disabled Veterans Benefits Va Disability Benefits Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/a7/cc/02a7cc8325c87acce1d4bf2baf0200bf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWo9eH0nqPHO0bHX2W4gIzy3LJkWE7liy2Sg';" alt="List Of Benefits Due To Service Connected Disability Veterans Resources Disabled Veterans Benefits Va Disability Benefits Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">List Of Benefits Due To Service Connected Disability Veterans Resources Disabled Veterans Benefits Va Disability Benefits Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/calculator-723917_1920-1-768x549.jpg" data-lightbox="roadtrip" data-title="Rating Reductions What Va Can And Cannot Do Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/calculator-723917_1920-1-768x549.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wiuO4wJyWeKE03CT0URr00opX_7dl-6oZA';" alt="Rating Reductions What Va Can And Cannot Do Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rating Reductions What Va Can And Cannot Do Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/1c/f4/b31cf4ae1878f5c6d74c0baf6f969f21.png" data-lightbox="roadtrip" data-title="221 The Appeals Process The Veteran Claims Expert Richard Shuminsky Youtube Appealing Process Affiliate Partner">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/1c/f4/b31cf4ae1878f5c6d74c0baf6f969f21.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHp2DMivIX4x2Wdku6yuF6Nf5bDAbT1OHRg';" alt="221 The Appeals Process The Veteran Claims Expert Richard Shuminsky Youtube Appealing Process Affiliate Partner">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">221 The Appeals Process The Veteran Claims Expert Richard Shuminsky Youtube Appealing Process Affiliate Partner</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/18/ee/a118eeecd48e2608534e17ab8c39c5b0.png" data-lightbox="roadtrip" data-title="257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/18/ee/a118eeecd48e2608534e17ab8c39c5b0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT4nd-QeaprcH_xHnHjzoe_JEMsaHjg_DIaw';" alt="257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veteran-transfer-gi-bill-to-spouse.html">Veteran Transfer Gi Bill To Spouse</a></li>
+													<li class="list-group-item"><a href="/veteran-spouse-benefits-after-divorce.html">Veteran Spouse Benefits After Divorce</a></li>
+													<li class="list-group-item"><a href="/veteran-spouse-benefits-education.html">Veteran Spouse Benefits Education</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-crisis-line.html">Veterans Administration Crisis Line</a></li>
+													<li class="list-group-item"><a href="/veteran-spouse-dental-benefits.html">Veteran Spouse Dental Benefits</a></li>
+													<li class="list-group-item"><a href="/veteran-transfer-gi-bill-to-child.html">Veteran Transfer Gi Bill To Child</a></li>
+													<li class="list-group-item"><a href="/veteran-records-request.html">Veteran Records Request</a></li>
+													<li class="list-group-item"><a href="/veteran-spouse-caregiver-benefits.html">Veteran Spouse Caregiver Benefits</a></li>
+													<li class="list-group-item"><a href="/veteran-work-training-programs.html">Veteran Work Training Programs</a></li>
+													<li class="list-group-item"><a href="/veteran-spouse-benefits-with-assisted-living.html">Veteran Spouse Benefits With Assisted Living</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-benefits-for-divorced-spouse.html">Veterans Administration Benefits For Divorced Spouse</a></li>
+													<li class="list-group-item"><a href="/veteran-spouse-va-benefits.html">Veteran Spouse Va Benefits</a></li>
+													<li class="list-group-item"><a href="/veteran-spouse-tuition-assistance.html">Veteran Spouse Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/veterans-administration-educational-benefits-for-dependents.html">Veterans Administration Educational Benefits For Dependents</a></li>
+													<li class="list-group-item"><a href="/veteran-training-records.html">Veteran Training Records</a></li>
+													<li class="list-group-item"><a href="/veteran-spouse-college-benefits.html">Veteran Spouse College Benefits</a></li>
+													<li class="list-group-item"><a href="/veteran-pay-schedule.html">Veteran Pay Schedule</a></li>
+													<li class="list-group-item"><a href="/veteran-work-programs.html">Veteran Work Programs</a></li>
+													<li class="list-group-item"><a href="/veteran-pay-calendar-2019.html">Veteran Pay Calendar 2019</a></li>
+													<li class="list-group-item"><a href="/veteran-pay-raise.html">Veteran Pay Raise</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ways To Go To College For Free - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ways To Go To College For Free",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/474x/9d/9c/d1/9d9cd18bd0eda51da60572df85efc942.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ways+to+go+to+college+for+free",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ways To Go To College For Free</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">My son has a birthday coming up soon. As schools continue to raise prices students are taking on an increasing amount of debt. He attended MIT where he received virtually. <br>				
+			</p>
+										<a class="badge badge-primary" href="/va-schedule-of-ratings-pdf.html">va schedule of ratings pdf</a>
+											<a class="badge badge-primary" href="/va-schedule-of-ratings-respiratory-system.html">va schedule of ratings respiratory system</a>
+											<a class="badge badge-primary" href="/va-secondary-claim-form.html">va secondary claim form</a>
+											<a class="badge badge-secondary" href="/va-service-connected-athletes-foot.html">va service connected athletes foot</a>
+											<a class="badge badge-primary" href="/va-scholarships-for-dependents-nc.html">va scholarships for dependents nc</a>
+											<a class="badge badge-secondary" href="/va-secondary-conditions-to-high-blood-pressure.html">va secondary conditions to high blood pressure</a>
+											<a class="badge badge-info" href="/va-secondary-claims.html">va secondary claims</a>
+											<a class="badge badge-secondary" href="/va-service-connected-base-access.html">va service connected base access</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the ideal blog.  Our website gives you suggestions for seeing the highest quality video and picture content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to view.  It is also possible to bring about supporting this site by sharing videos and images that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/33/15/383315ee57e0b8b3b60c90d83eaee010.jpg" data-lightbox="roadtrip" data-title="7 Ways To Go To College For Free Scholarships For College Scholarships Free College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/33/15/383315ee57e0b8b3b60c90d83eaee010.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe1eWOifkEpCGnUqhCugzhGj3m445OFlBRmA';" alt="7 Ways To Go To College For Free Scholarships For College Scholarships Free College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Ways To Go To College For Free Scholarships For College Scholarships Free College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/68/f8/9e/68f89ea2380deca6654ca761875acf2e.jpg" data-lightbox="roadtrip" data-title="10 Ways To Go To College Debt Free And Without Student Loans College Debt Free College Debt College Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/68/f8/9e/68f89ea2380deca6654ca761875acf2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwabMlnHLv-KzcdF6-mvoUgREExkEEZsvviw';" alt="10 Ways To Go To College Debt Free And Without Student Loans College Debt Free College Debt College Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Ways To Go To College Debt Free And Without Student Loans College Debt Free College Debt College Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5a/33/c1/5a33c10b0909f25d7f504e448bd0aaa7.jpg" data-lightbox="roadtrip" data-title="10 Ways To Go To College Debt Free And Without Student Loans In 2020 College Debt Free College Debt Save Money College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5a/33/c1/5a33c10b0909f25d7f504e448bd0aaa7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4M-iGCNWlVuL2bYnf5AjkQY7lpS7uV6dGHw';" alt="10 Ways To Go To College Debt Free And Without Student Loans In 2020 College Debt Free College Debt Save Money College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Ways To Go To College Debt Free And Without Student Loans In 2020 College Debt Free College Debt Save Money College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/35/07/24/35072439eca04324a28af08aa372dda2.jpg" data-lightbox="roadtrip" data-title="10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt College Debt Free Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/35/07/24/35072439eca04324a28af08aa372dda2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGuCLSzqwwPGIBQvuA9pkPXhekwnKgn3R36A';" alt="10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt College Debt Free Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt College Debt Free Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/71/7c/dc717cf5c83b81c7f79f0aed6ba5bf82.jpg" data-lightbox="roadtrip" data-title="10 Ways To Go To College Debt Free And Without Student Loans College Debt Free College Debt Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/71/7c/dc717cf5c83b81c7f79f0aed6ba5bf82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGXrp6AEN_G35IHm0YouTq9FiUC2-XJXAEGA';" alt="10 Ways To Go To College Debt Free And Without Student Loans College Debt Free College Debt Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Ways To Go To College Debt Free And Without Student Loans College Debt Free College Debt Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8e/9a/80/8e9a809f41a92f0ad41426187e21b9b3.jpg" data-lightbox="roadtrip" data-title="10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt Free College Debt Debt Free">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8e/9a/80/8e9a809f41a92f0ad41426187e21b9b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItSh1cP8dASEQ1GYao1Zo-OpmDeP86ZFWLQ';" alt="10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt Free College Debt Debt Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt Free College Debt Debt Free</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/da/97/1c/da971c07614de4781bf5c34781d70d9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSItSh1cP8dASEQ1GYao1Zo-OpmDeP86ZFWLQ';" alt="10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt Free College Debt Debt Free">
+										<div class="card-body">
+						<h3 class="h5"><b>8 Ways to go to COLLEGE for FREE or pay little - Our Best Hacks to Graduate Debt Free - Duration.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ways to go to college for free</strong>. 
+								
+																	Why More Schools Are Doing Making Tuition-Free. 
+																	Coast Guard Air Force Merchant Marine Military and Naval Academies offer a free college education to those who serve after college. 
+																	Im looking for methods that are guaranteed all four years of undergraduate. 
+																	Every student must work 10 to 15 hours a week at one of 100 available jobs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Except of course that admission to some free colleges is more competitive. 
+																	The FAFSA form is always the first place to start. 
+																	I know there arent many ways to go to school completely for free. 
+																	The Evergreen State College in Olympia Wash will give you a taste for free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thats an understatement of course. 
+																	Call 305-826-1896 or contact us at httpswwwfullpoten. 
+																	Unlike usual educational scholarships and need-based centralized monetary aid you do not have to go through a tricky and complex application. 
+																	The requirements vary but military training is required and those serving must commit to up to 10 years of service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Free college could devalue degrees in other ways as well from students deciding to cut classes because they have no personal investment to less involved with their studies. 
+																	Find Out The Best Ways To Go To College For Free Standard. 
+																	Degrees in roughly 30 fields. 
+																	So saying get third-party scholarships wouldnt be a sustainable option since most third-party scholarships are only one-time payments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To help cover these costs all students get a campus job in addition to their free tuition. 
+																	The last nine years have gone by fast. 
+																	If you have a child approaching college next year apply now. 
+																	Today we found articles on ways to go to college for free money mistakes that people make more than once and ways to save on a vacation rental. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There is a strong possibility that free college would encourage more reckless in college learning not less. 
+																	Parents of college students tell me that the next nine years will go by even faster though it does not seem possible. 
+																	My son was offered a free ride including room board books tuition and some payments to go to Georgia Tech which is a very good school. 
+																	Berea is a private Christian college with around 1650 students and 165 professors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Yes be a high level student applying to a lower rated college. 
+																	He will be nine. 
+																	Grants and scholarshipsThe perennial way of eliminating college costs is still availableTo up your odds Doug Hewitt co-author of Free College Resource Book advises students to fill out the. 
+																	Our Rich Journey 16151 views. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FPLA is excited to offer a seminar entitled How to go to college for free Cost. 
+																	It would cause more people to go to college. 
+																	8 Ways to Go to College for Free Appeared in the August 3 2012 edition of MSN Money News about college tuition is rarely good. 
+																	College can be ridiculously expensive but it doesnt have to be. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Serve Your Country The Air Force US. 
+																	Free Scholarships for College Students are grand resources of college money that you can acutely believe in when you are trying to put up money for your college tuition and other linked fees. 
+																	There are many resources to find top free colleges from roundups on US. 
+																	7 Ways to Go to College for Free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the Consumer Financial Protection Bureau a federal agency created to help consumers understand financial products and services student loan debt currently tops. 
+																	These options may be good for some but they come with service requirements that can hinder your career goals. 
+																	Any parent knows that statement is an understatement. 
+																	Thats a lot of service but its for a great cause. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And you can check the particulars of each state on its website. 
+																	It all adds up. 
+																	According to the Campaign for Free College Tuition over half the country has enactedor at least made steps towardthe idea. 
+																	You can go to college for free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can go to college for free by either attending a military academy or receiving a Reserve Officers Training Corp ROTC scholarship. 
+																	It tells colleges how much your family can contribute to college. 
+																	Ways to Go to School Completely For Free. 
+																	7 Ways to Go to College for Free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dont accept the idea that youre going to pay an arm and a leg for college. 
+																	The school offers a one-time tuition waiver good for four free credits for new students taking courses through the. 
+																	0 Reply Share 1 2 Go. 
+																	In many cases the application process works similarly to that of a traditional college. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/43/15/a5/4315a55ddcd0350e265266497dd4df15.jpg" data-lightbox="roadtrip" data-title="10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt Free Student Loans College Debt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/43/15/a5/4315a55ddcd0350e265266497dd4df15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_dXe6Um1JMqcekoUuN0G2_u44S7_EHOrYfg';" alt="10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt Free Student Loans College Debt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt Free Student Loans College Debt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a8/16/53/a81653aa533613cb7e205c7de14604bd.jpg" data-lightbox="roadtrip" data-title="How To Get To College Without Student Loans Student Loans College Debt Free Scholarships For College">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a8/16/53/a81653aa533613cb7e205c7de14604bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlvPzQdwi5TxBZ3rj0FRyMRi28zSNdiMD6-g';" alt="How To Get To College Without Student Loans Student Loans College Debt Free Scholarships For College">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get To College Without Student Loans Student Loans College Debt Free Scholarships For College</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/7a/45/627a45bb69ef3f5660c4c9a99d873f4c.png" data-lightbox="roadtrip" data-title="How To Go To College Totally Free 6 Ways Masters Degree Debt Free College Info">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/7a/45/627a45bb69ef3f5660c4c9a99d873f4c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-UtCXoByLoWY5lNiipEWU9J1fzTL8NXvESg';" alt="How To Go To College Totally Free 6 Ways Masters Degree Debt Free College Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Go To College Totally Free 6 Ways Masters Degree Debt Free College Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f0/47/1e/f0471ed1c28c0053deb93a40e5084175.jpg" data-lightbox="roadtrip" data-title="School Management System College Hacks Life Hacks For School College Life Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f0/47/1e/f0471ed1c28c0053deb93a40e5084175.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnoluBYBcQHhixndqv5lmqVCF-uQJoCDKZ6g';" alt="School Management System College Hacks Life Hacks For School College Life Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">School Management System College Hacks Life Hacks For School College Life Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9c/df/57/9cdf57d979f392b8831f0c8b076e3fb0.jpg" data-lightbox="roadtrip" data-title="6 Ways To Get Through College With No Student Loan Debt In 2020 With Images Student Loans Student Loan Debt Forgiveness Paying Off Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9c/df/57/9cdf57d979f392b8831f0c8b076e3fb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnfXvvc1fNmRUfbO6qnlPxmHiLIoYAaEOQYw';" alt="6 Ways To Get Through College With No Student Loan Debt In 2020 With Images Student Loans Student Loan Debt Forgiveness Paying Off Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Ways To Get Through College With No Student Loan Debt In 2020 With Images Student Loans Student Loan Debt Forgiveness Paying Off Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/de/60/3dde60b466b013a16cbb37712b788944.png" data-lightbox="roadtrip" data-title="How I Graduated Debt Free After 6 Years Of University In 2020 Grants For College Student Jobs Debt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/de/60/3dde60b466b013a16cbb37712b788944.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjjCc9q1t_YfFKLCjAOG3zK5p0TZwwv6El5w';" alt="How I Graduated Debt Free After 6 Years Of University In 2020 Grants For College Student Jobs Debt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How I Graduated Debt Free After 6 Years Of University In 2020 Grants For College Student Jobs Debt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a8/23/ae/a823ae0e7627cff53cc796cd422492ee.jpg" data-lightbox="roadtrip" data-title="Genius Ways To Pay For College Without Any Loans Full Guide 2019 Student Finance College Student Discounts College Debt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a8/23/ae/a823ae0e7627cff53cc796cd422492ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_nk-n11OrB5raInBFMGJ53q5RjbXYheL8w';" alt="Genius Ways To Pay For College Without Any Loans Full Guide 2019 Student Finance College Student Discounts College Debt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Genius Ways To Pay For College Without Any Loans Full Guide 2019 Student Finance College Student Discounts College Debt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/da/97/1c/da971c07614de4781bf5c34781d70d9e.jpg" data-lightbox="roadtrip" data-title="Pin On Money Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/da/97/1c/da971c07614de4781bf5c34781d70d9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKSPuCutWbdSKYk-SpfXeveb3BCjsgcX9ztg';" alt="Pin On Money Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Money Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/ca/53/beca5325fc974617913144bf374a2bda.png" data-lightbox="roadtrip" data-title="How To Get Free Food From Restaurants A List For Hungry People Free Food Best Essay Writing Service Student Saving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/ca/53/beca5325fc974617913144bf374a2bda.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUN56TRIDWmEYHxNAfUCMaWmWwSXn1Q1znJA';" alt="How To Get Free Food From Restaurants A List For Hungry People Free Food Best Essay Writing Service Student Saving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Free Food From Restaurants A List For Hungry People Free Food Best Essay Writing Service Student Saving</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/78/b7/23/78b7239a7bd6d3c05b3f77f74a13b60c.jpg" data-lightbox="roadtrip" data-title="10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt College Debt Free Student Loans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/78/b7/23/78b7239a7bd6d3c05b3f77f74a13b60c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFHaxmWj2qI5P7DiYYL8OhV-pLDU7LRXLKaQ';" alt="10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt College Debt Free Student Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Ways To Go To College Debt Free And Graduate Without Student Loans College Debt College Debt Free Student Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/9d/9c/d1/9d9cd18bd0eda51da60572df85efc942.jpg" data-lightbox="roadtrip" data-title="Essay Help For Students Paper Writing Service Extraessay Free Stuff By Mail Get Free Stuff Online Get Free Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/9d/9c/d1/9d9cd18bd0eda51da60572df85efc942.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkBExGM_4YHrmb2a9KIYp4PFqKKnF5ksjeCQ';" alt="Essay Help For Students Paper Writing Service Extraessay Free Stuff By Mail Get Free Stuff Online Get Free Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Essay Help For Students Paper Writing Service Extraessay Free Stuff By Mail Get Free Stuff Online Get Free Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/4c/1b/724c1be3dc9f3da69417cb05ac487131.jpg" data-lightbox="roadtrip" data-title="You Need This How To Go To College For Free Tips On Applying For Scholarships Avoiding Student Loans Scholarships For College College Money College Expenses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/4c/1b/724c1be3dc9f3da69417cb05ac487131.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOGUQxjOYCEN0nKDnVA1X6qrDx_opNxUuSNw';" alt="You Need This How To Go To College For Free Tips On Applying For Scholarships Avoiding Student Loans Scholarships For College College Money College Expenses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">You Need This How To Go To College For Free Tips On Applying For Scholarships Avoiding Student Loans Scholarships For College College Money College Expenses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/14/89/d11489921a0217b14bc44d4fa0835b5f.jpg" data-lightbox="roadtrip" data-title="How To Get Free Textbooks Life Hack College Life Hacks Life Hacks Useful Life Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/14/89/d11489921a0217b14bc44d4fa0835b5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy1p-SUbEGczwCa8kS8gb2iuyNaJ6os17ERQ';" alt="How To Get Free Textbooks Life Hack College Life Hacks Life Hacks Useful Life Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Get Free Textbooks Life Hack College Life Hacks Life Hacks Useful Life Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/war-heroes-ww2.html">War Heroes Ww2</a></li>
+													<li class="list-group-item"><a href="/war-heroes-red-poppy-coin.html">War Heroes Red Poppy Coin</a></li>
+													<li class="list-group-item"><a href="/war-heroes-in-the-us.html">War Heroes In The Us</a></li>
+													<li class="list-group-item"><a href="/war-heroes-name-list.html">War Heroes Name List</a></li>
+													<li class="list-group-item"><a href="/war-heroes-latest-mod-apk.html">War Heroes Latest Mod Apk</a></li>
+													<li class="list-group-item"><a href="/war-heroes-gameplay.html">War Heroes Gameplay</a></li>
+													<li class="list-group-item"><a href="/war-heroes-kris-paronto.html">War Heroes Kris Paronto</a></li>
+													<li class="list-group-item"><a href="/war-heroes-cheat-codes.html">War Heroes Cheat Codes</a></li>
+													<li class="list-group-item"><a href="/war-heroes-bdo.html">War Heroes Bdo</a></li>
+													<li class="list-group-item"><a href="/war-heroes-strategy-card-game-mod-apk.html">War Heroes Strategy Card Game Mod Apk</a></li>
+													<li class="list-group-item"><a href="/war-heroes-no-longer-dominate-american-politics-as-they-once-did.html">War Heroes No Longer Dominate American Politics As They Once Did</a></li>
+													<li class="list-group-item"><a href="/war-heroes-uk.html">War Heroes Uk</a></li>
+													<li class="list-group-item"><a href="/war-heroes-online-game.html">War Heroes Online Game</a></li>
+													<li class="list-group-item"><a href="/war-heroes-play-store.html">War Heroes Play Store</a></li>
+													<li class="list-group-item"><a href="/war-heroes-reddit.html">War Heroes Reddit</a></li>
+													<li class="list-group-item"><a href="/war-heroes-invasion.html">War Heroes Invasion</a></li>
+													<li class="list-group-item"><a href="/war-heroes-tips-and-tricks.html">War Heroes Tips And Tricks</a></li>
+													<li class="list-group-item"><a href="/war-heroes-names.html">War Heroes Names</a></li>
+													<li class="list-group-item"><a href="/war-heroes-private-server.html">War Heroes Private Server</a></li>
+													<li class="list-group-item"><a href="/war-eternal-heroes-guide.html">War Eternal Heroes Guide</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

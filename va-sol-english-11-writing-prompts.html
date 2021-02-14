@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Sol English 11 Writing Prompts - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Sol English 11 Writing Prompts",
+  "datePublished": "2021-02-14",
+  "image": "https://ecdn.teacherspayteachers.com/thumbitem/VA-Writing-8-SOL-Prompt-Practice-3543940-1513535091/original-3543940-1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+sol+english+11+writing+prompts",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Sol English 11 Writing Prompts</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">These test blueprints will be effective with the administration of the 2012-2013 English SOL tests. Notification will be sent to divisions when the grade level lists of writing prompts have been posted. Writing SOL Prewriting Outlines graphic organizers. <br>				
+			</p>
+										<a class="badge badge-danger" href="/va-rating-for-pulmonary-fibrosis.html">va rating for pulmonary fibrosis</a>
+											<a class="badge badge-danger" href="/va-rating-for-shoulder-surgery.html">va rating for shoulder surgery</a>
+											<a class="badge badge-dark" href="/va-rating-for-rhinitis.html">va rating for rhinitis</a>
+											<a class="badge badge-dark" href="/va-rating-for-ptsd-and-depression.html">va rating for ptsd and depression</a>
+											<a class="badge badge-success" href="/va-rating-for-seizures.html">va rating for seizures</a>
+											<a class="badge badge-danger" href="/va-rating-for-pain-in-knee.html">va rating for pain in knee</a>
+											<a class="badge badge-warning" href="/va-rating-for-pain-in-feet.html">va rating for pain in feet</a>
+											<a class="badge badge-warning" href="/va-rating-for-osteoarthritis-in-knee.html">va rating for osteoarthritis in knee</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to visit the right blog.  Our website provides you with hints for seeing the maximum quality video and picture content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you view.  You can also contribute to supporting this website by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ecdn.teacherspayteachers.com/thumbitem/Virginia-SOL-EOC-Writing-Prompt-Task-Cards-3065336-1502489358/original-3065336-1.jpg" data-lightbox="roadtrip" data-title="Virginia Sol Eoc Writing Prompt Task Cards By English Is For Lovers">
+											<img class="card-img v-image ads-img " src="https://ecdn.teacherspayteachers.com/thumbitem/Virginia-SOL-EOC-Writing-Prompt-Task-Cards-3065336-1502489358/original-3065336-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOuDGJCgJINGpefXQr45cEEaLLaR7mKCcBEA';" alt="Virginia Sol Eoc Writing Prompt Task Cards By English Is For Lovers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virginia Sol Eoc Writing Prompt Task Cards By English Is For Lovers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://blogs.henrico.k12.va.us/21/files/2014/04/Thesis-formula-image-for-upload.jpg" data-lightbox="roadtrip" data-title="R S V P Collaborating On English 8 Sol Writing Prompts 7881 Henrico 21">
+											<img class="card-img v-image ads-img " src="http://blogs.henrico.k12.va.us/21/files/2014/04/Thesis-formula-image-for-upload.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj_8-1lr1lQpY0EphJytekbJJTlYnrjiv9vg';" alt="R S V P Collaborating On English 8 Sol Writing Prompts 7881 Henrico 21">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">R S V P Collaborating On English 8 Sol Writing Prompts 7881 Henrico 21</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="rXfmQbVq8MAPnM" data-lightbox="roadtrip" data-title="Http Leighanneclay2014 Weebly Com Uploads 1 3 1 5 13153270 G11 Ltp Pdf">
+											<img class="card-img v-image ads-img " src="rXfmQbVq8MAPnM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpdWs-PTXXKndwgh_-q23Pj3qobUJUUfqPmQ';" alt="Http Leighanneclay2014 Weebly Com Uploads 1 3 1 5 13153270 G11 Ltp Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Leighanneclay2014 Weebly Com Uploads 1 3 1 5 13153270 G11 Ltp Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/23/19/3f23199d9f690926ee7043a01abb0a4e.jpg" data-lightbox="roadtrip" data-title="Roll A Story Writing Prompt In 2020 Writing Prompts For Kids Writing Lessons Kindergarten Writing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/23/19/3f23199d9f690926ee7043a01abb0a4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzEXnI3TYFWoMGeqPb4GOjxkDhwANZ76ZLjQ';" alt="Roll A Story Writing Prompt In 2020 Writing Prompts For Kids Writing Lessons Kindergarten Writing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Roll A Story Writing Prompt In 2020 Writing Prompts For Kids Writing Lessons Kindergarten Writing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ac/10/13/ac1013575b48b7f034bc5438e7a1e70f.jpg" data-lightbox="roadtrip" data-title="Finish The Picture Writing Prompts Activity Morning Work Early Finisher Elementary Writing Activities Picture Writing Prompts Elementary Writing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ac/10/13/ac1013575b48b7f034bc5438e7a1e70f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCIEKpHAcgLnIS5uWbhJc5UcT49jzmMggcQQ';" alt="Finish The Picture Writing Prompts Activity Morning Work Early Finisher Elementary Writing Activities Picture Writing Prompts Elementary Writing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Finish The Picture Writing Prompts Activity Morning Work Early Finisher Elementary Writing Activities Picture Writing Prompts Elementary Writing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/ff/82/49ff824baf391e4a54f0f64db809b3a7.png" data-lightbox="roadtrip" data-title="Technology Writing Prompts Elementary Writing Prompts Kindergarten Writing Prompts Writing Prompts Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/ff/82/49ff824baf391e4a54f0f64db809b3a7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcaMosaJmwjufAkpKPzZ9zbAZHF5R9PNcmAw';" alt="Technology Writing Prompts Elementary Writing Prompts Kindergarten Writing Prompts Writing Prompts Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Technology Writing Prompts Elementary Writing Prompts Kindergarten Writing Prompts Writing Prompts Funny</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://cdn.education.com/worksheet-image/391299/colonial-america-writing-prompt-history.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcaMosaJmwjufAkpKPzZ9zbAZHF5R9PNcmAw';" alt="Technology Writing Prompts Elementary Writing Prompts Kindergarten Writing Prompts Writing Prompts Funny">
+										<div class="card-body">
+						<h3 class="h5"><b>Write about someone who has shared wisdom and experience with you.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va sol english 11 writing prompts</strong>. 
+								
+																	Revise writing 118a Use technology 118b Narrow topic and plan 118d Accuracy and validity 118e Information gathered 118f Logical sequence 118h Revise writing. 
+																	English SOL Writing Resources. 
+																	Learn sol english 11 writing with free interactive flashcards. 
+																	Choose from 500 different sets of sol english 11 writing flashcards on Quizlet. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Virginia Grade 8 Writing SOL Prompts Its that time again. 
+																	Explain how a thoughtful act can benefit those involved. 
+																	End-Of-Course Writing Prompts Page 1 November 2015 Some say that the journey is more important than the destination. 
+																	Sometimes people recognize similarities between themselves and a character from a book or a movie. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The resources Grade 8 Reading Demonstration Items and EOC Reading Demonstration Items consist of previously released SOL reading passages and test items based on the 2002 standards. 
+																	Writing SOL Prompts. 
+																	Explain why it is important to learn from the experience of others. 
+																	Last Modified on June 4 2018 Empowering all students to make meaningful contributions to the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SOL RLR resources presented from the state of Virginia testing center. 
+																	The essay needs to be typed double-spaced 12. 
+																	Cramming in the last few practice lessons to prepare students for the Virginia Writing SOL test. 
+																	Others say that it is the destination that gives meaning to the journey. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Grade 8 Writing Prompts Page 2 December 2015 Thoughtful acts can take many forms such as unexpected help or even just a kind word. 
+																	Virginia Department of Education Home. 
+																	Engage students in your virtual classroom with Prezi Video for Google Workspace. 
+																	They are not contentspecific meaning you will not see questions about American Literature or any text read this year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In late fall 2012 a list of approved writing prompts for each new writing test will be posted on the VDOE Web site. 
+																	Released 2009 EOC Test. 
+																	The prompts included could also be used for any middle or high school classroom across states. 
+																	Virginia High School 11th Grade Writing SOL Practice Try it for free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reading VA SOL CorrelatedScience VA SOL 32 CorrelatedT. 
+																	They argue that people find more joy and satisfaction in working toward a goal than in achieving it. 
+																	Grade 5 Prompts PDF Grade 8 Prompts PDF UPDATED. 
+																	Sol Writing Essay Grade 11 Virginia is a way out. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Five strategies to maximize your sales kickoff. 
+																	6 th 7 th 8 th 9 th 10 th 11 th 12 th. 
+																	This digital notebook is used to prepare 8th grade students in Virginia for the writing SOL. 
+																	Test item sets rather than full released tests are being provided for some SOL courses since the test item bank for those courses cannot support a full release. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With this reading comprehension students will get an overview of force and motion including zero net force friction gravity and push and pull. 
+																	Use specific details and examples in your response. 
+																	The pressure is on and for many teachers that means repetitive structured writing instruction until the day of testing. 
+																	VDOE SOL Writing Tool Practice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Writing prompts that may be administered on the Writing SOL tests based on the 2010 English Standards of Learning. 
+																	Back to Virginia High School. 
+																	Please refer to specific handouts and examples regarding introductions body paragraphs and conclusions when completing your essay. 
+																	Include specific details and examples in your response. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SOL Preparation and Review Resources. 
+																	Please click on this link to view the current possible SOL writing prompts. 
+																	Your assignment is to write a full essay at least four paragraphs answering the prompt above. 
+																	Instead they assess general grammar and writing skills persuasive writing ability and reading comprehension skills. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	End of Course EOC Prompts PDF Writing Test Blueprints. 
+																	Thousands of students made their choice and trusted their grades on homework writing services. 
+																	The English SOL tests in 11th grade are known as End-of-Course tests because they are meant to assess writing and reading skills developed from 9th11th grade. 
+																	The Virginia Statements of Learning for Eighth Grade English. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	English 10 Academic Writing Assignment SOL Prompt WilliamsNielsen. 
+																	Beginning in spring 2013 prompts for each short paper administration will be selected from this list. 
+																	Search for it on the Web Sol Writing Essay Grade 11 Virginia as there are plenty of websites that offer Sol Writing Essay Grade 11 Virginia online homework help. 
+																	Released tests are representative of the content and skills included in the Virginia SOL tests and are provided to assist in understanding the format of the tests and questions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Students will also get an introduction to the 6 types of simple machines and examples of each. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/4e/9e/284e9e23a1230af37d8a32e8a59c278e.jpg" data-lightbox="roadtrip" data-title="Pin On Va Sol Reading 8 Practice Test">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/4e/9e/284e9e23a1230af37d8a32e8a59c278e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVhkmsCN1JzEBR7Cz_ZK745ENW8fGf49Ay-A';" alt="Pin On Va Sol Reading 8 Practice Test">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Va Sol Reading 8 Practice Test</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ecdn.teacherspayteachers.com/thumbitem/VA-Writing-8-SOL-Prompt-Practice-3543940-1513535091/original-3543940-1.jpg" data-lightbox="roadtrip" data-title="Va Writing 8 Sol Prompt Practice By Mrs Eiban Teachers Pay Teachers">
+											<img class="card-img v-image ads-img " src="https://ecdn.teacherspayteachers.com/thumbitem/VA-Writing-8-SOL-Prompt-Practice-3543940-1513535091/original-3543940-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrvVebgPSKTO4_laxZw_iuOsMb159xnbsyvQ';" alt="Va Writing 8 Sol Prompt Practice By Mrs Eiban Teachers Pay Teachers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Writing 8 Sol Prompt Practice By Mrs Eiban Teachers Pay Teachers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ecdn.teacherspayteachers.com/thumbitem/Structure-and-Properties-of-Matter-2-Science-CER-Reading-Writing-Prompt-6215262-1604743167/original-6215262-1.jpg" data-lightbox="roadtrip" data-title="Matter Writing Prompts Worksheets Teaching Resources Tpt">
+											<img class="card-img v-image ads-img " src="https://ecdn.teacherspayteachers.com/thumbitem/Structure-and-Properties-of-Matter-2-Science-CER-Reading-Writing-Prompt-6215262-1604743167/original-6215262-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQleXNBr9KE81vnEvcvCyzepzXFvKOeaRIQTw';" alt="Matter Writing Prompts Worksheets Teaching Resources Tpt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Matter Writing Prompts Worksheets Teaching Resources Tpt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.education.com/worksheet-image/391299/colonial-america-writing-prompt-history.gif" data-lightbox="roadtrip" data-title="Colonial America Writing Prompt Worksheet Education Com">
+											<img class="card-img v-image ads-img " src="https://cdn.education.com/worksheet-image/391299/colonial-america-writing-prompt-history.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoJ4OGOnCKCNDn2GNm3vshtYZTXulgwij_KA';" alt="Colonial America Writing Prompt Worksheet Education Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Colonial America Writing Prompt Worksheet Education Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="e44MAKlthJBbcM" data-lightbox="roadtrip" data-title="Http Www Mychesterfieldschools Com Wp Content Uploads Instruction Files Parenttipssol Writing Tests Pdf">
+											<img class="card-img v-image ads-img " src="e44MAKlthJBbcM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOaaHsqQtVcBGrsYfW_Vc2j8p9vw3o2TmCzA';" alt="Http Www Mychesterfieldschools Com Wp Content Uploads Instruction Files Parenttipssol Writing Tests Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Mychesterfieldschools Com Wp Content Uploads Instruction Files Parenttipssol Writing Tests Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="SEqZDW3cZIfZHM" data-lightbox="roadtrip" data-title="Http Blogs Henrico K12 Va Us Htadair Files 2014 01 Writing Test Online Practice Pdf">
+											<img class="card-img v-image ads-img " src="SEqZDW3cZIfZHM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEiizsa5tL5n0xznsG_l8HAgbiWkJwhC0EUg';" alt="Http Blogs Henrico K12 Va Us Htadair Files 2014 01 Writing Test Online Practice Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Blogs Henrico K12 Va Us Htadair Files 2014 01 Writing Test Online Practice Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="NC1yJ9V_IiCwVM" data-lightbox="roadtrip" data-title="Https Www Henry K12 Va Us Site Handlers Filedownload Ashx Moduleinstanceid 11750 Dataid 26591 Filename Sol 20prompt 20packet 20short 20version 20 Pdf">
+											<img class="card-img v-image ads-img " src="NC1yJ9V_IiCwVM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnBXsBoT_Xrs_dOyTvPGo58wJ6EZfJEjGzNw';" alt="Https Www Henry K12 Va Us Site Handlers Filedownload Ashx Moduleinstanceid 11750 Dataid 26591 Filename Sol 20prompt 20packet 20short 20version 20 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Henry K12 Va Us Site Handlers Filedownload Ashx Moduleinstanceid 11750 Dataid 26591 Filename Sol 20prompt 20packet 20short 20version 20 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ae/5a/6a/ae5a6a3bdec8372133a84a29c2cb3518.jpg" data-lightbox="roadtrip" data-title="Tired Of The Same Old Prewriting Activities Here Are 11 Different Ways To Engage Your Middle School Students In T Pre Writing Activities Pre Writing Teaching">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ae/5a/6a/ae5a6a3bdec8372133a84a29c2cb3518.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4H-nKaw2kYdLrHHnXuvPofMXN4LY0ZxCFVg';" alt="Tired Of The Same Old Prewriting Activities Here Are 11 Different Ways To Engage Your Middle School Students In T Pre Writing Activities Pre Writing Teaching">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tired Of The Same Old Prewriting Activities Here Are 11 Different Ways To Engage Your Middle School Students In T Pre Writing Activities Pre Writing Teaching</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.apsva.us/wp-content/uploads/2020/03/Chunk-Paragraphs-and-SOL-writing-prompts-pdf-232x300.jpg" data-lightbox="roadtrip" data-title="Untitled">
+											<img class="card-img v-image ads-img " src="https://www.apsva.us/wp-content/uploads/2020/03/Chunk-Paragraphs-and-SOL-writing-prompts-pdf-232x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReAeOecf-9gqTY5PDLBdK_NBt3T0CerMv5_g';" alt="Untitled">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Untitled</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-temporary.preziusercontent.com/frames-public/4/2/e/3/d/2970e97418b93c16310eb620931380.jpeg" data-lightbox="roadtrip" data-title="Writing The Sol Essay By Melissa Wade">
+											<img class="card-img v-image ads-img " src="https://media-temporary.preziusercontent.com/frames-public/4/2/e/3/d/2970e97418b93c16310eb620931380.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrBOIsVQjbdMP6fG8g9V2B9h6lEavQ4qJDaQ';" alt="Writing The Sol Essay By Melissa Wade">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Writing The Sol Essay By Melissa Wade</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/64/f8/6364f8d21828c9155f2419d8dbda7886.gif" data-lightbox="roadtrip" data-title="Argument Writing Exit Slips Students Improve Their Essay Writing Skills In Just A Few Minutes Each D Argumentative Writing Essay Writing Skills Writing School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/64/f8/6364f8d21828c9155f2419d8dbda7886.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8E1f9dEZmgXlkj1n267ahDvCt_teTPmyvtQ';" alt="Argument Writing Exit Slips Students Improve Their Essay Writing Skills In Just A Few Minutes Each D Argumentative Writing Essay Writing Skills Writing School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Argument Writing Exit Slips Students Improve Their Essay Writing Skills In Just A Few Minutes Each D Argumentative Writing Essay Writing Skills Writing School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/3f/46/af/3f46afd8757e102370f390404ea85741.jpg" data-lightbox="roadtrip" data-title="Pin On Teaching Willy Wonka Week">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/3f/46/af/3f46afd8757e102370f390404ea85741.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnxyvGe-DlAukcXOE3nlPKoyu0k47Urwg7hQ';" alt="Pin On Teaching Willy Wonka Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Teaching Willy Wonka Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/59/86/d9/5986d9d3b431ff694af008c1e60fd15b.jpg" data-lightbox="roadtrip" data-title="Pin On Hairstyles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/59/86/d9/5986d9d3b431ff694af008c1e60fd15b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrEktpK0qPOZg4Q8J4buQiK20q-DA_hCTMjg';" alt="Pin On Hairstyles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hairstyles</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-the-best-college-for-veterans.html">What Is The Best College For Veterans</a></li>
+													<li class="list-group-item"><a href="/what-is-the-average-va-rating-for-anxiety-disorder.html">What Is The Average Va Rating For Anxiety Disorder</a></li>
+													<li class="list-group-item"><a href="/what-is-the-best-college-to-go-to-for-criminal-justice.html">What Is The Best College To Go To For Criminal Justice</a></li>
+													<li class="list-group-item"><a href="/what-is-the-average-disability-rating-for-ptsd.html">What Is The Average Disability Rating For Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-is-the-average-va-loan-interest-rate.html">What Is The Average Va Loan Interest Rate</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-physical-fitness-test-standards.html">What Is The Army Physical Fitness Test Standards</a></li>
+													<li class="list-group-item"><a href="/what-is-the-bah-rate-for-online-classes.html">What Is The Bah Rate For Online Classes</a></li>
+													<li class="list-group-item"><a href="/what-is-the-annual-budget-of-the-department-of-defense.html">What Is The Annual Budget Of The Department Of Defense</a></li>
+													<li class="list-group-item"><a href="/what-is-the-best-car-donation-charity.html">What Is The Best Car Donation Charity</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-national-guard-pay-scale.html">What Is The Army National Guard Pay Scale</a></li>
+													<li class="list-group-item"><a href="/what-is-the-average-age-of-an-army-ranger.html">What Is The Average Age Of An Army Ranger</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-emergency-relief.html">What Is The Army Emergency Relief</a></li>
+													<li class="list-group-item"><a href="/what-is-the-australian-army-fitness-test.html">What Is The Australian Army Fitness Test</a></li>
+													<li class="list-group-item"><a href="/what-is-the-average-va-rating-for-anxiety.html">What Is The Average Va Rating For Anxiety</a></li>
+													<li class="list-group-item"><a href="/what-is-the-average-va-rating-for-hypertension.html">What Is The Average Va Rating For Hypertension</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-logo.html">What Is The Army Logo</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-human-resource-command.html">What Is The Army Human Resource Command</a></li>
+													<li class="list-group-item"><a href="/what-is-the-army-ranger-motto.html">What Is The Army Ranger Motto</a></li>
+													<li class="list-group-item"><a href="/what-is-the-armys-role-in-defense-support-to-civil-authorities.html">What Is The Armys Role In Defense Support To Civil Authorities</a></li>
+													<li class="list-group-item"><a href="/what-is-the-average-pay-for-hr-assistant.html">What Is The Average Pay For Hr Assistant</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

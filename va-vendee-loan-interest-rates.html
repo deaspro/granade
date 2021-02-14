@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Vendee Loan Interest Rates - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Vendee Loan Interest Rates",
+  "datePublished": "2021-02-14",
+  "image": "https://vrmlending.com/wp-content/uploads/2020/04/2020-04-09_23-00-52-429x469.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+vendee+loan+interest+rates",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Vendee Loan Interest Rates</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In addition to offering below-market interest rates without discount points VA offers vendee financing for up to 95 percent of the purchase price of the property and in instances where the Secretary deems it necessary to market the property competitively may offer vendee financing in an amount that exceeds 95 percent of the purchase price. On October 26 2016 VA published a proposed rule in the Federal Register at 81 FR 74382 to amend VA regulations to establish reasonable fees in connection with loans made by VA commonly referred to as vendee loans. Vendee financing is offered to both veterans and nonveterans. <br>				
+			</p>
+										<a class="badge badge-light" href="/what-is-va-education-benefits-chapter-35.html">what is va education benefits chapter 35</a>
+											<a class="badge badge-primary" href="/what-is-va-disability-rating.html">what is va disability rating</a>
+											<a class="badge badge-danger" href="/what-is-va-cash-out-refinance.html">what is va cash out refinance</a>
+											<a class="badge badge-secondary" href="/what-is-va-combined-rating.html">what is va combined rating</a>
+											<a class="badge badge-primary" href="/what-is-va-fully-developed-claim.html">what is va fully developed claim</a>
+											<a class="badge badge-info" href="/what-is-the-va-rating-for-voiding-dysfunction.html">what is the va rating for voiding dysfunction</a>
+											<a class="badge badge-dark" href="/what-is-va-rating-for-hearing-loss.html">what is va rating for hearing loss</a>
+											<a class="badge badge-dark" href="/what-is-the-word-army-in-irish.html">what is the word army in irish</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the ideal blog.  Our website gives you suggestions for seeing the maximum quality video and picture content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to see.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mortgage.info/wp-content/uploads/2017/01/How-a-VA-Vendee-Loan-Works.jpg" data-lightbox="roadtrip" data-title="How A Va Vendee Loan Works Mortgage Info">
+											<img class="card-img v-image ads-img " src="https://mortgage.info/wp-content/uploads/2017/01/How-a-VA-Vendee-Loan-Works.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPVCUNXFZRAn2-9kaLtClxJ46hvWAcos4cA';" alt="How A Va Vendee Loan Works Mortgage Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How A Va Vendee Loan Works Mortgage Info</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/3e/3b/2d3e3bc3ac611020832db073bd9b7813.png" data-lightbox="roadtrip" data-title="Kentucky Va Mortgage Loan Information Va Mortgage Loans Refinance Loans Va Mortgages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/3e/3b/2d3e3bc3ac611020832db073bd9b7813.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcE7BcD16wPAO9MmZjmC1U4lSYgUi9Lm7IWQ';" alt="Kentucky Va Mortgage Loan Information Va Mortgage Loans Refinance Loans Va Mortgages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kentucky Va Mortgage Loan Information Va Mortgage Loans Refinance Loans Va Mortgages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="18E8RY-VcEsVWM" data-lightbox="roadtrip" data-title="Http Chrisbalmesproperties Com Files Documents Vendee Flyer 032009 Pdf">
+											<img class="card-img v-image ads-img " src="18E8RY-VcEsVWM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-S9mmzIBntQBPvMD20vPdvyoCOsK7uzgpg';" alt="Http Chrisbalmesproperties Com Files Documents Vendee Flyer 032009 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Chrisbalmesproperties Com Files Documents Vendee Flyer 032009 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.pdffiller.com/preview/456/600/456600209.png" data-lightbox="roadtrip" data-title="Fillable Online Va Vendee Loan Program Fact Sheet Va Vendee Loan Program Fact Sheet Fax Email Print Pdffiller">
+											<img class="card-img v-image ads-img " src="https://www.pdffiller.com/preview/456/600/456600209.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpb_n5bZb9xGeJfziuMNqv7-sjZ89z_eVy_g';" alt="Fillable Online Va Vendee Loan Program Fact Sheet Va Vendee Loan Program Fact Sheet Fax Email Print Pdffiller">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fillable Online Va Vendee Loan Program Fact Sheet Va Vendee Loan Program Fact Sheet Fax Email Print Pdffiller</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vrmco.com/wp-content/uploads/2020/02/VRM-logo-final.png" data-lightbox="roadtrip" data-title="Vendee Loan Program Vrm Mortgage Services">
+											<img class="card-img v-image ads-img " src="https://www.vrmco.com/wp-content/uploads/2020/02/VRM-logo-final.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9XWDX6LyjdH8Uphj7vBuRFAbuKEgTuClHlQ';" alt="Vendee Loan Program Vrm Mortgage Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vendee Loan Program Vrm Mortgage Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://unitedmortgage.com/wp-content/uploads/2020/01/Vendee-United.png" data-lightbox="roadtrip" data-title="Va United Mortgage Corp">
+											<img class="card-img v-image ads-img " src="https://unitedmortgage.com/wp-content/uploads/2020/01/Vendee-United.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfAA8PvoNeNJ7yyMprpbu5PRNhtf0t6NQ-UA';" alt="Va United Mortgage Corp">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va United Mortgage Corp</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/2d/3e/3b/2d3e3bc3ac611020832db073bd9b7813.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfAA8PvoNeNJ7yyMprpbu5PRNhtf0t6NQ-UA';" alt="Va United Mortgage Corp">
+										<div class="card-body">
+						<h3 class="h5"><b>2250 2596 15-Year Fixed VA Purchase.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va vendee loan interest rates</strong>. 
+								
+																	VA vendee loans are available to everyone military veterans and civilians alike. 
+																	In addition to offering below-market interest rates without discount points VA offers vendee financing for up to 95 percent of the purchase price of the property and in instances where the Secretary deems it necessary to market the property competitively may offer vendee financing in an amount that exceeds 95 percent of the purchase price. 
+																	Department of Veteran Affairs VA. 
+																	You get the benefits of a VA loan without being a veteran. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Department of Veteran Affairs VA. 
+																	Suppose you use a VA loan a second time and put less than 5 down then the fee increases to 36. 
+																	Vendee mortgages are assumable by qualification. 
+																	Borrowers receive a competitive rate that can save thousands of dollars compared to a standard mortgage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Interest Rate Reduction Refinancing Loans IRRRLs VA funding fee. 
+																	VA Loan Type Interest Rate APR. 
+																	I agree with you on the value of the assumable VA loans as interest rates continue to go up. 
+																	Vendee Loans We Make Finding Your Dream Home Easy This is an unique loan program specific to VRM Lending LLC that allows qualified borrowers to purchase properties owned by the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dont let the name fool you. 
+																	When borrowers choose the VA Vendee Loan Program theyre able to choose from VA-owned properties across the country with financing that offers competitive money-saving rates. 
+																	While you must pay the Department of Veterans Affairs a funding fee 225 percent as of summer 2012 other costs are less than you pay on a conventional loan. 
+																	There is no PMI for this loan program just like there is no PMI for VA loans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	30-Year Fixed VA Purchase. 
+																	Competitive interest rate Seller maycontribute toward closing costs No appraisal requirement No pre-payment penalties No mortgage insurance requirements For more information on the VA Vendee Loan Program contact. 
+																	If you put between 5 and 99 down your fee goes down to 165 and stays at 165 for your second VA loanas long as the down payment stays above 5. 
+																	If the borrower puts down 10 or more the funding fee is reduced to 125. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is an unique loan program that allows qualified borrowers to purchase properties owned by the US. 
+																	Anyone using a second VA loan with no down payment would be charged a 33 fee. 
+																	A 225 VA Funding Fee a No pre-payment penalties. 
+																	Department of Veteran Affairs VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Loan type VA funding fee. 
+																	Vendee loans are unique in several ways from the competitive interest rates and little to no money down required to the lack of mortgage appraisal requirements and penalties for pre-payment. 
+																	To view VA REO properties available for Vendee. 
+																	Manufactured home loans not permanently affixed VA funding fee. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For first-time VA loan users that are putting less than 5 down the funding fee is 23. 
+																	You must apply through the servicer the VA uses its not a loan you can get at a bank or broker. 
+																	2250 2744 30-Year Streamline IRRRL 2625 2796 15-Year Streamline IRRRL 2250 2564. 
+																	The need for no down payment and great interest rates are definitely perks that you dont get with very many other loan programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The VA Vendee Loan offers borrowers a great chance at purchasing a house likely at a discount with no down payment. 
+																	Can be financed with as little as 0 down. 
+																	The Vendee TM Loan Program allows qualified borrowers to purchase properties owned by the US. 
+																	To get started the first step is to browse our listings of Vendee TM eligible homes online or work with a realtor to find a home that qualifies for the Vendee. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Low Interest Rates a The seller may contribute up to 6 of the contract sale price for closing costs. 
+																	Vendee financing is a loan product offered to purchase VA Real Estate Owned Properties. 
+																	Seems like Vendee program might be a good vehicle to capitalize on the VA foreclosures in our area. 
+																	The seller in this case is the VA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Credit report tax service flood certificate and closing costs. 
+																	The fees associated with vendee loans are standard in the mortgage industry. 
+																	Vendee Financing is not a credit score driven product. 
+																	VA funding fee. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With these loans you can find great bargains in foreclosed properties either to live in fix up and rent or sell. 
+																	There are two available terms a 15 and 30 year fixed rate. 
+																	Like with VAFHA credit and other factors are not as important as the ability to repay the loan. 
+																	Low Interest Rates 2500 origination fee includes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Those 4 loans are going to be worth a whole lot if interest rates make it into the 6s and 7s. 
+																	Active-duty members will pay on average around one-quarter of a percentage point less in fees than Reservists or National Guard members. 
+																	Borrowers receive a competitive rate that can save thousands of dollars compared to a standard mortgage. 
+																	The VA sets the interest rate and they determine if you have the incomeassets to afford the homes. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.frommilitarytomillionaire.com/wp-content/uploads/2020/09/1.png" data-lightbox="roadtrip" data-title="Military Buyers Stop Overthinking The Va Loan Funding Fee">
+											<img class="card-img v-image ads-img " src="https://www.frommilitarytomillionaire.com/wp-content/uploads/2020/09/1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTocRx-2j-UJA7dkfGv3Jpu7-PBrCdUQObf7g';" alt="Military Buyers Stop Overthinking The Va Loan Funding Fee">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Buyers Stop Overthinking The Va Loan Funding Fee</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.texasveteranshomeloans.com/blog/images/credit-va-loan.jpg" data-lightbox="roadtrip" data-title="Home Security Systems Charlotte July 2018">
+											<img class="card-img v-image ads-img " src="https://www.texasveteranshomeloans.com/blog/images/credit-va-loan.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2uTePcbUh-itI0Uu7pkUxTjzlRzg8LEXjQ';" alt="Home Security Systems Charlotte July 2018">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Security Systems Charlotte July 2018</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://photos.demandstudios.com/getty/article/117/204/78425735_XS.jpg" data-lightbox="roadtrip" data-title="What Is A Va Vendee Loan">
+											<img class="card-img v-image ads-img " src="http://photos.demandstudios.com/getty/article/117/204/78425735_XS.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3q5RayZMhXnzkeiURSDuFLnuzHeV7qFBDw';" alt="What Is A Va Vendee Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is A Va Vendee Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://vrmlending.com/wp-content/uploads/2020/04/2020-04-09_23-00-52-429x469.png" data-lightbox="roadtrip" data-title="Va Vendee Loan Vrm Lending Get Pre Approved For A Home Loan">
+											<img class="card-img v-image ads-img " src="https://vrmlending.com/wp-content/uploads/2020/04/2020-04-09_23-00-52-429x469.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-AofeKcglTgm8O87LHm_ajXnEWj7TGnMb7w';" alt="Va Vendee Loan Vrm Lending Get Pre Approved For A Home Loan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Vendee Loan Vrm Lending Get Pre Approved For A Home Loan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="97FeIwTJQfHtqM" data-lightbox="roadtrip" data-title="Https Www Carringtoncorrespondent Com Wp Content Uploads 2019 01 Va Irrrl Matrix Pdf">
+											<img class="card-img v-image ads-img " src="97FeIwTJQfHtqM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcxlmdGvyIy2qpC1oBaW_9lX1ht2jw_Qj9GA';" alt="Https Www Carringtoncorrespondent Com Wp Content Uploads 2019 01 Va Irrrl Matrix Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Carringtoncorrespondent Com Wp Content Uploads 2019 01 Va Irrrl Matrix Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="RGJiaK-yz1NH6M" data-lightbox="roadtrip" data-title="Http Ljmichaels Com Site Wp Content Uploads 2015 05 Vafinanceprogram Pdf">
+											<img class="card-img v-image ads-img " src="RGJiaK-yz1NH6M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Zl8Dht8NpXPYn5H_WeQfnKwWWD9Yydpj9g';" alt="Http Ljmichaels Com Site Wp Content Uploads 2015 05 Vafinanceprogram Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Ljmichaels Com Site Wp Content Uploads 2015 05 Vafinanceprogram Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://angellaraisian.com/wp-content/uploads/1767386.jpg" data-lightbox="roadtrip" data-title="Va Vendee Program Facts Angella S Real Estate Secrets Insider Tips For Real Estate Investors">
+											<img class="card-img v-image ads-img " src="http://angellaraisian.com/wp-content/uploads/1767386.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkRJq3JWGHs4iH8KH8IpObK6-7PB8O2Arf1w';" alt="Va Vendee Program Facts Angella S Real Estate Secrets Insider Tips For Real Estate Investors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Vendee Program Facts Angella S Real Estate Secrets Insider Tips For Real Estate Investors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="4pMqSG-o64BN8M" data-lightbox="roadtrip" data-title="Https Www Racmtg Com Documents Vadocs Pdf">
+											<img class="card-img v-image ads-img " src="4pMqSG-o64BN8M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvuv7nY4NDQQLa_UmNnC3yJA7voRvHsV2Vzg';" alt="Https Www Racmtg Com Documents Vadocs Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Racmtg Com Documents Vadocs Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/04/coronavirus-va-home-loan-mortgage-relief.jpg" data-lightbox="roadtrip" data-title="Coronavirus Mortgage Relief For Va Home Loans Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/04/coronavirus-va-home-loan-mortgage-relief.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_fJukEnPEy_bRDUMOv8q315GZ-PWNTQIqcA';" alt="Coronavirus Mortgage Relief For Va Home Loans Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus Mortgage Relief For Va Home Loans Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vamortgagecenter.com/assets/images/artwork/states-info-md.png" data-lightbox="roadtrip" data-title="North Carolina Va Loans">
+											<img class="card-img v-image ads-img " src="https://www.vamortgagecenter.com/assets/images/artwork/states-info-md.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqdce203boM5bJC3Fr9bGgD9WlbSxHds3Tng';" alt="North Carolina Va Loans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">North Carolina Va Loans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://data.templateroller.com/pdf_docs_html/1898/18988/1898897/va-form-26-8923-interest-rate-reduction-refinancing-loan-worksheet_print_big.png" data-lightbox="roadtrip" data-title="Va Form 26 8923 Download Fillable Pdf Or Fill Online Interest Rate Reduction Refinancing Loan Worksheet Templateroller">
+											<img class="card-img v-image ads-img " src="https://data.templateroller.com/pdf_docs_html/1898/18988/1898897/va-form-26-8923-interest-rate-reduction-refinancing-loan-worksheet_print_big.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcK8RmwyLj2gLnJarceTLW9a9Zp4RfKMhxMw';" alt="Va Form 26 8923 Download Fillable Pdf Or Fill Online Interest Rate Reduction Refinancing Loan Worksheet Templateroller">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Form 26 8923 Download Fillable Pdf Or Fill Online Interest Rate Reduction Refinancing Loan Worksheet Templateroller</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="PL3WXPlUjI-eOM" data-lightbox="roadtrip" data-title="Https Www Va Gov Oig 52 Reports 2010 Vaoig 09 00976 25 Pdf">
+											<img class="card-img v-image ads-img " src="PL3WXPlUjI-eOM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn6EmsECQDaJpnZ3mDZUGX8oywr30hJ5896g';" alt="Https Www Va Gov Oig 52 Reports 2010 Vaoig 09 00976 25 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Va Gov Oig 52 Reports 2010 Vaoig 09 00976 25 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="BFMBoRvg1JXLhM" data-lightbox="roadtrip" data-title="Https Www Benefits Va Gov Homeloans Documents Docs Bwn Faq Pdf">
+											<img class="card-img v-image ads-img " src="BFMBoRvg1JXLhM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcZQ-jNrDganDOw5C2JptgV7CtmoTpQRdV2A';" alt="Https Www Benefits Va Gov Homeloans Documents Docs Bwn Faq Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Benefits Va Gov Homeloans Documents Docs Bwn Faq Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-are-the-benefits-for-spouses-of-veterans.html">What Are The Benefits For Spouses Of Veterans</a></li>
+													<li class="list-group-item"><a href="/what-are-some-good-hr-metrics.html">What Are Some Good Hr Metrics</a></li>
+													<li class="list-group-item"><a href="/what-are-some-va-disabilities.html">What Are Some Va Disabilities</a></li>
+													<li class="list-group-item"><a href="/what-are-post-911-gi-bill-benefits.html">What Are Post 911 Gi Bill Benefits</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-a-100-disabled-veteran.html">What Are The Benefits Of A 100 Disabled Veteran</a></li>
+													<li class="list-group-item"><a href="/what-are-the-16-branches-of-the-us-army.html">What Are The 16 Branches Of The Us Army</a></li>
+													<li class="list-group-item"><a href="/what-are-the-5-military-services.html">What Are The 5 Military Services</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-being-an-army-ranger.html">What Are The Benefits Of Being An Army Ranger</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-for-a-100-percent-disabled-veteran.html">What Are The Benefits For A 100 Percent Disabled Veteran</a></li>
+													<li class="list-group-item"><a href="/what-are-some-agencies-in-the-department-of-homeland-security.html">What Are Some Agencies In The Department Of Homeland Security</a></li>
+													<li class="list-group-item"><a href="/what-are-some-secondary-conditions-to-sleep-apnea.html">What Are Some Secondary Conditions To Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/what-are-real-estate-interest-rates-today.html">What Are Real Estate Interest Rates Today</a></li>
+													<li class="list-group-item"><a href="/what-are-the-army-ranks-in-order-from-lowest-to-highest.html">What Are The Army Ranks In Order From Lowest To Highest</a></li>
+													<li class="list-group-item"><a href="/what-are-my-rights-as-a-military-spouse-in-a-divorce.html">What Are My Rights As A Military Spouse In A Divorce</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-being-a-marine-engineer.html">What Are The Benefits Of Being A Marine Engineer</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-for-military-families.html">What Are The Benefits For Military Families</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-100-percent-va-disability.html">What Are The Benefits Of 100 Percent Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-are-the-22-agencies-of-the-department-of-homeland-security.html">What Are The 22 Agencies Of The Department Of Homeland Security</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-of-air-national-guard.html">What Are The Benefits Of Air National Guard</a></li>
+													<li class="list-group-item"><a href="/what-are-the-benefits-for-100-disabled-veterans.html">What Are The Benefits For 100 Disabled Veterans</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

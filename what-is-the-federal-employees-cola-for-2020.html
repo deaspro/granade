@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Federal Employees Cola For 2020 - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Federal Employees Cola For 2020",
+  "datePublished": "2021-02-14",
+  "image": "https://www.fedweek.com/wp-content/uploads/check_treasury.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+federal+employees+cola+for+2020",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Federal Employees Cola For 2020</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Allowances Overseas Cost of Living Allowances COLA Overseas COLA Calculator Overseas COLA Calculator. The 2020 COLA may look small after last years increase however 2019 saw the largest increase in the COLA in 7 years so it would be unusual to have another increase of that size for two years in a row. For GuamCNMI locality pay for 2019 is 1595 increased from 1567 in 2019 and COLA is reduced from 1280 to 1262 2020. <br>				
+			</p>
+										<a class="badge badge-warning" href="/what-chapter-is-the-post-911-gi-bill.html">what chapter is the post 911 gi bill</a>
+											<a class="badge badge-primary" href="/what-cities-have-the-national-guard-been-deployed-to.html">what cities have the national guard been deployed to</a>
+											<a class="badge badge-warning" href="/what-college-should-i-go-to-reddit.html">what college should i go to reddit</a>
+											<a class="badge badge-success" href="/what-colleges-offer-zoology.html">what colleges offer zoology</a>
+											<a class="badge badge-light" href="/what-college-should-i-go-to-in-north-carolina-quiz.html">what college should i go to in north carolina quiz</a>
+											<a class="badge badge-primary" href="/what-college-will-u-go-to-quiz.html">what college will u go to quiz</a>
+											<a class="badge badge-warning" href="/what-colleges-accept-yellow-ribbon-program.html">what colleges accept yellow ribbon program</a>
+											<a class="badge badge-warning" href="/what-colleges-should-i-apply-to-quiz.html">what colleges should i apply to quiz</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to visit the ideal site.  Our website gives you suggestions for viewing the maximum quality video and picture content, hunt and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.federalpay.org/resources/pdf/locality/gs-payscale-2020-base-table.png" data-lightbox="roadtrip" data-title="General Schedule Gs Base Pay Scale For 2020">
+											<img class="card-img v-image ads-img " src="https://www.federalpay.org/resources/pdf/locality/gs-payscale-2020-base-table.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQde649yxXdFyOpaczDup8_AllKYRDlGsr9Sg';" alt="General Schedule Gs Base Pay Scale For 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">General Schedule Gs Base Pay Scale For 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-myfed.pressidium.com/wp-content/uploads/2019/03/2019-revised-base-pay-03-28-19.jpg" data-lightbox="roadtrip" data-title="2021 Gs Pay Scale Opm Pay Tables Locality Pay Pay Raise">
+											<img class="card-img v-image ads-img " src="https://cdn-myfed.pressidium.com/wp-content/uploads/2019/03/2019-revised-base-pay-03-28-19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO6pgDs2drlG1XxC159AfBZzw-RR4obxzDcg';" alt="2021 Gs Pay Scale Opm Pay Tables Locality Pay Pay Raise">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Gs Pay Scale Opm Pay Tables Locality Pay Pay Raise</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fedretire.net/wp-content/uploads/2019/09/2020-Leave-Chart-e1567787519589.jpg" data-lightbox="roadtrip" data-title="2020 Leave Chart Schedule Tracker Now Available Federal Employee S Retirement Planning Guide">
+											<img class="card-img v-image ads-img " src="https://fedretire.net/wp-content/uploads/2019/09/2020-Leave-Chart-e1567787519589.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6GfhCCRZQJpON0dHly0pRvHf5YwkGCqt6Kw';" alt="2020 Leave Chart Schedule Tracker Now Available Federal Employee S Retirement Planning Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Leave Chart Schedule Tracker Now Available Federal Employee S Retirement Planning Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://stwserve.com/wp-content/uploads/2020/10/Fedzone-Images-2021-COLA.jpeg" data-lightbox="roadtrip" data-title="What The 2021 1 3 Percent Cola Means To Federal Employees And Retirees">
+											<img class="card-img v-image ads-img " src="https://stwserve.com/wp-content/uploads/2020/10/Fedzone-Images-2021-COLA.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ-gPqLLM0fneStWhzca5uPpggJ1IZ7s3_1Q';" alt="What The 2021 1 3 Percent Cola Means To Federal Employees And Retirees">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What The 2021 1 3 Percent Cola Means To Federal Employees And Retirees</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.fedsmith.com/wp-content/uploads/2019/11/2020-pay-raise.jpg" data-lightbox="roadtrip" data-title="2020 Pay Raise Update Still 2 6 Fedsmith Com">
+											<img class="card-img v-image ads-img " src="https://www.fedsmith.com/wp-content/uploads/2019/11/2020-pay-raise.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-yHNSyrMkPHbHhgZ1aFKTxekU8jnCDFgyRA';" alt="2020 Pay Raise Update Still 2 6 Fedsmith Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Pay Raise Update Still 2 6 Fedsmith Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/9c/3b/989c3bbc4acce901d6fed24a85805073.jpg" data-lightbox="roadtrip" data-title="Veteran Employees Can Benefit Your Business In Many Ways But Did You Know That You Can Also Earn Money Saving Tax Cre In 2020 Hiring Veterans Tax Credits Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/9c/3b/989c3bbc4acce901d6fed24a85805073.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOBL86J8HvtOu7PJJbaLH3_GapQdtIbTCNA';" alt="Veteran Employees Can Benefit Your Business In Many Ways But Did You Know That You Can Also Earn Money Saving Tax Cre In 2020 Hiring Veterans Tax Credits Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Employees Can Benefit Your Business In Many Ways But Did You Know That You Can Also Earn Money Saving Tax Cre In 2020 Hiring Veterans Tax Credits Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/98/9c/3b/989c3bbc4acce901d6fed24a85805073.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOBL86J8HvtOu7PJJbaLH3_GapQdtIbTCNA';" alt="Veteran Employees Can Benefit Your Business In Many Ways But Did You Know That You Can Also Earn Money Saving Tax Cre In 2020 Hiring Veterans Tax Credits Veteran Jobs">
+										<div class="card-body">
+						<h3 class="h5"><b>The cost of living adjustment COLA for most federal retirees in 2020 will be 16 according to the latest inflation data from the Bureau of Labor Statistics.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the federal employees cola for 2020</strong>. 
+								
+																	There is a lot of confusion about the difference between a COLA for federal retirees and a pay raise for federal employees. 
+																	Here is a summary of the differences. 
+																	This is a lower federal retiree COLA than last year when CSRS and FERS retirees received 16 percent. 
+																	And 3 for those at GS-15 step 10 the actual locality pay percentage is 2013. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	October 13 2020 The 2021 cost-of-living adjustment COLA will be 13 percent for Civil Service Retirement System CSRS annuities Federal Employees Retirement System FERS annuities and Social Security benefits. 
+																	Increased payments to more than 8 million SSI beneficiaries will begin on December 31 2020. 
+																	Federal Employee Pay Raises vs. 
+																	Guide to 2021 GS Pay Scale for Federal Employees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If the CPI increase is more than 2 percent but no more than 3 percent the Cost-of-Living Adjustment is 2 percent. 
+																	Locality pay rates for GuamCNMI are calculated at the Rest of US rate. 
+																	What the 2021 13 Percent COLA Means to Federal Employees and Retirees Oct 23 2020 COLA Federal Employees Edward A. 
+																	Zurndorfer The Social Security Administration SSA recently announced key numbers that will affect both federal employees and retirees in 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 2020 cost-of-living adjustment COLA of 16 for CSRS and FERS annuitants was announced on October 10 2019. 
+																	Individuals receiving benefits under the Federal Employees Compensation Act FECA will receive a 15 percent COLA in March 2021. 
+																	What Are They and How Are They Calculated. 
+																	The 13 percent cost-of-living adjustment COLA will begin with benefits payable to more than 64 million Social Security beneficiaries in January 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Updated December 14 2020 The 2021 Cost of Living Adjustment COLA increase for the 70 million Americans who rely on Social Security VA disability military retirement and other government benefits will be 13. 
+																	This number was determined by comparing the December 2020 CPI-W 254081 to the December 2019 CPI-W 250452. 
+																	To calculate your Overseas COLA rate select the Year Month Period Locality Name or Code and Member Information from the drop-downs below. 
+																	By Dallen Haws July 28 2020 204 PM. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Social Security Recipients and Federal retirees are anticipated to receive anywhere from a44 to a 12 COLA adjustment in 2021 as determined by the Consumer Price Index CPI upward trend. 
+																	Guide to Federal Retiree COLAs. 
+																	2 for those at GS-15 step 9 the actual locality pay percentage is 2329. 
+																	Click Calculate when complete. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For Federal Employees Retirement System FERS or FERS Special benefits if the increase in the CPI is 2 percent or less the Cost-of-Living Adjustment COLA is equal to the CPI increase. 
+																	In 2020 1 for those at GS-15 step 8 the actual locality pay percentage is 2662 instead of 2967. 
+																	Because of that cap for GS-15 employees at steps 8-10 the full locality pay percentage of 2967 is not payable in 2020. 
+																	Some people receive both Social Security and SSI benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2021 COLA Announced UPDATED. 
+																	The 2020 federal civilian pay raise represents the largest in a decade. 
+																	Federal Retiree Cost-of-Living Adjustments COLAs 2021 Federal Retiree COLA Watch. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/29/6a/1f296ac61c0719984ff6df64ed628c4d.png" data-lightbox="roadtrip" data-title="Best Dates To Retire 2016 2017 2018 Csrs X2f Fers Federal Employees Federal Employee Good Dates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/29/6a/1f296ac61c0719984ff6df64ed628c4d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKdYiBfucwuC4W5gabSziGeHQC6Dl1pBt3Jw';" alt="Best Dates To Retire 2016 2017 2018 Csrs X2f Fers Federal Employees Federal Employee Good Dates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Dates To Retire 2016 2017 2018 Csrs X2f Fers Federal Employees Federal Employee Good Dates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.fedweek.com/wp-content/uploads/check_treasury.jpg" data-lightbox="roadtrip" data-title="Federal Raise Takes Effect Reflected Next Pay Cycle">
+											<img class="card-img v-image ads-img " src="https://www.fedweek.com/wp-content/uploads/check_treasury.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR9HJECPVm-udp3TLVeLnPTNSel8GNRqcjbA';" alt="Federal Raise Takes Effect Reflected Next Pay Cycle">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Federal Raise Takes Effect Reflected Next Pay Cycle</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2018/09/federal-pay-300x260.jpg" data-lightbox="roadtrip" data-title="Federal Pay Raise Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2018/09/federal-pay-300x260.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-SqGa2lAwziFVUo1VDRh9e2XnYz9pbJFmw';" alt="Federal Pay Raise Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Federal Pay Raise Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://federalsoup.com/-/media/GIG/EDIT_SHARED/Workforce/payroll.jpg" data-lightbox="roadtrip" data-title="Trump Announces 2020 Raise In Fed Locality Pay Federalsoup Com">
+											<img class="card-img v-image ads-img " src="https://federalsoup.com/-/media/GIG/EDIT_SHARED/Workforce/payroll.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdJObnIm9SfFiwVthz0cfBTgWLsoGWd4_W5A';" alt="Trump Announces 2020 Raise In Fed Locality Pay Federalsoup Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Announces 2020 Raise In Fed Locality Pay Federalsoup Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/18/cd/a518cd2c00186a4f9e7e0a6b6e989413.png" data-lightbox="roadtrip" data-title="How Your Tsp Is Taxed Tsp Federal Retirement Tax">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/18/cd/a518cd2c00186a4f9e7e0a6b6e989413.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeLHuJoBNVblYXUGqPCODk0bK80DmEuAdCmQ';" alt="How Your Tsp Is Taxed Tsp Federal Retirement Tax">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Your Tsp Is Taxed Tsp Federal Retirement Tax</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.federalretirement.net/Site/images/thinking%20about%20retirement%20160x400%20w%20border.jpg" data-lightbox="roadtrip" data-title="Cost Of Living Adjustment Cola 2020 Federal Fers Csrs Annuity Adjustments">
+											<img class="card-img v-image ads-img " src="https://www.federalretirement.net/Site/images/thinking%20about%20retirement%20160x400%20w%20border.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT41NtI_J5Y6nCqvrNUl8NZu8e87Wpka73Zxw';" alt="Cost Of Living Adjustment Cola 2020 Federal Fers Csrs Annuity Adjustments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cost Of Living Adjustment Cola 2020 Federal Fers Csrs Annuity Adjustments</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/01/03/0801033b51424cb64e117e7e06101c7c.jpg" data-lightbox="roadtrip" data-title="Pin On Study Test">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/01/03/0801033b51424cb64e117e7e06101c7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKB2xh7cNiE0sDLPJgTnRDpUloO2MgqgDpA';" alt="Pin On Study Test">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Study Test</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://federalnewsnetwork.com/wp-content/uploads/2019/04/COLA-graph-040319.jpg" data-lightbox="roadtrip" data-title="2020 Retiree Cola Going Up Down Or Nowhere Federal News Network">
+											<img class="card-img v-image ads-img " src="https://federalnewsnetwork.com/wp-content/uploads/2019/04/COLA-graph-040319.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQevLRwmmt0ab85J8m28bZ6o246ULktppCJ8g';" alt="2020 Retiree Cola Going Up Down Or Nowhere Federal News Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Retiree Cola Going Up Down Or Nowhere Federal News Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.fedsmith.com/wp-content/uploads/2020/07/100-dollar-bill-close-up.jpg" data-lightbox="roadtrip" data-title="Will There Be A Pay Raise For Federal Employees Delving Into The Morass Fedsmith Com">
+											<img class="card-img v-image ads-img " src="https://www.fedsmith.com/wp-content/uploads/2020/07/100-dollar-bill-close-up.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzVFaZkbwlU50Xfh1NqsY_vnbWBgtLf8GEEA';" alt="Will There Be A Pay Raise For Federal Employees Delving Into The Morass Fedsmith Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Will There Be A Pay Raise For Federal Employees Delving Into The Morass Fedsmith Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://honolulu-pacific.feb.gov/wp-content/uploads/2020/08/Congress-2020-OPM-Report-to-Congress-pdf.jpg" data-lightbox="roadtrip" data-title="Opm Releases Report On Locality Pay Cola In The Non Foreign Areas Honolulu Pacific Federal Executive Board Hpfeb">
+											<img class="card-img v-image ads-img " src="https://honolulu-pacific.feb.gov/wp-content/uploads/2020/08/Congress-2020-OPM-Report-to-Congress-pdf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHabX3fQgt43qhnh-HaH7AC5IiEUmvLRd3KQ';" alt="Opm Releases Report On Locality Pay Cola In The Non Foreign Areas Honolulu Pacific Federal Executive Board Hpfeb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Opm Releases Report On Locality Pay Cola In The Non Foreign Areas Honolulu Pacific Federal Executive Board Hpfeb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/11/2f/0a112fb71d37e90fcc14b1253068eaed.png" data-lightbox="roadtrip" data-title="Pin On Pharmacy Week">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/11/2f/0a112fb71d37e90fcc14b1253068eaed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuAWDeje70ihMAx41j-GpnCdraqXSh6gfcBw';" alt="Pin On Pharmacy Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pharmacy Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Db4FCV8vZOIyeM" data-lightbox="roadtrip" data-title="Https Www Opm Gov Policy Data Oversight Pay Leave Salaries Wages Salary Tables 20tables Pdf Det 20 Leo Pdf">
+											<img class="card-img v-image ads-img " src="Db4FCV8vZOIyeM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcB9Y2H29tBrtN8xrFM_kA67ydBao0dpdXQA';" alt="Https Www Opm Gov Policy Data Oversight Pay Leave Salaries Wages Salary Tables 20tables Pdf Det 20 Leo Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Opm Gov Policy Data Oversight Pay Leave Salaries Wages Salary Tables 20tables Pdf Det 20 Leo Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.fedsmith.com/wp-content/uploads/2020/05/agencyfilter.jpg" data-lightbox="roadtrip" data-title="How To Find A Federal Employee S Salary Fedsmith Com">
+											<img class="card-img v-image ads-img " src="https://www.fedsmith.com/wp-content/uploads/2020/05/agencyfilter.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr6jMzqfQwWHoWcazxjGI8JwFhZMsOTPNS2Q';" alt="How To Find A Federal Employee S Salary Fedsmith Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Find A Federal Employee S Salary Fedsmith Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/c9/90/70c990203202143b9fe84ff1f6776c9c.jpg" data-lightbox="roadtrip" data-title="What To Know About Cleaning Mold With Vinegar In 2020 Cleaning Mold White Vinegar Cleaning Vinegar Cleaning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/c9/90/70c990203202143b9fe84ff1f6776c9c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9XCKX9BtE1VKqc-KoO_MgqZGT08ezgCHlqA';" alt="What To Know About Cleaning Mold With Vinegar In 2020 Cleaning Mold White Vinegar Cleaning Vinegar Cleaning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What To Know About Cleaning Mold With Vinegar In 2020 Cleaning Mold White Vinegar Cleaning Vinegar Cleaning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/31/48/1e/31481e616dd9f28025cbe2eda925c56f.jpg" data-lightbox="roadtrip" data-title="The Ultimate Choice About Drill Pay Versus Va Compensation Is Really Up To You But Remember That There Are R In 2020 Department Of Veterans Affairs Compensation Drill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/31/48/1e/31481e616dd9f28025cbe2eda925c56f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeyOBeDdroUQvQ2D6V5Il6quZCDsL2lE476w';" alt="The Ultimate Choice About Drill Pay Versus Va Compensation Is Really Up To You But Remember That There Are R In 2020 Department Of Veterans Affairs Compensation Drill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ultimate Choice About Drill Pay Versus Va Compensation Is Really Up To You But Remember That There Are R In 2020 Department Of Veterans Affairs Compensation Drill</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/vicksburg-national-military-park-walking-tour.html">Vicksburg National Military Park Walking Tour</a></li>
+													<li class="list-group-item"><a href="/vicksburg-national-military-park-reenactment.html">Vicksburg National Military Park Reenactment</a></li>
+													<li class="list-group-item"><a href="/viene-y-va-in-english.html">Viene Y Va In English</a></li>
+													<li class="list-group-item"><a href="/vijay-in-army-dress.html">Vijay In Army Dress</a></li>
+													<li class="list-group-item"><a href="/virginia-beach-lawyer-referral-service.html">Virginia Beach Lawyer Referral Service</a></li>
+													<li class="list-group-item"><a href="/vicksburg-national-military-park-tripadvisor.html">Vicksburg National Military Park Tripadvisor</a></li>
+													<li class="list-group-item"><a href="/view-military-records-online-free.html">View Military Records Online Free</a></li>
+													<li class="list-group-item"><a href="/virginia-colleges-with-education-programs.html">Virginia Colleges With Education Programs</a></li>
+													<li class="list-group-item"><a href="/vintage-army-dress-uniform.html">Vintage Army Dress Uniform</a></li>
+													<li class="list-group-item"><a href="/video-of-national-guard-in-dc.html">Video Of National Guard In Dc</a></li>
+													<li class="list-group-item"><a href="/vietnam-war-us-army-dress-uniform.html">Vietnam War Us Army Dress Uniform</a></li>
+													<li class="list-group-item"><a href="/virginia-attorney-near-me.html">Virginia Attorney Near Me</a></li>
+													<li class="list-group-item"><a href="/viktoria-woods-avenue-dress.html">Viktoria Woods Avenue Dress</a></li>
+													<li class="list-group-item"><a href="/vicksburg-national-military-park-protests.html">Vicksburg National Military Park Protests</a></li>
+													<li class="list-group-item"><a href="/vietnam-war-veterans-spouse-benefits.html">Vietnam War Veterans Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/virginia-beach-dept-of-education.html">Virginia Beach Dept Of Education</a></li>
+													<li class="list-group-item"><a href="/virginia-archives-birth-records.html">Virginia Archives Birth Records</a></li>
+													<li class="list-group-item"><a href="/vietnam-era-gi-bill-eligibility.html">Vietnam Era Gi Bill Eligibility</a></li>
+													<li class="list-group-item"><a href="/vietnam-veterans-spouse-benefits.html">Vietnam Veterans Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/vietnam-veterans-education-benefits-for-dependents.html">Vietnam Veterans Education Benefits For Dependents</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

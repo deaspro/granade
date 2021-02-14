@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Smc R1 - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Smc R1",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/8e/b0/56/8eb0562cb060c9434b561dea20e17784.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+smc+r1",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Smc R1</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">SMC-K is the most common VA SMC code. SMC R1 requires entitlement to SMC o or p at the maximum rate or n12 k and o the need for regular aid and attendance or o the condition of permanently bedridden criteria for aid and attendance and bedridden ²3352. VA considers the following disabilities for Special Monthly Compensation SMC. <br>				
+			</p>
+										<a class="badge badge-dark" href="/va-ratings-ptsd.html">va ratings ptsd</a>
+											<a class="badge badge-primary" href="/va-regional-benefit-office-near-me.html">va regional benefit office near me</a>
+											<a class="badge badge-dark" href="/va-real-estate-license-exam-study-guide.html">va real estate license exam study guide</a>
+											<a class="badge badge-danger" href="/va-ratings-ptsd-non-combat.html">va ratings ptsd non combat</a>
+											<a class="badge badge-danger" href="/va-ratings-calculator.html">va ratings calculator</a>
+											<a class="badge badge-success" href="/va-rating.html">va rating</a>
+											<a class="badge badge-warning" href="/va-rating-transformer.html">va rating transformer</a>
+											<a class="badge badge-dark" href="/va-reevaluation-disability.html">va reevaluation disability</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you've come to visit the right site.  Our website gives you hints for seeing the highest quality video and picture content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to see.  You can also bring about supporting this website by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/f4/a7/c8f4a7bc90fe186b3702e040f10953d6.jpg" data-lightbox="roadtrip" data-title="Pin On Viper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/f4/a7/c8f4a7bc90fe186b3702e040f10953d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkpbPo-9IQP7us68PNvdg2UrVpJdt-wz1Z8Q';" alt="Pin On Viper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Viper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/77/6e/a1776e1a96efd7f0810c75a3357b3139.jpg" data-lightbox="roadtrip" data-title="Yamaha Yzf R1 2880 1800 High Definition Wallpaper Yamaha Yzf R1 Yamaha Bikes Yamaha Yzf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/77/6e/a1776e1a96efd7f0810c75a3357b3139.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSLsH3FyH48H6JcH-iw3IvvqPUOr8-MZQdpg';" alt="Yamaha Yzf R1 2880 1800 High Definition Wallpaper Yamaha Yzf R1 Yamaha Bikes Yamaha Yzf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yamaha Yzf R1 2880 1800 High Definition Wallpaper Yamaha Yzf R1 Yamaha Bikes Yamaha Yzf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/06/0a/53/060a538c0783b438381d7b505a15106f.jpg" data-lightbox="roadtrip" data-title="Motorrad Yamaha Fahrrader Yamaha R1 Yamaha R6 Ktm Duke 125 Yamaha Fz Ktm Duke 390 Motorcycles Duke Fahrrader Ktm Mo Yamaha Fz Yamaha R6 Yamaha R1">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/06/0a/53/060a538c0783b438381d7b505a15106f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEoTr6cgJl4PYIA6Ddrt2Fo0LGAe_Mm0j2Rg';" alt="Motorrad Yamaha Fahrrader Yamaha R1 Yamaha R6 Ktm Duke 125 Yamaha Fz Ktm Duke 390 Motorcycles Duke Fahrrader Ktm Mo Yamaha Fz Yamaha R6 Yamaha R1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Motorrad Yamaha Fahrrader Yamaha R1 Yamaha R6 Ktm Duke 125 Yamaha Fz Ktm Duke 390 Motorcycles Duke Fahrrader Ktm Mo Yamaha Fz Yamaha R6 Yamaha R1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/a7/d2/d6a7d25c9a88f20826fde2643529f9fc.jpg" data-lightbox="roadtrip" data-title="Yamaha R1 Yamaha Bikes Yamaha R1 Bike">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/a7/d2/d6a7d25c9a88f20826fde2643529f9fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaOIWyP1flof_2CY3PqB77E8Nz8g3ogjffHQ';" alt="Yamaha R1 Yamaha Bikes Yamaha R1 Bike">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yamaha R1 Yamaha Bikes Yamaha R1 Bike</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/f5/51/79f551913b3533a5835898e2c49382e5.jpg" data-lightbox="roadtrip" data-title="For Ktm 690 Smc Smc R Duke R 640 Lc4 Supermoto 640 Duke Ii Cnc Motorcycle Foldable Extending Brake Clutch Levers A Motorcycle Ducati Monster 1200 Ktm Adventure">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/f5/51/79f551913b3533a5835898e2c49382e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Sgl9DPSmdaygNOXV-uziCWd32wJs-wuVFw';" alt="For Ktm 690 Smc Smc R Duke R 640 Lc4 Supermoto 640 Duke Ii Cnc Motorcycle Foldable Extending Brake Clutch Levers A Motorcycle Ducati Monster 1200 Ktm Adventure">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Ktm 690 Smc Smc R Duke R 640 Lc4 Supermoto 640 Duke Ii Cnc Motorcycle Foldable Extending Brake Clutch Levers A Motorcycle Ducati Monster 1200 Ktm Adventure</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/bb/2b/a5bb2bbf0296708f9ac9b21319ff4934.jpg" data-lightbox="roadtrip" data-title="Yamaha R1 Drift Super Bikes Motorcycle Bike Yamaha R1">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/bb/2b/a5bb2bbf0296708f9ac9b21319ff4934.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREL0uwHZn8wvxnNgK65mS72CiMBVPyLdscBQ';" alt="Yamaha R1 Drift Super Bikes Motorcycle Bike Yamaha R1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yamaha R1 Drift Super Bikes Motorcycle Bike Yamaha R1</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/37/8c/37/378c379a2f51ef03c40fa28c13ea6d7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREL0uwHZn8wvxnNgK65mS72CiMBVPyLdscBQ';" alt="Yamaha R1 Drift Super Bikes Motorcycle Bike Yamaha R1">
+										<div class="card-body">
+						<h3 class="h5"><b>Veterans who qualify for SMC under Category O can receive Category R benefits.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va smc r1</strong>. 
+								
+																	SMCm based off of 38 CFR. 
+																	Jim Strickland is a Vietnam era Army veteran and nationally recognized expert on VA disability benefits who is also editor. 
+																	Dependent Status N 12 OP R1 R2T S. 
+																	VA regulations state that entitlement to SMC must be treated as an inferred issue by VA decision-makers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Also veterans who qualify for SMC under Categories N ½ and K together may receive benefits. 
+																	SMC under Level R whether R1 or R2 is paid instead of any other compensation for any other condition except for a separate condition under Level K. 
+																	They can be a family member friend etc. 
+																	This is in addition to the additional 60 single or combined disabilities that jbasser spoke of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They are typically paid at the rate of either SMC R1 or R2. 
+																	1114p considering my three individual disabilities are 100 separate and distinct. 
+																	This link will take you to one of the best explanations of SMC that I know. 
+																	VA special monthly compensation SMC is a higher rate of compensation that we pay to Veterans as well as their spouses surviving spouses and parents with certain needs or disabilities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find the 2021 special monthly compensation rates that may apply to you. 
+																	Loss or loss of use means amputation or no effective remaining function of an extremity or organ. 
+																	What is considered loss or loss of use. 
+																	SMC R1 The higher level Reviewer wrote and told me my buddy letters were clear and competent to establish continuation of service connectedinjury incidents events or diseases that occurred in service after finding several duty to assist errors. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA can pay more compensation to a Veteran who lost or lost the use of specific organs or body parts due to military service. 
+																	VA Veterans Benefits Administration Compensation Special Monthly Compensation SMC Rate Table - Effective 12119 Compensation Special Monthly Compensation SMC Rate Table - Effective 12119. 
+																	This means that entitlement to SMC must be considered when compensation rating activities are being conducted in all decisions as long as there is medical evidence showing possible entitlement. 
+																	If you are rated at 100 for a single disability and have another single disability that is ratable at 50 or 100 then you are entitled to the next higher rate of SMC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dear Sir I would like to know what are the requirements for R1. 
+																	LEVEL R2There are two different levels of Level R R1 and R2 depending on the level of care neededLevel R1 is given if the aid and attendance needed can be performed by a non-professional like a family member or friendLevel R2 is given if the aid and attendance must be provided by a licensed medical professional or someone working on behalf of a licensed medical professional. 
+																	And Category R can be given to veterans who require the help of another person aid and attendance every day. 
+																	3350f4 would that then suffice for SMC R1 or what is the appropriate scenairo in my case. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Where Im confused is how im not entitled to 38 USCA. 
+																	I already have Aide and Attendant. 
+																	For this category the veteran must have to have someone helping him every day to perform the above tasks but that person does not have to be a professional. 
+																	I also Have and S and Smc M. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Veterans learn all the VA SMC codes and SMC pay rates from A to Z. 
+																	SMC Rates Without Children SMC-N12 through SMC-S. 
+																	If you qualify for Level R you will not receive any other disability pay from the VA including for regular VA disability ratings. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/My-Post-2020-11-19T163439.811-768x502.jpg" data-lightbox="roadtrip" data-title="Special Monthly Compensation Explained Cck Law">
+											<img class="card-img v-image ads-img " src="https://3ax89fn04ri34ttxy19m3rcv-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/My-Post-2020-11-19T163439.811-768x502.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYRMAPxUyrQdzTzWb9UXySqjaFVCIIrdwXaQ';" alt="Special Monthly Compensation Explained Cck Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Monthly Compensation Explained Cck Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn3.volusion.com/busx5.3dpcm/v/vspfiles/photos/Yosh%20SR%20TRS%20R1%2004-05-2.jpg?v-cache=1574333177" data-lightbox="roadtrip" data-title="2004 2006 Yamaha R1 Yoshimura Trs Slip On Exhaust 2004 2005 2006">
+											<img class="card-img v-image ads-img " src="https://cdn3.volusion.com/busx5.3dpcm/v/vspfiles/photos/Yosh%20SR%20TRS%20R1%2004-05-2.jpg?v-cache=1574333177" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnzJo9DXYztRe23bapkMKp7fsGPh7J7ojGJg';" alt="2004 2006 Yamaha R1 Yoshimura Trs Slip On Exhaust 2004 2005 2006">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2004 2006 Yamaha R1 Yoshimura Trs Slip On Exhaust 2004 2005 2006</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/86/97/2286973e51ead15c3cc79d8b9fa81f87.jpg" data-lightbox="roadtrip" data-title="Pin On Bikes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/86/97/2286973e51ead15c3cc79d8b9fa81f87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkkdvZz3AMusDJ4Oqaa2tJRT3_dQGFP6gmDQ';" alt="Pin On Bikes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bikes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/1f/77/581f770b2375b62224e4066b6e3e347d.jpg" data-lightbox="roadtrip" data-title="Pin On Bikes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/1f/77/581f770b2375b62224e4066b6e3e347d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ0nS3UVIhlO4Ekv-C0YnNs2c_3wSWFQelLg';" alt="Pin On Bikes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bikes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/48/c3/e248c3dec1ba870bf7489f8840315b2d.jpg" data-lightbox="roadtrip" data-title="Yamaha Yzf R1 2006 Yamaha Bikes Yamaha Sport Yamaha Yzf R1">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/48/c3/e248c3dec1ba870bf7489f8840315b2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8LC8j0AwtLvhwA-Cley4OykieIOT5mv8UBQ';" alt="Yamaha Yzf R1 2006 Yamaha Bikes Yamaha Sport Yamaha Yzf R1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yamaha Yzf R1 2006 Yamaha Bikes Yamaha Sport Yamaha Yzf R1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/b0/56/8eb0562cb060c9434b561dea20e17784.jpg" data-lightbox="roadtrip" data-title="Redgecko S 50th Page 9 Yamaha R1 Forum Yzf R1 Forums Yamaha R1 Yamaha Yamaha Motorcycles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/b0/56/8eb0562cb060c9434b561dea20e17784.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgX7eox1IBGXZ4uaEO_9gfT_2s7M5-JMOdjA';" alt="Redgecko S 50th Page 9 Yamaha R1 Forum Yzf R1 Forums Yamaha R1 Yamaha Yamaha Motorcycles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Redgecko S 50th Page 9 Yamaha R1 Forum Yzf R1 Forums Yamaha R1 Yamaha Yamaha Motorcycles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/15/aa/7f/15aa7fa0dae1d2fb49ef0d8278f7f1ba.jpg" data-lightbox="roadtrip" data-title="R1 Unknown Bikersig Follow Us For More Bikersig R1 Sportbike Motorbike Motorcycle Rider Riders Bikerofinstagr Moto Bike Motorcycle Bike Yamaha R1">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/15/aa/7f/15aa7fa0dae1d2fb49ef0d8278f7f1ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT142yvzUH_IWEaduYDRbdfWRkKRAxPpHiF4g';" alt="R1 Unknown Bikersig Follow Us For More Bikersig R1 Sportbike Motorbike Motorcycle Rider Riders Bikerofinstagr Moto Bike Motorcycle Bike Yamaha R1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">R1 Unknown Bikersig Follow Us For More Bikersig R1 Sportbike Motorbike Motorcycle Rider Riders Bikerofinstagr Moto Bike Motorcycle Bike Yamaha R1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/97/10/5e97104a957f979a4fae2e1bbb8fdf72.jpg" data-lightbox="roadtrip" data-title="Fs 2005 Red R1 With Mods 13k Miles 5999 Jupiter Fl Yamaha R1 Forum Yamaha R1 Yamaha Super Bikes Super Bikes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/97/10/5e97104a957f979a4fae2e1bbb8fdf72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVm9_bdhJAB8RzcqnoyvKQ_Z0xS2YLHi48bQ';" alt="Fs 2005 Red R1 With Mods 13k Miles 5999 Jupiter Fl Yamaha R1 Forum Yamaha R1 Yamaha Super Bikes Super Bikes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fs 2005 Red R1 With Mods 13k Miles 5999 Jupiter Fl Yamaha R1 Forum Yamaha R1 Yamaha Super Bikes Super Bikes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/8c/37/378c379a2f51ef03c40fa28c13ea6d7c.jpg" data-lightbox="roadtrip" data-title="Yamaha R1 Raven Edition Motos Motocicletas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/8c/37/378c379a2f51ef03c40fa28c13ea6d7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwItoUFrtcFSrjMXzJlDsJScAwGscgce2aMA';" alt="Yamaha R1 Raven Edition Motos Motocicletas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yamaha R1 Raven Edition Motos Motocicletas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/b0/25/4fb0250a6cb6012cb206cb20712c72a7.jpg" data-lightbox="roadtrip" data-title="Yamaha R1 Super Bikes Moto Bike Custom Sport Bikes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/b0/25/4fb0250a6cb6012cb206cb20712c72a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsU8y3KoOoPwNQLgCbZJcDy3nQ4hbj2zy53w';" alt="Yamaha R1 Super Bikes Moto Bike Custom Sport Bikes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yamaha R1 Super Bikes Moto Bike Custom Sport Bikes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/5f/f8/5c/5ff85c9f6bec07672ef0f78389dae2d7.jpg" data-lightbox="roadtrip" data-title="Pin On Yamaha R1 2020 Price Philippines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/5f/f8/5c/5ff85c9f6bec07672ef0f78389dae2d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6mTwcBR7FRNUfnRz0KZvPtV04ETxniEhBBQ';" alt="Pin On Yamaha R1 2020 Price Philippines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Yamaha R1 2020 Price Philippines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/bc/db/57bcdbd4934e3cc763d07ae3681644c5.jpg" data-lightbox="roadtrip" data-title="09 Amarilla Yamaha R1 Yamaha Motos Usadas En Venta">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/bc/db/57bcdbd4934e3cc763d07ae3681644c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDJix3cW0P6tYAduAe4mjZpJsRXtECJGm6og';" alt="09 Amarilla Yamaha R1 Yamaha Motos Usadas En Venta">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">09 Amarilla Yamaha R1 Yamaha Motos Usadas En Venta</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/7c/c1/11/7cc1110cef27a2f2cd87f6d581d55dfb.jpg" data-lightbox="roadtrip" data-title="I D Take This 4 Wheeler Yamaha Tesseract Futuristic Motorcycle Concept Motorcycles Yamaha Motorcycles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/7c/c1/11/7cc1110cef27a2f2cd87f6d581d55dfb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO6OfGWi7skzNJb0chErfYXM7n6O58u98lHw';" alt="I D Take This 4 Wheeler Yamaha Tesseract Futuristic Motorcycle Concept Motorcycles Yamaha Motorcycles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I D Take This 4 Wheeler Yamaha Tesseract Futuristic Motorcycle Concept Motorcycles Yamaha Motorcycles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/80/fb/b980fb563d6f26a2ed165b49edaff1a1.jpg" data-lightbox="roadtrip" data-title="Top Amazing Sports Bike Yamaha R1 Yamaha Bikes Yamaha Motorcycles Yamaha R1">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/80/fb/b980fb563d6f26a2ed165b49edaff1a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc-QYc2WG8T_jeYfnn9-frV1cNbo-b9fVZsg';" alt="Top Amazing Sports Bike Yamaha R1 Yamaha Bikes Yamaha Motorcycles Yamaha R1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top Amazing Sports Bike Yamaha R1 Yamaha Bikes Yamaha Motorcycles Yamaha R1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/33/2e/0a332e1c6c0690ab11912cbac754f65c.jpg" data-lightbox="roadtrip" data-title="Bikelife On Instagram Blue Chrome R1 Bike Yamaha Yzf R1 Owner Brachi87 By Brachi87 Tags Sw Yamaha R1 Motorcycle Super Bikes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/33/2e/0a332e1c6c0690ab11912cbac754f65c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKzIQGbq7Rti4A3dP42ZdpNnVvN_1VENE3gw';" alt="Bikelife On Instagram Blue Chrome R1 Bike Yamaha Yzf R1 Owner Brachi87 By Brachi87 Tags Sw Yamaha R1 Motorcycle Super Bikes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bikelife On Instagram Blue Chrome R1 Bike Yamaha Yzf R1 Owner Brachi87 By Brachi87 Tags Sw Yamaha R1 Motorcycle Super Bikes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-my-gi-bill-worth.html">What Is My Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/what-is-major-depressive-disorder-single-episode-severe-without-psychotic-features.html">What Is Major Depressive Disorder Single Episode Severe Without Psychotic Features</a></li>
+													<li class="list-group-item"><a href="/what-is-narcolepsy-cataplexy-syndrome.html">What Is Narcolepsy Cataplexy Syndrome</a></li>
+													<li class="list-group-item"><a href="/what-is-major-depressive-disorder-with-psychotic-features.html">What Is Major Depressive Disorder With Psychotic Features</a></li>
+													<li class="list-group-item"><a href="/what-is-included-in-the-gi-bill.html">What Is Included In The Gi Bill</a></li>
+													<li class="list-group-item"><a href="/what-is-intent-to-file-va.html">What Is Intent To File Va</a></li>
+													<li class="list-group-item"><a href="/what-is-my-va-regional-office.html">What Is My Va Regional Office</a></li>
+													<li class="list-group-item"><a href="/what-is-it-like-being-in-the-army-national-guard.html">What Is It Like Being In The Army National Guard</a></li>
+													<li class="list-group-item"><a href="/what-is-major-depressive-disorder-single-episode-moderate.html">What Is Major Depressive Disorder Single Episode Moderate</a></li>
+													<li class="list-group-item"><a href="/what-is-military-time-to-regular-time.html">What Is Military Time To Regular Time</a></li>
+													<li class="list-group-item"><a href="/what-is-indian-defence-budget.html">What Is Indian Defence Budget</a></li>
+													<li class="list-group-item"><a href="/what-is-mst-time-now.html">What Is Mst Time Now</a></li>
+													<li class="list-group-item"><a href="/what-is-my-office-symbol-army.html">What Is My Office Symbol Army</a></li>
+													<li class="list-group-item"><a href="/what-is-ira-irish-republican-army.html">What Is Ira Irish Republican Army</a></li>
+													<li class="list-group-item"><a href="/what-is-mos-42a.html">What Is Mos 42a</a></li>
+													<li class="list-group-item"><a href="/what-is-nasas-budget-for-2020.html">What Is Nasas Budget For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-military-spouse-of-the-year.html">What Is Military Spouse Of The Year</a></li>
+													<li class="list-group-item"><a href="/what-is-military-culture.html">What Is Military Culture</a></li>
+													<li class="list-group-item"><a href="/what-is-mycaa-grant.html">What Is Mycaa Grant</a></li>
+													<li class="list-group-item"><a href="/what-is-iu-vs-mg.html">What Is Iu Vs Mg</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

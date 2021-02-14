@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What College Should I Go To For Criminal Justice - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What College Should I Go To For Criminal Justice",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/d1/1a/0f/d11a0f9911b818fab865181708e3ec36.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+college+should+i+go+to+for+criminal+justice",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What College Should I Go To For Criminal Justice</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Find out which criminal justice job is right for you. A lot of aspiring. Two degrees are offered in the program. <br>				
+			</p>
+										<a class="badge badge-dark" href="/va-unemployment-weekly-claim-questions.html">va unemployment weekly claim questions</a>
+											<a class="badge badge-dark" href="/va-unemployment-says-file-not-open.html">va unemployment says file not open</a>
+											<a class="badge badge-info" href="/va-waiver-retirement-pay.html">va waiver retirement pay</a>
+											<a class="badge badge-danger" href="/va-unemployment-weekly-claim-requirements.html">va unemployment weekly claim requirements</a>
+											<a class="badge badge-danger" href="/va-wage-grade-pay-scale-2019.html">va wage grade pay scale 2019</a>
+											<a class="badge badge-light" href="/va-unemployment-weekly-claim-not-working.html">va unemployment weekly claim not working</a>
+											<a class="badge badge-success" href="/va-unemployment-rate-calculation.html">va unemployment rate calculation</a>
+											<a class="badge badge-danger" href="/va-unemployment-reddit-today.html">va unemployment reddit today</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to pay a visit to the right blog.  Our website provides you with hints for seeing the highest quality video and image content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to see.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this site on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/c6/6c/72c66c4f5e756886a3f7780202704440.png" data-lightbox="roadtrip" data-title="12 Jobs For Criminal Justice Majors The University Network Criminal Justice Major Criminal Justice Criminal Justice Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/c6/6c/72c66c4f5e756886a3f7780202704440.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR56U7ANEdkryFEjN06pol6Cqqhp3XXg0lGuQ';" alt="12 Jobs For Criminal Justice Majors The University Network Criminal Justice Major Criminal Justice Criminal Justice Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 Jobs For Criminal Justice Majors The University Network Criminal Justice Major Criminal Justice Criminal Justice Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/a8/bc/6fa8bc0a1a2d7dd1e637efa92ccab853.jpg" data-lightbox="roadtrip" data-title="8 Various Ways To Do Criminal Justice Degrees Criminal Justice Degrees Criminal Justice Criminal Justice Major Criminal Investigator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/a8/bc/6fa8bc0a1a2d7dd1e637efa92ccab853.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpbgHid-KTRdAVpVrWeehuoIsTXh8lXkfR2g';" alt="8 Various Ways To Do Criminal Justice Degrees Criminal Justice Degrees Criminal Justice Criminal Justice Major Criminal Investigator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Various Ways To Do Criminal Justice Degrees Criminal Justice Degrees Criminal Justice Criminal Justice Major Criminal Investigator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/14/d7/3314d7b59da7f54aba64732c94dba8d7.jpg" data-lightbox="roadtrip" data-title="Why Should I Study Criminal Justice 68 Potential Careers For A Criminal Justice Major Criminal Psychology Criminal Justice Major Criminal Justice Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/14/d7/3314d7b59da7f54aba64732c94dba8d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPCB9L5vYR4UdYAciF8rsr_v54IgEA_c-czw';" alt="Why Should I Study Criminal Justice 68 Potential Careers For A Criminal Justice Major Criminal Psychology Criminal Justice Major Criminal Justice Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Why Should I Study Criminal Justice 68 Potential Careers For A Criminal Justice Major Criminal Psychology Criminal Justice Major Criminal Justice Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/8a/2b/dd8a2b90186200c38ed7f436d64c0db3.jpg" data-lightbox="roadtrip" data-title="Online Criminal Justice Degrees Criminal Justice Criminal Justice Careers Criminal Justice Major">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/8a/2b/dd8a2b90186200c38ed7f436d64c0db3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkESSdSOUpNIq_PGZWwwog3p7ZyaT0cJ6XVQ';" alt="Online Criminal Justice Degrees Criminal Justice Criminal Justice Careers Criminal Justice Major">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Online Criminal Justice Degrees Criminal Justice Criminal Justice Careers Criminal Justice Major</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/78/ca/6778ca160f3456dffa5fec1925cac317.jpg" data-lightbox="roadtrip" data-title="The 10 Most Popular Jobs For Criminal Justice Degree Holders Criminal Justice Criminal Justice Major Criminal Justice Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/78/ca/6778ca160f3456dffa5fec1925cac317.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDy6UhFy0k3PVbz5LXFJ3-bVQHKI6RvLHgBA';" alt="The 10 Most Popular Jobs For Criminal Justice Degree Holders Criminal Justice Criminal Justice Major Criminal Justice Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 10 Most Popular Jobs For Criminal Justice Degree Holders Criminal Justice Criminal Justice Major Criminal Justice Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/d2/c9/c6d2c9ca43c374dde454283cb25f8034.png" data-lightbox="roadtrip" data-title="What Can You Do With A Criminal Justice Bachelor S Degree Criminal Justice Criminal Justice Careers Bachelors Degree">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/d2/c9/c6d2c9ca43c374dde454283cb25f8034.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhVCRHXfoVoRUv3c6xYI53Sj-OnG4Si4MnQ';" alt="What Can You Do With A Criminal Justice Bachelor S Degree Criminal Justice Criminal Justice Careers Bachelors Degree">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Can You Do With A Criminal Justice Bachelor S Degree Criminal Justice Criminal Justice Careers Bachelors Degree</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ad/d9/d4/add9d42da964b39558ecd8232be99556.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPhVCRHXfoVoRUv3c6xYI53Sj-OnG4Si4MnQ';" alt="What Can You Do With A Criminal Justice Bachelor S Degree Criminal Justice Criminal Justice Careers Bachelors Degree">
+										<div class="card-body">
+						<h3 class="h5"><b>Marist College in Poughkeepsie New York offers a minor in Criminal Justice and a Bachelor of Science in Criminal Justice.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What college should i go to for criminal justice</strong>. 
+								
+																	Where should i go. 
+																	And I want to take some college classes to get me ready to go federal with a criminal justice degree while Im in and out of the Navy. 
+																	Southern New Hampshire University Earn a bachelors in criminal justice on your time with flexible online courses built to fit your busy life. 
+																	A criminal justice degree is ideal for a role in the FBI as a violent crime analyst a profiler or a related area of criminal investigation within the FBI. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coming from a small town where most people go to school for. 
+																	Obtaining an online criminal justice degree is available to those students who choose to take courses through online colleges. 
+																	It could be the Best Decision You Ever Make. 
+																	It is also a good choice for individuals who want to work as a field agent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But what degrees should you get for criminal justice law enforcement or criminology jobs. 
+																	A high school diploma will suffice for entry into law enforcement such as a police officer. 
+																	Criminology and criminal justice both deal with criminals and law enforcement. 
+																	That is almost where theyre similarities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ive been looking at a few colleges that have good criminal justice programs for once. 
+																	The benefits of a college education for criminology or criminal justice careers cant be understated though. 
+																	Criminal justice is an exciting subject for people to go to college and study. 
+																	Back to Crime Library. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For more information connect with one of our trained admissions advisors today. 
+																	The City University of New Yorks John Jay College of Criminal Justice was ranked 139th on the US. 
+																	An Associates degree increases your job opportunities and could secure you an interview over a high school graduate. 
+																	They can be found on all levels from private county state and federal state. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I especially didnt think that I would be moving on opposite sides of the spectrum with my majors from Earth Science Secondary Education to Elementary Education and finally to Criminal Justice. 
+																	Coming to college I thought that my future was set. 
+																	I swore into the Navy back in September as a PRAircrew Survival-Equipmentman. 
+																	News World Report list for northern universities in 2019 and 15th for graduate criminology programs in 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MYVIP for 5 off 20 OFF CBD GUMMIES WITH CODE Gummies20 Top 10 Crime Library Pages. 
+																	If you want to earn a Bachelor of Science in Criminal Justice ECPI University offers this degree at an accelerated rate. 
+																	Im waiting til I graduate from high school and leave on my ship date to bootcamp on July 30th. 
+																	Whether you prefer to investigate behind a desk or get out into the field the possibilities are endless. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So im planning on going to Salt Lake Community College and they have a criminal justice program that transfers its credits to a university after 2 years. 
+																	If you are interested in working within the criminal justice system. 
+																	Wineville Chicken Coop Murders. 
+																	Whether you envision yourself chasing criminals out in the streets or behind a desk strategizing crime prevention for the local community a bachelor in criminal justice degree is necessary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a nonprofit accredited institution SNHU can help you gain the foundation you need to start or continue your career. 
+																	For example in correctional or law enforcement fields then you picked the right degree but be mindful that even when a college degree is a requirement in order to apply or obtain the job you dont have to take criminal justice degrees in business accounting and law are very desirable too amongst others. 
+																	The college offers research projects and degree programs in criminal justice and forensic psychology led by accomplished faculty. 
+																	From developing important critical thinking skills to honing your writing skills you have a lot to gain by getting a degree to prepare you for your chosen field better. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Students examine the practical causes and effects of criminal behavior. 
+																	Other popular majors include criminology and forensic psychology. 
+																	Or you currently work in the criminal justice field and want to upgrade your skills and knowledge. 
+																	Areas of study for this. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As a criminal justice major you will be prepared for a criminal justice-related career by learning how the legal system deals with criminals and how social services aim to decrease crime and help. 
+																	Or be something with forensic investigating or the FBI. 
+																	I cant decide if i should go for the criminal justice program or general educationi plan on transferring to a university after 2 yrs no matter what i choose at the community college. 
+																	Jobs in the Criminal Justice field are everywhere. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are many sub-fields of criminal justice that students can choose to study and each field can lead to different types of careers. 
+																	I never thought that I would change my major nonetheless have 3 different majors. 
+																	But i want to get degrees for both kinds of work. 
+																	It gives a strong foundation on the theories behind criminal behavior and helps field agents recognize the potential aspects of a crime that may apply to an. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A premier criminal justice school the CUNY John Jay College of Criminal Justice is home to 13000 undergraduates 41 of whom are majoring in criminal justice. 
+																	I either want to dance perfessionally with the Radio City Rockettes or the New York City Ballet company. 
+																	A criminal justice major provides students with a liberal arts and social sciences-focused education in addition to criminal justice and corrections-specific training. 
+																	Nab one of the nations best Bachelors in Criminal Justice Degrees. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/31/9a/33319ac45e2eefd73608efc9d073f56f.jpg" data-lightbox="roadtrip" data-title="What Can You Do With A Criminal Justice Degree Criminal Justice Degree Careers In Crimina Criminal Justice Careers Criminal Justice Criminal Justice System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/31/9a/33319ac45e2eefd73608efc9d073f56f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv3cnZzEtjedGGHb-sNYPoOoG79rvtOXdFwg';" alt="What Can You Do With A Criminal Justice Degree Criminal Justice Degree Careers In Crimina Criminal Justice Careers Criminal Justice Criminal Justice System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Can You Do With A Criminal Justice Degree Criminal Justice Degree Careers In Crimina Criminal Justice Careers Criminal Justice Criminal Justice System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/b6/50/12b6508d6153511d25d6921ce9caec1c.jpg" data-lightbox="roadtrip" data-title="What Can You Do With A Criminal Justice Degree In 2020 Student Loans Dietetics Student Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/b6/50/12b6508d6153511d25d6921ce9caec1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ER2g57ljiyY4KCFGctr3b2lMXSVtdsekjg';" alt="What Can You Do With A Criminal Justice Degree In 2020 Student Loans Dietetics Student Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Can You Do With A Criminal Justice Degree In 2020 Student Loans Dietetics Student Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/d9/d4/add9d42da964b39558ecd8232be99556.jpg" data-lightbox="roadtrip" data-title="Should I Be A Criminal Justice Major Everything You Need To Know To Decide Criminal Justice Major Criminal Justice Criminal Justice Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/d9/d4/add9d42da964b39558ecd8232be99556.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiGhGuvGnlQt-FCs2gDPrvoqa0shUMi2Cg1g';" alt="Should I Be A Criminal Justice Major Everything You Need To Know To Decide Criminal Justice Major Criminal Justice Criminal Justice Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Should I Be A Criminal Justice Major Everything You Need To Know To Decide Criminal Justice Major Criminal Justice Criminal Justice Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/00/94/09009474ee420fff06e7b5ab3f047400.jpg" data-lightbox="roadtrip" data-title="Law Enforcement Jobs Your Guide To What Where And How Much Law Enforcement Jobs Criminal Justice Careers Criminal Justice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/00/94/09009474ee420fff06e7b5ab3f047400.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUKuxe-cvaXyTuKri5GmjQ5fz8jRHfI6TXfw';" alt="Law Enforcement Jobs Your Guide To What Where And How Much Law Enforcement Jobs Criminal Justice Careers Criminal Justice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Law Enforcement Jobs Your Guide To What Where And How Much Law Enforcement Jobs Criminal Justice Careers Criminal Justice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/49/3b/9a/493b9a26de37753c1f247aa734247194.jpg" data-lightbox="roadtrip" data-title="Are You A Student Thinking About Going Into Criminal Justice Here Is A List Of The Different Criminal J Criminal Justice Freshman College College Preparation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/49/3b/9a/493b9a26de37753c1f247aa734247194.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4VVltuEjn3CKt9t4iuWNH8cSpKT74Yz_J3A';" alt="Are You A Student Thinking About Going Into Criminal Justice Here Is A List Of The Different Criminal J Criminal Justice Freshman College College Preparation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Are You A Student Thinking About Going Into Criminal Justice Here Is A List Of The Different Criminal J Criminal Justice Freshman College College Preparation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/1a/0f/d11a0f9911b818fab865181708e3ec36.png" data-lightbox="roadtrip" data-title="How Can I Become A Police Detective With A College Degree Criminal Justice What To Study Criminology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/1a/0f/d11a0f9911b818fab865181708e3ec36.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkKgeV9_jY8n0p5n-5JTWfD5myiSx1JMM7w';" alt="How Can I Become A Police Detective With A College Degree Criminal Justice What To Study Criminology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Can I Become A Police Detective With A College Degree Criminal Justice What To Study Criminology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/12/eb/46/12eb46bd832e7d5e3ca05450e761dbd4.jpg" data-lightbox="roadtrip" data-title="South Carolina College Student Recalls Harrowing Escape In 2020 Criminal Justice Major College Students Student">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/12/eb/46/12eb46bd832e7d5e3ca05450e761dbd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbgd4F2SepBvFm2M1pRAgmRxhJoqoA9ZH4mg';" alt="South Carolina College Student Recalls Harrowing Escape In 2020 Criminal Justice Major College Students Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">South Carolina College Student Recalls Harrowing Escape In 2020 Criminal Justice Major College Students Student</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/cf/f7/a7cff7d045b39f6af23f95b455770f8d.jpg" data-lightbox="roadtrip" data-title="Criminal Justice Club Is Tabling For Anti Bullying Anti Bullying Criminal Justice Bullying">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/cf/f7/a7cff7d045b39f6af23f95b455770f8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaKB2zMY1ZY8juRQw2lOixFxONbAm5yQBFqw';" alt="Criminal Justice Club Is Tabling For Anti Bullying Anti Bullying Criminal Justice Bullying">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Criminal Justice Club Is Tabling For Anti Bullying Anti Bullying Criminal Justice Bullying</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/0a/d4/840ad4a499040d489b094f58b35d42db.jpg" data-lightbox="roadtrip" data-title="People Who Want A Law Enforcement Career But Are Not Able To Commit To A Full Time Training Sc Criminal Justice Careers Police Academy Training School Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/0a/d4/840ad4a499040d489b094f58b35d42db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPypmhYIjQoObiDOLqXbIbKYTk2t5Ii8tp-g';" alt="People Who Want A Law Enforcement Career But Are Not Able To Commit To A Full Time Training Sc Criminal Justice Careers Police Academy Training School Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">People Who Want A Law Enforcement Career But Are Not Able To Commit To A Full Time Training Sc Criminal Justice Careers Police Academy Training School Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/a3/17/c6a317b7f4f2d7d367c68c8ce4854e7f.png" data-lightbox="roadtrip" data-title="Larry Just Earned His Associate Degree In Criminal Justice Great Job Larry Ashworth College Rev Online Education College Reviews Online Education Programs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/a3/17/c6a317b7f4f2d7d367c68c8ce4854e7f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0m9zoLjrIZP7kF3NUJ3u4RV2Jxmx8W5y_ZA';" alt="Larry Just Earned His Associate Degree In Criminal Justice Great Job Larry Ashworth College Rev Online Education College Reviews Online Education Programs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Larry Just Earned His Associate Degree In Criminal Justice Great Job Larry Ashworth College Rev Online Education College Reviews Online Education Programs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/0e/28/740e28f1f1a82fb433731481002e2cf5.jpg" data-lightbox="roadtrip" data-title="Local Law Enforcement Professionals Help Train Beal College Criminal Justice Students Criminal Justice Criminal Justice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/0e/28/740e28f1f1a82fb433731481002e2cf5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXfPeaMe7oAdZYT-3BiWEThK86c7_Y4Z7n4g';" alt="Local Law Enforcement Professionals Help Train Beal College Criminal Justice Students Criminal Justice Criminal Justice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Local Law Enforcement Professionals Help Train Beal College Criminal Justice Students Criminal Justice Criminal Justice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/53/f5/a453f5b96eb828538a468e65683b6fbb.jpg" data-lightbox="roadtrip" data-title="Callanan Middle School Students Partnered With Criminal Justice Students From Simpson College For A Mock Trial Public School Middle School Teaching Government">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/53/f5/a453f5b96eb828538a468e65683b6fbb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyJ32M5Q_gylBYje8RReM7T-iSz-47LhxT2w';" alt="Callanan Middle School Students Partnered With Criminal Justice Students From Simpson College For A Mock Trial Public School Middle School Teaching Government">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Callanan Middle School Students Partnered With Criminal Justice Students From Simpson College For A Mock Trial Public School Middle School Teaching Government</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/ea/4a/a1ea4a320dbeb6260023dbc0f7595760.jpg" data-lightbox="roadtrip" data-title="Pin On What Criminal Justice School Looks Like">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/ea/4a/a1ea4a320dbeb6260023dbc0f7595760.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXXl91OITDPZntbuAU8-TgNWUeHoLLtFmJg';" alt="Pin On What Criminal Justice School Looks Like">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On What Criminal Justice School Looks Like</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/veteran-disability-rating-benefits.html">Veteran Disability Rating Benefits</a></li>
+													<li class="list-group-item"><a href="/veteran-medical-records-archive.html">Veteran Medical Records Archive</a></li>
+													<li class="list-group-item"><a href="/veteran-disability-benefits-after-death.html">Veteran Disability Benefits After Death</a></li>
+													<li class="list-group-item"><a href="/veteran-lawyers-in-jacksonville-fl.html">Veteran Lawyers In Jacksonville Fl</a></li>
+													<li class="list-group-item"><a href="/veteran-medical-records-request-form.html">Veteran Medical Records Request Form</a></li>
+													<li class="list-group-item"><a href="/veteran-legal-assistance-san-diego.html">Veteran Legal Assistance San Diego</a></li>
+													<li class="list-group-item"><a href="/veteran-education-benefits-after-gi-bill.html">Veteran Education Benefits After Gi Bill</a></li>
+													<li class="list-group-item"><a href="/veteran-lawyers-california.html">Veteran Lawyers California</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-small-business-rules.html">Veteran Owned Small Business Rules</a></li>
+													<li class="list-group-item"><a href="/veteran-education-benefits-for-spouse.html">Veteran Education Benefits For Spouse</a></li>
+													<li class="list-group-item"><a href="/veteran-education-benefits-for-family-members.html">Veteran Education Benefits For Family Members</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-small-business-nj.html">Veteran Owned Small Business Nj</a></li>
+													<li class="list-group-item"><a href="/veteran-disability-pay-dates.html">Veteran Disability Pay Dates</a></li>
+													<li class="list-group-item"><a href="/veteran-owned-small-business-ideas.html">Veteran Owned Small Business Ideas</a></li>
+													<li class="list-group-item"><a href="/veteran-disability-rating-pay-scale.html">Veteran Disability Rating Pay Scale</a></li>
+													<li class="list-group-item"><a href="/veteran-military-contracting-york-pa.html">Veteran Military Contracting York Pa</a></li>
+													<li class="list-group-item"><a href="/veteran-military-medical-records.html">Veteran Military Medical Records</a></li>
+													<li class="list-group-item"><a href="/veteran-lawyer-salary.html">Veteran Lawyer Salary</a></li>
+													<li class="list-group-item"><a href="/veteran-employment-transition-program-wells-fargo.html">Veteran Employment Transition Program Wells Fargo</a></li>
+													<li class="list-group-item"><a href="/veteran-dependent-insurance.html">Veteran Dependent Insurance</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

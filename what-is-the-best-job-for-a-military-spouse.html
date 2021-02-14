@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Best Job For A Military Spouse - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Best Job For A Military Spouse",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/72/7f/60/727f60897eff9c01f35692c6ddea079e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+best+job+for+a+military+spouse",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Best Job For A Military Spouse</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">By this I do not by any stretch of the imagination mean that there are ranks among spouses even my quaint 1950s wife manual states as much for goodness sake and the perceived dichotomy between officers spouses and enlisted spouses only. Great Jobs for Military Spouses. We work in collaboration with progressive partners invested in supporting military spouses. <br>				
+			</p>
+										<a class="badge badge-success" href="/what-happens-when-a-va-appeal-is-granted.html">what happens when a va appeal is granted</a>
+											<a class="badge badge-danger" href="/what-is-100-military-disability.html">what is 100 military disability</a>
+											<a class="badge badge-danger" href="/what-is-24-hour-military-time.html">what is 24 hour military time</a>
+											<a class="badge badge-dark" href="/what-if-i-received-a-stimulus-check-for-my-deceased-spouse.html">what if i received a stimulus check for my deceased spouse</a>
+											<a class="badge badge-success" href="/what-is-100-va-benefits.html">what is 100 va benefits</a>
+											<a class="badge badge-light" href="/what-happens-when-you-divorce-someone-in-the-military.html">what happens when you divorce someone in the military</a>
+											<a class="badge badge-secondary" href="/what-is-100-tdiu.html">what is 100 tdiu</a>
+											<a class="badge badge-dark" href="/what-is-15-hours-in-military-time.html">what is 15 hours in military time</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the ideal blog.  Our site provides you with suggestions for seeing the highest quality video and image content, hunt and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to view.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/e8/e2/fee8e23572ee311b2ad2d4d946fba19f.png" data-lightbox="roadtrip" data-title="Best Job For Military Spouses Overseas In 2021 Military Spouse Career Advancement Best">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/e8/e2/fee8e23572ee311b2ad2d4d946fba19f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ1pNDCQs94-3RfJUW9Uv53YyhkFLfstrUjA';" alt="Best Job For Military Spouses Overseas In 2021 Military Spouse Career Advancement Best">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Job For Military Spouses Overseas In 2021 Military Spouse Career Advancement Best</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ef/eb/ee/efebeef5e30ec598c8f8e7cbfc8eb496.jpg" data-lightbox="roadtrip" data-title="The 10 Best Work At Home Careers For Military Spouses Military Spouse Military Spouse Jobs At Home Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ef/eb/ee/efebeef5e30ec598c8f8e7cbfc8eb496.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmwfMlz39aBsYdi4KwLey_x_SQTE51SneRQ';" alt="The 10 Best Work At Home Careers For Military Spouses Military Spouse Military Spouse Jobs At Home Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 10 Best Work At Home Careers For Military Spouses Military Spouse Military Spouse Jobs At Home Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/8c/39/c28c3904821d0f11d136c9eb6cd5228e.png" data-lightbox="roadtrip" data-title="21 Best Work From Home Jobs For Military Spouses Work From Home Jobs Military Spouse Jobs Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/8c/39/c28c3904821d0f11d136c9eb6cd5228e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpD8BgDKOWwqpGF6ZhD2gV-E8hfWlyvWz5YQ';" alt="21 Best Work From Home Jobs For Military Spouses Work From Home Jobs Military Spouse Jobs Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">21 Best Work From Home Jobs For Military Spouses Work From Home Jobs Military Spouse Jobs Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/40/2e/c7402eab050c736257b317da75b52c8c.jpg" data-lightbox="roadtrip" data-title="The 10 Best Work At Home Careers For Military Spouses Military Spouse Military Spouse Jobs At Home Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/40/2e/c7402eab050c736257b317da75b52c8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSyELRkRbKkFpIT7a6zy6zZcNtoYtzJ5JycQ';" alt="The 10 Best Work At Home Careers For Military Spouses Military Spouse Military Spouse Jobs At Home Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 10 Best Work At Home Careers For Military Spouses Military Spouse Military Spouse Jobs At Home Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cb/a3/34/cba3346f4536007667afbf84045c0749.jpg" data-lightbox="roadtrip" data-title="21 High Paying Work From Home Jobs For Military Spouses Military Wife Jobs Military Spouse Jobs Work From Home Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cb/a3/34/cba3346f4536007667afbf84045c0749.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCWlQWbYFqFqlsik0I6_Z_ZhDw9tB3lwdcIg';" alt="21 High Paying Work From Home Jobs For Military Spouses Military Wife Jobs Military Spouse Jobs Work From Home Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">21 High Paying Work From Home Jobs For Military Spouses Military Wife Jobs Military Spouse Jobs Work From Home Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/fb/21/90fb216628dd05c8c6761951a7dfb073.jpg" data-lightbox="roadtrip" data-title="14 Top Flexible Jobs For Military Spouses Mrs Navy Mama In 2020 Flexible Jobs Military Spouse Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/fb/21/90fb216628dd05c8c6761951a7dfb073.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK2UfzHne3f8PYIHuEmGSAaIA8HhpU25dMtw';" alt="14 Top Flexible Jobs For Military Spouses Mrs Navy Mama In 2020 Flexible Jobs Military Spouse Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">14 Top Flexible Jobs For Military Spouses Mrs Navy Mama In 2020 Flexible Jobs Military Spouse Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/8a/db/90/8adb90adb5aa6c8f142e8bb76b06fbfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK2UfzHne3f8PYIHuEmGSAaIA8HhpU25dMtw';" alt="14 Top Flexible Jobs For Military Spouses Mrs Navy Mama In 2020 Flexible Jobs Military Spouse Life">
+										<div class="card-body">
+						<h3 class="h5"><b>Subbing is putting your foot in the door Arin explains.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the best job for a military spouse</strong>. 
+								
+																	Selling Clothing on eBay. 
+																	Find the one that best suits your interests and skill set and voila. 
+																	Holding down a job while your spouse is in the military is easier than you might think. 
+																	While the military often throws a monkey wrench into best-laid plans your career doesnt have to be one of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	9 Jobs for Military Spouses That Move with You. 
+																	We provide tailored coaching mentoring training and job preparation. 
+																	Being self-employed allows you to set your own hours and work for yourself. 
+																	With the help of MSEP we have also come up with this list of 12 ways military spouses can turn their education andor skills into a money-making venture regardless of location. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An independent contractor allows military spouses to have the freedom and flexibility to adapt to military life. 
+																	A military spouses life is at least somewhat affected by their significant others job. 
+																	While most of the jobs above will likely involve you being employed by a company or individual on a. 
+																	3 Best Remote Military Spouse Jobs Plus A Bonus Lets jump into the best military spouse jobs were hiring for and help you find the career you never thought possibleThese are W-2 positions where youll work with world-class clients yes were talking executives at Apple Facebook Grammarly Asana and many other dynamic growing businesses that. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our spouses career is so time consuming even when they arent deployed. 
+																	The best job when youre on the move is a remote one. 
+																	Become a representative for an established direct marking firm like Mary Kay Avon Stella Dot or Pampered Chef. 
+																	And yes its as asinine and frustrating as it sounds. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	My wife has a Masters in. 
+																	Jobs for Military Spouses TeacherSchool. 
+																	You can even proofread transcripts like court. 
+																	The Military Spouse Employment Partnership Job Search on MySECO. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Spouse Foundation lists the following companies as supportive of military spouses. 
+																	Then we have to play solo-parent while they are constantly gone. 
+																	Healthcare -- Especially for the Elderly. 
+																	Your next job could be a click away. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youre on your way to a new career no matter where life or the military takes you next. 
+																	The available jobs for military spouses on base can vary according to the exact base that youre on but some of the broad industries that you might be able to find a job in include healthcare retail education maintenance and technology. 
+																	Being a teacher may not pay incredibly well but it is consistent work. 
+																	Applied behavioral analysis ABA therapists work with patients to overcome mental and social disabilitiesespecially with kids on the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The medical field is great. 
+																	The following are 10 of the best jobs for military spouses who want a career that combines flexibility with fulfillment. 
+																	Best Types of Employment for Military Spouses Remote Jobs. 
+																	15 Super Flexible Jobs for Military Spouses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If like Arin you are looking for a career you can pursue from any military town in America consider these five trajectories. 
+																	The ability to sell is transferable to almost any job. 
+																	Entrepreneur Using entrepreneurial skills is well-suited for working from home provided you set parameters. 
+																	With an online store however you can access your dashboard 247 from any location with an internet connection. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you can catch a typo quicker than anyone consider working as a proofreader. 
+																	Our Career Academy provides you with the tools to develop grow and gain in confidence no matter what your requirements are. 
+																	Thanks to technology you can have a flexible career. 
+																	If you want a career in education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If youre a military spouse you can participate in the non-competitive hiring process on USAJOBS. 
+																	As a military spouse our careers often fall by the wayside. 
+																	Register today and begin searching for military-friendly employers. 
+																	The Academy is free to use and bespoke to you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If you are looking for a career in business. 
+																	Sales is a great skill to master and can be very lucrative. 
+																	Then we get into the 2-3 year PCS moves and you can bet employers will be running when they see Military Spouse on your resume or profile. 
+																	As a military spouse for example be wary of being tied to physical products though unless someone else handles the shipping. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As stated in usajobsgov 1 federal agencies can use the military spouse noncompetitive hiring process to fill positions on either a temporary or permanent basis. 
+																	The partnership includes more than 390 partners or military-friendly employers. 
+																	This may be a path to consider for military spouses with the entrepreneurial spirit. 
+																	The best government jobs for military spouses are those that enable them to remain flexible in case of relocation or deployment and should also be available at the bases the family moves to. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/b7/f0/0fb7f032144a1ad604bba456c627a8d3.jpg" data-lightbox="roadtrip" data-title="Creative Careers For Military Spouses She Is Joyful Military Spouse Jobs Military Spouse Army Wife Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/b7/f0/0fb7f032144a1ad604bba456c627a8d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS90aErOwmfzjti1gXW9tbZds-oQMVXK-C5ug';" alt="Creative Careers For Military Spouses She Is Joyful Military Spouse Jobs Military Spouse Army Wife Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Creative Careers For Military Spouses She Is Joyful Military Spouse Jobs Military Spouse Army Wife Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/b0/2b/a9b02b088cf5c5417c75ff7faa741757.jpg" data-lightbox="roadtrip" data-title="Portable Careers For Military Spouses Military Spouse Military Spouse Jobs Military Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/b0/2b/a9b02b088cf5c5417c75ff7faa741757.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPuxmRqR3MVR6TrSjCim9yBeG_BnvCd79ECw';" alt="Portable Careers For Military Spouses Military Spouse Military Spouse Jobs Military Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Portable Careers For Military Spouses Military Spouse Military Spouse Jobs Military Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/5c/bd/6e5cbd61dd3a3d605d7251166f3e9593.png" data-lightbox="roadtrip" data-title="14 Top Flexible Jobs For Military Spouses Mrs Navy Mama In 2020 Military Spouse Flexible Jobs Military Spouse Career">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/5c/bd/6e5cbd61dd3a3d605d7251166f3e9593.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_LXRxLkMFovp20RcMoBzFiEsiiAnRZFWsQ';" alt="14 Top Flexible Jobs For Military Spouses Mrs Navy Mama In 2020 Military Spouse Flexible Jobs Military Spouse Career">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">14 Top Flexible Jobs For Military Spouses Mrs Navy Mama In 2020 Military Spouse Flexible Jobs Military Spouse Career</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/1c/40/b31c40514950c16e3782e8dae240d980.png" data-lightbox="roadtrip" data-title="The Best Remote Job For Military Spouses Remote Jobs Military Spouse Working Mom Tips">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/1c/40/b31c40514950c16e3782e8dae240d980.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0E8is1AuQjLHoeMl79zo8LkRG2AVM-Tm8Rw';" alt="The Best Remote Job For Military Spouses Remote Jobs Military Spouse Working Mom Tips">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Remote Job For Military Spouses Remote Jobs Military Spouse Working Mom Tips</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/92/03/3d92037bb6ac3f91b69261240e81dac6.png" data-lightbox="roadtrip" data-title="22 Things Military Spouses Can Do To Find Jobs Military Wife Life Military Spouse Jobs Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/92/03/3d92037bb6ac3f91b69261240e81dac6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUO7qV2LKdE7Kpfb_T5AKH6N612_qbFWVLFA';" alt="22 Things Military Spouses Can Do To Find Jobs Military Wife Life Military Spouse Jobs Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">22 Things Military Spouses Can Do To Find Jobs Military Wife Life Military Spouse Jobs Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d2/46/a5/d246a56e8a0283eb215897848a913114.jpg" data-lightbox="roadtrip" data-title="I Know The Struggle As A Military Spouse It Is Almost Impossible To Maintain A Stable Job So I Ve Complied Military Spouse Jobs Military Spouse Virtual Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d2/46/a5/d246a56e8a0283eb215897848a913114.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDOAC47EDIXKXDqbFAz-SwTLlQTijoh_zVg';" alt="I Know The Struggle As A Military Spouse It Is Almost Impossible To Maintain A Stable Job So I Ve Complied Military Spouse Jobs Military Spouse Virtual Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Know The Struggle As A Military Spouse It Is Almost Impossible To Maintain A Stable Job So I Ve Complied Military Spouse Jobs Military Spouse Virtual Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8a/db/90/8adb90adb5aa6c8f142e8bb76b06fbfe.jpg" data-lightbox="roadtrip" data-title="Work From Home Companies That Hire Military Spouses Veterans Military Wife Jobs Military Spouse Military Spouse Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8a/db/90/8adb90adb5aa6c8f142e8bb76b06fbfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjFxUQOT3okpOg6ZUTD48lCiXeFsdL8NPjQ';" alt="Work From Home Companies That Hire Military Spouses Veterans Military Wife Jobs Military Spouse Military Spouse Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Work From Home Companies That Hire Military Spouses Veterans Military Wife Jobs Military Spouse Military Spouse Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/64/30/8a6430b37c64363c82a59e7b8f69219a.jpg" data-lightbox="roadtrip" data-title="Military Spouse Toughest Job In The Military Reposted By Dr Military Retirement Military Spouse Military Spouse Appreciation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/64/30/8a6430b37c64363c82a59e7b8f69219a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx8v0MqYkMmgrIs-5rLGmSS-EqMmJPxnbo4w';" alt="Military Spouse Toughest Job In The Military Reposted By Dr Military Retirement Military Spouse Military Spouse Appreciation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Spouse Toughest Job In The Military Reposted By Dr Military Retirement Military Spouse Military Spouse Appreciation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/d5/69/a3d569583c8038051cbd63299e6e2b4c.jpg" data-lightbox="roadtrip" data-title="Suitable Jobs For Military Spouses In 2020 Military Husband Military Spouse Career Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/d5/69/a3d569583c8038051cbd63299e6e2b4c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAlT3yWgLTSX4IJfR6Kg0wGiS0vpbuq9sl0g';" alt="Suitable Jobs For Military Spouses In 2020 Military Husband Military Spouse Career Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Suitable Jobs For Military Spouses In 2020 Military Husband Military Spouse Career Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/7f/60/727f60897eff9c01f35692c6ddea079e.jpg" data-lightbox="roadtrip" data-title="Work From Home Companies That Hire Military Spouses Veterans Military Spouse Military Spouse Jobs Work From Home Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/7f/60/727f60897eff9c01f35692c6ddea079e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr6_xNhfeZ-src0BAXaadRT_W-MhSEkCwq5g';" alt="Work From Home Companies That Hire Military Spouses Veterans Military Spouse Military Spouse Jobs Work From Home Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Work From Home Companies That Hire Military Spouses Veterans Military Spouse Military Spouse Jobs Work From Home Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/02/96/1b0296da19933283a31b94af9e080178.png" data-lightbox="roadtrip" data-title="Hiring A Military Spouse Is Good Business Military Spouse Military Spouse Support Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/02/96/1b0296da19933283a31b94af9e080178.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzhaRM_ocPbYZLf3na2Lus3b8QhvD4fB5P9w';" alt="Hiring A Military Spouse Is Good Business Military Spouse Military Spouse Support Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hiring A Military Spouse Is Good Business Military Spouse Military Spouse Support Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/64/22/74642277a485d0ef65cd8856d6c35060.jpg" data-lightbox="roadtrip" data-title="Put Your Money Where Your Mouth Is For Military Spouse Employment Nextgen Milspouse Military Spouse Military Lifestyle Employment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/64/22/74642277a485d0ef65cd8856d6c35060.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgxMIpRCOjZlG_9osTx50sT-qaKxyncBnS_Q';" alt="Put Your Money Where Your Mouth Is For Military Spouse Employment Nextgen Milspouse Military Spouse Military Lifestyle Employment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Put Your Money Where Your Mouth Is For Military Spouse Employment Nextgen Milspouse Military Spouse Military Lifestyle Employment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/5b/2f/d65b2f495f37143d9d92eae1ea5ebcef.jpg" data-lightbox="roadtrip" data-title="Account Suspended Military Spouse Career Military Spouse Jobs Military Spouse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/5b/2f/d65b2f495f37143d9d92eae1ea5ebcef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOBl3JaHTzcGSbGtnu5Erum4b7xuSiwWnnKg';" alt="Account Suspended Military Spouse Career Military Spouse Jobs Military Spouse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Account Suspended Military Spouse Career Military Spouse Jobs Military Spouse</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/war-heroes-cheats.html">War Heroes Cheats</a></li>
+													<li class="list-group-item"><a href="/war-heroes-in-the-world.html">War Heroes In The World</a></li>
+													<li class="list-group-item"><a href="/war-heroes-throughout-history.html">War Heroes Throughout History</a></li>
+													<li class="list-group-item"><a href="/warehouse-a-line-dress.html">Warehouse A Line Dress</a></li>
+													<li class="list-group-item"><a href="/war-heroes-deck-combos.html">War Heroes Deck Combos</a></li>
+													<li class="list-group-item"><a href="/war-heroes-vietnam.html">War Heroes Vietnam</a></li>
+													<li class="list-group-item"><a href="/war-heroes-videos.html">War Heroes Videos</a></li>
+													<li class="list-group-item"><a href="/war-heroes-tower-defense.html">War Heroes Tower Defense</a></li>
+													<li class="list-group-item"><a href="/war-heroes-the-game.html">War Heroes The Game</a></li>
+													<li class="list-group-item"><a href="/war-heroes-of-kargil.html">War Heroes Of Kargil</a></li>
+													<li class="list-group-item"><a href="/war-heroes-no-longer-dominate-american-politics-as-they-once-did.html">War Heroes No Longer Dominate American Politics As They Once Did</a></li>
+													<li class="list-group-item"><a href="/war-heroes-online-game.html">War Heroes Online Game</a></li>
+													<li class="list-group-item"><a href="/war-heroes-best-team.html">War Heroes Best Team</a></li>
+													<li class="list-group-item"><a href="/war-heroes-jimi-hendrix-cd.html">War Heroes Jimi Hendrix Cd</a></li>
+													<li class="list-group-item"><a href="/war-heroes-mobile-game.html">War Heroes Mobile Game</a></li>
+													<li class="list-group-item"><a href="/war-heroes-tips-and-tricks.html">War Heroes Tips And Tricks</a></li>
+													<li class="list-group-item"><a href="/war-heroes-gameplay.html">War Heroes Gameplay</a></li>
+													<li class="list-group-item"><a href="/war-heroes-wiki.html">War Heroes Wiki</a></li>
+													<li class="list-group-item"><a href="/war-heroes-jimi-hendrix-lp.html">War Heroes Jimi Hendrix Lp</a></li>
+													<li class="list-group-item"><a href="/war-heroes-tier-list.html">War Heroes Tier List</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

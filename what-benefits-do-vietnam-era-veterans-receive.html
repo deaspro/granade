@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Benefits Do Vietnam Era Veterans Receive - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Benefits Do Vietnam Era Veterans Receive",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/ec/16/71/ec16712e6ddd387dcd28bd6e7a589587.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+benefits+do+vietnam+era+veterans+receive",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Benefits Do Vietnam Era Veterans Receive</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Access to health care benefits through the Civilian Health and Medical Program of the Department of Veterans Affairs CHAMPVA Caregiver education and training Financial assistance lodging and travel expenses for a caregiver when traveling with the veteran to receive care Mental health services and counseling. But VA using the dates established by Congress maintains the Vietnam War era is Feb. Caregivers will be eligible to receive up to 2800 a month for aiding veterans who require assistance with what health professionals call Activities of Daily Living ADL the basics needed for. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/what-are-hr-positions.html">what are hr positions</a>
+											<a class="badge badge-danger" href="/what-age-sims-go-to-university-sims-4.html">what age sims go to university sims 4</a>
+											<a class="badge badge-danger" href="/what-age-military-dependent-id.html">what age military dependent id</a>
+											<a class="badge badge-danger" href="/what-age-do-sims-go-to-university-in-sims-4.html">what age do sims go to university in sims 4</a>
+											<a class="badge badge-info" href="/what-agencies-are-part-of-the-department-of-homeland-security.html">what agencies are part of the department of homeland security</a>
+											<a class="badge badge-dark" href="/what-air-force-jobs-have-signing-bonus.html">what air force jobs have signing bonus</a>
+											<a class="badge badge-danger" href="/what-are-chapter-30-and-33-benefits.html">what are chapter 30 and 33 benefits</a>
+											<a class="badge badge-info" href="/what-are-good-gifts-for-college-students.html">what are good gifts for college students</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to pay a visit to the right site.  Our site provides you with hints for seeing the highest quality video and image content, hunt and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to see.  It is also possible to contribute to supporting this site by sharing videos and graphics that you enjoy on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/01/08/41010860440a28144e40c244ba56bfe2.png" data-lightbox="roadtrip" data-title="Pin On Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/01/08/41010860440a28144e40c244ba56bfe2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHpv9hVZBxZfONQqKtzltdsSEGux5PIdJnvA';" alt="Pin On Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/13/1f/49131f97531e5e3a1055ef319980bb64.png" data-lightbox="roadtrip" data-title="Vietnam Veterans Deserve Benefits After They Did Their Duty And Served In The War They Came Home To A Na Vietnam Vets Vietnam Veterans Vietnam War Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/13/1f/49131f97531e5e3a1055ef319980bb64.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrbLkqBzWiZ_D29TLOJFXQZ8eGJTZ7UStU7A';" alt="Vietnam Veterans Deserve Benefits After They Did Their Duty And Served In The War They Came Home To A Na Vietnam Vets Vietnam Veterans Vietnam War Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Veterans Deserve Benefits After They Did Their Duty And Served In The War They Came Home To A Na Vietnam Vets Vietnam Veterans Vietnam War Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/09/36/7a09361e5508977377d8229eac5b2bbd.png" data-lightbox="roadtrip" data-title="New Va Claims Process Military Com Military Benefits Military Retirement Benefits Vietnam War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/09/36/7a09361e5508977377d8229eac5b2bbd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqAQQWnsVZ8mmQGQQy4ojtyw8829FXFSTltg';" alt="New Va Claims Process Military Com Military Benefits Military Retirement Benefits Vietnam War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Va Claims Process Military Com Military Benefits Military Retirement Benefits Vietnam War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/5d/5f/b75d5f95b064554fa41b41b837e78514.jpg" data-lightbox="roadtrip" data-title="Welcome Home To Our Vietnam Veterans Thank You For Your Service God Bless Vietnam War Veterans Vietnam War Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/5d/5f/b75d5f95b064554fa41b41b837e78514.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDt5pvWkK2MOaT89kvX1RCKxXph06r-UDYg';" alt="Welcome Home To Our Vietnam Veterans Thank You For Your Service God Bless Vietnam War Veterans Vietnam War Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome Home To Our Vietnam Veterans Thank You For Your Service God Bless Vietnam War Veterans Vietnam War Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3e/c0/cb/3ec0cbd851668fdcc37e13872d2691f6.jpg" data-lightbox="roadtrip" data-title="Pin By Roger Kee On My Saves Vietnam Era Veterans Vietnam Veterans Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3e/c0/cb/3ec0cbd851668fdcc37e13872d2691f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbrNYTRUka6Ravbi3dl-9gQx4Yk-enxsoyMg';" alt="Pin By Roger Kee On My Saves Vietnam Era Veterans Vietnam Veterans Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Roger Kee On My Saves Vietnam Era Veterans Vietnam Veterans Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/0c/c6/b80cc69618623d6d0e5e9ea5a13bea34.jpg" data-lightbox="roadtrip" data-title="Vietnam Era Veterans Benefits Fun Vietnam Traffic Light Laws Travel Asia Adventure Face Mask Gift Familyloves Com In 2020 Vietnam Veterans Gifts For Veterans Face Mask">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/0c/c6/b80cc69618623d6d0e5e9ea5a13bea34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgn2fA-RvcuMI9mN9OpbWQmAmBga3o5Coz7A';" alt="Vietnam Era Veterans Benefits Fun Vietnam Traffic Light Laws Travel Asia Adventure Face Mask Gift Familyloves Com In 2020 Vietnam Veterans Gifts For Veterans Face Mask">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Era Veterans Benefits Fun Vietnam Traffic Light Laws Travel Asia Adventure Face Mask Gift Familyloves Com In 2020 Vietnam Veterans Gifts For Veterans Face Mask</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/5f/41/4b/5f414b7477f18ddb9c29fae2cd65d553.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgn2fA-RvcuMI9mN9OpbWQmAmBga3o5Coz7A';" alt="Vietnam Era Veterans Benefits Fun Vietnam Traffic Light Laws Travel Asia Adventure Face Mask Gift Familyloves Com In 2020 Vietnam Veterans Gifts For Veterans Face Mask">
+										<div class="card-body">
+						<h3 class="h5"><b>There are also a variety of health benefits that Vietnam-era veterans may qualify for if they have an illness related to exposure to Agent Orange.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What benefits do vietnam era veterans receive</strong>. 
+								
+																	--- 35 -40 years ago Vietnam Vets were looked down on by many--- Now that it is kool to be a Vietnam Vet --- they are coming out of the woodwork--- Guys wearing --Vietnam Veteran Hats--- never served in Vietnam but want to. 
+																	In the past veterans say review. 
+																	Vietnam Veterans may be eligible for a wide-variety of benefits available to all US. 
+																	5 1964 and May 7 1975 and was discharged or released with other than a dishonorable discharge. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	American Veterans Aid AVA helps veterans spouses and surviving spouses get the financial assistance they need to pay for long-term care. 
+																	VA benefits include disability compensation pension education and training health care home loans insurance vocational rehabilitation and employment and burial. 
+																	Vietnam-era veterans may be eligible for an Agent Orange Registry health exam that checks for symptoms of long-term illness due to exposure to the herbicide. 
+																	The VA provides many different types of benefits to veterans including healthcare disability compensation for veterans who were injured or because ill during wartime education and training home loans insurance and pensions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We specialize in VA Aid Attendance claims. 
+																	Find out if youre eligible for this benefit. 
+																	August 5 1964 to May 7 1975 for Veterans who served outside of the Republic of Vietnam Gulf War August 2 1990 through a future date to be set by law or presidential proclamation. 
+																	Vietnam Era Veterans Readjustment Assistance Act of 1974 or VEVRAA 38 USC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Agent Orange health registry exam Veterans who served in Vietnam or some areas of Korea and Thailand could be. 
+																	Aid Attendance is a lifetime pension for qualified veterans and spouses who need personal care. 
+																	Disability benefits are also available for Vietnam-era veterans who did not receive a dishonorable discharge and were disabled due to Agent Orange or other herbicide exposure. 
+																	The Veterans Pension program provides monthly payments to wartime Veterans who meet certain age or disability requirements and who have income and net worth within certain limits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	4212 A Vietnam era veteran is a person who served on active duty anywhere in the world for a period of more than 180 days any part of which occurred between Aug. 
+																	While Vietnam War veterans are eligible to receive the standard benefits offered to all veterans of the United States military -- including home loans pensions and burial -- they can also receive benefits directly related to their service in-country. 
+																	The label --Vietnam Era Veteran- Should be erased forever from being used-- To the average Joe on the street--- Vietnam Era Vets means the person was Boots on the Ground. 
+																	Veterans with so-called bad paper are ineligible for education disability and housing benefits and are sometimes barred from Veterans Affairs health care. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jim Strickland is a Vietnam era Army veteran and nationally recognized expert on VA disability benefits who is also editor and webmaster of the popular VA Watchdog website. 
+																	Many of them suffer from cancers and other life-threatening diseases linked to Agent Orange. 
+																	Vietnam War veterans are eligible for benefits that are open to all US. 
+																	The bill would approve benefits for Vietnam War veterans suffering from bladder cancer hypothyroidism and Parkinsons-like symptoms conditions thought to be caused by exposure to the chemical. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	5 Benefits You May Not Know About 1. 
+																	VA Benefits for Vietnam Veterans. 
+																	Vietnam War era February 28 1961 to May 7 1975 for Veterans who served in the Republic of Vietnam during that period. 
+																	About 90000 Vietnam veterans are finally getting the benefits they deserve. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vocational Rehabilitation and Employment Veterans especially those with service-related disabilities are eligible. 
+																	Military veterans including but not limited to disability compensation for service-connected disabilities such as post-traumatic stress disorder and amputations. 
+																	Jim writes extensively about VA and Social Security disability benefits. 
+																	Agent Orange was used. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	28 1961 to May 7 1975 making any veterans who served in the conflict prior to 1961 ineligible for wartime. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/16/71/ec16712e6ddd387dcd28bd6e7a589587.jpg" data-lightbox="roadtrip" data-title="Agent Orange Exposed How U S Chemical Warfare In Vietnam Unleashed A Slow Moving Disaster Agent Orange Vietnam Veterans Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/16/71/ec16712e6ddd387dcd28bd6e7a589587.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScJQYWL7fQeS6jV-TRLmK6keYVZHRwRvhZEw';" alt="Agent Orange Exposed How U S Chemical Warfare In Vietnam Unleashed A Slow Moving Disaster Agent Orange Vietnam Veterans Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Agent Orange Exposed How U S Chemical Warfare In Vietnam Unleashed A Slow Moving Disaster Agent Orange Vietnam Veterans Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/47/34/4947348c556b5a1b28f70393629e9dae.jpg" data-lightbox="roadtrip" data-title="Benefits Earned Army Veteran Of The Vietnam War Encourages Others To Apply For Va Benefits Vietnam War Army Veteran Va Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/47/34/4947348c556b5a1b28f70393629e9dae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNsQnErrwGPKg_v6I3sE_zJ5_H4ZPZZx6WiQ';" alt="Benefits Earned Army Veteran Of The Vietnam War Encourages Others To Apply For Va Benefits Vietnam War Army Veteran Va Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Benefits Earned Army Veteran Of The Vietnam War Encourages Others To Apply For Va Benefits Vietnam War Army Veteran Va Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/04/b4/6b04b4938e1868af9653d847ad9351b2.jpg" data-lightbox="roadtrip" data-title="Oklahoma Vietnam Veteran Receives 600 000 In Overdue Benefits Vietnam Veterans Vietnam Era Veterans Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/04/b4/6b04b4938e1868af9653d847ad9351b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxUa_DOAqZzX53LsyAzT3emER9lz1EXqH6ug';" alt="Oklahoma Vietnam Veteran Receives 600 000 In Overdue Benefits Vietnam Veterans Vietnam Era Veterans Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oklahoma Vietnam Veteran Receives 600 000 In Overdue Benefits Vietnam Veterans Vietnam Era Veterans Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fd/53/07/fd5307f79ebbf470af6640748a2d4a79.jpg" data-lightbox="roadtrip" data-title="Pin By Kerry Kocher On Armed Forces Warrior Quotes Military Quotes Vietnam Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fd/53/07/fd5307f79ebbf470af6640748a2d4a79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGOstMURZlORxi_88ceSzm0HoWUDnk-ScnZg';" alt="Pin By Kerry Kocher On Armed Forces Warrior Quotes Military Quotes Vietnam Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kerry Kocher On Armed Forces Warrior Quotes Military Quotes Vietnam Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/55/10/d455101c4f4e2f5e39d88b486382989c.png" data-lightbox="roadtrip" data-title="How Many Real Vietnam Vets Are Alive Today Vietnam Vets Vietnam Vietnam Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/55/10/d455101c4f4e2f5e39d88b486382989c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6dqbHQGXycLpc4T25doE57bvjn8oL8D4esw';" alt="How Many Real Vietnam Vets Are Alive Today Vietnam Vets Vietnam Vietnam Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Many Real Vietnam Vets Are Alive Today Vietnam Vets Vietnam Vietnam Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/94/02/279402bea5854f750538b8a2d5e0a18a.jpg" data-lightbox="roadtrip" data-title="Pin On Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/94/02/279402bea5854f750538b8a2d5e0a18a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP8fV_At-JANN0P9m_rwv32C4-9-E9Vfsw8w';" alt="Pin On Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/92/f3/3592f3b8ae23021ba5126a904bc58e3c.jpg" data-lightbox="roadtrip" data-title="Pin On Military Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/92/f3/3592f3b8ae23021ba5126a904bc58e3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1F8CGmzZZxWBXX8iaY9baSCcbW5wDF-hY4w';" alt="Pin On Military Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/41/4b/5f414b7477f18ddb9c29fae2cd65d553.jpg" data-lightbox="roadtrip" data-title="Va Sec Waitlist Problems Are Because Of Vietnam Era Vets Vietnam Veterans Vietnam War Vietnam Era Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/41/4b/5f414b7477f18ddb9c29fae2cd65d553.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQntPZKfCxKEBDQnJxLAmmhb4xRp6yUHoelPw';" alt="Va Sec Waitlist Problems Are Because Of Vietnam Era Vets Vietnam Veterans Vietnam War Vietnam Era Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Va Sec Waitlist Problems Are Because Of Vietnam Era Vets Vietnam Veterans Vietnam War Vietnam Era Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/00/79/4d0079b7b73f2851bec5dd27d83fbeee.jpg" data-lightbox="roadtrip" data-title="Agent Orange Vietnam Veterans Vietnam Vets Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/00/79/4d0079b7b73f2851bec5dd27d83fbeee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWmpSw5BZV_LREbgUXveFTZRMu1EuJ1TYblA';" alt="Agent Orange Vietnam Veterans Vietnam Vets Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Agent Orange Vietnam Veterans Vietnam Vets Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2c/a3/b1/2ca3b1b474216bf546341ff2070a7640.jpg" data-lightbox="roadtrip" data-title="Symptoms Of Agent Orange In Vietnam Veterans Vietnam War Veterans Vietnam Vets Vietnam Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2c/a3/b1/2ca3b1b474216bf546341ff2070a7640.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOycYmHiVH0i-rzUdQRHzppF8-pW8iKYxiQ';" alt="Symptoms Of Agent Orange In Vietnam Veterans Vietnam War Veterans Vietnam Vets Vietnam Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Symptoms Of Agent Orange In Vietnam Veterans Vietnam War Veterans Vietnam Vets Vietnam Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/9b/17/d59b17b63888ee144974cae9d681170a.jpg" data-lightbox="roadtrip" data-title="David Lamb Author And War Correspondent In Vietnam Dies At 76 David Lamb Vietnam Vietnam Era Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/9b/17/d59b17b63888ee144974cae9d681170a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs-zd1LXXPdCohDfql_JWJEZC694_ciotIkg';" alt="David Lamb Author And War Correspondent In Vietnam Dies At 76 David Lamb Vietnam Vietnam Era Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">David Lamb Author And War Correspondent In Vietnam Dies At 76 David Lamb Vietnam Vietnam Era Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/67/3e/f5673e32fb212d3f1db1de34a9a2a9ab.jpg" data-lightbox="roadtrip" data-title="Many Veterans Suffering From Diseases Linked To Agent Orange Still Can T Get Disability Compensation Vietnam War Veterans Vietnam Vets Agent Orange">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/67/3e/f5673e32fb212d3f1db1de34a9a2a9ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZxvn7L1gAwxQplU52YwOvxcZzWYgYh8AuvA';" alt="Many Veterans Suffering From Diseases Linked To Agent Orange Still Can T Get Disability Compensation Vietnam War Veterans Vietnam Vets Agent Orange">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Many Veterans Suffering From Diseases Linked To Agent Orange Still Can T Get Disability Compensation Vietnam War Veterans Vietnam Vets Agent Orange</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/0f/2a/d50f2a4963ababa925ad11735aa55453.jpg" data-lightbox="roadtrip" data-title="Blue Water Vet On Fight For Agent Orange Benefits We Did Our Job They Should Do Theirs Agent Orange Vietnam War Blue Water Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/0f/2a/d50f2a4963ababa925ad11735aa55453.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK4Le6BIN68VepLkhFBbwNmR23QFa5U8MCzw';" alt="Blue Water Vet On Fight For Agent Orange Benefits We Did Our Job They Should Do Theirs Agent Orange Vietnam War Blue Water Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blue Water Vet On Fight For Agent Orange Benefits We Did Our Job They Should Do Theirs Agent Orange Vietnam War Blue Water Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-the-new-army-fitness-test-uk.html">What Is The New Army Fitness Test Uk</a></li>
+													<li class="list-group-item"><a href="/what-is-the-nurses-hotline.html">What Is The Nurses Hotline</a></li>
+													<li class="list-group-item"><a href="/what-is-the-post-9-11-gi-bill-kicker.html">What Is The Post 9 11 Gi Bill Kicker</a></li>
+													<li class="list-group-item"><a href="/what-is-the-rate-for-100-va-disability.html">What Is The Rate For 100 Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-is-the-percentage-of-college-football-players-that-go-pro.html">What Is The Percentage Of College Football Players That Go Pro</a></li>
+													<li class="list-group-item"><a href="/what-is-the-national-budget-for-2020.html">What Is The National Budget For 2020</a></li>
+													<li class="list-group-item"><a href="/what-is-the-new-army-physical-fitness-test.html">What Is The New Army Physical Fitness Test</a></li>
+													<li class="list-group-item"><a href="/what-is-the-post-911-gi-bill-bah-rate.html">What Is The Post 911 Gi Bill Bah Rate</a></li>
+													<li class="list-group-item"><a href="/what-is-the-oath-of-office-for-military-officers.html">What Is The Oath Of Office For Military Officers</a></li>
+													<li class="list-group-item"><a href="/what-is-the-null-hypothesis-for-a-t-test.html">What Is The Null Hypothesis For A T Test</a></li>
+													<li class="list-group-item"><a href="/what-is-the-new-cola-for-2021.html">What Is The New Cola For 2021</a></li>
+													<li class="list-group-item"><a href="/what-is-the-post-911-gi-bill-worth.html">What Is The Post 911 Gi Bill Worth</a></li>
+													<li class="list-group-item"><a href="/what-is-the-normal-rating-for-ptsd.html">What Is The Normal Rating For Ptsd</a></li>
+													<li class="list-group-item"><a href="/what-is-the-physical-fitness-test-for-the-canadian-military.html">What Is The Physical Fitness Test For The Canadian Military</a></li>
+													<li class="list-group-item"><a href="/what-is-the-salary-of-a-financial-advisor.html">What Is The Salary Of A Financial Advisor</a></li>
+													<li class="list-group-item"><a href="/what-is-the-national-guard-in-us.html">What Is The National Guard In Us</a></li>
+													<li class="list-group-item"><a href="/what-is-the-salary-of-pakistan-army-chief.html">What Is The Salary Of Pakistan Army Chief</a></li>
+													<li class="list-group-item"><a href="/what-is-the-salary-of-hr-recruiter.html">What Is The Salary Of Hr Recruiter</a></li>
+													<li class="list-group-item"><a href="/what-is-the-percentage-for-sleep-apnea-with-the-va.html">What Is The Percentage For Sleep Apnea With The Va</a></li>
+													<li class="list-group-item"><a href="/what-is-the-proposed-cola-for-2021.html">What Is The Proposed Cola For 2021</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

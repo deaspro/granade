@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does It Cost To Go To The University Of Florida - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does It Cost To Go To The University Of Florida",
+  "datePublished": "2021-02-14",
+  "image": "https://www.timeshighereducation.com/student/sites/default/files/south_beach_miami.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+it+cost+to+go+to+the+university+of+florida",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does It Cost To Go To The University Of Florida</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">U of F tuition and fees is nearly wholly reduced for residents of Florida. The aforementioned cost estimates include the following. Weve also included financial aid information to help you pay for college. <br>				
+			</p>
+										<a class="badge badge-dark" href="/va-supplemental-claim-example.html">va supplemental claim example</a>
+											<a class="badge badge-success" href="/va-survivor-benefits-and-medicaid.html">va survivor benefits and medicaid</a>
+											<a class="badge badge-danger" href="/va-survivor-benefits-direct-deposit.html">va survivor benefits direct deposit</a>
+											<a class="badge badge-secondary" href="/va-supplemental-claim-time.html">va supplemental claim time</a>
+											<a class="badge badge-primary" href="/va-supplemental-claim-reddit.html">va supplemental claim reddit</a>
+											<a class="badge badge-primary" href="/va-student-payment-schedule-2019.html">va student payment schedule 2019</a>
+											<a class="badge badge-dark" href="/va-t-il-pleuvoir-dans-lheure-dijon.html">va t il pleuvoir dans lheure dijon</a>
+											<a class="badge badge-danger" href="/va-student-loan-repayment-program-for-veterans.html">va student loan repayment program for veterans</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the right blog.  Our website gives you hints for viewing the highest quality video and picture content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://admissions.ufl.edu/img/UF_Signature.svg" data-lightbox="roadtrip" data-title="Tuition And Fees University Of Florida">
+											<img class="card-img v-image ads-img " src="https://admissions.ufl.edu/img/UF_Signature.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVG51AzIrrb9wrVEV3dvpJxAKNsSjVHACqRQ';" alt="Tuition And Fees University Of Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tuition And Fees University Of Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/bb/db/d0bbdb7e369585fe480a4659f504e73a.jpg" data-lightbox="roadtrip" data-title="Pin On Work From Home Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/bb/db/d0bbdb7e369585fe480a4659f504e73a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsv8wh9f2QZH9HtctpHp555j9BofO21NHMEw';" alt="Pin On Work From Home Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Work From Home Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/86/7b/cd867bace6712c67668d01aa51d8558f.jpg" data-lightbox="roadtrip" data-title="Pin On My Beautiful Collections">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/86/7b/cd867bace6712c67668d01aa51d8558f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrgNcAtuDZcUCYjhYf6xZPSD_7ChZ4AQ9o-A';" alt="Pin On My Beautiful Collections">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Beautiful Collections</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/cb/09/16cb097e4339a926596f93e6974b3cce.jpg" data-lightbox="roadtrip" data-title="When You Visit Uf You Will See Century Tower Which Was Built In 1953 It Was Built To Honor Uf Students And University Of Florida Gainesville Florida Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/cb/09/16cb097e4339a926596f93e6974b3cce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI1YoVik8KjzdhEkUgcuaqtSvaQaCX7_VKvA';" alt="When You Visit Uf You Will See Century Tower Which Was Built In 1953 It Was Built To Honor Uf Students And University Of Florida Gainesville Florida Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When You Visit Uf You Will See Century Tower Which Was Built In 1953 It Was Built To Honor Uf Students And University Of Florida Gainesville Florida Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/f8/30/37f8306d582b8212b64ca51ec8198fc7.jpg" data-lightbox="roadtrip" data-title="Things Uf Students Pay For And Do Not Use Colleges In Florida University Of Florida Gainesville Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/f8/30/37f8306d582b8212b64ca51ec8198fc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7qO45BQynrPhxIWjBsLjERvm2BAProM-_w';" alt="Things Uf Students Pay For And Do Not Use Colleges In Florida University Of Florida Gainesville Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Things Uf Students Pay For And Do Not Use Colleges In Florida University Of Florida Gainesville Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.timeshighereducation.com/student/sites/default/files/south_beach_miami.jpg" data-lightbox="roadtrip" data-title="Best Universities In Florida Student">
+											<img class="card-img v-image ads-img " src="https://www.timeshighereducation.com/student/sites/default/files/south_beach_miami.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQChSpfPug91HAyIcdz5oxGDkCtiOAcjnCTEw';" alt="Best Universities In Florida Student">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Universities In Florida Student</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/93/a9/90/93a990da437667f0feb1598230b5379d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQChSpfPug91HAyIcdz5oxGDkCtiOAcjnCTEw';" alt="Best Universities In Florida Student">
+										<div class="card-body">
+						<h3 class="h5"><b>This fee is comprised of 4477 for tuition 10220 room and board 850 for books and supplies and 1904 for other fees.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does it cost to go to the university of florida</strong>. 
+								
+																	2020-21 UF Online Cost of Attendance. 
+																	For the 201819 academic year tuition and fees were 6381 for in-state undergraduate students and 28658 for out-of-state undergraduate students. 
+																	13692 is the average net price across all students. 
+																	Best Coding Bootcamps Best Online Bootcamps Best Web Design Bootcamps Best Data Science Bootcamps Best Data Analytics Bootcamps Best Cyber. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The University of Florida is proud to offer several enrollment paths for undergraduates all of which lead to the same prestigious UF degree. 
+																	This is 45 cheaper than the national average public four year tuition of 7357. 
+																	In Fall 2015 the University of Florida launched the. 
+																	The cost is 73 cheaper than the average Florida tuition of 14934 for 4 year colleges. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SFA has prepared a UF Online Cost of Attendance showing the lower cost of tuition and fees for UF Online students versus traditional on-campus students. 
+																	UF Net Price Calculator. 
+																	This fee is comprised of 4281 for tuition 9720 room and board 1200 for books and supplies and 2108 for other fees. 
+																	Out-of-state students paid 43529. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The costs below reflect estimated expenses. 
+																	Average and ranks Florida in the middle of the pack as the 27th most expensive and 26th most affordable state or district to attend college. 
+																	The overall cost for on-campus in-state students to attend University of Florida in 2019 - 2020 was 21211. 
+																	For in-state students tuition and fees is set at 6381 for the 2019 - 2020 year 777 off the price charged to out-of-state students. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PaCE students should refer to the UF Online Cost of Attendance. 
+																	Tuition University of Florida fees bookssupplies food transportation clothingmiscellaneous personal housing computer and. 
+																	The cost is 70 cheaper than the average Florida tuition of 14934 for 4 year colleges. 
+																	Because the University of Florida is a public school students pay different rates for in-state and out-of-state tuition. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Out of state residents are charged a total cost of 35097 which is 642 higher than Florida residents. 
+																	Out of state residents are charged a total cost of 37880 which is 68 higher than Florida residents. 
+																	Department of Educations 2020 IPEDS survey response for University of North Florida and represent reported costs for the 2019-2020. 
+																	Price data from the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Two important factors that affect the net price you will pay to attend University of Florida are where you will be living either on-campus or off and whether or not you will be receiving any grants or scholarships. 
+																	Florida State University tuition is 4022 per year for in-state residents. 
+																	Below weve mapped out the tuition and fees that will help you understand how much you will pay for University of Florida. 
+																	What does it cost to attend University of Florida. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Residents of Florida pay an annual total price of 22548 to attend University of Central Florida on a full time basis. 
+																	This fee is comprised of 4478 for tuition 10010 room and board 1200 for books and supplies and 1890 for other fees. 
+																	The University of Florida is annually recognized as one of the best values in higher education by national publications that evaluate academic quality and cost. 
+																	This is 694 lower than the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To calculate future costs we looked at the prior five years of data and determined that this cost increased an average of 04 each year. 
+																	For the 2016-2017 school year students who resided in state paid 21251 to attend UF. 
+																	If youd like to get a personal estimated cost of attendance based on your situation use our. 
+																	The UF Net Price Calculator estimates the amount of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The total tuition and living expense budget for in-state Florida residents to go to UNF is 21379 for the 20192020 academic year. 
+																	Residents of Florida pay an annual total price of 21379 to attend University of North Florida on a full time basis. 
+																	Residents of Florida pay an annual total price of 21211 to attend University of Florida on a full time basis. 
+																	Out-of-state students who dont have Florida residence can expect a one year cost of 35097. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The average student will pay a total net price of 13692. 
+																	For estimated cost of attendance information for each program click on the links below. 
+																	This is 39 cheaper than the national average public four year tuition of 7357. 
+																	Tuition is 4477 and fees 1904. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Out of state residents are charged a total cost of 42428 which is 100 higher than Florida residents. 
+																	Your costs may vary. 
+																	University of Florida tuition is 4477 per year for in-state residents. 
+																	How much does University of Florida cost. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Current Tuition Rates. 
+																	Tuition for online courses is lower and for graduate courses is higher. 
+																	The average annual in-state college tuition in Florida was 13971 for the 2019-2020 academic year. 
+																	Learn more about the total price for in-state and out-of-state students at University of Florida. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All Star Projects Web Development Mobile Development Design Data Science. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/03/96/ff/0396ffc308c82e15a45425ef9d10a67d.jpg" data-lightbox="roadtrip" data-title="Welcome To Katelyn Jaime Sara And Crystal University Of Florida Colleges In Florida Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/03/96/ff/0396ffc308c82e15a45425ef9d10a67d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXD9I3CdGhxuhCWPvuD5iWX0fINUH4AdQ8cA';" alt="Welcome To Katelyn Jaime Sara And Crystal University Of Florida Colleges In Florida Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Welcome To Katelyn Jaime Sara And Crystal University Of Florida Colleges In Florida Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/2e/2b/362e2bcc00bead6572cd91d992c2d4cd.jpg" data-lightbox="roadtrip" data-title="University Of Florida Humans Of University Colleges In Florida University Of Florida University Of Michigan Campus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/2e/2b/362e2bcc00bead6572cd91d992c2d4cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1I37R2M5uAvMiEXSbvJDbPQvZJhKHfuAJzw';" alt="University Of Florida Humans Of University Colleges In Florida University Of Florida University Of Michigan Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Florida Humans Of University Colleges In Florida University Of Florida University Of Michigan Campus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/06/a9/ef06a9796282cd0d98e2d63dba17edd7.jpg" data-lightbox="roadtrip" data-title="University Of Florida Limited Edition Varsity Crew Pink Victoria S Secret Florida Gators Football Uf Outfits Florida Gators">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/06/a9/ef06a9796282cd0d98e2d63dba17edd7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQieLyKtEK8gL-asoEoSA2CHT8zCWAE5SkY2g';" alt="University Of Florida Limited Edition Varsity Crew Pink Victoria S Secret Florida Gators Football Uf Outfits Florida Gators">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Florida Limited Edition Varsity Crew Pink Victoria S Secret Florida Gators Football Uf Outfits Florida Gators</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/96/26/4f96263aa14f471bbc1f03485430631c.jpg" data-lightbox="roadtrip" data-title="Gatorade Was Developed At The University Of Florida Gainesville Fl By Dr Robert Cade Gatorade R Florida Gators Football Florida Football Gators Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/96/26/4f96263aa14f471bbc1f03485430631c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTL9qYBL1ffkaRMrGpZvmgHa1OwuJX_C9Fkg';" alt="Gatorade Was Developed At The University Of Florida Gainesville Fl By Dr Robert Cade Gatorade R Florida Gators Football Florida Football Gators Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gatorade Was Developed At The University Of Florida Gainesville Fl By Dr Robert Cade Gatorade R Florida Gators Football Florida Football Gators Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/e3/df/47e3df7795ca787f502e674044c5b1b0.jpg" data-lightbox="roadtrip" data-title="Gainesville Florida Landmark State Giclee Print By Paintedpost 15 00 Paintedpoststudio University Of Florida Uf Gator Painted Post Gator Nation Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/e3/df/47e3df7795ca787f502e674044c5b1b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR1R4NX43ZiX0rWWBr25_n0zrhru2esM8GIQ';" alt="Gainesville Florida Landmark State Giclee Print By Paintedpost 15 00 Paintedpoststudio University Of Florida Uf Gator Painted Post Gator Nation Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gainesville Florida Landmark State Giclee Print By Paintedpost 15 00 Paintedpoststudio University Of Florida Uf Gator Painted Post Gator Nation Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6f/4a/45/6f4a4551d3b7efb358851586c45e9922.jpg" data-lightbox="roadtrip" data-title="Here Is Florida State University S Tuition Success Analysis Florida State University Colleges In Florida Florida State University Campus">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6f/4a/45/6f4a4551d3b7efb358851586c45e9922.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ELRN3VHv26ndUxjJU7kP7FmlV-0WNqIMNQ';" alt="Here Is Florida State University S Tuition Success Analysis Florida State University Colleges In Florida Florida State University Campus">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Is Florida State University S Tuition Success Analysis Florida State University Colleges In Florida Florida State University Campus</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/6e/c5/456ec5dbd71a9bbfabe4894476b0b638.png" data-lightbox="roadtrip" data-title="University Of Florida Nursing Personal Statement Sample Personal Statement University Of Florida Personal Statement Examples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/6e/c5/456ec5dbd71a9bbfabe4894476b0b638.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlYu_Y9_qyhwiC7Jd7yxDYsQE9O6xcgk91WQ';" alt="University Of Florida Nursing Personal Statement Sample Personal Statement University Of Florida Personal Statement Examples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Florida Nursing Personal Statement Sample Personal Statement University Of Florida Personal Statement Examples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a0/c9/19/a0c919e62908e4d734a56cae87137d87.jpg" data-lightbox="roadtrip" data-title="University Of South Florida Main Campus Tuition Ranking Admissions News University Of South Florida Florida Schools University Of South">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a0/c9/19/a0c919e62908e4d734a56cae87137d87.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFb53M7uNv1XCEPgwmblYO8o7P77lV5i00qQ';" alt="University Of South Florida Main Campus Tuition Ranking Admissions News University Of South Florida Florida Schools University Of South">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of South Florida Main Campus Tuition Ranking Admissions News University Of South Florida Florida Schools University Of South</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/c1/10/cdc1109f543a38730d21e160047750c4.jpg" data-lightbox="roadtrip" data-title="University Of Florida Viking Party Frat Work Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/c1/10/cdc1109f543a38730d21e160047750c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1WU9O7GgvV4s8laQMTShQ1u5JynHdQXGDvg';" alt="University Of Florida Viking Party Frat Work Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">University Of Florida Viking Party Frat Work Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/ed/15/75ed1508c99e151934bbb0aa72d5e2ff.jpg" data-lightbox="roadtrip" data-title="Bull Gator The University Of Florida Find Housing Near Uf Today Cool Apartments University Of Florida Gator Nation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/ed/15/75ed1508c99e151934bbb0aa72d5e2ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt5wVUqc4Tq5SiCNlNTTDqO77CyMACDkb8ZA';" alt="Bull Gator The University Of Florida Find Housing Near Uf Today Cool Apartments University Of Florida Gator Nation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bull Gator The University Of Florida Find Housing Near Uf Today Cool Apartments University Of Florida Gator Nation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/a9/90/93a990da437667f0feb1598230b5379d.jpg" data-lightbox="roadtrip" data-title="Pin By Natalie Smith On Did It University Of Florida University Florida">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/a9/90/93a990da437667f0feb1598230b5379d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRYDThlZRp-HtDmubFVRnmpydo9YoZ4XPe0g';" alt="Pin By Natalie Smith On Did It University Of Florida University Florida">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Natalie Smith On Did It University Of Florida University Florida</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/38/0d/63380df79f1ccb6e74dc6286379c26e2.jpg" data-lightbox="roadtrip" data-title="How Sport Stadiums Are Optimizing The Fan Experience Sports Stadium Stadium Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/38/0d/63380df79f1ccb6e74dc6286379c26e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7b4NgXBiESK6bJo3V39jK3dpKbSsw55H-Og';" alt="How Sport Stadiums Are Optimizing The Fan Experience Sports Stadium Stadium Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Sport Stadiums Are Optimizing The Fan Experience Sports Stadium Stadium Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/bd/1f/2ebd1f9c30b42f7bd5009ba439672c99.jpg" data-lightbox="roadtrip" data-title="Modern Home Of Electrical Engineering And Computer Science At The The University Of Central Florida University Of Central Florida Ucf College Graduate Program">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/bd/1f/2ebd1f9c30b42f7bd5009ba439672c99.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5cfXsB-sK0QWPPEX51Bzan0Lui-ITOrZgcQ';" alt="Modern Home Of Electrical Engineering And Computer Science At The The University Of Central Florida University Of Central Florida Ucf College Graduate Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modern Home Of Electrical Engineering And Computer Science At The The University Of Central Florida University Of Central Florida Ucf College Graduate Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-benefits-do-you-get-as-a-military-spouse.html">What Benefits Do You Get As A Military Spouse</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-veterans-get-in-canada.html">What Benefits Do Veterans Get In Canada</a></li>
+													<li class="list-group-item"><a href="/what-are-va-survivor-benefits.html">What Are Va Survivor Benefits</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-100-disabled-veterans-get-in-arizona.html">What Benefits Do 100 Disabled Veterans Get In Arizona</a></li>
+													<li class="list-group-item"><a href="/what-army-jobs-have-bonuses.html">What Army Jobs Have Bonuses</a></li>
+													<li class="list-group-item"><a href="/what-benefits-are-available-for-widows-of-veterans.html">What Benefits Are Available For Widows Of Veterans</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-disabled-veterans-receive.html">What Benefits Do Disabled Veterans Receive</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-first-responders-get.html">What Benefits Do First Responders Get</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-va-employees-get.html">What Benefits Do Va Employees Get</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-90-disabled-veterans-get-in-virginia.html">What Benefits Do 90 Disabled Veterans Get In Virginia</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-veterans-dependents-get.html">What Benefits Do Veterans Dependents Get</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-disabled-veterans-get-in-florida.html">What Benefits Do Disabled Veterans Get In Florida</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-i-get-with-70-va-disability.html">What Benefits Do I Get With 70 Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-disabled-veterans-get.html">What Benefits Do Disabled Veterans Get</a></li>
+													<li class="list-group-item"><a href="/what-benefits-can-i-claim-if-my-husband-dies.html">What Benefits Can I Claim If My Husband Dies</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-vietnam-era-veterans-receive.html">What Benefits Do Vietnam Era Veterans Receive</a></li>
+													<li class="list-group-item"><a href="/what-benefits-are-there-for-widows-of-veterans.html">What Benefits Are There For Widows Of Veterans</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-retired-military-receive.html">What Benefits Do Retired Military Receive</a></li>
+													<li class="list-group-item"><a href="/what-benefits-do-you-get-with-100-va-disability.html">What Benefits Do You Get With 100 Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-benefits-are-available-for-widows.html">What Benefits Are Available For Widows</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

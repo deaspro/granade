@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is A Good College To Go To For Interior Design - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is A Good College To Go To For Interior Design",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/ac/e1/0c/ace10c3321e662eb7e045e01f2848ec4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+a+good+college+to+go+to+for+interior+design",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is A Good College To Go To For Interior Design</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Savannah College tops many lists of the best interior design schools. There are no rights nor wrongs in interior design everyone has the potential to design their own home says Vanessa. I made forever friends and received an internship and a longterm job in my first. <br>				
+			</p>
+										<a class="badge badge-light" href="/what-gi-bill-should-i-use.html">what gi bill should i use</a>
+											<a class="badge badge-warning" href="/what-gi-bill-benefits-do-i-have.html">what gi bill benefits do i have</a>
+											<a class="badge badge-light" href="/what-donations-does-vva-accept.html">what donations does vva accept</a>
+											<a class="badge badge-secondary" href="/what-gun-does-the-irish-army-use.html">what gun does the irish army use</a>
+											<a class="badge badge-secondary" href="/what-gi-bill-am-i-eligible-for.html">what gi bill am i eligible for</a>
+											<a class="badge badge-danger" href="/what-gives-you-100-va-disability.html">what gives you 100 va disability</a>
+											<a class="badge badge-warning" href="/what-eyesight-do-you-need-to-join-the-military.html">what eyesight do you need to join the military</a>
+											<a class="badge badge-dark" href="/what-font-is-used-on-military-dog-tags.html">what font is used on military dog tags</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the ideal site.  Our website gives you hints for viewing the maximum quality video and picture content, search and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/de/37/2fde37da711e9ec08eee7cbf48010e98.jpg" data-lightbox="roadtrip" data-title="Best Interior Design School Hupehome Interior Design School Best Interior Design University Interior Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/de/37/2fde37da711e9ec08eee7cbf48010e98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPExB_L2b_Q6En4RnIHLx8PJedQNtUoDG0VA';" alt="Best Interior Design School Hupehome Interior Design School Best Interior Design University Interior Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Interior Design School Hupehome Interior Design School Best Interior Design University Interior Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/12/5e/78125ed90620d4e23525475b7f0e45fb.jpg" data-lightbox="roadtrip" data-title="Best Interior Design School Hupehome University Interior Design Lobby Interior Design Interior Design Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/12/5e/78125ed90620d4e23525475b7f0e45fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeJq-U79brVVw5G4FZdwy1tgbYNMmLzgMUWQ';" alt="Best Interior Design School Hupehome University Interior Design Lobby Interior Design Interior Design Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Interior Design School Hupehome University Interior Design Lobby Interior Design Interior Design Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/fd/d4/b6fdd4b44e1878ad8f8f343b353a2ab2.jpg" data-lightbox="roadtrip" data-title="Student Lounge And Breakout Area From The University Of Sydney Business School University Interior Design Education Design Interior School Interior">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/fd/d4/b6fdd4b44e1878ad8f8f343b353a2ab2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZCgntSS82Wo39XrGbZJ968CqE6is4O8Y7w';" alt="Student Lounge And Breakout Area From The University Of Sydney Business School University Interior Design Education Design Interior School Interior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Student Lounge And Breakout Area From The University Of Sydney Business School University Interior Design Education Design Interior School Interior</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/c4/d1/3bc4d1daf37c9805f68cbe40cff924ad.jpg" data-lightbox="roadtrip" data-title="Trending 10 Top Interior Design Colleges In Thane Home Decor Online Best Interior Design Interior Design Software">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/c4/d1/3bc4d1daf37c9805f68cbe40cff924ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnL_YSFZPZCawjXokoJs0A27SOXtdzZzGR5g';" alt="Trending 10 Top Interior Design Colleges In Thane Home Decor Online Best Interior Design Interior Design Software">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trending 10 Top Interior Design Colleges In Thane Home Decor Online Best Interior Design Interior Design Software</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/8e/5d/558e5dfdddb665cf3b51f025c822b6ef.jpg" data-lightbox="roadtrip" data-title="Best Interior Design School Hupehome University Interior Design Interior Design Programs Interior Design School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/8e/5d/558e5dfdddb665cf3b51f025c822b6ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjT1g_mqVVhw2JZ5qoA5lbJ01P4gy1IDExpw';" alt="Best Interior Design School Hupehome University Interior Design Interior Design Programs Interior Design School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Interior Design School Hupehome University Interior Design Interior Design Programs Interior Design School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/81/17/618117e19930902ca78d7473df264780.jpg" data-lightbox="roadtrip" data-title="Classroom Interior Diseno De Aula Diseno Arquitectonico Mobiliario Escolar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/81/17/618117e19930902ca78d7473df264780.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Uef79MKb-7W4A6BoYIMd3Pz2_QW7uGvSRQ';" alt="Classroom Interior Diseno De Aula Diseno Arquitectonico Mobiliario Escolar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Classroom Interior Diseno De Aula Diseno Arquitectonico Mobiliario Escolar</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/71/c2/17/71c217ea9dd7dc3b96deef9674df2b72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Uef79MKb-7W4A6BoYIMd3Pz2_QW7uGvSRQ';" alt="Classroom Interior Diseno De Aula Diseno Arquitectonico Mobiliario Escolar">
+										<div class="card-body">
+						<h3 class="h5"><b>Design studio participation school facilities Studying interior design allows you to gain an appreciation of the design fundamentals that form the foundation by which design is judged.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is a good college to go to for interior design</strong>. 
+								
+																	Time-Saver Standards for Interior Design and Space Planning The Silver Bible The Interior Designer Productivity Toolbox Phyllis Harbinger A Field Guide to American Houses Virginia Savage McAlester Get Your House Right. 
+																	There are 67 universities and colleges in the UK running Interior Design degree courses or diploma if at a private institution so there is much to choose from. 
+																	Students in the BFA in interior design program gain experience through six different interior design studio courses. 
+																	Technically you do not need a degree to become an interior decorator. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I have enjoyed my time here so much. 
+																	The New York School of Interior Design is the only school on this list that specializes solely in interior design education. 
+																	Its just a matter of getting an eye for it. 
+																	The STEM-certified program offers a flexible curriculum that. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ultimately you must visit the college chat to the staff examine the curriculum in detail find out what costs are involved for books materials and travel ask to see a typical timetable to assess what attendance is required and. 
+																	Do I Need To Go To College For Interior Design. 
+																	Wider societal trends have a huge impact upon interior. 
+																	List of Top Interior Design Colleges In India based on 2021 Ranking Select State Maharashtra 75 Delhi NCR 63 Rajasthan 38 Gujarat 34 Karnataka 33 Uttar Pradesh 29 BDes 258 MDes 49. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 to 3 A levels or. 
+																	Because the answer isnt as simple as you might think. 
+																	Interior Design courses cover each different aspect of the process from initial design to branding to project management to execution with specific modules focussing on colour drawing plans space planning furnishings wall and floor finishes furniture styles lighting and best professional practice all combining to put you on the right path towards becoming an interior designer. 
+																	Explore the academic path to this career to see if its the right one for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The professors are stellar of course there are duds but the majority are chill and want you to go out into the workforce with your best. 
+																	This school is also known for the strength of its industry and alumni networks. 
+																	The BA Hons Interior Design at University of the Arts London Chelsea campus is a three-year programme which will see students work in 3D workshops and photography and digital studios to work on a range of live projects from small-scale furniture and product design through to large-scale proposals for public and private interiors. 
+																	About 18 months ago I signed up for an open learning interior design diploma with KLC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At Cornell interior design is taught through the Design and Environmental Analysis program part of the College of Human Ecology. 
+																	Its curriculum focuses almost entirely on art and design. 
+																	Culminating in a capstone project which provides students with hands-on practical experiences. 
+																	You could take a foundation degree higher national diploma or degree in a relevant subject like. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Make it your own. 
+																	The interior design field is constantly evolving as a result of social technological and fashion trends. 
+																	Learning how to manipulate and apply the tools of design to meet clients needs and goals while staying within an allotted budget are typically a focus within these programs. 
+																	Its also a top-ranked grad school for interior design which indicates strong faculty networking and post-grad opportunities. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Heres the full story warts and all about my experience of doing an interior design diploma and why I subsequently gave it up. 
+																	One of the best most well regarded design schools in the biz. 
+																	Dubai has plenty of universities which offer interior design courses to students. 
+																	10 of the best interior design tips. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is a vibrant city which offers great opportunities for budding interior designers and home to modern architecture and design - from the tallest skyscrapers and. 
+																	The campuses are pretty and the dining halls are themed. 
+																	Remember its your home. 
+																	It is Arizona however so it is blindingly hot and the sewers boil and stink. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Also a student can visit various sites completed by top designers and study their designs. 
+																	At the moment we are seeing colours becoming much darker and dramatic both in interior design and in fashion. 
+																	Learn about what an interior designer is and what interior designers do. 
+																	You may even want to get an advanced degree. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Students seeking a career in interior design must balance not just the artistic side of the profession but also the technical. 
+																	1 or 2 A levels or equivalent for a foundation degree or higher national diploma. 
+																	Working towards this role. 
+																	Many programs also focus on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A student must have a very good aesthetic sense which can be acquired by getting good exposure by reading magazines viewing various appropriate websites related to interior design. 
+																	Basic hand drawing skill. 
+																	The School of Architecture and Interior Design at University of Cincinnati offers a 5-year program emphasizing the physical psychological and social needs of clients and customer. 
+																	92 of students have been employed within 3 months of graduating 71 with starting salaries higher than 40000 a year and are able to resolve problems think critically and use cutting-edge technologies in the field. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Architectural Elements to Use Avoid Marianne Cusato. 
+																	Remember that you are in control taking the latest trends into account is worthwhile but always put your. 
+																	20 Go-To Interior Design Books For Students And Beginners. 
+																	Within the design industries everything links from fashion to interior. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/44/44/034444bbbe796deab0d6a4a49248fe24.jpg" data-lightbox="roadtrip" data-title="Incredible 10 Best Interior Design Book For Beginners Best Interior Design Home Decor Online Interior Design Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/44/44/034444bbbe796deab0d6a4a49248fe24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNjLirVvdqZs3FxAu0kmhKmSF3oZF9n9iCvQ';" alt="Incredible 10 Best Interior Design Book For Beginners Best Interior Design Home Decor Online Interior Design Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Incredible 10 Best Interior Design Book For Beginners Best Interior Design Home Decor Online Interior Design Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4f/9b/41/4f9b41faac19f320d1f6d45973d2e0e7.jpg" data-lightbox="roadtrip" data-title="Best Colleges For Interior Designing Abroad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4f/9b/41/4f9b41faac19f320d1f6d45973d2e0e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAJWBPDHS0q90TDKwEVdiwChyhkTQiT11e_g';" alt="Best Colleges For Interior Designing Abroad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Colleges For Interior Designing Abroad</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/d2/6e/1bd26e5d99fa9d76f610a3956f8e9b2b.jpg" data-lightbox="roadtrip" data-title="Modern College Interior Design By Clive Wilkinson Architects Designtod Interior Design Colleges Best Interior Design Websites Interior Design Courses Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/d2/6e/1bd26e5d99fa9d76f610a3956f8e9b2b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReyt0_DKFsyepFWHSXu3-0KJVq_96fOJzF6A';" alt="Modern College Interior Design By Clive Wilkinson Architects Designtod Interior Design Colleges Best Interior Design Websites Interior Design Courses Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modern College Interior Design By Clive Wilkinson Architects Designtod Interior Design Colleges Best Interior Design Websites Interior Design Courses Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/83/c8/71/83c871222ca2839ce705724809166ca0.jpg" data-lightbox="roadtrip" data-title="Modern College Interior Design By Clive Wilkinson Architects Designtodesign Magazine Designto Interior Design Colleges Campus Design Interior Architecture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/83/c8/71/83c871222ca2839ce705724809166ca0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPXs3v1lc4_2wM_qpQyIEeFW_olP2iJpT3Ig';" alt="Modern College Interior Design By Clive Wilkinson Architects Designtodesign Magazine Designto Interior Design Colleges Campus Design Interior Architecture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modern College Interior Design By Clive Wilkinson Architects Designtodesign Magazine Designto Interior Design Colleges Campus Design Interior Architecture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/eb/2b/22eb2b5842b01e23ee69b5943ad7b58b.jpg" data-lightbox="roadtrip" data-title="Modern College Interior Design By Clive Wilkinson Architects Designtodesign Magaz Interior Design Colleges University Interior Design Interior Design School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/eb/2b/22eb2b5842b01e23ee69b5943ad7b58b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDEpQYDp3CQu6Bk6YEwEpYfO7IyDvAjRHSBw';" alt="Modern College Interior Design By Clive Wilkinson Architects Designtodesign Magaz Interior Design Colleges University Interior Design Interior Design School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modern College Interior Design By Clive Wilkinson Architects Designtodesign Magaz Interior Design Colleges University Interior Design Interior Design School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/67/b5/ed67b5bddb91c91e12412c7972f0e809.jpg" data-lightbox="roadtrip" data-title="Marvelous 27 Beegcom Top Interior Design University In The World Top Interior Design Firms Best Interior Design Interior Design School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/67/b5/ed67b5bddb91c91e12412c7972f0e809.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZBw9AjPZ2ql7BSfFFgqw7Qut9Th74S8LauA';" alt="Marvelous 27 Beegcom Top Interior Design University In The World Top Interior Design Firms Best Interior Design Interior Design School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marvelous 27 Beegcom Top Interior Design University In The World Top Interior Design Firms Best Interior Design Interior Design School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/e1/0c/ace10c3321e662eb7e045e01f2848ec4.jpg" data-lightbox="roadtrip" data-title="Emmanuelle Moureaux Technical Chef College Utsunomiya Interior Design Colleges Interior Design Programs Interior Design School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/e1/0c/ace10c3321e662eb7e045e01f2848ec4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbtP75lEaO15xscgEo6Gi53Lyt3BPKTyesGQ';" alt="Emmanuelle Moureaux Technical Chef College Utsunomiya Interior Design Colleges Interior Design Programs Interior Design School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emmanuelle Moureaux Technical Chef College Utsunomiya Interior Design Colleges Interior Design Programs Interior Design School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/38/00/1f38003730201b8a644cfb432ccbac72.jpg" data-lightbox="roadtrip" data-title="Inside Cingel College S Breda Campus Office Interior Design Interior Design Colleges Campus Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/38/00/1f38003730201b8a644cfb432ccbac72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBjHVrOTNzcLDBasPoDOW-3g5rQ5PSERNWTw';" alt="Inside Cingel College S Breda Campus Office Interior Design Interior Design Colleges Campus Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Inside Cingel College S Breda Campus Office Interior Design Interior Design Colleges Campus Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/e1/fd/4de1fd87a77373246147bd44e7c7643a.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/e1/fd/4de1fd87a77373246147bd44e7c7643a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRB6M9t5z_KXXhvCBzJalJkigudcEUzas34g';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/12/bc/4012bc8d42326c7e9a777fd1596c1bca.jpg" data-lightbox="roadtrip" data-title="Golden West College Steinberg Architects Interior Design Colleges Stairs Architecture School Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/12/bc/4012bc8d42326c7e9a777fd1596c1bca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQajXZ4p_oZ65aZaiMLmydADbZxDAwH4m4iRQ';" alt="Golden West College Steinberg Architects Interior Design Colleges Stairs Architecture School Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Golden West College Steinberg Architects Interior Design Colleges Stairs Architecture School Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/6e/23/3b6e23272922e41f355e940ceca969e3.jpg" data-lightbox="roadtrip" data-title="Follow Sebarchitecture For More Amazing Architecture Photography Visit Www Sebdesignstudio Com Home Decor Online Interior Design Colleges">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/6e/23/3b6e23272922e41f355e940ceca969e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4NCBtdN_eUUZw0XM-_nWSBS3mG8_NFBaLhA';" alt="Follow Sebarchitecture For More Amazing Architecture Photography Visit Www Sebdesignstudio Com Home Decor Online Interior Design Colleges">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Follow Sebarchitecture For More Amazing Architecture Photography Visit Www Sebdesignstudio Com Home Decor Online Interior Design Colleges</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/c2/17/71c217ea9dd7dc3b96deef9674df2b72.jpg" data-lightbox="roadtrip" data-title="Pin By Jonathan Chung On Type Charter Schools Interior Design School Interior Design Colleges Best Interior Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/c2/17/71c217ea9dd7dc3b96deef9674df2b72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEA3plYz93xsin7FY-f6p3woaZ7jDN5PfNhA';" alt="Pin By Jonathan Chung On Type Charter Schools Interior Design School Interior Design Colleges Best Interior Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jonathan Chung On Type Charter Schools Interior Design School Interior Design Colleges Best Interior Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/0f/e4/1c0fe4ad82e9023795c514fc3deefad6.jpg" data-lightbox="roadtrip" data-title="Designer Cooking Schools The Cool Hunter Interior Design Colleges Interior Design School Best Interior Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/0f/e4/1c0fe4ad82e9023795c514fc3deefad6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_h_z0PN7NCzSUuIRGxHVQIPXtuxqTNvGuw';" alt="Designer Cooking Schools The Cool Hunter Interior Design Colleges Interior Design School Best Interior Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Designer Cooking Schools The Cool Hunter Interior Design Colleges Interior Design School Best Interior Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ventura-college-womens-basketball-schedule.html">Ventura College Womens Basketball Schedule</a></li>
+													<li class="list-group-item"><a href="/vaticanva-in-english.html">Vaticanva In English</a></li>
+													<li class="list-group-item"><a href="/valium-with-food-or-empty-stomach.html">Valium With Food Or Empty Stomach</a></li>
+													<li class="list-group-item"><a href="/vehicle-inspection-army-form.html">Vehicle Inspection Army Form</a></li>
+													<li class="list-group-item"><a href="/ve-lawyers.html">Ve Lawyers</a></li>
+													<li class="list-group-item"><a href="/valium-while-pregnant.html">Valium While Pregnant</a></li>
+													<li class="list-group-item"><a href="/valium-onset-peak-duration.html">Valium Onset Peak Duration</a></li>
+													<li class="list-group-item"><a href="/valium-quizlet.html">Valium Quizlet</a></li>
+													<li class="list-group-item"><a href="/vertigo-secondary-to-migraines-va-disability.html">Vertigo Secondary To Migraines Va Disability</a></li>
+													<li class="list-group-item"><a href="/ves-va-claim-reddit.html">Ves Va Claim Reddit</a></li>
+													<li class="list-group-item"><a href="/valium-prior-to-procedure.html">Valium Prior To Procedure</a></li>
+													<li class="list-group-item"><a href="/valley-college-gymnastics-classes.html">Valley College Gymnastics Classes</a></li>
+													<li class="list-group-item"><a href="/vasomotor-rhinitis-va-disability.html">Vasomotor Rhinitis Va Disability</a></li>
+													<li class="list-group-item"><a href="/vassar-college-womens-basketball-roster.html">Vassar College Womens Basketball Roster</a></li>
+													<li class="list-group-item"><a href="/veap-gi-bill.html">Veap Gi Bill</a></li>
+													<li class="list-group-item"><a href="/verify-gi-bill-eligibility.html">Verify Gi Bill Eligibility</a></li>
+													<li class="list-group-item"><a href="/valium-withdrawals.html">Valium Withdrawals</a></li>
+													<li class="list-group-item"><a href="/vanderbilt-university-go-for-the-gold.html">Vanderbilt University Go For The Gold</a></li>
+													<li class="list-group-item"><a href="/verso-virginia-department-education.html">Verso Virginia Department Education</a></li>
+													<li class="list-group-item"><a href="/vehicle-inspection-sheet-army.html">Vehicle Inspection Sheet Army</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

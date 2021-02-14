@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Does Adjustment Disorder With Mixed Disturbance Of Emotions And Conduct Mean - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Does Adjustment Disorder With Mixed Disturbance Of Emotions And Conduct Mean",
+  "datePublished": "2021-02-14",
+  "image": "https://slideplayer.com/slide/17045796/98/images/3/Categories+of+Adjustment+Disorder.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+does+adjustment+disorder+with+mixed+disturbance+of+emotions+and+conduct+mean",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Does Adjustment Disorder With Mixed Disturbance Of Emotions And Conduct Mean</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Once the stressor s are removed or the person begins to adjust and cope the symptoms of disturbance of conduct subside within six months. As with adjustment disorder with depressed mood adjustment disorder with anxiety and adjustment disorder with mixed anxiety and depressed moods adjustment disorder with disturbance of conduct is time-limited. A related type of the disorder is adjustment disorder with mixed disturbance of emotions and conduct. <br>				
+			</p>
+										<a class="badge badge-dark" href="/what-do-gi-bill-mean.html">what do gi bill mean</a>
+											<a class="badge badge-light" href="/what-did-you-go-to-college-for.html">what did you go to college for</a>
+											<a class="badge badge-primary" href="/what-did-the-gi-bill-of-rights-provide-soldiers-returning-from-world-war-ii.html">what did the gi bill of rights provide soldiers returning from world war ii</a>
+											<a class="badge badge-warning" href="/what-did-helen-keller-go-to-college-for.html">what did helen keller go to college for</a>
+											<a class="badge badge-warning" href="/what-department-does-homeland-security-fall-under.html">what department does homeland security fall under</a>
+											<a class="badge badge-info" href="/what-department-stores-have-military-discount.html">what department stores have military discount</a>
+											<a class="badge badge-danger" href="/what-discounts-are-available-for-veterans.html">what discounts are available for veterans</a>
+											<a class="badge badge-danger" href="/what-did-neil-armstrong-go-to-college-for.html">what did neil armstrong go to college for</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you have come to visit the right blog.  Our website provides you with suggestions for viewing the maximum quality video and picture content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this video that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.consultant360.com/sites/default/files/transfer/Screen_Shot_2017-06-22_at_3.03.23_PM.png" data-lightbox="roadtrip" data-title="Adjustment Disorders In The Older Adult Consultant360">
+											<img class="card-img v-image ads-img " src="https://www.consultant360.com/sites/default/files/transfer/Screen_Shot_2017-06-22_at_3.03.23_PM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlGnFoTnjkEiQ3P52Sf_qXPTQ0__G08WwXgQ';" alt="Adjustment Disorders In The Older Adult Consultant360">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adjustment Disorders In The Older Adult Consultant360</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.researchgate.net/profile/Patricia_Casey/publication/24191804/figure/tbl1/AS:601688046059547@1520465017610/DSM-IV-and-ICD-10-criteria-for-adjustment-disorders-Diagnostic-criteria-for-adjustment.png" data-lightbox="roadtrip" data-title="Dsm Iv And Icd 10 Criteria For Adjustment Disorders Diagnostic Criteria Download Table">
+											<img class="card-img v-image ads-img " src="https://www.researchgate.net/profile/Patricia_Casey/publication/24191804/figure/tbl1/AS:601688046059547@1520465017610/DSM-IV-and-ICD-10-criteria-for-adjustment-disorders-Diagnostic-criteria-for-adjustment.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXe1eW8LTjWWH8y6FR6d29TsBRuwG_A_TpQA';" alt="Dsm Iv And Icd 10 Criteria For Adjustment Disorders Diagnostic Criteria Download Table">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dsm Iv And Icd 10 Criteria For Adjustment Disorders Diagnostic Criteria Download Table</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.researchgate.net/profile/Patricia_Casey/publication/24191804/figure/tbl1/AS:601688046059547@1520465017610/DSM-IV-and-ICD-10-criteria-for-adjustment-disorders-Diagnostic-criteria-for-adjustment_Q320.jpg" data-lightbox="roadtrip" data-title="Pdf Adjustment Disorder With Depressed Mood A Critique Of Its Dsm Iv And Icd 10 Conceptualisations And Recommendations For The Future">
+											<img class="card-img v-image ads-img " src="https://www.researchgate.net/profile/Patricia_Casey/publication/24191804/figure/tbl1/AS:601688046059547@1520465017610/DSM-IV-and-ICD-10-criteria-for-adjustment-disorders-Diagnostic-criteria-for-adjustment_Q320.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMedISrA_jO-NE6AE-Bph1hyAIN3bWfI-Qg';" alt="Pdf Adjustment Disorder With Depressed Mood A Critique Of Its Dsm Iv And Icd 10 Conceptualisations And Recommendations For The Future">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf Adjustment Disorder With Depressed Mood A Critique Of Its Dsm Iv And Icd 10 Conceptualisations And Recommendations For The Future</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/slide/17045796/98/images/3/Categories+of+Adjustment+Disorder.jpg" data-lightbox="roadtrip" data-title="Adjustment And Impulse Control Disorders Ppt Download">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/slide/17045796/98/images/3/Categories+of+Adjustment+Disorder.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc1mcefap-f_z6BjZqhktd-mLKMbIhnjPhjg';" alt="Adjustment And Impulse Control Disorders Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adjustment And Impulse Control Disorders Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/523012-impulse-control-and-adjustment-disorders-1230226009011820-2/95/impulse-control-and-adjustment-disorders-4-728.jpg?cb=1230197806" data-lightbox="roadtrip" data-title="Impulse Control And Adjustment Disorders">
+											<img class="card-img v-image ads-img " src="https://image.slidesharecdn.com/523012-impulse-control-and-adjustment-disorders-1230226009011820-2/95/impulse-control-and-adjustment-disorders-4-728.jpg?cb=1230197806" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZR5XLide-xlxb3W4zkjUnUlLwsx8sj_GeZQ';" alt="Impulse Control And Adjustment Disorders">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Impulse Control And Adjustment Disorders</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.sanity.io/images/0vv8moc6/psychtimes/cb8d8991b6cfa36ed8d9c7702f79d2778933fdf6-174x245.jpg?auto=format" data-lightbox="roadtrip" data-title="Adjustment Disorders Diagnostic And Treatment Issues Psychiatric Times">
+											<img class="card-img v-image ads-img " src="https://cdn.sanity.io/images/0vv8moc6/psychtimes/cb8d8991b6cfa36ed8d9c7702f79d2778933fdf6-174x245.jpg?auto=format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdoj4NOtiROFIGMyxTBYGwwZBOGNBWMIJh1Q';" alt="Adjustment Disorders Diagnostic And Treatment Issues Psychiatric Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adjustment Disorders Diagnostic And Treatment Issues Psychiatric Times</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.lucidatreatment.com/wp-content/uploads/2014/02/do-you-have-an-adjustment-disorder-.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdoj4NOtiROFIGMyxTBYGwwZBOGNBWMIJh1Q';" alt="Adjustment Disorders Diagnostic And Treatment Issues Psychiatric Times">
+										<div class="card-body">
+						<h3 class="h5"><b>Mixed disturbance of emotions and conduct implying all symptoms are possible Identifying the type of adjustment disorder your loved one has could be challenging which is why learning about their point of view is so essential to helping them.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What does adjustment disorder with mixed disturbance of emotions and conduct mean</strong>. 
+								
+																	Adjustment disorder is a maladaptive response to a psychosocial stressor that occurs when an individual has significant difficulty adjusting to or coping with a stressful psychosocial event. 
+																	An adjustment disorder is an unhealthy emotional or behavioral reaction to a stressful event or change in a persons life. 
+																	A child and adolescent psychiatrist or qualified mental health professional can diagnose adjustment disorder. 
+																	Adjustment disorder with mixed disturbance of emotions and conduct is characterized by excessive reaction to a stressful life event which causes negative behavioral changes and impacts emotional stability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The reaction is more severe than would normally be. 
+																	Where to Get Help for Adjustment Disorders. 
+																	The response happens within 3 months of the stressful event. 
+																	With mixed disturbance of emotions and conduct. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Disturbance of conduct is when the symptoms include rage and antisocial behavior especially when you did not have behavioral problems beforehand. 
+																	Adjustment disorder with disturbance of conduct is usually the diagnosis for children and adolescents who experience temporary symptoms directly related to a stressful life event. 
+																	The DSM-5 defines adjustment disorder as the presence of emotional or behavioral symptoms in response to an identifiable stressor s occurring within 3 months of the onset of the stressor s American Psychiatric Association 2013. 
+																	Symptoms are a mix of depression and anxiety in addition to the behavioral problems. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Adjustment disorder with mixed disturbance of emotions and conduct A person affected by adjustment disorder with mixed disturbance of emotions and conduct may experience a combination of the possible symptoms of adjustment disorder with depressed mood anxiety or disturbance of conduct. 
+																	Adjustment disorder with mixed disturbance of emotions and conduct. 
+																	Adjustment disorder is an extreme emotional or behavioral reaction within 3 months of a stressful or monumental life event. 
+																	A child may violate other peoples rights or violate social norms and rules. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The maladaptive response usually involves otherwise normal emotional and behavioral reactions that manifest more intensely than usual taking into account contextual and cultural factors causing marked. 
+																	Some events that may lead to this problem in a child or teen are. 
+																	Examples include not going to school destroying property driving recklessly or fighting. 
+																	Both emotional and behavioral disturbances are present and include low mood tearfulness anxiety self-harm withdrawal anger and irritability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Adjustment disorder sometimes referred to as situational depression is an abnormal and excessive reaction to an identifiable life stressor. 
+																	Adjustment disorder is characterized by the presence of emotional or behavioral symptoms in response to an identifiable stressor. 
+																	Most often children under the age of 18 are more susceptible to symptoms of this diagnosis but it can affect adults as well. 
+																	Symptoms dont fit the other types of adjustment disorders but often include physical problems problems with family or friends or work or school problems. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Adjustment disorder with disturbance of conduct. 
+																	Adjustment disorder with mixed disturbance of emotions and conduct Symptoms linked to this type of adjustment disorder include depression anxiety and behavioral problems. 
+																	The DSM classifies adjustment disorder as a trauma- and stress-related condition. 
+																	Adjustment disorder can be present with anxiety depressed mood disturbance of emotions and conduct or combinations of these conditions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An adjustment disorder is a mental illness listed in the fifth edition of the Diagnostic and Statistical Manual of Mental Disorders DSM. 
+																	According to the DSM adjustment disorders involve stress that significantly impairs the way a person functions. 
+																	Symptoms include a mix of depression and anxiety as well as behavioral problems. 
+																	Stressors may be a single event or multiple events. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	People may experience an abnormal reaction or a higher level of emotional. 
+																	Adjustment disorder is one of the few psychiatric diagnoses for which the etiology symptoms and course rather than symptoms alone are central to making the diagnosis. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.hopkinsmedicine.org/-/media/feature/noimageavailable.ashx" data-lightbox="roadtrip" data-title="Adjustment Disorders Johns Hopkins Medicine">
+											<img class="card-img v-image ads-img " src="https://www.hopkinsmedicine.org/-/media/feature/noimageavailable.ashx" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJEK40TRPKbM5JcPw1M6F8ayHInpCGrTNSrg';" alt="Adjustment Disorders Johns Hopkins Medicine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adjustment Disorders Johns Hopkins Medicine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.therecoveryvillage.com/wp-content/uploads/2018/11/adjustment-disorder.jpg" data-lightbox="roadtrip" data-title="Adjustment Disorders The Recovery Village Drug And Alcohol Rehab">
+											<img class="card-img v-image ads-img " src="https://www.therecoveryvillage.com/wp-content/uploads/2018/11/adjustment-disorder.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnX3J2kRmUbv62LQGU7cOM8_0c1TOYsU8pw';" alt="Adjustment Disorders The Recovery Village Drug And Alcohol Rehab">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adjustment Disorders The Recovery Village Drug And Alcohol Rehab</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cf-images.us-east-1.prod.boltdns.net/v1/static/1569565975001/e0a4ddab-ba71-4a67-b72d-fded8d031440/243ca7b7-c33b-4ad6-b2f0-af1f140e056a/1280x720/match/image.jpg" data-lightbox="roadtrip" data-title="What Is Adjustment Disorder With Disturbance Of Conduct Mental Disorders Sharecare">
+											<img class="card-img v-image ads-img " src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/1569565975001/e0a4ddab-ba71-4a67-b72d-fded8d031440/243ca7b7-c33b-4ad6-b2f0-af1f140e056a/1280x720/match/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM3HmXJZnk2uA2Pfy2lUGcQiLzz1XbBqbGoA';" alt="What Is Adjustment Disorder With Disturbance Of Conduct Mental Disorders Sharecare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is Adjustment Disorder With Disturbance Of Conduct Mental Disorders Sharecare</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/bookshelf/thumbs/th-mrdsm52016-lrg.png" data-lightbox="roadtrip" data-title="Table 3 19 Dsm Iv To Dsm 5 Adjustment Disorders Comparison Impact Of The Dsm Iv To Dsm 5 Changes On The National Survey On Drug Use And Health Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/bookshelf/thumbs/th-mrdsm52016-lrg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR24xnNIU8ziNQBURql3H6aA05qWC5zwp0A4A';" alt="Table 3 19 Dsm Iv To Dsm 5 Adjustment Disorders Comparison Impact Of The Dsm Iv To Dsm 5 Changes On The National Survey On Drug Use And Health Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Table 3 19 Dsm Iv To Dsm 5 Adjustment Disorders Comparison Impact Of The Dsm Iv To Dsm 5 Changes On The National Survey On Drug Use And Health Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.prismic.io/adahealth%2F28b43647-31ad-44d9-8fb6-f11598c870fd_footer_partner-europeancommission.png?auto=compress,format" data-lightbox="roadtrip" data-title="Signs Of Adjustment Disorder Ada">
+											<img class="card-img v-image ads-img " src="https://images.prismic.io/adahealth%2F28b43647-31ad-44d9-8fb6-f11598c870fd_footer_partner-europeancommission.png?auto=compress,format" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqt2gOLx-W8R4HgaFQerzxJ3NwbrRf8xJkYQ';" alt="Signs Of Adjustment Disorder Ada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Signs Of Adjustment Disorder Ada</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aafp.org/afp/2018/1115/hi-res/afp20181115p584-t3.gif" data-lightbox="roadtrip" data-title="Conduct Disorder Recognition And Management American Family Physician">
+											<img class="card-img v-image ads-img " src="https://www.aafp.org/afp/2018/1115/hi-res/afp20181115p584-t3.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8clOXraEI_x4VXNTBZCNbuYYNZuEaU2wdYQ';" alt="Conduct Disorder Recognition And Management American Family Physician">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Conduct Disorder Recognition And Management American Family Physician</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.verywellmind.com/thmb/h1rfKVIU_2bD_GSUL1VdVuW7hnI=/400x250/filters:no_upscale():max_bytes(150000):strip_icc()/7-things-to-do-if-you-feel-emotional-5081880-FINAL-illo-fb2ad25eb736440989d4c444df2b85f1.png" data-lightbox="roadtrip" data-title="5ayi9atpfddzbm">
+											<img class="card-img v-image ads-img " src="https://www.verywellmind.com/thmb/h1rfKVIU_2bD_GSUL1VdVuW7hnI=/400x250/filters:no_upscale():max_bytes(150000):strip_icc()/7-things-to-do-if-you-feel-emotional-5081880-FINAL-illo-fb2ad25eb736440989d4c444df2b85f1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStI4MB2-iW1Sl3zkUImBBHGXtwJMXYnc-E-w';" alt="5ayi9atpfddzbm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5ayi9atpfddzbm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cedarcresthospital.com/wp-content/uploads/sites/93/2017/05/Adjustment_disorder_Cedar-Crest.jpg" data-lightbox="roadtrip" data-title="Signs Symptoms Of Adjustment Disorder Cedar Crest Hospital">
+											<img class="card-img v-image ads-img " src="https://www.cedarcresthospital.com/wp-content/uploads/sites/93/2017/05/Adjustment_disorder_Cedar-Crest.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFvP2l94U0PD8Jf-bMg_5Yv3c9zw3qZATgw';" alt="Signs Symptoms Of Adjustment Disorder Cedar Crest Hospital">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Signs Symptoms Of Adjustment Disorder Cedar Crest Hospital</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.therecoveryvillage.com/wp-content/uploads/2019/05/Adjustment-Disorder-vs-PTSD.jpg" data-lightbox="roadtrip" data-title="Adjustment Disorder Vs Ptsd The Recovery Village Drug And Alcohol Rehab">
+											<img class="card-img v-image ads-img " src="https://www.therecoveryvillage.com/wp-content/uploads/2019/05/Adjustment-Disorder-vs-PTSD.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwjggZx0y20HRyV2XlP0RVr7HeejPJAR7sg';" alt="Adjustment Disorder Vs Ptsd The Recovery Village Drug And Alcohol Rehab">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adjustment Disorder Vs Ptsd The Recovery Village Drug And Alcohol Rehab</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.lucidatreatment.com/wp-content/uploads/2014/02/do-you-have-an-adjustment-disorder-.jpg" data-lightbox="roadtrip" data-title="Do You Have An Adjustment Disorder Lucida Treatment">
+											<img class="card-img v-image ads-img " src="https://www.lucidatreatment.com/wp-content/uploads/2014/02/do-you-have-an-adjustment-disorder-.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqCPaUMKs5B9th5DIs3r3b1iyCCVhPmvob2A';" alt="Do You Have An Adjustment Disorder Lucida Treatment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Do You Have An Adjustment Disorder Lucida Treatment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.lucidatreatment.com/wp-content/uploads/2019/08/Lucida-NEW-HP-IMAGE4.jpeg" data-lightbox="roadtrip" data-title="Adjustment Disorder Treatment Center Lucida Treatment">
+											<img class="card-img v-image ads-img " src="https://www.lucidatreatment.com/wp-content/uploads/2019/08/Lucida-NEW-HP-IMAGE4.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZLjy-pK7FdN0d6vW8aIq-iI3UUhiJhsM7w';" alt="Adjustment Disorder Treatment Center Lucida Treatment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adjustment Disorder Treatment Center Lucida Treatment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/slide/12759818/77/images/11/ADD+and+ADHD+Document+type%3A+-+Predominantly+inattentive.+-+Predominantly+hyperactive.+-+Combined+type..jpg" data-lightbox="roadtrip" data-title="Implementation Of Icd 10 Deadline Ppt Download">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/slide/12759818/77/images/11/ADD+and+ADHD+Document+type%3A+-+Predominantly+inattentive.+-+Predominantly+hyperactive.+-+Combined+type..jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAME8P60ivMkh8aXTXzRdwOzJjAZ_d1kNmIQ';" alt="Implementation Of Icd 10 Deadline Ppt Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Implementation Of Icd 10 Deadline Ppt Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="g-BqVR8YYDmXlM" data-lightbox="roadtrip" data-title="Http Blogs Uw Edu Brtc Files 2015 01 Neacsiu Et Al 2015 Identity Disturbance Er Pdf">
+											<img class="card-img v-image ads-img " src="g-BqVR8YYDmXlM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS04UYn4NUufvTkxS2Z0D1JTjlREfnqO44-sw';" alt="Http Blogs Uw Edu Brtc Files 2015 01 Neacsiu Et Al 2015 Identity Disturbance Er Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Blogs Uw Edu Brtc Files 2015 01 Neacsiu Et Al 2015 Identity Disturbance Er Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-is-100-schedular-rating-with-the-va.html">What Is 100 Schedular Rating With The Va</a></li>
+													<li class="list-group-item"><a href="/what-i-need-to-do-to-go-to-college.html">What I Need To Do To Go To College</a></li>
+													<li class="list-group-item"><a href="/what-information-is-on-a-us-military-dog-tag.html">What Information Is On A Us Military Dog Tag</a></li>
+													<li class="list-group-item"><a href="/what-is-24-hour-duty-in-the-army.html">What Is 24 Hour Duty In The Army</a></li>
+													<li class="list-group-item"><a href="/what-is-100-va-disability-amount.html">What Is 100 Va Disability Amount</a></li>
+													<li class="list-group-item"><a href="/what-is-100-percent-va-disability.html">What Is 100 Percent Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-is-100-va-disability-rating.html">What Is 100 Va Disability Rating</a></li>
+													<li class="list-group-item"><a href="/what-is-100-compensation-for-va-disability.html">What Is 100 Compensation For Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-heart-conditions-qualify-for-va-disability.html">What Heart Conditions Qualify For Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-my-post-9-11-gi-bill-runs-out.html">What Happens When My Post 9 11 Gi Bill Runs Out</a></li>
+													<li class="list-group-item"><a href="/what-happens-to-a-veterans-pension-when-they-die.html">What Happens To A Veterans Pension When They Die</a></li>
+													<li class="list-group-item"><a href="/what-if-i-live-with-someone-who-tested-positive-for-covid.html">What If I Live With Someone Who Tested Positive For Covid</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-you-divorce-someone-in-the-military.html">What Happens When You Divorce Someone In The Military</a></li>
+													<li class="list-group-item"><a href="/what-is-109l.html">What Is 109l</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-you-lose-both-parents.html">What Happens When You Lose Both Parents</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-a-va-appeal-is-remanded.html">What Happens When A Va Appeal Is Remanded</a></li>
+													<li class="list-group-item"><a href="/what-hr-administrator-do.html">What Hr Administrator Do</a></li>
+													<li class="list-group-item"><a href="/what-happens-to-gi-bill-if-you-fail-a-class.html">What Happens To Gi Bill If You Fail A Class</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-my-post-911-gi-bill-runs-out.html">What Happens When My Post 911 Gi Bill Runs Out</a></li>
+													<li class="list-group-item"><a href="/what-is-100-percent-military-disability-pay.html">What Is 100 Percent Military Disability Pay</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

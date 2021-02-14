@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Benefits Do Korean War Veterans Get - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Benefits Do Korean War Veterans Get",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/41/01/08/41010860440a28144e40c244ba56bfe2.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+benefits+do+korean+war+veterans+get",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Benefits Do Korean War Veterans Get</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The veteran must have served at least 90 days of active duty with at least one day during an eligible period of war. Information for Korean War Veterans. August 5 1964 to May 7 1975 for Veterans who served outside the Republic of Vietnam. <br>				
+			</p>
+										<a class="badge badge-danger" href="/what-is-the-average-va-rating-for-vertigo.html">what is the average va rating for vertigo</a>
+											<a class="badge badge-warning" href="/what-is-the-best-gift-for-a-college-student.html">what is the best gift for a college student</a>
+											<a class="badge badge-success" href="/what-is-the-best-college-to-go-to-for-a-veterinarian.html">what is the best college to go to for a veterinarian</a>
+											<a class="badge badge-dark" href="/what-is-the-annual-budget-of-the-department-of-defense.html">what is the annual budget of the department of defense</a>
+											<a class="badge badge-info" href="/what-is-the-best-college-to-go-to-for-zoology.html">what is the best college to go to for zoology</a>
+											<a class="badge badge-warning" href="/what-is-the-age-limit-for-army-reserves.html">what is the age limit for army reserves</a>
+											<a class="badge badge-dark" href="/what-is-the-army-space-force.html">what is the army space force</a>
+											<a class="badge badge-info" href="/what-is-the-army-ranger-physical-fitness-test.html">what is the army ranger physical fitness test</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the right site.  Our website provides you with suggestions for viewing the highest quality video and picture content, hunt and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/9d/98/c89d9822d2694b05f1ffcf5258289983.jpg" data-lightbox="roadtrip" data-title="Q Who Will Benefit From My Donation We Want To Help All Veterans Who Have Served Our Country And Protected Our Freedom Veteran Support Veterans War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/9d/98/c89d9822d2694b05f1ffcf5258289983.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShiM2ePPLW0AXV5tevU9F3_C9WKHiGUIeHbQ';" alt="Q Who Will Benefit From My Donation We Want To Help All Veterans Who Have Served Our Country And Protected Our Freedom Veteran Support Veterans War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Q Who Will Benefit From My Donation We Want To Help All Veterans Who Have Served Our Country And Protected Our Freedom Veteran Support Veterans War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/01/08/41010860440a28144e40c244ba56bfe2.png" data-lightbox="roadtrip" data-title="Pin On Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/01/08/41010860440a28144e40c244ba56bfe2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHpv9hVZBxZfONQqKtzltdsSEGux5PIdJnvA';" alt="Pin On Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/a1/51/37a151473895235b2a0c80efde6b4d4d.jpg" data-lightbox="roadtrip" data-title="Bronze Vfw Magazine 1950 53 60th Anniversary Korean War Korean War War War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/a1/51/37a151473895235b2a0c80efde6b4d4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5K1oBMkfl42xVQytKoyQ8AoqkJM7ZvCnoYg';" alt="Bronze Vfw Magazine 1950 53 60th Anniversary Korean War Korean War War War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bronze Vfw Magazine 1950 53 60th Anniversary Korean War Korean War War War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/22/30/812230425f5f5b2c03460f0750668af9.jpg" data-lightbox="roadtrip" data-title="Caregivers In Las Vegas Nv National Korean War Veterans Armistice Day Is Observed Every July 27th A Veterans Day Images Older Adults Happy Thanksgiving Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/22/30/812230425f5f5b2c03460f0750668af9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT10FM1hB0Ma6aYORIPnRO30DnNUxZzgzs57A';" alt="Caregivers In Las Vegas Nv National Korean War Veterans Armistice Day Is Observed Every July 27th A Veterans Day Images Older Adults Happy Thanksgiving Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Caregivers In Las Vegas Nv National Korean War Veterans Armistice Day Is Observed Every July 27th A Veterans Day Images Older Adults Happy Thanksgiving Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/dd/a2/eadda23dd1080cbe94fe7297a1a7a518.jpg" data-lightbox="roadtrip" data-title="An Older Veteran Never Forgets His Buddies Lost In The Wars Thank You For Fighting For Our Freedoms Hero American Soldiers Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/dd/a2/eadda23dd1080cbe94fe7297a1a7a518.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYbuFdat9-b_gyrWpuH8dp3GxOa3_2vvJIfA';" alt="An Older Veteran Never Forgets His Buddies Lost In The Wars Thank You For Fighting For Our Freedoms Hero American Soldiers Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An Older Veteran Never Forgets His Buddies Lost In The Wars Thank You For Fighting For Our Freedoms Hero American Soldiers Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/d3/34/ffd33468ba851a1c904b4e4d6e44e123.jpg" data-lightbox="roadtrip" data-title="Most Decorated Us Soldiers Topic Military Honor Military Heroes Medal Of Honor Recipients">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/d3/34/ffd33468ba851a1c904b4e4d6e44e123.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_hLNfVDlgOCoJkowm1NbMyZr3rUQwv5-E5w';" alt="Most Decorated Us Soldiers Topic Military Honor Military Heroes Medal Of Honor Recipients">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Most Decorated Us Soldiers Topic Military Honor Military Heroes Medal Of Honor Recipients</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d5/0f/2a/d50f2a4963ababa925ad11735aa55453.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_hLNfVDlgOCoJkowm1NbMyZr3rUQwv5-E5w';" alt="Most Decorated Us Soldiers Topic Military Honor Military Heroes Medal Of Honor Recipients">
+										<div class="card-body">
+						<h3 class="h5"><b>Maximum Aid Attendance benefit amounts range from 1153 per month for a surviving spouse to 2846 per month for a veteran who is married to another veteran.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What benefits do korean war veterans get</strong>. 
+								
+																	VA benefits for spouses dependents survivors and family caregivers As the spouse or dependent child of a Veteran or service member you may qualify for certain benefits like health care life insurance or money to help pay for school or training. 
+																	Information for Korean War Veterans. 
+																	Widows surviving spouses of Korean Conflict veterans may be eligible for a special long-term care benefit from the Department of Veterans Affairs VA called Aid and Attendance. 
+																	Aid Attendance can help Korean War veterans cover the expense of long-term care. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Korean War Veterans health issues If you served during the Korean Waranytime between June 25 1950 and July 27 1953you may be at risk of certain health conditions. 
+																	The benefit is tax-free and does not need to be paid back. 
+																	Census brief Veterans age 65 or older numbered in excess of 124 million. 
+																	At least one of these must be true. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youre unable to care for yourself due to a disability that happened before age 18. 
+																	Korean War veterans may have been exposed to ionizing radiation during wartime or may have been a part of activities that put them at risk of radiation exposure such as nuclear weapons testing states the US. 
+																	World War II WWII was the most widespread war in history with more than 100 million people serving in military units. 
+																	Youre under age 23 and attending a VA-approved school or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See our Veterans page for an overview of the benefits available to all Veterans. 
+																	About 16 million Americans served during WWII and many of those Veterans are now receiving VA benefits including Pension and Health Care. 
+																	These veterans may be compensated for exams that screen for ionizing radiation-related ailments and they may also receive additional benefits if they develop cancer as a result of exposure. 
+																	Korean War Veterans may be eligible for a wide-variety of benefits available to all US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to the 2012 US. 
+																	The Aid Attendance benefit is a tax-free pension for qualified Korean War veterans their spouses and surviving spouses who need help with some of the activities of daily living. 
+																	Department of Veterans Affairs. 
+																	These Veterans served in conflicts around the world including World War II the Korean War the Vietnam War and even in the Persian Gulf War. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See our Veterans page for an overview of the benefits available to all Veterans. 
+																	Learn about these conditions and what to do next to take care of your health. 
+																	VA benefits include disability compensation pension education and training health care home loans insurance vocational rehabilitation and employment and burial. 
+																	Youre under age 18 or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VA benefits include disability compensation pension education and training health care home loans insurance vocational rehabilitation and employment and burial. 
+																	Among the rumors surrounding benefits and military families there are often questions about benefits that adult children of veterans may be eligible for. 
+																	Heres one such example. 
+																	This tax-free benefit pays up to 1209 per month 14508 per year to help cover the cost of home or facility care. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Korean War Veterans may be eligible for a wide-variety of benefits available to all US. 
+																	World War II December 7 1941 to December 31 1946 Korean conflict June 27 1950 to January 31 1955 Vietnam War era February 28 1961 to May 7 1975 for Veterans who served in the Republic of Vietnam during that period. 
+																	World War II Veterans. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/8e/7a/b68e7ab6c0f9b152786aea1f44dafb07.png" data-lightbox="roadtrip" data-title="White House Threatens To Veto Veterans Benefits Bill Obama Admin Demands Raises For Bureaucrats Funding For R Memorial Day Memorial Day Celebrations Memories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/8e/7a/b68e7ab6c0f9b152786aea1f44dafb07.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMXFhNOkfsREDAQz2rCy3AD11kEe-c5AjTIw';" alt="White House Threatens To Veto Veterans Benefits Bill Obama Admin Demands Raises For Bureaucrats Funding For R Memorial Day Memorial Day Celebrations Memories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">White House Threatens To Veto Veterans Benefits Bill Obama Admin Demands Raises For Bureaucrats Funding For R Memorial Day Memorial Day Celebrations Memories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/63/3a/f5633a6bcf8267406a630e9c90e7ec23.png" data-lightbox="roadtrip" data-title="Air Force Veterans Benefits American Veterans Aid Blog Air Force Veteran Veterans Benefits Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/63/3a/f5633a6bcf8267406a630e9c90e7ec23.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe0SqmnxQqKTFtLZ0IEWChmMqouh2YgXviHw';" alt="Air Force Veterans Benefits American Veterans Aid Blog Air Force Veteran Veterans Benefits Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Veterans Benefits American Veterans Aid Blog Air Force Veteran Veterans Benefits Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b5/28/85/b528851792a64d46c0ba3d23cd2a6e5e.jpg" data-lightbox="roadtrip" data-title="4 1 Million Disabled Veterans Certain Caregivers Can Shop Tax Free In 2020 Disabled Veterans Military Benefits Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b5/28/85/b528851792a64d46c0ba3d23cd2a6e5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbr98ObTjp18EfaKhFJgwnlSDgpd4wQ-gQlQ';" alt="4 1 Million Disabled Veterans Certain Caregivers Can Shop Tax Free In 2020 Disabled Veterans Military Benefits Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4 1 Million Disabled Veterans Certain Caregivers Can Shop Tax Free In 2020 Disabled Veterans Military Benefits Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/75/0e/60750ef853e6895524588d17572cde6f.jpg" data-lightbox="roadtrip" data-title="Korean War Google Search Korean War Veteran Jobs Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/75/0e/60750ef853e6895524588d17572cde6f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG8go47zOvaZ94cf3h9-jDvLNFv4Mkqp2_rw';" alt="Korean War Google Search Korean War Veteran Jobs Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Korean War Google Search Korean War Veteran Jobs Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/2f/40/032f4045d12fa65856eaf486fa59d551.jpg" data-lightbox="roadtrip" data-title="National Korean War Memorial Washington Dc Korean Memorial Wall Washington Dc Korean War Veterans Memorial War Memorial Korean War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/2f/40/032f4045d12fa65856eaf486fa59d551.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTN_2hRFq04gl6zYJUHL_B3cjQdw8gdWGUKA';" alt="National Korean War Memorial Washington Dc Korean Memorial Wall Washington Dc Korean War Veterans Memorial War Memorial Korean War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Korean War Memorial Washington Dc Korean Memorial Wall Washington Dc Korean War Veterans Memorial War Memorial Korean War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/0f/2a/d50f2a4963ababa925ad11735aa55453.jpg" data-lightbox="roadtrip" data-title="Blue Water Vet On Fight For Agent Orange Benefits We Did Our Job They Should Do Theirs Agent Orange Vietnam War Blue Water Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/0f/2a/d50f2a4963ababa925ad11735aa55453.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK4Le6BIN68VepLkhFBbwNmR23QFa5U8MCzw';" alt="Blue Water Vet On Fight For Agent Orange Benefits We Did Our Job They Should Do Theirs Agent Orange Vietnam War Blue Water Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blue Water Vet On Fight For Agent Orange Benefits We Did Our Job They Should Do Theirs Agent Orange Vietnam War Blue Water Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/d0/3b/28d03bc1dcc0372e6037697bb8c7980d.png" data-lightbox="roadtrip" data-title="How To Research A Killed In Action Veteran Of Wwii Korean War Or Vietnam In 2020 Killed In Action African American Genealogy Yellow Lab Puppies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/d0/3b/28d03bc1dcc0372e6037697bb8c7980d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtZ0HjW7_meLhwVFL5yzHe5q5NkwgmxR7DLA';" alt="How To Research A Killed In Action Veteran Of Wwii Korean War Or Vietnam In 2020 Killed In Action African American Genealogy Yellow Lab Puppies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Research A Killed In Action Veteran Of Wwii Korean War Or Vietnam In 2020 Killed In Action African American Genealogy Yellow Lab Puppies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/df/7a/6c/df7a6c56721d2ad8d2446cbed2f6a343.jpg" data-lightbox="roadtrip" data-title="1950 Us Army Recruiting Poster Korean War Era Collectible Print Gift For Veteran Howard Johnson S Ad Us Army Recruiting Army Recruitment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/df/7a/6c/df7a6c56721d2ad8d2446cbed2f6a343.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl9ZGpqKZh3zm_XnVFCcPNfMSv1PB_TVBhdQ';" alt="1950 Us Army Recruiting Poster Korean War Era Collectible Print Gift For Veteran Howard Johnson S Ad Us Army Recruiting Army Recruitment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1950 Us Army Recruiting Poster Korean War Era Collectible Print Gift For Veteran Howard Johnson S Ad Us Army Recruiting Army Recruitment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/ac/d0/6aacd0738078746788b063a3037a238c.jpg" data-lightbox="roadtrip" data-title="The Korean War Veterans Memorial Washington Dc In 2020 Korean War Veterans Memorial War Veterans Veterans Memorial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/ac/d0/6aacd0738078746788b063a3037a238c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLQLGgsMe8hFe0v-m_eTUKh_HSsIckQwOfuQ';" alt="The Korean War Veterans Memorial Washington Dc In 2020 Korean War Veterans Memorial War Veterans Veterans Memorial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Korean War Veterans Memorial Washington Dc In 2020 Korean War Veterans Memorial War Veterans Veterans Memorial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/c9/8e/40c98e8f6cf9b934477afb2cb3bdd0e5.png" data-lightbox="roadtrip" data-title="Raising Veterans Benefits Awareness This Veterans Day Veterans Benefits Veteran Veterans Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/c9/8e/40c98e8f6cf9b934477afb2cb3bdd0e5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGuQaQIIAHXlIMUaYz0CvrGXNmDK597DsNnw';" alt="Raising Veterans Benefits Awareness This Veterans Day Veterans Benefits Veteran Veterans Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Raising Veterans Benefits Awareness This Veterans Day Veterans Benefits Veteran Veterans Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/11/73/fa11733f6f0a501779bfdda8be94575c.jpg" data-lightbox="roadtrip" data-title="The 2nd Korean War Incidents 70s 80s Korean War Military Heroes Korean">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/11/73/fa11733f6f0a501779bfdda8be94575c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCldCp2a8t8SNUKnCMP1EQE6VD44UewN-eZA';" alt="The 2nd Korean War Incidents 70s 80s Korean War Military Heroes Korean">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 2nd Korean War Incidents 70s 80s Korean War Military Heroes Korean</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/fb/8c/49fb8c5a0ea72e319485da7e9a4b0a60.jpg" data-lightbox="roadtrip" data-title="Korean War Veterans Always In Our Hearts Happy Veteran S Day Dad Korean War Korean War Veterans Memorial War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/fb/8c/49fb8c5a0ea72e319485da7e9a4b0a60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgyqr-tORvMf2gfXvn7U2AGl7XHwonW4wCaw';" alt="Korean War Veterans Always In Our Hearts Happy Veteran S Day Dad Korean War Korean War Veterans Memorial War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Korean War Veterans Always In Our Hearts Happy Veteran S Day Dad Korean War Korean War Veterans Memorial War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/32/3a/b0/323ab0b535d8bce2c00fec2328b5c29e.jpg" data-lightbox="roadtrip" data-title="Female Soldiers In South Korea Female Soldier Korean War North Korean Tanks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/32/3a/b0/323ab0b535d8bce2c00fec2328b5c29e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmpMzR2l6-emQuBhrY1nizSr2vu3dZc7klPw';" alt="Female Soldiers In South Korea Female Soldier Korean War North Korean Tanks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Female Soldiers In South Korea Female Soldier Korean War North Korean Tanks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/f1/25/dcf12509cc0cb798ea425bd427c154e0.jpg" data-lightbox="roadtrip" data-title="My Most Memorable Memorial Day Weekend Spent In Washington Dc Military Pride Korean War War Memorial">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/f1/25/dcf12509cc0cb798ea425bd427c154e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhq_k4c18mcegxiV2RBr2ifxfJ2VHLc7DY5w';" alt="My Most Memorable Memorial Day Weekend Spent In Washington Dc Military Pride Korean War War Memorial">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Most Memorable Memorial Day Weekend Spent In Washington Dc Military Pride Korean War War Memorial</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/9f/2b/4d9f2b8c9211ed4adc9a33ae740a9996.jpg" data-lightbox="roadtrip" data-title="Wwii Veteran Dons Uniform For Final Salute Before Dying The Next Day Wwii Veterans Military Heroes War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/9f/2b/4d9f2b8c9211ed4adc9a33ae740a9996.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPuPOetkZ3LN6WzccA37I8krhl68Rb7G2egw';" alt="Wwii Veteran Dons Uniform For Final Salute Before Dying The Next Day Wwii Veterans Military Heroes War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wwii Veteran Dons Uniform For Final Salute Before Dying The Next Day Wwii Veterans Military Heroes War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-health-insurance-does-the-military-use.html">What Health Insurance Does The Military Use</a></li>
+													<li class="list-group-item"><a href="/what-insurance-do-retired-military-have.html">What Insurance Do Retired Military Have</a></li>
+													<li class="list-group-item"><a href="/what-if-a-patient-refuses-to-wear-a-mask.html">What If A Patient Refuses To Wear A Mask</a></li>
+													<li class="list-group-item"><a href="/what-is-100-percent-va-disability-pay.html">What Is 100 Percent Va Disability Pay</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-one-parent-undermines-the-other.html">What Happens When One Parent Undermines The Other</a></li>
+													<li class="list-group-item"><a href="/what-is-100-va-benefits.html">What Is 100 Va Benefits</a></li>
+													<li class="list-group-item"><a href="/what-is-100-percent-permanent-and-total-benefits.html">What Is 100 Percent Permanent And Total Benefits</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-your-spouse-refuses-to-sign-divorce-papers.html">What Happens When Your Spouse Refuses To Sign Divorce Papers</a></li>
+													<li class="list-group-item"><a href="/what-is-30-disability-from-the-va.html">What Is 30 Disability From The Va</a></li>
+													<li class="list-group-item"><a href="/what-is-100-percent-military-disability-pay.html">What Is 100 Percent Military Disability Pay</a></li>
+													<li class="list-group-item"><a href="/what-is-100-percent-schedular-rating.html">What Is 100 Percent Schedular Rating</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-you-call-a-mental-health-crisis-line.html">What Happens When You Call A Mental Health Crisis Line</a></li>
+													<li class="list-group-item"><a href="/what-if-my-gi-bill-runs-out-mid-semester.html">What If My Gi Bill Runs Out Mid Semester</a></li>
+													<li class="list-group-item"><a href="/what-if-my-va-appeal-is-denied.html">What If My Va Appeal Is Denied</a></li>
+													<li class="list-group-item"><a href="/what-is-100-va-disability-payment.html">What Is 100 Va Disability Payment</a></li>
+													<li class="list-group-item"><a href="/what-if-your-spouse-has-covid-and-you-dont.html">What If Your Spouse Has Covid And You Dont</a></li>
+													<li class="list-group-item"><a href="/what-happens-when-a-spouse-dies-without-a-will-in-california.html">What Happens When A Spouse Dies Without A Will In California</a></li>
+													<li class="list-group-item"><a href="/what-is-100-va-disability-pay.html">What Is 100 Va Disability Pay</a></li>
+													<li class="list-group-item"><a href="/what-health-insurance-do-veterans-have.html">What Health Insurance Do Veterans Have</a></li>
+													<li class="list-group-item"><a href="/what-is-24-hour-military-time.html">What Is 24 Hour Military Time</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is Military Law - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is Military Law",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/05/03/4a/05034a47e08df470d0f0f2b54593b27e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+military+law",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is Military Law</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Taking a vehicle without consent. This can include sedition treason war crimes criminal offenses directed towards fellow military personnel and AWOL charges -unlawful desertion of a service member with regard to their respective commitment to the United States Military Law. Some states use special judicial and other arrangements to enforce those laws while others use civilian judicial systems. <br>				
+			</p>
+										<a class="badge badge-dark" href="/what-is-a-permanent-disability-rating-in-california.html">what is a permanent disability rating in california</a>
+											<a class="badge badge-secondary" href="/what-is-a-va-stabilized-rating.html">what is a va stabilized rating</a>
+											<a class="badge badge-secondary" href="/what-is-a-va-rating-decision.html">what is a va rating decision</a>
+											<a class="badge badge-light" href="/what-is-a-ug-pay-band-in-virginia.html">what is a ug pay band in virginia</a>
+											<a class="badge badge-success" href="/what-is-a-va-k-award.html">what is a va k award</a>
+											<a class="badge badge-secondary" href="/what-is-a-va-backfill-rating.html">what is a va backfill rating</a>
+											<a class="badge badge-secondary" href="/what-is-a-va-patient-advocate.html">what is a va patient advocate</a>
+											<a class="badge badge-primary" href="/what-is-a-va-rated-german-shepherd.html">what is a va rated german shepherd</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to pay a visit to the right blog.  Our site provides you with hints for viewing the highest quality video and image content, search and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to view.  You can also contribute to supporting this site by sharing videos and graphics that you like on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/df/ac/dedfacba00b8bddffd0946a57d7dc9fb.jpg" data-lightbox="roadtrip" data-title="If You Re Interested In Legal Work You Might Not Know All Your Options But Knowing What Questions To Ask In 2020 Military Military Jobs Reserve Officer Training Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/df/ac/dedfacba00b8bddffd0946a57d7dc9fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgsTJWHShq-wwxIOumUcoWweT0QZcdrs5oLQ';" alt="If You Re Interested In Legal Work You Might Not Know All Your Options But Knowing What Questions To Ask In 2020 Military Military Jobs Reserve Officer Training Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">If You Re Interested In Legal Work You Might Not Know All Your Options But Knowing What Questions To Ask In 2020 Military Military Jobs Reserve Officer Training Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/ed/1d/55ed1d5d37f8985d8248a6217b78b46d.gif" data-lightbox="roadtrip" data-title="Military Law C Folder With Labeling Gavel And Libra C Law Judgement Lawyer 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/ed/1d/55ed1d5d37f8985d8248a6217b78b46d.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRVYkea_Ho3jOe7v0wbGvOW6Hm10qSQxJmg';" alt="Military Law C Folder With Labeling Gavel And Libra C Law Judgement Lawyer 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Law C Folder With Labeling Gavel And Libra C Law Judgement Lawyer 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/7a/2b/23/7a2b235cdd962d7a26e28205d061c31d.jpg" data-lightbox="roadtrip" data-title="Pin On Peacekeeperguns Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/7a/2b/23/7a2b235cdd962d7a26e28205d061c31d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn3C4bJQw3CTqpqQSV5SgK6nBf3SlfwL1zoA';" alt="Pin On Peacekeeperguns Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Peacekeeperguns Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2f/6d/6b/2f6d6b0707972b6efa427406f890084b.jpg" data-lightbox="roadtrip" data-title="Pin By Leland Pruitt On Halo Security Military Law Enforcement Police Military Police Morale Patch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2f/6d/6b/2f6d6b0707972b6efa427406f890084b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8UwVPQnCsN7vFdlCEdNLh7CbNHpl60YgKDA';" alt="Pin By Leland Pruitt On Halo Security Military Law Enforcement Police Military Police Morale Patch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Leland Pruitt On Halo Security Military Law Enforcement Police Military Police Morale Patch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/54/09/f154091d828fb81f659a2304773524af.jpg" data-lightbox="roadtrip" data-title="Murphy S Military Law Google Search">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/54/09/f154091d828fb81f659a2304773524af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkxcreEsY-NVNDxRxp5xQWDv_n4ccmYBG60g';" alt="Murphy S Military Law Google Search">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Murphy S Military Law Google Search</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/08/1e/14081e6841daa90ff4f3bd6245bfb91f.jpg" data-lightbox="roadtrip" data-title="Murphy 039 S Military Law Imgur Army Humor Military Military Moments">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/08/1e/14081e6841daa90ff4f3bd6245bfb91f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tqPYJtc_GVra2sMptqimjxCb6uUh9djooA';" alt="Murphy 039 S Military Law Imgur Army Humor Military Military Moments">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Murphy 039 S Military Law Imgur Army Humor Military Military Moments</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/dd/59/a5/dd59a5f66e58695713b66e0dd6d724cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tqPYJtc_GVra2sMptqimjxCb6uUh9djooA';" alt="Murphy 039 S Military Law Imgur Army Humor Military Military Moments">
+										<div class="card-body">
+						<h3 class="h5"><b>The body of laws relating to the government of the armed forces.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is military law</strong>. 
+								
+																	It encompasses service in the military the constitutional rights of service members the military criminal justice system and the International Law of armed conflict. 
+																	The term however is generally confined to disciplinary military law as defined aboveie that part of the code that aims at and sanctions the maintenance of discipline in the armed forces. 
+																	Military law The branch of public law governing military discipline and other rules regarding service in the armed forces. 
+																	Military law is the body of law that governs the members of the armed forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The UCMJ applies to all branches of the US military and governs most issues of legal concern for soldiers and others subject to the jurisdiction of US military courts. 
+																	Law prescribed by statute for the government of the armed forces and accompanying civilian employees. 
+																	Military Law The body of laws rules and regulations that have been developed to meet the needs of the military. 
+																	The military offence of criminal conduct covers anything done anywhere in the world that if done in England and Wales would be against the civilian criminal law. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military law is all legal structures that govern military personnel. 
+																	Rules and regulations for the conduct of military personnel. 
+																	The military attorney works exclusively with military personnel and may represent them in civil and criminal cases. 
+																	While the UCMJ is similar to civilian law it is also more strict in several. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The body of law that governs persons in military service. 
+																	Military Attorney and Lawyers A military lawyers job is similar to a civilian lawyer in their day-to-day duties. 
+																	Military law the body of law concerned with the maintenance of discipline in the armed forces. 
+																	The backbone of the military legal system is the Uniform Code of Military Justice UCMJ which applies to all branches. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military law in American English the code of law concerned with the government and discipline of the armed forces see also martial law Websters New World College Dictionary 4th Edition. 
+																	Every state requires a code of laws and regulations for the raising maintenance and administration of its armed forces all of which may be considered the field of military law. 
+																	Military Law As an attorney with a military law-based practice representing veterans military personnel or their families youll want to check out FindLaws collection of articles in the Corporate Counsel Center Law Library to help round out your research. 
+																	Topics covered by military cover service members conduct while in training or on active duty protections of military spouses and service members reentry into civil society when their tours of duty are over. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military law lists all the offenses for which you can be punished under the UCMJ the options and recourse commanders and soldiers sailors Airmen Marines and Coast Guard members have under the law etc. 
+																	The Uniform Code of Military Justice UCMJ governs service members conduct while in training or on active duty. 
+																	Representing clientele under jurisdiction of military courts and law is the primary difference. 
+																	Law enforced by military rather than civil authority. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Military Court Service MCS provides a criminal court service for the Royal Navy RN Army and Royal Air Force RAF in the Court Martial Summary Appeal Court SAC and Service Civilian. 
+																	A Commanding Officer can deal with some criminal conduct offences committed by a service person at a summary hearing including. 
+																	Military Law is a legal field classified as a subgenre of Federal Law which typically addresses the activity and behavior of military personnel. 
+																	Legal definition of military law. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many nation-states have separate and distinct bodies of law that govern the conduct of members of their armed forces. 
+																	Military law is as complex as any other aspect of a legal practice. 
+																	Military justice or military law is the body of laws and procedures governing members of the armed forces. 
+																	The application of military law to members of the military reflects a recognition that such individuals are subject to different duties and expectations than civilian citizens. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military law synonyms military law pronunciation military law translation English dictionary definition of military law. 
+																	Military Law is founded on the Uniform Code of Military Justice UCMJ. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/9d/c7/9c9dc707b1c52a21d90139424264524b.jpg" data-lightbox="roadtrip" data-title="In America We Hold Former And Current Members Of The Armed Forces In The Highest Regard The Men And Women In Our Military Labor Law Employment Law Family Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/9d/c7/9c9dc707b1c52a21d90139424264524b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBwyDxu70yWjFrlacYcnAIRcXZugS49ALZZw';" alt="In America We Hold Former And Current Members Of The Armed Forces In The Highest Regard The Men And Women In Our Military Labor Law Employment Law Family Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In America We Hold Former And Current Members Of The Armed Forces In The Highest Regard The Men And Women In Our Military Labor Law Employment Law Family Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/c6/5d/e7c65d57c3a589f741d4de6d113cecf7.jpg" data-lightbox="roadtrip" data-title="A Military Tribute This Is My World Hd Youtube My World Military Tribute">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/c6/5d/e7c65d57c3a589f741d4de6d113cecf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBCIedn6i6dsTsfrpa8CzBPCk4WVHLgSVrGQ';" alt="A Military Tribute This Is My World Hd Youtube My World Military Tribute">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Military Tribute This Is My World Hd Youtube My World Military Tribute</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/87/71/6887718e67745c37f41a9c5844a4e745.jpg" data-lightbox="roadtrip" data-title="Thank You And That Includes My Husband Brother In Law And Son In Law God Bless Them All Military Quotes Military Love Military Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/87/71/6887718e67745c37f41a9c5844a4e745.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMnnQyPdQuDzyHYtQPQt5sNcdv6LGD12IPw';" alt="Thank You And That Includes My Husband Brother In Law And Son In Law God Bless Them All Military Quotes Military Love Military Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thank You And That Includes My Husband Brother In Law And Son In Law God Bless Them All Military Quotes Military Love Military Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/82/bf/93/82bf93060d4e6759250723b7cdd3d2a5.jpg" data-lightbox="roadtrip" data-title="Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Unique Shadow Boxes Wine Barrel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/82/bf/93/82bf93060d4e6759250723b7cdd3d2a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnk24mNDard74KWNbCnPiwbgAE09IbUkgqZg';" alt="Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Unique Shadow Boxes Wine Barrel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Unique Shadow Boxes Wine Barrel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/03/4a/05034a47e08df470d0f0f2b54593b27e.jpg" data-lightbox="roadtrip" data-title="Murphy S Military Law 6 Army Humor Military Memes Military Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/03/4a/05034a47e08df470d0f0f2b54593b27e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ofaXpRWQoqw2RBS0WBTxF04vYvM6Ns0Law';" alt="Murphy S Military Law 6 Army Humor Military Memes Military Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Murphy S Military Law 6 Army Humor Military Memes Military Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c3/a7/84/c3a784f1d4529a0a094b2a5096da9475.jpg" data-lightbox="roadtrip" data-title="Father In Law Military Welcome Home Word Cloud Card Ad Sponsored Military Law Father Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c3/a7/84/c3a784f1d4529a0a094b2a5096da9475.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtNtjB3cykBK3_zbGGF1eWqWLL5RYztJjkxA';" alt="Father In Law Military Welcome Home Word Cloud Card Ad Sponsored Military Law Father Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Father In Law Military Welcome Home Word Cloud Card Ad Sponsored Military Law Father Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/59/a5/dd59a5f66e58695713b66e0dd6d724cb.jpg" data-lightbox="roadtrip" data-title="The Military Ptk Cqc System Practical Close Quarter Combatives For Military Law Enforcement Security An Law Enforcement Tactical Training Security Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/59/a5/dd59a5f66e58695713b66e0dd6d724cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-oWPfoTLL3v7nxdMhjg2lz5W0Yx6JCNlKw';" alt="The Military Ptk Cqc System Practical Close Quarter Combatives For Military Law Enforcement Security An Law Enforcement Tactical Training Security Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Ptk Cqc System Practical Close Quarter Combatives For Military Law Enforcement Security An Law Enforcement Tactical Training Security Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9e/5a/5e/9e5a5eed4626928a41fe1ffe4169454c.jpg" data-lightbox="roadtrip" data-title="Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Military Shadow Box Unique Shadow Boxes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9e/5a/5e/9e5a5eed4626928a41fe1ffe4169454c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Yil_DwHg5V8Np4yuqxODEK0fD93KS9L3gw';" alt="Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Military Shadow Box Unique Shadow Boxes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Military Shadow Box Unique Shadow Boxes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/96/6a/0a/966a0add4e2cd1d56b773e40e818193a.jpg" data-lightbox="roadtrip" data-title="Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Wine Barrel Unique Shadow Boxes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/96/6a/0a/966a0add4e2cd1d56b773e40e818193a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA_jdnmvOTyPYGeteV3S-3lG3kbPQln9Nw5w';" alt="Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Wine Barrel Unique Shadow Boxes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Wine Barrel Unique Shadow Boxes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/2f/03/f72f03fa3353d9d5ac3e77f0f8102f7d.jpg" data-lightbox="roadtrip" data-title="Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Military Shadow Box Flag Display Case">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/2f/03/f72f03fa3353d9d5ac3e77f0f8102f7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv7PVXOxB35v0XigZMRV8QIPh3zQpdWneFOA';" alt="Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Military Shadow Box Flag Display Case">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wine Barrel Military Law Enforcement Retirement Shadow Box Etsy Shadow Box Military Shadow Box Flag Display Case</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/b1/a8/65b1a81d4714f088d425492e15735cf2.jpg" data-lightbox="roadtrip" data-title="Murphy 039 S Military Law Imgur Military Photo Law">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/b1/a8/65b1a81d4714f088d425492e15735cf2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaruXSoVNLskWHW1y6AXVsMGPHHiz3NU6v4A';" alt="Murphy 039 S Military Law Imgur Military Photo Law">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Murphy 039 S Military Law Imgur Military Photo Law</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ae/98/f6/ae98f6b1e0993d637d37886341b02eaf.jpg" data-lightbox="roadtrip" data-title="A Tacs Multicam Tactical Gear Military Law Enforcement Security Special Forces Swat Or Me Tactical Gear Tactical Equipment Military Gear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ae/98/f6/ae98f6b1e0993d637d37886341b02eaf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQconbhwEqbTsHT0_JuASoE_xwFUNQ1nF8BgQ';" alt="A Tacs Multicam Tactical Gear Military Law Enforcement Security Special Forces Swat Or Me Tactical Gear Tactical Equipment Military Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Tacs Multicam Tactical Gear Military Law Enforcement Security Special Forces Swat Or Me Tactical Gear Tactical Equipment Military Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/9a/5a/859a5a85551d9c420db754312086f50d.jpg" data-lightbox="roadtrip" data-title="Pin By Cheryl Castleberry On Bleed Blue Tactical Gear Survival Military Law Enforcement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/9a/5a/859a5a85551d9c420db754312086f50d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5GsAfE01ITgxBuIqYViEkNqNOxL_VwO2lMw';" alt="Pin By Cheryl Castleberry On Bleed Blue Tactical Gear Survival Military Law Enforcement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Cheryl Castleberry On Bleed Blue Tactical Gear Survival Military Law Enforcement</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/what-conditions-cause-migraines.html">What Conditions Cause Migraines</a></li>
+													<li class="list-group-item"><a href="/what-day-is-your-state-pension-paid.html">What Day Is Your State Pension Paid</a></li>
+													<li class="list-group-item"><a href="/what-day-does-my-state-pension-get-paid.html">What Day Does My State Pension Get Paid</a></li>
+													<li class="list-group-item"><a href="/what-day-of-month-does-va-pay-disability.html">What Day Of Month Does Va Pay Disability</a></li>
+													<li class="list-group-item"><a href="/what-constitutes-an-eo-complaint-in-the-army.html">What Constitutes An Eo Complaint In The Army</a></li>
+													<li class="list-group-item"><a href="/what-conditions-are-secondary-to-flat-feet.html">What Conditions Are Secondary To Flat Feet</a></li>
+													<li class="list-group-item"><a href="/what-conditions-qualify-for-100-va-disability.html">What Conditions Qualify For 100 Va Disability</a></li>
+													<li class="list-group-item"><a href="/what-day-do-disabled-veterans-get-paid.html">What Day Do Disabled Veterans Get Paid</a></li>
+													<li class="list-group-item"><a href="/what-day-is-state-pension-paid-uk.html">What Day Is State Pension Paid Uk</a></li>
+													<li class="list-group-item"><a href="/what-countries-have-the-largest-armies-in-the-world.html">What Countries Have The Largest Armies In The World</a></li>
+													<li class="list-group-item"><a href="/what-conditions-are-secondary-to-lower-back-pain.html">What Conditions Are Secondary To Lower Back Pain</a></li>
+													<li class="list-group-item"><a href="/what-date-will-my-pension-be-paid.html">What Date Will My Pension Be Paid</a></li>
+													<li class="list-group-item"><a href="/what-date-will-my-pension-be-paid-over-christmas.html">What Date Will My Pension Be Paid Over Christmas</a></li>
+													<li class="list-group-item"><a href="/what-day-is-my-state-pension-paid.html">What Day Is My State Pension Paid</a></li>
+													<li class="list-group-item"><a href="/what-day-of-the-month-is-state-pension-paid.html">What Day Of The Month Is State Pension Paid</a></li>
+													<li class="list-group-item"><a href="/what-day-is-military-spouse-appreciation-day.html">What Day Is Military Spouse Appreciation Day</a></li>
+													<li class="list-group-item"><a href="/what-day-is-government-pay-day.html">What Day Is Government Pay Day</a></li>
+													<li class="list-group-item"><a href="/what-conditions-are-secondary-to-sleep-apnea.html">What Conditions Are Secondary To Sleep Apnea</a></li>
+													<li class="list-group-item"><a href="/what-date-is-canada-pension-paid.html">What Date Is Canada Pension Paid</a></li>
+													<li class="list-group-item"><a href="/what-day-of-the-month-are-pensions-paid.html">What Day Of The Month Are Pensions Paid</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

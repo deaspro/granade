@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is The Cola Increase For 2021 - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is The Cola Increase For 2021",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/98/9c/3b/989c3bbc4acce901d6fed24a85805073.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+the+cola+increase+for+2021",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is The Cola Increase For 2021</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Other important 2021 Social Security information is as follows. There were no COLA increases starting in January 2011 or January 2016. The COLA rate for 2021 was announced on October 13 2020. <br>				
+			</p>
+										<a class="badge badge-info" href="/what-agencies-are-under-department-of-homeland-security.html">what agencies are under department of homeland security</a>
+											<a class="badge badge-primary" href="/what-air-force-jobs-have-enlistment-bonuses.html">what air force jobs have enlistment bonuses</a>
+											<a class="badge badge-warning" href="/what-are-dod-civilians.html">what are dod civilians</a>
+											<a class="badge badge-warning" href="/what-age-do-you-go-to-college-in-germany.html">what age do you go to college in germany</a>
+											<a class="badge badge-primary" href="/what-age-do-sims-go-to-university-in-sims-4.html">what age do sims go to university in sims 4</a>
+											<a class="badge badge-warning" href="/what-age-do-you-go-to-university-sims-4.html">what age do you go to university sims 4</a>
+											<a class="badge badge-success" href="/what-are-good-military-names.html">what are good military names</a>
+											<a class="badge badge-info" href="/what-age-to-join-irish-army.html">what age to join irish army</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to pay a visit to the ideal blog.  Our website gives you suggestions for viewing the maximum quality video and image content, hunt and find more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/21/da/f7/21daf7e25d3aebc9c580da6bfdd440b9.jpg" data-lightbox="roadtrip" data-title="3 Emergency Social Security Increase For 2021 The Stimulus Cola Youtube Social Security Security Emergency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/21/da/f7/21daf7e25d3aebc9c580da6bfdd440b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqCnWWET7egkBPu3epEjbVYCfsdHW-wt_tBQ';" alt="3 Emergency Social Security Increase For 2021 The Stimulus Cola Youtube Social Security Security Emergency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Emergency Social Security Increase For 2021 The Stimulus Cola Youtube Social Security Security Emergency</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/79/12/7f/79127f7fc77bb56ea1adcb46d9a907fe.jpg" data-lightbox="roadtrip" data-title="Here Is A A Way Too Early Look At Social Security S 2021 Cola As July Kicks Of The 2021 Measurement Period Which Determines Any In 2020 Military Benefits Increase Cola">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/79/12/7f/79127f7fc77bb56ea1adcb46d9a907fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE-mMTNx_yL47k90SEOYijK2zNVSxh9xsJ5w';" alt="Here Is A A Way Too Early Look At Social Security S 2021 Cola As July Kicks Of The 2021 Measurement Period Which Determines Any In 2020 Military Benefits Increase Cola">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Here Is A A Way Too Early Look At Social Security S 2021 Cola As July Kicks Of The 2021 Measurement Period Which Determines Any In 2020 Military Benefits Increase Cola</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/da/78/44/da7844bb52d42047c48f8247e741bf38.jpg" data-lightbox="roadtrip" data-title="3 Cola Raise For Social Security Retirement Disability In 2021 Update Ssa Ssdi Ssi Youtube In 2020 Social Security Disability Social">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/da/78/44/da7844bb52d42047c48f8247e741bf38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCJm8uXi2gIjstapUVlAbypGhQpl73stHvow';" alt="3 Cola Raise For Social Security Retirement Disability In 2021 Update Ssa Ssdi Ssi Youtube In 2020 Social Security Disability Social">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Cola Raise For Social Security Retirement Disability In 2021 Update Ssa Ssdi Ssi Youtube In 2020 Social Security Disability Social</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/08/32/2108323aa7b7ccde9f4217efbd3196b6.png" data-lightbox="roadtrip" data-title="Cola Announced 1 6 Increase In Social Security Checks For 2020 Social Security Disability Social Security Veterans Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/08/32/2108323aa7b7ccde9f4217efbd3196b6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2CD-OdWostiuipjG--TCloh6dibe_XAq8eg';" alt="Cola Announced 1 6 Increase In Social Security Checks For 2020 Social Security Disability Social Security Veterans Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cola Announced 1 6 Increase In Social Security Checks For 2020 Social Security Disability Social Security Veterans Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/74/fd/30/74fd308a682676710316a177271551ea.jpg" data-lightbox="roadtrip" data-title="Cost Of Living Adjustment Cola Announced 1 3 Increase In Social Security Benefit Checks For 2021 Social Security Disability Application Social Security Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/74/fd/30/74fd308a682676710316a177271551ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwjw5LH6ZWzRFfmqPrwd3rwIXwCHXTI2c2Lw';" alt="Cost Of Living Adjustment Cola Announced 1 3 Increase In Social Security Benefit Checks For 2021 Social Security Disability Application Social Security Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cost Of Living Adjustment Cola Announced 1 3 Increase In Social Security Benefit Checks For 2021 Social Security Disability Application Social Security Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/c4/da/edc4dad93b65b8d17b867ef8b3ec4ee8.png" data-lightbox="roadtrip" data-title="Pin On Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/c4/da/edc4dad93b65b8d17b867ef8b3ec4ee8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2rtxIMiDCUflnesAyLE0XVgvQSZDzyd48aQ';" alt="Pin On Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/35/82/a6/3582a6e9a9f8b67d76ce3ceb48e962f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2rtxIMiDCUflnesAyLE0XVgvQSZDzyd48aQ';" alt="Pin On Military Benefits">
+										<div class="card-body">
+						<h3 class="h5"><b>In 2021 Social Security retirees are getting a cost-of-living adjustment COLA better known as a Social Security raise.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is the cola increase for 2021</strong>. 
+								
+																	The average COLA over the decade has been a 152 percent increase with the largest being the 28 percent rise that went into effect in January 2019. 
+																	That is the smallest cost-of-living adjustment COLA since 2017 but consider that earlier this. 
+																	For more details about the new COLA visit our Cost-of-Living Adjustment information page. 
+																	Overview of the Cost-of-Living-Adjustment COLA VA adjusts monthly compensation amounts based on the yearly change in the cost of living as determined by the Social Security Administration SSA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tax Rate 2020 2021 Employee. 
+																	However the increase will not go into effect until December 1 2020. 
+																	OA applies the 3 increase to the previous years award of 53213month. 
+																	While this years COLA is lower than it was in 2020 ie 13 percent it will still result in an increase in compensation for veterans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	VAs 2021 Cost of Living Adjustment of 13 will lead to an increase in the VA disability pay rates Veterans see in 2021. 
+																	The Retirement Board voted to adopt the automatic cost-of-living adjustments COLA at the January 27 2021 Board meeting as calculated by CCCERAs actuary Segal Consulting. 
+																	Thats the good news. 
+																	At that point veterans should see a change in the amount of monthly compensation they receive. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cost-of-Living Adjustment COLA Information for 2021 Social Security and Supplemental Security Income SSI benefits for approximately 70 million Americans will increase 13 percent in 2021. 
+																	Awardbenefit letter or myssagov printout should be attached to the AR in the tenant file. 
+																	That would more than double the announced 13 COLA and handily outpace shelter inflation seniors biggest single. 
+																	These periodic changes made to VA compensation rates allow for VA benefit amounts to increase with the rate of inflation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Based on the increase in the Consumer Price Index CPI-W from the third quarter of 2019 through the third quarter of 2020 Social Security and Supplemental Security Income SSI beneficiaries will receive a 13 percent COLA for 2021. 
+																	To raise Social Securitys COLA to 3 in 2021. 
+																	The bad news is its the smallest COLA since 2017. 
+																	One reason a small COLA is expected for 2021 is that inflation has been low. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Social Security Administration has announced that benefits will increase by 13 in 2021. 
+																	Post January 27 2021. 
+																	All monthly Social Security and Supplemental Security Income SSI benefits for more than 70 million Americans increase 13 percent in 2021. 
+																	2021 Cost-of-Living Adjustment COLA January 27 2021 Board approves 2021 retiree COLA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military retirees those who receive disability or other benefits from the Department of Veterans Affairs federal retirees and Social Security recipients will see a 13 increase in their monthly. 
+																	A copy of the original SS verification from 2021 verification of the COLA increase for 2020 and the verification of the 2021 COLA increase eg. 
+																	The goal of the bill is simple. 
+																	The 2021 COLA of 13 is a smaller increase than the 2020 COLA of 16 and the 2019 COLA of 28. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 13 percent cost-of-living adjustment COLA will begin with benefits payable to more than 64 million Social Security beneficiaries in January 2021. 
+																	Over the past decade the COLA has averaged 165 per year so the 13 increase for 2021 is below the recent average and is the lowest since 2017. 
+																	Result is 649271 x 12 54809. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/25/aa/cb/25aacbabf33428ca2a76aa96d1bc7f67.jpg" data-lightbox="roadtrip" data-title="Pin By Military Benefits On Money Finance In 2021 Tech Company Logos Finance Company Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/25/aa/cb/25aacbabf33428ca2a76aa96d1bc7f67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSpEa4bYu2wys23W_GgyXISOxxPPBvLJSHfw';" alt="Pin By Military Benefits On Money Finance In 2021 Tech Company Logos Finance Company Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Military Benefits On Money Finance In 2021 Tech Company Logos Finance Company Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/70/e4/0570e48855f902671b0c0103fb849be8.png" data-lightbox="roadtrip" data-title="2020 Va Disability Rates Saw 1 6 Cost Of Living Increase Based On The Cola Calculations Here Are The 2020 Disabili Va Disability Disability Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/70/e4/0570e48855f902671b0c0103fb849be8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3rXPTW7O7lx0qKnB8oH6m3TbBHr4tyUYVTw';" alt="2020 Va Disability Rates Saw 1 6 Cost Of Living Increase Based On The Cola Calculations Here Are The 2020 Disabili Va Disability Disability Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Va Disability Rates Saw 1 6 Cost Of Living Increase Based On The Cola Calculations Here Are The 2020 Disabili Va Disability Disability Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e9/2b/6d/e92b6de51a5b694b9f581656f276a53e.jpg" data-lightbox="roadtrip" data-title="2020 Va Disability Rates Saw 1 6 Cost Of Living Increase Based On The Cola Calculations Here Are The 2020 Disabili Va Disability Disability Military Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e9/2b/6d/e92b6de51a5b694b9f581656f276a53e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqGKq2h4zDuvXfB8hgO5XhmeF4ki9RhWTzg';" alt="2020 Va Disability Rates Saw 1 6 Cost Of Living Increase Based On The Cola Calculations Here Are The 2020 Disabili Va Disability Disability Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2020 Va Disability Rates Saw 1 6 Cost Of Living Increase Based On The Cola Calculations Here Are The 2020 Disabili Va Disability Disability Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/6f/96/bc6f9647982920eaeeb9924191fb52d5.png" data-lightbox="roadtrip" data-title="2018 Social Security Cola Social Security Disability Application Social Security Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/6f/96/bc6f9647982920eaeeb9924191fb52d5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb5bFIiAEV35irIGsvoF_psLOEmavN1svO1w';" alt="2018 Social Security Cola Social Security Disability Application Social Security Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2018 Social Security Cola Social Security Disability Application Social Security Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/76/40/be764068e788ffadea8ee915a9bcfddc.png" data-lightbox="roadtrip" data-title="2018 Va Disability Rates Military Benefits Va Disability Military Benefits Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/76/40/be764068e788ffadea8ee915a9bcfddc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe9zJexmyOCfjF2R1YFaOcXS8u-Tqg7Yy_Yg';" alt="2018 Va Disability Rates Military Benefits Va Disability Military Benefits Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2018 Va Disability Rates Military Benefits Va Disability Military Benefits Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/dd/99/5bdd99d972cae944ff804d5b79216b6d.jpg" data-lightbox="roadtrip" data-title="Dividend Achievements In 2021 Dividend Investing Dividend Value Investing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/dd/99/5bdd99d972cae944ff804d5b79216b6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLjSzYl9-rQpbaT3c7sMebVBkiMybm8fa7Q';" alt="Dividend Achievements In 2021 Dividend Investing Dividend Value Investing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dividend Achievements In 2021 Dividend Investing Dividend Value Investing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d7/8e/a8/d78ea812da27558fc5bc455600b0154b.jpg" data-lightbox="roadtrip" data-title="Pin By Military Benefits On Money Finance In 2021 Calm Artwork Finance Artwork">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d7/8e/a8/d78ea812da27558fc5bc455600b0154b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKZxQrsPX0dDTb-6zQsmNJxr36PIuUoW1aLg';" alt="Pin By Military Benefits On Money Finance In 2021 Calm Artwork Finance Artwork">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Military Benefits On Money Finance In 2021 Calm Artwork Finance Artwork</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/63/a3/37/63a33789cafb41d3e4462c38657103e0.jpg" data-lightbox="roadtrip" data-title="2021 Military Pay Charts Proposed Military Pay Chart Military Pay Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/63/a3/37/63a33789cafb41d3e4462c38657103e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGBfsiJ_cm3wWGAUq532qhwOD19jqNdQIrYQ';" alt="2021 Military Pay Charts Proposed Military Pay Chart Military Pay Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2021 Military Pay Charts Proposed Military Pay Chart Military Pay Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/70/4f/87704f6bb2329339a7473e533e0d641b.jpg" data-lightbox="roadtrip" data-title="Pin By Military Benefits On Military Benefits In 2021 Group Life Insurance Military Benefits Military Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/70/4f/87704f6bb2329339a7473e533e0d641b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQik9EhItnnO_NJoybK6fu4b0nQxTXNgUk8kg';" alt="Pin By Military Benefits On Military Benefits In 2021 Group Life Insurance Military Benefits Military Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Military Benefits On Military Benefits In 2021 Group Life Insurance Military Benefits Military Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/25/29/1225294cf74a954b58d24d30e1e242c3.jpg" data-lightbox="roadtrip" data-title="7 Things You Need To Know About Pumping Milkology In 2021 Quotes About Motherhood Breastfeeding And Pumping Breastfeeding Basics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/25/29/1225294cf74a954b58d24d30e1e242c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVKP3HrgvSXkAMGGiy2xNKMFSJMBlt1dsvWA';" alt="7 Things You Need To Know About Pumping Milkology In 2021 Quotes About Motherhood Breastfeeding And Pumping Breastfeeding Basics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Things You Need To Know About Pumping Milkology In 2021 Quotes About Motherhood Breastfeeding And Pumping Breastfeeding Basics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/65/1f/04/651f045d19648723416db2cdb0de30ea.jpg" data-lightbox="roadtrip" data-title="8 Best Cola Syrup For Sodastream Plus 1 To Avoid 2021 Buyers Guide Freshnss Soda Stream Cola Syrup Soda Flavors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/65/1f/04/651f045d19648723416db2cdb0de30ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpz-v48keym1RspvciIWM1HnYVUDECLN6Q8w';" alt="8 Best Cola Syrup For Sodastream Plus 1 To Avoid 2021 Buyers Guide Freshnss Soda Stream Cola Syrup Soda Flavors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Best Cola Syrup For Sodastream Plus 1 To Avoid 2021 Buyers Guide Freshnss Soda Stream Cola Syrup Soda Flavors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/35/82/a6/3582a6e9a9f8b67d76ce3ceb48e962f6.jpg" data-lightbox="roadtrip" data-title="Ncpssm President Max Richtman On 1 3 Socialsecurity Cola For 2021 Seniors Living On Fixed Incomes Need A Lifeboat This In 2020 Senior Adults Inner Tubes Seniors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/35/82/a6/3582a6e9a9f8b67d76ce3ceb48e962f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDGPKT4LW2puS3mF1S70e455mVGMcCWd5Itg';" alt="Ncpssm President Max Richtman On 1 3 Socialsecurity Cola For 2021 Seniors Living On Fixed Incomes Need A Lifeboat This In 2020 Senior Adults Inner Tubes Seniors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ncpssm President Max Richtman On 1 3 Socialsecurity Cola For 2021 Seniors Living On Fixed Incomes Need A Lifeboat This In 2020 Senior Adults Inner Tubes Seniors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ad/99/85/ad9985b2329cbf79d1c26c2a391da3b3.jpg" data-lightbox="roadtrip" data-title="Pin On Social Security Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ad/99/85/ad9985b2329cbf79d1c26c2a391da3b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9tBoS5_vp9jucEFfvJpzAnP67So2z7U6GA';" alt="Pin On Social Security Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Social Security Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/06/e3/93/06e3930aad88b53ed0a93b3939d50333.jpg" data-lightbox="roadtrip" data-title="Pin On Social Security Disability">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/06/e3/93/06e3930aad88b53ed0a93b3939d50333.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTphFWofvRH2MB_etWzYptvHou7A5VkHmhxpQ';" alt="Pin On Social Security Disability">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Social Security Disability</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/9c/3b/989c3bbc4acce901d6fed24a85805073.jpg" data-lightbox="roadtrip" data-title="Veteran Employees Can Benefit Your Business In Many Ways But Did You Know That You Can Also Earn Money Saving Tax Cre In 2020 Hiring Veterans Tax Credits Veteran Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/9c/3b/989c3bbc4acce901d6fed24a85805073.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZOBL86J8HvtOu7PJJbaLH3_GapQdtIbTCNA';" alt="Veteran Employees Can Benefit Your Business In Many Ways But Did You Know That You Can Also Earn Money Saving Tax Cre In 2020 Hiring Veterans Tax Credits Veteran Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Employees Can Benefit Your Business In Many Ways But Did You Know That You Can Also Earn Money Saving Tax Cre In 2020 Hiring Veterans Tax Credits Veteran Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/virginia-unemployment-how-long-to-get-paid.html">Virginia Unemployment How Long To Get Paid</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-monetary-qualifications.html">Virginia Unemployment Monetary Qualifications</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-benefits-questions.html">Virginia Unemployment Benefits Questions</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-pua-back-pay.html">Virginia Unemployment Pua Back Pay</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-rate-july-2020.html">Virginia Unemployment Rate July 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-rate-april-2020.html">Virginia Unemployment Rate April 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-rate-october-2020.html">Virginia Unemployment Rate October 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-retroactive-pay.html">Virginia Unemployment Retroactive Pay</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-insurance-rate-2020.html">Virginia Unemployment Insurance Rate 2020</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-reddit-2021.html">Virginia Unemployment Reddit 2021</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-insurance-benefits-application.html">Virginia Unemployment Insurance Benefits Application</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-case-status.html">Virginia Unemployment Case Status</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-number-reddit.html">Virginia Unemployment Number Reddit</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-how-long-to-get-pin.html">Virginia Unemployment How Long To Get Pin</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-office-customer-service-number.html">Virginia Unemployment Office Customer Service Number</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-application-process.html">Virginia Unemployment Application Process</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-rate-new-employers.html">Virginia Unemployment Rate New Employers</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-benefits-rate.html">Virginia Unemployment Benefits Rate</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-application-covid-19.html">Virginia Unemployment Application Covid 19</a></li>
+													<li class="list-group-item"><a href="/virginia-unemployment-claim-pin-number.html">Virginia Unemployment Claim Pin Number</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

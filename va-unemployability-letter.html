@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Va Unemployability Letter - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Va Unemployability Letter",
+  "datePublished": "2021-02-14",
+  "image": "https://i.pinimg.com/originals/b4/5a/96/b45a963ccbafd013e12d5689544c835d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Granade",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=va+unemployability+letter",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Granade" class="navbar-brand mb-1">Granade</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Va Unemployability Letter</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Individual Unemployability IU is a unique part of VAs disability compensation program. If you cant work because of a disability related to your service in the military a service-connected disability you may qualify for whats called Individual Unemployability. There are two ways in which veterans can qualify for individual unemployability as outlined in 38 CFR 416a and 416b. <br>				
+			</p>
+										<a class="badge badge-warning" href="/what-is-a-soldier-record-brief.html">what is a soldier record brief</a>
+											<a class="badge badge-danger" href="/what-is-a-va-ems-claim.html">what is a va ems claim</a>
+											<a class="badge badge-success" href="/what-is-a-va-remanded-appeal.html">what is a va remanded appeal</a>
+											<a class="badge badge-info" href="/what-is-a-national-guard-technician.html">what is a national guard technician</a>
+											<a class="badge badge-danger" href="/what-is-a-public-affairs-officer-in-the-navy.html">what is a public affairs officer in the navy</a>
+											<a class="badge badge-danger" href="/what-is-a-tdiu-rating.html">what is a tdiu rating</a>
+											<a class="badge badge-light" href="/what-is-a-military-spouse-entitled-to-in-a-separation.html">what is a military spouse entitled to in a separation</a>
+											<a class="badge badge-dark" href="/what-is-a-va-code-sheet.html">what is a va code sheet</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the right site.  Our website gives you suggestions for seeing the highest quality video and image content, hunt and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/1c/9e/ac1c9e3bc8fbd50f69cc2d4055ee3f15.jpg" data-lightbox="roadtrip" data-title="Individual Unemployability Understanding The Basics Understanding Individuality Letter Sample">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/1c/9e/ac1c9e3bc8fbd50f69cc2d4055ee3f15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEms7vXk97zIO33BVzzsSx32nn-d0nH-kgczI-BKozsds0UQJfP27pjT4sgx_3H_NJXly7yFUVLlEt6gxBrhysA_OnRUE1w2yIUA&amp;ec=45768321';" alt="Individual Unemployability Understanding The Basics Understanding Individuality Letter Sample">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Individual Unemployability Understanding The Basics Understanding Individuality Letter Sample</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8c/76/fd/8c76fd34c4bcc160465dbd88bf18f7a6.jpg" data-lightbox="roadtrip" data-title="Board For Correction Of Military Records Military Records Military Records">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8c/76/fd/8c76fd34c4bcc160465dbd88bf18f7a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5N2OBEaSg4Zq1osyo1IKkTYMRzfMk1WuITb5ApDqgddYkKBRFHbXBgYtE29wpWn6hyaWK6p-eH6CuuyUoDYyAJSvyHamIViZIjw&amp;ec=45768321';" alt="Board For Correction Of Military Records Military Records Military Records">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Board For Correction Of Military Records Military Records Military Records</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/17/7b/22/177b2258eea2182bba9b9c7efff7c117.jpg" data-lightbox="roadtrip" data-title="Statement Of The Case What Is Va Form 9 And How Long Do You Have To Get It To The Va Read More Statement Case Read More">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/17/7b/22/177b2258eea2182bba9b9c7efff7c117.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRmVa7fdDPNfOu3l_06Iz4Bif4vQSFqA1GvdiguWJ7TxgnoDXoN__AXim1PiOmKNrcdN7aSSnf3kSJ98bmolVmtkfxbVNIVuyew&amp;ec=45768321';" alt="Statement Of The Case What Is Va Form 9 And How Long Do You Have To Get It To The Va Read More Statement Case Read More">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Statement Of The Case What Is Va Form 9 And How Long Do You Have To Get It To The Va Read More Statement Case Read More</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/4f/9b/0a4f9b46a7f6b677fb6f9706466ac29d.png" data-lightbox="roadtrip" data-title="Pin On Realestate Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/4f/9b/0a4f9b46a7f6b677fb6f9706466ac29d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBWgkb9j75xeghvwBcWijeSaeytLG1hTIQeCPYFusIq_RCNQ9lhs61owP6dmOWmbqEW5LcckvSfgim-BTQPoaWThQTKDqARMQkQ&amp;ec=45768321';" alt="Pin On Realestate Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Realestate Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b4/ee/58/b4ee58719c6f9064ed01b5ae19456473.jpg" data-lightbox="roadtrip" data-title="Notice Of Disagreement Disagreement First Step Reading">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b4/ee/58/b4ee58719c6f9064ed01b5ae19456473.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiV-Gf-EhvRsV0rj1Z34EnLs-XzvS2P6ISeUjGcVlij1ozAu_UUS0lgGMGis9CSkhrkfRtk_JOMYMOlCXAKspfMxKGcMx89cYpNw&amp;ec=45768321';" alt="Notice Of Disagreement Disagreement First Step Reading">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Notice Of Disagreement Disagreement First Step Reading</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/18/ee/a118eeecd48e2608534e17ab8c39c5b0.png" data-lightbox="roadtrip" data-title="257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/18/ee/a118eeecd48e2608534e17ab8c39c5b0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReTgAqu31yA2BeJlq9_3QPtda63gZ9nEulmEypvfm0zow9bYCo2KP-PsoFyBLB0EBSCx6kB4sJgqGKJDe6uuqL3uK8ENm5NetFig&amp;ec=45768321';" alt="257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/80/a8/5e/80a85e5a3f002659a0e228829b0c5cf3.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReTgAqu31yA2BeJlq9_3QPtda63gZ9nEulmEypvfm0zow9bYCo2KP-PsoFyBLB0EBSCx6kB4sJgqGKJDe6uuqL3uK8ENm5NetFig&amp;ec=45768321';" alt="257 How Do I Get A 100 Percent Va Disability Rating Youtube Va Disability Disability How Do I Get">
+										<div class="card-body">
+						<h3 class="h5"><b>Who Is Eligible for Individual Unemployability.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Va unemployability letter</strong>. 
+								
+																	Understanding VAs New Process for Verifying Individual Unemployability. 
+																	If you cant work because of a disability related to your service in the military a service-connected disability you may qualify for whats called Individual Unemployability. 
+																	They can meet schedular requirements or be granted extraschedular TDIU. 
+																	Veterans may be eligible for this rating increase if they are either unemployed or unable to maintain substantially gainful employment as a result of their. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This address will be listed on your letter. 
+																	In fact VA unemployability does not always mean that a veteran is not working. 
+																	A letter from your doctor to the VA in support of your claim can do wonders. 
+																	Letters from past employers stating you were not able to mainitan employment because of ptsd as well as statements from family and friends would help a little - but the first one is the most important. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On one hand all income earned from employment must be at or below the poverty level. 
+																	On the other hand the income can be from a job that is considered to be sheltered. 
+																	You must be a Veteran. 
+																	Before you download your VA letter well ask you to review the address we have on file for you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The letters include some confusing language that the VA is working to clear up. 
+																	It allows VA to pay certain Veterans compensation at the 100 percent rate even though VA has not rated their service-connected disabilities at that level. 
+																	Veterans can submit the VA Individual Unemployability form 21-8940 at different stages of their claims. 
+																	While more advanced cases may require an expert medical opinion from a doctor who has experience in dealing with the VA sometimes for less complicated claims a correctly worded letter from your doctor may be what pushes your claim over the finish line. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Total Disability based on Individual Unemployability TDIU is a benefit offered by the Department of Veterans Affairs to veterans who are left unable to maintain substantially gainful employment as a result of service-connected disabilities. 
+																	The VA has published an Unemployability Training Letter TL07-01E for its employees handling TDIU claims that makes it seem equally easy. 
+																	Individual Unemployability allows VA to pay certain Veterans at the 100-percent disability rate even though their service-connected disabilities are not rated as 100-percent disabling. 
+																	VA Individual Unemployability if you cant work. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But your letter will still be valid even with the incorrect address. 
+																	Veterans that wish to receive Total Disability Individual Unemployability TDIU benefits can submit form 21-8940. 
+																	1 A formal claim for TDIU can be any written communication indicating that the veteran is unable to work because of his or her service-connected disabilityies. 
+																	The VA recently began sending out letters to veterans in receipt of a total disability rating 100 percent based on individual unemployability IU that detail the departments new process for verification of employment status. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If this address isnt correct you can update it. 
+																	VA Individual Unemployability if you cant work. 
+																	The key however is where the income comes from. 
+																	View or update your Compensation and Pension CP claimCheck the status of your CP claim and upload supporting documentsSurviving spouses and parents can view Dependency and Indemnity Compensation DIC claim status. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some veterans may submit their TDIU form 21-8940 after they receive a Rating Decision. 
+																	This means you may be able to get disability compensation or benefits at the same level as a Veteran who has a 100 disability rating. 
+																	This means you may be able to get disability compensation or benefits at the same level as a Veteran who has a 100 disability rating. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/2a/16/4b2a16bdc093daf8ad38d4d946d972a6.png" data-lightbox="roadtrip" data-title="Veterans Law Blog Bookstore Law Blog Blog Training Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/2a/16/4b2a16bdc093daf8ad38d4d946d972a6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7aoUvyYMXHk14kIZDOF0CiEbi8OkOjEoifuqnhDXlpaCb2h42CPIvkCEuoGPcLGhSXThZDxFIz1Zom2oUOxifED5Wi5eGiCx-jA&amp;ec=45768321';" alt="Veterans Law Blog Bookstore Law Blog Blog Training Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Law Blog Bookstore Law Blog Blog Training Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/bf/96/6b/bf966b61b150ee653f84c76ee1abf538.jpg" data-lightbox="roadtrip" data-title="257 Permanent And Total Disability P T Youtube Disability How To Find Out Understanding">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/bf/96/6b/bf966b61b150ee653f84c76ee1abf538.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqsCBtwf5mzJzCv3b2VvbkJLlNiYVZFzCPvpd-O4jTbhRdWBxxv2gfyVPfi0BQKyPoD9KvRMFDWizbY41LT1839mzuN4Tpk9Jqug&amp;ec=45768321';" alt="257 Permanent And Total Disability P T Youtube Disability How To Find Out Understanding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">257 Permanent And Total Disability P T Youtube Disability How To Find Out Understanding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/78/32/41/783241166e982cfed9ac87057253a23e.jpg" data-lightbox="roadtrip" data-title="257 Permanent And Total Disability P T Youtube Disability How To Find Out Understanding">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/78/32/41/783241166e982cfed9ac87057253a23e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPxDGx8Ji8S3TlXZ8-UvNJaTkmJ0Jx75KGparNNg7ZF43vPyTtlICgdSiud7R3OiYt_iMI2WbBalhxW4g0zrnisnRv7W7CB0_Kg&amp;ec=45768321';" alt="257 Permanent And Total Disability P T Youtube Disability How To Find Out Understanding">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">257 Permanent And Total Disability P T Youtube Disability How To Find Out Understanding</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/e1/f9/9e/e1f99e53b35dd89d7fb7b4bfdff25042.jpg" data-lightbox="roadtrip" data-title="Pin On Realestate Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/e1/f9/9e/e1f99e53b35dd89d7fb7b4bfdff25042.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhg4C5MaY8EhecP8lpswwkHqVLF71as04ytC3OSv5rvbDNFXUA6jZJyvOQVGdk82sg0Zk0hCudy8FZG7yAg1tWEPPTKLW8Qtcmhw&amp;ec=45768321';" alt="Pin On Realestate Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Realestate Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ad/ae/16/adae16d15c0f232526fb1faf287c3b32.jpg" data-lightbox="roadtrip" data-title="Pin On Pattern Vectors Illustrations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ad/ae/16/adae16d15c0f232526fb1faf287c3b32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcrSkcXOREMy6Ekg1ezhIjYsg_VIvlAng2vJMEHEEtK42F162PGifSMX2u8BD-_RGr9FNFzJ_q50HGkzG22wfvQq9SXiTpMauS6Q&amp;ec=45768321';" alt="Pin On Pattern Vectors Illustrations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pattern Vectors Illustrations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/04/a5/7904a53f7f245f49bee5a29256f637ad.png" data-lightbox="roadtrip" data-title="Pin By Dean Da Costa On Vets Student Debt Veteran Disabled Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/04/a5/7904a53f7f245f49bee5a29256f637ad.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIMEn_H3aoDpn86xe14NPllF95ok0r1POcqFHn-4Gqd1FKsOB27mYNSqY5gdfopxA8ST6vkVESDFLmG-4Ph_832KUUxBWsb6dnjg&amp;ec=45768321';" alt="Pin By Dean Da Costa On Vets Student Debt Veteran Disabled Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Dean Da Costa On Vets Student Debt Veteran Disabled Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d9/cd/ce/d9cdcee3d195a01c89fc4558da36c18f.jpg" data-lightbox="roadtrip" data-title="They Misspelled Unemployable Facial Tattoos Face Tattoos For Women Horrible Tattoos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d9/cd/ce/d9cdcee3d195a01c89fc4558da36c18f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnbMwjr9I1ISn9K2oYhNkSH76QBHqd0ofSkEakDDD4orTEyLK8uLU3cmmlucfLE83iKgOXwVvHN3EVN3odnCxIglxeBzcssN7jaQ&amp;ec=45768321';" alt="They Misspelled Unemployable Facial Tattoos Face Tattoos For Women Horrible Tattoos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">They Misspelled Unemployable Facial Tattoos Face Tattoos For Women Horrible Tattoos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/07/8e/ca078ee197d1de4590c0080e00b42eaa.png" data-lightbox="roadtrip" data-title="Coming Soon Product Types Law Blog Veteran Blog">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/07/8e/ca078ee197d1de4590c0080e00b42eaa.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2WS3mzvZ8lvq6x7bd1IqP4ukrA6ij0VIGmDxzkRuwbuE8HpIxwmh2hA7qIp3UdJtOD-QRND3o_Su-YvBKInrpxcsQNTjsrY2AIQ&amp;ec=45768321';" alt="Coming Soon Product Types Law Blog Veteran Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coming Soon Product Types Law Blog Veteran Blog</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/ae/17/d6ae17af2e14269543e9907cf6680b33.jpg" data-lightbox="roadtrip" data-title="Intrusive Academic Advising An Effective Strategy To Increase Student Success Innovative Educators Academic Advising Student Success Academics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/ae/17/d6ae17af2e14269543e9907cf6680b33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUWhMOnndgcKjuYvB6B-NBBD3tsHyoSVnYwi2lO1Ar7VXt2AkRvwOfEGvEOVmefxq-jeyxYd5zm7gGvSTXAfgmoAKY3lVXrp_k0g&amp;ec=45768321';" alt="Intrusive Academic Advising An Effective Strategy To Increase Student Success Innovative Educators Academic Advising Student Success Academics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Intrusive Academic Advising An Effective Strategy To Increase Student Success Innovative Educators Academic Advising Student Success Academics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/a8/5e/80a85e5a3f002659a0e228829b0c5cf3.gif" data-lightbox="roadtrip" data-title="Long Term Health Consequences Of Exposure To Burn Pits In Iraq And Afghanistan Institute Of Medicine Awareness Health Raise Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/a8/5e/80a85e5a3f002659a0e228829b0c5cf3.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFwzRxjGE3Km-Erv4yemWAkz8hMtX20IfBlsP-nboqt5CQo3aozINZ1pcS0DYusbA4OThFJlvcY6BaggzvN1ee4UAu4UvTsn9k&amp;ec=45768321';" alt="Long Term Health Consequences Of Exposure To Burn Pits In Iraq And Afghanistan Institute Of Medicine Awareness Health Raise Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Long Term Health Consequences Of Exposure To Burn Pits In Iraq And Afghanistan Institute Of Medicine Awareness Health Raise Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/7f/10/c37f1083adb2bfdbd56cfc371f6dd483.jpg" data-lightbox="roadtrip" data-title="Pin By Mary Merritt On Military Military Marines Marine Corps Us Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/7f/10/c37f1083adb2bfdbd56cfc371f6dd483.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh7-C_4M5_NU_dcoVKa9w2Twxqyqy75qCTnoyD6sgwYx2WhEhSiN4cBEj0j_462yqm3FPnREMnoVqzUjxQZyDY4Ggxu6cbLFG3nQ&amp;ec=45768321';" alt="Pin By Mary Merritt On Military Military Marines Marine Corps Us Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Mary Merritt On Military Military Marines Marine Corps Us Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/f2/7c/e1f27cf45904cf9e85199b3bb6a55552.jpg" data-lightbox="roadtrip" data-title="Damned Face Tattoos Facial Tattoos Tattoo Lettering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/f2/7c/e1f27cf45904cf9e85199b3bb6a55552.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0w3KtgCYyUIZnkJfOgYwfgSbCPbE9frHWJw6RRdUjlX7Awc8n_NhAjuLQvJJS4yMqNOsg8A2j22ZqzpYl0RbA5RA4GTMYBBrRkA&amp;ec=45768321';" alt="Damned Face Tattoos Facial Tattoos Tattoo Lettering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Damned Face Tattoos Facial Tattoos Tattoo Lettering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/85/27/42/8527425336cae55493fba108aa46cdb1.jpg" data-lightbox="roadtrip" data-title="Pin By Rwjac16 On Murica In 2020 Marine Corps Humor Usmc Quotes Marine Corps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/85/27/42/8527425336cae55493fba108aa46cdb1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMht4FieOnE_Ai18BOwe1kpoTeypcQrJzEI_grYQTQx8f9s9PwWspSk02EzNH4TB5_t2xBd3MLgEXsQ976SE-aPp1Yb0bSye19Uw&amp;ec=45768321';" alt="Pin By Rwjac16 On Murica In 2020 Marine Corps Humor Usmc Quotes Marine Corps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Rwjac16 On Murica In 2020 Marine Corps Humor Usmc Quotes Marine Corps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/09/ed/2b09ed1f7fd51ab05a545c493b06e844.jpg" data-lightbox="roadtrip" data-title="Pin By Shellie Bohn On Usmc Marine Mom Quotes Military Moms Quotes Marine Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/09/ed/2b09ed1f7fd51ab05a545c493b06e844.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5r0yyGNP_p70aayeng6P64dsDCFf7lPzNHzJuThknnfn7M5ENnCo75HP5jScy6u_2iU6NbfZafTdMRCPpkBeIcKRu2o-ZcYHMCg&amp;ec=45768321';" alt="Pin By Shellie Bohn On Usmc Marine Mom Quotes Military Moms Quotes Marine Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Shellie Bohn On Usmc Marine Mom Quotes Military Moms Quotes Marine Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/5a/96/b45a963ccbafd013e12d5689544c835d.jpg" data-lightbox="roadtrip" data-title="Social Media Posters By Vaforlife Social Media Poster Virtual Assistant Rich Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/5a/96/b45a963ccbafd013e12d5689544c835d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEMcmyIOtXyek-MgX-1AaNSNDUHIy5WEj9PA';" alt="Social Media Posters By Vaforlife Social Media Poster Virtual Assistant Rich Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Social Media Posters By Vaforlife Social Media Poster Virtual Assistant Rich Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/view-gi-bill-months-remaining.html">View Gi Bill Months Remaining</a></li>
+													<li class="list-group-item"><a href="/vietnam-veterans-spouse-benefits.html">Vietnam Veterans Spouse Benefits</a></li>
+													<li class="list-group-item"><a href="/vicksburg-national-military-park-monuments-pictures.html">Vicksburg National Military Park Monuments Pictures</a></li>
+													<li class="list-group-item"><a href="/virginia-beach-va-social-security-office.html">Virginia Beach Va Social Security Office</a></li>
+													<li class="list-group-item"><a href="/vicksburg-national-military-park-tripadvisor.html">Vicksburg National Military Park Tripadvisor</a></li>
+													<li class="list-group-item"><a href="/virginia-100-disabled-veteran-benefits.html">Virginia 100 Disabled Veteran Benefits</a></li>
+													<li class="list-group-item"><a href="/vintage-army-dress-uniform.html">Vintage Army Dress Uniform</a></li>
+													<li class="list-group-item"><a href="/video-of-national-guard-in-dc.html">Video Of National Guard In Dc</a></li>
+													<li class="list-group-item"><a href="/vicksburg-national-military-park-statues.html">Vicksburg National Military Park Statues</a></li>
+													<li class="list-group-item"><a href="/virginia-beach-va-inmate-search.html">Virginia Beach Va Inmate Search</a></li>
+													<li class="list-group-item"><a href="/virginia-bar-lawyer-referral-service.html">Virginia Bar Lawyer Referral Service</a></li>
+													<li class="list-group-item"><a href="/virginia-2020-pay-calendar.html">Virginia 2020 Pay Calendar</a></li>
+													<li class="list-group-item"><a href="/virginia-beach-locality-pay-increase.html">Virginia Beach Locality Pay Increase</a></li>
+													<li class="list-group-item"><a href="/virginia-attorney-near-me.html">Virginia Attorney Near Me</a></li>
+													<li class="list-group-item"><a href="/vinton-va-inmate-search.html">Vinton Va Inmate Search</a></li>
+													<li class="list-group-item"><a href="/virginia-air-national-guard-pilot.html">Virginia Air National Guard Pilot</a></li>
+													<li class="list-group-item"><a href="/vietnam-veterans-compensation-benefits.html">Vietnam Veterans Compensation Benefits</a></li>
+													<li class="list-group-item"><a href="/vicksburg-national-military-park-protests.html">Vicksburg National Military Park Protests</a></li>
+													<li class="list-group-item"><a href="/vietnam-veterans-spousal-support.html">Vietnam Veterans Spousal Support</a></li>
+													<li class="list-group-item"><a href="/view-remaining-gi-bill-benefits.html">View Remaining Gi Bill Benefits</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>
